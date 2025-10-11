@@ -1,6 +1,6 @@
 import type { MetadataRoute } from 'next'
 import { routing } from "@/i18n/routing"
-import { getBlogPosts, getCategories } from '@/lib/blog-simple'
+import { getBlogPosts, getCategories } from '@/lib/blog-static'
 import { baseSiteConfig } from "@/config/site-i18n"
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {

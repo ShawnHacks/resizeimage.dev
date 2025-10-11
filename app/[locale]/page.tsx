@@ -3,6 +3,8 @@ import {setRequestLocale} from 'next-intl/server';
 import { routing } from '@/i18n/routing'
 import ResizeImagePage from '@/app/page-resize';
 
+export const runtime = "edge";
+
 export const revalidate = 3600
 export const dynamic = 'force-static'
 

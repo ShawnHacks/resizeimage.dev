@@ -318,13 +318,15 @@
       "urlCopyFailed": "复制URL失败"
     },
     "tools": {
-      "compress": "压缩图片",
-      "compressDesc": "压缩图片",
-      "crop": "裁剪图片",
-      "cropDesc": "裁剪图片",
-      "screenshot": "在线网站截图",
+      "bulkresizeimages": "Bulk Resize Images",
+      "bulkresizeimagesDesc": "批量调整图片大小在线工具",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "网站截图和录屏",
-      "watermark": "图片加水印",
+      "compress": "Compress Image",
+      "compressDesc": "压缩图片",
+      "crop": "Crop image",
+      "cropDesc": "裁剪图片",
+      "watermark": "Watermark Image",
       "watermarkDesc": "给图片加水印"
     },
     "toast": {

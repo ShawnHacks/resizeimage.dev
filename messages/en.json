@@ -318,12 +318,14 @@
       "urlCopyFailed": "Failed to copy URL"
     },
     "tools": {
+      "bulkresizeimages": "Bulk Resize Images",
+      "bulkresizeimagesDesc": "Bulk Resize Images",
+      "screenshot": "Website Screenshot Online",
+      "screenshotDesc": "Take Screenshots",
       "compress": "Compress Image",
       "compressDesc": "Compress Images",
       "crop": "Crop image",
       "cropDesc": "Crop Images",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "Take Screenshots",
       "watermark": "Watermark Image",
       "watermarkDesc": "Watermark Images"
     },

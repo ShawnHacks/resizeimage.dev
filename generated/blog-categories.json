@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "tutorials",
+    "color": "#10B981",
+    "icon": "BookOpen",
+    "translations": {
+      "en": {
+        "name": "Tutorials",
+        "description": "Step-by-step guides and how-to articles for website screenshots"
+      },
+      "zh": {
+        "name": "教程",
+        "description": "网站截图的分步指南和操作教程"
+      }
+    },
+    "postCount": 2
+  }
+]

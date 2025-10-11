@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
-import { getBlogPosts, getCategories } from '@/lib/blog-simple'
+import { getBlogPosts, getCategories } from '@/lib/blog-static'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -12,6 +12,8 @@ import { formatDate } from '@/lib/utils'
 interface BlogPageProps {
   params: Promise<{ locale: string }>
 }
+
+export const runtime = "edge";
 
 export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
   const { locale } = await params

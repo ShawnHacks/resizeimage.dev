@@ -1,8 +1,8 @@
-import {NextConfig} from 'next';
 import createNextIntlPlugin from 'next-intl/plugin';
 import createMDX from '@next/mdx';
+import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
  
-const nextConfig: NextConfig = {
+const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 
   // htmlLimitedBots
@@ -76,6 +76,10 @@ const nextConfig: NextConfig = {
     ],
   },
 };
+
+if (process.env.NODE_ENV === "development") {
+  await setupDevPlatform();
+}
  
 const withMDX = createMDX({
   // Add markdown plugins here, as desired

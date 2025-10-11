@@ -3,22 +3,24 @@ import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
 import { BlogPostTemplate } from '@/components/blog/blog-post-template'
-import { getBlogPost, getBlogPosts, getRelatedPosts } from '@/lib/blog-simple'
-import type { SimpleBlogPost } from '@/lib/blog-simple'
+import { getBlogPost, getBlogPosts, getRelatedPosts } from '@/lib/blog-static'
+import type { SimpleBlogPost } from '@/lib/blog-static'
 
 interface BlogPostPageProps {
   params: Promise<{ locale: string; slug: string[] }>
 }
 
-export async function generateStaticParams() {
-  const posts = await getBlogPosts()
-  return routing.locales.flatMap((locale) =>
-    posts.map((post: SimpleBlogPost) => ({
-      locale,
-      slug: post.slug.split('/'),
-    }))
-  )
-}
+export const runtime = "edge";
+
+// export async function generateStaticParams() {
+//   const posts = await getBlogPosts()
+//   return routing.locales.flatMap((locale) =>
+//     posts.map((post: SimpleBlogPost) => ({
+//       locale,
+//       slug: post.slug.split('/'),
+//     }))
+//   )
+// }
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const { locale, slug } = await params

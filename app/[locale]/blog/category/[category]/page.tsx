@@ -3,7 +3,7 @@ import { notFound } from 'next/navigation'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
-import { getPostsByCategory, getCategory, getCategories } from '@/lib/blog-simple'
+import { getPostsByCategory, getCategory, getCategories } from '@/lib/blog-static'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
@@ -13,6 +13,8 @@ import { formatDate } from '@/lib/utils'
 interface CategoryPageProps {
   params: Promise<{ locale: string; category: string }>
 }
+
+export const runtime = "edge";
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { locale, category } = await params
@@ -169,15 +171,15 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
   )
 }
 
-export async function generateStaticParams() {
-  const categories = await getCategories()
-  const paths: { locale: string; category: string }[] = []
+// export async function generateStaticParams() {
+//   const categories = await getCategories()
+//   const paths: { locale: string; category: string }[] = []
 
-  for (const category of categories) {
-    for (const locale of routing.locales) {
-      paths.push({ locale, category: category.slug })
-    }
-  }
+//   for (const category of categories) {
+//     for (const locale of routing.locales) {
+//       paths.push({ locale, category: category.slug })
+//     }
+//   }
 
-  return paths
-}
+//   return paths
+// }

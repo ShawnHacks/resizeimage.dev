@@ -10,6 +10,8 @@ type Props = {
   params: Promise<{ locale: string }>
 }
 
+export const runtime = "edge";
+
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'AboutPage' })

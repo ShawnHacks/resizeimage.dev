@@ -12,12 +12,12 @@ export const env = createEnv({
     // GITHUB_CLIENT_ID: z.string().min(1),
     // GITHUB_CLIENT_SECRET: z.string().min(1),
     // DATABASE_URL: z.string().min(1),
-    TURNSTILE_SECRET_KEY: z.string().min(1),
-    SCREENSHOTS_DIR: z.string().optional(),
+    // TURNSTILE_SECRET_KEY: z.string().min(1),
+    // SCREENSHOTS_DIR: z.string().optional(),
   },
   client: {
     NEXT_PUBLIC_APP_URL: z.string().min(1),
-    NEXT_PUBLIC_TURNSTILE_SITE_KEY: z.string().min(1),
+    // NEXT_PUBLIC_TURNSTILE_SITE_KEY: z.string().min(1),
   },
   runtimeEnv: {
     // NEXTAUTH_URL: process.env.NEXTAUTH_URL,
@@ -28,8 +28,8 @@ export const env = createEnv({
     // GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
     // DATABASE_URL: process.env.DATABASE_URL,
     NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL,
-    NEXT_PUBLIC_TURNSTILE_SITE_KEY: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
-    TURNSTILE_SECRET_KEY: process.env.TURNSTILE_SECRET_KEY,
-    SCREENSHOTS_DIR: process.env.SCREENSHOTS_DIR,
+    // NEXT_PUBLIC_TURNSTILE_SITE_KEY: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
+    // TURNSTILE_SECRET_KEY: process.env.TURNSTILE_SECRET_KEY,
+    // SCREENSHOTS_DIR: process.env.SCREENSHOTS_DIR,
   },
 })
