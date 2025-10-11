@@ -2,11 +2,12 @@
 
 import { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
+import { useTranslations } from 'next-intl';
 import { Percent, Package, Maximize2, ArrowRightLeft, ArrowUpDown, Ruler, Star, Link2, Copy, Check } from 'lucide-react';
 import { motion } from 'motion/react';
 import { toast } from 'sonner';
 import type { ResizeMode, ImageFormat } from '@/types/resize';
-import { RESIZE_PRESETS } from '@/types/resize';
+import { ResizePreset } from '@/types/resize';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -33,20 +34,61 @@ export interface ResizeOptionsState {
   usePadding?: boolean; // For Image Dimensions mode
 }
 
-const MODES = [
-  { id: 'percentage' as ResizeMode, label: 'Percentage', icon: Percent },
-  { id: 'fileSize' as ResizeMode, label: 'File Size', icon: Package },
-  { id: 'dimensions' as ResizeMode, label: 'Image Dimensions', icon: Maximize2 },
-  { id: 'width' as ResizeMode, label: 'Width', icon: ArrowRightLeft },
-  { id: 'height' as ResizeMode, label: 'Height', icon: ArrowUpDown },
-  { id: 'longestSide' as ResizeMode, label: 'Longest Side', icon: Ruler },
-];
-
 export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
+  const t = useTranslations('ResizeTool.controls');
+  const tConfig = useTranslations('ResizeTool.config');
   const searchParams = useSearchParams();
   const router = useRouter();
   const [urlCopied, setUrlCopied] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
+
+  const MODES = [
+    { id: 'percentage' as ResizeMode, label: t('percentage.title'), icon: Percent },
+    { id: 'fileSize' as ResizeMode, label: t('fileSize.title'), icon: Package },
+    { id: 'dimensions' as ResizeMode, label: t('dimensions.title'), icon: Maximize2 },
+    { id: 'width' as ResizeMode, label: t('width.title'), icon: ArrowRightLeft },
+    { id: 'height' as ResizeMode, label: t('height.title'), icon: ArrowUpDown },
+    { id: 'longestSide' as ResizeMode, label: t('longestSide.title'), icon: Ruler },
+  ];
+
+  const RESIZE_PRESETS: ResizePreset[] = [
+  {
+    name: t('presets.instagram'),
+    description: t('presets.instagramDesc'),
+    mode: 'dimensions',
+    value: 1080,
+  },
+  {
+    name: t('presets.twitter'),
+    description: t('presets.twitterDesc'),
+    mode: 'width',
+    value: 1500,
+  },
+  {
+    name: t('presets.facebook'),
+    description: t('presets.facebookDesc'),
+    mode: 'width',
+    value: 820,
+  },
+  {
+    name: t('presets.youtube'),
+    description: t('presets.youtubeDesc'),
+    mode: 'width',
+    value: 1280,
+  },
+  {
+    name: t('presets.email'),
+    description: t('presets.emailDesc'),
+    mode: 'width',
+    value: 800,
+  },
+  {
+    name: t('presets.compress'),
+    description: t('presets.compressDesc'),
+    mode: 'fileSize',
+    value: 100,
+  },
+];
 
   // State with default values
   const [mode, setMode] = useState<ResizeMode>('dimensions');
@@ -162,10 +204,10 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
     try {
       await navigator.clipboard.writeText(url);
       setUrlCopied(true);
-      toast.success('Configuration URL copied to clipboard!');
+      toast.success(tConfig('urlCopied'));
       setTimeout(() => setUrlCopied(false), 2000);
     } catch (error) {
-      toast.error('Failed to copy URL');
+      toast.error(tConfig('urlCopyFailed'));
     }
   };
 
@@ -182,7 +224,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
           <aside className="w-full md:w-56 bg-muted border-b md:border-b-0 md:border-r border-border">
             <div className="p-4">
               <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">
-                Resize Mode
+                {t('resizeMode')}
               </h3>
               <div className="space-y-1">
                 {MODES.map((m) => {
@@ -223,10 +265,10 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
-                      Percentage
+                      {t('percentage.title')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Scale images to <strong>{percentage}%</strong> of the original dimensions.
+                      {t('percentage.description', { percentage })}
                     </p>
                   </div>
 
@@ -251,28 +293,28 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                       />
                     </div>
                     <p className="text-xs text-muted-foreground">
-                      Range: 10% to 200%
+                      {t('percentage.rangeLabel')}
                     </p>
                   </div>
 
                   {/* Common parameters */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="format-percentage">Image Format</Label>
+                      <Label htmlFor="format-percentage">{t('format.label')}</Label>
                       <Select value={format} onValueChange={(value) => setFormat(value as ImageFormat)}>
                         <SelectTrigger id="format-percentage">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="jpeg">JPEG</SelectItem>
-                          <SelectItem value="png">PNG</SelectItem>
-                          <SelectItem value="webp">WebP</SelectItem>
+                          <SelectItem value="jpeg">{t('format.jpeg')}</SelectItem>
+                          <SelectItem value="png">{t('format.png')}</SelectItem>
+                          <SelectItem value="webp">{t('format.webp')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="quality-percentage">Image Quality: {quality}%</Label>
+                      <Label htmlFor="quality-percentage">{t('quality.label')}: {quality}%</Label>
                       <Slider
                         id="quality-percentage"
                         min={0}
@@ -284,7 +326,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="bg-color-percentage">Image Background</Label>
+                    <Label htmlFor="bg-color-percentage">{t('backgroundColor.label')}</Label>
                     <div className="flex items-center gap-3">
                       <input
                         id="bg-color-percentage"
@@ -306,10 +348,10 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
-                      File Size
+                      {t('fileSize.title')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Images will be resized to <strong>{targetFileSize.toFixed(1)} kB</strong> or less.
+                      {t('fileSize.description', { size: targetFileSize.toFixed(1) })}
                     </p>
                   </div>
 
@@ -329,21 +371,21 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   {/* Common parameters */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="format-filesize">Image Format</Label>
+                      <Label htmlFor="format-filesize">{t('format.label')}</Label>
                       <Select value={format} onValueChange={(value) => setFormat(value as ImageFormat)}>
                         <SelectTrigger id="format-filesize">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="jpeg">JPEG</SelectItem>
-                          <SelectItem value="png">PNG</SelectItem>
-                          <SelectItem value="webp">WebP</SelectItem>
+                          <SelectItem value="jpeg">{t('format.jpeg')}</SelectItem>
+                          <SelectItem value="png">{t('format.png')}</SelectItem>
+                          <SelectItem value="webp">{t('format.webp')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="quality-filesize">Image Quality: {quality}%</Label>
+                      <Label htmlFor="quality-filesize">{t('quality.label')}: {quality}%</Label>
                       <Slider
                         id="quality-filesize"
                         min={0}
@@ -355,7 +397,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="bg-color-filesize">Image Background</Label>
+                    <Label htmlFor="bg-color-filesize">{t('backgroundColor.label')}</Label>
                     <div className="flex items-center gap-3">
                       <input
                         id="bg-color-filesize"
@@ -377,16 +419,16 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
-                      Image Dimensions
+                      {t('dimensions.title')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Make images <strong>{width || 800}</strong> × <strong>{height || 600}</strong> Width × Height
+                      {t('dimensions.description')}
                     </p>
                   </div>
 
                   <div className="grid grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="width-dimensions">Width (px)</Label>
+                      <Label htmlFor="width-dimensions">{t('dimensions.width')}</Label>
                       <Input
                         id="width-dimensions"
                         type="number"
@@ -397,7 +439,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="height-dimensions">Height (px)</Label>
+                      <Label htmlFor="height-dimensions">{t('dimensions.height')}</Label>
                       <Input
                         id="height-dimensions"
                         type="number"
@@ -418,28 +460,28 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                       htmlFor="padding-dimensions"
                       className="text-sm font-normal cursor-pointer leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
                     >
-                      Use padding to avoid stretching or squashing images.
+                      {t('dimensions.paddingNote')}
                     </Label>
                   </div>
 
                   {/* Common parameters */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="format-dimensions">Image Format</Label>
+                      <Label htmlFor="format-dimensions">{t('format.label')}</Label>
                       <Select value={format} onValueChange={(value) => setFormat(value as ImageFormat)}>
                         <SelectTrigger id="format-dimensions">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="jpeg">JPEG</SelectItem>
-                          <SelectItem value="png">PNG</SelectItem>
-                          <SelectItem value="webp">WebP</SelectItem>
+                          <SelectItem value="jpeg">{t('format.jpeg')}</SelectItem>
+                          <SelectItem value="png">{t('format.png')}</SelectItem>
+                          <SelectItem value="webp">{t('format.webp')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="quality-dimensions">Image Quality: {quality}%</Label>
+                      <Label htmlFor="quality-dimensions">{t('quality.label')}: {quality}%</Label>
                       <Slider
                         id="quality-dimensions"
                         min={0}
@@ -451,7 +493,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="bg-color-dimensions">Image Background</Label>
+                    <Label htmlFor="bg-color-dimensions">{t('backgroundColor.label')}</Label>
                     <div className="flex items-center gap-3">
                       <input
                         id="bg-color-dimensions"
@@ -473,15 +515,15 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
-                      Width
+                      {t('width.title')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Make the width of images <strong>{targetValue || 800}</strong> pixels.
+                      {t('width.description')}
                     </p>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="width-target">Target Width (px)</Label>
+                    <Label htmlFor="width-target">{t('width.targetWidth')}</Label>
                     <Input
                       id="width-target"
                       type="number"
@@ -494,21 +536,21 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   {/* Common parameters */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="format-width">Image Format</Label>
+                      <Label htmlFor="format-width">{t('format.label')}</Label>
                       <Select value={format} onValueChange={(value) => setFormat(value as ImageFormat)}>
                         <SelectTrigger id="format-width">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="jpeg">JPEG</SelectItem>
-                          <SelectItem value="png">PNG</SelectItem>
-                          <SelectItem value="webp">WebP</SelectItem>
+                          <SelectItem value="jpeg">{t('format.jpeg')}</SelectItem>
+                          <SelectItem value="png">{t('format.png')}</SelectItem>
+                          <SelectItem value="webp">{t('format.webp')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="quality-width">Image Quality: {quality}%</Label>
+                      <Label htmlFor="quality-width">{t('quality.label')}: {quality}%</Label>
                       <Slider
                         id="quality-width"
                         min={0}
@@ -520,7 +562,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="bg-color-width">Image Background</Label>
+                    <Label htmlFor="bg-color-width">{t('backgroundColor.label')}</Label>
                     <div className="flex items-center gap-3">
                       <input
                         id="bg-color-width"
@@ -542,15 +584,15 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
-                      Height
+                      {t('height.title')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Make the height of images <strong>{targetValue || 600}</strong> pixels.
+                      {t('height.description')}
                     </p>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="height-target">Target Height (px)</Label>
+                    <Label htmlFor="height-target">{t('height.targetHeight')}</Label>
                     <Input
                       id="height-target"
                       type="number"
@@ -563,21 +605,21 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   {/* Common parameters */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="format-height">Image Format</Label>
+                      <Label htmlFor="format-height">{t('format.label')}</Label>
                       <Select value={format} onValueChange={(value) => setFormat(value as ImageFormat)}>
                         <SelectTrigger id="format-height">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="jpeg">JPEG</SelectItem>
-                          <SelectItem value="png">PNG</SelectItem>
-                          <SelectItem value="webp">WebP</SelectItem>
+                          <SelectItem value="jpeg">{t('format.jpeg')}</SelectItem>
+                          <SelectItem value="png">{t('format.png')}</SelectItem>
+                          <SelectItem value="webp">{t('format.webp')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="quality-height">Image Quality: {quality}%</Label>
+                      <Label htmlFor="quality-height">{t('quality.label')}: {quality}%</Label>
                       <Slider
                         id="quality-height"
                         min={0}
@@ -589,7 +631,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="bg-color-height">Image Background</Label>
+                    <Label htmlFor="bg-color-height">{t('backgroundColor.label')}</Label>
                     <div className="flex items-center gap-3">
                       <input
                         id="bg-color-height"
@@ -611,15 +653,15 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                 <div className="space-y-6">
                   <div>
                     <h3 className="text-lg font-semibold text-foreground mb-1">
-                      Longest Side
+                      {t('longestSide.title')}
                     </h3>
                     <p className="text-sm text-muted-foreground">
-                      Make the longest side of images <strong>{targetValue || 800}</strong> pixels.
+                      {t('longestSide.description')}
                     </p>
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="longest-target">Target Longest Side (px)</Label>
+                    <Label htmlFor="longest-target">{t('longestSide.targetLongest')}</Label>
                     <Input
                       id="longest-target"
                       type="number"
@@ -632,21 +674,21 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   {/* Common parameters */}
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
-                      <Label htmlFor="format-longest">Image Format</Label>
+                      <Label htmlFor="format-longest">{t('format.label')}</Label>
                       <Select value={format} onValueChange={(value) => setFormat(value as ImageFormat)}>
                         <SelectTrigger id="format-longest">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>
-                          <SelectItem value="jpeg">JPEG</SelectItem>
-                          <SelectItem value="png">PNG</SelectItem>
-                          <SelectItem value="webp">WebP</SelectItem>
+                          <SelectItem value="jpeg">{t('format.jpeg')}</SelectItem>
+                          <SelectItem value="png">{t('format.png')}</SelectItem>
+                          <SelectItem value="webp">{t('format.webp')}</SelectItem>
                         </SelectContent>
                       </Select>
                     </div>
 
                     <div className="space-y-2">
-                      <Label htmlFor="quality-longest">Image Quality: {quality}%</Label>
+                      <Label htmlFor="quality-longest">{t('quality.label')}: {quality}%</Label>
                       <Slider
                         id="quality-longest"
                         min={0}
@@ -658,7 +700,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   </div>
 
                   <div className="space-y-2">
-                    <Label htmlFor="bg-color-longest">Image Background</Label>
+                    <Label htmlFor="bg-color-longest">{t('backgroundColor.label')}</Label>
                     <div className="flex items-center gap-3">
                       <input
                         id="bg-color-longest"
@@ -679,7 +721,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
               <div className="mt-6 pt-6 border-t border-border">
                 <div className="flex items-center gap-2 mb-3">
                   <Star className="w-4 h-4 text-muted-foreground" />
-                  <h4 className="text-sm font-semibold text-foreground">Quick Presets</h4>
+                  <h4 className="text-sm font-semibold text-foreground">{t('presets.title')}</h4>
                 </div>
                 <div className="grid grid-cols-2 md:grid-cols-3 gap-2">
                   {RESIZE_PRESETS.map((preset) => (
@@ -702,7 +744,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                 className="w-full mt-6"
                 size="lg"
               >
-                Resize {mode === 'percentage' ? `to ${percentage}%` : 'Images'}
+                {mode === 'percentage' ? t('resizeButton', { percentage }) : t('resizeButtonDefault')}
               </Button>
             </motion.div>
           </main>
@@ -713,10 +755,10 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
         <div className="bg-muted rounded-xl p-4 space-y-3">
           <div>
             <h4 className="text-sm font-semibold text-foreground mb-1">
-              Shareable Configuration
+              {tConfig('title')}
             </h4>
             <p className="text-xs text-muted-foreground">
-              Use these settings automatically with this URL.
+              {tConfig('description')}
             </p>
           </div>
 
@@ -735,7 +777,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
               size="sm"
               className={urlCopied ? "bg-green-600 hover:bg-green-700 border-green-600" : "border-green-600 text-green-600 hover:bg-green-600 hover:text-white"}
             >
-              {urlCopied ? 'Copied!' : 'Copy'}
+              {urlCopied ? tConfig('copied') : tConfig('copy')}
             </Button>
 
             <Button
@@ -743,7 +785,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
               variant="outline"
               size="sm"
             >
-              Link
+              {tConfig('link')}
             </Button>
           </div>
         </div>

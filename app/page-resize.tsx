@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback } from 'react';
+import { useTranslations } from 'next-intl';
 import { ImagePreview } from '@/components/resize/image-preview';
 import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
 import { ProcessedList } from '@/components/resize/processed-list';
@@ -14,6 +15,7 @@ import { motion } from 'motion/react';
 import { Loader2 } from 'lucide-react';
 
 export default function ResizeImagePage() {
+  const t = useTranslations('ResizeTool');
   const [images, setImages] = useState<ImageFile[]>([]);
   const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
@@ -37,7 +39,7 @@ export default function ResizeImagePage() {
     );
 
     setImages(imageFiles);
-    toast.success(`${files.length} image${files.length > 1 ? 's' : ''} loaded`);
+    toast.success(t('toast.imagesLoaded', { count: files.length }));
   }, []);
 
   const handleRemoveImage = useCallback((index: number) => {
@@ -69,24 +71,24 @@ export default function ResizeImagePage() {
     );
 
     setImages((prev) => [...prev, ...imageFiles]);
-    toast.success(`Added ${newFiles.length} more image${newFiles.length > 1 ? 's' : ''}`);
-  }, []);
+    toast.success(t('toast.imagesAdded', { count: newFiles.length }));
+  }, [t]);
 
   const handleResize = useCallback(async (options: ResizeOptionsState) => {
     if (images.length === 0) {
-      toast.error('Please select images first');
+      toast.error(t('toast.selectImagesFirst'));
       return;
     }
 
     // Validate options
     if (options.mode === 'dimensions') {
       if (!options.width && !options.height) {
-        toast.error('Please enter width or height');
+        toast.error(t('toast.enterWidthOrHeight'));
         return;
       }
     } else if (options.mode === 'width' || options.mode === 'height' || options.mode === 'longestSide') {
       if (!options.targetValue) {
-        toast.error('Please enter a target value');
+        toast.error(t('toast.enterTargetValue'));
         return;
       }
     }
@@ -104,10 +106,10 @@ export default function ResizeImagePage() {
       );
 
       setProcessedImages(results);
-      toast.success('Images resized successfully!');
+      toast.success(t('toast.imagesResizedSuccess'));
     } catch (error) {
       console.error('Resize failed:', error);
-      toast.error('Failed to resize images. Please try again.');
+      toast.error(t('toast.error'));
     } finally {
       setIsProcessing(false);
       setProgress({ current: 0, total: 0 });
@@ -115,20 +117,20 @@ export default function ResizeImagePage() {
   }, [images]);
 
   const handleDownloadComplete = useCallback(() => {
-    toast.success('Download completed!');
-  }, []);
+    toast.success(t('toast.downloadComplete'));
+  }, [t]);
 
   return (
-    <div className="min-h-[calc(100vh-4rem)]">
+    <div className="min-h-[calc(100vh-rem)]">
       {/* Header */}
       <header className="bg-background">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">
-              Bulk Resize Images Online
+              {t('pageTitle')}
             </h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
-              Free online tool to batch resize multiple images at once. Fast, secure, and works entirely in your browser — no upload needed.
+              {t('pageDescription')}
             </p>
           </div>
         </div>
@@ -169,10 +171,10 @@ export default function ResizeImagePage() {
               <div className="flex flex-col items-center justify-center text-center">
                 <Loader2 className="w-12 h-12 text-primary animate-spin mb-4" />
                 <h3 className="text-lg font-semibold text-foreground mb-2">
-                  Processing Images...
+                  {t('processing.title')}
                 </h3>
                 <p className="text-sm text-muted-foreground mb-4">
-                  {progress.current} of {progress.total} images processed
+                  {t('processing.progress', { current: progress.current, total: progress.total })}
                 </p>
                 <div className="w-full max-w-xs h-2 bg-muted rounded-full overflow-hidden">
                   <motion.div

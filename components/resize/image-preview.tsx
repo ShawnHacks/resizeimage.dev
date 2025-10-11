@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import { X, Plus, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { formatFileSize } from '@/lib/image-resize-utils';
@@ -14,6 +15,7 @@ interface ImagePreviewProps {
 }
 
 export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps) {
+  const t = useTranslations('ResizeTool.imagePreview');
   const [isExpanded, setIsExpanded] = useState(false);
   
   if (images.length === 0) return null;
@@ -38,8 +40,8 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
       className="w-full space-y-3"
     >
       <div className="flex items-center justify-between">
-        <h3 className="text-sm font-medium text-[#1D1D1F]">
-          {images.length} {images.length === 1 ? 'image' : 'images'} selected
+        <h3 className="text-sm font-medium text-foreground">
+          {images.length} {images.length === 1 ? t('selected') : t('selectedPlural')} {t('selectedCount')}
         </h3>
         
         {onAddMore && (
@@ -47,7 +49,7 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
             <Button variant="outline" size="sm" className='text-primary hover:bg-primary/5' asChild>
               <span className="inline-flex items-center gap-2">
                 <Plus className="w-4 h-4" />
-                Add More
+                {t('addMore')}
               </span>
             </Button>
             <input
@@ -91,13 +93,13 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
 
             {/* Image info */}
             <div className="mt-2 space-y-0.5">
-              <p className="text-xs font-medium text-[#1D1D1F] truncate">
+              <p className="text-xs font-medium text-foreground truncate">
                 {image.file.name}
               </p>
-              <p className="text-xs text-[#86868B]">
+              <p className="text-xs text-muted-foreground">
                 {image.dimensions.width} × {image.dimensions.height}
               </p>
-              <p className="text-xs text-[#86868B]">
+              <p className="text-xs text-muted-foreground">
                 {formatFileSize(image.fileSize)}
               </p>
             </div>
@@ -111,17 +113,17 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
         <div className="flex justify-center pt-2">
           <button
             onClick={() => setIsExpanded(!isExpanded)}
-            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-[#007AFF] hover:bg-[#007AFF]/5 rounded-lg transition-colors"
+            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-primary hover:bg-primary/5 rounded-lg transition-colors"
           >
             {isExpanded ? (
               <>
                 <ChevronUp className="w-4 h-4" />
-                <span>Show Less</span>
+                <span>{t('showLess')}</span>
               </>
             ) : (
               <>
                 <ChevronDown className="w-4 h-4" />
-                <span>Show All ({images.length - imagesPerRow} more)</span>
+                <span>{t('showAll', { count: images.length - imagesPerRow })}</span>
               </>
             )}
           </button>

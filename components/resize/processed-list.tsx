@@ -2,6 +2,7 @@
 
 import { CheckCircle2, ArrowRight } from 'lucide-react';
 import { motion } from 'motion/react';
+import { useTranslations } from 'next-intl';
 import type { ProcessedImage } from '@/lib/image-resize-utils';
 
 interface ProcessedListProps {
@@ -9,6 +10,7 @@ interface ProcessedListProps {
 }
 
 export function ProcessedList({ processedImages }: ProcessedListProps) {
+  const t = useTranslations('ResizeTool.results');
   if (processedImages.length === 0) return null;
 
   // Calculate totals
@@ -31,10 +33,10 @@ export function ProcessedList({ processedImages }: ProcessedListProps) {
           </div>
           <div className="flex-1">
             <h3 className="text-lg font-semibold text-foreground mb-1">
-              Processing Complete!
+              {t('title')}
             </h3>
             <p className="text-sm text-muted-foreground">
-              {processedImages.length} {processedImages.length === 1 ? 'image' : 'images'} successfully resized
+              {t('imagesResized', { count: processedImages.length })}
             </p>
           </div>
         </div>
@@ -42,21 +44,21 @@ export function ProcessedList({ processedImages }: ProcessedListProps) {
         {/* Total size comparison */}
         <div className="grid grid-cols-3 gap-4">
           <div className="bg-card rounded-lg p-4 border border-border">
-            <p className="text-xs text-muted-foreground mb-1">Original Size</p>
+            <p className="text-xs text-muted-foreground mb-1">{t('originalSize')}</p>
             <p className="text-lg font-semibold text-foreground">
               {formatBytes(totalOriginalSize)}
             </p>
           </div>
           
           <div className="bg-card rounded-lg p-4 border border-border">
-            <p className="text-xs text-muted-foreground mb-1">New Size</p>
+            <p className="text-xs text-muted-foreground mb-1">{t('newSize')}</p>
             <p className="text-lg font-semibold text-primary">
               {formatBytes(totalNewSize)}
             </p>
           </div>
           
           <div className="bg-card rounded-lg p-4 border border-border">
-            <p className="text-xs text-muted-foreground mb-1">Space Saved</p>
+            <p className="text-xs text-muted-foreground mb-1">{t('spaceSaved')}</p>
             <p className="text-lg font-semibold text-green-600">
               {totalSaved > 0 ? `${formatBytes(totalSaved)} (${savedPercentage}%)` : '0 B'}
             </p>
@@ -66,7 +68,7 @@ export function ProcessedList({ processedImages }: ProcessedListProps) {
 
       {/* Image list */}
       <div className="p-6">
-        <h4 className="text-sm font-semibold text-foreground mb-4">Processed Images</h4>
+        <h4 className="text-sm font-semibold text-foreground mb-4">{t('processedImages')}</h4>
         
         <div className="space-y-3 max-h-96 overflow-y-auto">
           {processedImages.map((img, index) => {

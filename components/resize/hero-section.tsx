@@ -2,12 +2,14 @@
 
 import { Upload, Zap, Infinity, ThumbsUp, Shield, CheckCircle } from 'lucide-react';
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface HeroSectionProps {
   onFilesSelected: (files: File[]) => void;
 }
 
 export function HeroSection({ onFilesSelected }: HeroSectionProps) {
+  const t = useTranslations('ResizeTool');
   const [isDragging, setIsDragging] = useState(false);
 
   const handleDragOver = (e: React.DragEvent) => {
@@ -40,12 +42,12 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
   };
 
   const features = [
-    { icon: Zap, text: 'Lightning-fast processing', color: 'text-orange-500' },
-    { icon: CheckCircle, text: '100% free forever', color: 'text-green-500' },
-    { icon: Shield, text: 'Secure & private', color: 'text-blue-500' },
-    { icon: ThumbsUp, text: 'No sign-up required', color: 'text-purple-500' },
-    { icon: Infinity, text: 'Process unlimited images', color: 'text-indigo-500' },
-    { icon: Upload, text: 'Works in your browser', color: 'text-gray-600' },
+    { icon: Zap, text: t('features.lightningFast'), color: 'text-orange-500' },
+    { icon: CheckCircle, text: t('features.free'), color: 'text-green-500' },
+    { icon: Shield, text: t('features.secure'), color: 'text-blue-500' },
+    { icon: ThumbsUp, text: t('features.noSignup'), color: 'text-purple-500' },
+    { icon: Infinity, text: t('features.unlimited'), color: 'text-indigo-500' },
+    { icon: Upload, text: t('features.browser'), color: 'text-gray-600' },
   ];
 
   return (
@@ -68,11 +70,11 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
         <Upload className="w-16 h-16 text-primary mb-6" />
         
         <h3 className="text-2xl font-bold text-foreground mb-2">
-          Drag & Drop Your Images
+          {t('hero.title')}
         </h3>
         
         <p className="text-sm text-muted-foreground mb-6">
-          or click below to browse
+          {t('hero.subtitle')}
         </p>
         
         <label className="cursor-pointer">
@@ -84,23 +86,23 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
             className="hidden"
           />
           <div className="px-8 py-3 bg-primary text-white text-lg font-semibold rounded-xl hover:bg-primary/80 transition-colors shadow-lg">
-            Select Images
+            {t('hero.selectImages')}
           </div>
         </label>
         
         <p className="text-xs text-muted-foreground mt-4">
-          Support: JPG, PNG, WebP, GIF
+          {t('hero.supportedFormats')}
         </p>
       </div>
 
       {/* Right: Features */}
       <div className="bg-muted/50 rounded-2xl p-8">
         <h2 className="text-3xl font-bold text-foreground mb-3 text-center leading-tight">
-          Batch Resize Images<br />Online & Free
+          {t('features.title')}
         </h2>
         
         <p className="text-sm text-muted-foreground mb-8 text-center">
-          Resize multiple images at once without uploading to any server
+          {t('features.description')}
         </p>
         
         <div className="grid grid-cols-2 gap-6">

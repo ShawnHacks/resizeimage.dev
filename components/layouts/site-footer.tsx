@@ -95,7 +95,7 @@ export async function SiteFooter({
         </div>
       </div>
 
-      <FooterBadges locale={locale} />
+      {/* <FooterBadges locale={locale} /> */}
 
       {/* Language selector */}
       <div className="border-t border-b py-4">

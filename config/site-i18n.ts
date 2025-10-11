@@ -83,18 +83,18 @@ export function useLocalizedSiteConfig(): SiteConfig {
 
 // Navigation items with translation keys
 export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
-  {
-    titleKey: "Header.Features", 
-    href: "/#features",
-  },
-  {
-    titleKey: "Header.FAQ",
-    href: "/#faq",
-  },
-  {
-    titleKey: "Header.Blog", 
-    href: "/blog",
-  },
+  // {
+  //   titleKey: "Header.Features", 
+  //   href: "/#features",
+  // },
+  // {
+  //   titleKey: "Header.FAQ",
+  //   href: "/#faq",
+  // },
+  // {
+  //   titleKey: "Header.Blog", 
+  //   href: "/blog",
+  // },
   // {
   //   titleKey: "Header.About",
   //   href: "/about",

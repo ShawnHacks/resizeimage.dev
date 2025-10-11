@@ -310,5 +310,149 @@
     "seoGuide": "SEO Guide",
     "tutorial": "Tutorial",
     "blog": "Blog"
+  },
+  "ResizeTool": {
+    "pageTitle": "Bulk Resize Images Online",
+    "pageDescription": "Free online tool to batch resize multiple images at once. Fast, secure, and works entirely in your browser — no upload needed.",
+    "hero": {
+      "title": "Drag & Drop Your Images",
+      "subtitle": "or click below to browse",
+      "selectImages": "Select Images",
+      "supportedFormats": "Support: JPG, PNG, WebP, GIF"
+    },
+    "features": {
+      "title": "Batch Resize Images Online & Free",
+      "description": "Resize multiple images at once without uploading to any server",
+      "lightningFast": "Lightning-fast processing",
+      "free": "100% free forever",
+      "noSignup": "No sign-up required",
+      "secure": "Secure & private",
+      "unlimited": "Process unlimited images",
+      "browser": "Works in your browser"
+    },
+    "imagePreview": {
+      "selected": "image",
+      "selectedPlural": "images",
+      "selectedCount": "selected",
+      "addMore": "Add More",
+      "showLess": "Show Less",
+      "showAll": "Show All ({count} more)"
+    },
+    "controls": {
+      "resizeMode": "Resize Mode",
+      "percentage": {
+        "title": "Percentage",
+        "description": "Scale images to {percentage}% of the original dimensions.",
+        "rangeLabel": "Range: 10% to 200%"
+      },
+      "fileSize": {
+        "title": "File Size",
+        "description": "Compress images to approximately {size} KB.",
+        "rangeLabel": "Range: 10 KB to 5000 KB",
+        "targetSize": "Target File Size (KB)",
+        "note": "Actual file size may vary depending on image complexity"
+      },
+      "dimensions": {
+        "title": "Image Dimensions",
+        "description": "Resize to exact width and height.",
+        "width": "Width (px)",
+        "height": "Height (px)",
+        "maintainRatio": "Maintain Aspect Ratio",
+        "usePadding": "Use Padding",
+        "paddingNote": "Add padding to maintain original aspect ratio"
+      },
+      "width": {
+        "title": "Width",
+        "description": "Resize to specific width while maintaining aspect ratio.",
+        "targetWidth": "Target Width (px)"
+      },
+      "height": {
+        "title": "Height",
+        "description": "Resize to specific height while maintaining aspect ratio.",
+        "targetHeight": "Target Height (px)"
+      },
+      "longestSide": {
+        "title": "Longest Side",
+        "description": "Resize based on the longest dimension.",
+        "targetLongest": "Target Longest Side (px)"
+      },
+      "format": {
+        "label": "Output Format",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Quality",
+        "description": "Higher quality = larger file size"
+      },
+      "backgroundColor": {
+        "label": "Background Color",
+        "description": "Used for transparent images converted to JPEG"
+      },
+      "presets": {
+        "title": "Quick Presets",
+        "instagram": "Instagram Post",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "Twitter Header",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Facebook Cover",
+        "facebookDesc": "820×312 px",
+        "youtube": "YouTube Thumbnail",
+        "youtubeDesc": "1280×720 px",
+        "email": "Email Friendly",
+        "emailDesc": "800 px width",
+        "compress": "Compress Small",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Resize to {percentage}%",
+      "resizeButtonDefault": "Resize Images"
+    },
+    "processing": {
+      "title": "Processing Images...",
+      "progress": "{current} of {total} images processed"
+    },
+    "results": {
+      "title": "Processing Complete!",
+      "imagesResized": "{count} {count, plural, one {image} other {images}} successfully resized",
+      "originalSize": "Original Size",
+      "newSize": "New Size",
+      "spaceSaved": "Space Saved",
+      "processedImages": "Processed Images",
+      "downloadImage": "Download",
+      "downloadAll": "Download All Images",
+      "resizeMore": "Resize More Images"
+    },
+    "config": {
+      "title": "Shareable Configuration",
+      "description": "Use these settings automatically with this URL.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "link": "Link",
+      "urlCopied": "Configuration URL copied to clipboard!",
+      "urlCopyFailed": "Failed to copy URL"
+    },
+    "tools": {
+      "compress": "Compress Image",
+      "compressDesc": "Compress Images",
+      "crop": "Crop image",
+      "cropDesc": "Crop Images",
+      "screenshot": "Website Screenshot Online",
+      "screenshotDesc": "Take Screenshots",
+      "watermark": "WATERMARK IMAGE",
+      "watermarkDesc": "Watermark Images"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {image} other {images}} loaded",
+      "imagesAdded": "Added {count} more {count, plural, one {image} other {images}}",
+      "imagesResizedSuccess": "Images resized successfully!",
+      "downloadComplete": "Download completed!",
+      "urlCopied": "URL copied to clipboard!",
+      "processing": "Processing images...",
+      "error": "An error occurred. Please try again.",
+      "selectImagesFirst": "Please select images first",
+      "enterWidthOrHeight": "Please enter width or height",
+      "enterTargetValue": "Please enter a target value"
+    }
   }
 }
