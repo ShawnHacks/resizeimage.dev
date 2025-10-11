@@ -9,6 +9,16 @@ import { Download } from "lucide-react"
 // import { ChevronDown, Sprout } from "lucide-react"
 // import { useSession } from "next-auth/react"
 
+// PWA 类型定义
+interface BeforeInstallPromptEvent extends Event {
+  readonly platforms: string[]
+  readonly userChoice: Promise<{
+    outcome: 'accepted' | 'dismissed'
+    platform: string
+  }>
+  prompt(): Promise<void>
+}
+
 import { useLocalizedSiteConfig } from "@/config/site-i18n"
 import { LanguageSwitcher } from "@/components/language-switcher"
 import { useScroll } from "@/lib/hooks/use-scroll"
@@ -45,25 +55,37 @@ export function SiteHeader({
   const siteConfig = useLocalizedSiteConfig()
 
   // PWA Install
-  const [deferredPrompt, setDeferredPrompt] = useState<any>(null)
+  const [deferredPrompt, setDeferredPrompt] = useState<BeforeInstallPromptEvent | null>(null)
   const [isInstallable, setIsInstallable] = useState(false)
 
   useEffect(() => {
+    // 检查是否已经安装
+    const isStandalone = window.matchMedia('(display-mode: standalone)').matches
+    if (isStandalone) {
+      console.log('PWA: App already installed')
+      return
+    }
+
+    let hasHandled = false
+    
     const handler = (e: Event) => {
+      // 防止重复处理
+      if (hasHandled) return
+      
       console.log('PWA: beforeinstallprompt event fired')
-      e.preventDefault()
-      setDeferredPrompt(e)
+      const installEvent = e as BeforeInstallPromptEvent
+      
+      // 阻止浏览器默认的 PWA 安装横幅
+      installEvent.preventDefault()
+      
+      // 保存事件以便后续手动触发
+      setDeferredPrompt(installEvent)
       setIsInstallable(true)
+      hasHandled = true
     }
 
     window.addEventListener('beforeinstallprompt', handler)
-
-    // 检查是否已经安装
-    if (window.matchMedia('(display-mode: standalone)').matches) {
-      console.log('PWA: App already installed')
-    } else {
-      console.log('PWA: Waiting for install prompt...')
-    }
+    console.log('PWA: Waiting for install prompt...')
 
     return () => {
       window.removeEventListener('beforeinstallprompt', handler)
