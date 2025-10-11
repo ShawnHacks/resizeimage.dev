@@ -6,6 +6,7 @@ import logo from "@/public/logo.png"
 import FooterBadges from "./footer-badage"
 import { getLocalizedSiteConfig, getLocalizedFooterConfig } from "@/config/site-i18n"
 import { localeNames } from "@/i18n/routing"
+import { ModeToggle } from "./mode-toggle"
 
 import { Mail, Twitter } from "lucide-react"
 
@@ -125,8 +126,8 @@ export async function SiteFooter({
             {copyright || defaultCopyright}
           </p>
 
-          {/* <nav className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            {bottomLinks.map((link, index) => (
+          <nav className="flex flex-wrap items-center gap-x-4 gap-y-2">
+            {/* {bottomLinks.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
@@ -135,9 +136,9 @@ export async function SiteFooter({
               >
                 {link.hasTranslation ? t(link.label) : link.label}
               </Link>
-            ))}
+            ))} */}
             <ModeToggle />
-          </nav> */}
+          </nav>
         </div>
       </div>
     </footer>

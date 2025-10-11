@@ -12,7 +12,8 @@ import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/li
 import type { ImageFile } from '@/types/resize';
 import { toast } from 'sonner';
 import { motion } from 'motion/react';
-import { Loader2 } from 'lucide-react';
+import { Loader2, ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function ResizeImagePage() {
   const t = useTranslations('ResizeTool');
@@ -120,6 +121,12 @@ export default function ResizeImagePage() {
     toast.success(t('toast.downloadComplete'));
   }, [t]);
 
+  const handleBack = useCallback(() => {
+    images.forEach(img => URL.revokeObjectURL(img.preview));
+    setImages([]);
+    setProcessedImages([]);
+  }, [images]);
+
   return (
     <div className="min-h-[calc(100vh-rem)]">
       {/* Header */}
@@ -158,7 +165,19 @@ export default function ResizeImagePage() {
 
           {/* Controls section */}
           {images.length > 0 && processedImages.length === 0 && (
-            <ResizeControls onResize={handleResize} disabled={isProcessing} />
+            <>
+              <ResizeControls onResize={handleResize} disabled={isProcessing} />
+              <div className="flex justify-start">
+                <Button
+                  onClick={handleBack}
+                  variant="ghost"
+                  className="gap-2"
+                >
+                  <ArrowLeft className="h-4 w-4" />
+                  {t('backButton')}
+                </Button>
+              </div>
+            </>
           )}
 
           {/* Processing indicator */}

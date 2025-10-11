@@ -20,7 +20,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
-import { ModeToggle } from "./mode-toggle"
+// import { ModeToggle } from "./mode-toggle"
 import { Button } from "@/components/ui/button"
 
 // import { Skeleton } from "@/components/ui/skeleton"
@@ -142,7 +142,7 @@ export function SiteHeader({
 
           <LanguageSwitcher />
 
-          <ModeToggle />
+          {/* <ModeToggle /> */}
         </div>
 
         {/* <div className="flex items-center space-x-4">

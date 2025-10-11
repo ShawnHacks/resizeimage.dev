@@ -1,7 +1,6 @@
 {
   "Header": {
     "Home": "首页",
-    "WebsiteRecording": "网站视频录制",
     "Features": "功能特性",
     "FAQ": "常见问题",
     "About": "关于我们",
@@ -11,9 +10,6 @@
     "Product": "产品",
     "Resources": "资源",
     "Company": "公司",
-    "WebsiteScreenshots": "网站截图",
-    "FullPageScreenshots": "整页截图",
-    "WebsiteVideoRecording": "网站视频录制",
     "Features": "功能特性",
     "FAQ": "常见问题",
     "About": "关于我们",
@@ -29,116 +25,43 @@
     "Terms of Service": "服务条款"
   },
   "HomePage": {
-    "title": "在线网站截图工具",
-    "subtitle": "截取网站全屏或仅视口。免费使用，无需登录。"
+    "title": "批量调整图片大小在线工具",
+    "subtitle": "无限免费的图片调整工具，支持单张或批量处理。在浏览器中瞬间调整、压缩和优化图片。无需注册，无需上传 - 100% 安全私密。"
   },
   "NotFoundPage": {
     "title": "页面未找到",
     "description": "您正在查找的页面不存在。它可能已被移动、删除，或者您输入的网址有误。",
     "backToHome": "返回首页"
   },
-  "ScreenshotTool": {
-    "urlLabel": "网站URL",
-    "urlPlaceholder": "输入网站URL (例如, https://example.com)",
-    "resolution": "分辨率",
-    "selectResolution": "选择屏幕分辨率",
-    "fullSize": "完整尺寸",
-    "fullSizeOn": "整页截图",
-    "fullSizeOff": "仅视口",
-    "blockCookiesGdpr": "屏蔽 Cookie 和 GDPR 横幅",
-    "blockCookiesGdprOn": "渲染干净的截图，屏蔽弹出窗口、Cookie和GDPR横幅",
-    "blockCookiesGdprOff": "按原样截图",
-    "blockAds": "屏蔽广告",
-    "blockAdsOn": "广告已屏蔽，截图更干净",
-    "blockAdsOff": "不屏蔽广告",
-    "captureDelay": "捕获延迟",
-    "captureDelayDescription": "在截图前等待几秒钟。",
-    "format": "输出格式",
-    "outputSettings": "输出设置",
-    "optimizationOptions": "优化选项",
-    "readyToCapture": "准备捕获",
-    "captureDescription": "配置您的设置，然后点击以进行截图",
-    "takeSnapshot": "开始截图",
-    "taking": "正在截图中...",
-    "processing": "正在处理截图...",
-    "verifyingCaptcha": "正在进行安全验证...",
-    "captchaRequired": "需要安全验证",
-    "captchaFailed": "安全验证失败。请重试。",
-    "captchaExpired": "安全验证已过期。请重新验证。",
-    "result": "截图结果",
-    "download": "下载",
-    "pdfGenerated": "PDF 文件生成成功",
-    "downloadSuccess": "截图下载成功！",
-    "retry": "重试",
-    "errorTitle": "错误",
-    "errors": {
-      "unexpected": "发生意外错误。请重试。",
-      "timeout": "网站加载时间过长。请重试或检查URL是否可访问。",
-      "dnsResolution": "无法访问该网站。请检查URL并重试。",
-      "connectionRefused": "网站拒绝连接。请验证URL是否正确。",
-      "sslCertificate": "SSL证书错误。该网站可能存在安全问题。",
-      "accessDenied": "网站拒绝访问。该站点可能阻止自动访问。",
-      "pageNotFound": "页面未找到。请检查URL是否正确。",
-      "serverError": "网站服务器出现问题。请稍后重试。"
-    }
-  },
-  "Features": {
-    "title": "为什么选择我们的截图服务？",
-    "subtitle": "强大功能，旨在轻松精确地捕获完美的网站截图。",
-    "fullPage": {
-      "title": "整页截图",
-      "description": "捕获长达20,000像素的完整网页，而不仅仅是可见视口。非常适合长篇文章、登录页面和社交媒体内容。"
-    },
-    "instant": {
-      "title": "即时与免费",
-      "description": "无需注册。即时获取高质量截图，无水印、无标志、无反向链接。可立即使用。"
-    },
-    "privacy": {
-      "title": "隐私优先",
-      "description": "我们不存储您的截图或网站数据。所有处理都是临时的，数据在完成后立即删除。"
-    },
-    "formats": {
-      "title": "多种格式",
-      "description": "将截图保存为PNG、JPEG或PDF格式。选择最适合您需求和工作流程的格式。"
-    },
-    "devices": {
-      "title": "设备模拟",
-      "description": "使用不同的设备视口（桌面、平板电脑或移动设备）捕获截图。查看您的网站在所有设备上的外观。"
-    },
-    "responsive": {
-      "title": "智能功能",
-      "description": "自动处理Cookie弹出窗口、广告拦截选项和智能内容加载，确保截图干净准确。"
-    }
-  },
   "AboutPage": {
-    "metaTitle": "关于我们 - 免费在线网站截图工具",
-    "metaDescription": "了解我们的网页截图服务。支持多种格式、自定义分辨率、设备模拟和广告拦截，捕获任何网站。免费且易于使用。",
-    "metaKeywords": "网站截图工具, 网页捕获服务, 在线截图生成器, 网站缩略图创建器, 网站快照",
+    "metaTitle": "关于我们 - 免费批量调整图片大小在线工具",
+    "metaDescription": "了解我们的批量图片调整服务。批量调整、压缩和优化图片，支持多种格式和自定义尺寸。100% 免费且私密。",
+    "metaKeywords": "批量图片调整, 批量调整图片大小, 在线图片优化, 照片调整工具, 图片压缩工具",
     "hero": {
-      "title": "关于我们的截图服务",
-      "description": "我们提供专业的网站截图和视频录制工具，帮助开发者、设计师和企业捕获任何网站的高质量图像和视频。我们的服务采用现代技术构建，以确保可靠和准确的截图和视频。",
-      "cta": "试用截图工具",
+      "title": "关于我们的图片调整服务",
+      "description": "我们提供专业的批量图片调整工具，帮助摄影师、设计师、开发者和企业即时调整、压缩和优化图片。我们的服务完全在浏览器中处理 - 100% 安全、私密且永久免费。",
+      "cta": "开始调整图片",
       "learnMore": "了解更多"
     },
     "mission": {
       "title": "我们的使命",
-      "description": "我们的使命是提供最可靠、最用户友好的网站截图服务。我们相信，捕获网站截图应该简单、快速，并且对每个人都可用，无论您是测试响应式设计的开发者、创建作品集的设计师，还是监控在线业务的企业主。",
-      "quote": "让网站截图对每个人、在任何地方都变得简单易用。"
+      "description": "我们的使命是提供最强大而又简单的图片调整工具。我们相信，调整和优化图片应该快速、免费，并且对每个人都可用 - 无论您是为网页准备图片的摄影师、创建缩略图的设计师，还是为社交媒体优化内容的企业主。",
+      "quote": "让专业的图片调整变得简单、快速，并且对每个人、在任何地方都可用。"
     },
     "stats": {
       "title": "深受全球用户信赖",
-      "description": "我们的截图工具被全球成千上万的用户用于各种目的。",
+      "description": "我们的图片调整工具被全球成千上万的用户用于各种目的。",
       "users": {
         "number": "1万+",
         "label": "活跃用户"
       },
       "screenshots": {
         "number": "10万+",
-        "label": "已截图像"
+        "label": "已调整图片"
       },
       "websites": {
         "number": "5万+",
-        "label": "已捕获网站"
+        "label": "批量操作"
       },
       "uptime": {
         "number": "99.9%",
@@ -146,50 +69,49 @@
       }
     },
     "features": {
-      "title": "为什么选择我们的截图工具？",
-      "description": "我们的网站截图服务提供先进的功能和能力，使其成为专业人士和企业的最佳选择。",
+      "title": "为什么选择我们的图片调整工具？",
+      "description": "我们的批量图片调整工具提供先进的功能和能力，使其成为专业人士和企业的最佳选择。",
       "highQuality": {
-        "title": "高质量截图",
-        "description": "捕获像素完美的截图，支持整页截图和适用于任何设备的多种分辨率选项。"
+        "title": "多种调整模式",
+        "description": "按百分比、尺寸、文件大小、宽度、高度或最长边调整。选择完美适合您需求的模式。"
       },
       "multipleFormats": {
         "title": "多种输出格式",
-        "description": "将您的截图导出为PNG、JPEG或PDF格式，以满足您的特定需求和工作流程。"
+        "description": "将图片导出为 JPEG、PNG 或 WebP 格式，可调节质量设置以获得最佳效果。"
       },
       "responsive": {
-        "title": "响应式设计测试",
-        "description": "使用我们预设的移动和桌面分辨率，测试网站在不同设备上的外观。"
+        "title": "智能预设",
+        "description": "为 Instagram、Twitter、Facebook、YouTube 等平台提供快速预设。即时调整任何平台的图片。"
       },
       "fast": {
-        "title": "闪电般的速度",
-        "description": "借助我们由现代技术驱动的优化截图生成引擎，在几秒钟内获取您的截图。"
+        "title": "闪电般快速处理",
+        "description": "在浏览器中即时处理图片。无需上传，无需等待 - 几秒钟内调整数百张图片。"
       },
       "privacy": {
-        "title": "隐私与安全",
-        "description": "您的数据在我们这里是安全的。截图会自动清理，我们不存储任何个人信息。"
+        "title": "100% 私密且安全",
+        "description": "所有处理都在您的浏览器中进行。您的图片永远不会离开您的设备 - 完全保证隐私。"
       },
       "noLimits": {
-        "title": "无需注册",
-        "description": "无需任何注册过程或使用限制，立即开始截图。"
+        "title": "无限制，无需注册",
+        "description": "无限调整图片，无需注册、无水印、无隐藏费用。永久完全免费。"
       }
     },
     "technology": {
       "title": "采用现代技术构建",
-      "description": "我们的截图工具采用尖端网络技术构建，以确保可靠性、速度和准确性。",
+      "description": "我们的图片调整工具使用最先进的网络技术构建，确保极快的性能和完美的质量。",
       "frontend": {
         "title": "现代前端",
-        "description": "使用 Next.js 和 React 构建，提供快速、响应迅速的用户体验，并通过服务器端渲染实现最佳的SEO效果。"
+        "description": "使用 Next.js 和 React 构建，具有服务器端渲染功能，提供快速、响应式的用户体验，以获得最佳 SEO。"
       },
       "backend": {
-        "title": "强大后端",
-        "description": "由 Playwright 驱动，实现精确的浏览器自动化和截图生成，并具备广告拦截和Cookie处理等高级功能。"
+        "title": "客户端处理",
+        "description": "由 Canvas API 驱动，完全在浏览器中进行准确的图片处理，确保速度和隐私。"
       }
     },
     "cta": {
-      "title": "准备好捕获完美的截图了吗？",
-      "description": "加入成千上万信任我们截图工具的用户的行列，满足他们的网站捕获需求。立即开始制作专业截图。",
-      "button": "开始截图",
-      "videoRecorder": "试用视频录制工具"
+      "title": "准备好调整您的图片了吗？",
+      "description": "加入信任我们图片调整工具来满足其照片优化需求的数千名用户。立即开始调整图片 - 快速、免费且私密。",
+      "button": "开始调整图片"
     }
   },
   "CookiePolicyPage": {
@@ -207,56 +129,18 @@
     "metaDescription": "阅读我们的条款和条件，了解使用我们网站截图服务的规则和指南。",
     "metaKeywords": "条款和条件, 服务协议, 使用条款, 网站截图工具, 用户协议"
   },
-  "FAQ": {
-    "title": "常见问题",
-    "subtitle": "关于我们网站截图服务您需要知道的一切。",
-    "fullScreenshot": {
-      "question": "如何截取网站的完整页面？",
-      "answer": "要捕获整页截图，只需输入网站URL，并从分辨率选项中选择“整页”。我们的工具将自动滚动并捕获整个页面长度，包括视口中不可见的内容。此功能与我们的PDF格式结合使用效果最佳，以获得最佳质量。"
-    },
-    "howToUse": {
-      "question": "我该如何截图？",
-      "answer": "只需在输入字段中输入网站URL，选择您偏好的分辨率和格式，然后点击“开始截图”。该过程是即时的，无需注册。"
-    },
-    "formats": {
-      "question": "支持哪些格式？",
-      "answer": "我们支持PNG、JPEG和PDF格式。PNG最适合高质量和透明度，JPEG适合较小文件大小，PDF适合文档式捕获。"
-    },
-    "storage": {
-      "question": "你们会存储我的截图吗？",
-      "answer": "不，我们不提供永久存储。截图是临时生成的，必须立即下载。我们通过不存储任何数据来优先保护您的隐私。"
-    },
-    "privacy": {
-      "question": "我的数据安全吗？",
-      "answer": "绝对安全。我们不存储网站内容、截图或任何个人数据。所有处理都是临时的，数据在每次请求后都会被完全删除。"
-    },
-    "limitations": {
-      "question": "有什么限制吗？",
-      "answer": "我们可以截取任何可公开访问的网站。需要登录、验证码或特殊身份验证的页面无法捕获。该服务最适合标准网页内容。"
-    },
-    "popups": {
-      "question": "你们如何处理Cookie弹窗和广告？",
-      "answer": "我们的服务会自动检测并接受多种语言的Cookie同意弹窗。您还可以启用广告拦截功能，以获得更干净、无广告的截图。"
-    },
-    "slow": {
-      "question": "为什么有些截图需要更长时间？",
-      "answer": "截图时间取决于网站的加载速度、内容复杂性和服务器位置。包含大量图片、脚本或服务器速度较慢的网站可能需要更长的时间来处理。"
-    },
-    "accuracy": {
-      "question": "为什么我的截图看起来和我的浏览器不完全一样？",
-      "answer": "不同的浏览器可能会略有不同地渲染页面。我们使用标准化的渲染引擎。如果您发现显著差异，请尝试增加延迟或联系我们寻求支持。"
-    }
-  },
   "SiteConfig": {
-    "title": "免费在线网站截图和视频录制工具",
-    "description": "免费在线工具，用于捕获网站截图（PNG、JPEG、PDF）和录制滚动视频（MP4、GIF）。支持自定义分辨率和移动视图。无需注册！",
+    "title": "批量调整图片大小在线工具 - 瞬间调整图片大小",
+    "description": "无限免费的图片调整工具，支持单张或批量处理。在浏览器中瞬间调整、压缩和优化图片。无需注册，无需上传 - 100% 安全私密。",
     "keywords": {
-      "0": "在线网站截图",
-      "1": "免费截图工具",
-      "2": "网页捕获",
-      "3": "网站缩略图",
-      "4": "截图生成器",
-      "5": "录制网站滚动视频"
+      "0": "批量图片调整大小在线",
+      "1": "免费批量调整图片",
+      "2": "在线调整图片大小",
+      "3": "免费压缩图片",
+      "4": "图片优化工具",
+      "5": "照片调整大小",
+      "6": "批量调整多张图片",
+      "7": "图片尺寸工具"
     }
   },
   "CookieConsent": {
@@ -314,6 +198,7 @@
   "ResizeTool": {
     "pageTitle": "在线批量调整图片大小",
     "pageDescription": "免费在线工具，一次性批量调整多张图片的大小。快速、安全，完全在您的浏览器中运行——无需上传。",
+    "backButton": "返回",
     "hero": {
       "title": "拖放您的图片到此处",
       "subtitle": "或点击下方浏览",
@@ -428,7 +313,9 @@
       "description": "使用此URL自动应用这些设置。",
       "copy": "复制",
       "copied": "已复制！",
-      "link": "链接"
+      "link": "链接",
+      "urlCopied": "配置URL已复制到剪贴板！",
+      "urlCopyFailed": "复制URL失败"
     },
     "tools": {
       "compress": "压缩图片",
@@ -436,7 +323,7 @@
       "crop": "裁剪图片",
       "cropDesc": "裁剪图片",
       "screenshot": "在线网站截图",
-      "screenshotDesc": "进行截图",
+      "screenshotDesc": "网站截图和录屏",
       "watermark": "图片加水印",
       "watermarkDesc": "给图片加水印"
     },

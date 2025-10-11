@@ -2,7 +2,7 @@ import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { Camera, Monitor, Smartphone, Zap, Shield, Globe, Users, Award, Video } from 'lucide-react'
+import { Image, Monitor, Smartphone, Zap, Shield, Globe, Users, Award, Maximize2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { routing } from '@/i18n/routing'
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
 
   const features = [
     {
-      icon: Camera,
+      icon: Maximize2,
       title: t('features.highQuality.title'),
       description: t('features.highQuality.description'),
     },
@@ -87,7 +87,7 @@ export default function AboutPage() {
       label: t('stats.users.label'),
     },
     {
-      icon: Camera,
+      icon: Image,
       number: t('stats.screenshots.number'),
       label: t('stats.screenshots.label'),
     },
@@ -106,26 +106,20 @@ export default function AboutPage() {
   return (
     <main className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20">
+      <section className="py-20 bg-gradient-to-br from-purple-50 via-purple-50 to-purple-100 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bricolage font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bricolage font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
               {t('hero.title')}
             </h1>
             <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
               {t('hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-emerald-600 hover:bg-emerald-700">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/80">
                 <Link href="/">
-                  <Camera className="h-5 w-5 mr-2" />
+                  <Image className="h-5 w-5 mr-2" />
                   {t('cta.button')}
-                </Link>
-              </Button>
-              <Button asChild variant="outline" size="lg">
-                <Link href="/tools/record-website-video">
-                  <Video className="h-5 w-5 mr-2" />
-                  {t('cta.videoRecorder')}
                 </Link>
               </Button>
             </div>
@@ -137,7 +131,7 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bricolage font-semibold mb-6 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bricolage font-semibold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
               {t('mission.title')}
             </h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
@@ -156,7 +150,7 @@ export default function AboutPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
               {t('stats.title')}
             </h2>
             <p className="text-lg text-muted-foreground">
@@ -166,10 +160,10 @@ export default function AboutPage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-emerald-100 dark:bg-emerald-900/30 rounded-full mb-4">
-                  <stat.icon className="h-8 w-8 text-emerald-600 dark:text-emerald-400" />
+                <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 dark:bg-primary/10 rounded-full mb-4">
+                  <stat.icon className="h-8 w-8 text-primary dark:text-primary" />
                 </div>
-                <div className="text-3xl font-bold text-emerald-600 dark:text-emerald-400 mb-2">
+                <div className="text-3xl font-bold text-primary dark:text-primary mb-2">
                   {stat.number}
                 </div>
                 <div className="text-sm text-muted-foreground">
@@ -185,7 +179,7 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
               {t('features.title')}
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -195,8 +189,8 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow">
-                <div className="inline-flex items-center justify-center w-12 h-12 bg-emerald-100 dark:bg-emerald-900/30 rounded-lg mb-4">
-                  <feature.icon className="h-6 w-6 text-emerald-600 dark:text-emerald-400" />
+                <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
+                  <feature.icon className="h-6 w-6 text-primary dark:text-primary" />
                 </div>
                 <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
                 <p className="text-muted-foreground">{feature.description}</p>
@@ -211,7 +205,7 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+              <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
                 {t('technology.title')}
               </h2>
               <p className="text-lg text-muted-foreground">
@@ -247,7 +241,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-600 to-teal-500 text-white">
+      <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bricolage font-bold mb-6">
             {t('cta.title')}
@@ -255,17 +249,11 @@ export default function AboutPage() {
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             {t('cta.description')}
           </p>
-          <div className="flex justify-center space-x-4">
-            <Button asChild size="lg" variant="secondary" className="bg-white text-emerald-600 hover:bg-gray-100">
+          <div className="flex justify-center">
+            <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100">
               <Link href="/">
-                <Camera className="h-5 w-5 mr-2" />
+                <Image className="h-5 w-5 mr-2" />
                 {t('cta.button')}
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="secondary" className="bg-white text-emerald-600 hover:bg-gray-100 ml-4">
-              <Link href="/tools/record-website-video">
-                <Video className="h-5 w-5 mr-2" />
-                {t('cta.videoRecorder')}
               </Link>
             </Button>
           </div>

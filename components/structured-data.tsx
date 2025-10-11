@@ -16,71 +16,71 @@ export default function StructuredData({ data }: StructuredDataProps) {
 
 import { getTranslations } from 'next-intl/server'
 
-interface FAQStructuredDataProps {
-  locale: string
-}
+// interface FAQStructuredDataProps {
+//   locale: string
+// }
 
-export async function FAQStructuredData({ locale }: FAQStructuredDataProps) {
-  const t = await getTranslations({ locale, namespace: 'FAQ' })
+// export async function FAQStructuredData({ locale }: FAQStructuredDataProps) {
+//   const t = await getTranslations({ locale, namespace: 'FAQ' })
   
-  const faqData = [
-    {
-      question: t('howToUse.question'),
-      answer: t('howToUse.answer')
-    },
-    {
-      question: t('formats.question'),
-      answer: t('formats.answer')
-    },
-    {
-      question: t('storage.question'),
-      answer: t('storage.answer')
-    },
-    {
-      question: t('privacy.question'),
-      answer: t('privacy.answer')
-    },
-    {
-      question: t('limitations.question'),
-      answer: t('limitations.answer')
-    },
-    {
-      question: t('popups.question'),
-      answer: t('popups.answer')
-    },
-    {
-      question: t('slow.question'),
-      answer: t('slow.answer')
-    },
-    {
-      question: t('accuracy.question'),
-      answer: t('accuracy.answer')
-    }
-  ]
+//   const faqData = [
+//     {
+//       question: t('faq1.question'),
+//       answer: t('faq1.answer')
+//     },
+//     {
+//       question: t('faq2.question'),
+//       answer: t('faq2.answer')
+//     },
+//     {
+//       question: t('faq3.question'),
+//       answer: t('faq3.answer')
+//     },
+//     {
+//       question: t('faq4.question'),
+//       answer: t('faq4.answer')
+//     },
+//     {
+//       question: t('faq5.question'),
+//       answer: t('faq5.answer')
+//     },
+//     {
+//       question: t('faq6.question'),
+//       answer: t('faq6.answer')
+//     },
+//     {
+//       question: t('faq7.question'),
+//       answer: t('faq7.answer')
+//     },
+//     {
+//       question: t('faq8.question'),
+//       answer: t('faq8.answer')
+//     }
+//   ]
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqData.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  }
+//   const structuredData = {
+//     "@context": "https://schema.org",
+//     "@type": "FAQPage",
+//     "mainEntity": faqData.map(faq => ({
+//       "@type": "Question",
+//       "name": faq.question,
+//       "acceptedAnswer": {
+//         "@type": "Answer",
+//         "text": faq.answer
+//       }
+//     }))
+//   }
 
-  return (
-    <Script
-      id="faq-structured-data"
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify(structuredData)
-      }}
-    />
-  )
-}
+//   return (
+//     <Script
+//       id="faq-structured-data"
+//       type="application/ld+json"
+//       dangerouslySetInnerHTML={{
+//         __html: JSON.stringify(structuredData)
+//       }}
+//     />
+//   )
+// }
 
 interface WebsiteStructuredDataProps {
   locale: string
@@ -92,9 +92,9 @@ export async function WebsiteStructuredData({ locale }: WebsiteStructuredDataPro
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "WebsiteScreenshot",
+    "name": "Bulk Resize Images",
     "description": t('subtitle'),
-    "url": process.env.NEXT_PUBLIC_APP_URL || "https://websitescreenshot.online",
+    "url": process.env.NEXT_PUBLIC_APP_URL || "https://bulkresizeimages.online",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web Browser",
     "offers": {
@@ -103,12 +103,15 @@ export async function WebsiteStructuredData({ locale }: WebsiteStructuredDataPro
       "priceCurrency": "USD"
     },
     "featureList": [
-      "Full page screenshots",
-      "Multiple output formats (PNG, JPEG, PDF)",
-      "Device simulation",
-      "Ad blocking",
-      "Cookie popup handling",
-      "No registration required"
+      "No registration required",
+      "bulk image resizer online",
+      "free batch image resize",
+      "resize images online",
+      "compress images free",
+      "image optimizer",
+      "photo resizer",
+      "resize multiple images",
+      "image dimensions tool"
     ],
     "browserRequirements": "Requires JavaScript enabled"
   }

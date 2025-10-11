@@ -10,10 +10,8 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: [
           '/api/',
-          '/screenshots/',
           '/_next/',
           '/.well-known/',
-          '/admin/',
           '/private/',
         ],
         crawlDelay: 1, // 1 second delay to be respectful
@@ -21,22 +19,18 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: 'GPTBot', // OpenAI's bot
         allow: '/',
-        disallow: ['/screenshots/', '/api/'], // Only block sensitive paths
       },
       {
         userAgent: 'ChatGPT-User', // ChatGPT browsing
         allow: '/',
-        disallow: ['/screenshots/', '/api/'],
       },
       {
         userAgent: 'Claude-Web', // Anthropic's Claude
         allow: '/',
-        disallow: ['/screenshots/', '/api/'],
       },
       {
         userAgent: 'PerplexityBot', // Perplexity AI
         allow: '/',
-        disallow: ['/screenshots/', '/api/'],
       },
     ],
     sitemap: `${baseUrl}/sitemap.xml`,

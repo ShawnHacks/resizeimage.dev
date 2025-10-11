@@ -95,7 +95,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
   const [percentage, setPercentage] = useState(50);
   const [targetFileSize, setTargetFileSize] = useState(100);
   const [format, setFormat] = useState<ImageFormat>('jpeg');
-  const [quality, setQuality] = useState(68);
+  const [quality, setQuality] = useState(80);
   const [width, setWidth] = useState<number | undefined>(undefined);
   const [height, setHeight] = useState<number | undefined>(undefined);
   const [lockAspectRatio, setLockAspectRatio] = useState(true);
@@ -193,10 +193,33 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
   };
 
   const getCurrentUrl = () => {
-    if (typeof window !== 'undefined') {
-      return window.location.href;
+    if (typeof window === 'undefined') {
+      return '';
     }
-    return '';
+    
+    const baseUrl = `${window.location.origin}${window.location.pathname}`;
+    const params = new URLSearchParams();
+    
+    params.set('mode', mode);
+    params.set('format', format);
+    params.set('quality', quality.toString());
+    
+    if (mode === 'percentage') {
+      params.set('percentage', percentage.toString());
+    } else if (mode === 'fileSize') {
+      params.set('fileSize', targetFileSize.toString());
+    } else if (mode === 'dimensions') {
+      if (width) params.set('width', width.toString());
+      if (height) params.set('height', height.toString());
+      params.set('lockRatio', lockAspectRatio.toString());
+      params.set('padding', usePadding.toString());
+    } else if (mode === 'width' || mode === 'height' || mode === 'longestSide') {
+      if (targetValue) params.set('target', targetValue.toString());
+    }
+    
+    params.set('bgColor', backgroundColor.replace('#', ''));
+    
+    return `${baseUrl}?${params.toString()}`;
   };
 
   const copyConfigUrl = async () => {

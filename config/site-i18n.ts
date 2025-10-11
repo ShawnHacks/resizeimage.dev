@@ -9,8 +9,8 @@ const siteUrl = env.NEXT_PUBLIC_APP_URL
 const domainName = new URL(siteUrl).hostname.replace(/^www\./, "")
 
 // Base site configuration (non-localized parts)
-const baseSiteConfig = {
-  name: "My Next Site",
+export const baseSiteConfig = {
+  name: "BulkResizeImages",
   companyName: "Crownbyte LTD",
   domainName: domainName,
   url: siteUrl,
@@ -19,7 +19,7 @@ const baseSiteConfig = {
   links: {
     twitter: "https://x.com/intent/user?&region=follow&screen_name=ShawnHacks",
   },
-  mailSupport: "support@my-next-site.com",
+  mailSupport: "support@nestsaas.com",
 }
 
 /**
@@ -137,13 +137,17 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
   {
     titleKey: "Footer.Product",
     links: [
+      // {
+      //   labelKey: "Footer.Features",
+      //   href: "/#features",
+      // },
+      // {
+      //   labelKey: "Footer.FAQ",
+      //   href: "/#faq",
+      // },
       {
-        labelKey: "Footer.Features",
-        href: "/#features",
-      },
-      {
-        labelKey: "Footer.FAQ",
-        href: "/#faq",
+        labelKey: "Footer.About",
+        href: "/about",
       },
       {
         labelKey: "Footer.SiteMap",
@@ -196,10 +200,6 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
   {
     titleKey: "Footer.Company",
     links: [
-      {
-        labelKey: "Footer.About",
-        href: "/about",
-      },
       // {
       //   labelKey: "Footer.Documentation",
       //   href: "/docs",

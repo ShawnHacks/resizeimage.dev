@@ -28,22 +28,6 @@ export function ToolsGrid() {
 
   const tools: Tool[] = [
     {
-      icon: Minimize2,
-      name: t('compress'),
-      description: t('compressDesc'),
-      href: '/tools/compress-image',
-      iconBg: 'bg-gradient-to-br from-yellow-400 to-yellow-600',
-      iconColor: 'text-gray-900',
-    },
-    {
-      icon: Crop,
-      name: t('crop'),
-      description: t('cropDesc'),
-      href: '/tools/crop-image',
-      iconBg: 'bg-white border-2 border-dashed border-blue-500',
-      iconColor: 'text-blue-500',
-    },
-    {
       icon: Camera,
       name: t('screenshot'),
       description: t('screenshotDesc'),
@@ -52,10 +36,26 @@ export function ToolsGrid() {
       iconColor: 'text-white',
     },
     {
+      icon: Minimize2,
+      name: t('compress'),
+      description: t('compressDesc'),
+      href: '#',
+      iconBg: 'bg-gradient-to-br from-yellow-400 to-yellow-600',
+      iconColor: 'text-gray-900',
+    },
+    {
+      icon: Crop,
+      name: t('crop'),
+      description: t('cropDesc'),
+      href: '#',
+      iconBg: 'bg-white border-2 border-dashed border-blue-500',
+      iconColor: 'text-blue-500',
+    },
+    {
       icon: ImagePlus,
       name: t('watermark'),
       description: t('watermarkDesc'),
-      href: '/tools/watermark',
+      href: '#',
       iconBg: 'bg-gradient-to-br from-blue-500 to-red-500',
       iconColor: 'text-white',
     },
