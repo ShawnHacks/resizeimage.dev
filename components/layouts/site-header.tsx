@@ -1,10 +1,11 @@
 "use client"
 
-import React from "react"
+import React, { useState, useEffect } from "react"
 import Image from "next/image"
 import { Link } from '@/i18n/navigation'
 import logo from "@/public/logo.png"
 import { NavItem } from "@/types"
+import { Download } from "lucide-react"
 // import { ChevronDown, Sprout } from "lucide-react"
 // import { useSession } from "next-auth/react"
 
@@ -20,8 +21,8 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
 import { ModeToggle } from "./mode-toggle"
+import { Button } from "@/components/ui/button"
 
-// import { Button } from "@/components/ui/button"
 // import { Skeleton } from "@/components/ui/skeleton"
 // import { UserAccountNav } from "@/components/layouts/user-account-nav"
 
@@ -42,6 +43,49 @@ export function SiteHeader({
   // const { data: session, status } = useSession()
 
   const siteConfig = useLocalizedSiteConfig()
+
+  // PWA Install
+  const [deferredPrompt, setDeferredPrompt] = useState<any>(null)
+  const [isInstallable, setIsInstallable] = useState(false)
+
+  useEffect(() => {
+    const handler = (e: Event) => {
+      console.log('PWA: beforeinstallprompt event fired')
+      e.preventDefault()
+      setDeferredPrompt(e)
+      setIsInstallable(true)
+    }
+
+    window.addEventListener('beforeinstallprompt', handler)
+
+    // 检查是否已经安装
+    if (window.matchMedia('(display-mode: standalone)').matches) {
+      console.log('PWA: App already installed')
+    } else {
+      console.log('PWA: Waiting for install prompt...')
+    }
+
+    return () => {
+      window.removeEventListener('beforeinstallprompt', handler)
+    }
+  }, [])
+
+  const handleInstallClick = async () => {
+    if (!deferredPrompt) {
+      console.log('PWA: No install prompt available')
+      return
+    }
+
+    console.log('PWA: Showing install prompt')
+    deferredPrompt.prompt()
+    const { outcome } = await deferredPrompt.userChoice
+
+    console.log('PWA: Install outcome:', outcome)
+    if (outcome === 'accepted') {
+      setIsInstallable(false)
+      setDeferredPrompt(null)
+    }
+  }
 
   return (
     <header
@@ -82,9 +126,20 @@ export function SiteHeader({
           </NavigationMenuList>
         </NavigationMenu>
 
-        <div className="items-center space-x-4 hidden md:flex">
-          {/* <div className="flex items-center gap-1.5 rounded-full bg-green-500/10 font-medium text-green-600 dark:text-green-400 px-3 py-1.5 text-sm cursor-pointer transition-all hover:bg-green-500/20 animate-in fade-in-0 zoom-in-95 duration-300">Test1</div>
-          <div className="flex items-center gap-1.5 rounded-full font-medium bg-amber-500/10 text-amber-600 dark:text-amber-400 px-3 py-1.5 text-sm cursor-pointer transition-all hover:bg-amber-500/20 animate-in fade-in-0 zoom-in-95 duration-300">Test2</div> */}
+        <div className="items-center space-x-2 hidden md:flex">
+          {/* PWA Install Button */}
+          {isInstallable && (
+            <Button
+              variant="default"
+              size="sm"
+              onClick={handleInstallClick}
+              className="gap-2 animate-in fade-in-50 slide-in-from-top-2 duration-300"
+            >
+              <Download className="h-4 w-4" />
+              <span>Install App</span>
+            </Button>
+          )}
+
           <LanguageSwitcher />
 
           <ModeToggle />

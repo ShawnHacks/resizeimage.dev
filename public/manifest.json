@@ -1,0 +1,39 @@
+{
+  "name": "BulkresizeImage - Resize Images Online",
+  "short_name": "BulkresizeImage",
+  "description": "Resize images instantly in your browser. 100% private, no upload required.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#007AFF",
+  "orientation": "any",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["photo", "productivity", "utilities"],
+  "shortcuts": [
+    {
+      "name": "Resize Images",
+      "short_name": "Resize",
+      "description": "Start resizing images",
+      "url": "/",
+      "icons": [
+        {
+          "src": "/icon-192.png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ]
+}

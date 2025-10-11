@@ -9,16 +9,17 @@ import {NextIntlClientProvider, hasLocale, Locale} from 'next-intl';
 import {setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
-import { SiteLayout } from '@/components/layouts/site-layout';
 // import { getTranslations } from 'next-intl/server';
 import { getLocalizedSiteConfig } from '@/config/site-i18n'
 // import { CookieConsent } from "@/components/cookie-consent";
 
 import { GoogleAnalytics } from "@/components/analytics/google-analytics"
 import { MicrosoftClarityAnalytics } from "@/components/analytics/microsoft-clarity"
+import { PWARegister } from "@/components/pwa-register"
 // import { GoogleAdsense } from "@/components/ads/google-adsense"
 
 import "@/app/globals.css";
+import { SiteLayout } from "@/components/layouts/site-layout";
 
 type Props = {
   children: ReactNode;
@@ -26,7 +27,10 @@ type Props = {
 };
 
 export const viewport: Viewport = {
-  themeColor: "#ffffff",
+  themeColor: "#007AFF",
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
 }
 
 export async function generateMetadata(props: Omit<Props, 'children'>) {
@@ -85,7 +89,12 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
       shortcut: `${siteConfig.url}/icon-192.png`,
       apple: `${siteConfig.url}/apple-touch-icon.png`,
     },
-    // manifest: '/site.webmanifest',
+    manifest: '/manifest.json',
+    appleWebApp: {
+      capable: true,
+      statusBarStyle: 'default',
+      title: 'BulkresizeImage',
+    },
   }
 }
 
@@ -116,6 +125,7 @@ export default async function RootLayout({
       <body className={`${fontVariables} antialiased`}>
         <Providers>
           <NextIntlClientProvider>
+            <PWARegister />
             <SiteLayout locale={locale}>{children}</SiteLayout>
             {/* <CookieConsent /> */}
             <Toaster richColors />
