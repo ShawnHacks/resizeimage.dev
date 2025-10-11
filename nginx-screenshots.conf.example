@@ -1,0 +1,37 @@
+# Nginx configuration for serving screenshot and video files
+# Add this to your main nginx server block
+
+# Serve screenshot files from custom directory
+location /screenshots/ {
+    # Replace /var/www/screenshots with your actual SCREENSHOTS_DIR path
+    alias /var/www/screenshots/;
+    
+    # Security headers
+    add_header X-Robots-Tag "noindex, nofollow, noarchive, nosnippet" always;
+    add_header Cache-Control "public, max-age=86400" always; # Cache for 24 hours
+    
+    # File access settings
+    expires 24h;
+    access_log off; # Disable access logging for screenshots
+    
+    # Only allow specific file types
+    location ~* \.(png|jpg|jpeg|pdf)$ {
+        try_files $uri =404;
+    }
+    
+    # Deny access to any other files
+    location ~ /\. {
+        deny all;
+    }
+}
+
+# Example environment variables for production:
+# SCREENSHOTS_DIR=/var/www/screenshots
+# 
+# Make sure to:
+# 1. Create the directories: 
+#    sudo mkdir -p /var/www/screenshots
+# 2. Set proper permissions: 
+#    sudo chown www-data:www-data /var/www/screenshots
+# 3. Set directory permissions: 
+#    sudo chmod 755 /var/www/screenshots

@@ -1,0 +1,314 @@
+{
+  "Header": {
+    "Home": "首页",
+    "WebsiteRecording": "网站录屏",
+    "Features": "功能",
+    "FAQ": "FAQ",
+    "About": "关于我们",
+    "Blog": "博客"
+  },
+  "Footer": {
+    "Product": "产品",
+    "Resources": "资源",
+    "Company": "公司",
+    "WebsiteScreenshots": "网站截图",
+    "FullPageScreenshots": "整页截图",
+    "WebsiteVideoRecording": "网站视频录制",
+    "WebsiteVideo": "网站视频",
+    "Features": "功能",
+    "FAQ": "FAQ",
+    "About": "关于我们",
+    "SiteMap": "网站地图",
+    "Pricing": "价格",
+    "License": "许可证",
+    "Contact": "联系我们",
+    "Roadmap": "路线图",
+    "Documentation": "文档",
+    "Blog": "博客",
+    "Cookie Policy": "Cookie 政策",
+    "Privacy Policy": "隐私政策",
+    "Terms of Service": "服务条款"
+  },
+  "HomePage": {
+    "title": "免费在线网站截图与视频录制工具",
+    "subtitle": "轻松截取网站截图或录制滚动视频。免费使用，无需注册。"
+  },
+  "NotFoundPage": {
+    "title": "页面未找到",
+    "description": "您要查找的页面无法找到。它可能已被移动、删除，或者您输入了错误的网址。",
+    "backToHome": "返回首页"
+  },
+  "ScreenshotTool": {
+    "urlLabel": "网站网址",
+    "urlPlaceholder": "输入网站网址 (例如: https://example.com)",
+    "resolution": "分辨率",
+    "selectResolution": "选择屏幕分辨率",
+    "fullSize": "全尺寸",
+    "fullSizeOn": "整页截图",
+    "fullSizeOff": "仅视口",
+    "blockCookiesGdpr": "自动接受 Cookie",
+    "blockCookiesGdprOn": "渲染干净截图，自动隐藏 Cookie 和 GDPR 通知",
+    "blockCookiesGdprOff": "原始截图",
+    "blockAds": "屏蔽广告",
+    "blockAdsOn": "已屏蔽广告，更干净的截图",
+    "blockAdsOff": "允许广告",
+    "captureDelay": "捕获延迟",
+    "captureDelayDescription": "在截图前等待几秒钟",
+    "format": "输出格式",
+    "outputSettings": "输出设置",
+    "optimizationOptions": "优化选项",
+    "readyToCapture": "准备截图",
+    "captureDescription": "配置您的设置并点击开始截图",
+    "takeSnapshot": "开始截图",
+    "taking": "正在截图...",
+    "processing": "正在处理截图...",
+    "verifyingCaptcha": "正在验证安全检查...",
+    "captchaRequired": "需要安全验证",
+    "captchaFailed": "安全验证失败，请重试。",
+    "captchaExpired": "安全验证已过期，请重新验证。",
+    "result": "截图结果",
+    "download": "下载",
+    "pdfGenerated": "PDF文件生成成功",
+    "downloadSuccess": "截图下载成功！",
+    "retry": "重试",
+    "errors": {
+      "unexpected": "发生了意外错误，请重试。",
+      "timeout": "网站加载超时，请重试或检查网址是否可访问。",
+      "dnsResolution": "无法访问该网站，请检查网址后重试。",
+      "connectionRefused": "网站拒绝连接，请确认网址是否正确。",
+      "sslCertificate": "SSL证书错误，该网站可能存在安全问题。",
+      "accessDenied": "网站拒绝访问，该站点可能阻止自动化访问。",
+      "pageNotFound": "页面未找到，请检查网址是否正确。",
+      "serverError": "网站服务器出现问题，请稍后重试。"
+    }
+  },
+  "Features": {
+    "title": "为什么选择我们的截图服务？",
+    "subtitle": "强大的功能设计，轻松精准地捕捉完美的网站截图。",
+    "fullPage": {
+      "title": "全页截图",
+      "description": "捕捉长达 20,000 像素的完整网页，不仅仅是可见视口。非常适合长文章、落地页和社交媒体内容。"
+    },
+    "instant": {
+      "title": "即时免费",
+      "description": "无需注册。立即获得高质量截图，无水印、无标志、无反向链接。即用即得。"
+    },
+    "privacy": {
+      "title": "隐私优先",
+      "description": "我们不存储您的截图或网站数据。所有处理都是临时的，完成后数据会立即删除。"
+    },
+    "formats": {
+      "title": "多种格式",
+      "description": "支持 PNG、JPEG 或 PDF 格式保存截图。选择最适合您需求和工作流的格式。"
+    },
+    "devices": {
+      "title": "设备模拟",
+      "description": "使用不同设备视口捕捉截图 - 桌面、平板或手机。查看您的网站在所有设备上的显示效果。"
+    },
+    "responsive": {
+      "title": "智能功能",
+      "description": "自动 Cookie 弹窗处理、广告屏蔽选项和智能内容加载，确保干净、准确的截图。"
+    }
+  },
+  "AboutPage": {
+    "metaTitle": "关于我们 - 专业网站截图工具 | 免费在线服务",
+    "metaDescription": "了解我们的专业网站截图服务。捕获任何网站的高质量截图，支持PNG、JPEG、PDF多种格式，支持全尺寸，支持自定义分辨率视口截图，支持设备模拟、广告屏蔽和高级功能。免费且易于使用。",
+    "metaKeywords": "网站截图工具, 关于我们, 网页截图服务, 在线截图生成器, 网站缩略图制作, 专业截图工具",
+    "hero": {
+      "title": "关于我们的截图服务",
+      "description": "我们提供专业、免费的网站截图工具，帮助开发者、设计师和企业捕获任何网站的高质量图像。我们的服务采用现代技术构建，确保快速、可靠和准确的截图。",
+      "cta": "试用截图工具",
+      "learnMore": "了解更多"
+    },
+    "mission": {
+      "title": "我们的使命",
+      "description": "我们的使命是提供最可靠、最用户友好的网站截图服务。我们相信网站截图应该简单、快速，并且对每个人都可访问，无论您是测试响应式设计的开发者、创建作品集的设计师，还是监控在线形象的企业主。",
+      "quote": "让网站截图对每个人、在任何地方都变得简单易用。"
+    },
+    "stats": {
+      "title": "受到全球用户信赖",
+      "description": "我们的截图工具被全球数千名用户用于各种用途。",
+      "users": {
+        "number": "10K+",
+        "label": "活跃用户"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "截图数量"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "网站捕获"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "服务正常运行时间"
+      }
+    },
+    "features": {
+      "title": "为什么选择我们的截图工具？",
+      "description": "我们的网站截图服务提供先进的功能和能力，使其成为专业人士和企业的最佳选择。",
+      "highQuality": {
+        "title": "高质量截图",
+        "description": "捕获像素完美的截图，支持全页面和多种分辨率选项，适用于任何设备。"
+      },
+      "multipleFormats": {
+        "title": "多种输出格式",
+        "description": "以PNG、JPEG或PDF格式导出截图，满足您的特定需求和工作流程。"
+      },
+      "responsive": {
+        "title": "响应式设计测试",
+        "description": "使用我们预设的移动端和桌面端分辨率测试网站在不同设备上的显示效果。"
+      },
+      "fast": {
+        "title": "闪电般快速",
+        "description": "通过我们采用现代技术的优化截图生成引擎，在几秒钟内获得截图。"
+      },
+      "privacy": {
+        "title": "隐私与安全",
+        "description": "您的数据在我们这里是安全的。截图会自动清理，我们不存储任何个人信息。"
+      },
+      "noLimits": {
+        "title": "无需注册",
+        "description": "无需任何注册过程或使用限制，立即开始截图。"
+      }
+    },
+    "technology": {
+      "title": "采用现代技术构建",
+      "description": "我们的截图工具使用前沿的网络技术构建，确保可靠性、速度和准确性。",
+      "frontend": {
+        "title": "现代前端",
+        "description": "使用Next.js和React构建，提供快速、响应式的用户体验，并具有服务器端渲染以优化SEO。"
+      },
+      "backend": {
+        "title": "强大后端",
+        "description": "由Playwright驱动，实现准确的浏览器自动化和截图生成，具有广告屏蔽和Cookie处理等高级功能。"
+      }
+    },
+    "cta": {
+      "title": "准备捕获完美的截图？",
+      "description": "加入数千名信赖我们截图工具满足网站捕获需求的用户。今天就开始拍摄专业截图。",
+      "button": "开始截图",
+      "videoRecorder": "试用视频录制"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Cookie 政策 - 在线网站截图工具 | 我们如何使用 Cookie",
+    "metaDescription": "了解我们的免费在线网站截图服务如何使用 Cookie 来改善您的体验。了解 Cookie 类型、管理选项和您的隐私权利。",
+    "metaKeywords": "cookie 政策, 隐私, cookies, 网站截图工具, 数据保护, 用户隐私"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "隐私政策 - 在线网站截图工具 | 您的数据保护",
+    "metaDescription": "阅读我们的隐私政策，了解我们在您使用免费在线网站截图服务时如何收集、使用和保护您的个人信息。",
+    "metaKeywords": "隐私政策, 数据保护, 个人信息, 网站截图工具, 用户隐私, 数据安全"
+  },
+  "TermsPage": {
+    "metaTitle": "条款与条件 - 在线网站截图工具 | 服务协议",
+    "metaDescription": "阅读我们的服务条款与条件，了解使用我们免费在线网站截图服务的规则和指导原则。",
+    "metaKeywords": "条款与条件, 服务协议, 使用条款, 网站截图工具, 用户协议, 法律条款"
+  },
+  "FAQ": {
+    "title": "常见问题",
+    "subtitle": "关于我们免费在线网站截图服务的一切信息。",
+    "fullScreenshot": {
+      "question": "如何截取整个网页的长截图？",
+      "answer": "要截取整个网页的长截图，只需输入网站URL，然后从分辨率选项中选择'完整页面'。我们的工具会自动滚动并捕获整个页面的长度，包括视口外不可见的内容。此功能与PDF格式配合使用效果最佳，可获得最佳质量。"
+    },
+    "howToUse": {
+      "question": "如何进行截图？",
+      "answer": "只需在输入框中输入网站 URL，选择您喜欢的分辨率和格式，然后点击'开始截图'。过程是即时的，无需注册。"
+    },
+    "formats": {
+      "question": "支持哪些格式？",
+      "answer": "我们支持 PNG、JPEG 和 PDF 格式。PNG 适合高质量和透明度，JPEG 适合更小的文件大小，PDF 适合文档式捕捉。"
+    },
+    "storage": {
+      "question": "你们会存储我的截图吗？",
+      "answer": "不，我们不提供永久存储。截图是临时生成的，必须立即下载。我们优先考虑您的隐私，不存储任何数据。"
+    },
+    "privacy": {
+      "question": "我的数据安全吗？",
+      "answer": "绝对安全。我们不存储网站内容、截图或任何个人数据。所有处理都是临时的，每次请求后数据会完全删除。"
+    },
+    "limitations": {
+      "question": "有什么限制吗？",
+      "answer": "我们可以截图任何公开访问的网站。需要登录、验证码或特殊身份验证的页面无法捕捉。服务在标准网站内容上效果最佳。"
+    },
+    "popups": {
+      "question": "如何处理 Cookie 弹窗和广告？",
+      "answer": "我们的服务会自动检测并接受多语言的 Cookie 同意弹窗。您还可以启用广告屏蔽功能，获得更干净的截图。"
+    },
+    "slow": {
+      "question": "为什么有些截图需要更长时间？",
+      "answer": "截图时间取决于网站的加载速度、内容复杂性和服务器位置。具有大量图像、脚本或慢速服务器的网站可能需要更长的处理时间。"
+    },
+    "accuracy": {
+      "question": "为什么我的截图看起来与浏览器中的不完全一样？",
+      "answer": "不同的浏览器可能会略有不同地渲染页面。我们使用标准化的渲染引擎。如果您注意到显著差异，请尝试添加延迟或联系我们获得支持。"
+    }
+  },
+  "SiteConfig": {
+    "title": "网站截图工具 - 免费的在线网页截图服务",
+    "description": "免费的在线网站截图和视频录制工具。截图支持PNG、JPEG、PDF格式，录像支持MP4、GIF格式。支持自定义分辨率、全尺寸截图和设备模拟。无需注册，立即使用！",
+    "keywords": {
+      "0": "网站截图在线",
+      "1": "免费截图工具",
+      "2": "网页捕获",
+      "3": "网站缩略图",
+      "4": "截图生成器",
+      "5": "记录网站滚动视频"
+    }
+  },
+  "CookieConsent": {
+    "title": "我们使用Cookie",
+    "description": "我们使用Cookie来改善您的体验并分析网站使用情况。您可以自定义偏好设置或接受所有Cookie。",
+    "acceptAll": "接受全部",
+    "necessary": "仅必要",
+    "customize": "自定义",
+    "preferences": "Cookie偏好设置",
+    "necessaryTitle": "必要Cookie",
+    "necessaryDesc": "网站基本功能所必需",
+    "analyticsTitle": "分析Cookie",
+    "analyticsDesc": "帮助我们了解您如何使用我们的网站",
+    "marketingTitle": "营销Cookie",
+    "marketingDesc": "用于个性化内容和广告",
+    "required": "必需",
+    "savePreferences": "保存偏好设置",
+    "cancel": "取消"
+  },
+  "BlogPage": {
+    "title": "博客",
+    "description": "了解网站截图、Web 开发技巧和数字工具。为开发者和设计师准备的专家指南和教程。",
+    "keywords": "网站截图博客, Web开发教程, 数字工具指南, 截图教程, 网页设计技巧",
+    "readMore": "阅读更多",
+    "minRead": "分钟阅读",
+    "noPosts": "暂无博客文章。请稍后再回来查看！",
+    "categories": "分类",
+    "recentPosts": "最近发布",
+    "posts": "篇文章"
+  },
+  "BlogPost": {
+    "backToBlog": "返回博客",
+    "writtenBy": "作者",
+    "published": "发布于",
+    "updated": "更新于",
+    "shareArticle": "分享本文",
+    "relatedPosts": "相关文章",
+    "tags": "标签",
+    "minRead": "分钟阅读",
+    "views": "次浏览",
+    "lastUpdated": "最后更新：",
+    "like": "点赞",
+    "share": "分享",
+    "quickActions": "快捷操作",
+    "copyLink": "复制链接",
+    "socialShare": "社交分享",
+    "aboutAuthor": "关于作者",
+    "relatedArticles": "相关文章",
+    "continueExploring": "继续探索更多相关内容",
+    "toolsComparison": "工具比较",
+    "seoGuide": "SEO 指南",
+    "tutorial": "教程",
+    "blog": "博客"
+  }
+}

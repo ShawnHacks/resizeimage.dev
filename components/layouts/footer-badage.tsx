@@ -1,0 +1,97 @@
+
+'use client'
+import { usePathname } from 'next/navigation'
+import Image from 'next/image'
+
+export default function FooterBadges({ locale }: { locale: string }) {
+  
+  // x-invoke-path gives the path without the locale, e.g., /tools/website-screenshots
+  const pathname = usePathname()
+
+  return (pathname === '/' || pathname === `/${locale}`) ? (
+      <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
+        <a href="https://twelve.tools" target="_blank" rel="noopener" className="hidden dark:block">
+          <Image src="/partners/twelve.tools.dark.svg" alt="Featured on Twelve Tools" width={120} height={32} className="h-8 w-auto max-w-40" />
+        </a>
+        <a href="https://twelve.tools" target="_blank" rel="noopener" className="block dark:hidden">
+          <Image src="/partners/twelve.tools.light.svg" alt="Featured on Twelve Tools" width={120} height={32} className="h-8 w-auto max-w-40" />
+        </a>
+
+        {/* <a href="https://bestdirectories.org" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://bestdirectories.org/feature-badge-dark.svg" alt="Featured on Best Directories" className="h-8" />
+        </a>
+        <a href="https://bestdirectories.org" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://bestdirectories.org/feature-badge.svg" alt="Featured on Best Directories" className="h-8" />
+        </a> */}
+
+        {/* <a href="https://aiwith.me/tools/open-launch-com/?utm_source=badge-featured&amp;utm_medium=badge&amp;ref=embed" target="_blank" rel="noopener" className="hidden dark:block" title="Open Launch - Featured on AI With Me">
+          <img src="https://aiwith.me/ai_with_me_dark_badge.svg" alt="Open Launch - Featured on AI With Me" className="h-8" />
+        </a>
+        <a href="https://aiwith.me/tools/open-launch-com/?utm_source=badge-featured&amp;utm_medium=badge&amp;ref=embed" target="_blank" rel="noopener" className="block dark:hidden" title="Open Launch - Featured on AI With Me">
+          <img src="https://aiwith.me/ai_with_me_light_badge.svg" alt="Open Launch - Featured on AI With Me" className="h-8" />
+        </a> */}
+        
+        <a href="https://startupfa.me/s/websitescreenshot?utm_source=websitescreenshot.online" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://startupfa.me/badges/featured/dark.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        </a>
+        <a href="https://startupfa.me/s/websitescreenshot?utm_source=websitescreenshot.online" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://startupfa.me/badges/featured/light.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        </a>
+
+        <a href="https://www.producthunt.com/products/websitescreenshot?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=dark" alt="WebsiteScreenshot - Free Online Website Screenshot Tool | Product Hunt" className="h-8" />
+        </a>
+        <a href="https://www.producthunt.com/products/websitescreenshot?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=light" alt="WebsiteScreenshot - Free Online Website Screenshot Tool | Product Hunt" className="h-8" />
+        </a>
+        {/* <a href="https://magicbox.tools" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://magicbox.tools/badge-dark.svg" alt="Featured on MagicBox.tools" className="h-8" />
+        </a>
+        <a href="https://magicbox.tools" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://magicbox.tools/badge.svg" alt="Featured on MagicBox.tools" className="h-8" />
+        </a> */}
+
+        <a href="https://fazier.com/launches/websitescreenshot.online" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" className="h-8 w-auto max-w-40" alt="Fazier badge" />
+        </a>
+        <a href="https://fazier.com/launches/websitescreenshot.online" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" className="h-8 w-auto max-w-40" alt="Fazier badge" />
+        </a>
+
+        <a href="https://similarlabs.com/?ref=embed" target="_blank" className="block dark:hidden">
+          <img src="https://similarlabs.com/similarlabs-embed-badge-light.svg" alt="SimilarLabs Embed Badge" className="h-8 w-auto max-w-40" />
+        </a>
+        <a href="https://similarlabs.com/?ref=embed" target="_blank" className="hidden dark:block">
+          <img src="https://similarlabs.com/similarlabs-embed-badge-dark.svg" alt="SimilarLabs Embed Badge" className="h-8 w-auto max-w-40" />
+        </a>
+
+        <a title="ai tools code.market" href="https://code.market?code.market=verified" className="block dark:hidden">
+          <img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" className="h-8 w-auto max-w-40" />
+        </a>
+        <a title="ai tools code.market" href="https://code.market?code.market=verified" className="hidden dark:block">
+          <img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-dark.svg" className="h-8 w-auto max-w-40" />
+        </a>
+
+        <a href="https://findly.tools/website-screenshot-online?utm_source=website-screenshot-online" target="_blank" className="block dark:hidden">
+          <img src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
+        </a>
+        <a href="https://findly.tools/website-screenshot-online?utm_source=website-screenshot-online" target="_blank" className="hidden dark:block">
+          <img src="https://findly.tools/badges/findly-tools-badge-dark.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
+        </a>
+
+        <a href="https://dofollow.tools" target="_blank" className="hidden dark:block"><img src="https://dofollow.tools/badge/badge_dark.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
+        <a href="https://dofollow.tools" target="_blank" className="block dark:hidden"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
+
+        <a href="https://turbo0.com/item/websitescreenshot" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+          <img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
+        </a>
+        <a href="https://turbo0.com/item/websitescreenshot" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+          <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
+        </a>
+
+        <a target="_blank" href="https://www.goodfirms.co/screen-recording-software/">
+          <img src="https://assets.goodfirms.co/badges/color-badge/screen-recording-software.svg" title="Top Screen Recording Software" alt="Top Screen Recording Software" className="h-8 w-auto max-w-40" />
+        </a>
+      </div>
+    ) : null
+  }

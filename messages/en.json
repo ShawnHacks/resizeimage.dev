@@ -1,0 +1,314 @@
+{
+  "Header": {
+    "Home": "Home",
+    "WebsiteRecording": "Website Video Recording",
+    "Features": "Features",
+    "FAQ": "FAQ",
+    "About": "About",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Product",
+    "Resources": "Resources",
+    "Company": "Company",
+    "WebsiteScreenshots": "Website Screenshots",
+    "FullPageScreenshots": "Full Page Screenshots",
+    "WebsiteVideoRecording": "Website Video Recording",
+    "Features": "Features",
+    "FAQ": "FAQ",
+    "About": "About",
+    "SiteMap": "SiteMap",
+    "Pricing": "Pricing",
+    "License": "License",
+    "Contact": "Contact",
+    "Roadmap": "Roadmap",
+    "Documentation": "Documentation",
+    "Blog": "Blog",
+    "Cookie Policy": "Cookie Policy",
+    "Privacy Policy": "Privacy Policy",
+    "Terms of Service": "Terms of Service"
+  },
+  "HomePage": {
+    "title": "Website Screenshot Online",
+    "subtitle": "Take screenshots of websites fullscreen or viewport only. Free to start, no login required."
+  },
+  "NotFoundPage": {
+    "title": "Page not found",
+    "description": "The page you are looking for could not be found. It might have been moved, deleted, or you entered the wrong URL.",
+    "backToHome": "Back to Homepage"
+  },
+  "ScreenshotTool": {
+    "urlLabel": "Website URL",
+    "urlPlaceholder": "Enter website URL (e.g., https://example.com)",
+    "resolution": "Resolution",
+    "selectResolution": "Select screen resolution",
+    "fullSize": "Full Size",
+    "fullSizeOn": "Full page",
+    "fullSizeOff": "Viewport only",
+    "blockCookiesGdpr": "Block Cookies & GDPR Banners",
+    "blockCookiesGdprOn": "Render clean screenshots, block pop-ups, cookie and GDPR banners",
+    "blockCookiesGdprOff": "As-is screenshots",
+    "blockAds": "Block Ads",
+    "blockAdsOn": "Ads blocked, cleaner screenshots",
+    "blockAdsOff": "Ads are not blocked.",
+    "captureDelay": "Capture Delay",
+    "captureDelayDescription": "Wait for a few seconds before taking the screenshot.",
+    "format": "Output Format",
+    "outputSettings": "Output Settings",
+    "optimizationOptions": "Optimization Options",
+    "readyToCapture": "Ready to Capture",
+    "captureDescription": "Configure your settings and click to take a screenshot",
+    "takeSnapshot": "TAKE SNAPSHOT",
+    "taking": "Taking Screenshot...",
+    "processing": "Processing screenshot...",
+    "verifyingCaptcha": "Verifying security check...",
+    "captchaRequired": "Security verification required",
+    "captchaFailed": "Security verification failed. Please try again.",
+    "captchaExpired": "Security verification expired. Please verify again.",
+    "result": "Screenshot Result",
+    "download": "Download",
+    "pdfGenerated": "PDF file generated successfully",
+    "downloadSuccess": "Screenshot downloaded successfully!",
+    "retry": "Retry",
+    "errorTitle": "Error",
+    "errors": {
+      "unexpected": "An unexpected error occurred. Please try again.",
+      "timeout": "The website took too long to load. Please try again or check if the URL is accessible.",
+      "dnsResolution": "Unable to reach the website. Please check the URL and try again.",
+      "connectionRefused": "Connection refused by the website. Please verify the URL is correct.",
+      "sslCertificate": "SSL certificate error. The website may have security issues.",
+      "accessDenied": "Access denied by the website. The site may block automated access.",
+      "pageNotFound": "Page not found. Please check if the URL is correct.",
+      "serverError": "The website is experiencing server issues. Please try again later."
+    }
+  },
+  "Features": {
+    "title": "Why Choose Our Screenshot Service?",
+    "subtitle": "Powerful features designed to capture perfect website screenshots with ease and precision.",
+    "fullPage": {
+      "title": "Full Page Screenshots",
+      "description": "Capture complete web pages up to 20,000 pixels long, not just the visible viewport. Perfect for long articles, landing pages, and social media content."
+    },
+    "instant": {
+      "title": "Instant & Free",
+      "description": "No registration required. Get high-quality screenshots instantly without watermarks, logos, or backlinks. Ready to use immediately."
+    },
+    "privacy": {
+      "title": "Privacy First",
+      "description": "We don't store your screenshots or website data. All processing is temporary and data is removed immediately after completion."
+    },
+    "formats": {
+      "title": "Multiple Formats",
+      "description": "Save screenshots in PNG, JPEG, or PDF formats. Choose the format that best suits your needs and workflow."
+    },
+    "devices": {
+      "title": "Device Simulation",
+      "description": "Capture screenshots with different device viewports - desktop, tablet, or mobile. See how your site looks across all devices."
+    },
+    "responsive": {
+      "title": "Smart Features",
+      "description": "Automatic cookie popup handling, ad blocking options, and intelligent content loading ensure clean, accurate screenshots."
+    }
+  },
+  "AboutPage": {
+    "metaTitle": "About Us - Free Online Site Screenshot Tool",
+    "metaDescription": "Learn about our web screenshot service. Capture any website with multiple formats, custom resolutions, device simulation, and ad blocking. Free and easy to use.",
+    "metaKeywords": "website screenshot tool, web capture service, online screenshot generator, website thumbnail creator, website snapshot",
+    "hero": {
+      "title": "About Our Screenshot Service",
+      "description": "We provide professional website screenshot and video recording tool that helps developers, designers, and businesses capture high-quality images and videos of any website. Our service is built with modern technology to ensure reliable and accurate screenshots and videos.",
+      "cta": "Try Screenshot Tool",
+      "learnMore": "Learn More"
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Our mission is to provide the most reliable and user-friendly website screenshot service available. We believe that capturing website screenshots should be simple, fast, and accessible to everyone, whether you're a developer testing responsive designs, a designer creating portfolios, or a business owner monitoring your online presence.",
+      "quote": "Making website screenshots simple and accessible for everyone, everywhere."
+    },
+    "stats": {
+      "title": "Trusted by Users Worldwide",
+      "description": "Our screenshot tool is used by thousands of users globally for various purposes.",
+      "users": {
+        "number": "10K+",
+        "label": "Active Users"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "Screenshots Taken"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "Websites Captured"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "Service Uptime"
+      }
+    },
+    "features": {
+      "title": "Why Choose Our Screenshot Tool?",
+      "description": "Our website screenshot service offers advanced features and capabilities that make it the best choice for professionals and businesses.",
+      "highQuality": {
+        "title": "High-Quality Screenshots",
+        "description": "Capture pixel-perfect screenshots with full page support and multiple resolution options for any device."
+      },
+      "multipleFormats": {
+        "title": "Multiple Output Formats",
+        "description": "Export your screenshots in PNG, JPEG, or PDF formats to suit your specific needs and workflows."
+      },
+      "responsive": {
+        "title": "Responsive Design Testing",
+        "description": "Test how websites look on different devices with our preset mobile and desktop resolutions."
+      },
+      "fast": {
+        "title": "Lightning Fast",
+        "description": "Get your screenshots in seconds with our optimized screenshot generation engine powered by modern technology."
+      },
+      "privacy": {
+        "title": "Privacy & Security",
+        "description": "Your data is secure with us. Screenshots are automatically cleaned up and we don't store any personal information."
+      },
+      "noLimits": {
+        "title": "No Registration Required",
+        "description": "Start taking screenshots immediately without any sign-up process or usage limits."
+      }
+    },
+    "technology": {
+      "title": "Built with Modern Technology",
+      "description": "Our screenshot tool is built using cutting-edge web technologies to ensure reliability, speed, and accuracy.",
+      "frontend": {
+        "title": "Modern Frontend",
+        "description": "Built with Next.js and React for a fast, responsive user experience with server-side rendering for optimal SEO."
+      },
+      "backend": {
+        "title": "Powerful Backend",
+        "description": "Powered by Playwright for accurate browser automation and screenshot generation with advanced features like ad blocking and cookie handling."
+      }
+    },
+    "cta": {
+      "title": "Ready to Capture Perfect Screenshots?",
+      "description": "Join thousands of users who trust our screenshot tool for their website capture needs. Start taking professional screenshots today.",
+      "button": "Start Taking Screenshots",
+      "videoRecorder": "Try Video Recorder"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Cookie Policy - How We Use Cookies",
+    "metaDescription": "Learn about how our website screenshot service uses cookies to improve your experience. Understand cookie types, management options, and your privacy rights.",
+    "metaKeywords": "cookie policy, privacy, cookies, website screenshot tool, data protection, user privacy"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Privacy Policy - Website Screenshot Tool",
+    "metaDescription": "Read our privacy policy to understand how we collect, use, and protect your personal information when using our website screenshot service.",
+    "metaKeywords": "privacy policy, data protection, personal information, website screenshot tool, user privacy"
+  },
+  "TermsPage": {
+    "metaTitle": "Terms & Conditions - Service Agreement",
+    "metaDescription": "Read our terms and conditions to understand the rules and guidelines for using our website screenshot service.",
+    "metaKeywords": "terms and conditions, service agreement, terms of use, website screenshot tool, user agreement"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Everything you need to know about our website screenshot service.",
+    "fullScreenshot": {
+      "question": "How to take a full screenshot of a website?",
+      "answer": "To capture a full-page screenshot, simply enter the website URL and select 'Full Page' from the resolution options. Our tool will automatically scroll and capture the entire page length, including content that's not immediately visible in the viewport. This feature works best with our PDF format for optimal quality."
+    },
+    "howToUse": {
+      "question": "How do I take a screenshot?",
+      "answer": "Simply enter the website URL in the input field, choose your preferred resolution and format, then click 'Take Screenshot'. The process is instant and requires no registration."
+    },
+    "formats": {
+      "question": "What formats are supported?",
+      "answer": "We support PNG, JPEG, and PDF formats. PNG is best for high quality and transparency, JPEG for smaller file sizes, and PDF for document-style captures."
+    },
+    "storage": {
+      "question": "Do you store my screenshots?",
+      "answer": "No, we don't provide permanent storage. Screenshots are generated temporarily and must be downloaded immediately. We prioritize your privacy by not storing any data."
+    },
+    "privacy": {
+      "question": "Is my data safe?",
+      "answer": "Absolutely. We don't store website content, screenshots, or any personal data. All processing is temporary and data is completely removed after each request."
+    },
+    "limitations": {
+      "question": "Are there any limitations?",
+      "answer": "We can screenshot any publicly accessible website. Pages requiring login, captchas, or special authentication cannot be captured. The service works best with standard web content."
+    },
+    "popups": {
+      "question": "How do you handle cookie popups and ads?",
+      "answer": "Our service automatically detects and accepts cookie consent popups in multiple languages. You can also enable ad blocking to get cleaner screenshots without advertisements."
+    },
+    "slow": {
+      "question": "Why do some screenshots take longer?",
+      "answer": "Screenshot time depends on the website's loading speed, content complexity, and server location. Sites with many images, scripts, or slow servers may take longer to process."
+    },
+    "accuracy": {
+      "question": "Why doesn't my screenshot look exactly like my browser?",
+      "answer": "Different browsers may render pages slightly differently. We use a standardized rendering engine. If you notice significant differences, try adding a delay or contact us for support."
+    }
+  },
+  "SiteConfig": {
+    "title": "Free Online Website Screenshot and Video Recording Tool",
+    "description": "Free online tool to capture website screenshots (PNG, JPEG, PDF) and record scrolling videos (MP4, GIF). Custom resolutions & mobile views. No registration!",
+    "keywords": {
+      "0": "website screenshot online",
+      "1": "free screenshot tool",
+      "2": "web page capture",
+      "3": "website thumbnail",
+      "4": "screenshot generator",
+      "5": "record website scrolling videos"
+    }
+  },
+  "CookieConsent": {
+    "title": "We use cookies",
+    "description": "We use cookies to improve your experience and analyze site usage. You can customize your preferences or accept all cookies.",
+    "acceptAll": "Accept All",
+    "necessary": "Necessary Only",
+    "customize": "Customize",
+    "preferences": "Cookie Preferences",
+    "necessaryTitle": "Necessary Cookies",
+    "necessaryDesc": "Required for basic site functionality",
+    "analyticsTitle": "Analytics Cookies",
+    "analyticsDesc": "Help us understand how you use our site",
+    "marketingTitle": "Marketing Cookies",
+    "marketingDesc": "Used for personalized content and ads",
+    "required": "Required",
+    "savePreferences": "Save Preferences",
+    "cancel": "Cancel"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Learn about website screenshots, web development tips, and digital tools. Expert guides and tutorials for developers and designers.",
+    "keywords": "website screenshot blog, web development tutorials, digital tools guide, screenshot tutorials, web design tips",
+    "readMore": "Read More",
+    "minRead": "min read",
+    "noPosts": "No blog posts available yet. Check back soon!",
+    "categories": "Categories",
+    "recentPosts": "Recent Posts",
+    "posts": "posts"
+  },
+  "BlogPost": {
+    "backToBlog": "Back to Blog",
+    "writtenBy": "Written by",
+    "published": "Published",
+    "updated": "Updated",
+    "shareArticle": "Share this article",
+    "relatedPosts": "Related Articles",
+    "tags": "Tags",
+    "minRead": "min read",
+    "views": "views",
+    "lastUpdated": "Last updated:",
+    "like": "Like",
+    "share": "Share",
+    "quickActions": "Quick Actions",
+    "copyLink": "Copy Link",
+    "socialShare": "Social Share",
+    "aboutAuthor": "About Author",
+    "relatedArticles": "Related Articles",
+    "continueExploring": "Continue exploring more related content",
+    "toolsComparison": "Tools Comparison",
+    "seoGuide": "SEO Guide",
+    "tutorial": "Tutorial",
+    "blog": "Blog"
+  }
+}
