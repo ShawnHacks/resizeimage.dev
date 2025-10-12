@@ -1,6 +1,6 @@
 'use client';
 
-// import { useState, useCallback } from 'react';
+import { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 // import { ImagePreview } from '@/components/resize/image-preview';
 // import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
@@ -8,40 +8,40 @@ import { useTranslations } from 'next-intl';
 // import { DownloadButton } from '@/components/resize/download-button';
 // import { HeroSection } from '@/components/resize/hero-section';
 // import { ToolsGrid } from '@/components/resize/tools-grid';
-// import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
-// import type { ImageFile } from '@/types/resize';
-// import { toast } from 'sonner';
-// import { motion } from 'motion/react';
+import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
+import type { ImageFile } from '@/types/resize';
+import { toast } from 'sonner';
+import { motion } from 'motion/react';
 // import { Loader2, ArrowLeft } from 'lucide-react';
 // import { Button } from '@/components/ui/button';
 
 export default function ResizeImagePage() {
   const t = useTranslations('ResizeTool');
-  // const [images, setImages] = useState<ImageFile[]>([]);
-  // const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
-  // const [isProcessing, setIsProcessing] = useState(false);
-  // const [progress, setProgress] = useState({ current: 0, total: 0 });
+  const [images, setImages] = useState<ImageFile[]>([]);
+  const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
+  const [isProcessing, setIsProcessing] = useState(false);
+  const [progress, setProgress] = useState({ current: 0, total: 0 });
 
-  // const handleFilesSelected = useCallback(async (files: File[]) => {
-  //   setProcessedImages([]); // Clear previous results
+  const handleFilesSelected = useCallback(async (files: File[]) => {
+    setProcessedImages([]); // Clear previous results
     
-  //   const imageFiles: ImageFile[] = await Promise.all(
-  //     files.map(async (file) => {
-  //       const preview = URL.createObjectURL(file);
-  //       const dimensions = await getImageDimensions(file);
+    const imageFiles: ImageFile[] = await Promise.all(
+      files.map(async (file) => {
+        const preview = URL.createObjectURL(file);
+        const dimensions = await getImageDimensions(file);
         
-  //       return {
-  //         file,
-  //         preview,
-  //         dimensions,
-  //         fileSize: file.size,
-  //       };
-  //     })
-  //   );
+        return {
+          file,
+          preview,
+          dimensions,
+          fileSize: file.size,
+        };
+      })
+    );
 
-  //   setImages(imageFiles);
-  //   toast.success(t('toast.imagesLoaded', { count: files.length }));
-  // }, []);
+    setImages(imageFiles);
+    toast.success(t('toast.imagesLoaded', { count: files.length }));
+  }, []);
 
   // const handleRemoveImage = useCallback((index: number) => {
   //   setImages((prev) => {
