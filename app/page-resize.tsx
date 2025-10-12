@@ -8,7 +8,7 @@ import { useTranslations } from 'next-intl';
 // import { DownloadButton } from '@/components/resize/download-button';
 // import { HeroSection } from '@/components/resize/hero-section';
 // import { ToolsGrid } from '@/components/resize/tools-grid';
-// import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
+import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
 import type { ImageFile } from '@/types/resize';
 import { toast } from 'sonner';
 import { motion } from 'motion/react';
@@ -18,7 +18,7 @@ import { motion } from 'motion/react';
 export default function ResizeImagePage() {
   const t = useTranslations('ResizeTool');
   const [images, setImages] = useState<ImageFile[]>([]);
-  const [processedImages, setProcessedImages] = useState<any[]>([]);
+  const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
 
@@ -28,12 +28,12 @@ export default function ResizeImagePage() {
     const imageFiles: ImageFile[] = await Promise.all(
       files.map(async (file) => {
         const preview = URL.createObjectURL(file);
-        // const dimensions = await getImageDimensions(file);
+        const dimensions = await getImageDimensions(file);
         
         return {
           file,
           preview,
-          dimensions: { width: 0, height: 0 },
+          dimensions,
           fileSize: file.size,
         };
       })

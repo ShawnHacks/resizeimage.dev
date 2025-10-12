@@ -1,3 +1,4 @@
+'use client';
 /**
  * Image Resize Utilities
  * Supports 6 resize modes: Percentage, File Size, Dimensions, Width, Height, Longest Side
