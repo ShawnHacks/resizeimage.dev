@@ -3,10 +3,8 @@ import {setRequestLocale} from 'next-intl/server';
 import { routing } from '@/i18n/routing'
 import ResizeImagePage from '@/app/page-resize';
 
-export const runtime = "edge";
-
-export const revalidate = 3600
-export const dynamic = 'force-static'
+export const runtime = 'edge'
+// export const revalidate = 3600
 
 export async function generateMetadata({
   params
@@ -15,7 +13,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale = 'en' } = await params
   
-  const urlString = 'https://bulkresizeimage.com'
+  const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
   const title = 'BulkresizeImage - Resize Images Online Free'
   const description = 'Resize multiple images at once right in your browser. No upload needed. 100% free and private. Support percentage, file size, dimensions, width, height modes.'
 
@@ -79,5 +77,6 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
   const {locale} = await params;
   setRequestLocale(locale);
   
-  return <ResizeImagePage />;
+  // return <ResizeImagePage />;
+  return <div>Hello {locale}</div>
 }

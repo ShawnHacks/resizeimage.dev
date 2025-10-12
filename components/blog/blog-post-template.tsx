@@ -1,6 +1,6 @@
 "use client"
 
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { ArrowLeft, Calendar, Clock, User, Tag, Share2, BookOpen, Twitter, Linkedin, Facebook, Copy, Eye, Heart, ChevronRight } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
@@ -290,7 +290,8 @@ export function BlogPostTemplate({ post, relatedPosts, locale }: BlogPostTemplat
             {relatedPosts.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {relatedPosts.map((relatedPost) => (
-                  <Link key={`${relatedPost.slug}-${relatedPost.language}`} href={`/${relatedPost.language === 'en' ? '' : relatedPost.language + '/'}blog/${relatedPost.slug}`}>
+                  // <Link key={relatedPost.slug} href={`/${locale === 'en' ? '' : locale + '/'}blog/${relatedPost.slug}`}>
+                  <Link key={relatedPost.slug} href={`/blog/${relatedPost.slug}`}>
                     <Card className="hover:shadow-lg transition-shadow py-0">
                       <CardContent className="p-6">
                         {relatedPost.featuredImage ? (

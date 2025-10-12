@@ -1,12 +1,15 @@
 import { getTranslations } from 'next-intl/server'
 import { useTranslations } from 'next-intl'
 import { FooterColumn, FooterLink, NavItem, SiteConfig } from "@/types"
-import { env } from "@/env.mjs"
 
-const siteUrl = env.NEXT_PUBLIC_APP_URL
+// Resolve site URL safely for Edge runtime (avoid throwing in new URL)
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
 
-// Extract domain name from siteUrl
-const domainName = new URL(siteUrl).hostname.replace(/^www\./, "")
+// Extract domain name from siteUrl safely
+let domainName = 'bulkresizeimages.online'
+try {
+  domainName = new URL(siteUrl).hostname.replace(/^www\./, "")
+} catch {}
 
 // Base site configuration (non-localized parts)
 export const baseSiteConfig = {

@@ -1,8 +1,8 @@
 import { useTranslations } from 'next-intl'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
-import Link from 'next/link'
-import { Image, Monitor, Smartphone, Zap, Shield, Globe, Users, Award, Maximize2 } from 'lucide-react'
+import { Link } from '@/i18n/navigation'
+import { Image as ImageIcon, Monitor, Smartphone, Zap, Shield, Globe, Users, Award, Maximize2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { routing } from '@/i18n/routing'
 
@@ -10,7 +10,7 @@ type Props = {
   params: Promise<{ locale: string }>
 }
 
-export const runtime = "edge";
+export const runtime = 'edge'
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
@@ -89,7 +89,7 @@ export default function AboutPage() {
       label: t('stats.users.label'),
     },
     {
-      icon: Image,
+      icon: ImageIcon,
       number: t('stats.screenshots.number'),
       label: t('stats.screenshots.label'),
     },
@@ -120,7 +120,7 @@ export default function AboutPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/80">
                 <Link href="/">
-                  <Image className="h-5 w-5 mr-2" />
+                  <ImageIcon className="h-5 w-5 mr-2" />
                   {t('cta.button')}
                 </Link>
               </Button>
@@ -254,7 +254,7 @@ export default function AboutPage() {
           <div className="flex justify-center">
             <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100" aria-label={t('cta.button')}>
               <Link href="/">
-                <Image className="h-5 w-5 mr-2" />
+                <ImageIcon className="h-5 w-5 mr-2" />
                 {t('cta.button')}
               </Link>
             </Button>

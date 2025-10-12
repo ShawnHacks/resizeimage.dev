@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
@@ -113,7 +113,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
                 {posts.map((post) => {
                   const category = categories.find(cat => cat.slug === post.category)
                   return (
-                    <Card key={`${post.slug}-${post.language}`} className="pt-0 flex flex-col hover:shadow-lg transition-shadow">
+                    <Card key={post.slug} className="pt-0 flex flex-col hover:shadow-lg transition-shadow">
                       {post.featuredImage && (
                         <div className="aspect-video overflow-hidden rounded-t-lg">
                           <img
@@ -146,7 +146,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
 
                         <CardTitle className="text-xl mb-2">
                           <Link 
-                            href={`/${post.language === 'en' ? '' : post.language + '/'}blog/${post.slug}`}
+                            href={`/blog/${post.slug}`}
                             className="hover:text-emerald-600 transition-colors"
                           >
                             {post.title}
@@ -163,7 +163,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
                             <span>{post.author}</span>
                           </div>
                           <Button asChild variant="ghost" size="sm">
-                            <Link href={`/${post.language === 'en' ? '' : post.language + '/'}blog/${post.slug}`}>
+                            <Link href={`/blog/${post.slug}`}>
                               {t('readMore')}
                             </Link>
                           </Button>
