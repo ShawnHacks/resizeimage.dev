@@ -60,10 +60,15 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: urlString,
+      canonical: locale === 'en' ? urlString : `${urlString}/${locale}`,
       languages: {
+        ...Object.fromEntries(
+          routing.locales.filter((loc: string) => loc !== locale).map((loc: string) => [
+            loc,
+            loc === 'en' ? urlString : `${urlString}/${loc}`
+          ])
+        ),
         'x-default': urlString,
-        'en': urlString,
       }
     },
     manifest: '/manifest.json',
