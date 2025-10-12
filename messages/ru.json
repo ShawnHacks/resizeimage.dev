@@ -318,15 +318,15 @@
       "urlCopyFailed": "Не удалось скопировать URL-адрес"
     },
     "tools": {
-      "bulkresizeimages": "Массовое изменение размера изображений",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "Массовое изменение размера изображений",
-      "screenshot": "Скриншот веб-сайта онлайн",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "Сделать скриншоты",
-      "compress": "Сжать изображение",
+      "compress": "Compress Image",
       "compressDesc": "Сжать изображения",
-      "crop": "Обрезать изображение",
+      "crop": "Crop image",
       "cropDesc": "Обрезать изображения",
-      "watermark": "Водяной знак на изображении",
+      "watermark": "Watermark Image",
       "watermarkDesc": "Изображения с водяными знаками"
     },
     "toast": {

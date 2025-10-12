@@ -318,15 +318,15 @@
       "urlCopyFailed": "複製網址失敗"
     },
     "tools": {
-      "bulkresizeimages": "大量調整圖片大小",
-      "bulkresizeimagesDesc": "大量調整圖片大小",
-      "screenshot": "線上網站螢幕擷取",
+      "bulkresizeimages": "Bulk Resize Images",
+      "bulkresizeimagesDesc": "Bulk Resize Images",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "擷取螢幕畫面",
-      "compress": "壓縮圖片",
+      "compress": "Compress Image",
       "compressDesc": "壓縮圖片",
-      "crop": "裁剪圖片",
+      "crop": "Crop image",
       "cropDesc": "裁剪圖片",
-      "watermark": "圖片浮水印",
+      "watermark": "Watermark Image",
       "watermarkDesc": "為圖片加上浮水印"
     },
     "toast": {

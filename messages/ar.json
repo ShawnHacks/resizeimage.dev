@@ -318,15 +318,15 @@
       "urlCopyFailed": "فشل نسخ عنوان URL"
     },
     "tools": {
-      "bulkresizeimages": "تغيير حجم الصور دفعة واحدة",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "تغيير حجم الصور دفعة واحدة",
-      "screenshot": "لقطة شاشة لموقع الويب عبر الإنترنت",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "التقاط لقطات شاشة",
-      "compress": "ضغط الصورة",
+      "compress": "Compress Image",
       "compressDesc": "ضغط الصور",
-      "crop": "اقتصاص الصورة",
+      "crop": "Crop image",
       "cropDesc": "اقتصاص الصور",
-      "watermark": "علامة مائية للصورة",
+      "watermark": "Watermark Image",
       "watermarkDesc": "صور بعلامة مائية"
     },
     "toast": {

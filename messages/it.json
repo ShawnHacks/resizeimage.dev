@@ -318,15 +318,15 @@
       "urlCopyFailed": "Impossibile copiare l'URL"
     },
     "tools": {
-      "bulkresizeimages": "Ridimensiona immagini in blocco",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "Ridimensiona immagini in blocco",
-      "screenshot": "Screenshot di siti Web online",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "Cattura screenshot",
-      "compress": "Comprimi immagine",
+      "compress": "Compress Image",
       "compressDesc": "Comprimi immagini",
-      "crop": "Ritaglia immagine",
+      "crop": "Crop image",
       "cropDesc": "Ritaglia immagini",
-      "watermark": "Filigrana immagine",
+      "watermark": "Watermark Image",
       "watermarkDesc": "Immagini con filigrana"
     },
     "toast": {

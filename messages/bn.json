@@ -318,15 +318,15 @@
       "urlCopyFailed": "URL অনুলিপি করতে ব্যর্থ হয়েছে"
     },
     "tools": {
-      "bulkresizeimages": "বাল্ক ইমেজ রিসাইজ করুন",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "বাল্ক ইমেজ রিসাইজ করুন",
-      "screenshot": "ওয়েবসাইট স্ক্রিনশট অনলাইন",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "স্ক্রিনশট নিন",
-      "compress": "ছবি সংকুচিত করুন",
+      "compress": "Compress Image",
       "compressDesc": "ছবি সংকুচিত করুন",
-      "crop": "ছবি কাটুন",
+      "crop": "Crop image",
       "cropDesc": "ছবি কাটুন",
-      "watermark": "ছবিতে জলছাপ দিন",
+      "watermark": "Watermark Image",
       "watermarkDesc": "ছবিতে জলছাপ দিন"
     },
     "toast": {

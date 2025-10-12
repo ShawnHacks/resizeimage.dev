@@ -318,15 +318,15 @@
       "urlCopyFailed": "URL konnte nicht kopiert werden"
     },
     "tools": {
-      "bulkresizeimages": "Bilder in großen Mengen anpassen",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "Bilder in großen Mengen anpassen",
       "screenshot": "Website-Screenshot online",
       "screenshotDesc": "Screenshots machen",
-      "compress": "Bild komprimieren",
+      "compress": "Compress Image",
       "compressDesc": "Bilder komprimieren",
-      "crop": "Bild zuschneiden",
+      "crop": "Crop image",
       "cropDesc": "Bilder zuschneiden",
-      "watermark": "Bild mit Wasserzeichen versehen",
+      "watermark": "Watermark Image",
       "watermarkDesc": "Bilder mit Wasserzeichen versehen"
     },
     "toast": {

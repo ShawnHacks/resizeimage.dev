@@ -318,15 +318,15 @@
       "urlCopyFailed": "URL kopyalanamadı"
     },
     "tools": {
-      "bulkresizeimages": "Toplu Görüntü Yeniden Boyutlandırma",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "Toplu Görüntü Yeniden Boyutlandırma",
-      "screenshot": "Web Sitesi Ekran Görüntüsü Çevrimiçi",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "Ekran Görüntüsü Al",
-      "compress": "Görüntüyü Sıkıştır",
+      "compress": "Compress Image",
       "compressDesc": "Görüntüleri Sıkıştır",
-      "crop": "Görüntüyü Kırp",
+      "crop": "Crop image",
       "cropDesc": "Görüntüleri Kırp",
-      "watermark": "Görüntüye Filigran Ekle",
+      "watermark": "Watermark Image",
       "watermarkDesc": "Görüntülere Filigran Ekle"
     },
     "toast": {

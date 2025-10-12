@@ -318,15 +318,15 @@
       "urlCopyFailed": "URL 복사 실패"
     },
     "tools": {
-      "bulkresizeimages": "여러 이미지 크기 조절",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "여러 이미지 크기 조절",
-      "screenshot": "온라인 웹사이트 스크린샷",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "스크린샷 찍기",
-      "compress": "이미지 압축",
+      "compress": "Compress Image",
       "compressDesc": "이미지 압축",
-      "crop": "이미지 자르기",
+      "crop": "Crop image",
       "cropDesc": "이미지 자르기",
-      "watermark": "이미지 워터마크",
+      "watermark": "Watermark Image",
       "watermarkDesc": "이미지 워터마크"
     },
     "toast": {

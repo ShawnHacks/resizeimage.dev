@@ -318,15 +318,15 @@
       "urlCopyFailed": "ไม่สามารถคัดลอก URL ได้"
     },
     "tools": {
-      "bulkresizeimages": "ปรับขนาดภาพจำนวนมาก",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "ปรับขนาดภาพจำนวนมาก",
-      "screenshot": "ภาพหน้าจอเว็บไซต์ออนไลน์",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "ถ่ายภาพหน้าจอ",
-      "compress": "บีบอัดภาพ",
+      "compress": "Compress Image",
       "compressDesc": "บีบอัดภาพ",
-      "crop": "ครอบตัดภาพ",
+      "crop": "Crop image",
       "cropDesc": "ครอบตัดภาพ",
-      "watermark": "ลายน้ำภาพ",
+      "watermark": "Watermark Image",
       "watermarkDesc": "ภาพลายน้ำ"
     },
     "toast": {

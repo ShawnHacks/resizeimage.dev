@@ -318,15 +318,15 @@
       "urlCopyFailed": "Не вдалося скопіювати URL-адресу"
     },
     "tools": {
-      "bulkresizeimages": "Масове змінення розміру зображень",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "Масове змінення розміру зображень",
-      "screenshot": "Знімок екрана веб-сайту онлайн",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "Зробити знімки екрана",
-      "compress": "Стиснути зображення",
+      "compress": "Compress Image",
       "compressDesc": "Стиснути зображення",
-      "crop": "Обрізати зображення",
+      "crop": "Crop image",
       "cropDesc": "Обрізати зображення",
-      "watermark": "Водяний знак на зображенні",
+      "watermark": "Watermark Image",
       "watermarkDesc": "Зображення з водяними знаками"
     },
     "toast": {

@@ -318,15 +318,15 @@
       "urlCopyFailed": "URLのコピーに失敗しました"
     },
     "tools": {
-      "bulkresizeimages": "画像をまとめてリサイズ",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "画像をまとめてリサイズ",
-      "screenshot": "ウェブサイトのスクリーンショットをオンラインで",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "スクリーンショットを撮る",
-      "compress": "画像を圧縮",
+      "compress": "Compress Image",
       "compressDesc": "画像を圧縮",
-      "crop": "画像を切り抜く",
+      "crop": "Crop image",
       "cropDesc": "画像を切り抜く",
-      "watermark": "画像に透かしを入れる",
+      "watermark": "Watermark Image",
       "watermarkDesc": "画像に透かしを入れる"
     },
     "toast": {

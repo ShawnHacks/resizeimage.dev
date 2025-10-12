@@ -318,15 +318,15 @@
       "urlCopyFailed": "Gagal menyalin URL"
     },
     "tools": {
-      "bulkresizeimages": "Ubah Ukuran Gambar Massal",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "Ubah Ukuran Gambar Massal",
-      "screenshot": "Tangkapan Layar Situs Web Online",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "Ambil Tangkapan Layar",
-      "compress": "Kompres Gambar",
+      "compress": "Compress Image",
       "compressDesc": "Kompres Gambar",
-      "crop": "Pangkas Gambar",
+      "crop": "Crop image",
       "cropDesc": "Pangkas Gambar",
-      "watermark": "Tanda Air Gambar",
+      "watermark": "Watermark Image",
       "watermarkDesc": "Gambar Tanda Air"
     },
     "toast": {

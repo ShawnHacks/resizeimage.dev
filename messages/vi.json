@@ -318,15 +318,15 @@
       "urlCopyFailed": "Không thể sao chép URL"
     },
     "tools": {
-      "bulkresizeimages": "Thay đổi kích thước hàng loạt hình ảnh",
+      "bulkresizeimages": "Bulk Resize Images",
       "bulkresizeimagesDesc": "Thay đổi kích thước hàng loạt hình ảnh",
-      "screenshot": "Ảnh chụp màn hình trang web trực tuyến",
+      "screenshot": "Website Screenshot Online",
       "screenshotDesc": "Chụp ảnh màn hình",
-      "compress": "Nén ảnh",
+      "compress": "Compress Image",
       "compressDesc": "Nén ảnh",
-      "crop": "Cắt ảnh",
+      "crop": "Crop image",
       "cropDesc": "Cắt ảnh",
-      "watermark": "Hình mờ ảnh",
+      "watermark": "Watermark Image",
       "watermarkDesc": "Hình mờ ảnh"
     },
     "toast": {
