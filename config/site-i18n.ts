@@ -150,6 +150,10 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         href: "/about",
       },
       {
+        labelKey: "Footer.Blog",
+        href: "/blog",
+      },
+      {
         labelKey: "Footer.SiteMap",
         href: `${siteUrl}/sitemap.xml`,
       },

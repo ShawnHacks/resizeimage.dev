@@ -36,7 +36,7 @@ export const GoogleAnalytics = () => {
     <>
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=G-0SQXW4K14K`}
+        src={`https://www.googletagmanager.com/gtag/js?id=G-YHGT7SDQ73`}
       />
       <Script
         id="google-analytics-init"
@@ -46,7 +46,7 @@ export const GoogleAnalytics = () => {
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-0SQXW4K14K');
+                    gtag('config', 'G-YHGT7SDQ73');
                     `,
         }}
       />
