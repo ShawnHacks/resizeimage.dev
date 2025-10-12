@@ -69,13 +69,13 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
       >
         <Upload className="w-16 h-16 text-primary mb-6" />
         
-        <h3 className="text-2xl font-bold text-foreground mb-2">
+        <div className="text-2xl font-bold text-foreground mb-2">
           {t('hero.title')}
-        </h3>
+        </div>
         
-        <p className="text-sm text-muted-foreground mb-6">
+        <div className="text-sm text-muted-foreground mb-6">
           {t('hero.subtitle')}
-        </p>
+        </div>
         
         <label className="cursor-pointer">
           <input
@@ -90,9 +90,9 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
           </div>
         </label>
         
-        <p className="text-xs text-muted-foreground mt-4">
+        <div className="text-xs text-muted-foreground mt-4">
           {t('hero.supportedFormats')}
-        </p>
+        </div>
       </div>
 
       {/* Right: Features */}

@@ -252,7 +252,7 @@ export default function AboutPage() {
             {t('cta.description')}
           </p>
           <div className="flex justify-center">
-            <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100">
+            <Button asChild size="lg" variant="secondary" className="bg-white text-primary hover:bg-gray-100" aria-label={t('cta.button')}>
               <Link href="/">
                 <Image className="h-5 w-5 mr-2" />
                 {t('cta.button')}
