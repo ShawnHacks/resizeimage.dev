@@ -2,18 +2,18 @@
 
 import { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-// import { ImagePreview } from '@/components/resize/image-preview';
-// import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
-// import { ProcessedList } from '@/components/resize/processed-list';
-// import { DownloadButton } from '@/components/resize/download-button';
-// import { HeroSection } from '@/components/resize/hero-section';
-// import { ToolsGrid } from '@/components/resize/tools-grid';
+import { ImagePreview } from '@/components/resize/image-preview';
+import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
+import { ProcessedList } from '@/components/resize/processed-list';
+import { DownloadButton } from '@/components/resize/download-button';
+import { HeroSection } from '@/components/resize/hero-section';
+import { ToolsGrid } from '@/components/resize/tools-grid';
 import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
 import type { ImageFile } from '@/types/resize';
 import { toast } from 'sonner';
 import { motion } from 'motion/react';
-// import { Loader2, ArrowLeft } from 'lucide-react';
-// import { Button } from '@/components/ui/button';
+import { Loader2, ArrowLeft } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 export default function ResizeImagePage() {
   const t = useTranslations('ResizeTool');
@@ -43,89 +43,89 @@ export default function ResizeImagePage() {
     toast.success(t('toast.imagesLoaded', { count: files.length }));
   }, []);
 
-  // const handleRemoveImage = useCallback((index: number) => {
-  //   setImages((prev) => {
-  //     const newImages = [...prev];
-  //     URL.revokeObjectURL(newImages[index].preview);
-  //     newImages.splice(index, 1);
-  //     return newImages;
-  //   });
+  const handleRemoveImage = useCallback((index: number) => {
+    setImages((prev) => {
+      const newImages = [...prev];
+      URL.revokeObjectURL(newImages[index].preview);
+      newImages.splice(index, 1);
+      return newImages;
+    });
     
-  //   if (images.length === 1) {
-  //     setProcessedImages([]);
-  //   }
-  // }, [images.length]);
+    if (images.length === 1) {
+      setProcessedImages([]);
+    }
+  }, [images.length]);
 
-  // const handleAddMore = useCallback(async (newFiles: File[]) => {
-  //   const imageFiles: ImageFile[] = await Promise.all(
-  //     newFiles.map(async (file) => {
-  //       const preview = URL.createObjectURL(file);
-  //       const dimensions = await getImageDimensions(file);
+  const handleAddMore = useCallback(async (newFiles: File[]) => {
+    const imageFiles: ImageFile[] = await Promise.all(
+      newFiles.map(async (file) => {
+        const preview = URL.createObjectURL(file);
+        const dimensions = await getImageDimensions(file);
         
-  //       return {
-  //         file,
-  //         preview,
-  //         dimensions,
-  //         fileSize: file.size,
-  //       };
-  //     })
-  //   );
+        return {
+          file,
+          preview,
+          dimensions,
+          fileSize: file.size,
+        };
+      })
+    );
 
-  //   setImages((prev) => [...prev, ...imageFiles]);
-  //   toast.success(t('toast.imagesAdded', { count: newFiles.length }));
-  // }, [t]);
+    setImages((prev) => [...prev, ...imageFiles]);
+    toast.success(t('toast.imagesAdded', { count: newFiles.length }));
+  }, [t]);
 
-  // const handleResize = useCallback(async (options: ResizeOptionsState) => {
-  //   if (images.length === 0) {
-  //     toast.error(t('toast.selectImagesFirst'));
-  //     return;
-  //   }
+  const handleResize = useCallback(async (options: ResizeOptionsState) => {
+    if (images.length === 0) {
+      toast.error(t('toast.selectImagesFirst'));
+      return;
+    }
 
-  //   // Validate options
-  //   if (options.mode === 'dimensions') {
-  //     if (!options.width && !options.height) {
-  //       toast.error(t('toast.enterWidthOrHeight'));
-  //       return;
-  //     }
-  //   } else if (options.mode === 'width' || options.mode === 'height' || options.mode === 'longestSide') {
-  //     if (!options.targetValue) {
-  //       toast.error(t('toast.enterTargetValue'));
-  //       return;
-  //     }
-  //   }
+    // Validate options
+    if (options.mode === 'dimensions') {
+      if (!options.width && !options.height) {
+        toast.error(t('toast.enterWidthOrHeight'));
+        return;
+      }
+    } else if (options.mode === 'width' || options.mode === 'height' || options.mode === 'longestSide') {
+      if (!options.targetValue) {
+        toast.error(t('toast.enterTargetValue'));
+        return;
+      }
+    }
 
-  //   setIsProcessing(true);
-  //   setProgress({ current: 0, total: images.length });
+    setIsProcessing(true);
+    setProgress({ current: 0, total: images.length });
 
-  //   try {
-  //     const results = await batchResizeImages(
-  //       images.map(img => img.file),
-  //       options,
-  //       (current, total) => {
-  //         setProgress({ current, total });
-  //       }
-  //     );
+    try {
+      const results = await batchResizeImages(
+        images.map(img => img.file),
+        options,
+        (current, total) => {
+          setProgress({ current, total });
+        }
+      );
 
-  //     setProcessedImages(results);
-  //     toast.success(t('toast.imagesResizedSuccess'));
-  //   } catch (error) {
-  //     console.error('Resize failed:', error);
-  //     toast.error(t('toast.error'));
-  //   } finally {
-  //     setIsProcessing(false);
-  //     setProgress({ current: 0, total: 0 });
-  //   }
-  // }, [images]);
+      setProcessedImages(results);
+      toast.success(t('toast.imagesResizedSuccess'));
+    } catch (error) {
+      console.error('Resize failed:', error);
+      toast.error(t('toast.error'));
+    } finally {
+      setIsProcessing(false);
+      setProgress({ current: 0, total: 0 });
+    }
+  }, [images]);
 
-  // const handleDownloadComplete = useCallback(() => {
-  //   toast.success(t('toast.downloadComplete'));
-  // }, [t]);
+  const handleDownloadComplete = useCallback(() => {
+    toast.success(t('toast.downloadComplete'));
+  }, [t]);
 
-  // const handleBack = useCallback(() => {
-  //   images.forEach(img => URL.revokeObjectURL(img.preview));
-  //   setImages([]);
-  //   setProcessedImages([]);
-  // }, [images]);
+  const handleBack = useCallback(() => {
+    images.forEach(img => URL.revokeObjectURL(img.preview));
+    setImages([]);
+    setProcessedImages([]);
+  }, [images]);
 
   return (
     <div className="min-h-[calc(100vh-rem)]">
@@ -144,8 +144,9 @@ export default function ResizeImagePage() {
       </header>
 
       {/* Main content */}
-      {/* <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto space-y-8">
+          {/* Hero section - shown when no images */}
           {images.length === 0 && processedImages.length === 0 && (
             <>
               <HeroSection onFilesSelected={handleFilesSelected} />
@@ -153,6 +154,7 @@ export default function ResizeImagePage() {
             </>
           )}
 
+          {/* Preview section */}
           {images.length > 0 && processedImages.length === 0 && (
             <ImagePreview 
               images={images} 
@@ -161,6 +163,7 @@ export default function ResizeImagePage() {
             />
           )}
 
+          {/* Controls section */}
           {images.length > 0 && processedImages.length === 0 && (
             <>
               <ResizeControls onResize={handleResize} disabled={isProcessing} />
@@ -177,6 +180,7 @@ export default function ResizeImagePage() {
             </>
           )}
 
+          {/* Processing indicator */}
           {isProcessing && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -203,15 +207,19 @@ export default function ResizeImagePage() {
             </motion.div>
           )}
 
+          {/* Results section */}
           {processedImages.length > 0 && (
             <>
+              {/* Processed list with statistics */}
               <ProcessedList processedImages={processedImages} />
               
+              {/* Download section */}
               <DownloadButton 
                 processedImages={processedImages} 
                 onDownloadComplete={handleDownloadComplete}
               />
               
+              {/* Reset button */}
               <div className="text-center">
                 <button
                   onClick={() => {
@@ -227,7 +235,7 @@ export default function ResizeImagePage() {
             </>
           )}
         </div>
-      </main> */}
+      </main>
 
     </div>
   );
