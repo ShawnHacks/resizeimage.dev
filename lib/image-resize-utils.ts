@@ -1,11 +1,9 @@
-'use client';
 /**
  * Image Resize Utilities
  * Supports 6 resize modes: Percentage, File Size, Dimensions, Width, Height, Longest Side
+ * 
+ * Note: file-saver and jszip are dynamically imported to avoid SSR issues
  */
-
-import { saveAs } from 'file-saver';
-import JSZip from 'jszip';
 
 export type ResizeMode = 
   | 'percentage'
@@ -380,7 +378,8 @@ export async function batchResizeImages(
 /**
  * Download single image
  */
-export function downloadImage(processedImage: ProcessedImage): void {
+export async function downloadImage(processedImage: ProcessedImage): Promise<void> {
+  const { saveAs } = await import('file-saver');
   saveAs(processedImage.blob, processedImage.filename);
 }
 
@@ -391,7 +390,12 @@ export async function downloadImagesAsZip(
   processedImages: ProcessedImage[],
   zipFilename: string = 'resized-images.zip'
 ): Promise<void> {
-  const zip = new JSZip();
+  const [{ saveAs }, JSZip] = await Promise.all([
+    import('file-saver'),
+    import('jszip')
+  ]);
+  
+  const zip = new JSZip.default();
 
   processedImages.forEach((img) => {
     zip.file(img.filename, img.blob);
