@@ -1,0 +1,345 @@
+{
+  "Header": {
+    "Home": "Inicio",
+    "Features": "Características",
+    "FAQ": "Preguntas frecuentes",
+    "About": "Acerca de",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Producto",
+    "Resources": "Recursos",
+    "Company": "Empresa",
+    "Features": "Características",
+    "FAQ": "Preguntas frecuentes",
+    "About": "Acerca de",
+    "SiteMap": "Mapa del sitio",
+    "Pricing": "Precios",
+    "License": "Licencia",
+    "Contact": "Contacto",
+    "Roadmap": "Hoja de ruta",
+    "Documentation": "Documentación",
+    "Blog": "Blog",
+    "Cookie Policy": "Política de cookies",
+    "Privacy Policy": "Política de privacidad",
+    "Terms of Service": "Términos de servicio"
+  },
+  "HomePage": {
+    "title": "Redimensionar imágenes en masa en línea",
+    "subtitle": "Redimensionador de imágenes gratuito e ilimitado para procesamiento individual o por lotes. Redimensiona, comprime y optimiza imágenes al instante en tu navegador. Sin registro, sin subidas - 100% seguro y privado."
+  },
+  "NotFoundPage": {
+    "title": "Página no encontrada",
+    "description": "La página que busca no se ha podido encontrar. Es posible que se haya movido, eliminado o que haya introducido una URL incorrecta.",
+    "backToHome": "Volver a la página de inicio"
+  },
+  "AboutPage": {
+    "metaTitle": "Acerca de nosotros - Redimensionador de imágenes en masa gratuito en línea",
+    "metaDescription": "Obtenga más información sobre nuestro servicio de redimensionamiento de imágenes en masa. Redimensione, comprima y optimice imágenes por lotes con múltiples formatos y dimensiones personalizadas. 100% gratuito y privado.",
+    "metaKeywords": "redimensionador de imágenes en masa, redimensionamiento de imágenes por lotes, optimizador de imágenes en línea, redimensionador de fotos, herramienta de compresión de imágenes",
+    "hero": {
+      "title": "Acerca de nuestro servicio de redimensionamiento de imágenes",
+      "description": "Ofrecemos un redimensionador de imágenes en masa profesional que ayuda a fotógrafos, diseñadores, desarrolladores y empresas a redimensionar, comprimir y optimizar imágenes al instante. Nuestro servicio procesa todo en su navegador - 100% seguro, privado y gratuito para siempre.",
+      "cta": "Comenzar a redimensionar imágenes",
+      "learnMore": "Más información"
+    },
+    "mission": {
+      "title": "Nuestra misión",
+      "description": "Nuestra misión es proporcionar la herramienta de redimensionamiento de imágenes más potente y a la vez más sencilla disponible. Creemos que redimensionar y optimizar imágenes debe ser rápido, gratuito y accesible para todos, ya sea un fotógrafo que prepara imágenes para la web, un diseñador que crea miniaturas o el propietario de un negocio que optimiza el contenido para las redes sociales.",
+      "quote": "Hacer que el redimensionamiento profesional de imágenes sea sencillo, rápido y accesible para todos, en todas partes."
+    },
+    "stats": {
+      "title": "Con la confianza de usuarios de todo el mundo",
+      "description": "Nuestro redimensionador de imágenes es utilizado por miles de usuarios en todo el mundo para diversos fines.",
+      "users": {
+        "number": "10K+",
+        "label": "Usuarios activos"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "Imágenes redimensionadas"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "Operaciones por lotes"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "Tiempo de actividad del servicio"
+      }
+    },
+    "features": {
+      "title": "¿Por qué elegir nuestro redimensionador de imágenes?",
+      "description": "Nuestro redimensionador de imágenes en masa ofrece funciones y capacidades avanzadas que lo convierten en la mejor opción para profesionales y empresas.",
+      "highQuality": {
+        "title": "Múltiples modos de redimensionamiento",
+        "description": "Redimensione por porcentaje, dimensiones, tamaño de archivo, anchura, altura o lado más largo. Elija el modo que se adapte perfectamente a sus necesidades."
+      },
+      "multipleFormats": {
+        "title": "Múltiples formatos de salida",
+        "description": "Exporte sus imágenes en formatos JPEG, PNG o WebP con ajustes de calidad ajustables para obtener resultados óptimos."
+      },
+      "responsive": {
+        "title": "Ajustes preestablecidos inteligentes",
+        "description": "Ajustes preestablecidos rápidos para Instagram, Twitter, Facebook, YouTube y más. Redimensione imágenes para cualquier plataforma al instante."
+      },
+      "fast": {
+        "title": "Procesamiento ultrarrápido",
+        "description": "Procese imágenes al instante en su navegador. Sin subidas, sin esperas: redimensione cientos de imágenes en segundos."
+      },
+      "privacy": {
+        "title": "100% privado y seguro",
+        "description": "Todo el procesamiento se realiza en su navegador. Sus imágenes nunca salen de su dispositivo: privacidad total garantizada."
+      },
+      "noLimits": {
+        "title": "Sin límites, sin registro",
+        "description": "Redimensione imágenes ilimitadas sin necesidad de registrarse, sin marcas de agua ni tarifas ocultas. Totalmente gratuito para siempre."
+      }
+    },
+    "technology": {
+      "title": "Construido con tecnología moderna",
+      "description": "Nuestro redimensionador de imágenes está construido con tecnologías web de vanguardia para garantizar un rendimiento ultrarrápido y una calidad perfecta.",
+      "frontend": {
+        "title": "Frontend moderno",
+        "description": "Construido con Next.js y React para una experiencia de usuario rápida y receptiva con renderizado del lado del servidor para un SEO óptimo."
+      },
+      "backend": {
+        "title": "Procesamiento del lado del cliente",
+        "description": "Desarrollado por la API de Canvas para un procesamiento de imágenes preciso completamente en su navegador, lo que garantiza la velocidad y la privacidad."
+      }
+    },
+    "cta": {
+      "title": "¿Listo para redimensionar sus imágenes?",
+      "description": "Únase a miles de usuarios que confían en nuestro redimensionador de imágenes para sus necesidades de optimización de fotos. Comience a redimensionar imágenes hoy mismo: rápido, gratuito y privado.",
+      "button": "Comenzar a redimensionar imágenes"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Política de cookies - Cómo usamos las cookies",
+    "metaDescription": "Obtenga información sobre cómo nuestro servicio de sitio web utiliza cookies para mejorar su experiencia. Comprenda los tipos de cookies, las opciones de administración y sus derechos de privacidad.",
+    "metaKeywords": "política de cookies, privacidad, cookies, herramienta de sitio web, protección de datos, privacidad del usuario"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Política de privacidad",
+    "metaDescription": "Lea nuestra política de privacidad para comprender cómo recopilamos, usamos y protegemos su información personal cuando utiliza nuestro servicio de sitio web.",
+    "metaKeywords": "política de privacidad, protección de datos, información personal, herramienta de sitio web, privacidad del usuario"
+  },
+  "TermsPage": {
+    "metaTitle": "Términos y condiciones - Acuerdo de servicio",
+    "metaDescription": "Lea nuestros términos y condiciones para comprender las reglas y directrices para usar nuestro servicio de sitio web.",
+    "metaKeywords": "términos y condiciones, acuerdo de servicio, términos de uso, herramienta de sitio web, acuerdo de usuario"
+  },
+  "SiteConfig": {
+    "title": "Redimensionar imágenes en masa en línea - Redimensionar imágenes al instante",
+    "description": "Redimensionador de imágenes gratuito e ilimitado para procesamiento individual o por lotes. Redimensiona, comprime y optimiza imágenes al instante en tu navegador. Sin registro, sin subidas - 100% seguro y privado.",
+    "keywords": {
+      "0": "redimensionador de imágenes en masa en línea",
+      "1": "redimensionamiento de imágenes por lotes gratuito",
+      "2": "redimensionar imágenes en línea",
+      "3": "comprimir imágenes gratis",
+      "4": "optimizador de imágenes",
+      "5": "redimensionador de fotos",
+      "6": "redimensionar varias imágenes",
+      "7": "herramienta de dimensiones de imagen"
+    }
+  },
+  "CookieConsent": {
+    "title": "Usamos cookies",
+    "description": "Usamos cookies para mejorar su experiencia y analizar el uso del sitio. Puede personalizar sus preferencias o aceptar todas las cookies.",
+    "acceptAll": "Aceptar todo",
+    "necessary": "Solo necesarias",
+    "customize": "Personalizar",
+    "preferences": "Preferencias de cookies",
+    "necessaryTitle": "Cookies necesarias",
+    "necessaryDesc": "Requeridas para la funcionalidad básica del sitio",
+    "analyticsTitle": "Cookies de análisis",
+    "analyticsDesc": "Nos ayudan a comprender cómo usa nuestro sitio",
+    "marketingTitle": "Cookies de marketing",
+    "marketingDesc": "Se utilizan para contenido y anuncios personalizados",
+    "required": "Requerido",
+    "savePreferences": "Guardar preferencias",
+    "cancel": "Cancelar"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Aprenda sobre capturas de pantalla de sitios web, consejos de desarrollo web y herramientas digitales. Guías y tutoriales de expertos para desarrolladores y diseñadores.",
+    "keywords": "blog de capturas de pantalla de sitios web, tutoriales de desarrollo web, guía de herramientas digitales, tutoriales de capturas de pantalla, consejos de diseño web",
+    "readMore": "Leer más",
+    "minRead": "min de lectura",
+    "noPosts": "Aún no hay publicaciones de blog disponibles. ¡Vuelve pronto!",
+    "categories": "Categorías",
+    "recentPosts": "Publicaciones recientes",
+    "posts": "publicaciones"
+  },
+  "BlogPost": {
+    "backToBlog": "Volver al blog",
+    "writtenBy": "Escrito por",
+    "published": "Publicado",
+    "updated": "Actualizado",
+    "shareArticle": "Compartir este artículo",
+    "relatedPosts": "Artículos relacionados",
+    "tags": "Etiquetas",
+    "minRead": "min de lectura",
+    "views": "vistas",
+    "lastUpdated": "Última actualización:",
+    "like": "Me gusta",
+    "share": "Compartir",
+    "quickActions": "Acciones rápidas",
+    "copyLink": "Copiar enlace",
+    "socialShare": "Compartir en redes sociales",
+    "aboutAuthor": "Acerca del autor",
+    "relatedArticles": "Artículos relacionados",
+    "continueExploring": "Continúe explorando más contenido relacionado",
+    "toolsComparison": "Comparación de herramientas",
+    "seoGuide": "Guía de SEO",
+    "tutorial": "Tutorial",
+    "blog": "Blog"
+  },
+  "ResizeTool": {
+    "pageTitle": "Redimensionar imágenes en masa en línea",
+    "pageDescription": "Herramienta gratuita en línea para redimensionar por lotes varias imágenes a la vez. Rápido, seguro y funciona completamente en su navegador, sin necesidad de subidas.",
+    "backButton": "Atrás",
+    "hero": {
+      "title": "Arrastre y suelte sus imágenes",
+      "subtitle": "o haga clic a continuación para navegar",
+      "selectImages": "Seleccionar imágenes",
+      "supportedFormats": "Soporte: JPG, PNG, WebP, GIF"
+    },
+    "features": {
+      "title": "Redimensionar imágenes en masa en línea y gratis",
+      "description": "Redimensione varias imágenes a la vez sin subirlas a ningún servidor",
+      "lightningFast": "Procesamiento ultrarrápido",
+      "free": "100% gratis para siempre",
+      "noSignup": "No es necesario registrarse",
+      "secure": "Seguro y privado",
+      "unlimited": "Procese imágenes ilimitadas",
+      "browser": "Funciona en su navegador"
+    },
+    "imagePreview": {
+      "selected": "imagen",
+      "selectedPlural": "imágenes",
+      "selectedCount": "seleccionado",
+      "addMore": "Añadir más",
+      "showLess": "Mostrar menos",
+      "showAll": "Mostrar todo ({count} más)"
+    },
+    "controls": {
+      "resizeMode": "Modo de redimensionamiento",
+      "percentage": {
+        "title": "Porcentaje",
+        "description": "Escale las imágenes al {percentage}% de las dimensiones originales.",
+        "rangeLabel": "Rango: 10% a 200%"
+      },
+      "fileSize": {
+        "title": "Tamaño del archivo",
+        "description": "Comprima las imágenes a aproximadamente {size} KB.",
+        "rangeLabel": "Rango: 10 KB a 5000 KB",
+        "targetSize": "Tamaño de archivo de destino (KB)",
+        "note": "El tamaño real del archivo puede variar según la complejidad de la imagen"
+      },
+      "dimensions": {
+        "title": "Dimensiones de la imagen",
+        "description": "Redimensione a la anchura y altura exactas.",
+        "width": "Anchura (px)",
+        "height": "Altura (px)",
+        "maintainRatio": "Mantener relación de aspecto",
+        "usePadding": "Usar relleno",
+        "paddingNote": "Añadir relleno para mantener la relación de aspecto original"
+      },
+      "width": {
+        "title": "Anchura",
+        "description": "Redimensione a una anchura específica manteniendo la relación de aspecto.",
+        "targetWidth": "Anchura de destino (px)"
+      },
+      "height": {
+        "title": "Altura",
+        "description": "Redimensione a una altura específica manteniendo la relación de aspecto.",
+        "targetHeight": "Altura de destino (px)"
+      },
+      "longestSide": {
+        "title": "Lado más largo",
+        "description": "Redimensione en función de la dimensión más larga.",
+        "targetLongest": "Lado más largo de destino (px)"
+      },
+      "format": {
+        "label": "Formato de salida",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Calidad",
+        "description": "Mayor calidad = mayor tamaño de archivo"
+      },
+      "backgroundColor": {
+        "label": "Color de fondo",
+        "description": "Se utiliza para imágenes transparentes convertidas a JPEG"
+      },
+      "presets": {
+        "title": "Ajustes preestablecidos rápidos",
+        "instagram": "Publicación de Instagram",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "Encabezado de Twitter",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Portada de Facebook",
+        "facebookDesc": "820×312 px",
+        "youtube": "Miniatura de YouTube",
+        "youtubeDesc": "1280×720 px",
+        "email": "Apto para correo electrónico",
+        "emailDesc": "800 px de ancho",
+        "compress": "Comprimir pequeño",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Redimensionar al {percentage}%",
+      "resizeButtonDefault": "Redimensionar imágenes"
+    },
+    "processing": {
+      "title": "Procesando imágenes...",
+      "progress": "{current} de {total} imágenes procesadas"
+    },
+    "results": {
+      "title": "¡Procesamiento completado!",
+      "imagesResized": "{count} {count, plural, one {imagen} other {imágenes}} redimensionadas correctamente",
+      "originalSize": "Tamaño original",
+      "newSize": "Nuevo tamaño",
+      "spaceSaved": "Espacio ahorrado",
+      "processedImages": "Imágenes procesadas",
+      "downloadImage": "Descargar",
+      "downloadAll": "Descargar todas las imágenes",
+      "resizeMore": "Redimensionar más imágenes"
+    },
+    "config": {
+      "title": "Configuración compartible",
+      "description": "Use estos ajustes automáticamente con esta URL.",
+      "copy": "Copiar",
+      "copied": "¡Copiado!",
+      "link": "Enlace",
+      "urlCopied": "¡URL de configuración copiada al portapapeles!",
+      "urlCopyFailed": "Error al copiar la URL"
+    },
+    "tools": {
+      "bulkresizeimages": "Redimensionar imágenes en masa",
+      "bulkresizeimagesDesc": "Redimensionar imágenes en masa",
+      "screenshot": "Captura de pantalla de sitio web en línea",
+      "screenshotDesc": "Tomar capturas de pantalla",
+      "compress": "Comprimir imagen",
+      "compressDesc": "Comprimir imágenes",
+      "crop": "Recortar imagen",
+      "cropDesc": "Recortar imágenes",
+      "watermark": "Marca de agua de imagen",
+      "watermarkDesc": "Imágenes con marca de agua"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {imagen} other {imágenes}} cargadas",
+      "imagesAdded": "Se agregaron {count} más {count, plural, one {imagen} other {imágenes}}",
+      "imagesResizedSuccess": "¡Imágenes redimensionadas correctamente!",
+      "downloadComplete": "¡Descarga completada!",
+      "urlCopied": "¡URL copiada al portapapeles!",
+      "processing": "Procesando imágenes...",
+      "error": "Se produjo un error. Por favor, inténtelo de nuevo.",
+      "selectImagesFirst": "Por favor, seleccione primero las imágenes",
+      "enterWidthOrHeight": "Por favor, introduzca la anchura o la altura",
+      "enterTargetValue": "Por favor, introduzca un valor de destino"
+    }
+  }
+}

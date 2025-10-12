@@ -1,0 +1,345 @@
+{
+  "Header": {
+    "Home": "首頁",
+    "Features": "功能",
+    "FAQ": "常見問題",
+    "About": "關於",
+    "Blog": "部落格"
+  },
+  "Footer": {
+    "Product": "產品",
+    "Resources": "資源",
+    "Company": "公司",
+    "Features": "功能",
+    "FAQ": "常見問題",
+    "About": "關於",
+    "SiteMap": "網站地圖",
+    "Pricing": "定價",
+    "License": "授權",
+    "Contact": "聯絡我們",
+    "Roadmap": "產品路線圖",
+    "Documentation": "文件",
+    "Blog": "部落格",
+    "Cookie Policy": "Cookie 政策",
+    "Privacy Policy": "隱私權政策",
+    "Terms of Service": "服務條款"
+  },
+  "HomePage": {
+    "title": "線上大量調整圖片大小",
+    "subtitle": "無限制的免費圖片大小調整工具，可用於單一或批次處理。在您的瀏覽器中即時調整、壓縮和最佳化圖片。無需註冊，無需上傳 - 100% 安全和私密。"
+  },
+  "NotFoundPage": {
+    "title": "找不到頁面",
+    "description": "找不到您要尋找的頁面。它可能已被移動、刪除，或者您輸入了錯誤的網址。",
+    "backToHome": "返回首頁"
+  },
+  "AboutPage": {
+    "metaTitle": "關於我們 - 免費的線上大量圖片大小調整工具",
+    "metaDescription": "了解我們的大量圖片大小調整服務。使用多種格式和自訂尺寸批次調整、壓縮和最佳化圖片。100% 免費和私密。",
+    "metaKeywords": "大量圖片大小調整工具、批次圖片大小調整、線上圖片最佳化工具、相片大小調整工具、圖片壓縮工具",
+    "hero": {
+      "title": "關於我們的圖片大小調整服務",
+      "description": "我們提供專業的大量圖片大小調整工具，可協助攝影師、設計師、開發人員和企業即時調整、壓縮和最佳化圖片。我們的服務會在您的瀏覽器中處理所有內容 - 100% 安全、私密且永久免費。",
+      "cta": "開始調整圖片大小",
+      "learnMore": "了解更多"
+    },
+    "mission": {
+      "title": "我們的使命",
+      "description": "我們的使命是提供功能最強大、最簡單的圖片大小調整工具。我們相信，調整和最佳化圖片應該是快速、免費且人人皆可使用的 - 無論您是為網路準備圖片的攝影師、建立縮圖的設計師，還是為社群媒體最佳化內容的企業主。",
+      "quote": "讓專業的圖片大小調整變得簡單、快速，且人人皆可隨處使用。"
+    },
+    "stats": {
+      "title": "深受全球使用者信賴",
+      "description": "我們的圖片大小調整工具受到全球數千名使用者的青睞，用於各種目的。",
+      "users": {
+        "number": "10K+",
+        "label": "活躍使用者"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "已調整大小的圖片"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "批次操作"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "服務正常執行時間"
+      }
+    },
+    "features": {
+      "title": "為什麼選擇我們的圖片大小調整工具？",
+      "description": "我們的大量圖片大小調整工具提供進階功能和能力，使其成為專業人士和企業的最佳選擇。",
+      "highQuality": {
+        "title": "多種調整大小模式",
+        "description": "依百分比、尺寸、檔案大小、寬度、高度或最長邊調整大小。選擇最符合您需求的模式。"
+      },
+      "multipleFormats": {
+        "title": "多種輸出格式",
+        "description": "以 JPEG、PNG 或 WebP 格式匯出您的圖片，並可調整品質設定以獲得最佳效果。"
+      },
+      "responsive": {
+        "title": "智慧型預設集",
+        "description": "適用於 Instagram、Twitter、Facebook、YouTube 等的快速預設集。立即為任何平台調整圖片大小。"
+      },
+      "fast": {
+        "title": "閃電般的處理速度",
+        "description": "在您的瀏覽器中即時處理圖片。無需上傳，無需等待 - 在幾秒鐘內調整數百張圖片的大小。"
+      },
+      "privacy": {
+        "title": "100% 私密與安全",
+        "description": "所有處理都在您的瀏覽器中進行。您的圖片絕不會離開您的裝置 - 保證完全的隱私。"
+      },
+      "noLimits": {
+        "title": "沒有限制，無需註冊",
+        "description": "調整無限數量的圖片大小，無需註冊、浮水印或隱藏費用。永久完全免費。"
+      }
+    },
+    "technology": {
+      "title": "採用現代技術打造",
+      "description": "我們的圖片大小調整工具採用尖端網路技術打造，以確保極快的效能和完美的品質。",
+      "frontend": {
+        "title": "現代前端",
+        "description": "採用 Next.js 和 React 打造，提供快速、回應迅速的使用者體驗，並透過伺服器端呈現以獲得最佳的 SEO。"
+      },
+      "backend": {
+        "title": "用戶端處理",
+        "description": "由 Canvas API 提供支援，可在您的瀏覽器中完全準確地處理圖片，確保速度和隱私。"
+      }
+    },
+    "cta": {
+      "title": "準備好調整圖片大小了嗎？",
+      "description": "加入成千上萬名信任我們圖片大小調整工具來滿足其相片最佳化需求的使用者行列。立即開始調整圖片大小 - 快速、免費且私密。",
+      "button": "開始調整圖片大小"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Cookie 政策 - 我們如何使用 Cookie",
+    "metaDescription": "了解我們的網站服務如何使用 Cookie 來改善您的體驗。了解 Cookie 類型、管理選項和您的隱私權。",
+    "metaKeywords": "Cookie 政策、隱私權、Cookie、網站工具、資料保護、使用者隱私權"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "隱私權政策",
+    "metaDescription": "閱讀我們的隱私權政策，以了解我們在使用我們的網站服務時如何收集、使用和保護您的個人資訊。",
+    "metaKeywords": "隱私權政策、資料保護、個人資訊、網站工具、使用者隱私權"
+  },
+  "TermsPage": {
+    "metaTitle": "條款與條件 - 服務協議",
+    "metaDescription": "閱讀我們的條款與條件，以了解使用我們網站服務的規則和指南。",
+    "metaKeywords": "條款與條件、服務協議、使用條款、網站工具、使用者協議"
+  },
+  "SiteConfig": {
+    "title": "線上大量調整圖片大小 - 即時調整圖片大小",
+    "description": "無限制的免費圖片大小調整工具，可用於單一或批次處理。在您的瀏覽器中即時調整、壓縮和最佳化圖片。無需註冊，無需上傳 - 100% 安全和私密。",
+    "keywords": {
+      "0": "線上大量圖片大小調整工具",
+      "1": "免費批次圖片大小調整",
+      "2": "線上調整圖片大小",
+      "3": "免費壓縮圖片",
+      "4": "圖片最佳化工具",
+      "5": "相片大小調整工具",
+      "6": "調整多張圖片大小",
+      "7": "圖片尺寸工具"
+    }
+  },
+  "CookieConsent": {
+    "title": "我們使用 Cookie",
+    "description": "我們使用 Cookie 來改善您的體驗並分析網站使用情況。您可以自訂您的偏好設定或接受所有 Cookie。",
+    "acceptAll": "全部接受",
+    "necessary": "僅限必要的",
+    "customize": "自訂",
+    "preferences": "Cookie 偏好設定",
+    "necessaryTitle": "必要的 Cookie",
+    "necessaryDesc": "網站基本功能所需",
+    "analyticsTitle": "分析 Cookie",
+    "analyticsDesc": "協助我們了解您如何使用我們的網站",
+    "marketingTitle": "行銷 Cookie",
+    "marketingDesc": "用於個人化內容和廣告",
+    "required": "必要",
+    "savePreferences": "儲存偏好設定",
+    "cancel": "取消"
+  },
+  "BlogPage": {
+    "title": "部落格",
+    "description": "了解網站螢幕擷取、網站開發技巧和數位工具。為開發人員和設計師提供的專家指南和教學。",
+    "keywords": "網站螢幕擷取部落格、網站開發教學、數位工具指南、螢幕擷取教學、網站設計技巧",
+    "readMore": "閱讀更多",
+    "minRead": "分鐘閱讀",
+    "noPosts": "目前沒有部落格文章。請稍後再回來查看！",
+    "categories": "分類",
+    "recentPosts": "最新文章",
+    "posts": "篇文章"
+  },
+  "BlogPost": {
+    "backToBlog": "返回部落格",
+    "writtenBy": "作者",
+    "published": "發布於",
+    "updated": "更新於",
+    "shareArticle": "分享這篇文章",
+    "relatedPosts": "相關文章",
+    "tags": "標籤",
+    "minRead": "分鐘閱讀",
+    "views": "次檢視",
+    "lastUpdated": "最後更新時間：",
+    "like": "喜歡",
+    "share": "分享",
+    "quickActions": "快速操作",
+    "copyLink": "複製連結",
+    "socialShare": "社交分享",
+    "aboutAuthor": "關於作者",
+    "relatedArticles": "相關文章",
+    "continueExploring": "繼續探索更多相關內容",
+    "toolsComparison": "工具比較",
+    "seoGuide": "SEO 指南",
+    "tutorial": "教學",
+    "blog": "部落格"
+  },
+  "ResizeTool": {
+    "pageTitle": "線上大量調整圖片大小",
+    "pageDescription": "免費的線上工具，可一次批次調整多張圖片的大小。快速、安全，且完全在您的瀏覽器中運作 — 無需上傳。",
+    "backButton": "返回",
+    "hero": {
+      "title": "拖放您的圖片",
+      "subtitle": "或點擊下方瀏覽",
+      "selectImages": "選取圖片",
+      "supportedFormats": "支援：JPG、PNG、WebP、GIF"
+    },
+    "features": {
+      "title": "線上免費大量調整圖片大小",
+      "description": "一次調整多張圖片的大小，無需上傳到任何伺服器",
+      "lightningFast": "閃電般的處理速度",
+      "free": "永久 100% 免費",
+      "noSignup": "無需註冊",
+      "secure": "安全與私密",
+      "unlimited": "處理無限數量的圖片",
+      "browser": "在您的瀏覽器中運作"
+    },
+    "imagePreview": {
+      "selected": "張圖片",
+      "selectedPlural": "張圖片",
+      "selectedCount": "已選取",
+      "addMore": "新增更多",
+      "showLess": "顯示較少",
+      "showAll": "全部顯示（還有 {count} 張）"
+    },
+    "controls": {
+      "resizeMode": "調整大小模式",
+      "percentage": {
+        "title": "百分比",
+        "description": "將圖片縮放至原始尺寸的 {percentage}%。",
+        "rangeLabel": "範圍：10% 至 200%"
+      },
+      "fileSize": {
+        "title": "檔案大小",
+        "description": "將圖片壓縮至約 {size} KB。",
+        "rangeLabel": "範圍：10 KB 至 5000 KB",
+        "targetSize": "目標檔案大小 (KB)",
+        "note": "實際檔案大小可能會因圖片複雜度而異"
+      },
+      "dimensions": {
+        "title": "圖片尺寸",
+        "description": "調整為確切的寬度和高度。",
+        "width": "寬度 (px)",
+        "height": "高度 (px)",
+        "maintainRatio": "維持長寬比",
+        "usePadding": "使用邊框",
+        "paddingNote": "新增邊框以維持原始長寬比"
+      },
+      "width": {
+        "title": "寬度",
+        "description": "在維持長寬比的同時調整為特定寬度。",
+        "targetWidth": "目標寬度 (px)"
+      },
+      "height": {
+        "title": "高度",
+        "description": "在維持長寬比的同時調整為特定高度。",
+        "targetHeight": "目標高度 (px)"
+      },
+      "longestSide": {
+        "title": "最長邊",
+        "description": "根據最長邊調整大小。",
+        "targetLongest": "目標最長邊 (px)"
+      },
+      "format": {
+        "label": "輸出格式",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "品質",
+        "description": "品質越高 = 檔案越大"
+      },
+      "backgroundColor": {
+        "label": "背景顏色",
+        "description": "用於轉換為 JPEG 的透明圖片"
+      },
+      "presets": {
+        "title": "快速預設集",
+        "instagram": "Instagram 貼文",
+        "instagramDesc": "1080×1080 像素",
+        "twitter": "Twitter 標頭",
+        "twitterDesc": "1500×500 像素",
+        "facebook": "Facebook 封面",
+        "facebookDesc": "820×312 像素",
+        "youtube": "YouTube 縮圖",
+        "youtubeDesc": "1280×720 像素",
+        "email": "適合電子郵件",
+        "emailDesc": "寬度 800 像素",
+        "compress": "壓縮小檔案",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "調整大小為 {percentage}%",
+      "resizeButtonDefault": "調整圖片大小"
+    },
+    "processing": {
+      "title": "正在處理圖片...",
+      "progress": "已處理 {total} 張圖片中的 {current} 張"
+    },
+    "results": {
+      "title": "處理完成！",
+      "imagesResized": "已成功調整 {count} {count, plural, one {張圖片} other {張圖片}} 的大小",
+      "originalSize": "原始大小",
+      "newSize": "新大小",
+      "spaceSaved": "節省的空間",
+      "processedImages": "已處理的圖片",
+      "downloadImage": "下載",
+      "downloadAll": "全部下載",
+      "resizeMore": "調整更多圖片的大小"
+    },
+    "config": {
+      "title": "可分享的設定",
+      "description": "使用此網址自動套用這些設定。",
+      "copy": "複製",
+      "copied": "已複製！",
+      "link": "連結",
+      "urlCopied": "設定網址已複製到剪貼簿！",
+      "urlCopyFailed": "複製網址失敗"
+    },
+    "tools": {
+      "bulkresizeimages": "大量調整圖片大小",
+      "bulkresizeimagesDesc": "大量調整圖片大小",
+      "screenshot": "線上網站螢幕擷取",
+      "screenshotDesc": "擷取螢幕畫面",
+      "compress": "壓縮圖片",
+      "compressDesc": "壓縮圖片",
+      "crop": "裁剪圖片",
+      "cropDesc": "裁剪圖片",
+      "watermark": "圖片浮水印",
+      "watermarkDesc": "為圖片加上浮水印"
+    },
+    "toast": {
+      "imagesLoaded": "已載入 {count} {count, plural, one {張圖片} other {張圖片}}",
+      "imagesAdded": "已新增 {count} {count, plural, one {張圖片} other {張圖片}}",
+      "imagesResizedSuccess": "圖片大小調整成功！",
+      "downloadComplete": "下載完成！",
+      "urlCopied": "網址已複製到剪貼簿！",
+      "processing": "正在處理圖片...",
+      "error": "發生錯誤。請再試一次。",
+      "selectImagesFirst": "請先選取圖片",
+      "enterWidthOrHeight": "請輸入寬度或高度",
+      "enterTargetValue": "請輸入目標值"
+    }
+  }
+}

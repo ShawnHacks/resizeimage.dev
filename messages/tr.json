@@ -1,0 +1,345 @@
+{
+  "Header": {
+    "Home": "Ana Sayfa",
+    "Features": "Özellikler",
+    "FAQ": "SSS",
+    "About": "Hakkında",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Ürün",
+    "Resources": "Kaynaklar",
+    "Company": "Şirket",
+    "Features": "Özellikler",
+    "FAQ": "SSS",
+    "About": "Hakkında",
+    "SiteMap": "Site Haritası",
+    "Pricing": "Fiyatlandırma",
+    "License": "Lisans",
+    "Contact": "İletişim",
+    "Roadmap": "Yol Haritası",
+    "Documentation": "Belgeler",
+    "Blog": "Blog",
+    "Cookie Policy": "Çerez Politikası",
+    "Privacy Policy": "Gizlilik Politikası",
+    "Terms of Service": "Hizmet Şartları"
+  },
+  "HomePage": {
+    "title": "Toplu Resim Yeniden Boyutlandırma Çevrimiçi",
+    "subtitle": "Tek veya toplu işleme için sınırsız ücretsiz resim yeniden boyutlandırıcı. Tarayıcınızda anında resimleri yeniden boyutlandırın, sıkıştırın ve optimize edin. Kayıt yok, yükleme yok - %100 güvenli ve özel."
+  },
+  "NotFoundPage": {
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığınız sayfa bulunamadı. Taşınmış, silinmiş veya yanlış URL girmiş olabilirsiniz.",
+    "backToHome": "Ana Sayfaya Dön"
+  },
+  "AboutPage": {
+    "metaTitle": "Hakkımızda - Ücretsiz Toplu Görüntü Yeniden Boyutlandırıcı Çevrimiçi",
+    "metaDescription": "Toplu görüntü yeniden boyutlandırma hizmetimiz hakkında bilgi edinin. Görüntüleri toplu olarak birden çok format ve özel boyutlarla yeniden boyutlandırın, sıkıştırın ve optimize edin. %100 ücretsiz ve özel.",
+    "metaKeywords": "toplu görüntü yeniden boyutlandırıcı, toplu görüntü yeniden boyutlandırma, çevrimiçi görüntü iyileştirici, fotoğraf yeniden boyutlandırıcı, görüntü sıkıştırma aracı",
+    "hero": {
+      "title": "Görüntü Yeniden Boyutlandırma Hizmetimiz Hakkında",
+      "description": "Fotoğrafçıların, tasarımcıların, geliştiricilerin ve işletmelerin görüntüleri anında yeniden boyutlandırmasına, sıkıştırmasına ve optimize etmesine yardımcı olan profesyonel bir toplu görüntü yeniden boyutlandırıcı sağlıyoruz. Hizmetimiz her şeyi tarayıcınızda işler - %100 güvenli, özel ve sonsuza kadar ücretsiz.",
+      "cta": "Görüntüleri Yeniden Boyutlandırmaya Başlayın",
+      "learnMore": "Daha Fazla Bilgi Edinin"
+    },
+    "mission": {
+      "title": "Misyonumuz",
+      "description": "Misyonumuz, mevcut en güçlü ancak en basit görüntü yeniden boyutlandırma aracını sağlamaktır. Görüntüleri yeniden boyutlandırmanın ve optimize etmenin hızlı, ücretsiz ve herkes için erişilebilir olması gerektiğine inanıyoruz - ister web için görüntü hazırlayan bir fotoğrafçı, ister küçük resimler oluşturan bir tasarımcı, ister sosyal medya için içeriği optimize eden bir işletme sahibi olun.",
+      "quote": "Profesyonel görüntü yeniden boyutlandırmayı herkes için, her yerde basit, hızlı ve erişilebilir hale getirmek."
+    },
+    "stats": {
+      "title": "Dünya Çapındaki Kullanıcılar Tarafından Güvenilen",
+      "description": "Görüntü yeniden boyutlandırıcımız, dünya çapında binlerce kullanıcı tarafından çeşitli amaçlarla kullanılmaktadır.",
+      "users": {
+        "number": "10K+",
+        "label": "Aktif Kullanıcılar"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "Yeniden Boyutlandırılmış Görüntüler"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "Toplu İşlemler"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "Hizmet Çalışma Süresi"
+      }
+    },
+    "features": {
+      "title": "Neden Görüntü Yeniden Boyutlandırıcımızı Seçmelisiniz?",
+      "description": "Toplu görüntü yeniden boyutlandırıcımız, profesyoneller ve işletmeler için en iyi seçim olmasını sağlayan gelişmiş özellikler ve yetenekler sunar.",
+      "highQuality": {
+        "title": "Çoklu Yeniden Boyutlandırma Modları",
+        "description": "Yüzde, boyutlar, dosya boyutu, genişlik, yükseklik veya en uzun kenara göre yeniden boyutlandırın. İhtiyaçlarınıza en uygun modu seçin."
+      },
+      "multipleFormats": {
+        "title": "Çoklu Çıktı Formatları",
+        "description": "Optimum sonuçlar için ayarlanabilir kalite ayarlarıyla görüntülerinizi JPEG, PNG veya WebP formatlarında dışa aktarın."
+      },
+      "responsive": {
+        "title": "Akıllı Ön Ayarlar",
+        "description": "Instagram, Twitter, Facebook, YouTube ve daha fazlası için hızlı ön ayarlar. Herhangi bir platform için görüntüleri anında yeniden boyutlandırın."
+      },
+      "fast": {
+        "title": "Yıldırım Hızında İşleme",
+        "description": "Görüntüleri tarayıcınızda anında işleyin. Yükleme yok, bekleme yok - saniyeler içinde yüzlerce görüntüyü yeniden boyutlandırın."
+      },
+      "privacy": {
+        "title": "%100 Özel ve Güvenli",
+        "description": "Tüm işlemler tarayıcınızda gerçekleşir. Görüntüleriniz asla cihazınızdan ayrılmaz - tam gizlilik garantilidir."
+      },
+      "noLimits": {
+        "title": "Sınır Yok, Kayıt Yok",
+        "description": "Herhangi bir kayıt, filigran veya gizli ücret olmadan sınırsız görüntüyü yeniden boyutlandırın. Sonsuza kadar tamamen ücretsiz."
+      }
+    },
+    "technology": {
+      "title": "Modern Teknoloji ile Üretildi",
+      "description": "Görüntü yeniden boyutlandırıcımız, ışık hızında performans ve mükemmel kalite sağlamak için en son web teknolojileri kullanılarak oluşturulmuştur.",
+      "frontend": {
+        "title": "Modern Ön Uç",
+        "description": "Optimum SEO için sunucu tarafı oluşturma ile hızlı, duyarlı bir kullanıcı deneyimi için Next.js ve React ile oluşturulmuştur."
+      },
+      "backend": {
+        "title": "İstemci Tarafı İşleme",
+        "description": "Hız ve gizlilik sağlayarak tarayıcınızda tamamen doğru görüntü işleme için Canvas API tarafından desteklenmektedir."
+      }
+    },
+    "cta": {
+      "title": "Görüntülerinizi Yeniden Boyutlandırmaya Hazır mısınız?",
+      "description": "Fotoğraf optimizasyon ihtiyaçları için görüntü yeniden boyutlandırıcımıza güvenen binlerce kullanıcıya katılın. Görüntüleri bugün yeniden boyutlandırmaya başlayın - hızlı, ücretsiz ve özel.",
+      "button": "Görüntüleri Yeniden Boyutlandırmaya Başlayın"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Çerez Politikası - Çerezleri Nasıl Kullanıyoruz",
+    "metaDescription": "Web sitemizin deneyiminizi iyileştirmek için çerezleri nasıl kullandığını öğrenin. Çerez türlerini, yönetim seçeneklerini ve gizlilik haklarınızı anlayın.",
+    "metaKeywords": "çerez politikası, gizlilik, çerezler, web sitesi aracı, veri koruma, kullanıcı gizliliği"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Gizlilik Politikası",
+    "metaDescription": "Web sitemizi kullanırken kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu anlamak için gizlilik politikamızı okuyun.",
+    "metaKeywords": "gizlilik politikası, veri koruma, kişisel bilgiler, web sitesi aracı, kullanıcı gizliliği"
+  },
+  "TermsPage": {
+    "metaTitle": "Şartlar ve Koşullar - Hizmet Sözleşmesi",
+    "metaDescription": "Web sitemizi kullanma kurallarını ve yönergelerini anlamak için şartlar ve koşullarımızı okuyun.",
+    "metaKeywords": "şartlar ve koşullar, hizmet sözleşmesi, kullanım koşulları, web sitesi aracı, kullanıcı sözleşmesi"
+  },
+  "SiteConfig": {
+    "title": "Toplu Resim Yeniden Boyutlandırma Çevrimiçi - Resimleri Anında Yeniden Boyutlandırın",
+    "description": "Tek veya toplu işleme için sınırsız ücretsiz resim yeniden boyutlandırıcı. Tarayıcınızda anında resimleri yeniden boyutlandırın, sıkıştırın ve optimize edin. Kayıt yok, yükleme yok - %100 güvenli ve özel.",
+    "keywords": {
+      "0": "çevrimiçi toplu resim yeniden boyutlandırıcı",
+      "1": "ücretsiz toplu resim yeniden boyutlandırma",
+      "2": "çevrimiçi resimleri yeniden boyutlandırın",
+      "3": "resimleri ücretsiz sıkıştırın",
+      "4": "resim iyileştirici",
+      "5": "fotoğraf yeniden boyutlandırıcı",
+      "6": "birden çok resmi yeniden boyutlandırın",
+      "7": "resim boyutları aracı"
+    }
+  },
+  "CookieConsent": {
+    "title": "Çerez kullanıyoruz",
+    "description": "Deneyiminizi geliştirmek ve site kullanımını analiz etmek için çerez kullanıyoruz. Tercihlerinizi özelleştirebilir veya tüm çerezleri kabul edebilirsiniz.",
+    "acceptAll": "Tümünü Kabul Et",
+    "necessary": "Yalnızca Gerekli",
+    "customize": "Özelleştir",
+    "preferences": "Çerez Tercihleri",
+    "necessaryTitle": "Gerekli Çerezler",
+    "necessaryDesc": "Temel site işlevselliği için gerekli",
+    "analyticsTitle": "Analitik Çerezleri",
+    "analyticsDesc": "Sitemizi nasıl kullandığınızı anlamamıza yardımcı olun",
+    "marketingTitle": "Pazarlama Çerezleri",
+    "marketingDesc": "Kişiselleştirilmiş içerik ve reklamlar için kullanılır",
+    "required": "Gerekli",
+    "savePreferences": "Tercihleri Kaydet",
+    "cancel": "İptal"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Web sitesi ekran görüntüleri, web geliştirme ipuçları ve dijital araçlar hakkında bilgi edinin. Geliştiriciler ve tasarımcılar için uzman kılavuzları ve eğitimleri.",
+    "keywords": "web sitesi ekran görüntüsü blogu, web geliştirme eğitimleri, dijital araçlar kılavuzu, ekran görüntüsü eğitimleri, web tasarım ipuçları",
+    "readMore": "Devamını Oku",
+    "minRead": "dakika okuma",
+    "noPosts": "Henüz blog yazısı yok. Yakında tekrar kontrol edin!",
+    "categories": "Kategoriler",
+    "recentPosts": "Son Gönderiler",
+    "posts": "gönderiler"
+  },
+  "BlogPost": {
+    "backToBlog": "Blog'a Geri Dön",
+    "writtenBy": "Yazan",
+    "published": "Yayınlandı",
+    "updated": "Güncellendi",
+    "shareArticle": "Bu makaleyi paylaş",
+    "relatedPosts": "İlgili Makaleler",
+    "tags": "Etiketler",
+    "minRead": "dakika okuma",
+    "views": "görüntüleme",
+    "lastUpdated": "Son güncelleme:",
+    "like": "Beğen",
+    "share": "Paylaş",
+    "quickActions": "Hızlı Eylemler",
+    "copyLink": "Bağlantıyı Kopyala",
+    "socialShare": "Sosyal Paylaşım",
+    "aboutAuthor": "Yazar Hakkında",
+    "relatedArticles": "İlgili Makaleler",
+    "continueExploring": "Daha fazla ilgili içeriği keşfetmeye devam edin",
+    "toolsComparison": "Araç Karşılaştırması",
+    "seoGuide": "SEO Rehberi",
+    "tutorial": "Eğitim",
+    "blog": "Blog"
+  },
+  "ResizeTool": {
+    "pageTitle": "Toplu Resim Yeniden Boyutlandırma Çevrimiçi",
+    "pageDescription": "Aynı anda birden çok görüntüyü toplu olarak yeniden boyutlandırmak için ücretsiz çevrimiçi araç. Hızlı, güvenli ve tamamen tarayıcınızda çalışır — yükleme gerekmez.",
+    "backButton": "Geri",
+    "hero": {
+      "title": "Resimlerinizi Sürükleyip Bırakın",
+      "subtitle": "veya göz atmak için aşağıya tıklayın",
+      "selectImages": "Resim Seç",
+      "supportedFormats": "Destek: JPG, PNG, WebP, GIF"
+    },
+    "features": {
+      "title": "Çevrimiçi ve Ücretsiz Toplu Görüntü Yeniden Boyutlandırma",
+      "description": "Herhangi bir sunucuya yüklemeden aynı anda birden çok görüntüyü yeniden boyutlandırın",
+      "lightningFast": "Yıldırım hızında işleme",
+      "free": "%100 sonsuza kadar ücretsiz",
+      "noSignup": "Kayıt gerekmez",
+      "secure": "Güvenli ve özel",
+      "unlimited": "Sınırsız görüntü işleyin",
+      "browser": "Tarayıcınızda çalışır"
+    },
+    "imagePreview": {
+      "selected": "görüntü",
+      "selectedPlural": "görüntüler",
+      "selectedCount": "seçili",
+      "addMore": "Daha Fazla Ekle",
+      "showLess": "Daha Az Göster",
+      "showAll": "Tümünü Göster ({count} daha fazla)"
+    },
+    "controls": {
+      "resizeMode": "Yeniden Boyutlandırma Modu",
+      "percentage": {
+        "title": "Yüzde",
+        "description": "Görüntüleri orijinal boyutların %{percentage} oranında ölçeklendirin.",
+        "rangeLabel": "Aralık: %10 ila %200"
+      },
+      "fileSize": {
+        "title": "Dosya Boyutu",
+        "description": "Görüntüleri yaklaşık {size} KB'a sıkıştırın.",
+        "rangeLabel": "Aralık: 10 KB ila 5000 KB",
+        "targetSize": "Hedef Dosya Boyutu (KB)",
+        "note": "Gerçek dosya boyutu, görüntü karmaşıklığına bağlı olarak değişebilir"
+      },
+      "dimensions": {
+        "title": "Görüntü Boyutları",
+        "description": "Tam genişlik ve yüksekliğe yeniden boyutlandırın.",
+        "width": "Genişlik (px)",
+        "height": "Yükseklik (px)",
+        "maintainRatio": "En Boy Oranını Koru",
+        "usePadding": "Doldurma Kullan",
+        "paddingNote": "Orijinal en boy oranını korumak için dolgu ekleyin"
+      },
+      "width": {
+        "title": "Genişlik",
+        "description": "En boy oranını korurken belirli bir genişliğe yeniden boyutlandırın.",
+        "targetWidth": "Hedef Genişlik (px)"
+      },
+      "height": {
+        "title": "Yükseklik",
+        "description": "En boy oranını korurken belirli bir yüksekliğe yeniden boyutlandırın.",
+        "targetHeight": "Hedef Yükseklik (px)"
+      },
+      "longestSide": {
+        "title": "En Uzun Kenar",
+        "description": "En uzun boyuta göre yeniden boyutlandırın.",
+        "targetLongest": "Hedef En Uzun Kenar (px)"
+      },
+      "format": {
+        "label": "Çıktı Formatı",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Kalite",
+        "description": "Daha yüksek kalite = daha büyük dosya boyutu"
+      },
+      "backgroundColor": {
+        "label": "Arka Plan Rengi",
+        "description": "JPEG'e dönüştürülen şeffaf görüntüler için kullanılır"
+      },
+      "presets": {
+        "title": "Hızlı Ön Ayarlar",
+        "instagram": "Instagram Gönderisi",
+        "instagramDesc": "1080×1080 piksel",
+        "twitter": "Twitter Başlığı",
+        "twitterDesc": "1500×500 piksel",
+        "facebook": "Facebook Kapağı",
+        "facebookDesc": "820×312 piksel",
+        "youtube": "YouTube Küçük Resmi",
+        "youtubeDesc": "1280×720 piksel",
+        "email": "E-posta Dostu",
+        "emailDesc": "800 piksel genişlik",
+        "compress": "Küçük Sıkıştır",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "%{percentage} Olarak Yeniden Boyutlandır",
+      "resizeButtonDefault": "Görüntüleri Yeniden Boyutlandır"
+    },
+    "processing": {
+      "title": "Görüntüler İşleniyor...",
+      "progress": "{total} görüntüden {current} tanesi işlendi"
+    },
+    "results": {
+      "title": "İşlem Tamamlandı!",
+      "imagesResized": "{count} {count, plural, one {görüntü} other {görüntü}} başarıyla yeniden boyutlandırıldı",
+      "originalSize": "Orijinal Boyut",
+      "newSize": "Yeni Boyut",
+      "spaceSaved": "Kaydedilen Alan",
+      "processedImages": "İşlenmiş Görüntüler",
+      "downloadImage": "İndir",
+      "downloadAll": "Tüm Görüntüleri İndir",
+      "resizeMore": "Daha Fazla Görüntü Yeniden Boyutlandır"
+    },
+    "config": {
+      "title": "Paylaşılabilir Yapılandırma",
+      "description": "Bu ayarları bu URL ile otomatik olarak kullanın.",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı!",
+      "link": "Bağlantı",
+      "urlCopied": "Yapılandırma URL'si panoya kopyalandı!",
+      "urlCopyFailed": "URL kopyalanamadı"
+    },
+    "tools": {
+      "bulkresizeimages": "Toplu Görüntü Yeniden Boyutlandırma",
+      "bulkresizeimagesDesc": "Toplu Görüntü Yeniden Boyutlandırma",
+      "screenshot": "Web Sitesi Ekran Görüntüsü Çevrimiçi",
+      "screenshotDesc": "Ekran Görüntüsü Al",
+      "compress": "Görüntüyü Sıkıştır",
+      "compressDesc": "Görüntüleri Sıkıştır",
+      "crop": "Görüntüyü Kırp",
+      "cropDesc": "Görüntüleri Kırp",
+      "watermark": "Görüntüye Filigran Ekle",
+      "watermarkDesc": "Görüntülere Filigran Ekle"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {görüntü} other {görüntü}} yüklendi",
+      "imagesAdded": "{count} {count, plural, one {görüntü} other {görüntü}} daha eklendi",
+      "imagesResizedSuccess": "Görüntüler başarıyla yeniden boyutlandırıldı!",
+      "downloadComplete": "İndirme tamamlandı!",
+      "urlCopied": "URL panoya kopyalandı!",
+      "processing": "Görüntüler işleniyor...",
+      "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+      "selectImagesFirst": "Lütfen önce görüntüleri seçin",
+      "enterWidthOrHeight": "Lütfen genişlik veya yükseklik girin",
+      "enterTargetValue": "Lütfen bir hedef değer girin"
+    }
+  }
+}

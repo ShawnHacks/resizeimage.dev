@@ -91,7 +91,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
 ];
 
   // State with default values
-  const [mode, setMode] = useState<ResizeMode>('dimensions');
+  const [mode, setMode] = useState<ResizeMode>('percentage');
   const [percentage, setPercentage] = useState(50);
   const [targetFileSize, setTargetFileSize] = useState(100);
   const [format, setFormat] = useState<ImageFormat>('jpeg');

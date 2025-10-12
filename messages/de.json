@@ -1,0 +1,345 @@
+{
+  "Header": {
+    "Home": "Startseite",
+    "Features": "Funktionen",
+    "FAQ": "FAQ",
+    "About": "Über uns",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Produkt",
+    "Resources": "Ressourcen",
+    "Company": "Unternehmen",
+    "Features": "Funktionen",
+    "FAQ": "FAQ",
+    "About": "Über uns",
+    "SiteMap": "Sitemap",
+    "Pricing": "Preise",
+    "License": "Lizenz",
+    "Contact": "Kontakt",
+    "Roadmap": "Roadmap",
+    "Documentation": "Dokumentation",
+    "Blog": "Blog",
+    "Cookie Policy": "Cookie-Richtlinie",
+    "Privacy Policy": "Datenschutzrichtlinie",
+    "Terms of Service": "Nutzungsbedingungen"
+  },
+  "HomePage": {
+    "title": "Bilder online in großen Mengen anpassen",
+    "subtitle": "Unbegrenzter kostenloser Bild-Resizer für Einzel- oder Stapelverarbeitung. Passen Sie die Größe an, komprimieren und optimieren Sie Bilder sofort in Ihrem Browser. Keine Registrierung, keine Uploads - 100% sicher und privat."
+  },
+  "NotFoundPage": {
+    "title": "Seite nicht gefunden",
+    "description": "Die von Ihnen gesuchte Seite konnte nicht gefunden werden. Sie wurde möglicherweise verschoben, gelöscht oder Sie haben die falsche URL eingegeben.",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "AboutPage": {
+    "metaTitle": "Über uns - Kostenloser Online-Bild-Resizer für große Mengen",
+    "metaDescription": "Erfahren Sie mehr über unseren Service zur Größenänderung von Bildern in großen Mengen. Passen Sie die Größe an, komprimieren und optimieren Sie Bilder im Stapel mit mehreren Formaten und benutzerdefinierten Abmessungen. 100% kostenlos und privat.",
+    "metaKeywords": "Massen-Bild-Resizer, Stapel-Bildgrößenänderung, Online-Bildoptimierer, Foto-Resizer, Bildkomprimierungstool",
+    "hero": {
+      "title": "Über unseren Bild-Resizer-Service",
+      "description": "Wir bieten einen professionellen Massen-Bild-Resizer, der Fotografen, Designern, Entwicklern und Unternehmen hilft, die Größe von Bildern sofort anzupassen, zu komprimieren und zu optimieren. Unser Service verarbeitet alles in Ihrem Browser - 100% sicher, privat und für immer kostenlos.",
+      "cta": "Bilder anpassen starten",
+      "learnMore": "Mehr erfahren"
+    },
+    "mission": {
+      "title": "Unsere Mission",
+      "description": "Unsere Mission ist es, das leistungsstärkste und dennoch einfachste Tool zur Größenänderung von Bildern anzubieten. Wir glauben, dass das Anpassen und Optimieren von Bildern schnell, kostenlos und für jedermann zugänglich sein sollte - egal ob Sie ein Fotograf sind, der Bilder für das Web vorbereitet, ein Designer, der Thumbnails erstellt, oder ein Geschäftsinhaber, der Inhalte für soziale Medien optimiert.",
+      "quote": "Professionelle Bildgrößenänderung einfach, schnell und für jedermann und überall zugänglich machen."
+    },
+    "stats": {
+      "title": "Weltweit von Benutzern vertraut",
+      "description": "Unser Bild-Resizer wird von Tausenden von Benutzern weltweit für verschiedene Zwecke verwendet.",
+      "users": {
+        "number": "10K+",
+        "label": "Aktive Benutzer"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "Angepasste Bilder"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "Stapelverarbeitungen"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "Service-Verfügbarkeit"
+      }
+    },
+    "features": {
+      "title": "Warum unseren Bild-Resizer wählen?",
+      "description": "Unser Massen-Bild-Resizer bietet erweiterte Funktionen und Möglichkeiten, die ihn zur besten Wahl für Profis und Unternehmen machen.",
+      "highQuality": {
+        "title": "Mehrere Anpassungsmodi",
+        "description": "Größe nach Prozentsatz, Abmessungen, Dateigröße, Breite, Höhe oder längster Seite anpassen. Wählen Sie den Modus, der Ihren Anforderungen perfekt entspricht."
+      },
+      "multipleFormats": {
+        "title": "Mehrere Ausgabeformate",
+        "description": "Exportieren Sie Ihre Bilder in den Formaten JPEG, PNG oder WebP mit einstellbaren Qualitätseinstellungen für optimale Ergebnisse."
+      },
+      "responsive": {
+        "title": "Intelligente Voreinstellungen",
+        "description": "Schnelle Voreinstellungen für Instagram, Twitter, Facebook, YouTube und mehr. Passen Sie Bilder für jede Plattform sofort an."
+      },
+      "fast": {
+        "title": "Blitzschnelle Verarbeitung",
+        "description": "Verarbeiten Sie Bilder sofort in Ihrem Browser. Keine Uploads, kein Warten - passen Sie Hunderte von Bildern in Sekunden an."
+      },
+      "privacy": {
+        "title": "100% privat & sicher",
+        "description": "Die gesamte Verarbeitung erfolgt in Ihrem Browser. Ihre Bilder verlassen Ihr Gerät nie - vollständige Privatsphäre garantiert."
+      },
+      "noLimits": {
+        "title": "Keine Limits, keine Registrierung",
+        "description": "Passen Sie unbegrenzt viele Bilder an, ohne Anmeldung, Wasserzeichen oder versteckte Gebühren. Für immer völlig kostenlos."
+      }
+    },
+    "technology": {
+      "title": "Mit moderner Technologie entwickelt",
+      "description": "Unser Bild-Resizer wurde mit modernsten Web-Technologien entwickelt, um eine blitzschnelle Leistung und perfekte Qualität zu gewährleisten.",
+      "frontend": {
+        "title": "Modernes Frontend",
+        "description": "Entwickelt mit Next.js und React für eine schnelle, reaktionsschnelle Benutzererfahrung mit serverseitigem Rendering für optimale SEO."
+      },
+      "backend": {
+        "title": "Client-seitige Verarbeitung",
+        "description": "Angetrieben von der Canvas-API für eine genaue Bildverarbeitung vollständig in Ihrem Browser, um Geschwindigkeit und Datenschutz zu gewährleisten."
+      }
+    },
+    "cta": {
+      "title": "Bereit, Ihre Bilder anzupassen?",
+      "description": "Schließen Sie sich Tausenden von Benutzern an, die unserem Bild-Resizer für ihre Fotooptimierungsanforderungen vertrauen. Beginnen Sie noch heute mit der Größenänderung von Bildern - schnell, kostenlos und privat.",
+      "button": "Bilder anpassen starten"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Cookie-Richtlinie - Wie wir Cookies verwenden",
+    "metaDescription": "Erfahren Sie, wie unser Website-Service Cookies verwendet, um Ihre Erfahrung zu verbessern. Verstehen Sie Cookie-Typen, Verwaltungsoptionen und Ihre Datenschutzrechte.",
+    "metaKeywords": "Cookie-Richtlinie, Datenschutz, Cookies, Website-Tool, Datenschutz, Benutzerdatenschutz"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Datenschutzrichtlinie",
+    "metaDescription": "Lesen Sie unsere Datenschutzrichtlinie, um zu verstehen, wie wir Ihre persönlichen Daten erfassen, verwenden und schützen, wenn Sie unseren Website-Service nutzen.",
+    "metaKeywords": "Datenschutzrichtlinie, Datenschutz, persönliche Informationen, Website-Tool, Benutzerdatenschutz"
+  },
+  "TermsPage": {
+    "metaTitle": "Allgemeine Geschäftsbedingungen - Servicevereinbarung",
+    "metaDescription": "Lesen Sie unsere Allgemeinen Geschäftsbedingungen, um die Regeln und Richtlinien für die Nutzung unseres Website-Service zu verstehen.",
+    "metaKeywords": "Allgemeine Geschäftsbedingungen, Servicevereinbarung, Nutzungsbedingungen, Website-Tool, Benutzervereinbarung"
+  },
+  "SiteConfig": {
+    "title": "Bilder online in großen Mengen anpassen - Bilder sofort anpassen",
+    "description": "Unbegrenzter kostenloser Bild-Resizer für Einzel- oder Stapelverarbeitung. Passen Sie die Größe an, komprimieren und optimieren Sie Bilder sofort in Ihrem Browser. Keine Registrierung, keine Uploads - 100% sicher und privat.",
+    "keywords": {
+      "0": "Massen-Bild-Resizer online",
+      "1": "kostenlose Stapel-Bildgrößenänderung",
+      "2": "Bilder online anpassen",
+      "3": "Bilder kostenlos komprimieren",
+      "4": "Bildoptimierer",
+      "5": "Foto-Resizer",
+      "6": "mehrere Bilder anpassen",
+      "7": "Bildabmessungen-Tool"
+    }
+  },
+  "CookieConsent": {
+    "title": "Wir verwenden Cookies",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und die Nutzung der Website zu analysieren. Sie können Ihre Präferenzen anpassen oder alle Cookies akzeptieren.",
+    "acceptAll": "Alle akzeptieren",
+    "necessary": "Nur notwendige",
+    "customize": "Anpassen",
+    "preferences": "Cookie-Einstellungen",
+    "necessaryTitle": "Notwendige Cookies",
+    "necessaryDesc": "Erforderlich für die grundlegende Funktionalität der Website",
+    "analyticsTitle": "Analyse-Cookies",
+    "analyticsDesc": "Helfen Sie uns zu verstehen, wie Sie unsere Website nutzen",
+    "marketingTitle": "Marketing-Cookies",
+    "marketingDesc": "Wird für personalisierte Inhalte und Anzeigen verwendet",
+    "required": "Erforderlich",
+    "savePreferences": "Einstellungen speichern",
+    "cancel": "Abbrechen"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Erfahren Sie mehr über Website-Screenshots, Webentwicklungstipps und digitale Tools. Expertenanleitungen und Tutorials für Entwickler und Designer.",
+    "keywords": "Website-Screenshot-Blog, Webentwicklungs-Tutorials, Leitfaden für digitale Tools, Screenshot-Tutorials, Webdesign-Tipps",
+    "readMore": "Weiterlesen",
+    "minRead": "min Lesezeit",
+    "noPosts": "Noch keine Blogbeiträge verfügbar. Schauen Sie bald wieder vorbei!",
+    "categories": "Kategorien",
+    "recentPosts": "Neueste Beiträge",
+    "posts": "Beiträge"
+  },
+  "BlogPost": {
+    "backToBlog": "Zurück zum Blog",
+    "writtenBy": "Geschrieben von",
+    "published": "Veröffentlicht",
+    "updated": "Aktualisiert",
+    "shareArticle": "Diesen Artikel teilen",
+    "relatedPosts": "Ähnliche Artikel",
+    "tags": "Tags",
+    "minRead": "min Lesezeit",
+    "views": "Ansichten",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "like": "Gefällt mir",
+    "share": "Teilen",
+    "quickActions": "Schnellaktionen",
+    "copyLink": "Link kopieren",
+    "socialShare": "In sozialen Netzwerken teilen",
+    "aboutAuthor": "Über den Autor",
+    "relatedArticles": "Ähnliche Artikel",
+    "continueExploring": "Entdecken Sie weitere verwandte Inhalte",
+    "toolsComparison": "Werkzeugvergleich",
+    "seoGuide": "SEO-Leitfaden",
+    "tutorial": "Tutorial",
+    "blog": "Blog"
+  },
+  "ResizeTool": {
+    "pageTitle": "Bilder online in großen Mengen anpassen",
+    "pageDescription": "Kostenloses Online-Tool zur Stapelverarbeitung mehrerer Bilder gleichzeitig. Schnell, sicher und funktioniert vollständig in Ihrem Browser — kein Upload erforderlich.",
+    "backButton": "Zurück",
+    "hero": {
+      "title": "Ziehen Sie Ihre Bilder hierher",
+      "subtitle": "oder klicken Sie unten zum Durchsuchen",
+      "selectImages": "Bilder auswählen",
+      "supportedFormats": "Unterstützt: JPG, PNG, WebP, GIF"
+    },
+    "features": {
+      "title": "Bilder online & kostenlos in großen Mengen anpassen",
+      "description": "Passen Sie die Größe mehrerer Bilder gleichzeitig an, ohne sie auf einen Server hochzuladen",
+      "lightningFast": "Blitzschnelle Verarbeitung",
+      "free": "100% für immer kostenlos",
+      "noSignup": "Keine Anmeldung erforderlich",
+      "secure": "Sicher & privat",
+      "unlimited": "Unbegrenzt viele Bilder verarbeiten",
+      "browser": "Funktioniert in Ihrem Browser"
+    },
+    "imagePreview": {
+      "selected": "Bild",
+      "selectedPlural": "Bilder",
+      "selectedCount": "ausgewählt",
+      "addMore": "Mehr hinzufügen",
+      "showLess": "Weniger anzeigen",
+      "showAll": "Alle anzeigen ({count} mehr)"
+    },
+    "controls": {
+      "resizeMode": "Anpassungsmodus",
+      "percentage": {
+        "title": "Prozentsatz",
+        "description": "Bilder auf {percentage}% der ursprünglichen Abmessungen skalieren.",
+        "rangeLabel": "Bereich: 10% bis 200%"
+      },
+      "fileSize": {
+        "title": "Dateigröße",
+        "description": "Bilder auf ca. {size} KB komprimieren.",
+        "rangeLabel": "Bereich: 10 KB bis 5000 KB",
+        "targetSize": "Zieldateigröße (KB)",
+        "note": "Die tatsächliche Dateigröße kann je nach Bildkomplexität variieren"
+      },
+      "dimensions": {
+        "title": "Bildabmessungen",
+        "description": "Auf exakte Breite und Höhe anpassen.",
+        "width": "Breite (px)",
+        "height": "Höhe (px)",
+        "maintainRatio": "Seitenverhältnis beibehalten",
+        "usePadding": "Auffüllung verwenden",
+        "paddingNote": "Auffüllung hinzufügen, um das ursprüngliche Seitenverhältnis beizubehalten"
+      },
+      "width": {
+        "title": "Breite",
+        "description": "Auf bestimmte Breite anpassen und dabei das Seitenverhältnis beibehalten.",
+        "targetWidth": "Zielbreite (px)"
+      },
+      "height": {
+        "title": "Höhe",
+        "description": "Auf bestimmte Höhe anpassen und dabei das Seitenverhältnis beibehalten.",
+        "targetHeight": "Zielhöhe (px)"
+      },
+      "longestSide": {
+        "title": "Längste Seite",
+        "description": "Anpassung basierend auf der längsten Abmessung.",
+        "targetLongest": "Ziel der längsten Seite (px)"
+      },
+      "format": {
+        "label": "Ausgabeformat",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Qualität",
+        "description": "Höhere Qualität = größere Dateigröße"
+      },
+      "backgroundColor": {
+        "label": "Hintergrundfarbe",
+        "description": "Wird für transparente Bilder verwendet, die in JPEG konvertiert werden"
+      },
+      "presets": {
+        "title": "Schnelle Voreinstellungen",
+        "instagram": "Instagram-Beitrag",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "Twitter-Header",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Facebook-Cover",
+        "facebookDesc": "820×312 px",
+        "youtube": "YouTube-Thumbnail",
+        "youtubeDesc": "1280×720 px",
+        "email": "E-Mail-freundlich",
+        "emailDesc": "800 px Breite",
+        "compress": "Klein komprimieren",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Auf {percentage}% anpassen",
+      "resizeButtonDefault": "Bilder anpassen"
+    },
+    "processing": {
+      "title": "Bilder werden verarbeitet...",
+      "progress": "{current} von {total} Bildern verarbeitet"
+    },
+    "results": {
+      "title": "Verarbeitung abgeschlossen!",
+      "imagesResized": "{count} {count, plural, one {Bild} other {Bilder}} erfolgreich angepasst",
+      "originalSize": "Originalgröße",
+      "newSize": "Neue Größe",
+      "spaceSaved": "Gespeicherter Speicherplatz",
+      "processedImages": "Verarbeitete Bilder",
+      "downloadImage": "Herunterladen",
+      "downloadAll": "Alle Bilder herunterladen",
+      "resizeMore": "Weitere Bilder anpassen"
+    },
+    "config": {
+      "title": "Teilbare Konfiguration",
+      "description": "Verwenden Sie diese Einstellungen automatisch mit dieser URL.",
+      "copy": "Kopieren",
+      "copied": "Kopiert!",
+      "link": "Link",
+      "urlCopied": "Konfigurations-URL in die Zwischenablage kopiert!",
+      "urlCopyFailed": "URL konnte nicht kopiert werden"
+    },
+    "tools": {
+      "bulkresizeimages": "Bilder in großen Mengen anpassen",
+      "bulkresizeimagesDesc": "Bilder in großen Mengen anpassen",
+      "screenshot": "Website-Screenshot online",
+      "screenshotDesc": "Screenshots machen",
+      "compress": "Bild komprimieren",
+      "compressDesc": "Bilder komprimieren",
+      "crop": "Bild zuschneiden",
+      "cropDesc": "Bilder zuschneiden",
+      "watermark": "Bild mit Wasserzeichen versehen",
+      "watermarkDesc": "Bilder mit Wasserzeichen versehen"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {Bild} other {Bilder}} geladen",
+      "imagesAdded": "{count} weitere {count, plural, one {Bild} other {Bilder}} hinzugefügt",
+      "imagesResizedSuccess": "Bilder erfolgreich angepasst!",
+      "downloadComplete": "Download abgeschlossen!",
+      "urlCopied": "URL in die Zwischenablage kopiert!",
+      "processing": "Bilder werden verarbeitet...",
+      "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "selectImagesFirst": "Bitte wählen Sie zuerst Bilder aus",
+      "enterWidthOrHeight": "Bitte geben Sie Breite oder Höhe ein",
+      "enterTargetValue": "Bitte geben Sie einen Zielwert ein"
+    }
+  }
+}

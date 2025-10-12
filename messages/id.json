@@ -1,0 +1,345 @@
+{
+  "Header": {
+    "Home": "Beranda",
+    "Features": "Fitur",
+    "FAQ": "FAQ",
+    "About": "Tentang",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Produk",
+    "Resources": "Sumber Daya",
+    "Company": "Perusahaan",
+    "Features": "Fitur",
+    "FAQ": "FAQ",
+    "About": "Tentang",
+    "SiteMap": "Peta Situs",
+    "Pricing": "Harga",
+    "License": "Lisensi",
+    "Contact": "Kontak",
+    "Roadmap": "Peta Jalan",
+    "Documentation": "Dokumentasi",
+    "Blog": "Blog",
+    "Cookie Policy": "Kebijakan Cookie",
+    "Privacy Policy": "Kebijakan Privasi",
+    "Terms of Service": "Ketentuan Layanan"
+  },
+  "HomePage": {
+    "title": "Ubah Ukuran Gambar Massal Secara Online",
+    "subtitle": "Pengubah ukuran gambar gratis tanpa batas untuk pemrosesan tunggal atau batch. Ubah ukuran, kompres, dan optimalkan gambar secara instan di browser Anda. Tanpa registrasi, tanpa unggahan - 100% aman dan pribadi."
+  },
+  "NotFoundPage": {
+    "title": "Halaman tidak ditemukan",
+    "description": "Halaman yang Anda cari tidak dapat ditemukan. Mungkin telah dipindahkan, dihapus, atau Anda salah memasukkan URL.",
+    "backToHome": "Kembali ke Beranda"
+  },
+  "AboutPage": {
+    "metaTitle": "Tentang Kami - Pengubah Ukuran Gambar Massal Gratis Online",
+    "metaDescription": "Pelajari tentang layanan pengubah ukuran gambar massal kami. Ubah ukuran, kompres, dan optimalkan gambar dalam batch dengan berbagai format dan dimensi khusus. 100% gratis dan pribadi.",
+    "metaKeywords": "pengubah ukuran gambar massal, ubah ukuran gambar batch, pengoptimal gambar online, pengubah ukuran foto, alat kompresi gambar",
+    "hero": {
+      "title": "Tentang Layanan Pengubah Ukuran Gambar Kami",
+      "description": "Kami menyediakan pengubah ukuran gambar massal profesional yang membantu fotografer, desainer, pengembang, dan bisnis mengubah ukuran, mengompres, dan mengoptimalkan gambar secara instan. Layanan kami memproses semuanya di browser Anda - 100% aman, pribadi, dan gratis selamanya.",
+      "cta": "Mulai Mengubah Ukuran Gambar",
+      "learnMore": "Pelajari Lebih Lanjut"
+    },
+    "mission": {
+      "title": "Misi Kami",
+      "description": "Misi kami adalah menyediakan alat pengubah ukuran gambar yang paling kuat namun sederhana yang tersedia. Kami percaya bahwa mengubah ukuran dan mengoptimalkan gambar harus cepat, gratis, dan dapat diakses oleh semua orang - baik Anda seorang fotografer yang menyiapkan gambar untuk web, seorang desainer yang membuat gambar mini, atau pemilik bisnis yang mengoptimalkan konten untuk media sosial.",
+      "quote": "Menjadikan pengubahan ukuran gambar profesional menjadi sederhana, cepat, dan dapat diakses oleh semua orang, di mana saja."
+    },
+    "stats": {
+      "title": "Dipercaya oleh Pengguna di Seluruh Dunia",
+      "description": "Pengubah ukuran gambar kami digunakan oleh ribuan pengguna di seluruh dunia untuk berbagai keperluan.",
+      "users": {
+        "number": "10K+",
+        "label": "Pengguna Aktif"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "Gambar yang Diubah Ukurannya"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "Operasi Batch"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "Waktu Aktif Layanan"
+      }
+    },
+    "features": {
+      "title": "Mengapa Memilih Pengubah Ukuran Gambar Kami?",
+      "description": "Pengubah ukuran gambar massal kami menawarkan fitur dan kemampuan canggih yang menjadikannya pilihan terbaik bagi para profesional dan bisnis.",
+      "highQuality": {
+        "title": "Beberapa Mode Pengubahan Ukuran",
+        "description": "Ubah ukuran berdasarkan persentase, dimensi, ukuran file, lebar, tinggi, atau sisi terpanjang. Pilih mode yang paling sesuai dengan kebutuhan Anda."
+      },
+      "multipleFormats": {
+        "title": "Beberapa Format Output",
+        "description": "Ekspor gambar Anda dalam format JPEG, PNG, atau WebP dengan pengaturan kualitas yang dapat disesuaikan untuk hasil yang optimal."
+      },
+      "responsive": {
+        "title": "Preset Cerdas",
+        "description": "Preset cepat untuk Instagram, Twitter, Facebook, YouTube, dan lainnya. Ubah ukuran gambar untuk platform apa pun secara instan."
+      },
+      "fast": {
+        "title": "Pemrosesan Secepat Kilat",
+        "description": "Proses gambar secara instan di browser Anda. Tanpa unggahan, tanpa menunggu - ubah ukuran ratusan gambar dalam hitungan detik."
+      },
+      "privacy": {
+        "title": "100% Pribadi & Aman",
+        "description": "Semua pemrosesan terjadi di browser Anda. Gambar Anda tidak pernah meninggalkan perangkat Anda - privasi lengkap dijamin."
+      },
+      "noLimits": {
+        "title": "Tanpa Batas, Tanpa Registrasi",
+        "description": "Ubah ukuran gambar tanpa batas tanpa pendaftaran, tanda air, atau biaya tersembunyi. Sepenuhnya gratis selamanya."
+      }
+    },
+    "technology": {
+      "title": "Dibangun dengan Teknologi Modern",
+      "description": "Pengubah ukuran gambar kami dibuat menggunakan teknologi web mutakhir untuk memastikan kinerja secepat kilat dan kualitas sempurna.",
+      "frontend": {
+        "title": "Frontend Modern",
+        "description": "Dibangun dengan Next.js dan React untuk pengalaman pengguna yang cepat dan responsif dengan rendering sisi server untuk SEO yang optimal."
+      },
+      "backend": {
+        "title": "Pemrosesan Sisi Klien",
+        "description": "Didukung oleh Canvas API for pemrosesan gambar yang akurat sepenuhnya di browser Anda, memastikan kecepatan dan privasi."
+      }
+    },
+    "cta": {
+      "title": "Siap Mengubah Ukuran Gambar Anda?",
+      "description": "Bergabunglah dengan ribuan pengguna yang mempercayai pengubah ukuran gambar kami untuk kebutuhan pengoptimalan foto mereka. Mulai ubah ukuran gambar hari ini - cepat, gratis, dan pribadi.",
+      "button": "Mulai Mengubah Ukuran Gambar"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Kebijakan Cookie - Cara Kami Menggunakan Cookie",
+    "metaDescription": "Pelajari bagaimana layanan situs web kami menggunakan cookie untuk meningkatkan pengalaman Anda. Pahami jenis cookie, opsi pengelolaan, dan hak privasi Anda.",
+    "metaKeywords": "kebijakan cookie, privasi, cookie, alat situs web, perlindungan data, privasi pengguna"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Kebijakan Privasi",
+    "metaDescription": "Baca kebijakan privasi kami untuk memahami bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan layanan situs web kami.",
+    "metaKeywords": "kebijakan privasi, perlindungan data, informasi pribadi, alat situs web, privasi pengguna"
+  },
+  "TermsPage": {
+    "metaTitle": "Syarat & Ketentuan - Perjanjian Layanan",
+    "metaDescription": "Baca syarat dan ketentuan kami untuk memahami aturan dan pedoman penggunaan layanan situs web kami.",
+    "metaKeywords": "syarat dan ketentuan, perjanjian layanan, ketentuan penggunaan, alat situs web, perjanjian pengguna"
+  },
+  "SiteConfig": {
+    "title": "Ubah Ukuran Gambar Massal Secara Online - Ubah Ukuran Gambar Secara Instan",
+    "description": "Pengubah ukuran gambar gratis tanpa batas untuk pemrosesan tunggal atau batch. Ubah ukuran, kompres, dan optimalkan gambar secara instan di browser Anda. Tanpa registrasi, tanpa unggahan - 100% aman dan pribadi.",
+    "keywords": {
+      "0": "pengubah ukuran gambar massal online",
+      "1": "ubah ukuran gambar batch gratis",
+      "2": "ubah ukuran gambar online",
+      "3": "kompres gambar gratis",
+      "4": "pengoptimal gambar",
+      "5": "pengubah ukuran foto",
+      "6": "ubah ukuran banyak gambar",
+      "7": "alat dimensi gambar"
+    }
+  },
+  "CookieConsent": {
+    "title": "Kami menggunakan cookie",
+    "description": "Kami menggunakan cookie untuk meningkatkan pengalaman Anda dan menganalisis penggunaan situs. Anda dapat menyesuaikan preferensi Anda atau menerima semua cookie.",
+    "acceptAll": "Terima Semua",
+    "necessary": "Hanya yang Diperlukan",
+    "customize": "Sesuaikan",
+    "preferences": "Preferensi Cookie",
+    "necessaryTitle": "Cookie yang Diperlukan",
+    "necessaryDesc": "Diperlukan untuk fungsionalitas situs dasar",
+    "analyticsTitle": "Cookie Analitik",
+    "analyticsDesc": "Bantu kami memahami cara Anda menggunakan situs kami",
+    "marketingTitle": "Cookie Pemasaran",
+    "marketingDesc": "Digunakan untuk konten dan iklan yang dipersonalisasi",
+    "required": "Wajib",
+    "savePreferences": "Simpan Preferensi",
+    "cancel": "Batal"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Pelajari tentang tangkapan layar situs web, kiat pengembangan web, dan alat digital. Panduan dan tutorial ahli untuk pengembang dan desainer.",
+    "keywords": "blog tangkapan layar situs web, tutorial pengembangan web, panduan alat digital, tutorial tangkapan layar, kiat desain web",
+    "readMore": "Baca Selengkapnya",
+    "minRead": "mnt dibaca",
+    "noPosts": "Belum ada postingan blog. Segera kembali!",
+    "categories": "Kategori",
+    "recentPosts": "Postingan Terbaru",
+    "posts": "postingan"
+  },
+  "BlogPost": {
+    "backToBlog": "Kembali ke Blog",
+    "writtenBy": "Ditulis oleh",
+    "published": "Diterbitkan",
+    "updated": "Diperbarui",
+    "shareArticle": "Bagikan artikel ini",
+    "relatedPosts": "Artikel Terkait",
+    "tags": "Tag",
+    "minRead": "mnt dibaca",
+    "views": "dilihat",
+    "lastUpdated": "Terakhir diperbarui:",
+    "like": "Suka",
+    "share": "Bagikan",
+    "quickActions": "Tindakan Cepat",
+    "copyLink": "Salin Tautan",
+    "socialShare": "Berbagi Sosial",
+    "aboutAuthor": "Tentang Penulis",
+    "relatedArticles": "Artikel Terkait",
+    "continueExploring": "Lanjutkan menjelajahi lebih banyak konten terkait",
+    "toolsComparison": "Perbandingan Alat",
+    "seoGuide": "Panduan SEO",
+    "tutorial": "Tutorial",
+    "blog": "Blog"
+  },
+  "ResizeTool": {
+    "pageTitle": "Ubah Ukuran Gambar Massal Secara Online",
+    "pageDescription": "Alat online gratis untuk mengubah ukuran beberapa gambar sekaligus. Cepat, aman, dan berfungsi sepenuhnya di browser Anda — tidak perlu mengunggah.",
+    "backButton": "Kembali",
+    "hero": {
+      "title": "Seret & Lepas Gambar Anda",
+      "subtitle": "atau klik di bawah untuk menelusuri",
+      "selectImages": "Pilih Gambar",
+      "supportedFormats": "Dukungan: JPG, PNG, WebP, GIF"
+    },
+    "features": {
+      "title": "Ubah Ukuran Gambar Massal Secara Online & Gratis",
+      "description": "Ubah ukuran beberapa gambar sekaligus tanpa mengunggah ke server mana pun",
+      "lightningFast": "Pemrosesan secepat kilat",
+      "free": "100% gratis selamanya",
+      "noSignup": "Tidak perlu mendaftar",
+      "secure": "Aman & pribadi",
+      "unlimited": "Proses gambar tanpa batas",
+      "browser": "Bekerja di browser Anda"
+    },
+    "imagePreview": {
+      "selected": "gambar",
+      "selectedPlural": "gambar",
+      "selectedCount": "dipilih",
+      "addMore": "Tambah Lagi",
+      "showLess": "Tampilkan Lebih Sedikit",
+      "showAll": "Tampilkan Semua ({count} lagi)"
+    },
+    "controls": {
+      "resizeMode": "Mode Ubah Ukuran",
+      "percentage": {
+        "title": "Persentase",
+        "description": "Skalakan gambar menjadi {percentage}% dari dimensi asli.",
+        "rangeLabel": "Rentang: 10% hingga 200%"
+      },
+      "fileSize": {
+        "title": "Ukuran File",
+        "description": "Kompres gambar menjadi sekitar {size} KB.",
+        "rangeLabel": "Rentang: 10 KB hingga 5000 KB",
+        "targetSize": "Ukuran File Target (KB)",
+        "note": "Ukuran file sebenarnya dapat bervariasi tergantung pada kompleksitas gambar"
+      },
+      "dimensions": {
+        "title": "Dimensi Gambar",
+        "description": "Ubah ukuran ke lebar dan tinggi yang tepat.",
+        "width": "Lebar (px)",
+        "height": "Tinggi (px)",
+        "maintainRatio": "Pertahankan Rasio Aspek",
+        "usePadding": "Gunakan Padding",
+        "paddingNote": "Tambahkan padding untuk mempertahankan rasio aspek asli"
+      },
+      "width": {
+        "title": "Lebar",
+        "description": "Ubah ukuran ke lebar tertentu dengan tetap mempertahankan rasio aspek.",
+        "targetWidth": "Lebar Target (px)"
+      },
+      "height": {
+        "title": "Tinggi",
+        "description": "Ubah ukuran ke tinggi tertentu dengan tetap mempertahankan rasio aspek.",
+        "targetHeight": "Tinggi Target (px)"
+      },
+      "longestSide": {
+        "title": "Sisi Terpanjang",
+        "description": "Ubah ukuran berdasarkan dimensi terpanjang.",
+        "targetLongest": "Sisi Terpanjang Target (px)"
+      },
+      "format": {
+        "label": "Format Output",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Kualitas",
+        "description": "Kualitas lebih tinggi = ukuran file lebih besar"
+      },
+      "backgroundColor": {
+        "label": "Warna Latar Belakang",
+        "description": "Digunakan untuk gambar transparan yang dikonversi ke JPEG"
+      },
+      "presets": {
+        "title": "Preset Cepat",
+        "instagram": "Postingan Instagram",
+        "instagramDesc": "1080×1080 piksel",
+        "twitter": "Header Twitter",
+        "twitterDesc": "1500×500 piksel",
+        "facebook": "Sampul Facebook",
+        "facebookDesc": "820×312 piksel",
+        "youtube": "Gambar Mini YouTube",
+        "youtubeDesc": "1280×720 piksel",
+        "email": "Ramah Email",
+        "emailDesc": "Lebar 800 piksel",
+        "compress": "Kompres Kecil",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Ubah Ukuran menjadi {percentage}%",
+      "resizeButtonDefault": "Ubah Ukuran Gambar"
+    },
+    "processing": {
+      "title": "Memproses Gambar...",
+      "progress": "{current} dari {total} gambar diproses"
+    },
+    "results": {
+      "title": "Pemrosesan Selesai!",
+      "imagesResized": "{count} {count, plural, one {gambar} other {gambar}} berhasil diubah ukurannya",
+      "originalSize": "Ukuran Asli",
+      "newSize": "Ukuran Baru",
+      "spaceSaved": "Ruang yang Dihemat",
+      "processedImages": "Gambar yang Diproses",
+      "downloadImage": "Unduh",
+      "downloadAll": "Unduh Semua Gambar",
+      "resizeMore": "Ubah Ukuran Lebih Banyak Gambar"
+    },
+    "config": {
+      "title": "Konfigurasi yang Dapat Dibagikan",
+      "description": "Gunakan pengaturan ini secara otomatis dengan URL ini.",
+      "copy": "Salin",
+      "copied": "Disalin!",
+      "link": "Tautan",
+      "urlCopied": "URL konfigurasi disalin ke papan klip!",
+      "urlCopyFailed": "Gagal menyalin URL"
+    },
+    "tools": {
+      "bulkresizeimages": "Ubah Ukuran Gambar Massal",
+      "bulkresizeimagesDesc": "Ubah Ukuran Gambar Massal",
+      "screenshot": "Tangkapan Layar Situs Web Online",
+      "screenshotDesc": "Ambil Tangkapan Layar",
+      "compress": "Kompres Gambar",
+      "compressDesc": "Kompres Gambar",
+      "crop": "Pangkas Gambar",
+      "cropDesc": "Pangkas Gambar",
+      "watermark": "Tanda Air Gambar",
+      "watermarkDesc": "Gambar Tanda Air"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {gambar} other {gambar}} dimuat",
+      "imagesAdded": "Menambahkan {count} {count, plural, one {gambar} other {gambar}} lagi",
+      "imagesResizedSuccess": "Gambar berhasil diubah ukurannya!",
+      "downloadComplete": "Pengunduhan selesai!",
+      "urlCopied": "URL disalin ke papan klip!",
+      "processing": "Memproses gambar...",
+      "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "selectImagesFirst": "Silakan pilih gambar terlebih dahulu",
+      "enterWidthOrHeight": "Silakan masukkan lebar atau tinggi",
+      "enterTargetValue": "Silakan masukkan nilai target"
+    }
+  }
+}

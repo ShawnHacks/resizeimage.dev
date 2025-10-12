@@ -1,0 +1,345 @@
+{
+  "Header": {
+    "Home": "ホーム",
+    "Features": "特徴",
+    "FAQ": "よくある質問",
+    "About": "概要",
+    "Blog": "ブログ"
+  },
+  "Footer": {
+    "Product": "製品",
+    "Resources": "リソース",
+    "Company": "会社",
+    "Features": "特徴",
+    "FAQ": "よくある質問",
+    "About": "概要",
+    "SiteMap": "サイトマップ",
+    "Pricing": "価格",
+    "License": "ライセンス",
+    "Contact": "お問い合わせ",
+    "Roadmap": "ロードマップ",
+    "Documentation": "ドキュメンテーション",
+    "Blog": "ブログ",
+    "Cookie Policy": "クッキーポリシー",
+    "Privacy Policy": "プライバシーポリシー",
+    "Terms of Service": "利用規約"
+  },
+  "HomePage": {
+    "title": "オンラインで画像をまとめてリサイズ",
+    "subtitle": "単一または一括処理のための無制限の無料画像リサイザー。ブラウザで画像を即座にリサイズ、圧縮、最適化します。登録不要、アップロード不要 - 100%安全でプライベート。"
+  },
+  "NotFoundPage": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは見つかりませんでした。移動または削除されたか、URLが間違っている可能性があります。",
+    "backToHome": "ホームページに戻る"
+  },
+  "AboutPage": {
+    "metaTitle": "会社概要 - 無料のバルク画像リサイザーオンライン",
+    "metaDescription": "当社のバルク画像リサイザーサービスについてご覧ください。複数のフォーマットとカスタムディメンションで画像をバッチでリサイズ、圧縮、最適化します。100%無料でプライベートです。",
+    "metaKeywords": "バルク画像リサイザー、バッチ画像リサイズ、オンライン画像オプティマイザー、写真リサイザー、画像圧縮ツール",
+    "hero": {
+      "title": "当社の画像リサイザーサービスについて",
+      "description": "当社は、写真家、デザイナー、開発者、企業が画像を即座にリサイズ、圧縮、最適化するのに役立つプロフェッショナルなバルク画像リサイザーを提供しています。当社のサービスはすべてブラウザで処理されます - 100%安全、プライベート、そして永久に無料です。",
+      "cta": "画像のリサイズを開始",
+      "learnMore": "詳細を見る"
+    },
+    "mission": {
+      "title": "私たちの使命",
+      "description": "私たちの使命は、利用可能な最も強力でありながら最もシンプルな画像リサイズツールを提供することです。Web用の画像を準備する写真家、サムネイルを作成するデザイナー、ソーシャルメディア用のコンテンツを最適化するビジネスオーナーなど、誰もが迅速、無料、そしてアクセス可能に画像をリサイズおよび最適化できるべきだと考えています。",
+      "quote": "プロフェッショナルな画像リサイズを、誰でも、どこでも、シンプル、高速、そしてアクセス可能に。"
+    },
+    "stats": {
+      "title": "世界中のユーザーから信頼されています",
+      "description": "当社の画像リサイザーは、世界中の何千人ものユーザーによってさまざまな目的で使用されています。",
+      "users": {
+        "number": "10K+",
+        "label": "アクティブユーザー"
+      },
+      "screenshots": {
+        "number": "100K+",
+        "label": "リサイズされた画像"
+      },
+      "websites": {
+        "number": "50K+",
+        "label": "一括処理"
+      },
+      "uptime": {
+        "number": "99.9%",
+        "label": "稼働率"
+      }
+    },
+    "features": {
+      "title": "当社の画像リサイザーを選ぶ理由",
+      "description": "当社のバルク画像リサイザーは、プロフェッショナルや企業にとって最良の選択となる高度な機能と性能を提供します。",
+      "highQuality": {
+        "title": "複数のリサイズモード",
+        "description": "パーセンテージ、寸法、ファイルサイズ、幅、高さ、または最も長い辺でリサイズします。ニーズに完全に合ったモードを選択してください。"
+      },
+      "multipleFormats": {
+        "title": "複数の出力形式",
+        "description": "最適な結果を得るために、調整可能な品質設定で画像をJPEG、PNG、またはWebP形式でエクスポートします。"
+      },
+      "responsive": {
+        "title": "スマートプリセット",
+        "description": "Instagram、Twitter、Facebook、YouTubeなどのクイックプリセット。あらゆるプラットフォームの画像を即座にリサイズします。"
+      },
+      "fast": {
+        "title": "超高速処理",
+        "description": "ブラウザで画像を即座に処理します。アップロードも待機も不要 - 数秒で何百もの画像をリサイズします。"
+      },
+      "privacy": {
+        "title": "100%プライベート&セキュア",
+        "description": "すべての処理はブラウザで行われます。あなたの画像はあなたのデバイスから離れることはありません - 完全なプライバシーが保証されます。"
+      },
+      "noLimits": {
+        "title": "制限なし、登録不要",
+        "description": "サインアップ、透かし、隠れた料金なしで、無制限の画像をリサイズできます。永久に完全に無料です。"
+      }
+    },
+    "technology": {
+      "title": "最新技術で構築",
+      "description": "当社の画像リサイザーは、最先端のWebテクノロジーを使用して構築されており、超高速のパフォーマンスと完璧な品質を保証します。",
+      "frontend": {
+        "title": "モダンなフロントエンド",
+        "description": "Next.jsとReactで構築され、最適なSEOのためのサーバーサイドレンダリングを備えた、高速で応答性の高いユーザーエクスペリエンスを実現します。"
+      },
+      "backend": {
+        "title": "クライアントサイド処理",
+        "description": "Canvas APIを利用して、ブラウザ内で完全に正確な画像処理を行い、速度とプライバシーを確保します。"
+      }
+    },
+    "cta": {
+      "title": "画像のサイズを変更する準備はできましたか?",
+      "description": "写真の最適化のニーズで当社の画像リサイザーを信頼している何千人ものユーザーに加わってください。今日から画像のサイズ変更を開始しましょう - 高速、無料、そしてプライベート。",
+      "button": "画像のリサイズを開始"
+    }
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "クッキーポリシー - クッキーの使用方法",
+    "metaDescription": "当社のウェブサイトサービスがお客様のエクスペリエンスを向上させるためにクッキーをどのように使用するかをご覧ください。クッキーの種類、管理オプション、およびお客様のプライバシー権についてご理解ください。",
+    "metaKeywords": "クッキーポリシー、プライバシー、クッキー、ウェブサイトツール、データ保護、ユーザープライバシー"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "プライバシーポリシー",
+    "metaDescription": "当社のウェブサイトサービスをご利用になる際に、当社がお客様の個人情報をどのように収集、使用、保護するかをご理解いただくために、当社のプライバシーポリシーをお読みください。",
+    "metaKeywords": "プライバシーポリシー、データ保護、個人情報、ウェブサイトツール、ユーザープライバシー"
+  },
+  "TermsPage": {
+    "metaTitle": "利用規約 - サービス契約",
+    "metaDescription": "当社のウェブサイトサービスを利用するための規則とガイドラインを理解するために、当社の利用規約をお読みください。",
+    "metaKeywords": "利用規約、サービス契約、利用規約、ウェブサイトツール、ユーザー契約"
+  },
+  "SiteConfig": {
+    "title": "オンラインで画像をまとめてリサイズ - 画像を即座にリサイズ",
+    "description": "単一または一括処理のための無制限の無料画像リサイザー。ブラウザで画像を即座にリサイズ、圧縮、最適化します。登録不要、アップロード不要 - 100%安全でプライベート。",
+    "keywords": {
+      "0": "オンラインで画像をまとめてリサイズ",
+      "1": "無料のバッチ画像リサイズ",
+      "2": "オンラインで画像をリサイズ",
+      "3": "画像を無料で圧縮",
+      "4": "画像オプティマイザー",
+      "5": "写真リサイザー",
+      "6": "複数の画像をリサイズ",
+      "7": "画像寸法ツール"
+    }
+  },
+  "CookieConsent": {
+    "title": "私たちはクッキーを使用しています",
+    "description": "私たちはあなたの経験を向上させ、サイトの利用状況を分析するためにクッキーを使用しています。あなたはあなたの好みをカスタマイズするか、すべてのクッキーを受け入れることができます。",
+    "acceptAll": "すべて受け入れる",
+    "necessary": "必要なもののみ",
+    "customize": "カスタマイズ",
+    "preferences": "クッキーの設定",
+    "necessaryTitle": "必要なクッキー",
+    "necessaryDesc": "基本的なサイト機能に必要",
+    "analyticsTitle": "分析クッキー",
+    "analyticsDesc": "あなたが私たちのサイトをどのように使用しているかを理解するのに役立ちます",
+    "marketingTitle": "マーケティングクッキー",
+    "marketingDesc": "パーソナライズされたコンテンツや広告に使用されます",
+    "required": "必須",
+    "savePreferences": "設定を保存",
+    "cancel": "キャンセル"
+  },
+  "BlogPage": {
+    "title": "ブログ",
+    "description": "ウェブサイトのスクリーンショット、ウェブ開発のヒント、デジタルツールについて学びましょう。開発者やデザイナー向けの専門家によるガイドとチュートリアル。",
+    "keywords": "ウェブサイトのスクリーンショットブログ、ウェブ開発チュートリアル、デジタルツールガイド、スクリーンショットチュートリアル、ウェブデザインのヒント",
+    "readMore": "続きを読む",
+    "minRead": "分で読めます",
+    "noPosts": "まだブログ投稿はありません。しばらくしてからもう一度ご確認ください。",
+    "categories": "カテゴリ",
+    "recentPosts": "最近の投稿",
+    "posts": "投稿"
+  },
+  "BlogPost": {
+    "backToBlog": "ブログに戻る",
+    "writtenBy": "作成者",
+    "published": "公開日",
+    "updated": "更新日",
+    "shareArticle": "この記事を共有する",
+    "relatedPosts": "関連記事",
+    "tags": "タグ",
+    "minRead": "分で読めます",
+    "views": "閲覧数",
+    "lastUpdated": "最終更新日:",
+    "like": "いいね",
+    "share": "共有",
+    "quickActions": "クイックアクション",
+    "copyLink": "リンクをコピー",
+    "socialShare": "ソーシャルシェア",
+    "aboutAuthor": "著者について",
+    "relatedArticles": "関連記事",
+    "continueExploring": "関連コンテンツをもっと見る",
+    "toolsComparison": "ツール比較",
+    "seoGuide": "SEOガイド",
+    "tutorial": "チュートリアル",
+    "blog": "ブログ"
+  },
+  "ResizeTool": {
+    "pageTitle": "オンラインで画像をまとめてリサイズ",
+    "pageDescription": "一度に複数の画像をバッチリサイズするための無料のオンラインツール。高速、安全、そして完全にブラウザで動作します — アップロードは不要です。",
+    "backButton": "戻る",
+    "hero": {
+      "title": "画像をドラッグ&ドロップ",
+      "subtitle": "または下をクリックして参照",
+      "selectImages": "画像を選択",
+      "supportedFormats": "サポート: JPG、PNG、WebP、GIF"
+    },
+    "features": {
+      "title": "オンラインで無料で画像をまとめてリサイズ",
+      "description": "サーバーにアップロードせずに一度に複数の画像をリサイズ",
+      "lightningFast": "超高速処理",
+      "free": "永久に100%無料",
+      "noSignup": "サインアップ不要",
+      "secure": "安全&プライベート",
+      "unlimited": "無制限の画像を処理",
+      "browser": "ブラウザで動作"
+    },
+    "imagePreview": {
+      "selected": "画像",
+      "selectedPlural": "画像",
+      "selectedCount": "選択済み",
+      "addMore": "さらに追加",
+      "showLess": "少なく表示",
+      "showAll": "すべて表示({count}件以上)"
+    },
+    "controls": {
+      "resizeMode": "リサイズモード",
+      "percentage": {
+        "title": "パーセンテージ",
+        "description": "元の寸法の{percentage}%に画像を拡大縮小します。",
+        "rangeLabel": "範囲: 10%から200%"
+      },
+      "fileSize": {
+        "title": "ファイルサイズ",
+        "description": "画像を約{size} KBに圧縮します。",
+        "rangeLabel": "範囲: 10 KBから5000 KB",
+        "targetSize": "ターゲットファイルサイズ(KB)",
+        "note": "実際のファイルサイズは画像の複雑さによって異なる場合があります"
+      },
+      "dimensions": {
+        "title": "画像の寸法",
+        "description": "正確な幅と高さにリサイズします。",
+        "width": "幅(px)",
+        "height": "高さ(px)",
+        "maintainRatio": "アスペクト比を維持",
+        "usePadding": "パディングを使用",
+        "paddingNote": "元のアスペクト比を維持するためにパディングを追加します"
+      },
+      "width": {
+        "title": "幅",
+        "description": "アスペクト比を維持しながら特定の幅にリサイズします。",
+        "targetWidth": "ターゲット幅(px)"
+      },
+      "height": {
+        "title": "高さ",
+        "description": "アスペクト比を維持しながら特定の高さにリサイズします。",
+        "targetHeight": "ターゲット高さ(px)"
+      },
+      "longestSide": {
+        "title": "最も長い辺",
+        "description": "最も長い寸法に基づいてリサイズします。",
+        "targetLongest": "ターゲットの最も長い辺(px)"
+      },
+      "format": {
+        "label": "出力形式",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "品質",
+        "description": "高品質=ファイルサイズが大きくなります"
+      },
+      "backgroundColor": {
+        "label": "背景色",
+        "description": "JPEGに変換された透明な画像に使用されます"
+      },
+      "presets": {
+        "title": "クイックプリセット",
+        "instagram": "Instagram投稿",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "Twitterヘッダー",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Facebookカバー",
+        "facebookDesc": "820×312 px",
+        "youtube": "YouTubeサムネイル",
+        "youtubeDesc": "1280×720 px",
+        "email": "メールフレンドリー",
+        "emailDesc": "幅800 px",
+        "compress": "小さく圧縮",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "{percentage}%にリサイズ",
+      "resizeButtonDefault": "画像をリサイズ"
+    },
+    "processing": {
+      "title": "画像を処理しています...",
+      "progress": "{total}枚中{current}枚の画像を処理しました"
+    },
+    "results": {
+      "title": "処理が完了しました!",
+      "imagesResized": "{count} {count, plural, one {画像} other {画像}}が正常にリサイズされました",
+      "originalSize": "元のサイズ",
+      "newSize": "新しいサイズ",
+      "spaceSaved": "節約されたスペース",
+      "processedImages": "処理された画像",
+      "downloadImage": "ダウンロード",
+      "downloadAll": "すべての画像をダウンロード",
+      "resizeMore": "さらに画像をリサイズ"
+    },
+    "config": {
+      "title": "共有可能な構成",
+      "description": "このURLでこれらの設定を自動的に使用します。",
+      "copy": "コピー",
+      "copied": "コピーしました!",
+      "link": "リンク",
+      "urlCopied": "構成URLがクリップボードにコピーされました!",
+      "urlCopyFailed": "URLのコピーに失敗しました"
+    },
+    "tools": {
+      "bulkresizeimages": "画像をまとめてリサイズ",
+      "bulkresizeimagesDesc": "画像をまとめてリサイズ",
+      "screenshot": "ウェブサイトのスクリーンショットをオンラインで",
+      "screenshotDesc": "スクリーンショットを撮る",
+      "compress": "画像を圧縮",
+      "compressDesc": "画像を圧縮",
+      "crop": "画像を切り抜く",
+      "cropDesc": "画像を切り抜く",
+      "watermark": "画像に透かしを入れる",
+      "watermarkDesc": "画像に透かしを入れる"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {画像} other {画像}}が読み込まれました",
+      "imagesAdded": "さらに{count} {count, plural, one {画像} other {画像}}が追加されました",
+      "imagesResizedSuccess": "画像が正常にリサイズされました!",
+      "downloadComplete": "ダウンロードが完了しました!",
+      "urlCopied": "URLがクリップボードにコピーされました!",
+      "processing": "画像を処理しています...",
+      "error": "エラーが発生しました。もう一度お試しください。",
+      "selectImagesFirst": "最初に画像を選択してください",
+      "enterWidthOrHeight": "幅または高さを入力してください",
+      "enterTargetValue": "ターゲット値を入力してください"
+    }
+  }
+}
