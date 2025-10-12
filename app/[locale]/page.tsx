@@ -77,6 +77,5 @@ export default async function HomePage({params}: {params: Promise<{locale: strin
   const {locale} = await params;
   setRequestLocale(locale);
   
-  // return <ResizeImagePage />;
-  return <div>Hello {locale}</div>
+  return <ResizeImagePage />;
 }
