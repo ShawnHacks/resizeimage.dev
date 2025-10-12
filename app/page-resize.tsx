@@ -1,131 +1,131 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+// import { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
 // import { ImagePreview } from '@/components/resize/image-preview';
-import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
+// import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
 // import { ProcessedList } from '@/components/resize/processed-list';
 // import { DownloadButton } from '@/components/resize/download-button';
 // import { HeroSection } from '@/components/resize/hero-section';
 // import { ToolsGrid } from '@/components/resize/tools-grid';
-import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
-import type { ImageFile } from '@/types/resize';
-import { toast } from 'sonner';
+// import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
+// import type { ImageFile } from '@/types/resize';
+// import { toast } from 'sonner';
 // import { motion } from 'motion/react';
 // import { Loader2, ArrowLeft } from 'lucide-react';
 // import { Button } from '@/components/ui/button';
 
 export default function ResizeImagePage() {
   const t = useTranslations('ResizeTool');
-  const [images, setImages] = useState<ImageFile[]>([]);
-  const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
-  const [isProcessing, setIsProcessing] = useState(false);
-  const [progress, setProgress] = useState({ current: 0, total: 0 });
+  // const [images, setImages] = useState<ImageFile[]>([]);
+  // const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
+  // const [isProcessing, setIsProcessing] = useState(false);
+  // const [progress, setProgress] = useState({ current: 0, total: 0 });
 
-  const handleFilesSelected = useCallback(async (files: File[]) => {
-    setProcessedImages([]); // Clear previous results
+  // const handleFilesSelected = useCallback(async (files: File[]) => {
+  //   setProcessedImages([]); // Clear previous results
     
-    const imageFiles: ImageFile[] = await Promise.all(
-      files.map(async (file) => {
-        const preview = URL.createObjectURL(file);
-        const dimensions = await getImageDimensions(file);
+  //   const imageFiles: ImageFile[] = await Promise.all(
+  //     files.map(async (file) => {
+  //       const preview = URL.createObjectURL(file);
+  //       const dimensions = await getImageDimensions(file);
         
-        return {
-          file,
-          preview,
-          dimensions,
-          fileSize: file.size,
-        };
-      })
-    );
+  //       return {
+  //         file,
+  //         preview,
+  //         dimensions,
+  //         fileSize: file.size,
+  //       };
+  //     })
+  //   );
 
-    setImages(imageFiles);
-    toast.success(t('toast.imagesLoaded', { count: files.length }));
-  }, []);
+  //   setImages(imageFiles);
+  //   toast.success(t('toast.imagesLoaded', { count: files.length }));
+  // }, []);
 
-  const handleRemoveImage = useCallback((index: number) => {
-    setImages((prev) => {
-      const newImages = [...prev];
-      URL.revokeObjectURL(newImages[index].preview);
-      newImages.splice(index, 1);
-      return newImages;
-    });
+  // const handleRemoveImage = useCallback((index: number) => {
+  //   setImages((prev) => {
+  //     const newImages = [...prev];
+  //     URL.revokeObjectURL(newImages[index].preview);
+  //     newImages.splice(index, 1);
+  //     return newImages;
+  //   });
     
-    if (images.length === 1) {
-      setProcessedImages([]);
-    }
-  }, [images.length]);
+  //   if (images.length === 1) {
+  //     setProcessedImages([]);
+  //   }
+  // }, [images.length]);
 
-  const handleAddMore = useCallback(async (newFiles: File[]) => {
-    const imageFiles: ImageFile[] = await Promise.all(
-      newFiles.map(async (file) => {
-        const preview = URL.createObjectURL(file);
-        const dimensions = await getImageDimensions(file);
+  // const handleAddMore = useCallback(async (newFiles: File[]) => {
+  //   const imageFiles: ImageFile[] = await Promise.all(
+  //     newFiles.map(async (file) => {
+  //       const preview = URL.createObjectURL(file);
+  //       const dimensions = await getImageDimensions(file);
         
-        return {
-          file,
-          preview,
-          dimensions,
-          fileSize: file.size,
-        };
-      })
-    );
+  //       return {
+  //         file,
+  //         preview,
+  //         dimensions,
+  //         fileSize: file.size,
+  //       };
+  //     })
+  //   );
 
-    setImages((prev) => [...prev, ...imageFiles]);
-    toast.success(t('toast.imagesAdded', { count: newFiles.length }));
-  }, [t]);
+  //   setImages((prev) => [...prev, ...imageFiles]);
+  //   toast.success(t('toast.imagesAdded', { count: newFiles.length }));
+  // }, [t]);
 
-  const handleResize = useCallback(async (options: ResizeOptionsState) => {
-    if (images.length === 0) {
-      toast.error(t('toast.selectImagesFirst'));
-      return;
-    }
+  // const handleResize = useCallback(async (options: ResizeOptionsState) => {
+  //   if (images.length === 0) {
+  //     toast.error(t('toast.selectImagesFirst'));
+  //     return;
+  //   }
 
-    // Validate options
-    if (options.mode === 'dimensions') {
-      if (!options.width && !options.height) {
-        toast.error(t('toast.enterWidthOrHeight'));
-        return;
-      }
-    } else if (options.mode === 'width' || options.mode === 'height' || options.mode === 'longestSide') {
-      if (!options.targetValue) {
-        toast.error(t('toast.enterTargetValue'));
-        return;
-      }
-    }
+  //   // Validate options
+  //   if (options.mode === 'dimensions') {
+  //     if (!options.width && !options.height) {
+  //       toast.error(t('toast.enterWidthOrHeight'));
+  //       return;
+  //     }
+  //   } else if (options.mode === 'width' || options.mode === 'height' || options.mode === 'longestSide') {
+  //     if (!options.targetValue) {
+  //       toast.error(t('toast.enterTargetValue'));
+  //       return;
+  //     }
+  //   }
 
-    setIsProcessing(true);
-    setProgress({ current: 0, total: images.length });
+  //   setIsProcessing(true);
+  //   setProgress({ current: 0, total: images.length });
 
-    try {
-      const results = await batchResizeImages(
-        images.map(img => img.file),
-        options,
-        (current, total) => {
-          setProgress({ current, total });
-        }
-      );
+  //   try {
+  //     const results = await batchResizeImages(
+  //       images.map(img => img.file),
+  //       options,
+  //       (current, total) => {
+  //         setProgress({ current, total });
+  //       }
+  //     );
 
-      setProcessedImages(results);
-      toast.success(t('toast.imagesResizedSuccess'));
-    } catch (error) {
-      console.error('Resize failed:', error);
-      toast.error(t('toast.error'));
-    } finally {
-      setIsProcessing(false);
-      setProgress({ current: 0, total: 0 });
-    }
-  }, [images]);
+  //     setProcessedImages(results);
+  //     toast.success(t('toast.imagesResizedSuccess'));
+  //   } catch (error) {
+  //     console.error('Resize failed:', error);
+  //     toast.error(t('toast.error'));
+  //   } finally {
+  //     setIsProcessing(false);
+  //     setProgress({ current: 0, total: 0 });
+  //   }
+  // }, [images]);
 
-  const handleDownloadComplete = useCallback(() => {
-    toast.success(t('toast.downloadComplete'));
-  }, [t]);
+  // const handleDownloadComplete = useCallback(() => {
+  //   toast.success(t('toast.downloadComplete'));
+  // }, [t]);
 
-  const handleBack = useCallback(() => {
-    images.forEach(img => URL.revokeObjectURL(img.preview));
-    setImages([]);
-    setProcessedImages([]);
-  }, [images]);
+  // const handleBack = useCallback(() => {
+  //   images.forEach(img => URL.revokeObjectURL(img.preview));
+  //   setImages([]);
+  //   setProcessedImages([]);
+  // }, [images]);
 
   return (
     <div className="min-h-[calc(100vh-rem)]">
