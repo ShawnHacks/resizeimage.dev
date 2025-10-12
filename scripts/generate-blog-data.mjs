@@ -152,31 +152,49 @@ function getBlogPost(slug) {
   return posts.find(post => post.slug === slug) || null
 }
 
-// 按分类获取文章
+// 按分类获取文章（保留所有语言版本，在使用时由前端过滤）
 function getPostsByCategory(categorySlug) {
   const posts = getBlogPosts()
   return posts.filter(post => post.category === categorySlug)
 }
 
-// 获取相关文章
-function getRelatedPosts(slug, limit = 3) {
-  const currentPost = getBlogPost(slug)
+// 获取相关文章（带语言过滤）
+function getRelatedPosts(slug, language, limit = 3) {
+  const allPosts = getBlogPosts()
+  const currentPost = allPosts.find(post => post.slug === slug && post.language === language)
   if (!currentPost) return []
 
-  const allPosts = getBlogPosts()
+  // 获取所有唯一的 slug（去重）
+  const uniqueSlugs = Array.from(new Set(allPosts.map(post => post.slug)))
   
-  // 排除当前文章
-  const otherPosts = allPosts.filter(post => post.slug !== slug)
+  // 为每个唯一 slug 选择合适语言的版本
+  const postsWithLanguageFallback = []
+  for (const postSlug of uniqueSlugs) {
+    // 跳过当前文章
+    if (postSlug === slug) continue
+    
+    // 优先使用相同语言的版本
+    let selectedPost = allPosts.find(post => post.slug === postSlug && post.language === language)
+    
+    // 如果没有相同语言的版本，fallback 到英文
+    if (!selectedPost) {
+      selectedPost = allPosts.find(post => post.slug === postSlug && post.language === 'en')
+    }
+    
+    if (selectedPost) {
+      postsWithLanguageFallback.push(selectedPost)
+    }
+  }
   
   // 优先推荐同分类的文章
-  const sameCategoryPosts = otherPosts.filter(
+  const sameCategoryPosts = postsWithLanguageFallback.filter(
     post => post.category === currentPost.category
   )
   
   // 如果同分类文章不足，用其他文章补充
   const related = sameCategoryPosts.slice(0, limit)
   if (related.length < limit) {
-    const remaining = otherPosts
+    const remaining = postsWithLanguageFallback
       .filter(post => post.category !== currentPost.category)
       .slice(0, limit - related.length)
     related.push(...remaining)
@@ -215,11 +233,11 @@ for (const category of categories) {
   )
 }
 
-// 为每篇文章生成相关文章
+// 为每篇文章的每种语言版本生成相关文章
 for (const post of posts) {
-  const relatedPosts = getRelatedPosts(post.slug)
+  const relatedPosts = getRelatedPosts(post.slug, post.language)
   writeFileSync(
-    join(OUTPUT_DIR, `blog-related-${post.slug}.json`),
+    join(OUTPUT_DIR, `blog-related-${post.slug}-${post.language}.json`),
     JSON.stringify(relatedPosts, null, 2)
   )
 }

@@ -107,7 +107,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           ) : (
             <div className="grid gap-6 md:grid-cols-3">
               {posts.map((post) => (
-                <Card key={post.slug} className="flex flex-col hover:shadow-lg transition-shadow pt-0">
+                <Card key={`${post.slug}-${post.language}`} className="flex flex-col hover:shadow-lg transition-shadow pt-0">
                   {post.featuredImage && (
                     <div className="aspect-video overflow-hidden rounded-t-lg">
                       <img
@@ -128,7 +128,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
                     <CardTitle className="text-xl mb-2">
                       <Link 
-                        href={`/blog/${post.slug}`}
+                        href={`/${post.language === 'en' ? '' : post.language + '/'}blog/${post.slug}`}
                         className="hover:text-emerald-600 transition-colors"
                       >
                         {post.title}
@@ -155,7 +155,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                         <span>{post.author}</span>
                       </div>
                       <Button asChild variant="ghost" size="sm">
-                        <Link href={`/blog/${post.slug}`}>
+                        <Link href={`/${post.language === 'en' ? '' : post.language + '/'}blog/${post.slug}`}>
                           {locale === 'zh' ? '阅读更多' : 'Read More'}
                         </Link>
                       </Button>

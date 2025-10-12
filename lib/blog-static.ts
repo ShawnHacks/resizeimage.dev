@@ -53,7 +53,7 @@ export async function getCategory(slug: string): Promise<BlogCategory | null> {
 
 // 获取所有博客文章
 export async function getBlogPosts(locale?: string): Promise<SimpleBlogPost[]> {
-  let posts = blogPosts as SimpleBlogPost[]
+  const posts = blogPosts as SimpleBlogPost[]
   
   // 如果没有指定语言，返回所有文章
   if (!locale) {
@@ -126,12 +126,13 @@ export async function getRelatedPosts(
   limit: number = 3
 ): Promise<SimpleBlogPost[]> {
   try {
-    // 尝试加载预生成的相关文章
-    const relatedPosts = await import(`@/generated/blog-related-${currentPost.slug}.json`)
+    // 尝试加载预生成的相关文章（带语言后缀）
+    const relatedPosts = await import(`@/generated/blog-related-${currentPost.slug}-${currentPost.language}.json`)
     return (relatedPosts.default || relatedPosts).slice(0, limit) as SimpleBlogPost[]
   } catch (error) {
     // 如果没有预生成的数据，回退到动态计算
     const allPosts = await getBlogPosts(currentPost.language)
+    // getBlogPosts 已经处理了语言 fallback，所以这里不会有重复的 slug
     const otherPosts = allPosts.filter(post => post.slug !== currentPost.slug)
     
     // 优先推荐同分类的文章
