@@ -46,17 +46,17 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     keywords: siteConfig.keywords,
     authors: [{ name: siteConfig.creator || 'ShawnHacks' }],
     creator: siteConfig.creator || 'ShawnHacks',
-    publisher: siteConfig.name || 'WebsiteScreenshot',
+    publisher: siteConfig.name || 'BulkResizeImages',
     openGraph: {
       type: 'website',
-      url: siteConfig.url || 'https://websitescreenshot.online',
+      url: siteConfig.url || 'https://bulkresizeimages.online',
       locale: locale,
       title: title,
       description: description,
-      siteName: siteConfig.name || 'WebsiteScreenshot',
+      siteName: siteConfig.name || 'BulkResizeImages',
       images: [
         {
-          url: siteConfig.ogImage || 'https://websitescreenshot.online/og.jpg',
+          url: siteConfig.ogImage || 'https://bulkresizeimages.online/og.jpg',
           width: 1200,
           height: 630,
           alt: title,
@@ -67,7 +67,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
       card: 'summary_large_image',
       title: title,
       description: description,
-      images: [siteConfig.ogImage || 'https://websitescreenshot.online/og.jpg'],
+      images: [siteConfig.ogImage || 'https://bulkresizeimages.online/og.jpg'],
       creator: '@ShawnHacks',
     },
     robots: {
@@ -93,7 +93,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     appleWebApp: {
       capable: true,
       statusBarStyle: 'default',
-      title: 'BulkresizeImage',
+      title: 'BulkResizeImage',
     },
   }
 }

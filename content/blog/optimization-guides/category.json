@@ -1,0 +1,15 @@
+{
+  "slug": "optimization-guides",
+  "color": "#F59E0B",
+  "icon": "Zap",
+  "translations": {
+    "en": {
+      "name": "Optimization Guides",
+      "description": "Learn how to improve website performance and SEO by mastering image compression, formats, and other optimization techniques."
+    },
+    "zh": {
+      "name": "优化指南",
+      "description": "学习如何通过掌握图片压缩、格式和其他优化技术来提高网站性能和SEO。"
+    }
+  }
+}

@@ -55,12 +55,36 @@ export async function getCategory(slug: string): Promise<BlogCategory | null> {
 export async function getBlogPosts(locale?: string): Promise<SimpleBlogPost[]> {
   let posts = blogPosts as SimpleBlogPost[]
   
-  // 如果指定了语言，过滤文章
-  if (locale) {
-    posts = posts.filter(post => post.language === locale)
+  // 如果没有指定语言，返回所有文章
+  if (!locale) {
+    return posts
   }
   
-  return posts
+  // 如果指定了语言，实现 fallback 逻辑
+  // 1. 获取所有唯一的 slug
+  const uniqueSlugs = Array.from(new Set(posts.map(post => post.slug)))
+  
+  // 2. 对每个 slug，优先使用指定语言，否则 fallback 到英文
+  const selectedPosts: SimpleBlogPost[] = []
+  
+  for (const slug of uniqueSlugs) {
+    // 查找指定语言的文章
+    const localizedPost = posts.find(post => post.slug === slug && post.language === locale)
+    
+    if (localizedPost) {
+      // 找到对应语言的文章，直接使用
+      selectedPosts.push(localizedPost)
+    } else {
+      // 没有找到对应语言的文章，尝试 fallback 到英文
+      const englishPost = posts.find(post => post.slug === slug && post.language === 'en')
+      if (englishPost) {
+        selectedPosts.push(englishPost)
+      }
+      // 如果连英文版本都没有，则跳过该文章
+    }
+  }
+  
+  return selectedPosts
 }
 
 // 获取单篇文章

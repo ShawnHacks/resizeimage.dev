@@ -89,6 +89,13 @@ export default function FooterBadges({ locale }: { locale: string }) {
           <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
 
+        <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+          <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
+        </a>
+        <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+          <img src="https://aihuntlist.com/badge-dark.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
+        </a>
+
         <a target="_blank" href="https://www.goodfirms.co/screen-recording-software/">
           <img src="https://assets.goodfirms.co/badges/color-badge/screen-recording-software.svg" title="Top Screen Recording Software" alt="Top Screen Recording Software" className="h-8 w-auto max-w-40" />
         </a>

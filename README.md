@@ -173,3 +173,7 @@ export ANTHROPIC_API_KEY=sk-n8draowg1akfc6wQBbjlojkqRBRXh1As0OznT2WJum8NKSDL
 
 ### 安装MCP：
 claude mcp add context7 -s user -- npx -y @upstash/context7-mcp
+
+## 部署
+
+pnpm run deploy

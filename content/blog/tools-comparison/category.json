@@ -1,0 +1,15 @@
+{
+  "slug": "tools-comparison",
+  "color": "#3B82F6",
+  "icon": "Scale",
+  "translations": {
+    "en": {
+      "name": "Tools Comparison",
+      "description": "Compare different screenshot tools and find the best solution"
+    },
+    "zh-CN": {
+      "name": "工具对比",
+      "description": "比较不同的截图工具，找到最佳解决方案"
+    }
+  }
+}
