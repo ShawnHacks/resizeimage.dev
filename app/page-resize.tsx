@@ -2,18 +2,18 @@
 
 import { useState, useCallback } from 'react';
 import { useTranslations } from 'next-intl';
-import { ImagePreview } from '@/components/resize/image-preview';
+// import { ImagePreview } from '@/components/resize/image-preview';
 import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
-import { ProcessedList } from '@/components/resize/processed-list';
-import { DownloadButton } from '@/components/resize/download-button';
-import { HeroSection } from '@/components/resize/hero-section';
-import { ToolsGrid } from '@/components/resize/tools-grid';
+// import { ProcessedList } from '@/components/resize/processed-list';
+// import { DownloadButton } from '@/components/resize/download-button';
+// import { HeroSection } from '@/components/resize/hero-section';
+// import { ToolsGrid } from '@/components/resize/tools-grid';
 import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
 import type { ImageFile } from '@/types/resize';
 import { toast } from 'sonner';
-import { motion } from 'motion/react';
-import { Loader2, ArrowLeft } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+// import { motion } from 'motion/react';
+// import { Loader2, ArrowLeft } from 'lucide-react';
+// import { Button } from '@/components/ui/button';
 
 export default function ResizeImagePage() {
   const t = useTranslations('ResizeTool');
@@ -144,9 +144,8 @@ export default function ResizeImagePage() {
       </header>
 
       {/* Main content */}
-      <main className="container mx-auto px-4 py-8">
+      {/* <main className="container mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto space-y-8">
-          {/* Hero section - shown when no images */}
           {images.length === 0 && processedImages.length === 0 && (
             <>
               <HeroSection onFilesSelected={handleFilesSelected} />
@@ -154,7 +153,6 @@ export default function ResizeImagePage() {
             </>
           )}
 
-          {/* Preview section */}
           {images.length > 0 && processedImages.length === 0 && (
             <ImagePreview 
               images={images} 
@@ -163,7 +161,6 @@ export default function ResizeImagePage() {
             />
           )}
 
-          {/* Controls section */}
           {images.length > 0 && processedImages.length === 0 && (
             <>
               <ResizeControls onResize={handleResize} disabled={isProcessing} />
@@ -180,7 +177,6 @@ export default function ResizeImagePage() {
             </>
           )}
 
-          {/* Processing indicator */}
           {isProcessing && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -207,19 +203,15 @@ export default function ResizeImagePage() {
             </motion.div>
           )}
 
-          {/* Results section */}
           {processedImages.length > 0 && (
             <>
-              {/* Processed list with statistics */}
               <ProcessedList processedImages={processedImages} />
               
-              {/* Download section */}
               <DownloadButton 
                 processedImages={processedImages} 
                 onDownloadComplete={handleDownloadComplete}
               />
               
-              {/* Reset button */}
               <div className="text-center">
                 <button
                   onClick={() => {
@@ -235,7 +227,7 @@ export default function ResizeImagePage() {
             </>
           )}
         </div>
-      </main>
+      </main> */}
 
     </div>
   );
