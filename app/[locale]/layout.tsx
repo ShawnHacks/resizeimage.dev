@@ -16,7 +16,7 @@ import { getLocalizedSiteConfig } from '@/config/site-i18n'
 import { GoogleAnalytics } from "@/components/analytics/google-analytics"
 import { MicrosoftClarityAnalytics } from "@/components/analytics/microsoft-clarity"
 import { PWARegister } from "@/components/pwa-register"
-// import { GoogleAdsense } from "@/components/ads/google-adsense"
+import { GoogleAdsense } from "@/components/ads/google-adsense"
 
 import "@/app/globals.css";
 import { SiteLayout } from "@/components/layouts/site-layout";
@@ -114,9 +114,11 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         {/* Google Adsense */}
-        <meta name="google-adsense-account" content="ca-pub-3414178915048488" />
+        {/* <meta name="google-adsense-account" content="ca-pub-3414178915048488" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3414178915048488"
-     crossOrigin="anonymous"></script>
+     crossOrigin="anonymous"></script> */}
+
+        <GoogleAdsense />
         
         <ThemeScript />
         <GoogleAnalytics />

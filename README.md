@@ -177,3 +177,8 @@ claude mcp add context7 -s user -- npx -y @upstash/context7-mcp
 ## 部署
 
 pnpm run deploy
+
+
+## 参考工具站
+
+https://imageresizer.com/crop-image 很大的流量，很全的工具，简洁风，非常值得学习！！！！！！！！！ 月流量6M多
