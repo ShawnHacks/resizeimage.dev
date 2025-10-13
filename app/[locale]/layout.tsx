@@ -114,9 +114,9 @@ export default async function RootLayout({
     <html lang={locale} suppressHydrationWarning>
       <head>
         {/* Google Adsense */}
-        {/* <meta name="google-adsense-account" content="ca-pub-3414178915048488" />
+        <meta name="google-adsense-account" content="ca-pub-3414178915048488" />
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3414178915048488"
-     crossOrigin="anonymous"></script> */}
+     crossOrigin="anonymous"></script>
         
         <ThemeScript />
         <GoogleAnalytics />
