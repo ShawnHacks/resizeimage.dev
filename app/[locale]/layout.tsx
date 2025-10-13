@@ -83,7 +83,8 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     },
     icons: {
       icon: [
-        { url: `${siteConfig.url}/favicon.ico`, type: 'image/x-icon' }, 
+        // { url: `${siteConfig.url}/favicon.ico`, type: 'image/x-icon' }, 
+        { url: `${siteConfig.url}/logo.svg`, type: 'image/svg+xml' }, 
         { url: `${siteConfig.url}/icon-192.png`, type: 'image/png' }
       ],
       shortcut: `${siteConfig.url}/icon-192.png`,

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <!-- Purple circular background -->
+  <circle cx="60" cy="60" r="60" fill="#6C4DE6"/>
+  
+  <!-- White burst mode icon (scaled and centered) -->
+  <g transform="translate(18, 18) scale(0.09)">
+    <!-- Left bar -->
+    <rect x="40" y="200" width="80" height="560" fill="#FFFFFF"/>
+    
+    <!-- Middle bar -->
+    <rect x="200" y="200" width="80" height="560" fill="#FFFFFF"/>
+    
+    <!-- Right frame with image icon -->
+    <g>
+      <!-- Inner frame (darker area for contrast) -->
+      <rect x="460" y="220" width="360" height="360" rx="12" ry="12" fill="#FFFFFF"/>
+      
+      <!-- Mountain/image icon inside -->
+      <path d="M460 660 L560 540 L640 630 L750 500 L880 660 Z" fill="#6C4DE6"/>
+    </g>
+  </g>
+</svg>
