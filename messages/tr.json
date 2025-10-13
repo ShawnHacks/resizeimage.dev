@@ -337,6 +337,7 @@
       "urlCopied": "URL panoya kopyalandı!",
       "processing": "Görüntüler işleniyor...",
       "error": "Bir hata oluştu. Lütfen tekrar deneyin.",
+      "noValidImages": "Geçerli resim dosyası bulunamadı. Lütfen geçerli resimler seçin.",
       "selectImagesFirst": "Lütfen önce görüntüleri seçin",
       "enterWidthOrHeight": "Lütfen genişlik veya yükseklik girin",
       "enterTargetValue": "Lütfen bir hedef değer girin"

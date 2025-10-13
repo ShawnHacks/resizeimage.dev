@@ -337,6 +337,7 @@
       "urlCopied": "URL đã được sao chép vào khay nhớ tạm!",
       "processing": "Đang xử lý hình ảnh...",
       "error": "Đã xảy ra lỗi. Vui lòng thử lại.",
+      "noValidImages": "Không tìm thấy tệp hình ảnh hợp lệ. Vui lòng chọn hình ảnh hợp lệ.",
       "selectImagesFirst": "Vui lòng chọn hình ảnh trước",
       "enterWidthOrHeight": "Vui lòng nhập chiều rộng hoặc chiều cao",
       "enterTargetValue": "Vui lòng nhập giá trị mục tiêu"

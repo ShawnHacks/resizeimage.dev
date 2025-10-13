@@ -337,6 +337,7 @@
       "urlCopied": "URL copied to clipboard!",
       "processing": "Processing images...",
       "error": "An error occurred. Please try again.",
+      "noValidImages": "No valid image files found. Please select valid images.",
       "selectImagesFirst": "Please select images first",
       "enterWidthOrHeight": "Please enter width or height",
       "enterTargetValue": "Please enter a target value"

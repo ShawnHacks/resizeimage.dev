@@ -337,6 +337,7 @@
       "urlCopied": "URL disalin ke papan klip!",
       "processing": "Memproses gambar...",
       "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "noValidImages": "Tidak ditemukan file gambar yang valid. Silakan pilih gambar yang valid.",
       "selectImagesFirst": "Silakan pilih gambar terlebih dahulu",
       "enterWidthOrHeight": "Silakan masukkan lebar atau tinggi",
       "enterTargetValue": "Silakan masukkan nilai target"

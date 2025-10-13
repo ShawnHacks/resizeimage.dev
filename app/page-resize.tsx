@@ -23,25 +23,38 @@ export default function ResizeImagePage() {
   const [progress, setProgress] = useState({ current: 0, total: 0 });
 
   const handleFilesSelected = useCallback(async (files: File[]) => {
+    if (files.length === 0) {
+      return;
+    }
+
     setProcessedImages([]); // Clear previous results
     
-    const imageFiles: ImageFile[] = await Promise.all(
-      files.map(async (file) => {
-        const preview = URL.createObjectURL(file);
-        const dimensions = await getImageDimensions(file);
-        
-        return {
-          file,
-          preview,
-          dimensions,
-          fileSize: file.size,
-        };
-      })
-    );
+    try {
+      const imageFiles: ImageFile[] = await Promise.all(
+        files.map(async (file) => {
+          const preview = URL.createObjectURL(file);
+          const dimensions = await getImageDimensions(file);
+          
+          return {
+            file,
+            preview,
+            dimensions,
+            fileSize: file.size,
+          };
+        })
+      );
 
-    setImages(imageFiles);
-    toast.success(t('toast.imagesLoaded', { count: files.length }));
-  }, []);
+      if (imageFiles.length > 0) {
+        setImages(imageFiles);
+        toast.success(t('toast.imagesLoaded', { count: files.length }));
+      } else {
+        toast.error(t('toast.noValidImages'));
+      }
+    } catch (error) {
+      console.error('Failed to load images:', error);
+      toast.error(t('toast.error'));
+    }
+  }, [t]);
 
   const handleRemoveImage = useCallback((index: number) => {
     setImages((prev) => {
@@ -57,22 +70,33 @@ export default function ResizeImagePage() {
   }, [images.length]);
 
   const handleAddMore = useCallback(async (newFiles: File[]) => {
-    const imageFiles: ImageFile[] = await Promise.all(
-      newFiles.map(async (file) => {
-        const preview = URL.createObjectURL(file);
-        const dimensions = await getImageDimensions(file);
-        
-        return {
-          file,
-          preview,
-          dimensions,
-          fileSize: file.size,
-        };
-      })
-    );
+    if (newFiles.length === 0) {
+      return;
+    }
 
-    setImages((prev) => [...prev, ...imageFiles]);
-    toast.success(t('toast.imagesAdded', { count: newFiles.length }));
+    try {
+      const imageFiles: ImageFile[] = await Promise.all(
+        newFiles.map(async (file) => {
+          const preview = URL.createObjectURL(file);
+          const dimensions = await getImageDimensions(file);
+          
+          return {
+            file,
+            preview,
+            dimensions,
+            fileSize: file.size,
+          };
+        })
+      );
+
+      if (imageFiles.length > 0) {
+        setImages((prev) => [...prev, ...imageFiles]);
+        toast.success(t('toast.imagesAdded', { count: newFiles.length }));
+      }
+    } catch (error) {
+      console.error('Failed to add images:', error);
+      toast.error(t('toast.error'));
+    }
   }, [t]);
 
   const handleResize = useCallback(async (options: ResizeOptionsState) => {

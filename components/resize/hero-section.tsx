@@ -35,7 +35,12 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
   };
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     const files = Array.from(e.target.files || []);
+    
+    // Reset input value to allow selecting the same files again
+    e.target.value = '';
+    
     if (files.length > 0) {
       onFilesSelected(files);
     }

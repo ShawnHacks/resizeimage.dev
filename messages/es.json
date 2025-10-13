@@ -337,6 +337,7 @@
       "urlCopied": "¡URL copiada al portapapeles!",
       "processing": "Procesando imágenes...",
       "error": "Se produjo un error. Por favor, inténtelo de nuevo.",
+      "noValidImages": "No se encontraron archivos de imagen válidos. Seleccione imágenes válidas.",
       "selectImagesFirst": "Por favor, seleccione primero las imágenes",
       "enterWidthOrHeight": "Por favor, introduzca la anchura o la altura",
       "enterTargetValue": "Por favor, introduzca un valor de destino"

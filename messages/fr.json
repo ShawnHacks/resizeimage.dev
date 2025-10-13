@@ -337,6 +337,7 @@
       "urlCopied": "URL copiée dans le presse-papiers !",
       "processing": "Traitement des images...",
       "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "noValidImages": "Aucun fichier image valide trouvé. Veuillez sélectionner des images valides.",
       "selectImagesFirst": "Veuillez d'abord sélectionner des images",
       "enterWidthOrHeight": "Veuillez saisir la largeur ou la hauteur",
       "enterTargetValue": "Veuillez saisir une valeur cible"

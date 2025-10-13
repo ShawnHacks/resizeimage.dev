@@ -337,6 +337,7 @@
       "urlCopied": "URL이 클립보드에 복사되었습니다!",
       "processing": "이미지 처리 중...",
       "error": "오류가 발생했습니다. 다시 시도하십시오.",
+      "noValidImages": "유효한 이미지 파일을 찾을 수 없습니다. 유효한 이미지를 선택하십시오.",
       "selectImagesFirst": "먼저 이미지를 선택하십시오.",
       "enterWidthOrHeight": "너비 또는 높이를 입력하십시오.",
       "enterTargetValue": "대상 값을 입력하십시오."

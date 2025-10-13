@@ -337,6 +337,7 @@
       "urlCopied": "URL已复制到剪贴板！",
       "processing": "正在处理图片...",
       "error": "发生错误。请重试。",
+      "noValidImages": "未找到有效的图片文件。请选择有效的图片。",
       "selectImagesFirst": "请先选择图片",
       "enterWidthOrHeight": "请输入宽度或高度",
       "enterTargetValue": "请输入目标值"

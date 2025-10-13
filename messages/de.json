@@ -337,6 +337,7 @@
       "urlCopied": "URL in die Zwischenablage kopiert!",
       "processing": "Bilder werden verarbeitet...",
       "error": "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+      "noValidImages": "Keine gültigen Bilddateien gefunden. Bitte wählen Sie gültige Bilder aus.",
       "selectImagesFirst": "Bitte wählen Sie zuerst Bilder aus",
       "enterWidthOrHeight": "Bitte geben Sie Breite oder Höhe ein",
       "enterTargetValue": "Bitte geben Sie einen Zielwert ein"

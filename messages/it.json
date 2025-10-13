@@ -337,6 +337,7 @@
       "urlCopied": "URL copiato negli appunti!",
       "processing": "Elaborazione delle immagini...",
       "error": "Si è verificato un errore. Riprova.",
+      "noValidImages": "Nessun file immagine valido trovato. Seleziona immagini valide.",
       "selectImagesFirst": "Seleziona prima le immagini",
       "enterWidthOrHeight": "Inserisci larghezza o altezza",
       "enterTargetValue": "Inserisci un valore di destinazione"

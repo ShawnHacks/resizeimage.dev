@@ -337,6 +337,7 @@
       "urlCopied": "URL copiado para a área de transferência!",
       "processing": "Processando imagens...",
       "error": "Ocorreu um erro. Tente novamente.",
+      "noValidImages": "Nenhum arquivo de imagem válido encontrado. Selecione imagens válidas.",
       "selectImagesFirst": "Selecione as imagens primeiro",
       "enterWidthOrHeight": "Insira a largura ou a altura",
       "enterTargetValue": "Insira um valor de destino"

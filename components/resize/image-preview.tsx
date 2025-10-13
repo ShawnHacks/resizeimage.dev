@@ -21,11 +21,15 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
   if (images.length === 0) return null;
 
   const handleFileInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    e.preventDefault();
     const files = Array.from(e.target.files || []);
+    
+    // Reset input to allow selecting the same files again
+    e.target.value = '';
+    
     if (files.length > 0 && onAddMore) {
       onAddMore(files);
     }
-    e.target.value = ''; // Reset input
   };
 
   // Calculate how many images to show in one row (based on grid cols)
