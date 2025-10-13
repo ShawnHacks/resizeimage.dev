@@ -28,12 +28,16 @@ export default function ResizeImagePage() {
   // Track if we're currently loading files to prevent concurrent calls
   const isLoadingRef = useRef(false);
 
-  // Cleanup all blob URLs on unmount or when images change
+  // Cleanup all blob URLs on unmount
   useEffect(() => {
-    console.log('[ResizeImagePage] Component mounted');
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[ResizeImagePage] Component mounted');
+    }
     
     return () => {
-      console.log('[ResizeImagePage] Component unmounting, cleaning up', blobUrlsRef.current.size, 'blob URLs');
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[ResizeImagePage] Component unmounting, cleaning up', blobUrlsRef.current.size, 'blob URLs');
+      }
       // Cleanup all tracked blob URLs when component unmounts
       blobUrlsRef.current.forEach(url => {
         try {
@@ -46,93 +50,116 @@ export default function ResizeImagePage() {
     };
   }, []);
   
-  // Debug: Log images state changes
+  // Debug: Log images state changes (development only)
   useEffect(() => {
-    console.log('[ResizeImagePage] Images state changed:', images.length, 'images');
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[ResizeImagePage] Images state changed:', images.length, 'images');
+    }
   }, [images]);
 
   const handleFilesSelected = useCallback(async (files: File[]) => {
-    console.log('[handleFilesSelected] Called with', files.length, 'files');
+    if (process.env.NODE_ENV === 'development') {
+      console.log('[handleFilesSelected] Called with', files.length, 'files');
+    }
     
     if (files.length === 0) {
-      console.log('[handleFilesSelected] No files, returning');
+      if (process.env.NODE_ENV === 'development') {
+        console.log('[handleFilesSelected] No files, returning');
+      }
       return;
     }
 
     // Prevent concurrent calls
     if (isLoadingRef.current) {
-      console.warn('[handleFilesSelected] Already loading files, ignoring duplicate call');
+      if (process.env.NODE_ENV === 'development') {
+        console.warn('[handleFilesSelected] Already loading files, ignoring duplicate call');
+      }
       return;
     }
     
     isLoadingRef.current = true;
-    console.log('[handleFilesSelected] Set loading flag to true');
 
     try {
       // Clear previous images and their blob URLs
-      console.log('[handleFilesSelected] Cleaning up', blobUrlsRef.current.size, 'previous blob URLs');
       blobUrlsRef.current.forEach(url => {
         try {
           URL.revokeObjectURL(url);
         } catch (err) {
-          console.error('[handleFilesSelected] Error revoking URL:', err);
+          // Ignore cleanup errors
         }
       });
       blobUrlsRef.current.clear();
       
       // Reset state
-      console.log('[handleFilesSelected] Resetting processed images');
       setProcessedImages([]);
       
-      console.log('[handleFilesSelected] Starting to process files...');
-      const imageFiles: ImageFile[] = await Promise.all(
-        files.map(async (file, index) => {
-          console.log(`[handleFilesSelected] Processing file ${index + 1}/${files.length}:`, file.name);
+      // Process files with proper error handling
+      const imageFiles: ImageFile[] = [];
+      const errors: string[] = [];
+      
+      for (let i = 0; i < files.length; i++) {
+        const file = files[i];
+        
+        try {
+          if (process.env.NODE_ENV === 'development') {
+            console.log(`[handleFilesSelected] Processing ${i + 1}/${files.length}:`, file.name);
+          }
           
+          // Create preview blob URL
           const preview = URL.createObjectURL(file);
-          console.log(`[handleFilesSelected] Created blob URL for ${file.name}:`, preview);
-          
-          // Track the blob URL for cleanup
           blobUrlsRef.current.add(preview);
           
+          // Get dimensions (this will timeout after 10s if image fails to load)
           const dimensions = await getImageDimensions(file);
-          console.log(`[handleFilesSelected] Got dimensions for ${file.name}:`, dimensions);
           
-          return {
+          imageFiles.push({
             file,
             preview,
             dimensions,
             fileSize: file.size,
-          };
-        })
-      );
+          });
+        } catch (error) {
+          const errorMessage = error instanceof Error ? error.message : 'Unknown error';
+          errors.push(`${file.name}: ${errorMessage}`);
+          
+          // Log in development, but don't spam in production
+          if (process.env.NODE_ENV === 'development') {
+            console.error(`[handleFilesSelected] Failed to process ${file.name}:`, error);
+          }
+        }
+      }
 
-      console.log('[handleFilesSelected] All files processed:', imageFiles.length);
-      
+      // Show results
       if (imageFiles.length > 0) {
-        console.log('[handleFilesSelected] Setting images state with', imageFiles.length, 'images');
         setImages(imageFiles);
+        toast.success(t('toast.imagesLoaded', { count: imageFiles.length }));
         
-        // Use setTimeout to ensure state update completes
-        setTimeout(() => {
-          console.log('[handleFilesSelected] Toast success');
-          toast.success(t('toast.imagesLoaded', { count: files.length }));
-        }, 0);
+        // Show warning if some files failed
+        if (errors.length > 0) {
+          setTimeout(() => {
+            toast.warning(`${errors.length} file(s) failed to load`);
+          }, 500);
+        }
       } else {
-        console.warn('[handleFilesSelected] No valid images after processing');
-        toast.error(t('toast.noValidImages'));
+        // All files failed
+        toast.error(errors.length > 0 ? `Failed to load images: ${errors[0]}` : t('toast.noValidImages'));
+        
+        // Log all errors in development
+        if (process.env.NODE_ENV === 'development') {
+          console.error('[handleFilesSelected] All files failed:', errors);
+        }
       }
     } catch (error) {
-      console.error('[handleFilesSelected] Error processing images:', error);
+      // Unexpected error in the try block
+      console.error('[handleFilesSelected] Unexpected error:', error);
       toast.error(t('toast.error'));
       
       // Clean up any blob URLs that were created before the error
-      console.log('[handleFilesSelected] Cleaning up after error');
       blobUrlsRef.current.forEach(url => {
         try {
           URL.revokeObjectURL(url);
         } catch (err) {
-          // Ignore errors
+          // Ignore cleanup errors
         }
       });
       blobUrlsRef.current.clear();
@@ -141,7 +168,6 @@ export default function ResizeImagePage() {
       setImages([]);
     } finally {
       isLoadingRef.current = false;
-      console.log('[handleFilesSelected] Set loading flag to false');
     }
   }, [t]);
 

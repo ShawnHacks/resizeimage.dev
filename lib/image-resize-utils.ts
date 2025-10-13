@@ -52,27 +52,59 @@ export interface ProcessedImage {
 async function loadImage(file: File): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const img = new Image();
-    const objectUrl = URL.createObjectURL(file);
+    let objectUrl: string | null = null;
     
-    // Add timeout to prevent hanging
+    try {
+      objectUrl = URL.createObjectURL(file);
+    } catch (err) {
+      reject(new Error(`Failed to create blob URL for: ${file.name}`));
+      return;
+    }
+    
+    // Add timeout to prevent hanging (10 seconds is enough for most images)
     const timeout = setTimeout(() => {
-      img.src = '';
-      URL.revokeObjectURL(objectUrl);
-      reject(new Error(`Image load timeout: ${file.name}`));
-    }, 60000); // 60 second timeout
+      if (objectUrl) {
+        try {
+          img.src = '';
+          URL.revokeObjectURL(objectUrl);
+        } catch (err) {
+          // Ignore cleanup errors
+        }
+      }
+      reject(new Error(`Image load timeout (10s): ${file.name}`));
+    }, 10000); // 10 second timeout
     
     img.onload = () => {
       clearTimeout(timeout);
       resolve(img);
     };
     
-    img.onerror = (error) => {
+    img.onerror = () => {
       clearTimeout(timeout);
-      URL.revokeObjectURL(objectUrl);
+      if (objectUrl) {
+        try {
+          URL.revokeObjectURL(objectUrl);
+        } catch (err) {
+          // Ignore cleanup errors
+        }
+      }
       reject(new Error(`Failed to load image: ${file.name}`));
     };
     
-    img.src = objectUrl;
+    // Set source after handlers are attached
+    try {
+      img.src = objectUrl;
+    } catch (err) {
+      clearTimeout(timeout);
+      if (objectUrl) {
+        try {
+          URL.revokeObjectURL(objectUrl);
+        } catch (cleanupErr) {
+          // Ignore cleanup errors
+        }
+      }
+      reject(new Error(`Failed to set image source: ${file.name}`));
+    }
   });
 }
 
@@ -433,6 +465,18 @@ export async function downloadImagesAsZip(
 export async function getImageDimensions(file: File): Promise<{ width: number; height: number }> {
   const img = await loadImage(file);
   const dimensions = { width: img.width, height: img.height };
-  URL.revokeObjectURL(img.src);
+  
+  // Clean up the blob URL used for loading
+  try {
+    if (img.src && img.src.startsWith('blob:')) {
+      URL.revokeObjectURL(img.src);
+    }
+  } catch (err) {
+    // Ignore cleanup errors in production
+    if (process.env.NODE_ENV === 'development') {
+      console.warn('Failed to revoke blob URL:', err);
+    }
+  }
+  
   return dimensions;
 }

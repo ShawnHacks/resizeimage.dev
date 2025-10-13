@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bulkresizeimage-v1';
+const CACHE_NAME = 'bulkresizeimage-v2';
 const urlsToCache = [
   '/',
   '/en',
