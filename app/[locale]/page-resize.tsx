@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { ImagePreview } from '@/components/resize/image-preview';
 import { ResizeControls, type ResizeOptionsState } from '@/components/resize/resize-controls';
@@ -21,19 +21,82 @@ export default function ResizeImagePage() {
   const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
+  
+  // Track blob URLs for cleanup
+  const blobUrlsRef = useRef<Set<string>>(new Set());
+  
+  // Track if we're currently loading files to prevent concurrent calls
+  const isLoadingRef = useRef(false);
+
+  // Cleanup all blob URLs on unmount or when images change
+  useEffect(() => {
+    console.log('[ResizeImagePage] Component mounted');
+    
+    return () => {
+      console.log('[ResizeImagePage] Component unmounting, cleaning up', blobUrlsRef.current.size, 'blob URLs');
+      // Cleanup all tracked blob URLs when component unmounts
+      blobUrlsRef.current.forEach(url => {
+        try {
+          URL.revokeObjectURL(url);
+        } catch (err) {
+          // Ignore errors during cleanup
+        }
+      });
+      blobUrlsRef.current.clear();
+    };
+  }, []);
+  
+  // Debug: Log images state changes
+  useEffect(() => {
+    console.log('[ResizeImagePage] Images state changed:', images.length, 'images');
+  }, [images]);
 
   const handleFilesSelected = useCallback(async (files: File[]) => {
+    console.log('[handleFilesSelected] Called with', files.length, 'files');
+    
     if (files.length === 0) {
+      console.log('[handleFilesSelected] No files, returning');
       return;
     }
 
-    setProcessedImages([]); // Clear previous results
+    // Prevent concurrent calls
+    if (isLoadingRef.current) {
+      console.warn('[handleFilesSelected] Already loading files, ignoring duplicate call');
+      return;
+    }
     
+    isLoadingRef.current = true;
+    console.log('[handleFilesSelected] Set loading flag to true');
+
     try {
+      // Clear previous images and their blob URLs
+      console.log('[handleFilesSelected] Cleaning up', blobUrlsRef.current.size, 'previous blob URLs');
+      blobUrlsRef.current.forEach(url => {
+        try {
+          URL.revokeObjectURL(url);
+        } catch (err) {
+          console.error('[handleFilesSelected] Error revoking URL:', err);
+        }
+      });
+      blobUrlsRef.current.clear();
+      
+      // Reset state
+      console.log('[handleFilesSelected] Resetting processed images');
+      setProcessedImages([]);
+      
+      console.log('[handleFilesSelected] Starting to process files...');
       const imageFiles: ImageFile[] = await Promise.all(
-        files.map(async (file) => {
+        files.map(async (file, index) => {
+          console.log(`[handleFilesSelected] Processing file ${index + 1}/${files.length}:`, file.name);
+          
           const preview = URL.createObjectURL(file);
+          console.log(`[handleFilesSelected] Created blob URL for ${file.name}:`, preview);
+          
+          // Track the blob URL for cleanup
+          blobUrlsRef.current.add(preview);
+          
           const dimensions = await getImageDimensions(file);
+          console.log(`[handleFilesSelected] Got dimensions for ${file.name}:`, dimensions);
           
           return {
             file,
@@ -44,22 +107,57 @@ export default function ResizeImagePage() {
         })
       );
 
+      console.log('[handleFilesSelected] All files processed:', imageFiles.length);
+      
       if (imageFiles.length > 0) {
+        console.log('[handleFilesSelected] Setting images state with', imageFiles.length, 'images');
         setImages(imageFiles);
-        toast.success(t('toast.imagesLoaded', { count: files.length }));
+        
+        // Use setTimeout to ensure state update completes
+        setTimeout(() => {
+          console.log('[handleFilesSelected] Toast success');
+          toast.success(t('toast.imagesLoaded', { count: files.length }));
+        }, 0);
       } else {
+        console.warn('[handleFilesSelected] No valid images after processing');
         toast.error(t('toast.noValidImages'));
       }
     } catch (error) {
-      console.error('Failed to load images:', error);
+      console.error('[handleFilesSelected] Error processing images:', error);
       toast.error(t('toast.error'));
+      
+      // Clean up any blob URLs that were created before the error
+      console.log('[handleFilesSelected] Cleaning up after error');
+      blobUrlsRef.current.forEach(url => {
+        try {
+          URL.revokeObjectURL(url);
+        } catch (err) {
+          // Ignore errors
+        }
+      });
+      blobUrlsRef.current.clear();
+      
+      // Ensure images state is cleared on error
+      setImages([]);
+    } finally {
+      isLoadingRef.current = false;
+      console.log('[handleFilesSelected] Set loading flag to false');
     }
   }, [t]);
 
   const handleRemoveImage = useCallback((index: number) => {
     setImages((prev) => {
       const newImages = [...prev];
-      URL.revokeObjectURL(newImages[index].preview);
+      const removedUrl = newImages[index].preview;
+      
+      // Clean up the blob URL
+      try {
+        URL.revokeObjectURL(removedUrl);
+        blobUrlsRef.current.delete(removedUrl);
+      } catch (err) {
+        // Ignore errors
+      }
+      
       newImages.splice(index, 1);
       return newImages;
     });
@@ -78,6 +176,9 @@ export default function ResizeImagePage() {
       const imageFiles: ImageFile[] = await Promise.all(
         newFiles.map(async (file) => {
           const preview = URL.createObjectURL(file);
+          // Track the blob URL for cleanup
+          blobUrlsRef.current.add(preview);
+          
           const dimensions = await getImageDimensions(file);
           
           return {
@@ -146,10 +247,19 @@ export default function ResizeImagePage() {
   }, [t]);
 
   const handleBack = useCallback(() => {
-    images.forEach(img => URL.revokeObjectURL(img.preview));
+    // Clean up all blob URLs
+    blobUrlsRef.current.forEach(url => {
+      try {
+        URL.revokeObjectURL(url);
+      } catch (err) {
+        // Ignore errors
+      }
+    });
+    blobUrlsRef.current.clear();
+    
     setImages([]);
     setProcessedImages([]);
-  }, [images]);
+  }, []);
 
   return (
     <div className="min-h-[calc(100vh-rem)]">
@@ -247,9 +357,18 @@ export default function ResizeImagePage() {
               <div className="text-center">
                 <button
                   onClick={() => {
+                    // Clean up all blob URLs
+                    blobUrlsRef.current.forEach(url => {
+                      try {
+                        URL.revokeObjectURL(url);
+                      } catch (err) {
+                        // Ignore errors
+                      }
+                    });
+                    blobUrlsRef.current.clear();
+                    
                     setImages([]);
                     setProcessedImages([]);
-                    images.forEach(img => URL.revokeObjectURL(img.preview));
                   }}
                   className="px-6 py-2.5 text-primary hover:text-primary/80 font-medium transition-colors"
                 >

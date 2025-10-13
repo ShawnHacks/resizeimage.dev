@@ -52,9 +52,27 @@ export interface ProcessedImage {
 async function loadImage(file: File): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const img = new Image();
-    img.onload = () => resolve(img);
-    img.onerror = reject;
-    img.src = URL.createObjectURL(file);
+    const objectUrl = URL.createObjectURL(file);
+    
+    // Add timeout to prevent hanging
+    const timeout = setTimeout(() => {
+      img.src = '';
+      URL.revokeObjectURL(objectUrl);
+      reject(new Error(`Image load timeout: ${file.name}`));
+    }, 60000); // 60 second timeout
+    
+    img.onload = () => {
+      clearTimeout(timeout);
+      resolve(img);
+    };
+    
+    img.onerror = (error) => {
+      clearTimeout(timeout);
+      URL.revokeObjectURL(objectUrl);
+      reject(new Error(`Failed to load image: ${file.name}`));
+    };
+    
+    img.src = objectUrl;
   });
 }
 
@@ -408,18 +426,6 @@ export async function downloadImagesAsZip(
   saveAs(zipBlob, zipFilename);
 }
 
-/**
- * Format file size for display
- */
-export function formatFileSize(bytes: number): string {
-  if (bytes < 1024) {
-    return `${bytes} B`;
-  } else if (bytes < 1024 * 1024) {
-    return `${(bytes / 1024).toFixed(1)} KB`;
-  } else {
-    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
-  }
-}
 
 /**
  * Get image dimensions from file

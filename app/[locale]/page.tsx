@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import {setRequestLocale} from 'next-intl/server';
 import { routing } from '@/i18n/routing'
-import ResizeImagePage from '@/app/page-resize';
+import ResizeImagePage from './page-resize';
 
 export const runtime = 'edge'
 // export const revalidate = 3600

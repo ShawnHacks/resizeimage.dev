@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { X, Plus, ChevronDown, ChevronUp } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { formatFileSize } from '@/lib/image-resize-utils';
+import { formatFileSize } from '@/lib/utils';
 import type { ImageFile } from '@/types/resize';
 import { Button } from '@/components/ui/button';
 
