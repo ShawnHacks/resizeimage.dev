@@ -103,9 +103,18 @@ export function SiteHeader({
     const { outcome } = await deferredPrompt.userChoice
 
     console.log('PWA: Install outcome:', outcome)
+    
+    // 无论用户接受或取消，都需要清理已使用的 prompt
+    // beforeinstallprompt 事件只能使用一次
+    setDeferredPrompt(null)
+    
     if (outcome === 'accepted') {
+      // 安装成功，隐藏按钮
       setIsInstallable(false)
-      setDeferredPrompt(null)
+    } else {
+      // 用户取消了，暂时隐藏按钮，等待浏览器再次触发 beforeinstallprompt
+      // 注意：浏览器可能会延迟触发或不再触发该事件（通常需要几天后）
+      setIsInstallable(false)
     }
   }
 

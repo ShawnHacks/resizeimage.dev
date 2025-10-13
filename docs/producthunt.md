@@ -16,7 +16,7 @@ clean, polished, and ready to post.
 
 ### **Tagline (≤60 characters)**
 
-> Batch resize images online — fast, private, and works entirely in your browser.
+> Batch resize images fast, private, and works entirely in your browser.
 
 ### **Short Description (for the listing)**
 

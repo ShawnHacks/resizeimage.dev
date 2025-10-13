@@ -45,10 +45,10 @@ export default function FooterBadges({ locale }: { locale: string }) {
           <img src="https://startupfa.me/badges/featured/light.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a> */}
 
-        <a href="https://www.producthunt.com/products/bulkresizeimages-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="hidden dark:block">
+        <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=dark" alt="BulkresizeImage - Resize Images Online Free | Product Hunt" className="h-8" />
         </a>
-        <a href="https://www.producthunt.com/products/bulkresizeimages-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="block dark:hidden">
+        <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="block dark:hidden">
           <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=light" alt="BulkresizeImage - Resize Images Online Free | Product Hunt" className="h-8" />
         </a>
 
@@ -97,8 +97,8 @@ export default function FooterBadges({ locale }: { locale: string }) {
           <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
 
-        <a target="_blank" href="https://www.goodfirms.co/screen-recording-software/">
-          <img src="https://assets.goodfirms.co/badges/color-badge/screen-recording-software.svg" title="Top Screen Recording Software" alt="Top Screen Recording Software" className="h-8 w-auto max-w-40" />
+        <a target="_blank" href="https://www.goodfirms.co/photo-editing-software/">
+          <img src="https://assets.goodfirms.co/badges/color-badge/photo-editing-software.svg" title="Top Photo Editing Software" alt="Top Photo Editing Software" className="h-8 w-auto max-w-40" />
         </a>
       </div>
     ) : null
