@@ -379,7 +379,8 @@ export async function batchResizeImages(
  * Download single image
  */
 export async function downloadImage(processedImage: ProcessedImage): Promise<void> {
-  const { saveAs } = await import('file-saver');
+  const fileSaverModule = await import('file-saver');
+  const saveAs = fileSaverModule.saveAs || (fileSaverModule as any).default;
   saveAs(processedImage.blob, processedImage.filename);
 }
 
@@ -390,12 +391,14 @@ export async function downloadImagesAsZip(
   processedImages: ProcessedImage[],
   zipFilename: string = 'resized-images.zip'
 ): Promise<void> {
-  const [{ saveAs }, JSZip] = await Promise.all([
+  const [fileSaverModule, JSZipModule] = await Promise.all([
     import('file-saver'),
     import('jszip')
   ]);
   
-  const zip = new JSZip.default();
+  const saveAs = fileSaverModule.saveAs || (fileSaverModule as any).default;
+  const JSZip = (JSZipModule as any).default || JSZipModule;
+  const zip = new JSZip();
 
   processedImages.forEach((img) => {
     zip.file(img.filename, img.blob);
