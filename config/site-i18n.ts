@@ -185,11 +185,6 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         href: "https://gemlink.app",
         noTranslation: true,
       },
-      {
-        labelKey: "Twitter Video Downloader",
-        href: "https://twittervideodownloader.top",
-        noTranslation: true,
-      },
       // {
       //   labelKey: "Footer.License",
       //   href: "/license",

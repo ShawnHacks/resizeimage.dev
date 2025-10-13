@@ -401,6 +401,10 @@
     animation: fade-out 0.4s;
   }
 
+  .animate-scroll {
+    animation: scroll 40s linear infinite;
+  }
+
   /* FAQ Details/Summary Styling */
   details > summary {
     list-style: none;

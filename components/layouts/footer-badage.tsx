@@ -8,7 +8,7 @@ export default function FooterBadges({ locale }: { locale: string }) {
   // x-invoke-path gives the path without the locale, e.g., /tools/website-screenshots
   const pathname = usePathname()
 
-  return (pathname === '/' || pathname === `/${locale}`) ? (
+  const BadgeList = () => (
       <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
         <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
           <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
@@ -100,6 +100,16 @@ export default function FooterBadges({ locale }: { locale: string }) {
         <a target="_blank" href="https://www.goodfirms.co/photo-editing-software/">
           <img src="https://assets.goodfirms.co/badges/color-badge/photo-editing-software.svg" title="Top Photo Editing Software" alt="Top Photo Editing Software" className="h-8 w-auto max-w-40" />
         </a>
+      </div>
+    )
+
+    return (pathname === '/' || pathname === `/${locale}`) ? (
+      <div className="container overflow-hidden mb-4">
+        {/* <div className="flex animate-scroll"> */}
+        <div className="flex justify-center">
+          <BadgeList />
+          {/* <BadgeList /> */}
+        </div>
       </div>
     ) : null
   }
