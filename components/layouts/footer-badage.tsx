@@ -10,6 +10,13 @@ export default function FooterBadges({ locale }: { locale: string }) {
 
   return (pathname === '/' || pathname === `/${locale}`) ? (
       <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
+        <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+          <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
+        </a>
+        <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+          <img src="https://aihuntlist.com/badge-dark.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
+        </a>
+
         <a href="https://twelve.tools" target="_blank" rel="noopener" className="hidden dark:block">
           <Image src="/partners/twelve.tools.dark.svg" alt="Featured on Twelve Tools" width={120} height={32} className="h-8 w-auto max-w-40" />
         </a>
@@ -31,19 +38,20 @@ export default function FooterBadges({ locale }: { locale: string }) {
           <img src="https://aiwith.me/ai_with_me_light_badge.svg" alt="Open Launch - Featured on AI With Me" className="h-8" />
         </a> */}
         
-        <a href="https://startupfa.me/s/websitescreenshot?utm_source=websitescreenshot.online" target="_blank" rel="noopener" className="hidden dark:block">
+        {/* <a href="https://startupfa.me/s/websitescreenshot?utm_source=websitescreenshot.online" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://startupfa.me/badges/featured/dark.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
         <a href="https://startupfa.me/s/websitescreenshot?utm_source=websitescreenshot.online" target="_blank" rel="noopener" className="block dark:hidden">
           <img src="https://startupfa.me/badges/featured/light.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        </a> */}
+
+        <a href="https://www.producthunt.com/products/bulkresizeimages-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=dark" alt="BulkresizeImage - Resize Images Online Free | Product Hunt" className="h-8" />
+        </a>
+        <a href="https://www.producthunt.com/products/bulkresizeimages-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=light" alt="BulkresizeImage - Resize Images Online Free | Product Hunt" className="h-8" />
         </a>
 
-        <a href="https://www.producthunt.com/products/websitescreenshot?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="hidden dark:block">
-          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=dark" alt="WebsiteScreenshot - Free Online Website Screenshot Tool | Product Hunt" className="h-8" />
-        </a>
-        <a href="https://www.producthunt.com/products/websitescreenshot?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="block dark:hidden">
-          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=light" alt="WebsiteScreenshot - Free Online Website Screenshot Tool | Product Hunt" className="h-8" />
-        </a>
         {/* <a href="https://magicbox.tools" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://magicbox.tools/badge-dark.svg" alt="Featured on MagicBox.tools" className="h-8" />
         </a>
@@ -51,10 +59,10 @@ export default function FooterBadges({ locale }: { locale: string }) {
           <img src="https://magicbox.tools/badge.svg" alt="Featured on MagicBox.tools" className="h-8" />
         </a> */}
 
-        <a href="https://fazier.com/launches/websitescreenshot.online" target="_blank" rel="noopener" className="block dark:hidden">
+        <a href="https://fazier.com/launches/bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
           <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" className="h-8 w-auto max-w-40" alt="Fazier badge" />
         </a>
-        <a href="https://fazier.com/launches/websitescreenshot.online" target="_blank" rel="noopener" className="hidden dark:block">
+        <a href="https://fazier.com/launches/bulkresizeimages.online" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" className="h-8 w-auto max-w-40" alt="Fazier badge" />
         </a>
 
@@ -65,35 +73,28 @@ export default function FooterBadges({ locale }: { locale: string }) {
           <img src="https://similarlabs.com/similarlabs-embed-badge-dark.svg" alt="SimilarLabs Embed Badge" className="h-8 w-auto max-w-40" />
         </a>
 
-        <a title="ai tools code.market" href="https://code.market?code.market=verified" className="block dark:hidden">
+        {/* <a title="ai tools code.market" href="https://code.market?code.market=verified" className="block dark:hidden">
           <img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" className="h-8 w-auto max-w-40" />
         </a>
         <a title="ai tools code.market" href="https://code.market?code.market=verified" className="hidden dark:block">
           <img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-dark.svg" className="h-8 w-auto max-w-40" />
-        </a>
+        </a> */}
 
-        <a href="https://findly.tools/website-screenshot-online?utm_source=website-screenshot-online" target="_blank" className="block dark:hidden">
+        {/* <a href="https://findly.tools/website-screenshot-online?utm_source=website-screenshot-online" target="_blank" className="block dark:hidden">
           <img src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
         </a>
         <a href="https://findly.tools/website-screenshot-online?utm_source=website-screenshot-online" target="_blank" className="hidden dark:block">
           <img src="https://findly.tools/badges/findly-tools-badge-dark.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
-        </a>
+        </a> */}
 
         <a href="https://dofollow.tools" target="_blank" className="hidden dark:block"><img src="https://dofollow.tools/badge/badge_dark.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
         <a href="https://dofollow.tools" target="_blank" className="block dark:hidden"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
 
-        <a href="https://turbo0.com/item/websitescreenshot" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+        <a href="https://turbo0.com/item/bulkresizeimagesonline" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
           <img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
-        <a href="https://turbo0.com/item/websitescreenshot" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+        <a href="https://turbo0.com/item/bulkresizeimagesonline" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
           <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
-        </a>
-
-        <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
-          <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
-        </a>
-        <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
-          <img src="https://aihuntlist.com/badge-dark.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
         </a>
 
         <a target="_blank" href="https://www.goodfirms.co/screen-recording-software/">
