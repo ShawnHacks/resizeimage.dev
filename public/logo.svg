@@ -12,6 +12,9 @@
     
     <!-- Right frame with image icon -->
     <g>
+      <!-- Frame background -->
+      <rect x="380" y="200" width="560" height="560" rx="32" ry="32" fill="#FFFFFF"/>
+      
       <!-- Inner frame (darker area for contrast) -->
       <rect x="460" y="220" width="360" height="360" rx="12" ry="12" fill="#FFFFFF"/>
       
