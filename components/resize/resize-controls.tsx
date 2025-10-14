@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSearchParams, useRouter } from 'next/navigation';
+import { useSearchParams, useRouter, usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Percent, Package, Maximize2, ArrowRightLeft, ArrowUpDown, Ruler, Star, Link2, Copy, Check } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -39,6 +39,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
   const tConfig = useTranslations('ResizeTool.config');
   const searchParams = useSearchParams();
   const router = useRouter();
+  const pathname = usePathname();
   const [urlCopied, setUrlCopied] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
 
@@ -158,8 +159,8 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
     // Background color (remove # prefix)
     params.set('bgColor', backgroundColor.replace('#', ''));
 
-    router.replace(`?${params.toString()}`, { scroll: false });
-  }, [isInitialized, mode, percentage, targetFileSize, format, quality, width, height, lockAspectRatio, targetValue, backgroundColor, usePadding, router]);
+    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
+  }, [isInitialized, mode, percentage, targetFileSize, format, quality, width, height, lockAspectRatio, targetValue, backgroundColor, usePadding, router, pathname]);
 
   const handleResize = () => {
     const options: ResizeOptionsState = {
@@ -197,7 +198,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
       return '';
     }
     
-    const baseUrl = `${window.location.origin}${window.location.pathname}`;
+    const baseUrl = `${window.location.origin}${pathname}`;
     const params = new URLSearchParams();
     
     params.set('mode', mode);
