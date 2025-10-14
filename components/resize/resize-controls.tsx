@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useSearchParams, useRouter, usePathname } from 'next/navigation';
+import { useSearchParams, usePathname } from 'next/navigation';
 import { useTranslations } from 'next-intl';
 import { Percent, Package, Maximize2, ArrowRightLeft, ArrowUpDown, Ruler, Star, Link2, Copy, Check } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -38,7 +38,6 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
   const t = useTranslations('ResizeTool.controls');
   const tConfig = useTranslations('ResizeTool.config');
   const searchParams = useSearchParams();
-  const router = useRouter();
   const pathname = usePathname();
   const [urlCopied, setUrlCopied] = useState(false);
   const [isInitialized, setIsInitialized] = useState(false);
@@ -159,8 +158,12 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
     // Background color (remove # prefix)
     params.set('bgColor', backgroundColor.replace('#', ''));
 
-    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
-  }, [isInitialized, mode, percentage, targetFileSize, format, quality, width, height, lockAspectRatio, targetValue, backgroundColor, usePadding, router, pathname]);
+    // Use window.history.replaceState to avoid triggering Next.js router and component re-render
+    const newUrl = `${pathname}?${params.toString()}`;
+    if (typeof window !== 'undefined') {
+      window.history.replaceState(null, '', newUrl);
+    }
+  }, [isInitialized, mode, percentage, targetFileSize, format, quality, width, height, lockAspectRatio, targetValue, backgroundColor, usePadding, pathname]);
 
   const handleResize = () => {
     const options: ResizeOptionsState = {
