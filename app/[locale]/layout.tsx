@@ -94,7 +94,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     appleWebApp: {
       capable: true,
       statusBarStyle: 'default',
-      title: 'BulkResizeImage',
+      title: 'BulkResizeImages',
     },
   }
 }

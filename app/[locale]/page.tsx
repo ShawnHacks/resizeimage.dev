@@ -14,23 +14,23 @@ export async function generateMetadata({
   const { locale = 'en' } = await params
   
   const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
-  const title = 'BulkresizeImage - Resize Images Online Free'
+  const title = 'BulkresizeImages - Resize Images Online Free'
   const description = 'Resize multiple images at once right in your browser. No upload needed. 100% free and private. Support percentage, file size, dimensions, width, height modes.'
 
   return {
     title,
     description,
     keywords: ['bulk resize image', 'resize image online', 'image resizer', 'batch resize photos', 'resize photos online', 'compress image'],
-    authors: [{ name: 'BulkresizeImage' }],
-    creator: 'BulkresizeImage',
-    publisher: 'BulkresizeImage',
+    authors: [{ name: 'ShawnHacks' }],
+    creator: 'ShawnHacks',
+    publisher: 'CrownByte LTD',
     openGraph: {
       type: 'website',
       url: urlString,
       locale: locale,
       title: title,
       description: description,
-      siteName: 'BulkresizeImage',
+      siteName: 'BulkresizeImages',
       images: [
         {
           url: `${urlString}/og.jpg`,

@@ -2,9 +2,9 @@ export function ResizeToolStructuredData() {
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'BulkresizeImage',
+    name: 'BulkresizeImages',
     description: 'Resize multiple images at once right in your browser. No upload needed. 100% free and private.',
-    url: 'https://bulkresizeimage.com',
+    url: 'https://bulkresizeimages.online',
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Any',
     offers: {
@@ -22,7 +22,7 @@ export function ResizeToolStructuredData() {
       'Privacy-focused',
       'Works offline',
     ],
-    screenshot: 'https://bulkresizeimage.com/og.jpg',
+    screenshot: 'https://bulkresizeimages.online/og.jpg',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.8',
