@@ -22,7 +22,7 @@ export function ResizeToolStructuredData() {
       'Privacy-focused',
       'Works offline',
     ],
-    screenshot: 'https://bulkresizeimages.online/og.jpg',
+    screenshot: 'https://bulkresizeimages.online/og.png',
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue: '4.8',

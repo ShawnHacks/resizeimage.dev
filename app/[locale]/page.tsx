@@ -33,7 +33,7 @@ export async function generateMetadata({
       siteName: 'BulkresizeImages',
       images: [
         {
-          url: `${urlString}/og.jpg`,
+          url: `${urlString}/og.png`,
           width: 1200,
           height: 630,
           alt: title,
@@ -44,7 +44,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: title,
       description: description,
-      images: [`${urlString}/og.jpg`],
+      images: [`${urlString}/og.png`],
     },
     robots: {
       index: true,

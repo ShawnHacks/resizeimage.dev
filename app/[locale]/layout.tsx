@@ -56,7 +56,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
       siteName: siteConfig.name || 'BulkResizeImages',
       images: [
         {
-          url: siteConfig.ogImage || 'https://bulkresizeimages.online/og.jpg',
+          url: siteConfig.ogImage || 'https://bulkresizeimages.online/og.png',
           width: 1200,
           height: 630,
           alt: title,
@@ -67,7 +67,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
       card: 'summary_large_image',
       title: title,
       description: description,
-      images: [siteConfig.ogImage || 'https://bulkresizeimages.online/og.jpg'],
+      images: [siteConfig.ogImage || 'https://bulkresizeimages.online/og.png'],
       creator: '@ShawnHacks',
     },
     robots: {

@@ -53,20 +53,20 @@ export function BlogPostTemplate({ post, relatedPosts, locale }: BlogPostTemplat
     "description": post.description,
     "author": {
       "@type": "Person",
-      "name": post.author || "WebsiteScreenshot Team"
+      "name": post.author || "CrownByte LTD"
     },
     "datePublished": post.publishedAt,
     "dateModified": post.updatedAt,
-    "image": post.ogImage || "https://websitescreenshot.online/og.jpg",
-    "url": `https://websitescreenshot.online/${locale === 'en' ? '' : locale + '/'}blog/${post.slug}`,
+    "image": post.ogImage || "https://bulkresizeimages.online/og.png",
+    "url": `https://bulkresizeimages.online/${locale === 'en' ? '' : locale + '/'}blog/${post.slug}`,
     "keywords": post.keywords?.join(", ") || "",
     "articleSection": post.tags?.join(", ") || "",
     "publisher": {
       "@type": "Organization",
-      "name": "WebsiteScreenshot",
+      "name": "CrownByte LTD",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://websitescreenshot.online/logo.png"
+        "url": "https://bulkresizeimages.online/logo.png"
       }
     }
   }
