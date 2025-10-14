@@ -51,52 +51,26 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Only handle GET requests - Cache API doesn't support POST, PUT, DELETE, etc.
+  // Only handle GET requests
   if (event.request.method !== 'GET') {
     return;
   }
 
+  // Network-First Strategy
   event.respondWith(
-    caches.match(event.request)
-      .then((response) => {
-        // Cache hit - return response
-        if (response) {
-          return response;
-        }
-
-        // Clone the request
-        const fetchRequest = event.request.clone();
-
-        return fetch(fetchRequest).then((response) => {
-          // Check if valid response
-          if (!response || response.status !== 200 || response.type !== 'basic') {
-            return response;
-          }
-
-          // Clone the response
-          const responseToCache = response.clone();
-
-          // Cache the response for future requests (only GET requests reach here)
-          caches.open(CACHE_NAME)
-            .then((cache) => {
-              cache.put(event.request, responseToCache);
-            })
-            .catch((error) => {
-              console.error('Cache put failed:', error);
-            });
-
-          return response;
-        }).catch((error) => {
-          console.error('Fetch failed:', error);
-          // Return a custom offline page if available
-          return caches.match('/offline.html').then((response) => {
-            return response || new Response('Offline', {
-              status: 503,
-              statusText: 'Service Unavailable',
-            });
-          });
-        });
-      })
+    fetch(event.request).then((networkResponse) => {
+      // If the fetch is successful, cache the new response and return it
+      const responseToCache = networkResponse.clone();
+      caches.open(CACHE_NAME).then((cache) => {
+        cache.put(event.request, responseToCache);
+      });
+      return networkResponse;
+    }).catch(() => {
+      // If the network fetch fails (offline), try to serve from the cache
+      return caches.match(event.request).then((cachedResponse) => {
+        return cachedResponse || caches.match('/'); // Fallback to root if specific page not cached
+      });
+    })
   );
 });
 
