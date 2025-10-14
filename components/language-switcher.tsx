@@ -2,6 +2,7 @@
 
 import { useLocale } from "next-intl"
 import { Link, usePathname } from "@/i18n/navigation"
+import { useSearchParams } from "next/navigation"
 import { Languages } from "lucide-react"
 
 import { localeNames, routing } from "@/i18n/routing"
@@ -16,6 +17,13 @@ import {
 export function LanguageSwitcher() {
   const locale = useLocale()
   const pathname = usePathname()
+  const searchParams = useSearchParams()
+  
+  // Construct full path with search params
+  const getFullPath = () => {
+    const params = searchParams.toString()
+    return params ? `${pathname}?${params}` : pathname
+  }
 
   return (
     <DropdownMenu>
@@ -31,7 +39,7 @@ export function LanguageSwitcher() {
         {routing.locales.map((availableLocale) => (
           <DropdownMenuItem key={availableLocale} asChild>
             <Link
-              href={pathname}
+              href={getFullPath()}
               locale={availableLocale}
               className={`cursor-pointer w-full ${
                 locale === availableLocale 

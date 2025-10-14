@@ -1,6 +1,8 @@
 import { getTranslations } from 'next-intl/server'
+import { getLocale } from 'next-intl/server'
 
-export async function ResizeToolStructuredData({ locale }: { locale: string }) {
+export async function ResizeToolStructuredData() {
+  const locale = await getLocale()
   const t = await getTranslations({ locale, namespace: 'SiteConfig' })
 
   const structuredData = {

@@ -5,6 +5,8 @@ import { Link } from '@/i18n/navigation'
 import logo from "@/public/logo.png"
 import FooterBadges from "./footer-badage"
 import { getLocalizedSiteConfig, getLocalizedFooterConfig } from "@/config/site-i18n"
+import {getLocale} from 'next-intl/server';
+
 import { localeNames } from "@/i18n/routing"
 import { ModeToggle } from "./mode-toggle"
 
@@ -13,17 +15,16 @@ import { Mail, Twitter } from "lucide-react"
 import { cn } from "@/lib/utils"
 
 interface SiteFooterProps {
-  locale: string
   copyright?: string
   className?: string
 }
 
 export async function SiteFooter({
-  locale,
   copyright,
   className,
 }: SiteFooterProps) {
 
+  const locale = await getLocale()
   const siteConfig = await getLocalizedSiteConfig(locale)
   const footerColumns = await getLocalizedFooterConfig(locale)
   
@@ -96,7 +97,7 @@ export async function SiteFooter({
         </div>
       </div>
 
-      <FooterBadges locale={locale} />
+      <FooterBadges />
 
       {/* Language selector */}
       <div className="border-t border-b py-4">

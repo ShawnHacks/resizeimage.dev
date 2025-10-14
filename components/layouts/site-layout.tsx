@@ -3,14 +3,15 @@ import { getLocalizedNavItems } from "@/config/site-i18n"
 import { NavMobile } from "@/components/layouts/mobile-nav"
 import { SiteFooter } from "@/components/layouts/site-footer"
 import { SiteHeader } from "@/components/layouts/site-header"
+import { getLocale } from "next-intl/server"
 
 interface SiteLayoutProps {
-  locale: string
   navItems?: NavItem[]
   children: React.ReactNode
 }
 
-export async function SiteLayout({ locale, children, navItems }: SiteLayoutProps) {
+export async function SiteLayout({ children, navItems }: SiteLayoutProps) {
+  const locale = await getLocale()
   const finalNavItems = navItems || await getLocalizedNavItems(locale)
 
   return (
@@ -18,7 +19,7 @@ export async function SiteLayout({ locale, children, navItems }: SiteLayoutProps
       <NavMobile navItems={finalNavItems} />
       <SiteHeader navItems={finalNavItems} scroll={true} />
       <main className="flex-1 px-2 md:px-0">{children}</main>
-      <SiteFooter locale={locale} />
+      <SiteFooter />
     </div>
   )
 }

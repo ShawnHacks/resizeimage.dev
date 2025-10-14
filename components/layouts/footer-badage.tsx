@@ -1,9 +1,11 @@
 
 'use client'
-import { usePathname } from 'next/navigation'
+import { usePathname } from "@/i18n/navigation"
+import {useLocale} from 'next-intl';
 import Image from 'next/image'
 
-export default function FooterBadges({ locale }: { locale: string }) {
+export default function FooterBadges() {
+  const locale = useLocale()
   
   // x-invoke-path gives the path without the locale, e.g., /tools/website-screenshots
   const pathname = usePathname()

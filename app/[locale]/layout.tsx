@@ -129,7 +129,7 @@ export default async function RootLayout({
         <Providers>
           <NextIntlClientProvider>
             <PWARegister />
-            <SiteLayout locale={locale}>{children}</SiteLayout>
+            <SiteLayout>{children}</SiteLayout>
             {/* <CookieConsent /> */}
             <Toaster richColors />
           </NextIntlClientProvider>

@@ -1,5 +1,4 @@
 import { notFound } from 'next/navigation'
-import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { routing } from '@/i18n/routing'
 import { BlogPostTemplate } from '@/components/blog/blog-post-template'
@@ -84,5 +83,5 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
 
   const relatedPosts = await getRelatedPosts(post, 3)
 
-  return <BlogPostTemplate post={post} relatedPosts={relatedPosts} locale={locale} />
+  return <BlogPostTemplate post={post} relatedPosts={relatedPosts} />
 }

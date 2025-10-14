@@ -10,7 +10,7 @@ import { SimpleBlogPost } from '@/lib/blog-static'
 import StructuredData from '@/components/structured-data'
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import remarkGfm from 'remark-gfm'
-import { useTranslations } from 'next-intl'
+import { useLocale, useTranslations } from 'next-intl'
 import { toast } from 'sonner'
 
 
@@ -19,10 +19,10 @@ import "@/app/article-content.css"
 interface BlogPostTemplateProps {
   post: SimpleBlogPost
   relatedPosts: SimpleBlogPost[]
-  locale: string
 }
 
-export function BlogPostTemplate({ post, relatedPosts, locale }: BlogPostTemplateProps) {
+export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) {
+  const locale = useLocale();
   const t = useTranslations('BlogPost')
   const handleShare = async () => {
     const shareData = {
@@ -83,18 +83,18 @@ export function BlogPostTemplate({ post, relatedPosts, locale }: BlogPostTemplat
             <div className="max-w-4xl mx-auto">
               {/* Breadcrumb Navigation */}
               <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
-                <Link href={`${locale === 'en' ? '' : '/' + locale}/blog`} className="hover:text-foreground transition-colors shrink-0">
+                <Link href={`/blog`} className="hover:text-foreground transition-colors shrink-0">
                   {t('blog')}
                 </Link>
                 <ChevronRight className="h-4 w-4" />
-                <Link href={`${locale === 'en' ? '' : '/' + locale}/blog/category/${post.category}`} className="capitalize shrink-0">{post.category}</Link>
+                <Link href={`/blog/category/${post.category}`} className="capitalize shrink-0">{post.category}</Link>
                 <ChevronRight className="h-4 w-4" />
                 <span className="text-foreground font-medium truncate">{post.title}</span>
               </nav>
 
               {/* Back Button */}
               <Button variant="ghost" asChild className="mb-8 -ml-4">
-                <Link href={`${locale === 'en' ? '' : '/' + locale}/blog`}>
+                <Link href="/blog">
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   {t('backToBlog')}
                 </Link>

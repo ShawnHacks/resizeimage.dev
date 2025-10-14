@@ -64,7 +64,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           {/* Breadcrumb */}
           <nav className="mb-8">
             <Button variant="ghost" asChild className="mb-4">
-              <Link href={`${locale === 'en' ? '' : '/' + locale}/blog`}>
+              <Link href="/blog">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 {locale === 'zh' ? '返回博客' : 'Back to Blog'}
               </Link>
