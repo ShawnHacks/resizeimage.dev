@@ -87,13 +87,13 @@ interface WebsiteStructuredDataProps {
 }
 
 export async function WebsiteStructuredData({ locale }: WebsiteStructuredDataProps) {
-  const t = await getTranslations({ locale, namespace: 'HomePage' })
+  const t = await getTranslations({ locale, namespace: 'SiteConfig' })
   
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebApplication",
-    "name": "Bulk Resize Images",
-    "description": t('subtitle'),
+    "name": t('title'),
+    "description": t('description'),
     "url": process.env.NEXT_PUBLIC_APP_URL || "https://bulkresizeimages.online",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web Browser",

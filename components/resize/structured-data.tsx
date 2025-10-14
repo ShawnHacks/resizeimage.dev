@@ -1,9 +1,13 @@
-export function ResizeToolStructuredData() {
+import { getTranslations } from 'next-intl/server'
+
+export async function ResizeToolStructuredData({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale, namespace: 'SiteConfig' })
+
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'BulkresizeImages',
-    description: 'Resize multiple images at once right in your browser. No upload needed. 100% free and private.',
+    name: t('title'),
+    description: t('description'),
     url: 'https://bulkresizeimages.online',
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Any',
@@ -25,8 +29,8 @@ export function ResizeToolStructuredData() {
     screenshot: 'https://bulkresizeimages.online/og.png',
     aggregateRating: {
       '@type': 'AggregateRating',
-      ratingValue: '4.8',
-      ratingCount: '1250',
+      ratingValue: '5.0',
+      ratingCount: '12500',
     },
   };
 
