@@ -47,11 +47,11 @@ export default function FooterBadges() {
           <img src="https://startupfa.me/badges/featured/light.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a> */}
 
-        <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="hidden dark:block">
-          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=dark" alt="BulkresizeImage - Resize Images Online Free | Product Hunt" className="h-8" />
+        <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-bulkresizeimages&#0045;online" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=dark" alt="BulkresizeImages&#0046;online - Batch&#0032;resize&#0032;images&#0032;fast&#0044;&#0032;private&#0044;&#0032;works&#0032;entirely&#0032;in&#0032;browser | Product Hunt" className="h-8" />
         </a>
-        <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-websitescreenshot" target="_blank" rel="noopener" className="block dark:hidden">
-          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=light" alt="BulkresizeImage - Resize Images Online Free | Product Hunt" className="h-8" />
+        <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-bulkresizeimages&#0045;online" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=light" alt="BulkresizeImages&#0046;online - Batch&#0032;resize&#0032;images&#0032;fast&#0044;&#0032;private&#0044;&#0032;works&#0032;entirely&#0032;in&#0032;browser | Product Hunt" className="h-8" />
         </a>
 
         {/* <a href="https://magicbox.tools" target="_blank" rel="noopener" className="hidden dark:block">

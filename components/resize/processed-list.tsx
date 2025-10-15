@@ -26,13 +26,13 @@ export function ProcessedList({ processedImages }: ProcessedListProps) {
       className="w-full bg-card rounded-2xl border border-border overflow-hidden shadow-sm"
     >
       {/* Header with totals */}
-      <div className="bg-gradient-to-r from-green-500/10 to-green-500/5 border-b border-border p-6">
+      <div className="bg-gradient-to-r from-green-500/10 to-green-500/5 border-b border-border p-4 sm:p-6">
         <div className="flex items-start gap-3 mb-4">
-          <div className="flex-shrink-0 w-10 h-10 rounded-full bg-green-600 flex items-center justify-center">
-            <CheckCircle2 className="w-6 h-6 text-white" />
+          <div className="flex-shrink-0 w-10 h-10 rounded-full flex items-center justify-center">
+            <CheckCircle2 className="w-10 h-10 text-green-600" />
           </div>
           <div className="flex-1">
-            <h3 className="text-lg font-semibold text-foreground mb-1">
+            <h3 className="text-base font-semibold text-foreground mb-1">
               {t('title')}
             </h3>
             <p className="text-sm text-muted-foreground">
@@ -42,32 +42,39 @@ export function ProcessedList({ processedImages }: ProcessedListProps) {
         </div>
 
         {/* Total size comparison */}
-        <div className="grid grid-cols-3 gap-4">
-          <div className="bg-card rounded-lg p-4 border border-border">
-            <p className="text-xs text-muted-foreground mb-1">{t('originalSize')}</p>
-            <p className="text-lg font-semibold text-foreground">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4">
+          <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
+            <p className="text-[11px] sm:text-xs text-muted-foreground/80 mb-2 font-medium uppercase tracking-wide">{t('originalSize')}</p>
+            <p className="text-base sm:text-xl font-bold text-foreground">
               {formatBytes(totalOriginalSize)}
             </p>
           </div>
           
-          <div className="bg-card rounded-lg p-4 border border-border">
-            <p className="text-xs text-muted-foreground mb-1">{t('newSize')}</p>
-            <p className="text-lg font-semibold text-primary">
+          <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
+            <p className="text-[11px] sm:text-xs text-muted-foreground/80 mb-2 font-medium uppercase tracking-wide">{t('newSize')}</p>
+            <p className="text-base sm:text-xl font-bold text-primary">
               {formatBytes(totalNewSize)}
             </p>
           </div>
           
-          <div className="bg-card rounded-lg p-4 border border-border">
-            <p className="text-xs text-muted-foreground mb-1">{t('spaceSaved')}</p>
-            <p className="text-lg font-semibold text-green-600">
-              {totalSaved > 0 ? `${formatBytes(totalSaved)} (${savedPercentage}%)` : '0 B'}
-            </p>
+          <div className="bg-card rounded-xl p-2 sm:p-4 border border-border">
+            <p className="text-[11px] sm:text-xs text-muted-foreground/80 mb-2 font-medium uppercase tracking-wide">{t('spaceSaved')}</p>
+            <div className="flex items-baseline gap-1">
+              <p className="text-base sm:text-xl font-bold text-green-600">
+                {totalSaved > 0 ? formatBytes(totalSaved) : '0 B'}
+              </p>
+              {totalSaved > 0 && (
+                <span className="text-sm sm:text-base font-semibold text-green-600/70">
+                  ({savedPercentage}%)
+                </span>
+              )}
+            </div>
           </div>
         </div>
       </div>
 
       {/* Image list */}
-      <div className="p-6">
+      <div className="p-4 sm:p-6">
         <h4 className="text-sm font-semibold text-foreground mb-4">{t('processedImages')}</h4>
         
         <div className="space-y-3 max-h-96 overflow-y-auto">
@@ -81,38 +88,49 @@ export function ProcessedList({ processedImages }: ProcessedListProps) {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: index * 0.05 }}
-                className="flex items-center gap-4 p-3 rounded-lg bg-muted hover:bg-muted/80 transition-colors"
+                className="flex flex-col md:flex-row md:justify-between gap-2 p-3 rounded-lg bg-muted hover:bg-muted/80 transition-colors"
               >
-                {/* File number */}
-                <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-medium">
-                  {index + 1}
+                {/* Left: Number + Filename + Dimensions */}
+                <div className="flex items-start gap-3 flex-1 min-w-0">
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center text-sm font-medium">
+                    {index + 1}
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-medium text-foreground truncate mb-0.5">
+                      {img.filename}
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      {img.originalSize.width} × {img.originalSize.height} → {img.newSize.width} × {img.newSize.height}
+                    </p>
+                  </div>
                 </div>
 
-                {/* File name */}
-                <div className="flex-1 min-w-0">
-                  <p className="text-sm font-medium text-foreground truncate">
-                    {img.filename}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {img.originalSize.width} × {img.originalSize.height} → {img.newSize.width} × {img.newSize.height}
-                  </p>
-                </div>
-
-                {/* Size comparison */}
-                <div className="flex items-center gap-2 text-sm">
-                  <span className="text-muted-foreground">{formatBytes(img.originalFileSize)}</span>
-                  <ArrowRight className="w-4 h-4 text-muted-foreground" />
-                  <span className="font-medium text-primary">{formatBytes(img.newFileSize)}</span>
-                </div>
-
-                {/* Saved */}
-                <div className="flex-shrink-0 text-right">
-                  <p className="text-sm font-medium text-green-600">
-                    {saved > 0 ? `-${formatBytes(saved)}` : '0 B'}
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    {saved > 0 ? `${percentage}%` : '0%'}
-                  </p>
+                {/* Right: Size info */}
+                <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-3 pl-11 md:pl-0">
+                  <div className="flex items-center gap-2">
+                    <span className="text-muted-foreground text-xs whitespace-nowrap">{formatBytes(img.originalFileSize)}</span>
+                    <ArrowRight className="w-3 h-3 text-muted-foreground flex-shrink-0" />
+                    <span className="font-medium text-primary text-xs whitespace-nowrap">{formatBytes(img.newFileSize)}</span>
+                  </div>
+                  
+                  {saved !== 0 && (
+                    <div className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full ${
+                      saved > 0 
+                        ? 'bg-green-500/10' 
+                        : 'bg-red-500/10'
+                    }`}>
+                      <span className={`text-xs font-semibold whitespace-nowrap ${
+                        saved > 0 
+                          ? 'text-green-600 dark:text-green-500' 
+                          : 'text-red-600 dark:text-red-500'
+                      }`}>
+                        {saved > 0 ? `-${formatBytes(saved)}` : `+${formatBytes(Math.abs(saved))}`}
+                      </span>
+                      <span className="text-xs font-medium text-muted-foreground">
+                        {Math.abs(parseFloat(percentage))}%
+                      </span>
+                    </div>
+                  )}
                 </div>
               </motion.div>
             );

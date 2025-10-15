@@ -318,7 +318,7 @@
       "urlCopyFailed": "Failed to copy URL"
     },
     "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
+      "bulkresizeimages": "Bulk Resize Images Online",
       "bulkresizeimagesDesc": "Bulk Resize Images",
       "screenshot": "Website Screenshot Online",
       "screenshotDesc": "Take Screenshots",
