@@ -34,17 +34,17 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
   }
 
   return {
-    title: `${post.title} - WebsiteScreenshot Blog`,
+    title: `${post.title} - Blog`,
     description: post.description,
     keywords: post.keywords,
-    authors: [{ name: post.author || 'WebsiteScreenshot Team' }],
+    authors: [{ name: post.author || 'Crownbyte LTD' }],
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
-      authors: [post.author || 'WebsiteScreenshot Team'],
+      authors: [post.author || 'Crownbyte LTD'],
       images: post.ogImage ? [
         {
           url: post.ogImage,

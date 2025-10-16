@@ -71,6 +71,7 @@ export const routing = defineRouting({
 
   localePrefix: 'as-needed',
 
-  // If you want to rely entirely on the URL to resolve the locale, you can set the localeDetection property to false. This will disable locale detection based on the accept-language header and a potentially existing cookie value from a previous visit.
-  localeDetection: true
+  // If you want to rely entirely on the URL to resolve the locale, you can set the localeDetection property to false. 
+  // This will disable locale detection based on the accept-language header and a potentially existing cookie value from a previous visit.
+  localeDetection: false
 });

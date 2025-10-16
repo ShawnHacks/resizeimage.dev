@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   const categoryDesc = categoryData.translations[locale]?.description || categoryData.translations['en']?.description
 
   return {
-    title: `${categoryName} - WebsiteScreenshot Blog`,
+    title: `${categoryName} - Blog`,
     description: categoryDesc,
     alternates: {
       canonical: locale === 'en' ? `/blog/category/${category}` : `/${locale}/blog/category/${category}`,
