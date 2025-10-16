@@ -124,7 +124,7 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
                     <div className="w-8 h-8 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center">
                       <User className="h-4 w-4 text-white" />
                     </div>
-                    <span className="font-medium">{post.author || 'WebsiteScreenshot Team'}</span>
+                    <span className="font-medium">{post.author || 'Admin'}</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <Calendar className="h-4 w-4" />

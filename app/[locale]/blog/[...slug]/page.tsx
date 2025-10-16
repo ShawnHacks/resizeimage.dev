@@ -37,14 +37,14 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
     title: `${post.title} - Blog`,
     description: post.description,
     keywords: post.keywords,
-    authors: [{ name: post.author || 'Crownbyte LTD' }],
+    authors: [{ name: post.author || 'Admin' }],
     openGraph: {
       title: post.title,
       description: post.description,
       type: 'article',
       publishedTime: post.publishedAt,
       modifiedTime: post.updatedAt,
-      authors: [post.author || 'Crownbyte LTD'],
+      authors: [post.author || 'Admin'],
       images: post.ogImage ? [
         {
           url: post.ogImage,
