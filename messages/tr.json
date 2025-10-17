@@ -195,16 +195,27 @@
     "tutorial": "Eğitim",
     "blog": "Blog"
   },
+  "ImageUploader": {
+    "titleSingle": "Resminizi sürükleyip bırakın",
+    "titleMultiple": "Resimlerinizi sürükleyip bırakın",
+    "subtitleSingle": "veya göz atmak için aşağıya tıklayın",
+    "selectImagesSingle": "Resim seç",
+    "selectImagesMultiple": "Resimleri seç",
+    "supportedFormats": "Destek: JPEG, JPG, PNG veya WebP",
+    "maxFiles": "Maksimum {max} dosya",
+    "maxSizeMB": "Dosya başına maksimum {size}MB",
+    "dropHere": "Resimlerinizi buraya bırakın",
+    "filesSelected": "Dosyalar başarıyla seçildi",
+    "file": "dosya",
+    "files": "dosya",
+    "errorInvalidFiles": "Geçersiz dosya türü",
+    "errorTooManyFiles": "Çok fazla dosya",
+    "errorFileSizeExceeded": "Bazı dosyalar çok büyük"
+  },
   "ResizeTool": {
     "pageTitle": "Toplu Resim Yeniden Boyutlandırma Çevrimiçi",
     "pageDescription": "Aynı anda birden çok görüntüyü toplu olarak yeniden boyutlandırmak için ücretsiz çevrimiçi araç. Hızlı, güvenli ve tamamen tarayıcınızda çalışır — yükleme gerekmez.",
     "backButton": "Geri",
-    "hero": {
-      "title": "Resimlerinizi Sürükleyip Bırakın",
-      "subtitle": "veya göz atmak için aşağıya tıklayın",
-      "selectImages": "Resim Seç",
-      "supportedFormats": "Destek: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "Çevrimiçi ve Ücretsiz Toplu Görüntü Yeniden Boyutlandırma",
       "description": "Herhangi bir sunucuya yüklemeden aynı anda birden çok görüntüyü yeniden boyutlandırın",

@@ -195,16 +195,27 @@
     "tutorial": "Tutorial",
     "blog": "Blog"
   },
+  "ImageUploader": {
+    "titleSingle": "Drag and Drop Your Image",
+    "titleMultiple": "Drag and Drop Your Images",
+    "subtitleSingle": "or click to browse",
+    "selectImagesSingle": "Select Image",
+    "selectImagesMultiple": "Select Images",
+    "supportedFormats": "Support: JPEG, JPG, PNG or WebP",
+    "maxFiles": "Maximum {max} files",
+    "maxSizeMB": "Max {size}MB per file",
+    "dropHere": "Drop your images here",
+    "filesSelected": "Files selected successfully",
+    "file": "file",
+    "files": "files",
+    "errorInvalidFiles": "Invalid file type",
+    "errorTooManyFiles": "Too many files",
+    "errorFileSizeExceeded": "Some files are too large"
+  },
   "ResizeTool": {
     "pageTitle": "Bulk Resize Images Online",
     "pageDescription": "Free online tool to batch resize multiple images at once. Fast, secure, and works entirely in your browser — no upload needed.",
     "backButton": "Back",
-    "hero": {
-      "title": "Drag & Drop Your Images",
-      "subtitle": "or click below to browse",
-      "selectImages": "Select Images",
-      "supportedFormats": "Support: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "Batch Resize Images Online & Free",
       "description": "Resize multiple images at once without uploading to any server",

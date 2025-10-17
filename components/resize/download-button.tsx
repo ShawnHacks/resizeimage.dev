@@ -47,7 +47,7 @@ export function DownloadButton({ processedImages, onDownloadComplete }: Download
       <button
         onClick={handleDownload}
         disabled={isDownloading}
-        className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-[#34C759] text-white text-lg font-semibold rounded-xl hover:bg-[#28A745] disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-lg hover:shadow-xl"
+        className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl hover:bg-[#28A745] disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-lg hover:shadow-xl"
       >
         {isDownloading ? (
           <>
@@ -71,39 +71,39 @@ export function DownloadButton({ processedImages, onDownloadComplete }: Download
   );
 }
 
-function formatTotalSize(images: ProcessedImage[], type: 'original' | 'new' = 'new'): string {
-  const totalBytes = images.reduce((sum, img) => {
-    return sum + (type === 'original' ? img.originalFileSize : img.newFileSize);
-  }, 0);
+// function formatTotalSize(images: ProcessedImage[], type: 'original' | 'new' = 'new'): string {
+//   const totalBytes = images.reduce((sum, img) => {
+//     return sum + (type === 'original' ? img.originalFileSize : img.newFileSize);
+//   }, 0);
 
-  if (totalBytes < 1024) {
-    return `${totalBytes} B`;
-  } else if (totalBytes < 1024 * 1024) {
-    return `${(totalBytes / 1024).toFixed(1)} KB`;
-  } else {
-    return `${(totalBytes / (1024 * 1024)).toFixed(1)} MB`;
-  }
-}
+//   if (totalBytes < 1024) {
+//     return `${totalBytes} B`;
+//   } else if (totalBytes < 1024 * 1024) {
+//     return `${(totalBytes / 1024).toFixed(1)} KB`;
+//   } else {
+//     return `${(totalBytes / (1024 * 1024)).toFixed(1)} MB`;
+//   }
+// }
 
-function calculateSpaceSaved(images: ProcessedImage[]): string {
-  const originalTotal = images.reduce((sum, img) => sum + img.originalFileSize, 0);
-  const newTotal = images.reduce((sum, img) => sum + img.newFileSize, 0);
-  const saved = originalTotal - newTotal;
-  const percentage = ((saved / originalTotal) * 100).toFixed(0);
+// function calculateSpaceSaved(images: ProcessedImage[]): string {
+//   const originalTotal = images.reduce((sum, img) => sum + img.originalFileSize, 0);
+//   const newTotal = images.reduce((sum, img) => sum + img.newFileSize, 0);
+//   const saved = originalTotal - newTotal;
+//   const percentage = ((saved / originalTotal) * 100).toFixed(0);
 
-  if (saved > 0) {
-    return `${formatBytes(saved)} (${percentage}%)`;
-  } else {
-    return '0 B';
-  }
-}
+//   if (saved > 0) {
+//     return `${formatBytes(saved)} (${percentage}%)`;
+//   } else {
+//     return '0 B';
+//   }
+// }
 
-function formatBytes(bytes: number): string {
-  if (bytes < 1024) {
-    return `${bytes} B`;
-  } else if (bytes < 1024 * 1024) {
-    return `${(bytes / 1024).toFixed(1)} KB`;
-  } else {
-    return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
-  }
-}
+// function formatBytes(bytes: number): string {
+//   if (bytes < 1024) {
+//     return `${bytes} B`;
+//   } else if (bytes < 1024 * 1024) {
+//     return `${(bytes / 1024).toFixed(1)} KB`;
+//   } else {
+//     return `${(bytes / (1024 * 1024)).toFixed(1)} MB`;
+//   }
+// }

@@ -88,7 +88,7 @@ export function ToolsGrid() {
               key={index}
               href={tool.href}
               target="_blank"
-              className="bg-card rounded-xl p-4 border border-border hover:shadow-lg hover:border-purple-500 transition-all group"
+              className="bg-card rounded-xl px-2 py-4 md:px-4 border border-border hover:shadow-lg hover:border-purple-500 transition-all group"
             >
               <div className="flex flex-col items-center text-center space-y-3">
                 {Icon ? 

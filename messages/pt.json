@@ -195,16 +195,27 @@
     "tutorial": "Tutorial",
     "blog": "Blog"
   },
+  "ImageUploader": {
+    "titleSingle": "Arraste e solte sua imagem",
+    "titleMultiple": "Arraste e solte suas imagens",
+    "subtitleSingle": "ou clique abaixo para navegar",
+    "selectImagesSingle": "Selecionar imagem",
+    "selectImagesMultiple": "Selecionar imagens",
+    "supportedFormats": "Suporte: JPEG, JPG, PNG ou WebP",
+    "maxFiles": "Máximo {max} arquivos",
+    "maxSizeMB": "Máximo {size}MB por arquivo",
+    "dropHere": "Solte suas imagens aqui",
+    "filesSelected": "Arquivos selecionados com sucesso",
+    "file": "arquivo",
+    "files": "arquivos",
+    "errorInvalidFiles": "Tipo de arquivo inválido",
+    "errorTooManyFiles": "Muitos arquivos",
+    "errorFileSizeExceeded": "Alguns arquivos são muito grandes"
+  },
   "ResizeTool": {
     "pageTitle": "Redimensionar imagens em massa online",
     "pageDescription": "Ferramenta online gratuita para redimensionar várias imagens em lote de uma só vez. Rápido, seguro e funciona inteiramente em seu navegador — não é necessário fazer upload.",
     "backButton": "Voltar",
-    "hero": {
-      "title": "Arraste e solte suas imagens",
-      "subtitle": "ou clique abaixo para navegar",
-      "selectImages": "Selecionar imagens",
-      "supportedFormats": "Suporte: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "Redimensionar imagens em massa online e gratuitamente",
       "description": "Redimensione várias imagens de uma só vez sem fazer upload para nenhum servidor",

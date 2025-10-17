@@ -195,16 +195,27 @@
     "tutorial": "টিউটোরিয়াল",
     "blog": "ব্লগ"
   },
+  "ImageUploader": {
+    "titleSingle": "আপনার ছবি টেনে আনুন এবং ছেড়ে দিন",
+    "titleMultiple": "আপনার ছবিগুলি টেনে আনুন এবং ছেড়ে দিন",
+    "subtitleSingle": "অথবা ব্রাউজ করতে নীচে ক্লিক করুন",
+    "selectImagesSingle": "ছবি নির্বাচন করুন",
+    "selectImagesMultiple": "ছবি নির্বাচন করুন",
+    "supportedFormats": "সমর্থন: JPEG, JPG, PNG বা WebP",
+    "maxFiles": "সর্বোচ্চ {max} ফাইল",
+    "maxSizeMB": "প্রতি ফাইল সর্বোচ্চ {size}MB",
+    "dropHere": "এখানে আপনার ছবি ছেড়ে দিন",
+    "filesSelected": "ফাইলগুলি সফলভাবে নির্বাচিত হয়েছে",
+    "file": "ফাইল",
+    "files": "ফাইল",
+    "errorInvalidFiles": "অবৈধ ফাইলের ধরন",
+    "errorTooManyFiles": "অনেক বেশি ফাইল",
+    "errorFileSizeExceeded": "কিছু ফাইল খুব বড়"
+  },
   "ResizeTool": {
     "pageTitle": "অনলাইনে বাল্ক ইমেজ রিসাইজ করুন",
     "pageDescription": "একবারে একাধিক চিত্রের আকার পরিবর্তন করার জন্য বিনামূল্যে অনলাইন সরঞ্জাম। দ্রুত, সুরক্ষিত এবং আপনার ব্রাউজারে সম্পূর্ণরূপে কাজ করে — কোন আপলোডের প্রয়োজন নেই।",
     "backButton": "ফিরে",
-    "hero": {
-      "title": "আপনার ছবিগুলি এখানে টেনে আনুন",
-      "subtitle": "অথবা ব্রাউজ করতে নীচে ক্লিক করুন",
-      "selectImages": "ছবি নির্বাচন করুন",
-      "supportedFormats": "সমর্থন: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "অনলাইনে এবং বিনামূল্যে বাল্ক ইমেজ রিসাইজ করুন",
       "description": "কোন সার্ভারে আপলোড না করে একবারে একাধিক চিত্রের আকার পরিবর্তন করুন",

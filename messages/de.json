@@ -195,16 +195,27 @@
     "tutorial": "Tutorial",
     "blog": "Blog"
   },
+  "ImageUploader": {
+    "titleSingle": "Ziehen Sie Ihr Bild hierher",
+    "titleMultiple": "Ziehen Sie Ihre Bilder hierher",
+    "subtitleSingle": "oder klicken Sie unten zum Durchsuchen",
+    "selectImagesSingle": "Bild auswählen",
+    "selectImagesMultiple": "Bilder auswählen",
+    "supportedFormats": "Unterstützt: JPEG, JPG, PNG oder WebP",
+    "maxFiles": "Maximal {max} Dateien",
+    "maxSizeMB": "Maximal {size}MB pro Datei",
+    "dropHere": "Legen Sie Ihre Bilder hier ab",
+    "filesSelected": "Dateien erfolgreich ausgewählt",
+    "file": "Datei",
+    "files": "Dateien",
+    "errorInvalidFiles": "Ungültiger Dateityp",
+    "errorTooManyFiles": "Zu viele Dateien",
+    "errorFileSizeExceeded": "Einige Dateien sind zu groß"
+  },
   "ResizeTool": {
     "pageTitle": "Bilder online in großen Mengen anpassen",
     "pageDescription": "Kostenloses Online-Tool zur Stapelverarbeitung mehrerer Bilder gleichzeitig. Schnell, sicher und funktioniert vollständig in Ihrem Browser — kein Upload erforderlich.",
     "backButton": "Zurück",
-    "hero": {
-      "title": "Ziehen Sie Ihre Bilder hierher",
-      "subtitle": "oder klicken Sie unten zum Durchsuchen",
-      "selectImages": "Bilder auswählen",
-      "supportedFormats": "Unterstützt: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "Bilder online & kostenlos in großen Mengen anpassen",
       "description": "Passen Sie die Größe mehrerer Bilder gleichzeitig an, ohne sie auf einen Server hochzuladen",

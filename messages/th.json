@@ -195,16 +195,27 @@
     "tutorial": "บทช่วยสอน",
     "blog": "บล็อก"
   },
+  "ImageUploader": {
+    "titleSingle": "ลากและวางรูปภาพของคุณ",
+    "titleMultiple": "ลากและวางรูปภาพของคุณ",
+    "subtitleSingle": "หรือคลิกด้านล่างเพื่อเรียกดู",
+    "selectImagesSingle": "เลือกรูปภาพ",
+    "selectImagesMultiple": "เลือกรูปภาพ",
+    "supportedFormats": "รองรับ: JPEG, JPG, PNG หรือ WebP",
+    "maxFiles": "สูงสุด {max} ไฟล์",
+    "maxSizeMB": "สูงสุด {size}MB ต่อไฟล์",
+    "dropHere": "วางรูปภาพของคุณที่นี่",
+    "filesSelected": "เลือกไฟล์สำเร็จแล้ว",
+    "file": "ไฟล์",
+    "files": "ไฟล์",
+    "errorInvalidFiles": "ประเภทไฟล์ไม่ถูกต้อง",
+    "errorTooManyFiles": "ไฟล์มากเกินไป",
+    "errorFileSizeExceeded": "บางไฟล์มีขนาดใหญ่เกินไป"
+  },
   "ResizeTool": {
     "pageTitle": "ปรับขนาดภาพจำนวนมากออนไลน์",
     "pageDescription": "เครื่องมือออนไลน์ฟรีสำหรับปรับขนาดภาพหลายภาพพร้อมกันเป็นชุด รวดเร็ว ปลอดภัย และทำงานได้ทั้งหมดในเบราว์เซอร์ของคุณ — ไม่จำเป็นต้องอัปโหลด",
     "backButton": "ย้อนกลับ",
-    "hero": {
-      "title": "ลากและวางรูปภาพของคุณ",
-      "subtitle": "หรือคลิกด้านล่างเพื่อเรียกดู",
-      "selectImages": "เลือกรูปภาพ",
-      "supportedFormats": "รองรับ: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "ปรับขนาดภาพจำนวนมากออนไลน์และฟรี",
       "description": "ปรับขนาดภาพหลายภาพพร้อมกันโดยไม่ต้องอัปโหลดไปยังเซิร์ฟเวอร์ใดๆ",

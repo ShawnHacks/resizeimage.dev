@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import type { ReactNode } from "react";
 
-import { fontVariables } from '@/lib/fonts';
+import { fontVariables } from '@/assets/fonts/fonts';
 import { Providers, ThemeScript } from '@/components/providers';
 import { Toaster } from 'sonner'
 

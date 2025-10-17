@@ -293,7 +293,7 @@ export default function ResizeImagePage() {
       <header className="bg-background">
         <div className="container mx-auto px-4 py-8">
           <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-3">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-3">
               {t('pageTitle')}
             </h1>
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
@@ -396,9 +396,9 @@ export default function ResizeImagePage() {
                     setImages([]);
                     setProcessedImages([]);
                   }}
-                  className="px-6 py-2.5 text-primary hover:text-primary/80 font-medium transition-colors"
+                  className="px-6 py-2.5 text-primary hover:text-primary/80 font-bold transition-colors"
                 >
-                  Resize More Images
+                  {t('results.resizeMore')}
                 </button>
               </div>
             </>

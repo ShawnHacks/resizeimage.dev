@@ -1,4 +1,5 @@
 import { Geist as FontSans, Geist_Mono, Bricolage_Grotesque } from "next/font/google"
+import localFont from "next/font/local"
 
 import { cn } from "@/lib/utils"
 
@@ -20,8 +21,28 @@ const fontBricolage = Bricolage_Grotesque({
   display: "swap",
 })
 
+const fontHeading = localFont({
+  src: [
+    {
+      path: './ac-regular.woff2',
+      weight: '400',
+    },
+    {
+      path: './ac-semibold.woff2',
+      weight: '600',
+    },
+    {
+      path: './ac-bold.woff2',
+      weight: '700',
+    },
+  ],
+  variable: "--font-heading",
+  display: 'swap',
+})
+
 export const fontVariables = cn(
   fontSans.variable,
   fontMono.variable,
-  fontBricolage.variable
+  fontBricolage.variable,
+  fontHeading.variable
 )

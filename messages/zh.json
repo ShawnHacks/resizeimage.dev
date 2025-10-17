@@ -195,16 +195,27 @@
     "tutorial": "教程",
     "blog": "博客"
   },
+  "ImageUploader": {
+    "titleSingle": "拖放您的图片到此处",
+    "titleMultiple": "拖放您的图片到此处",
+    "subtitleSingle": "或点击下方浏览",
+    "selectImagesSingle": "选择图片",
+    "selectImagesMultiple": "选择图片",
+    "supportedFormats": "支持: JPEG、JPG、PNG 或 WebP",
+    "maxFiles": "最多 {max} 个文件",
+    "maxSizeMB": "每个文件最大 {size}MB",
+    "dropHere": "将图片放到这里",
+    "filesSelected": "文件选择成功",
+    "file": "个文件",
+    "files": "个文件",
+    "errorInvalidFiles": "文件类型无效",
+    "errorTooManyFiles": "文件太多",
+    "errorFileSizeExceeded": "某些文件过大"
+  },
   "ResizeTool": {
     "pageTitle": "在线批量调整图片大小",
     "pageDescription": "免费在线工具，一次性批量调整多张图片的大小。快速、安全，完全在您的浏览器中运行——无需上传。",
     "backButton": "返回",
-    "hero": {
-      "title": "拖放您的图片到此处",
-      "subtitle": "或点击下方浏览",
-      "selectImages": "选择图片",
-      "supportedFormats": "支持格式: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "在线免费批量调整图片大小",
       "description": "一次性调整多张图片的大小，无需上传到任何服务器",

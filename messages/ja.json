@@ -195,16 +195,31 @@
     "tutorial": "チュートリアル",
     "blog": "ブログ"
   },
+  "ImageUploader": {
+    "titleSingle": "画像をドラッグ＆ドロップ",
+    "titleMultiple": "画像をドラッグ＆ドロップ",
+    "or": "または",
+    "browseToUpload": "ブラウズしてアップロード。",
+    "uploadButton": "写真をアップロード",
+    "fileRequirements": "{formats}で{size}MB以下のファイルである必要があります",
+    "subtitleSingle": "または下をクリックして参照",
+    "selectImagesSingle": "画像を選択",
+    "selectImagesMultiple": "画像を選択",
+    "supportedFormats": "対応形式: JPEG、JPG、PNG、WebP",
+    "maxFiles": "最大{max}ファイル",
+    "maxSizeMB": "ファイルあたり最大{size}MB",
+    "dropHere": "ここに画像をドロップ",
+    "filesSelected": "ファイルが正常に選択されました",
+    "file": "ファイル",
+    "files": "ファイル",
+    "errorInvalidFiles": "無効なファイル形式",
+    "errorTooManyFiles": "ファイルが多すぎます",
+    "errorFileSizeExceeded": "一部のファイルが大きすぎます"
+  },
   "ResizeTool": {
     "pageTitle": "オンラインで画像をまとめてリサイズ",
     "pageDescription": "一度に複数の画像をバッチリサイズするための無料のオンラインツール。高速、安全、そして完全にブラウザで動作します — アップロードは不要です。",
     "backButton": "戻る",
-    "hero": {
-      "title": "画像をドラッグ&ドロップ",
-      "subtitle": "または下をクリックして参照",
-      "selectImages": "画像を選択",
-      "supportedFormats": "サポート: JPG、PNG、WebP、GIF"
-    },
     "features": {
       "title": "オンラインで無料で画像をまとめてリサイズ",
       "description": "サーバーにアップロードせずに一度に複数の画像をリサイズ",

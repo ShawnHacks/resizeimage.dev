@@ -195,16 +195,27 @@
     "tutorial": "教學",
     "blog": "部落格"
   },
+  "ImageUploader": {
+    "titleSingle": "拖放您的圖片到此處",
+    "titleMultiple": "拖放您的圖片到此處",
+    "subtitleSingle": "或點擊下方瀏覽",
+    "selectImagesSingle": "選擇圖片",
+    "selectImagesMultiple": "選擇圖片",
+    "supportedFormats": "支援: JPEG、JPG、PNG 或 WebP",
+    "maxFiles": "最多 {max} 個檔案",
+    "maxSizeMB": "每個檔案最大 {size}MB",
+    "dropHere": "將圖片放到這裡",
+    "filesSelected": "檔案選擇成功",
+    "file": "個檔案",
+    "files": "個檔案",
+    "errorInvalidFiles": "檔案類型無效",
+    "errorTooManyFiles": "檔案太多",
+    "errorFileSizeExceeded": "某些檔案過大"
+  },
   "ResizeTool": {
     "pageTitle": "線上大量調整圖片大小",
     "pageDescription": "免費的線上工具，可一次批次調整多張圖片的大小。快速、安全，且完全在您的瀏覽器中運作 — 無需上傳。",
     "backButton": "返回",
-    "hero": {
-      "title": "拖放您的圖片",
-      "subtitle": "或點擊下方瀏覽",
-      "selectImages": "選取圖片",
-      "supportedFormats": "支援：JPG、PNG、WebP、GIF"
-    },
     "features": {
       "title": "線上免費大量調整圖片大小",
       "description": "一次調整多張圖片的大小，無需上傳到任何伺服器",

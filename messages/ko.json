@@ -195,16 +195,27 @@
     "tutorial": "튜토리얼",
     "blog": "블로그"
   },
+  "ImageUploader": {
+    "titleSingle": "이미지를 드래그 앤 드롭하세요",
+    "titleMultiple": "이미지를 드래그 앤 드롭하세요",
+    "subtitleSingle": "또는 아래를 클릭하여 찾아보기",
+    "selectImagesSingle": "이미지 선택",
+    "selectImagesMultiple": "이미지 선택",
+    "supportedFormats": "지원 형식: JPEG, JPG, PNG, WebP",
+    "maxFiles": "최대 {max}개 파일",
+    "maxSizeMB": "파일당 최대 {size}MB",
+    "dropHere": "여기에 이미지를 놓으세요",
+    "filesSelected": "파일이 성공적으로 선택되었습니다",
+    "file": "파일",
+    "files": "파일",
+    "errorInvalidFiles": "잘못된 파일 형식",
+    "errorTooManyFiles": "파일이 너무 많습니다",
+    "errorFileSizeExceeded": "일부 파일이 너무 큽니다"
+  },
   "ResizeTool": {
     "pageTitle": "온라인에서 여러 이미지 크기 조절",
     "pageDescription": "한 번에 여러 이미지의 크기를 일괄적으로 조절하는 무료 온라인 도구. 빠르고 안전하며 업로드 없이 브라우저에서 완전히 작동합니다.",
     "backButton": "뒤로",
-    "hero": {
-      "title": "이미지를 드래그 앤 드롭하세요",
-      "subtitle": "또는 아래를 클릭하여 찾아보기",
-      "selectImages": "이미지 선택",
-      "supportedFormats": "지원: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "온라인에서 무료로 여러 이미지 크기 조절",
       "description": "서버에 업로드하지 않고 한 번에 여러 이미지 크기 조절",

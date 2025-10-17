@@ -195,16 +195,27 @@
     "tutorial": "Tutorial",
     "blog": "Blog"
   },
+  "ImageUploader": {
+    "titleSingle": "Trascina e rilascia la tua immagine",
+    "titleMultiple": "Trascina e rilascia le tue immagini",
+    "subtitleSingle": "o clicca qui sotto per sfogliare",
+    "selectImagesSingle": "Seleziona immagine",
+    "selectImagesMultiple": "Seleziona immagini",
+    "supportedFormats": "Supporto: JPEG, JPG, PNG o WebP",
+    "maxFiles": "Massimo {max} file",
+    "maxSizeMB": "Massimo {size}MB per file",
+    "dropHere": "Rilascia le tue immagini qui",
+    "filesSelected": "File selezionati con successo",
+    "file": "file",
+    "files": "file",
+    "errorInvalidFiles": "Tipo di file non valido",
+    "errorTooManyFiles": "Troppi file",
+    "errorFileSizeExceeded": "Alcuni file sono troppo grandi"
+  },
   "ResizeTool": {
     "pageTitle": "Ridimensiona immagini in blocco online",
     "pageDescription": "Strumento online gratuito per ridimensionare in batch più immagini contemporaneamente. Veloce, sicuro e funziona interamente nel tuo browser — non è necessario alcun caricamento.",
     "backButton": "Indietro",
-    "hero": {
-      "title": "Trascina e rilascia le tue immagini",
-      "subtitle": "o fai clic qui sotto per navigare",
-      "selectImages": "Seleziona immagini",
-      "supportedFormats": "Supporto: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "Ridimensiona immagini in blocco online e gratuitamente",
       "description": "Ridimensiona più immagini contemporaneamente senza caricarle su nessun server",

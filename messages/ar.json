@@ -195,16 +195,27 @@
     "tutorial": "برنامج تعليمي",
     "blog": "المدونة"
   },
+  "ImageUploader": {
+    "titleSingle": "اسحب وأفلت صورتك",
+    "titleMultiple": "اسحب وأفلت صورك",
+    "subtitleSingle": "أو انقر أدناه للتصفح",
+    "selectImagesSingle": "اختر صورة",
+    "selectImagesMultiple": "اختر صور",
+    "supportedFormats": "الدعم: JPEG أو JPG أو PNG أو WebP",
+    "maxFiles": "الحد الأقصى {max} ملف",
+    "maxSizeMB": "الحد الأقصى {size}ميجابايت لكل ملف",
+    "dropHere": "أفلت صورك هنا",
+    "filesSelected": "تم تحديد الملفات بنجاح",
+    "file": "ملف",
+    "files": "ملفات",
+    "errorInvalidFiles": "نوع ملف غير صالح",
+    "errorTooManyFiles": "ملفات كثيرة جدا",
+    "errorFileSizeExceeded": "بعض الملفات كبيرة جدًا"
+  },
   "ResizeTool": {
     "pageTitle": "تغيير حجم الصور دفعة واحدة عبر الإنترنت",
     "pageDescription": "أداة مجانية عبر الإنترنت لتغيير حجم صور متعددة دفعة واحدة. سريعة وآمنة وتعمل بالكامل في متصفحك - لا حاجة للتحميل.",
     "backButton": "رجوع",
-    "hero": {
-      "title": "اسحب وأفلت صورك",
-      "subtitle": "أو انقر أدناه للتصفح",
-      "selectImages": "تحديد الصور",
-      "supportedFormats": "الدعم: JPG ، PNG ، WebP ، GIF"
-    },
     "features": {
       "title": "تغيير حجم الصور دفعة واحدة عبر الإنترنت ومجانًا",
       "description": "تغيير حجم صور متعددة مرة واحدة دون تحميلها على أي خادم",

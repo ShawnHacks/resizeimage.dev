@@ -195,16 +195,27 @@
     "tutorial": "Tutorial",
     "blog": "Blog"
   },
+  "ImageUploader": {
+    "titleSingle": "Seret dan lepas gambar Anda",
+    "titleMultiple": "Seret dan lepas gambar Anda",
+    "subtitleSingle": "atau klik di bawah untuk menelusuri",
+    "selectImagesSingle": "Pilih gambar",
+    "selectImagesMultiple": "Pilih gambar",
+    "supportedFormats": "Dukungan: JPEG, JPG, PNG atau WebP",
+    "maxFiles": "Maksimal {max} file",
+    "maxSizeMB": "Maksimal {size}MB per file",
+    "dropHere": "Lepaskan gambar Anda di sini",
+    "filesSelected": "File berhasil dipilih",
+    "file": "file",
+    "files": "file",
+    "errorInvalidFiles": "Jenis file tidak valid",
+    "errorTooManyFiles": "Terlalu banyak file",
+    "errorFileSizeExceeded": "Beberapa file terlalu besar"
+  },
   "ResizeTool": {
     "pageTitle": "Ubah Ukuran Gambar Massal Secara Online",
     "pageDescription": "Alat online gratis untuk mengubah ukuran beberapa gambar sekaligus. Cepat, aman, dan berfungsi sepenuhnya di browser Anda — tidak perlu mengunggah.",
     "backButton": "Kembali",
-    "hero": {
-      "title": "Seret & Lepas Gambar Anda",
-      "subtitle": "atau klik di bawah untuk menelusuri",
-      "selectImages": "Pilih Gambar",
-      "supportedFormats": "Dukungan: JPG, PNG, WebP, GIF"
-    },
     "features": {
       "title": "Ubah Ukuran Gambar Massal Secara Online & Gratis",
       "description": "Ubah ukuran beberapa gambar sekaligus tanpa mengunggah ke server mana pun",
