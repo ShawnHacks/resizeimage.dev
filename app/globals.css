@@ -373,6 +373,16 @@
   }
 }
 
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
 @layer utilities {
   .font-bricolage {
     font-family: var(--font-bricolage);

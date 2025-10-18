@@ -11,7 +11,7 @@ export default function FooterBadges() {
   const pathname = usePathname()
 
   const BadgeList = () => (
-      <div className="flex flex-wrap items-center justify-center gap-4 mb-4">
+      <div className="flex items-center gap-4 px-4 shrink-0">
         <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
           <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40"  />
         </a>
@@ -82,12 +82,12 @@ export default function FooterBadges() {
           <img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-dark.svg" className="h-8 w-auto max-w-40" />
         </a> */}
 
-        {/* <a href="https://findly.tools/website-screenshot-online?utm_source=website-screenshot-online" target="_blank" className="block dark:hidden">
+        <a href="https://findly.tools/bulkresizeimages-online?utm_source=bulkresizeimages-online" target="_blank" className="block dark:hidden">
           <img src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
         </a>
-        <a href="https://findly.tools/website-screenshot-online?utm_source=website-screenshot-online" target="_blank" className="hidden dark:block">
+        <a href="https://findly.tools/bulkresizeimages-online?utm_source=bulkresizeimages-online" target="_blank" className="hidden dark:block">
           <img src="https://findly.tools/badges/findly-tools-badge-dark.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
-        </a> */}
+        </a>
 
         <a href="https://dofollow.tools" target="_blank" className="hidden dark:block"><img src="https://dofollow.tools/badge/badge_dark.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
         <a href="https://dofollow.tools" target="_blank" className="block dark:hidden"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
@@ -111,10 +111,9 @@ export default function FooterBadges() {
 
     return (pathname === '/' || pathname === `/${locale}`) ? (
       <div className="container overflow-hidden mb-4">
-        {/* <div className="flex animate-scroll"> */}
-        <div className="flex justify-center">
+        <div className="flex animate-scroll">
           <BadgeList />
-          {/* <BadgeList /> */}
+          <BadgeList />
         </div>
       </div>
     ) : null

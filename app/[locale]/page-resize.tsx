@@ -7,9 +7,9 @@ import { ResizeControls, type ResizeOptionsState } from '@/components/resize/res
 import { ProcessedList } from '@/components/resize/processed-list';
 import { DownloadButton } from '@/components/resize/download-button';
 import { HeroSection } from '@/components/resize/hero-section';
-import { ToolsGrid } from '@/components/resize/tools-grid';
+// import { ToolsGrid } from '@/components/resize/tools-grid';
 import { HowToSection } from '@/components/common/how-to-section';
-import { ShowcaseSection } from '@/components/common/showcase-section';
+// import { ShowcaseSection } from '@/components/common/showcase-section';
 import { FAQSection } from '@/components/common/faq-section';
 import { FeatureSection } from '@/components/common/feature-section';
 import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
@@ -263,6 +263,8 @@ export default function ResizeImagePage() {
 
       setProcessedImages(results);
       toast.success(t('toast.imagesResizedSuccess'));
+      // scroll to top
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     } catch (error) {
       console.error('Resize failed:', error);
       toast.error(t('toast.error'));
