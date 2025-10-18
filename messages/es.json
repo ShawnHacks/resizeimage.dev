@@ -317,7 +317,11 @@
       "processedImages": "Imágenes procesadas",
       "downloadImage": "Descargar",
       "downloadAll": "Descargar todas las imágenes",
-      "resizeMore": "Redimensionar más imágenes"
+      "resizeMore": "Redimensionar más imágenes",
+      "backToEdit": "Ajustar configuración",
+      "downloadSingle": "Descargar imagen",
+      "downloadMultiple": "Descargar todas las {count} imágenes",
+      "downloading": "Descargando..."
     },
     "config": {
       "title": "Configuración compartible",
@@ -352,6 +356,78 @@
       "selectImagesFirst": "Por favor, seleccione primero las imágenes",
       "enterWidthOrHeight": "Por favor, introduzca la anchura o la altura",
       "enterTargetValue": "Por favor, introduzca un valor de destino"
+    },
+    "howTo": {
+      "title": "Cómo redimensionar imágenes",
+      "subtitle": "Pasos sencillos para redimensionar imágenes por lotes",
+      "step1": {
+        "number": "1",
+        "title": "Seleccionar",
+        "description": "Seleccione sus imágenes JPG, PNG o WebP en nuestra herramienta de redimensionamiento por lotes."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Redimensionar",
+        "description": "Elija su modo de redimensionamiento deseado y ajuste la configuración para adaptarse a sus necesidades."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Descargar",
+        "description": "Descargue instantáneamente sus imágenes redimensionadas o continúe editando con más opciones."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Redimensione imágenes en línea de forma gratuita por lotes.",
+        "description": [
+          "La forma más fácil de redimensionar fotos en línea. Redimensione, comprima y optimice sus imágenes en segundos.",
+          "Funciona 100% en su navegador — sin cargas, sin cuentas, los datos no salen de su dispositivo."
+        ]
+      },
+      "feature2": {
+        "title": "Redimensionar dimensiones de imagen.",
+        "description": [
+          "Ajuste fácilmente las dimensiones de la imagen a un ancho y alto exactos. Perfecto para redes sociales, impresión o uso web.",
+          "¿Necesita un tamaño específico? Puede personalizar los tamaños para obtener el ajuste perfecto."
+        ]
+      },
+      "feature3": {
+        "title": "Redimensionar tamaño de archivo de imagen.",
+        "description": [
+          "Comprima imágenes por lotes para que coincidan aproximadamente con su tamaño de archivo elegido — ahorrando almacenamiento y acelerando las cargas para sitios web, correos electrónicos y plataformas sociales.",
+          "Tenga en cuenta: La complejidad de la imagen puede afectar el tamaño final."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Todo lo que necesita saber sobre el redimensionamiento por lotes de imágenes",
+      "items": [
+        {
+          "question": "¿Este redimensionador de imágenes es realmente gratuito?",
+          "answer": "¡Sí! Nuestro redimensionador de imágenes por lotes es 100% gratuito sin limitaciones. Puede redimensionar imágenes ilimitadas sin marcas de agua ni restricciones."
+        },
+        {
+          "question": "¿Cómo funciona el redimensionamiento por lotes?",
+          "answer": "Simplemente cargue varias imágenes a la vez, elija su configuración de redimensionamiento (porcentaje, dimensiones o tamaño de archivo) y haga clic en redimensionar. Todas las imágenes se procesarán juntas en su navegador."
+        },
+        {
+          "question": "¿Qué formatos de imagen son compatibles?",
+          "answer": "Admitimos formatos JPG, JPEG, PNG y WebP. Puede redimensionar imágenes en cualquiera de estos formatos."
+        },
+        {
+          "question": "¿Mis datos están seguros?",
+          "answer": "¡Absolutamente! Todo el procesamiento de imágenes ocurre localmente en su navegador. Sus imágenes nunca salen de su dispositivo, garantizando privacidad y seguridad completas. Una forma de demostrar que todo el procesamiento se realiza localmente es cargar el sitio web, desconectarse de Internet y luego usar el sitio."
+        },
+        {
+          "question": "¿Puedo redimensionar imágenes a dimensiones específicas?",
+          "answer": "¡Sí! Puede redimensionar por porcentaje, dimensiones exactas (ancho × alto) o tamaño de archivo objetivo. También ofrecemos ajustes rápidos para plataformas de redes sociales."
+        },
+        {
+          "question": "¿El tamaño del archivo aumentó inesperadamente?",
+          "answer": "Esto puede suceder cuando su configuración produce imágenes muy detalladas. Para mantener los tamaños de archivo mínimos, intente guardar en formato WebP y establezca la Calidad en 80% o menos. Si el problema persiste, verifique la resolución de píxeles de la imagen para asegurarse de que no se esté ampliando."
+        }
+      ]
     }
   }
 }

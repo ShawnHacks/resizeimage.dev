@@ -317,7 +317,11 @@
       "processedImages": "Immagini elaborate",
       "downloadImage": "Scarica",
       "downloadAll": "Scarica tutte le immagini",
-      "resizeMore": "Ridimensiona altre immagini"
+      "resizeMore": "Ridimensiona altre immagini",
+      "backToEdit": "Regola impostazioni",
+      "downloadSingle": "Scarica immagine",
+      "downloadMultiple": "Scarica tutte le {count} immagini",
+      "downloading": "Download in corso..."
     },
     "config": {
       "title": "Configurazione condivisibile",
@@ -352,6 +356,78 @@
       "selectImagesFirst": "Seleziona prima le immagini",
       "enterWidthOrHeight": "Inserisci larghezza o altezza",
       "enterTargetValue": "Inserisci un valore di destinazione"
+    },
+    "howTo": {
+      "title": "Come ridimensionare le immagini",
+      "subtitle": "Semplici passaggi per ridimensionare le tue immagini in blocco",
+      "step1": {
+        "number": "1",
+        "title": "Seleziona",
+        "description": "Seleziona le tue immagini JPG, PNG o WebP per il nostro strumento di ridimensionamento in blocco."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Ridimensiona",
+        "description": "Scegli la modalità di ridimensionamento desiderata e regola le impostazioni per adattarle alle tue esigenze."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Scarica",
+        "description": "Scarica immediatamente le tue immagini ridimensionate o continua a modificarle con più opzioni."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Ridimensiona immagini online gratuitamente in blocco.",
+        "description": [
+          "Il modo più semplice per ridimensionare foto online. Ridimensiona, comprimi e ottimizza le tue immagini in secondi.",
+          "Funziona al 100% nel tuo browser — nessun caricamento, nessun account, i dati non lasciano il tuo dispositivo."
+        ]
+      },
+      "feature2": {
+        "title": "Ridimensiona le dimensioni dell'immagine.",
+        "description": [
+          "Regola facilmente le dimensioni dell'immagine a larghezza e altezza esatte. Perfetto per social media, stampa o uso web.",
+          "Hai bisogno di una dimensione specifica? Puoi personalizzare le dimensioni per ottenere la vestibilità perfetta."
+        ]
+      },
+      "feature3": {
+        "title": "Ridimensiona la dimensione del file immagine.",
+        "description": [
+          "Comprimi immagini in blocco per corrispondere approssimativamente alla dimensione del file scelta — risparmiando spazio di archiviazione e accelerando i caricamenti per siti web, email e piattaforme social.",
+          "Tieni presente: La complessità dell'immagine può influenzare la dimensione finale."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "subtitle": "Tutto ciò che devi sapere sul ridimensionamento in blocco delle immagini",
+      "items": [
+        {
+          "question": "Questo ridimensionatore di immagini è davvero gratuito?",
+          "answer": "Sì! Il nostro ridimensionatore di immagini in blocco è 100% gratuito senza limitazioni. Puoi ridimensionare immagini illimitate senza filigrane o restrizioni."
+        },
+        {
+          "question": "Come funziona il ridimensionamento in blocco?",
+          "answer": "Carica semplicemente più immagini contemporaneamente, scegli le tue impostazioni di ridimensionamento (percentuale, dimensioni o dimensione del file) e fai clic su ridimensiona. Tutte le immagini verranno elaborate insieme nel tuo browser."
+        },
+        {
+          "question": "Quali formati di immagine sono supportati?",
+          "answer": "Supportiamo i formati JPG, JPEG, PNG e WebP. Puoi ridimensionare immagini in uno qualsiasi di questi formati."
+        },
+        {
+          "question": "I miei dati sono sicuri?",
+          "answer": "Assolutamente! Tutta l'elaborazione delle immagini avviene localmente nel tuo browser. Le tue immagini non lasciano mai il tuo dispositivo, garantendo privacy e sicurezza complete. Un modo per dimostrare che tutta l'elaborazione viene eseguita localmente è caricare il sito web, disconnettersi da Internet e quindi utilizzare il sito."
+        },
+        {
+          "question": "Posso ridimensionare le immagini a dimensioni specifiche?",
+          "answer": "Sì! Puoi ridimensionare per percentuale, dimensioni esatte (larghezza × altezza) o dimensione del file di destinazione. Offriamo anche preset rapidi per le piattaforme di social media."
+        },
+        {
+          "question": "La dimensione del file è aumentata inaspettatamente?",
+          "answer": "Questo può accadere quando le tue impostazioni producono immagini altamente dettagliate. Per mantenere le dimensioni dei file minime, prova a salvare in formato WebP e imposta la qualità all'80% o inferiore. Se il problema persiste, controlla la risoluzione in pixel dell'immagine per assicurarti che non venga ingrandita."
+        }
+      ]
     }
   }
 }

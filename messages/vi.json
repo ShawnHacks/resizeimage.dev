@@ -317,7 +317,11 @@
       "processedImages": "Hình ảnh đã xử lý",
       "downloadImage": "Tải xuống",
       "downloadAll": "Tải xuống tất cả hình ảnh",
-      "resizeMore": "Thay đổi kích thước thêm hình ảnh"
+      "resizeMore": "Thay đổi kích thước thêm hình ảnh",
+      "backToEdit": "Điều chỉnh cài đặt",
+      "downloadSingle": "Tải xuống hình ảnh",
+      "downloadMultiple": "Tải xuống tất cả {count} hình ảnh",
+      "downloading": "Đang tải xuống..."
     },
     "config": {
       "title": "Cấu hình có thể chia sẻ",
@@ -352,6 +356,78 @@
       "selectImagesFirst": "Vui lòng chọn hình ảnh trước",
       "enterWidthOrHeight": "Vui lòng nhập chiều rộng hoặc chiều cao",
       "enterTargetValue": "Vui lòng nhập giá trị mục tiêu"
+    },
+    "howTo": {
+      "title": "Cách thay đổi kích thước hình ảnh",
+      "subtitle": "Các bước đơn giản để thay đổi kích thước hàng loạt hình ảnh của bạn",
+      "step1": {
+        "number": "1",
+        "title": "Chọn",
+        "description": "Chọn hình ảnh JPG, PNG hoặc WebP của bạn vào công cụ thay đổi kích thước hàng loạt của chúng tôi."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Thay đổi kích thước",
+        "description": "Chọn chế độ thay đổi kích thước mong muốn và điều chỉnh cài đặt để phù hợp với nhu cầu của bạn."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Tải xuống",
+        "description": "Tải xuống ngay lập tức hình ảnh đã thay đổi kích thước hoặc tiếp tục chỉnh sửa với nhiều tùy chọn hơn."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Thay đổi kích thước hàng loạt hình ảnh trực tuyến miễn phí.",
+        "description": [
+          "Cách dễ nhất để thay đổi kích thước ảnh trực tuyến. Thay đổi kích thước, nén và tối ưu hóa hình ảnh của bạn trong vài giây.",
+          "Chạy 100% trong trình duyệt của bạn — không cần tải lên, không cần tài khoản, dữ liệu không rời khỏi thiết bị của bạn."
+        ]
+      },
+      "feature2": {
+        "title": "Thay đổi kích thước hình ảnh.",
+        "description": [
+          "Dễ dàng điều chỉnh kích thước hình ảnh đến chiều rộng và chiều cao chính xác. Hoàn hảo cho mạng xã hội, in ấn hoặc sử dụng web.",
+          "Cần kích thước cụ thể? Bạn có thể tùy chỉnh kích thước để đạt được sự phù hợp hoàn hảo."
+        ]
+      },
+      "feature3": {
+        "title": "Thay đổi kích thước tệp hình ảnh.",
+        "description": [
+          "Nén hàng loạt hình ảnh để khớp xấp xỉ với kích thước tệp bạn chọn — tiết kiệm dung lượng và tăng tốc tải lên cho trang web, email và nền tảng xã hội.",
+          "Lưu ý: Độ phức tạp của hình ảnh có thể ảnh hưởng đến kích thước cuối cùng."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "subtitle": "Tất cả những gì bạn cần biết về thay đổi kích thước hàng loạt hình ảnh",
+      "items": [
+        {
+          "question": "Công cụ thay đổi kích thước hình ảnh này có thật sự miễn phí không?",
+          "answer": "Có! Công cụ thay đổi kích thước hàng loạt hình ảnh của chúng tôi hoàn toàn miễn phí 100% không có giới hạn. Bạn có thể thay đổi kích thước hình ảnh không giới hạn mà không có hình mờ hoặc hạn chế."
+        },
+        {
+          "question": "Thay đổi kích thước hàng loạt hoạt động như thế nào?",
+          "answer": "Chỉ cần tải lên nhiều hình ảnh cùng một lúc, chọn cài đặt thay đổi kích thước của bạn (phần trăm, kích thước hoặc kích thước tệp) và nhấp thay đổi kích thước. Tất cả hình ảnh sẽ được xử lý cùng nhau trong trình duyệt của bạn."
+        },
+        {
+          "question": "Những định dạng hình ảnh nào được hỗ trợ?",
+          "answer": "Chúng tôi hỗ trợ định dạng JPG, JPEG, PNG và WebP. Bạn có thể thay đổi kích thước hình ảnh ở bất kỳ định dạng nào trong số này."
+        },
+        {
+          "question": "Dữ liệu của tôi có an toàn không?",
+          "answer": "Hoàn toàn! Tất cả việc xử lý hình ảnh diễn ra cục bộ trong trình duyệt của bạn. Hình ảnh của bạn không bao giờ rời khỏi thiết bị của bạn, đảm bảo quyền riêng tư và bảo mật hoàn toàn. Một cách để chứng minh rằng tất cả việc xử lý được thực hiện cục bộ là tải trang web, ngắt kết nối internet và sau đó sử dụng trang."
+        },
+        {
+          "question": "Tôi có thể thay đổi kích thước hình ảnh đến kích thước cụ thể không?",
+          "answer": "Có! Bạn có thể thay đổi kích thước theo phần trăm, kích thước chính xác (chiều rộng × chiều cao) hoặc kích thước tệp mục tiêu. Chúng tôi cũng cung cấp cài đặt sẵn nhanh cho các nền tảng mạng xã hội."
+        },
+        {
+          "question": "Kích thước tệp tăng bất ngờ?",
+          "answer": "Điều này có thể xảy ra khi cài đặt của bạn tạo ra hình ảnh rất chi tiết. Để giữ kích thước tệp tối thiểu, hãy thử lưu ở định dạng WebP và đặt Chất lượng ở 80% hoặc thấp hơn. Nếu vấn đề vẫn tiếp diễn, hãy kiểm tra độ phân giải pixel của hình ảnh để đảm bảo nó không bị phóng to."
+        }
+      ]
     }
   }
 }

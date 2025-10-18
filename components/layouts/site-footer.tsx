@@ -49,7 +49,7 @@ export async function SiteFooter({
                 <span className="text-lg font-bold">{siteConfig.name}</span>
               </Link>
             </div>
-            <p className="text-muted-foreground mb-4 max-w-sm leading-loose">
+            <p className="text-foreground mb-4 max-w-sm leading-loose">
               {siteConfig.description}
             </p>
             <div className="mt-4 flex items-center space-x-4">

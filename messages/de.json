@@ -317,7 +317,11 @@
       "processedImages": "Verarbeitete Bilder",
       "downloadImage": "Herunterladen",
       "downloadAll": "Alle Bilder herunterladen",
-      "resizeMore": "Weitere Bilder anpassen"
+      "resizeMore": "Weitere Bilder anpassen",
+      "backToEdit": "Einstellungen anpassen",
+      "downloadSingle": "Bild herunterladen",
+      "downloadMultiple": "Alle {count} Bilder herunterladen",
+      "downloading": "Wird heruntergeladen..."
     },
     "config": {
       "title": "Teilbare Konfiguration",
@@ -352,6 +356,78 @@
       "selectImagesFirst": "Bitte wählen Sie zuerst Bilder aus",
       "enterWidthOrHeight": "Bitte geben Sie Breite oder Höhe ein",
       "enterTargetValue": "Bitte geben Sie einen Zielwert ein"
+    },
+    "howTo": {
+      "title": "So ändern Sie die Bildgröße",
+      "subtitle": "Einfache Schritte zum Stapel-Resize Ihrer Bilder",
+      "step1": {
+        "number": "1",
+        "title": "Auswählen",
+        "description": "Wählen Sie Ihre JPG-, PNG- oder WebP-Bilder für unser Stapel-Resize-Tool aus."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Größe ändern",
+        "description": "Wählen Sie Ihren gewünschten Resize-Modus und passen Sie die Einstellungen an Ihre Bedürfnisse an."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Herunterladen",
+        "description": "Laden Sie Ihre angepassten Bilder sofort herunter oder bearbeiten Sie sie mit weiteren Optionen."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Bilder kostenlos online stapelweise anpassen.",
+        "description": [
+          "Der einfachste Weg, Fotos online anzupassen. Passen Sie Ihre Bilder in Sekunden an, komprimieren und optimieren Sie sie.",
+          "Läuft zu 100% in Ihrem Browser — keine Uploads, keine Konten, keine Daten verlassen Ihr Gerät."
+        ]
+      },
+      "feature2": {
+        "title": "Bildabmessungen ändern.",
+        "description": [
+          "Passen Sie Bildabmessungen einfach auf exakte Breite und Höhe an. Perfekt für soziale Medien, Druck oder Web-Nutzung.",
+          "Benötigen Sie eine bestimmte Größe? Sie können Größen anpassen, um die perfekte Passform zu erhalten."
+        ]
+      },
+      "feature3": {
+        "title": "Bilddateigröße ändern.",
+        "description": [
+          "Komprimieren Sie Bilder stapelweise, um ungefähr Ihrer gewählten Dateigröße zu entsprechen — Speicherplatz sparen und Uploads für Websites, E-Mails und soziale Plattformen beschleunigen.",
+          "Beachten Sie: Die Bildkomplexität kann die endgültige Größe beeinflussen."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Alles, was Sie über das Stapel-Resize von Bildern wissen müssen",
+      "items": [
+        {
+          "question": "Ist dieser Bildgrößen-Anpasser wirklich kostenlos?",
+          "answer": "Ja! Unser Stapel-Bildgrößen-Anpasser ist 100% kostenlos ohne Einschränkungen. Sie können unbegrenzt Bilder ohne Wasserzeichen oder Einschränkungen anpassen."
+        },
+        {
+          "question": "Wie funktioniert das Stapel-Resize?",
+          "answer": "Laden Sie einfach mehrere Bilder auf einmal hoch, wählen Sie Ihre Resize-Einstellungen (Prozentsatz, Abmessungen oder Dateigröße) und klicken Sie auf Größe ändern. Alle Bilder werden zusammen in Ihrem Browser verarbeitet."
+        },
+        {
+          "question": "Welche Bildformate werden unterstützt?",
+          "answer": "Wir unterstützen JPG-, JPEG-, PNG- und WebP-Formate. Sie können Bilder in jedem dieser Formate anpassen."
+        },
+        {
+          "question": "Sind meine Daten sicher?",
+          "answer": "Absolut! Die gesamte Bildverarbeitung erfolgt lokal in Ihrem Browser. Ihre Bilder verlassen niemals Ihr Gerät, was vollständige Privatsphäre und Sicherheit gewährleistet. Eine Möglichkeit zu demonstrieren, dass die gesamte Verarbeitung lokal erfolgt, besteht darin, die Website zu laden, die Internetverbindung zu trennen und dann die Website zu verwenden."
+        },
+        {
+          "question": "Kann ich Bilder auf bestimmte Abmessungen anpassen?",
+          "answer": "Ja! Sie können nach Prozentsatz, exakten Abmessungen (Breite × Höhe) oder Zieldateigröße anpassen. Wir bieten auch schnelle Voreinstellungen für Social-Media-Plattformen."
+        },
+        {
+          "question": "Dateigröße unerwartet erhöht?",
+          "answer": "Dies kann passieren, wenn Ihre Einstellungen hochdetaillierte Bilder erzeugen. Um die Dateigröße minimal zu halten, versuchen Sie, im WebP-Format zu speichern und die Qualität auf 80% oder niedriger einzustellen. Wenn das Problem weiterhin besteht, überprüfen Sie die Pixelauflösung des Bildes, um sicherzustellen, dass es nicht hochskaliert wird."
+        }
+      ]
     }
   }
 }

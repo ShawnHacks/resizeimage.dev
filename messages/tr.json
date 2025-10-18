@@ -317,7 +317,11 @@
       "processedImages": "İşlenmiş Görüntüler",
       "downloadImage": "İndir",
       "downloadAll": "Tüm Görüntüleri İndir",
-      "resizeMore": "Daha Fazla Görüntü Yeniden Boyutlandır"
+      "resizeMore": "Daha Fazla Görüntü Yeniden Boyutlandır",
+      "backToEdit": "Ayarları Düzenle",
+      "downloadSingle": "Görüntüyü İndir",
+      "downloadMultiple": "Tüm {count} Görüntüyü İndir",
+      "downloading": "İndiriliyor..."
     },
     "config": {
       "title": "Paylaşılabilir Yapılandırma",
@@ -352,6 +356,78 @@
       "selectImagesFirst": "Lütfen önce görüntüleri seçin",
       "enterWidthOrHeight": "Lütfen genişlik veya yükseklik girin",
       "enterTargetValue": "Lütfen bir hedef değer girin"
+    },
+    "howTo": {
+      "title": "Görüntüler Nasıl Yeniden Boyutlandırılır",
+      "subtitle": "Görüntülerinizi toplu olarak yeniden boyutlandırmak için basit adımlar",
+      "step1": {
+        "number": "1",
+        "title": "Seç",
+        "description": "JPG, PNG veya WebP görüntülerinizi toplu yeniden boyutlandırma aracımıza seçin."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Yeniden Boyutlandır",
+        "description": "İstediğiniz yeniden boyutlandırma modunu seçin ve ayarları ihtiyaçlarınıza göre düzenleyin."
+      },
+      "step3": {
+        "number": "3",
+        "title": "İndir",
+        "description": "Yeniden boyutlandırılmış görüntülerinizi anında indirin veya daha fazla seçenekle düzenlemeye devam edin."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Görüntüleri ücretsiz olarak toplu şekilde yeniden boyutlandırın.",
+        "description": [
+          "Fotoğrafları çevrimiçi olarak yeniden boyutlandırmanın en kolay yolu. Görüntülerinizi saniyeler içinde yeniden boyutlandırın, sıkıştırın ve optimize edin.",
+          "Tarayıcınızda %100 çalışır — yükleme yok, hesap yok, veriler cihazınızdan ayrılmaz."
+        ]
+      },
+      "feature2": {
+        "title": "Görüntü Boyutlarını Yeniden Boyutlandırın.",
+        "description": [
+          "Görüntü boyutlarını tam genişlik ve yüksekliğe kolayca ayarlayın. Sosyal medya, baskı veya web kullanımı için mükemmel.",
+          "Belirli bir boyuta mı ihtiyacınız var? Mükemmel uyum için boyutları özelleştirebilirsiniz."
+        ]
+      },
+      "feature3": {
+        "title": "Görüntü Dosya Boyutunu Yeniden Boyutlandırın.",
+        "description": [
+          "Seçtiğiniz dosya boyutuyla yaklaşık olarak eşleşmesi için görüntüleri toplu olarak sıkıştırın — web siteleri, e-postalar ve sosyal platformlar için depolama alanından tasarruf edin ve yüklemeleri hızlandırın.",
+          "Unutmayın: Görüntü karmaşıklığı nihai boyutu etkileyebilir."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "Toplu görüntü yeniden boyutlandırma hakkında bilmeniz gereken her şey",
+      "items": [
+        {
+          "question": "Bu görüntü yeniden boyutlandırıcı gerçekten ücretsiz mi?",
+          "answer": "Evet! Toplu görüntü yeniden boyutlandırıcımız sınırsız olarak %100 ücretsizdir. Filigran veya kısıtlama olmadan sınırsız görüntüyü yeniden boyutlandırabilirsiniz."
+        },
+        {
+          "question": "Toplu yeniden boyutlandırma nasıl çalışır?",
+          "answer": "Birden fazla görüntüyü aynı anda yükleyin, yeniden boyutlandırma ayarlarınızı seçin (yüzde, boyutlar veya dosya boyutu) ve yeniden boyutlandır'a tıklayın. Tüm görüntüler tarayıcınızda birlikte işlenecektir."
+        },
+        {
+          "question": "Hangi görüntü formatları destekleniyor?",
+          "answer": "JPG, JPEG, PNG ve WebP formatlarını destekliyoruz. Bu formatlardan herhangi birinde görüntüleri yeniden boyutlandırabilirsiniz."
+        },
+        {
+          "question": "Verilerim güvende mi?",
+          "answer": "Kesinlikle! Tüm görüntü işleme tarayıcınızda yerel olarak gerçekleşir. Görüntüleriniz asla cihazınızdan ayrılmaz, tam gizlilik ve güvenlik sağlar. Tüm işlemlerin yerel olarak yapıldığını göstermenin bir yolu, web sitesini yüklemek, internetten bağlantıyı kesmek ve ardından siteyi kullanmaktır."
+        },
+        {
+          "question": "Görüntüleri belirli boyutlara yeniden boyutlandırabilir miyim?",
+          "answer": "Evet! Yüzde, tam boyutlar (genişlik × yükseklik) veya hedef dosya boyutuna göre yeniden boyutlandırabilirsiniz. Ayrıca sosyal medya platformları için hızlı ön ayarlar sunuyoruz."
+        },
+        {
+          "question": "Dosya boyutu beklenmedik şekilde arttı mı?",
+          "answer": "Bu, ayarlarınız son derece ayrıntılı görüntüler ürettiğinde olabilir. Dosya boyutlarını minimum tutmak için WebP formatında kaydetmeyi deneyin ve Kaliteyi %80 veya daha düşük ayarlayın. Sorun devam ederse, büyütülmediğinden emin olmak için görüntünün piksel çözünürlüğünü kontrol edin."
+        }
+      ]
     }
   }
 }
