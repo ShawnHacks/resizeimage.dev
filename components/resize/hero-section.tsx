@@ -28,9 +28,9 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
 
       {/* Right: Features */}
       {/* bg-muted/50  */}
-      <div className="relative bg-white shadow-lg rounded-3xl px-4 py-6 md:py-10 md:px-6">
+      <div className="relative bg-background shadow-lg dark:shadow-purple-700 rounded-3xl px-4 py-6 md:py-10 md:px-6">
         {/* <div className="absolute -z-10 top-0 left-0 w-full h-full  rounded-3xl bg-gradient-to-br from-[#F06DAD] to-[#F06DAD]/50 rotate-5"></div> */}
-        <div className="absolute -z-10 top-0 left-0 w-full h-full  rounded-3xl bg-gradient-to-br from-primary to-pink-500 rotate-5"></div>
+        <div className="absolute -z-10 top-0 left-0 w-full h-full  rounded-3xl bg-gradient-to-br from-primary to-pink-500 -rotate-5"></div>
         {/* <h2 className="text-3xl font-bold text-foreground mb-3 text-center leading-tight">
           {t('features.title')}
         </h2> */}
@@ -47,7 +47,7 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
                 <div className="w-6 h-6 rounded-full bg-[#F06DAD] flex items-center justify-center flex-shrink-0">
                   <Icon className={`w-4 h-4 ${feature.color}`} />
                 </div>
-                <span className="text-base">{feature.text}</span>
+                <span className="text-base text-foreground">{feature.text}</span>
               </div>
             );
           })}

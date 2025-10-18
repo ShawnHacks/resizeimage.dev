@@ -120,7 +120,7 @@ export function ImageUploader({
       transition={{ duration: 0.3 }}
       className={cn("w-full", className)}
     >
-      <div className='md:p-6 rounded-2xl md:rounded-4xl shadow-2xl hover:bg-gray-50 transition-all duration-200'>
+      <div className='md:p-6 rounded-2xl bg-background md:rounded-4xl shadow-xl dark:shadow-purple-700 hover:bg-muted transition-all duration-200'>
         <div
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
@@ -130,7 +130,7 @@ export function ImageUploader({
             relative p-4 md:p-0 border-4 border-dashed md:border-0 rounded-2xl transition-all duration-200 md:bg-[url('/svgs/dash-rectangle.svg')] bg-no-repeat bg-size-[100%_100%]
             ${isDragging 
               ? 'border-primary bg-primary/10 scale-[1.02]' 
-              : 'border-primary/30 bg-card hover:border-primary/50'
+              : 'border-primary/30 bg-card hover:border-primary/50 dark:border-primary/50 dark:bg-card/50'
             }
           `}
         >
@@ -143,10 +143,10 @@ export function ImageUploader({
                 exit={{ scale: 0.8, opacity: 0 }}
                 className="flex flex-col items-center text-center"
               >
-                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F5F5F7] to-[#E8E8ED] flex items-center justify-center mb-6 shadow-sm">
-                  <ImageIcon className="w-6 h-6 text-[#86868B]" />
+                <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-[#F5F5F7] to-[#E8E8ED] dark:from-[#1D1D1F] dark:to-[#1D1D1F] flex items-center justify-center mb-6 shadow-sm">
+                  <ImageIcon className="w-6 h-6 text-[#86868B] dark:text-[#86868B]" />
                 </div>
-                <h3 className="text-xl md:text-3xl font-heading font-bold text-[#1D1D1F] mb-2">
+                <h3 className="text-xl md:text-3xl font-heading font-bold text-foreground mb-2">
                   {multiple ? t('titleMultiple') : t('titleSingle')}
                 </h3>
                 <p className="text-sm md:text-xl text-primary font-heading font-bold mb-6">

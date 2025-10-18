@@ -352,6 +352,74 @@
       "selectImagesFirst": "Please select images first",
       "enterWidthOrHeight": "Please enter width or height",
       "enterTargetValue": "Please enter a target value"
+    },
+    "howTo": {
+      "title": "How to Resize Images",
+      "subtitle": "Simple steps to batch resize your images",
+      "step1": {
+        "number": "1",
+        "title": "Select",
+        "description": "Select your JPG, PNG, or WebP images to our bulk resize tool."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Resize",
+        "description": "Choose your desired resize mode and adjust settings to fit your needs."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Download",
+        "description": "Instantly download your resized images or continue editing with more options."
+      }
+    },
+    "showcase": {
+      "title": "Resize Images for Any Purpose",
+      "subtitle": "Perfect for social media, websites, email, and more"
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Resize images online for free.",
+        "description": [
+          "Use our free online photo resizer to adjust the size and dimensions of any image in seconds — perfect for posting to social media, printing, and more.",
+          "Don't see the size you want? You can define custom sizes."
+        ]
+      },
+      "feature2": {
+        "title": "Do more with your image.",
+        "description": [
+          "Unleash your creativity by exploring the photo editing capabilities and design tools in Adobe Express. Remove backgrounds, apply filters, or add GIFs an animation for a dynamic design."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about batch resizing images",
+      "items": [
+        {
+          "question": "Is this image resizer really free?",
+          "answer": "Yes! Our bulk image resizer is 100% free with no limitations. You can resize unlimited images without any watermarks or restrictions."
+        },
+        {
+          "question": "How does batch resizing work?",
+          "answer": "Simply upload multiple images at once, choose your resize settings (percentage, dimensions, or file size), and click resize. All images will be processed together in your browser."
+        },
+        {
+          "question": "What image formats are supported?",
+          "answer": "We support JPG, JPEG, PNG, and WebP formats. You can resize images in any of these formats."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Absolutely! All image processing happens locally in your browser. Your images never leave your device, ensuring complete privacy and security. One way to demonstrate that all processing is being done locally is to load the website, disconnect from the internet, and then use the site."
+        },
+        {
+          "question": "Can I resize images to specific dimensions?",
+          "answer": "Yes! You can resize by percentage, exact dimensions (width × height), or target file size. We also offer quick presets for social media platforms."
+        },
+        {
+          "question": "File size increased unexpectedly?",
+          "answer": "This can happen when your settings produce highly detailed images. To keep file sizes minimal, try saving in the WebP format and set the Quality to 80% or below. If the problem persists, check the image’s pixel resolution to make sure it isn’t being upscaled."
+        }
+      ]
     }
   }
 }

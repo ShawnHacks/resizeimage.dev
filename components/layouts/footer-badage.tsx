@@ -40,12 +40,12 @@ export default function FooterBadges() {
           <img src="https://aiwith.me/ai_with_me_light_badge.svg" alt="Open Launch - Featured on AI With Me" className="h-8" />
         </a> */}
         
-        {/* <a href="https://startupfa.me/s/websitescreenshot?utm_source=websitescreenshot.online" target="_blank" rel="noopener" className="hidden dark:block">
-          <img src="https://startupfa.me/badges/featured/dark.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://startupfa.me/badges/featured/dark.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
-        <a href="https://startupfa.me/s/websitescreenshot?utm_source=websitescreenshot.online" target="_blank" rel="noopener" className="block dark:hidden">
-          <img src="https://startupfa.me/badges/featured/light.webp" alt="Featured on Startup Fame" className="h-8 w-auto max-w-40" />
-        </a> */}
+        <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://startupfa.me/badges/featured/light.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        </a>
 
         <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-bulkresizeimages&#0045;online" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1001008&theme=dark" alt="BulkresizeImages&#0046;online - Batch&#0032;resize&#0032;images&#0032;fast&#0044;&#0032;private&#0044;&#0032;works&#0032;entirely&#0032;in&#0032;browser | Product Hunt" className="h-8" />
@@ -97,6 +97,10 @@ export default function FooterBadges() {
         </a>
         <a href="https://turbo0.com/item/bulkresizeimagesonline" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
           <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
+        </a>
+
+        <a href="https://launchboard.dev" target="_blank" rel="noopener noreferrer">
+          <img src="https://launchboard.dev/launchboard-badge.png" alt="Launched on LaunchBoard - Product Launch Platform" className="h-8 w-auto max-w-40"  />
         </a>
 
         <a target="_blank" href="https://www.goodfirms.co/photo-editing-software/">

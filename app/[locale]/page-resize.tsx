@@ -8,11 +8,15 @@ import { ProcessedList } from '@/components/resize/processed-list';
 import { DownloadButton } from '@/components/resize/download-button';
 import { HeroSection } from '@/components/resize/hero-section';
 import { ToolsGrid } from '@/components/resize/tools-grid';
+import { HowToSection } from '@/components/common/how-to-section';
+import { ShowcaseSection } from '@/components/common/showcase-section';
+import { FAQSection } from '@/components/common/faq-section';
+import { FeatureSection } from '@/components/common/feature-section';
 import { batchResizeImages, getImageDimensions, type ProcessedImage } from '@/lib/image-resize-utils';
 import type { ImageFile } from '@/types/resize';
 import { toast } from 'sonner';
 import { motion } from 'motion/react';
-import { Loader2, ArrowLeft } from 'lucide-react';
+import { Loader2, ArrowLeft, Upload, Download, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function ResizeImagePage() {
@@ -296,7 +300,7 @@ export default function ResizeImagePage() {
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-3">
               {t('pageTitle')}
             </h1>
-            <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+            <p className="text-base md:text-lg text-foreground leading-relaxed">
               {t('pageDescription')}
             </p>
           </div>
@@ -406,6 +410,65 @@ export default function ResizeImagePage() {
         </div>
       </main>
 
+      {/* How To Section */}
+      <HowToSection
+        title={t('howTo.title')}
+        subtitle={t('howTo.subtitle')}
+        steps={[
+          {
+            number: t('howTo.step1.number'),
+            title: t('howTo.step1.title'),
+            description: t('howTo.step1.description'),
+            icon: Upload,
+          },
+          {
+            number: t('howTo.step2.number'),
+            title: t('howTo.step2.title'),
+            description: t('howTo.step2.description'),
+            icon: ImageIcon,
+          },
+          {
+            number: t('howTo.step3.number'),
+            title: t('howTo.step3.title'),
+            description: t('howTo.step3.description'),
+            icon: Download,
+          },
+        ]}
+      />
+
+      {/* <div className="py-16 md:py-24">
+        <FeatureSection
+          title={t('featureSections.feature1.title')}
+          description={t.raw('featureSections.feature1.description')}
+          image="/illustration/sample.png"
+          imageAlt="Resize images online"
+          layout="image-left"
+        />
+
+        <FeatureSection
+          title={t('featureSections.feature2.title')}
+          description={t.raw('featureSections.feature2.description')}
+          image="/illustration/sample2.webp"
+          imageAlt="Do more with your image"
+          layout="image-right"
+          className="bg-muted/30"
+        />
+      </div> */}
+
+      {/* Showcase Section */}
+      {/* <ShowcaseSection
+        title={t('showcase.title')}
+        subtitle={t('showcase.subtitle')}
+      >
+        <ToolsGrid />
+      </ShowcaseSection> */}
+
+      {/* FAQ Section */}
+      <FAQSection
+        title={t('faq.title')}
+        subtitle={t('faq.subtitle')}
+        faqs={t.raw('faq.items')}
+      />
     </div>
   );
 }
