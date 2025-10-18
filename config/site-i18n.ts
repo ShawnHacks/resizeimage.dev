@@ -166,6 +166,11 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
     titleKey: "Footer.Resources",
     links: [
       {
+        labelKey: "Website Screenshot Online",
+        href: "http://websitescreenshot.online/",
+        noTranslation: true,
+      },
+      {
         labelKey: "NestSaaS",
         href: "https://nestsaas.com",
         noTranslation: true,

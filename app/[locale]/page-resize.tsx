@@ -418,9 +418,9 @@ export default function ResizeImagePage() {
         </div>
       </main>
 
-      <div className='container mx-auto max-w-4xl pb-16'>
+      {/* <div className='container mx-auto max-w-4xl pb-16'>
         <ToolsGrid />
-      </div>
+      </div> */}
 
       {/* How To Section */}
       <HowToSection
