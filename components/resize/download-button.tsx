@@ -4,6 +4,8 @@ import { Download, FileArchive, Loader2 } from 'lucide-react';
 import { motion } from 'motion/react';
 import { downloadImage, downloadImagesAsZip, type ProcessedImage } from '@/lib/image-resize-utils';
 import { useState } from 'react';
+import { Button } from '@/components/ui/button';
+import { useTranslations } from 'next-intl';
 
 interface DownloadButtonProps {
   processedImages: ProcessedImage[];
@@ -11,6 +13,8 @@ interface DownloadButtonProps {
 }
 
 export function DownloadButton({ processedImages, onDownloadComplete }: DownloadButtonProps) {
+  const t = useTranslations('ResizeTool');
+  
   const [isDownloading, setIsDownloading] = useState(false);
 
   if (processedImages.length === 0) return null;
@@ -44,15 +48,15 @@ export function DownloadButton({ processedImages, onDownloadComplete }: Download
       animate={{ opacity: 1, y: 0 }}
       className="w-full"
     >
-      <button
+      <Button
         onClick={handleDownload}
         disabled={isDownloading}
-        className="w-full flex items-center justify-center gap-3 px-8 py-4 bg-primary text-white text-lg font-semibold rounded-xl hover:bg-[#28A745] disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-lg hover:shadow-xl"
+        className="h-12 w-full flex items-center justify-center gap-3 px-8 py-4 md:text-lg font-bold rounded-xl disabled:opacity-50 disabled:cursor-not-allowed transition-colors shadow-lg hover:shadow-xl"
       >
         {isDownloading ? (
           <>
             <Loader2 className="w-6 h-6 animate-spin" />
-            <span>Downloading...</span>
+            <span>{t('results.downloading')}</span>
           </>
         ) : (
           <>
@@ -62,11 +66,14 @@ export function DownloadButton({ processedImages, onDownloadComplete }: Download
               <FileArchive className="w-6 h-6" />
             )}
             <span>
-              {isSingle ? 'Download Image' : `Download All ${processedImages.length} Images as ZIP`}
+              {isSingle 
+                ? t('results.downloadSingle') 
+                : t('results.downloadMultiple', { count: processedImages.length })
+              }
             </span>
           </>
         )}
-      </button>
+      </Button>
     </motion.div>
   );
 }

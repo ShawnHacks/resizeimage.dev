@@ -68,9 +68,9 @@ export function FAQSection({ title, subtitle, faqs, className }: FAQSectionProps
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="max-w-4xl mx-auto"
+          className="max-w-5xl mx-auto"
         >
-          <div className="max-w-3xl mx-auto space-y-4">
+          <div className="max-w-4xl mx-auto space-y-4">
           {/* <Accordion type="single" collapsible className="w-full space-y-4"> */}
             {faqs.map((faq, index) => (
               <FAQItem

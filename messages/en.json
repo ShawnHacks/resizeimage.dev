@@ -310,14 +310,18 @@
     },
     "results": {
       "title": "Processing Complete!",
-      "imagesResized": "{count} {count, plural, one {image} other {images}} successfully resized",
+      "imagesResized": "Successfully resized {count} {count, plural, one {image} other {images}}",
       "originalSize": "Original Size",
       "newSize": "New Size",
       "spaceSaved": "Space Saved",
       "processedImages": "Processed Images",
       "downloadImage": "Download",
-      "downloadAll": "Download All Images",
-      "resizeMore": "Resize More Images"
+      "downloadAll": "Download All",
+      "resizeMore": "Resize More Images",
+      "backToEdit": "Adjust Settings",
+      "downloadSingle": "Download Image",
+      "downloadMultiple": "Download All {count} Images",
+      "downloading": "Downloading..."
     },
     "config": {
       "title": "Shareable Configuration",
@@ -372,22 +376,26 @@
         "description": "Instantly download your resized images or continue editing with more options."
       }
     },
-    "showcase": {
-      "title": "Resize Images for Any Purpose",
-      "subtitle": "Perfect for social media, websites, email, and more"
-    },
     "featureSections": {
       "feature1": {
-        "title": "Resize images online for free.",
+        "title": "Batch resize images online for free.",
         "description": [
-          "Use our free online photo resizer to adjust the size and dimensions of any image in seconds — perfect for posting to social media, printing, and more.",
-          "Don't see the size you want? You can define custom sizes."
+          "The easiest way to resize photos online. Resize, compress, and optimize your images in seconds.",
+          "Runs 100% in your browser — no uploads, no accounts, no data leaves your device."
         ]
       },
       "feature2": {
-        "title": "Do more with your image.",
+        "title": "Resize Image Dimensions.",
         "description": [
-          "Unleash your creativity by exploring the photo editing capabilities and design tools in Adobe Express. Remove backgrounds, apply filters, or add GIFs an animation for a dynamic design."
+          "Easily adjust image dimensions size to exact width and height. perfect for social media, printing, or web use.",
+          "Need a specific size? You can customize sizes to get the perfect fit."
+        ]
+      },
+      "feature3": {
+        "title": "Resize Image File Size.",
+        "description": [
+          "Batch compress images to roughly match your chosen file size — saving storage and speeding up uploads for websites, emails, and social platforms.",
+          "Keep in mind: Image complexity can affect the final size."
         ]
       }
     },

@@ -25,10 +25,10 @@ export function FeatureSection({
   const descriptionArray = Array.isArray(description) ? description : [description];
 
   return (
-    <section className={cn("py-8 md:py-16 bg-background", className)}>
+    <section className={cn("py-8 md:py-8 bg-background", className)}>
       <div className="container mx-auto px-4">
         <div className={cn(
-          "grid lg:grid-cols-2 gap-12 lg:gap-16 items-center max-w-5xl mx-auto",
+          "grid lg:grid-cols-2 gap-8 lg:gap-8 items-center max-w-4xl mx-auto",
           isImageLeft ? "" : "lg:grid-flow-dense"
         )}>
           {/* Image */}
@@ -42,12 +42,12 @@ export function FeatureSection({
               isImageLeft ? "lg:col-start-1" : "lg:col-start-2"
             )}
           >
-            <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden">
+            <div className="relative aspect-[1/1] w-full rounded-2xl overflow-hidden">
               <Image
                 src={image}
                 alt={imageAlt}
                 fill
-                className="object-cover"
+                className="object-contain"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
             </div>
@@ -63,7 +63,7 @@ export function FeatureSection({
               isImageLeft ? "lg:col-start-2" : "lg:col-start-1"
             )}
           >
-            <h2 className="text-3xl md:text-5xl font-heading font-bold text-foreground mb-6">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
               {title}
             </h2>
             

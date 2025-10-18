@@ -32,15 +32,15 @@ export function HowToSection({ title, subtitle, steps, className }: HowToSection
           <h2 className="text-3xl md:text-5xl font-heading font-bold text-white mb-4">
             {title}
           </h2>
-          {/* {subtitle && (
+          {subtitle && (
             <p className="text-lg text-white/90">
               {subtitle}
             </p>
-          )} */}
+          )}
         </div>
 
         {/* Steps Grid */}
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {steps.map((step, index) => {
             const Icon = step.icon;
             return (
@@ -50,13 +50,13 @@ export function HowToSection({ title, subtitle, steps, className }: HowToSection
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-background rounded-3xl p-6 md:p-8 hover:shadow-xl transition-all duration-300"
+                className="bg-background rounded-3xl p-6 md:p-6 hover:shadow-xl transition-all duration-300"
               >
-                <div className="flex items-start gap-4 md:gap-6">
+                <div className="flex items-start gap-4 md:gap-4">
                   {/* Icon */}
                   {Icon && (
                     <div className="flex-shrink-0">
-                      <Icon className="w-10 h-10 md:w-12 md:h-12 text-foreground" strokeWidth={1.5} />
+                      <Icon className="w-8 h-8 md:w-8 md:h-8 text-foreground" strokeWidth={1.5} />
                     </div>
                   )}
 

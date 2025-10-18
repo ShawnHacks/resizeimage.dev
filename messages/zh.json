@@ -317,7 +317,11 @@
       "processedImages": "已处理图片",
       "downloadImage": "下载",
       "downloadAll": "全部下载",
-      "resizeMore": "调整更多图片"
+      "resizeMore": "调整更多图片",
+      "backToEdit": "返回编辑",
+      "downloadSingle": "下载图片",
+      "downloadMultiple": "下载全部 {count} 张图片",
+      "downloading": "下载中..."
     },
     "config": {
       "title": "可分享的配置",
@@ -371,10 +375,6 @@
         "title": "下载",
         "description": "立即下载您调整后的图片或继续使用更多选项编辑。"
       }
-    },
-    "showcase": {
-      "title": "为任何用途调整图片大小",
-      "subtitle": "非常适合社交媒体、网站、电子邮件等"
     },
     "featureSections": {
       "feature1": {

@@ -155,3 +155,12 @@ Would you like me to also prepare:
 2. A **gallery template** (UI mockup style) using your current site look?
 
 These visuals significantly improve visibility on launch day.
+
+
+
+### 
+The easiest way to resize photos online. Resize, compress, and optimize your images in seconds. 
+Easily adjust image size and dimensions. perfect for social media, printing, or web use.
+Need a specific size? You can customize sizes to get the perfect fit.
+
+Use our free online bulk photos resizer to adjust size, dimesions, compress, and optimize your images in seconds

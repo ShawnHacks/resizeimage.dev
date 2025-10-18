@@ -308,14 +308,11 @@ export default function ResizeImagePage() {
       </header>
 
       {/* Main content */}
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 mb-8">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Hero section - shown when no images */}
           {images.length === 0 && processedImages.length === 0 && (
-            <>
-              <HeroSection onFilesSelected={handleFilesSelected} />
-              <ToolsGrid />
-            </>
+            <HeroSection onFilesSelected={handleFilesSelected} />
           )}
 
           {/* Preview section */}
@@ -383,9 +380,19 @@ export default function ResizeImagePage() {
                 onDownloadComplete={handleDownloadComplete}
               />
               
-              {/* Reset button */}
-              <div className="text-center">
-                <button
+              {/* Action buttons */}
+              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                <Button
+                  onClick={() => {
+                    // Keep images, only clear processed images to return to edit mode
+                    setProcessedImages([]);
+                  }}
+                  variant="outline"
+                  className="px-6 py-2.5 text-primary hover:text-primary/80 font-bold transition-colors"
+                >
+                  {t('results.backToEdit')}
+                </Button>
+                <Button
                   onClick={() => {
                     // Clean up all blob URLs
                     blobUrlsRef.current.forEach(url => {
@@ -400,20 +407,25 @@ export default function ResizeImagePage() {
                     setImages([]);
                     setProcessedImages([]);
                   }}
-                  className="px-6 py-2.5 text-primary hover:text-primary/80 font-bold transition-colors"
+                  variant="outline"
+                  className="px-6 py-2.5 hover:text-primary/80 font-bold transition-colors"
                 >
                   {t('results.resizeMore')}
-                </button>
+                </Button>
               </div>
             </>
           )}
         </div>
       </main>
 
+      <div className='container mx-auto max-w-4xl pb-16'>
+        <ToolsGrid />
+      </div>
+
       {/* How To Section */}
       <HowToSection
         title={t('howTo.title')}
-        subtitle={t('howTo.subtitle')}
+        // subtitle={t('howTo.subtitle')}
         steps={[
           {
             number: t('howTo.step1.number'),
@@ -436,11 +448,11 @@ export default function ResizeImagePage() {
         ]}
       />
 
-      {/* <div className="py-16 md:py-24">
+      <div className="pt-16 md:pt-24">
         <FeatureSection
           title={t('featureSections.feature1.title')}
           description={t.raw('featureSections.feature1.description')}
-          image="/illustration/sample.png"
+          image="/illustration/feature1.webp"
           imageAlt="Resize images online"
           layout="image-left"
         />
@@ -448,20 +460,21 @@ export default function ResizeImagePage() {
         <FeatureSection
           title={t('featureSections.feature2.title')}
           description={t.raw('featureSections.feature2.description')}
-          image="/illustration/sample2.webp"
+          image="/illustration/feature2.webp"
           imageAlt="Do more with your image"
           layout="image-right"
-          className="bg-muted/30"
+          // className="bg-muted/30"
         />
-      </div> */}
 
-      {/* Showcase Section */}
-      {/* <ShowcaseSection
-        title={t('showcase.title')}
-        subtitle={t('showcase.subtitle')}
-      >
-        <ToolsGrid />
-      </ShowcaseSection> */}
+        <FeatureSection
+          title={t('featureSections.feature3.title')}
+          description={t.raw('featureSections.feature3.description')}
+          image="/illustration/feature3.webp"
+          imageAlt="Do more with your image"
+          layout="image-left"
+          // className="bg-muted/30"
+        />
+      </div>
 
       {/* FAQ Section */}
       <FAQSection
