@@ -46,14 +46,14 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
       animate={{ opacity: 1 }}
       className="w-full"
     >
-      <div className="flex items-center justify-center rounded-lg space-x-6">
+      <div className="rounded-lg space-y-4 border p-2 text-center">
         {/* Left: Clickable images count */}
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
             <button className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
-              <Images className="w-4 h-4" />
+              {/* <Images className="w-4 h-4" /> */}
               <span>
-                {images.length} {images.length === 1 ? t('selected') : t('selectedPlural')} {t('selectedCount')}
+                <span className="font-semibold text-2xl text-pink-500">{images.length}</span> {images.length === 1 ? t('selected') : t('selectedPlural')} {t('selectedCount')}
               </span>
             </button>
           </DialogTrigger>

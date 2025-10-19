@@ -18,6 +18,7 @@ import { Checkbox } from '@/components/ui/checkbox';
 
 interface ResizeControlsProps {
   onResize: (options: ResizeOptionsState) => void;
+  children?: React.ReactNode;
   disabled?: boolean;
 }
 
@@ -36,7 +37,7 @@ export interface ResizeOptionsState {
   usePadding?: boolean; // For Image Dimensions mode
 }
 
-export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
+export function ResizeControls({ onResize, children, disabled }: ResizeControlsProps) {
   const t = useTranslations('ResizeTool.controls');
   const tConfig = useTranslations('ResizeTool.config');
   const searchParams = useSearchParams();
@@ -273,7 +274,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
         <div className="flex flex-col md:flex-row">
           {/* Mode selector */}
           <aside className="w-full md:w-56 bg-muted border-b md:border-b-0 md:border-r border-border">
-            <div className="p-4">
+            <div className="mt-4 p-4 space-y-4">
               <h3 className="text-xs font-semibold text-muted-foreground uppercase tracking-wide mb-3">
                 {t('resizeMode')}
               </h3>
@@ -300,6 +301,9 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                   );
                 })}
               </div>
+              
+              {/* selected images */}
+              <div className="mt-12 space-y-1">{children}</div>
             </div>
           </aside>
 

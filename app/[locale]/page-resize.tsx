@@ -317,19 +317,21 @@ export default function ResizeImagePage() {
             <HeroSection onFilesSelected={handleFilesSelected} />
           )}
 
-          {/* Preview section */}
-          {images.length > 0 && processedImages.length === 0 && (
-            <ImagePreview 
-              images={images} 
-              onRemove={handleRemoveImage}
-              onAddMore={handleAddMore}
-            />
-          )}
+         
 
           {/* Controls section */}
           {images.length > 0 && processedImages.length === 0 && (
             <>
-              <ResizeControls onResize={handleResize} disabled={isProcessing} />
+              <ResizeControls onResize={handleResize} disabled={isProcessing}>
+                {/* Preview */}
+                {images.length > 0 && processedImages.length === 0 && (
+                  <ImagePreview 
+                    images={images} 
+                    onRemove={handleRemoveImage}
+                    onAddMore={handleAddMore}
+                  />
+                )}
+              </ResizeControls>
               <div className="flex justify-start">
                 <Button
                   onClick={handleBack}
