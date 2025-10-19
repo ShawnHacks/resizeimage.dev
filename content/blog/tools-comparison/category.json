@@ -5,11 +5,11 @@
   "translations": {
     "en": {
       "name": "Tools Comparison",
-      "description": "Compare different screenshot tools and find the best solution"
+      "description": "Compare different bulk resize image tools and find the best solution"
     },
     "zh": {
       "name": "工具对比",
-      "description": "比较不同的截图工具，找到最佳解决方案"
+      "description": "比较不同的批量压缩图片工具，找到最佳解决方案"
     }
   }
 }

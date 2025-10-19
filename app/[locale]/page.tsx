@@ -2,6 +2,7 @@ import { Metadata } from 'next'
 import {setRequestLocale} from 'next-intl/server';
 import { routing } from '@/i18n/routing'
 import ResizeImagePage from './page-resize';
+import { getLocalizedSiteConfig } from '@/config/site-i18n';
 
 export const runtime = 'edge'
 // export const revalidate = 3600
@@ -12,10 +13,12 @@ export async function generateMetadata({
   params: Promise<{ locale: string }>
 }): Promise<Metadata> {
   const { locale = 'en' } = await params
+  const siteConfig = await getLocalizedSiteConfig(locale)
   
   const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
 
   return {
+    title: siteConfig.title,
     alternates: {
       canonical: locale === 'en' ? urlString : `${urlString}/${locale}`,
       languages: {

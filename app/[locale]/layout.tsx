@@ -41,19 +41,23 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
   const description = siteConfig.description
 
   return {
-    title,
+    // title,
+    title: {
+      template: '%s - BulkResizeImages.online', // %s will be replaced by the page-specific title
+      default: `${title} | BulkResizeImages.online`, // Fallback title for pages without a specific title
+    },
     description,
     keywords: siteConfig.keywords,
     authors: [{ name: siteConfig.creator || 'ShawnHacks' }],
     creator: siteConfig.creator || 'ShawnHacks',
-    publisher: siteConfig.name || 'BulkResizeImages',
+    publisher: siteConfig.name || 'Crownbyte LTD',
     openGraph: {
       type: 'website',
       url: siteConfig.url || 'https://bulkresizeimages.online',
       locale: locale,
-      title: title,
+      title: `${title} - BulkResizeImages.online`,
       description: description,
-      siteName: siteConfig.name || 'BulkResizeImages',
+      siteName: siteConfig.name || 'BulkResizeImages.online',
       images: [
         {
           url: siteConfig.ogImage || 'https://bulkresizeimages.online/og.png',
@@ -65,7 +69,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: title,
+      title: `${title} - BulkResizeImages.online`,
       description: description,
       images: [siteConfig.ogImage || 'https://bulkresizeimages.online/og.png'],
       creator: '@ShawnHacks',
@@ -94,7 +98,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     appleWebApp: {
       capable: true,
       statusBarStyle: 'default',
-      title: 'BulkResizeImages',
+      title: 'BulkResizeImages.online',
     },
   }
 }

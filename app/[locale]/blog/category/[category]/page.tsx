@@ -7,8 +7,9 @@ import { getPostsByCategory, getCategory, getCategories } from '@/lib/blog-stati
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
-import { Calendar, Clock, User, ArrowLeft, FolderOpen } from 'lucide-react'
+import { Calendar, Clock, User, ArrowLeft, FolderOpen, ChevronRight } from 'lucide-react'
 import { formatDate } from '@/lib/utils'
+import { baseSiteConfig } from '@/config/site-i18n'
 
 interface CategoryPageProps {
   params: Promise<{ locale: string; category: string }>
@@ -33,6 +34,16 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
   return {
     title: `${categoryName} - Blog`,
     description: categoryDesc,
+    openGraph: {
+      title: `${categoryName} - Blog - ${baseSiteConfig.name}`,
+      description: categoryDesc,
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${categoryName} - Blog - ${baseSiteConfig.name}`,
+      description: categoryDesc,
+    },
     alternates: {
       canonical: locale === 'en' ? `/blog/category/${category}` : `/${locale}/blog/category/${category}`,
       languages: Object.fromEntries(
@@ -47,6 +58,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { locale, category } = await params
+  const t = await getTranslations({locale, namespace: 'BlogPost'})
   const categoryData = await getCategory(category)
   const posts = await getPostsByCategory(category, locale)
 
@@ -63,12 +75,20 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
         <div className="max-w-5xl mx-auto">
           {/* Breadcrumb */}
           <nav className="mb-8">
-            <Button variant="ghost" asChild className="mb-4">
+            {/* Breadcrumb Navigation */}
+              <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
+                <Link href={`/blog`} className="hover:text-foreground transition-colors shrink-0">
+                  {t('blog')}
+                </Link>
+                <ChevronRight className="h-4 w-4" />
+                <span className="text-foreground font-medium truncate">{categoryName}</span>
+              </nav>
+            {/* <Button variant="ghost" asChild className="mb-4">
               <Link href="/blog">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 {locale === 'zh' ? '返回博客' : 'Back to Blog'}
               </Link>
-            </Button>
+            </Button> */}
           </nav>
 
           {/* Category Header */}
@@ -82,10 +102,10 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                 style={{ color: categoryData.color }}
               />
             </div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground">
               {categoryName}
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-4">
+            <p className="text-xl text-foreground max-w-2xl mx-auto mb-4">
               {categoryDesc}
             </p>
             <Badge 
@@ -93,7 +113,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
               className="text-sm"
               style={{ backgroundColor: `${categoryData.color}20`, color: categoryData.color }}
             >
-              {posts.length} {locale === 'zh' ? '篇文章' : 'articles'}
+              {t('articles', { count: posts.length })}
             </Badge>
           </div>
 
@@ -101,7 +121,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           {posts.length === 0 ? (
             <div className="text-center py-12">
               <p className="text-muted-foreground text-lg">
-                {locale === 'zh' ? '该分类下暂无文章' : 'No articles in this category yet.'}
+                {t('noArticles')}
               </p>
             </div>
           ) : (
@@ -156,7 +176,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                       </div>
                       <Button asChild variant="ghost" size="sm">
                         <Link href={`/blog/${post.slug}`}>
-                          {locale === 'zh' ? '阅读更多' : 'Read More'}
+                          {t('readMore')}
                         </Link>
                       </Button>
                     </div>

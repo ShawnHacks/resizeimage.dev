@@ -5,12 +5,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     // Headings
     h1: ({ children }) => (
-      <h1 className="text-4xl font-bricolage font-bold mb-6 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent">
+      <h1 className="text-4xl font-heading font-bold mb-6 text-foreground">
         {children}
       </h1>
     ),
     h2: ({ children }) => (
-      <h2 className="text-2xl font-semibold mb-4 text-emerald-700 dark:text-emerald-300 mt-8">
+      <h2 className="text-2xl font-semibold mb-4 text-foreground mt-8">
         {children}
       </h2>
     ),
@@ -22,7 +22,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     
     // Paragraphs
     p: ({ children }) => (
-      <p className="text-muted-foreground leading-relaxed mb-4">
+      <p className="text-foreground leading-relaxed mb-4">
         {children}
       </p>
     ),
@@ -36,7 +36,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     a: ({ href, children }) => (
       <a 
         href={href} 
-        className="text-emerald-600 dark:text-emerald-400 hover:text-emerald-700 dark:hover:text-emerald-300 underline underline-offset-4 transition-colors"
+        className="text-primary dark:text-primary/80 hover:text-primary/80 dark:hover:text-primary/80 underline underline-offset-4 transition-colors"
       >
         {children}
       </a>
@@ -49,10 +49,10 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       lastUpdated?: string
     }) => {
       const iconMap = {
-        cookie: <Cookie className="h-12 w-12 text-emerald-600 dark:text-emerald-400" />,
-        privacy: <Lock className="h-12 w-12 text-emerald-600 dark:text-emerald-400" />,
-        terms: <FileText className="h-12 w-12 text-emerald-600 dark:text-emerald-400" />,
-        shield: <Shield className="h-12 w-12 text-emerald-600 dark:text-emerald-400" />
+        cookie: <Cookie className="h-12 w-12 text-primary dark:text-primary/80" />,
+        privacy: <Lock className="h-12 w-12 text-primary dark:text-primary/80" />,
+        terms: <FileText className="h-12 w-12 text-primary dark:text-primary/80" />,
+        shield: <Shield className="h-12 w-12 text-primary dark:text-primary/80" />
       }
       
       return (

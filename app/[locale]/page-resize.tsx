@@ -454,16 +454,16 @@ export default function ResizeImagePage() {
         <FeatureSection
           title={t('featureSections.feature1.title')}
           description={t.raw('featureSections.feature1.description')}
-          image="/illustration/feature1.webp"
-          imageAlt="Resize images online"
+          image="/illustration/resizeimages.webp"
+          imageAlt="Bulk resize images online"
           layout="image-left"
         />
 
         <FeatureSection
           title={t('featureSections.feature2.title')}
           description={t.raw('featureSections.feature2.description')}
-          image="/illustration/feature2.webp"
-          imageAlt="Do more with your image"
+          image="/illustration/resizedimensions.webp"
+          imageAlt="Resize images dimensions online"
           layout="image-right"
           // className="bg-muted/30"
         />
@@ -471,8 +471,8 @@ export default function ResizeImagePage() {
         <FeatureSection
           title={t('featureSections.feature3.title')}
           description={t.raw('featureSections.feature3.description')}
-          image="/illustration/feature3.webp"
-          imageAlt="Do more with your image"
+          image="/illustration/resizefilesize.webp"
+          imageAlt="Resize images file size online"
           layout="image-left"
           // className="bg-muted/30"
         />

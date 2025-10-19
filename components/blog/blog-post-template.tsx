@@ -76,9 +76,13 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
       <StructuredData data={structuredData} />
       
       {/* Hero Section with Background */}
-      <div className="relative bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 dark:from-emerald-950 dark:via-teal-950 dark:to-cyan-950">
-        <div className="absolute inset-0 bg-grid-pattern opacity-5"></div>
+      {/* bg-gradient-to-br from-primary/20 via-primary/10 to-pink-50 dark:from-primary dark:via-primary/80 dark:to-primary/50 */}
+      <div className="relative bg-gradient-to-br from-purple-50 via-purple-50 to-purple-100 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20">
         <div className="relative">
+          {/* <div className="absolute inset-0 bg-grid-pattern"></div> */}
+
+          {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-blue-500/10" /> */}
+
           <div className="container mx-auto px-4 py-16">
             <div className="max-w-4xl mx-auto">
               {/* Breadcrumb Navigation */}
@@ -93,12 +97,12 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
               </nav>
 
               {/* Back Button */}
-              <Button variant="ghost" asChild className="mb-8 -ml-4">
+              {/* <Button variant="ghost" asChild className="mb-8 -ml-4">
                 <Link href="/blog">
                   <ArrowLeft className="h-4 w-4 mr-2" />
                   {t('backToBlog')}
                 </Link>
-              </Button>
+              </Button> */}
 
               {/* Article Header */}
               <header className="text-center mb-12">
@@ -109,7 +113,7 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
                 </Badge>
 
                 {/* Title */}
-                <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+                <h1 className="text-4xl md:text-6xl font-heading font-bold leading-tight mb-6 text-foreground py-2">
                   {post.title}
                 </h1>
 
@@ -121,7 +125,7 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
                 {/* Meta Information */}
                 <div className="flex flex-wrap items-center justify-center gap-6 text-sm text-muted-foreground">
                   <div className="flex items-center gap-2">
-                    <div className="w-8 h-8 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center">
                       <User className="h-4 w-4 text-white" />
                     </div>
                     <span className="font-medium">{post.author || 'Admin'}</span>
@@ -159,7 +163,7 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
       {/* Featured Image */}
       {post.featuredImage && (
         <div className="container mx-auto px-4 mt-4 mb-16">
-          <div className="max-w-5xl mx-auto">
+          <div className="max-w-4xl mx-auto">
             <div className="aspect-video overflow-hidden rounded-2xl shadow-2xl border bg-white dark:bg-gray-900">
               <img
                 src={post.featuredImage}
@@ -173,7 +177,7 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
 
       {/* Main Content */}
       <main className="container mx-auto px-4 pb-16">
-        <div className="max-w-5xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <div className="">
             {/* Article Content */}
             <article className="md:col-span-3">
@@ -303,8 +307,8 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
                             />
                           </div>
                         ) : (
-                          <div className="aspect-video bg-gradient-to-br from-emerald-100 to-teal-100 dark:from-emerald-900 dark:to-teal-900 rounded-lg mb-4 flex items-center justify-center">
-                            <BookOpen className="h-8 w-8 text-emerald-600" />
+                          <div className="aspect-video bg-gradient-to-br from-primary/10 to-primary/10 dark:from-primary/10 dark:to-primary/10 rounded-lg mb-4 flex items-center justify-center">
+                            <BookOpen className="h-8 w-8 text-primary" />
                           </div>
                         )}
                         <h3 className="font-semibold mb-2 line-clamp-2">

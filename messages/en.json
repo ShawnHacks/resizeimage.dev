@@ -130,7 +130,7 @@
     "metaKeywords": "terms and conditions, service agreement, terms of use, website tool, user agreement"
   },
   "SiteConfig": {
-    "title": "Bulk Resize Images Online — Fast, Private, Free ",
+    "title": "Free Bulk Resize Images Online",
     "description": "Unlimited free image resizer for single or batch processing. Resize, compress, and optimize images instantly in your browser. No registration, no uploads - 100% secure and private.",
     "keywords": {
       "0": "bulk image resizer online",
@@ -162,8 +162,8 @@
   },
   "BlogPage": {
     "title": "Blog",
-    "description": "Learn about website screenshots, web development tips, and digital tools. Expert guides and tutorials for developers and designers.",
-    "keywords": "website screenshot blog, web development tutorials, digital tools guide, screenshot tutorials, web design tips",
+    "description": "Learn about bulk resize images tools, image compression tools, and digital tools. Expert guides and tutorials for developers and designers.",
+    "keywords": "bulk resize images tools, image compression tools, digital tools guide, image optimizer, image compression, image resize, web design tips",
     "readMore": "Read More",
     "minRead": "min read",
     "noPosts": "No blog posts available yet. Check back soon!",
@@ -193,7 +193,12 @@
     "toolsComparison": "Tools Comparison",
     "seoGuide": "SEO Guide",
     "tutorial": "Tutorial",
-    "blog": "Blog"
+    "blog": "Blog",
+    "category": "Category",
+    "categories": "Categories",
+    "articles": "{count} {count, plural, one {article} other {articles}}",
+    "noArticles": "No articles in this category yet.",
+    "readMore": "Read More"
   },
   "ImageUploader": {
     "titleSingle": "Drag and Drop Your Image",

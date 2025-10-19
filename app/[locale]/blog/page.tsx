@@ -8,6 +8,7 @@ import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { Calendar, Clock, User, FolderOpen } from 'lucide-react'
 import { formatDate } from '@/lib/utils'
+import { baseSiteConfig } from '@/config/site-i18n'
 
 interface BlogPageProps {
   params: Promise<{ locale: string }>
@@ -20,17 +21,17 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
   const t = await getTranslations({ locale, namespace: 'BlogPage' })
 
   return {
-    title: t('title'),
+    title: `${t('title')}`,
     description: t('description'),
     keywords: t('keywords'),
     openGraph: {
-      title: t('title'),
+      title: `${t('title')} - ${baseSiteConfig.name}`,
       description: t('description'),
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: t('title'),
+      title: `${t('title')} - ${baseSiteConfig.name}`,
       description: t('description'),
     },
     alternates: {
@@ -56,10 +57,10 @@ export default async function BlogPage({ params }: BlogPageProps) {
       <div className="container mx-auto px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-500 bg-clip-text text-transparent py-2">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground py-2">
               {t('title')}
             </h1>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-xl text-foreground max-w-2xl mx-auto">
               {t('description')}
             </p>
           </div>
@@ -88,7 +89,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
                       <h3 className="font-semibold mb-1">
                         {category.translations[locale]?.name || category.translations['en']?.name}
                       </h3>
-                      <p className="text-sm text-muted-foreground mb-2 line-clamp-2">
+                      <p className="text-sm text-foreground mb-2 line-clamp-2">
                         {category.translations[locale]?.description || category.translations['en']?.description}
                       </p>
                       <Badge variant="secondary" className="text-xs">

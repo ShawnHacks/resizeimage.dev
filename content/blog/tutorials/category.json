@@ -5,11 +5,11 @@
   "translations": {
     "en": {
       "name": "Tutorials",
-      "description": "Step-by-step guides and how-to articles for website screenshots"
+      "description": "Step-by-step guides and how-to articles for bulk resize image tools"
     },
     "zh": {
       "name": "教程",
-      "description": "网站截图的分步指南和操作教程"
+      "description": "批量压缩图片工具的分步指南和操作教程"
     }
   }
 }

@@ -111,14 +111,14 @@ export default function AboutPage() {
       <section className="py-20 bg-gradient-to-br from-purple-50 via-purple-50 to-purple-100 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bricolage font-bold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-6 py-2 text-foreground">
               {t('hero.title')}
             </h1>
-            <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+            <p className="text-xl text-foreground mb-8 leading-relaxed">
               {t('hero.description')}
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button asChild size="lg" className="bg-primary hover:bg-primary/80">
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/80 font-bold">
                 <Link href="/">
                   <ImageIcon className="h-5 w-5 mr-2" />
                   {t('cta.button')}
@@ -133,10 +133,10 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bricolage font-semibold mb-6 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-heading font-bold mb-6 text-foreground">
               {t('mission.title')}
             </h2>
-            <p className="text-lg text-muted-foreground leading-relaxed mb-8">
+            <p className="text-lg text-foreground leading-relaxed mb-8">
               {t('mission.description')}
             </p>
             <div className="bg-card border rounded-lg p-8">
@@ -152,10 +152,10 @@ export default function AboutPage() {
       <section className="py-16 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-heading font-bold mb-4 text-foreground">
               {t('stats.title')}
             </h2>
-            <p className="text-lg text-muted-foreground">
+            <p className="text-lg text-foreground">
               {t('stats.description')}
             </p>
           </div>
@@ -165,10 +165,10 @@ export default function AboutPage() {
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 dark:bg-primary/10 rounded-full mb-4">
                   <stat.icon className="h-8 w-8 text-primary dark:text-primary" />
                 </div>
-                <div className="text-3xl font-bold text-primary dark:text-primary mb-2">
+                <div className="text-3xl font-heading font-bold text-foreground mb-2">
                   {stat.number}
                 </div>
-                <div className="text-sm text-muted-foreground">
+                <div className="text-sm text-foreground">
                   {stat.label}
                 </div>
               </div>
@@ -181,10 +181,10 @@ export default function AboutPage() {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+            <h2 className="text-3xl font-heading font-bold mb-4 text-foreground">
               {t('features.title')}
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-foreground max-w-2xl mx-auto">
               {t('features.description')}
             </p>
           </div>
@@ -194,8 +194,8 @@ export default function AboutPage() {
                 <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
                   <feature.icon className="h-6 w-6 text-primary dark:text-primary" />
                 </div>
-                <h3 className="text-xl font-semibold mb-3">{feature.title}</h3>
-                <p className="text-muted-foreground">{feature.description}</p>
+                <h3 className="text-xl font-heading font-bold mb-3">{feature.title}</h3>
+                <p className="text-foreground">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -207,10 +207,10 @@ export default function AboutPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl font-bricolage font-semibold mb-4 bg-gradient-to-r from-primary to-primary/80 bg-clip-text text-transparent">
+              <h2 className="text-3xl font-heading font-bold mb-4 text-foreground">
                 {t('technology.title')}
               </h2>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-foreground">
                 {t('technology.description')}
               </p>
             </div>
@@ -245,7 +245,7 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary to-primary/80 text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-bricolage font-bold mb-6">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
             {t('cta.title')}
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
