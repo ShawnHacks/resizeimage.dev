@@ -15,6 +15,9 @@ import {
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { ShineBorder } from "@/components/ui/shine-border"
+import { useTheme } from "next-themes"
+// import { BorderBeam } from '@/components/magicui/border-beam';
 
 interface ImagePreviewProps {
   images: ImageFile[];
@@ -25,6 +28,7 @@ interface ImagePreviewProps {
 export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps) {
   const t = useTranslations('ResizeTool.imagePreview');
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const theme = useTheme();
   
   if (images.length === 0) return null;
 
@@ -46,14 +50,17 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
       animate={{ opacity: 1 }}
       className="w-full"
     >
-      <div className="rounded-lg space-y-4 border p-2 text-center">
+      <div className="rounded-lg space-y-4 p-4 text-center relative overflow-hidden border bg-background">
+        {/* <ShineBorder shineColor={["#A07CFE", "#FE8FB5", "#FFBE7B", "#FE8FB5", "#A07CFE"]} /> */}
+        {/* <ShineBorder shineColor={theme.theme === "dark" ? "white" : "black"} /> */}
+
         {/* Left: Clickable images count */}
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
-            <button className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
+            <button className="flex items-center gap-2 text-sm font-medium text-foreground hover:text-primary transition-colors w-full justify-center cursor-pointer">
               {/* <Images className="w-4 h-4" /> */}
               <span>
-                <span className="font-semibold text-2xl text-pink-500">{images.length}</span> {images.length === 1 ? t('selected') : t('selectedPlural')} {t('selectedCount')}
+                <span className="font-semibold text-3xl text-pink-500">{images.length}</span> {images.length === 1 ? t('selected') : t('selectedPlural')} {t('selectedCount')}
               </span>
             </button>
           </DialogTrigger>
@@ -114,9 +121,9 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
 
             {/* Add more button in dialog */}
             {onAddMore && (
-              <div className="pt-4 border-t">
+              <div className="pt-4">
                 <label className="cursor-pointer">
-                  <Button variant="outline" className="w-full text-primary hover:bg-primary/5" asChild>
+                  <Button variant="outline" className="w-full" asChild>
                     <span className="inline-flex items-center gap-2">
                       <Plus className="w-4 h-4" />
                       {t('addMore')}
@@ -138,7 +145,7 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
         {/* Right: Add more button */}
         {onAddMore && (
           <label className="cursor-pointer">
-            <Button variant="ghost" size="sm" className="text-primary hover:bg-primary/5" asChild>
+            <Button variant="secondary" size="sm" className="" asChild>
               <span className="inline-flex items-center gap-2">
                 <Plus className="w-4 h-4" />
                 {t('addMore')}

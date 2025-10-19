@@ -41,6 +41,18 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
+  --animate-shine: shine var(--duration) infinite linear;
+  @keyframes shine {
+  0% {
+    background-position: 0% 0%;
+    }
+  50% {
+    background-position: 100% 100%;
+    }
+  to {
+    background-position: 0% 0%;
+    }
+  }
 }
 
 /* :root {
@@ -182,7 +194,6 @@
   --sidebar-ring: oklch(0.541 0.281 293.009);
 }
 
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -196,7 +207,7 @@
   ::-webkit-scrollbar {
     display: none;
   }
-  
+
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -382,7 +393,6 @@
   }
 }
 
-
 @layer utilities {
   .font-bricolage {
     font-family: var(--font-bricolage);
@@ -422,11 +432,11 @@
   details > summary {
     list-style: none;
   }
-  
+
   details > summary::-webkit-details-marker {
     display: none;
   }
-  
+
   details > summary::marker {
     display: none;
   }
