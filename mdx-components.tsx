@@ -43,23 +43,12 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     ),
     
     // Custom Components
-    Header: ({ children, icon = 'cookie', lastUpdated = 'January 2025' }: { 
+    Header: ({ children, lastUpdated = 'January 2025' }: { 
       children: React.ReactNode
-      icon?: 'cookie' | 'privacy' | 'terms' | 'shield'
       lastUpdated?: string
     }) => {
-      const iconMap = {
-        cookie: <Cookie className="h-12 w-12 text-primary dark:text-primary/80" />,
-        privacy: <Lock className="h-12 w-12 text-primary dark:text-primary/80" />,
-        terms: <FileText className="h-12 w-12 text-primary dark:text-primary/80" />,
-        shield: <Shield className="h-12 w-12 text-primary dark:text-primary/80" />
-      }
-      
       return (
         <div className="text-center mb-12">
-          <div className="flex items-center justify-center mb-4">
-            {iconMap[icon]}
-          </div>
           {children}
           <div className="flex items-center justify-center mt-4 text-sm text-muted-foreground">
             <Calendar className="h-4 w-4 mr-2" />
