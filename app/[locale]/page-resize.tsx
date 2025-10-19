@@ -385,7 +385,7 @@ export default function ResizeImagePage() {
               />
               
               {/* Action buttons */}
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button
                   onClick={() => {
                     // Keep images, only clear processed images to return to edit mode
