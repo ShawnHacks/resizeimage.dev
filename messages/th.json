@@ -190,10 +190,19 @@
     "aboutAuthor": "เกี่ยวกับผู้เขียน",
     "relatedArticles": "บทความที่เกี่ยวข้อง",
     "continueExploring": "สำรวจเนื้อหาที่เกี่ยวข้องเพิ่มเติมต่อไป",
-    "toolsComparison": "การเปรียบเทียบเครื่องมือ",
+    "toolsComparison": "เปรียบเทียบเครื่องมือ",
     "seoGuide": "คู่มือ SEO",
     "tutorial": "บทช่วยสอน",
-    "blog": "บล็อก"
+    "blog": "บล็อก",
+    "category": "หมวดหมู่",
+    "categories": "หมวดหมู่",
+    "articles": "{count} บทความ",
+    "noArticles": "ยังไม่มีบทความในหมวดหมู่นี้",
+    "readMore": "อ่านเพิ่มเติม",
+    "categoryNotFound": "ไม่พบหมวดหมู่",
+    "categoryNotFoundDescription": "ไม่พบหมวดหมู่ที่ร้องขอ",
+    "postNotFound": "ไม่พบโพสต์",
+    "postNotFoundDescription": "ไม่พบโพสต์บล็อกที่ร้องขอ"
   },
   "ImageUploader": {
     "titleSingle": "ลากและวางรูปภาพของคุณ",
@@ -229,10 +238,12 @@
     "imagePreview": {
       "selected": "ภาพ",
       "selectedPlural": "ภาพ",
-      "selectedCount": "ที่เลือก",
-      "addMore": "เพิ่มอีก",
+      "selectedCount": "เลือกแล้ว",
+      "addMore": "เพิ่มเติม",
       "showLess": "แสดงน้อยลง",
-      "showAll": "แสดงทั้งหมด (อีก {count} ภาพ)"
+      "showAll": "แสดงทั้งหมด ({count} เพิ่มเติม)",
+      "dialogTitle": "ภาพที่เลือก",
+      "dialogDescription": "จัดการภาพที่เลือก {count} ภาพของคุณ คลิกปุ่ม × เพื่อลบภาพใดๆ หรือเพิ่มภาพเพิ่มเติม"
     },
     "controls": {
       "resizeMode": "โหมดปรับขนาด",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "สีพื้นหลัง",
-        "description": "ใช้สำหรับภาพโปร่งใสที่แปลงเป็น JPEG"
+        "description": "ใช้สำหรับภาพโปร่งใสที่แปลงเป็น JPEG",
+        "transparent": "ใช้พื้นหลังโปร่งใส",
+        "transparentValue": "โปร่งใส"
       },
       "presets": {
         "title": "ค่าที่ตั้งไว้ล่วงหน้าอย่างรวดเร็ว",

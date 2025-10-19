@@ -193,7 +193,16 @@
     "toolsComparison": "Сравнение инструментов",
     "seoGuide": "Руководство по SEO",
     "tutorial": "Учебное пособие",
-    "blog": "Блог"
+    "blog": "Блог",
+    "category": "Категория",
+    "categories": "Категории",
+    "articles": "{count} {count, plural, one {статья} other {статьи}}",
+    "noArticles": "В этой категории пока нет статей.",
+    "readMore": "Читать далее",
+    "categoryNotFound": "Категория не найдена",
+    "categoryNotFoundDescription": "Запрашиваемая категория не найдена.",
+    "postNotFound": "Публикация не найдена",
+    "postNotFoundDescription": "Запрашиваемая публикация блога не найдена."
   },
   "ImageUploader": {
     "titleSingle": "Перетащите изображение сюда",
@@ -232,7 +241,9 @@
       "selectedCount": "выбрано",
       "addMore": "Добавить еще",
       "showLess": "Показать меньше",
-      "showAll": "Показать все ({count} еще)"
+      "showAll": "Показать все (еще {count})",
+      "dialogTitle": "Выбранные изображения",
+      "dialogDescription": "Управляйте своими {count} выбранными {count, plural, one {изображением} other {изображениями}}. Нажмите кнопку ×, чтобы удалить любое изображение, или добавьте больше изображений."
     },
     "controls": {
       "resizeMode": "Режим изменения размера",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Цвет фона",
-        "description": "Используется для прозрачных изображений, преобразованных в JPEG"
+        "description": "Используется для прозрачных изображений, преобразованных в JPEG",
+        "transparent": "Использовать прозрачный фон",
+        "transparentValue": "Прозрачный"
       },
       "presets": {
         "title": "Быстрые пресеты",

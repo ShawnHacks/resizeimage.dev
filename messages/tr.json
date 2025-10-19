@@ -192,8 +192,17 @@
     "continueExploring": "Daha fazla ilgili içeriği keşfetmeye devam edin",
     "toolsComparison": "Araç Karşılaştırması",
     "seoGuide": "SEO Rehberi",
-    "tutorial": "Eğitim",
-    "blog": "Blog"
+    "tutorial": "Öğretici",
+    "blog": "Blog",
+    "category": "Kategori",
+    "categories": "Kategoriler",
+    "articles": "{count} {count, plural, one {makale} other {makale}}",
+    "noArticles": "Bu kategoride henüz makale yok.",
+    "readMore": "Devamını Oku",
+    "categoryNotFound": "Kategori Bulunamadı",
+    "categoryNotFoundDescription": "İstenen kategori bulunamadı.",
+    "postNotFound": "Gönderi Bulunamadı",
+    "postNotFoundDescription": "İstenen blog gönderisi bulunamadı."
   },
   "ImageUploader": {
     "titleSingle": "Resminizi sürükleyip bırakın",
@@ -229,10 +238,12 @@
     "imagePreview": {
       "selected": "görüntü",
       "selectedPlural": "görüntüler",
-      "selectedCount": "seçili",
+      "selectedCount": "seçildi",
       "addMore": "Daha Fazla Ekle",
       "showLess": "Daha Az Göster",
-      "showAll": "Tümünü Göster ({count} daha fazla)"
+      "showAll": "Tümünü Göster ({count} daha)",
+      "dialogTitle": "Seçilen Görüntüler",
+      "dialogDescription": "{count} seçili {count, plural, one {görüntünüzü} other {görüntünüzü}} yönetin. Herhangi bir görüntüyü kaldırmak için × düğmesine tıklayın veya daha fazla görüntü ekleyin."
     },
     "controls": {
       "resizeMode": "Yeniden Boyutlandırma Modu",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Arka Plan Rengi",
-        "description": "JPEG'e dönüştürülen şeffaf görüntüler için kullanılır"
+        "description": "JPEG'e dönüştürülen şeffaf görüntüler için kullanılır",
+        "transparent": "Şeffaf Arka Plan Kullan",
+        "transparentValue": "Şeffaf"
       },
       "presets": {
         "title": "Hızlı Ön Ayarlar",

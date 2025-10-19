@@ -193,7 +193,16 @@
     "toolsComparison": "工具比较",
     "seoGuide": "SEO指南",
     "tutorial": "教程",
-    "blog": "博客"
+    "blog": "博客",
+    "category": "分类",
+    "categories": "分类",
+    "articles": "{count} 篇文章",
+    "noArticles": "该分类下暂无文章。",
+    "readMore": "阅读更多",
+    "categoryNotFound": "分类未找到",
+    "categoryNotFoundDescription": "请求的分类无法找到。",
+    "postNotFound": "文章未找到",
+    "postNotFoundDescription": "请求的博客文章无法找到。"
   },
   "ImageUploader": {
     "titleSingle": "拖放您的图片到此处",
@@ -232,7 +241,9 @@
       "selectedCount": "已选择",
       "addMore": "添加更多",
       "showLess": "显示更少",
-      "showAll": "显示全部 ({count} 张)"
+      "showAll": "显示全部 ({count} 张)",
+      "dialogTitle": "已选择的图片",
+      "dialogDescription": "管理您选择的 {count} {count, plural, one {张图片} other {张图片}}。点击 × 按钮可删除任意图片，或添加更多图片。"
     },
     "controls": {
       "resizeMode": "调整模式",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "背景颜色",
-        "description": "用于将透明图片转换为JPEG格式"
+        "description": "用于将透明图片转换为JPEG格式",
+        "transparent": "使用透明背景",
+        "transparentValue": "透明"
       },
       "presets": {
         "title": "快速预设",

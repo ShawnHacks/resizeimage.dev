@@ -193,7 +193,16 @@
     "toolsComparison": "So sánh công cụ",
     "seoGuide": "Hướng dẫn SEO",
     "tutorial": "Hướng dẫn",
-    "blog": "Blog"
+    "blog": "Blog",
+    "category": "Danh mục",
+    "categories": "Danh mục",
+    "articles": "{count} {count, plural, one {bài viết} other {bài viết}}",
+    "noArticles": "Chưa có bài viết nào trong danh mục này.",
+    "readMore": "Đọc thêm",
+    "categoryNotFound": "Không tìm thấy danh mục",
+    "categoryNotFoundDescription": "Không thể tìm thấy danh mục được yêu cầu.",
+    "postNotFound": "Không tìm thấy bài viết",
+    "postNotFoundDescription": "Không thể tìm thấy bài đăng blog được yêu cầu."
   },
   "ImageUploader": {
     "titleSingle": "Kéo và thả hình ảnh của bạn",
@@ -230,9 +239,11 @@
       "selected": "hình ảnh",
       "selectedPlural": "hình ảnh",
       "selectedCount": "đã chọn",
-      "addMore": "Thêm nữa",
+      "addMore": "Thêm nhiều hơn",
       "showLess": "Hiển thị ít hơn",
-      "showAll": "Hiển thị tất cả (thêm {count})"
+      "showAll": "Hiển thị tất cả ({count} thêm)",
+      "dialogTitle": "Hình ảnh đã chọn",
+      "dialogDescription": "Quản lý {count} hình ảnh đã chọn của bạn. Nhấp vào nút × để xóa bất kỳ hình ảnh nào hoặc thêm nhiều hình ảnh hơn."
     },
     "controls": {
       "resizeMode": "Chế độ thay đổi kích thước",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Màu nền",
-        "description": "Được sử dụng cho hình ảnh trong suốt được chuyển đổi sang JPEG"
+        "description": "Được sử dụng cho hình ảnh trong suốt được chuyển đổi sang JPEG",
+        "transparent": "Sử dụng nền trong suốt",
+        "transparentValue": "Trong suốt"
       },
       "presets": {
         "title": "Cài đặt sẵn nhanh",

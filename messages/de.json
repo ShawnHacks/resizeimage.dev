@@ -193,7 +193,16 @@
     "toolsComparison": "Werkzeugvergleich",
     "seoGuide": "SEO-Leitfaden",
     "tutorial": "Tutorial",
-    "blog": "Blog"
+    "blog": "Blog",
+    "category": "Kategorie",
+    "categories": "Kategorien",
+    "articles": "{count} {count, plural, one {Artikel} other {Artikel}}",
+    "noArticles": "Noch keine Artikel in dieser Kategorie.",
+    "readMore": "Weiterlesen",
+    "categoryNotFound": "Kategorie nicht gefunden",
+    "categoryNotFoundDescription": "Die angeforderte Kategorie konnte nicht gefunden werden.",
+    "postNotFound": "Beitrag nicht gefunden",
+    "postNotFoundDescription": "Der angeforderte Blogbeitrag konnte nicht gefunden werden."
   },
   "ImageUploader": {
     "titleSingle": "Ziehen Sie Ihr Bild hierher",
@@ -232,7 +241,9 @@
       "selectedCount": "ausgewählt",
       "addMore": "Mehr hinzufügen",
       "showLess": "Weniger anzeigen",
-      "showAll": "Alle anzeigen ({count} mehr)"
+      "showAll": "Alle anzeigen ({count} mehr)",
+      "dialogTitle": "Ausgewählte Bilder",
+      "dialogDescription": "Verwalten Sie Ihre {count} ausgewählten {count, plural, one {Bild} other {Bilder}}. Klicken Sie auf die Schaltfläche ×, um ein Bild zu entfernen, oder fügen Sie weitere Bilder hinzu."
     },
     "controls": {
       "resizeMode": "Anpassungsmodus",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Hintergrundfarbe",
-        "description": "Wird für transparente Bilder verwendet, die in JPEG konvertiert werden"
+        "description": "Wird für transparente Bilder verwendet, die in JPEG konvertiert werden",
+        "transparent": "Transparenten Hintergrund verwenden",
+        "transparentValue": "Transparent"
       },
       "presets": {
         "title": "Schnelle Voreinstellungen",

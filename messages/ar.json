@@ -192,8 +192,17 @@
     "continueExploring": "استمر في استكشاف المزيد من المحتوى ذي الصلة",
     "toolsComparison": "مقارنة الأدوات",
     "seoGuide": "دليل تحسين محركات البحث",
-    "tutorial": "برنامج تعليمي",
-    "blog": "المدونة"
+    "tutorial": "البرنامج التعليمي",
+    "blog": "المدونة",
+    "category": "الفئة",
+    "categories": "الفئات",
+    "articles": "{count} {count, plural, one {مقالة} other {مقالات}}",
+    "noArticles": "لا توجد مقالات في هذه الفئة حتى الآن.",
+    "readMore": "اقرأ المزيد",
+    "categoryNotFound": "الفئة غير موجودة",
+    "categoryNotFoundDescription": "لم يتم العثور على الفئة المطلوبة.",
+    "postNotFound": "المنشور غير موجود",
+    "postNotFoundDescription": "لم يتم العثور على منشور المدونة المطلوب."
   },
   "ImageUploader": {
     "titleSingle": "اسحب وأفلت صورتك",
@@ -232,7 +241,9 @@
       "selectedCount": "محدد",
       "addMore": "أضف المزيد",
       "showLess": "عرض أقل",
-      "showAll": "عرض الكل ({count} المزيد)"
+      "showAll": "عرض الكل ({count} المزيد)",
+      "dialogTitle": "الصور المحددة",
+      "dialogDescription": "إدارة {count} {count, plural, one {صورة} other {صور}} المحددة. انقر فوق زر × لإزالة أي صورة، أو أضف المزيد من الصور."
     },
     "controls": {
       "resizeMode": "وضع تغيير الحجم",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "لون الخلفية",
-        "description": "يستخدم للصور الشفافة المحولة إلى JPEG"
+        "description": "يستخدم للصور الشفافة المحولة إلى JPEG",
+        "transparent": "استخدام خلفية شفافة",
+        "transparentValue": "شفاف"
       },
       "presets": {
         "title": "إعدادات مسبقة سريعة",

@@ -193,7 +193,16 @@
     "toolsComparison": "Perbandingan Alat",
     "seoGuide": "Panduan SEO",
     "tutorial": "Tutorial",
-    "blog": "Blog"
+    "blog": "Blog",
+    "category": "Kategori",
+    "categories": "Kategori",
+    "articles": "{count} {count, plural, one {artikel} other {artikel}}",
+    "noArticles": "Belum ada artikel dalam kategori ini.",
+    "readMore": "Baca Selengkapnya",
+    "categoryNotFound": "Kategori Tidak Ditemukan",
+    "categoryNotFoundDescription": "Kategori yang diminta tidak dapat ditemukan.",
+    "postNotFound": "Postingan Tidak Ditemukan",
+    "postNotFoundDescription": "Postingan blog yang diminta tidak dapat ditemukan."
   },
   "ImageUploader": {
     "titleSingle": "Seret dan lepas gambar Anda",
@@ -232,7 +241,9 @@
       "selectedCount": "dipilih",
       "addMore": "Tambah Lagi",
       "showLess": "Tampilkan Lebih Sedikit",
-      "showAll": "Tampilkan Semua ({count} lagi)"
+      "showAll": "Tampilkan Semua ({count} lagi)",
+      "dialogTitle": "Gambar yang Dipilih",
+      "dialogDescription": "Kelola {count} {count, plural, one {gambar} other {gambar}} yang dipilih. Klik tombol × untuk menghapus gambar apa pun, atau tambahkan lebih banyak gambar."
     },
     "controls": {
       "resizeMode": "Mode Ubah Ukuran",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Warna Latar Belakang",
-        "description": "Digunakan untuk gambar transparan yang dikonversi ke JPEG"
+        "description": "Digunakan untuk gambar transparan yang dikonversi ke JPEG",
+        "transparent": "Gunakan Latar Belakang Transparan",
+        "transparentValue": "Transparan"
       },
       "presets": {
         "title": "Preset Cepat",

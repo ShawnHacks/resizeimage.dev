@@ -193,7 +193,16 @@
     "toolsComparison": "Confronto degli strumenti",
     "seoGuide": "Guida SEO",
     "tutorial": "Tutorial",
-    "blog": "Blog"
+    "blog": "Blog",
+    "category": "Categoria",
+    "categories": "Categorie",
+    "articles": "{count} {count, plural, one {articolo} other {articoli}}",
+    "noArticles": "Nessun articolo in questa categoria per ora.",
+    "readMore": "Leggi di più",
+    "categoryNotFound": "Categoria non trovata",
+    "categoryNotFoundDescription": "La categoria richiesta non è stata trovata.",
+    "postNotFound": "Post non trovato",
+    "postNotFoundDescription": "Il post del blog richiesto non è stato trovato."
   },
   "ImageUploader": {
     "titleSingle": "Trascina e rilascia la tua immagine",
@@ -229,10 +238,12 @@
     "imagePreview": {
       "selected": "immagine",
       "selectedPlural": "immagini",
-      "selectedCount": "selezionato",
+      "selectedCount": "selezionata",
       "addMore": "Aggiungi altro",
       "showLess": "Mostra meno",
-      "showAll": "Mostra tutto ({count} in più)"
+      "showAll": "Mostra tutto ({count} in più)",
+      "dialogTitle": "Immagini selezionate",
+      "dialogDescription": "Gestisci le tue {count} {count, plural, one {immagine selezionata} other {immagini selezionate}}. Fai clic sul pulsante × per rimuovere qualsiasi immagine o aggiungere altre immagini."
     },
     "controls": {
       "resizeMode": "Modalità di ridimensionamento",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Colore di sfondo",
-        "description": "Utilizzato per le immagini trasparenti convertite in JPEG"
+        "description": "Utilizzato per le immagini trasparenti convertite in JPEG",
+        "transparent": "Usa Sfondo Trasparente",
+        "transparentValue": "Trasparente"
       },
       "presets": {
         "title": "Preimpostazioni rapide",

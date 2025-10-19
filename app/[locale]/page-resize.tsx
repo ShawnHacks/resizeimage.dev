@@ -311,7 +311,7 @@ export default function ResizeImagePage() {
 
       {/* Main content */}
       <main className="container mx-auto px-4 py-8 mb-8">
-        <div className="max-w-4xl mx-auto space-y-8">
+        <div className="max-w-4xl mx-auto space-y-4">
           {/* Hero section - shown when no images */}
           {images.length === 0 && processedImages.length === 0 && (
             <HeroSection onFilesSelected={handleFilesSelected} />

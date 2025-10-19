@@ -193,7 +193,16 @@
     "toolsComparison": "Порівняння інструментів",
     "seoGuide": "Посібник з SEO",
     "tutorial": "Навчальний посібник",
-    "blog": "Блог"
+    "blog": "Блог",
+    "category": "Категорія",
+    "categories": "Категорії",
+    "articles": "{count} {count, plural, one {стаття} other {статті}}",
+    "noArticles": "У цій категорії поки немає статей.",
+    "readMore": "Читати далі",
+    "categoryNotFound": "Категорію не знайдено",
+    "categoryNotFoundDescription": "Запитувану категорію не знайдено.",
+    "postNotFound": "Публікацію не знайдено",
+    "postNotFoundDescription": "Запитувану публікацію блогу не знайдено."
   },
   "ImageUploader": {
     "titleSingle": "Перетягніть ваше зображення сюди",
@@ -232,7 +241,9 @@
       "selectedCount": "вибрано",
       "addMore": "Додати ще",
       "showLess": "Показати менше",
-      "showAll": "Показати все (ще {count})"
+      "showAll": "Показати всі (ще {count})",
+      "dialogTitle": "Вибрані зображення",
+      "dialogDescription": "Керуйте своїми {count} вибраними зображеннями. Натисніть кнопку ×, щоб видалити будь-яке зображення, або додайте більше зображень."
     },
     "controls": {
       "resizeMode": "Режим зміни розміру",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Колір фону",
-        "description": "Використовується для прозорих зображень, перетворених у JPEG"
+        "description": "Використовується для прозорих зображень, перетворених у JPEG",
+        "transparent": "Використовувати прозорий фон",
+        "transparentValue": "Прозорий"
       },
       "presets": {
         "title": "Швидкі попередні налаштування",

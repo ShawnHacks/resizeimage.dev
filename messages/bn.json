@@ -191,9 +191,18 @@
     "relatedArticles": "সম্পর্কিত নিবন্ধ",
     "continueExploring": "আরও সম্পর্কিত সামগ্রী অন্বেষণ চালিয়ে যান",
     "toolsComparison": "সরঞ্জাম তুলনা",
-    "seoGuide": "এসইও গাইড",
+    "seoGuide": "SEO গাইড",
     "tutorial": "টিউটোরিয়াল",
-    "blog": "ব্লগ"
+    "blog": "ব্লগ",
+    "category": "বিভাগ",
+    "categories": "বিভাগসমূহ",
+    "articles": "{count}টি {count, plural, one {নিবন্ধ} other {নিবন্ধ}}",
+    "noArticles": "এই বিভাগে এখনও কোনও নিবন্ধ নেই।",
+    "readMore": "আরও পড়ুন",
+    "categoryNotFound": "বিভাগ পাওয়া যায়নি",
+    "categoryNotFoundDescription": "অনুরোধকৃত বিভাগ খুঁজে পাওয়া যায়নি।",
+    "postNotFound": "পোস্ট পাওয়া যায়নি",
+    "postNotFoundDescription": "অনুরোধকৃত ব্লগ পোস্ট খুঁজে পাওয়া যায়নি।"
   },
   "ImageUploader": {
     "titleSingle": "আপনার ছবি টেনে আনুন এবং ছেড়ে দিন",
@@ -232,7 +241,9 @@
       "selectedCount": "নির্বাচিত",
       "addMore": "আরও যোগ করুন",
       "showLess": "কম দেখান",
-      "showAll": "সব দেখান ({count} আরও)"
+      "showAll": "সব দেখান ({count} আরও)",
+      "dialogTitle": "নির্বাচিত ছবি",
+      "dialogDescription": "আপনার {count}টি নির্বাচিত ছবি পরিচালনা করুন। যেকোনো ছবি সরাতে × বোতামে ক্লিক করুন, অথবা আরও ছবি যোগ করুন।"
     },
     "controls": {
       "resizeMode": "রিসাইজ মোড",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "পটভূমির রঙ",
-        "description": "JPEG তে রূপান্তরিত স্বচ্ছ চিত্রগুলির জন্য ব্যবহৃত"
+        "description": "JPEG তে রূপান্তরিত স্বচ্ছ চিত্রগুলির জন্য ব্যবহৃত",
+        "transparent": "স্বচ্ছ পটভূমি ব্যবহার করুন",
+        "transparentValue": "স্বচ্ছ"
       },
       "presets": {
         "title": "দ্রুত প্রিসেট",

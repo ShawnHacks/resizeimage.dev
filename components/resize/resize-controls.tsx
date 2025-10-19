@@ -32,6 +32,7 @@ export interface ResizeOptionsState {
   lockAspectRatio?: boolean;
   targetValue?: number;
   backgroundColor?: string;
+  useTransparentBg?: boolean;
   usePadding?: boolean; // For Image Dimensions mode
 }
 
@@ -103,7 +104,15 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
   const [lockAspectRatio, setLockAspectRatio] = useState(true);
   const [targetValue, setTargetValue] = useState<number | undefined>(undefined);
   const [backgroundColor, setBackgroundColor] = useState('#FFFFFF');
+  const [useTransparentBg, setUseTransparentBg] = useState(false);
   const [usePadding, setUsePadding] = useState(false);
+
+  // Reset transparent background when format doesn't support transparency
+  useEffect(() => {
+    if (format === 'jpeg' && useTransparentBg) {
+      setUseTransparentBg(false);
+    }
+  }, [format]);
 
   // Read from URL on mount and when URL changes
   useEffect(() => {
@@ -117,6 +126,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
     const urlLockRatio = searchParams.get('lockRatio');
     const urlTarget = searchParams.get('target');
     const urlBgColor = searchParams.get('bgColor');
+    const urlTransparent = searchParams.get('transparent');
     const urlPadding = searchParams.get('padding');
 
     if (urlMode) setMode(urlMode);
@@ -129,6 +139,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
     if (urlLockRatio !== null) setLockAspectRatio(urlLockRatio !== 'false');
     if (urlTarget) setTargetValue(Number(urlTarget));
     if (urlBgColor) setBackgroundColor(`#${urlBgColor}`);
+    if (urlTransparent !== null) setUseTransparentBg(urlTransparent === 'true');
     if (urlPadding !== null) setUsePadding(urlPadding === 'true');
 
     setIsInitialized(true);
@@ -159,6 +170,11 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
     
     // Background color (remove # prefix)
     params.set('bgColor', backgroundColor.replace('#', ''));
+    
+    // Transparent background
+    if (useTransparentBg) {
+      params.set('transparent', 'true');
+    }
 
     // Use window.history.replaceState to avoid triggering Next.js router and component re-render
     // const newUrl = `${pathname}?${params.toString()}`;
@@ -166,7 +182,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
       // window.history.replaceState(null, '', newUrl);
       router.replace(`${pathname}?${params.toString()}`, { scroll: false });
     }
-  }, [isInitialized, mode, percentage, targetFileSize, format, quality, width, height, lockAspectRatio, targetValue, backgroundColor, usePadding, pathname]);
+  }, [isInitialized, mode, percentage, targetFileSize, format, quality, width, height, lockAspectRatio, targetValue, backgroundColor, useTransparentBg, usePadding, pathname]);
 
   const handleResize = () => {
     const options: ResizeOptionsState = {
@@ -179,7 +195,8 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
       height,
       lockAspectRatio,
       targetValue,
-      backgroundColor,
+      backgroundColor: useTransparentBg ? 'transparent' : backgroundColor,
+      useTransparentBg,
       usePadding,
     };
     onResize(options);
@@ -225,6 +242,10 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
     }
     
     params.set('bgColor', backgroundColor.replace('#', ''));
+    
+    if (useTransparentBg) {
+      params.set('transparent', 'true');
+    }
     
     return `${baseUrl}?${params.toString()}`;
   };
@@ -355,19 +376,41 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="bg-color-percentage">{t('backgroundColor.label')}</Label>
-                    <div className="flex items-center gap-3">
-                      <input
-                        id="bg-color-percentage"
-                        type="color"
-                        value={backgroundColor}
-                        onChange={(e) => setBackgroundColor(e.target.value)}
-                        className="w-12 h-10 border border-input rounded cursor-pointer"
-                      />
-                      <span className="text-sm text-muted-foreground">
-                        {backgroundColor.toUpperCase()}
-                      </span>
+                  <div className="space-y-3">
+                    <Label>{t('backgroundColor.label')}</Label>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Color picker */}
+                      <div className="flex items-center gap-3">
+                        <input
+                          id="bg-color-percentage"
+                          type="color"
+                          value={backgroundColor}
+                          onChange={(e) => setBackgroundColor(e.target.value)}
+                          disabled={useTransparentBg}
+                          className="w-12 h-10 border border-input rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                        />
+                        <span className="text-sm text-muted-foreground">
+                          {useTransparentBg ? t('backgroundColor.transparentValue') : backgroundColor.toUpperCase()}
+                        </span>
+                      </div>
+
+                      {/* Transparent background option - only for PNG/WebP */}
+                      {(format === 'png' || format === 'webp') && (
+                        <div className="flex items-center space-x-2">
+                          <Checkbox
+                            id="transparent-bg-percentage"
+                            checked={useTransparentBg}
+                            onCheckedChange={(checked) => setUseTransparentBg(checked as boolean)}
+                          />
+                          <label
+                            htmlFor="transparent-bg-percentage"
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                          >
+                            {t('backgroundColor.transparent')}
+                          </label>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -426,19 +469,40 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="bg-color-filesize">{t('backgroundColor.label')}</Label>
-                    <div className="flex items-center gap-3">
-                      <input
-                        id="bg-color-filesize"
-                        type="color"
-                        value={backgroundColor}
-                        onChange={(e) => setBackgroundColor(e.target.value)}
-                        className="w-12 h-10 border border-input rounded cursor-pointer"
-                      />
-                      <span className="text-sm text-muted-foreground">
-                        {backgroundColor.toUpperCase()}
-                      </span>
+                  <div className="space-y-3">
+                    <Label>{t('backgroundColor.label')}</Label>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Color picker */}
+                      <div className="flex items-center gap-3">
+                        <input
+                          id="bg-color-filesize"
+                          type="color"
+                          value={backgroundColor}
+                          onChange={(e) => setBackgroundColor(e.target.value)}
+                          disabled={useTransparentBg}
+                          className="w-12 h-10 border border-input rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                        />
+                        <span className="text-sm text-muted-foreground">
+                          {useTransparentBg ? t('backgroundColor.transparentValue') : backgroundColor.toUpperCase()}
+                        </span>
+                      </div>
+                      {/* Transparent background option - only for PNG/WebP */}
+                      {(format === 'png' || format === 'webp') && (
+                        <div className="flex items-center space-x-2">
+                          <Checkbox
+                            id="transparent-bg-filesize"
+                            checked={useTransparentBg}
+                            onCheckedChange={(checked) => setUseTransparentBg(checked as boolean)}
+                          />
+                          <label
+                            htmlFor="transparent-bg-filesize"
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                          >
+                            {t('backgroundColor.transparent')}
+                          </label>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -522,19 +586,41 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="bg-color-dimensions">{t('backgroundColor.label')}</Label>
-                    <div className="flex items-center gap-3">
-                      <input
-                        id="bg-color-dimensions"
-                        type="color"
-                        value={backgroundColor}
-                        onChange={(e) => setBackgroundColor(e.target.value)}
-                        className="w-12 h-10 border border-input rounded cursor-pointer"
-                      />
-                      <span className="text-sm text-muted-foreground">
-                        {backgroundColor.toUpperCase()}
-                      </span>
+                  <div className="space-y-3">
+                    <Label>{t('backgroundColor.label')}</Label>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Color picker */}
+                      <div className="flex items-center gap-3">
+                        <input
+                          id="bg-color-dimensions"
+                          type="color"
+                          value={backgroundColor}
+                          onChange={(e) => setBackgroundColor(e.target.value)}
+                          disabled={useTransparentBg}
+                          className="w-12 h-10 border border-input rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                        />
+                        <span className="text-sm text-muted-foreground">
+                          {useTransparentBg ? t('backgroundColor.transparentValue') : backgroundColor.toUpperCase()}
+                        </span>
+                      </div>
+
+                      {/* Transparent background option - only for PNG/WebP */}
+                      {(format === 'png' || format === 'webp') && (
+                        <div className="flex items-center space-x-2">
+                          <Checkbox
+                            id="transparent-bg-dimensions"
+                            checked={useTransparentBg}
+                            onCheckedChange={(checked) => setUseTransparentBg(checked as boolean)}
+                          />
+                          <label
+                            htmlFor="transparent-bg-dimensions"
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                          >
+                            {t('backgroundColor.transparent')}
+                          </label>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -591,19 +677,41 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="bg-color-width">{t('backgroundColor.label')}</Label>
-                    <div className="flex items-center gap-3">
-                      <input
-                        id="bg-color-width"
-                        type="color"
-                        value={backgroundColor}
-                        onChange={(e) => setBackgroundColor(e.target.value)}
-                        className="w-12 h-10 border border-input rounded cursor-pointer"
-                      />
-                      <span className="text-sm text-muted-foreground">
-                        {backgroundColor.toUpperCase()}
-                      </span>
+                  <div className="space-y-3">
+                    <Label>{t('backgroundColor.label')}</Label>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Color picker */}
+                      <div className="flex items-center gap-3">
+                        <input
+                          id="bg-color-width"
+                          type="color"
+                          value={backgroundColor}
+                          onChange={(e) => setBackgroundColor(e.target.value)}
+                          disabled={useTransparentBg}
+                          className="w-12 h-10 border border-input rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                        />
+                        <span className="text-sm text-muted-foreground">
+                          {useTransparentBg ? t('backgroundColor.transparentValue') : backgroundColor.toUpperCase()}
+                        </span>
+                      </div>
+
+                      {/* Transparent background option - only for PNG/WebP */}
+                      {(format === 'png' || format === 'webp') && (
+                        <div className="flex items-center space-x-2">
+                          <Checkbox
+                            id="transparent-bg-width"
+                            checked={useTransparentBg}
+                            onCheckedChange={(checked) => setUseTransparentBg(checked as boolean)}
+                          />
+                          <label
+                            htmlFor="transparent-bg-width"
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                          >
+                            {t('backgroundColor.transparent')}
+                          </label>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -660,19 +768,42 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="bg-color-height">{t('backgroundColor.label')}</Label>
-                    <div className="flex items-center gap-3">
-                      <input
-                        id="bg-color-height"
-                        type="color"
-                        value={backgroundColor}
-                        onChange={(e) => setBackgroundColor(e.target.value)}
-                        className="w-12 h-10 border border-input rounded cursor-pointer"
-                      />
-                      <span className="text-sm text-muted-foreground">
-                        {backgroundColor.toUpperCase()}
-                      </span>
+                  <div className="space-y-3">
+                    <Label>{t('backgroundColor.label')}</Label>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Color picker */}
+                      <div className="flex items-center gap-3">
+                        <input
+                          id="bg-color-height"
+                          type="color"
+                          value={backgroundColor}
+                          onChange={(e) => setBackgroundColor(e.target.value)}
+                          disabled={useTransparentBg}
+                          className="w-12 h-10 border border-input rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                        />
+                        <span className="text-sm text-muted-foreground">
+                          {useTransparentBg ? t('backgroundColor.transparentValue') : backgroundColor.toUpperCase()}
+                        </span>
+                      </div>
+
+                      {/* Transparent background option - only for PNG/WebP */}
+                      {(format === 'png' || format === 'webp') && (
+                        <div className="flex items-center space-x-2">
+                          <Checkbox
+                            id="transparent-bg-height"
+                            checked={useTransparentBg}
+                            onCheckedChange={(checked) => setUseTransparentBg(checked as boolean)}
+                          />
+                          <label
+                            htmlFor="transparent-bg-height"
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                          >
+                            {t('backgroundColor.transparent')}
+                          </label>
+                        </div>
+                      )}
+                    
                     </div>
                   </div>
                 </div>
@@ -729,19 +860,43 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
                     </div>
                   </div>
 
-                  <div className="space-y-2">
-                    <Label htmlFor="bg-color-longest">{t('backgroundColor.label')}</Label>
-                    <div className="flex items-center gap-3">
-                      <input
-                        id="bg-color-longest"
-                        type="color"
-                        value={backgroundColor}
-                        onChange={(e) => setBackgroundColor(e.target.value)}
-                        className="w-12 h-10 border border-input rounded cursor-pointer"
-                      />
-                      <span className="text-sm text-muted-foreground">
-                        {backgroundColor.toUpperCase()}
-                      </span>
+                  <div className="space-y-3">
+                    <Label>{t('backgroundColor.label')}</Label>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                      {/* Color picker */}
+                      <div className="flex items-center gap-3">
+                        <input
+                          id="bg-color-longest"
+                          type="color"
+                          value={backgroundColor}
+                          onChange={(e) => setBackgroundColor(e.target.value)}
+                          disabled={useTransparentBg}
+                          className="w-12 h-10 border border-input rounded cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+                        />
+                        <span className="text-sm text-muted-foreground">
+                          {useTransparentBg ? t('backgroundColor.transparentValue') : backgroundColor.toUpperCase()}
+                        </span>
+                      </div>
+
+
+                      {/* Transparent background option - only for PNG/WebP */}
+                      {(format === 'png' || format === 'webp') && (
+                        <div className="flex items-center space-x-2">
+                          <Checkbox
+                            id="transparent-bg-longest"
+                            checked={useTransparentBg}
+                            onCheckedChange={(checked) => setUseTransparentBg(checked as boolean)}
+                          />
+                          <label
+                            htmlFor="transparent-bg-longest"
+                            className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70 cursor-pointer"
+                          >
+                            {t('backgroundColor.transparent')}
+                          </label>
+                        </div>
+                      )}
+                      
                     </div>
                   </div>
                 </div>
@@ -805,7 +960,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
               onClick={copyConfigUrl}
               variant={urlCopied ? "default" : "outline"}
               size="sm"
-              className={urlCopied ? "bg-green-600 hover:bg-green-700 border-green-600" : "border-green-600 text-green-600 hover:bg-green-600 hover:text-white"}
+              className={urlCopied ? "bg-primary hover:bg-primary/5 border-primary" : "border-primary text-primary hover:bg-primary hover:text-white"}
             >
               {urlCopied ? tConfig('copied') : tConfig('copy')}
             </Button>

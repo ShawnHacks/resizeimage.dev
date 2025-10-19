@@ -19,12 +19,13 @@ export const runtime = "edge";
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { locale, category } = await params
+  const t = await getTranslations({locale, namespace: 'BlogPost'})
   const categoryData = await getCategory(category)
   
   if (!categoryData) {
     return {
-      title: 'Category Not Found',
-      description: 'The requested category could not be found.',
+      title: t('categoryNotFound'),
+      description: t('categoryNotFoundDescription'),
     }
   }
 

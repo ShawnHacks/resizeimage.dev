@@ -198,7 +198,11 @@
     "categories": "Categories",
     "articles": "{count} {count, plural, one {article} other {articles}}",
     "noArticles": "No articles in this category yet.",
-    "readMore": "Read More"
+    "readMore": "Read More",
+    "categoryNotFound": "Category Not Found",
+    "categoryNotFoundDescription": "The requested category could not be found.",
+    "postNotFound": "Post Not Found",
+    "postNotFoundDescription": "The requested blog post could not be found."
   },
   "ImageUploader": {
     "titleSingle": "Drag and Drop Your Image",
@@ -237,7 +241,9 @@
       "selectedCount": "selected",
       "addMore": "Add More",
       "showLess": "Show Less",
-      "showAll": "Show All ({count} more)"
+      "showAll": "Show All ({count} more)",
+      "dialogTitle": "Selected Images",
+      "dialogDescription": "Manage your {count} selected {count, plural, one {image} other {images}}. Click the × button to remove any image, or add more images."
     },
     "controls": {
       "resizeMode": "Resize Mode",
@@ -289,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "Background Color",
-        "description": "Used for transparent images converted to JPEG"
+        "description": "Used for transparent images converted to JPEG",
+        "transparent": "Use Transparent Background",
+        "transparentValue": "Transparent"
       },
       "presets": {
         "title": "Quick Presets",

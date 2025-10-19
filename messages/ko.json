@@ -193,7 +193,16 @@
     "toolsComparison": "도구 비교",
     "seoGuide": "SEO 가이드",
     "tutorial": "튜토리얼",
-    "blog": "블로그"
+    "blog": "블로그",
+    "category": "카테고리",
+    "categories": "카테고리",
+    "articles": "{count}개의 글",
+    "noArticles": "이 카테고리에는 아직 글이 없습니다.",
+    "readMore": "더 읽어보기",
+    "categoryNotFound": "카테고리를 찾을 수 없음",
+    "categoryNotFoundDescription": "요청한 카테고리를 찾을 수 없습니다.",
+    "postNotFound": "게시글을 찾을 수 없음",
+    "postNotFoundDescription": "요청한 블로그 게시글을 찾을 수 없습니다."
   },
   "ImageUploader": {
     "titleSingle": "이미지를 드래그 앤 드롭하세요",
@@ -231,8 +240,10 @@
       "selectedPlural": "이미지",
       "selectedCount": "선택됨",
       "addMore": "더 추가",
-      "showLess": "간략히 보기",
-      "showAll": "모두 보기({count}개 더 보기)"
+      "showLess": "덜 보기",
+      "showAll": "모두 보기 ({count}개 더)",
+      "dialogTitle": "선택된 이미지",
+      "dialogDescription": "선택된 {count}개의 이미지를 관리하세요. × 버튼을 클릭하여 이미지를 제거하거나 더 많은 이미지를 추가할 수 있습니다."
     },
     "controls": {
       "resizeMode": "크기 조절 모드",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "배경색",
-        "description": "JPEG로 변환된 투명 이미지에 사용"
+        "description": "JPEG로 변환된 투명 이미지에 사용",
+        "transparent": "투명 배경 사용",
+        "transparentValue": "투명"
       },
       "presets": {
         "title": "빠른 사전 설정",

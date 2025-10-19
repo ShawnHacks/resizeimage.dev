@@ -4,6 +4,7 @@ import { routing } from '@/i18n/routing'
 import { BlogPostTemplate } from '@/components/blog/blog-post-template'
 import { getBlogPost, getBlogPosts, getRelatedPosts } from '@/lib/blog-static'
 import type { SimpleBlogPost } from '@/lib/blog-static'
+import { getTranslations } from 'next-intl/server'
 
 interface BlogPostPageProps {
   params: Promise<{ locale: string; slug: string[] }>
@@ -23,13 +24,14 @@ export const runtime = "edge";
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const { locale, slug } = await params
+  const t = await getTranslations({locale, namespace: 'BlogPost'})
   const slugPath = slug?.join('/') || ''
   const post = await getBlogPost(slugPath, locale)
 
   if (!post) {
     return {
-      title: 'Post Not Found',
-      description: 'The requested blog post could not be found.',
+      title: t('postNotFound'),
+      description: t('postNotFoundDescription'),
     }
   }
 

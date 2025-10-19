@@ -241,9 +241,11 @@ function resizeWithCanvas(
   ctx.imageSmoothingQuality = 'high';
 
   if (usePadding) {
-    // Fill background
-    ctx.fillStyle = backgroundColor;
-    ctx.fillRect(0, 0, targetWidth, targetHeight);
+    // Fill background (only if not transparent)
+    if (backgroundColor !== 'transparent') {
+      ctx.fillStyle = backgroundColor;
+      ctx.fillRect(0, 0, targetWidth, targetHeight);
+    }
 
     // Calculate scaled dimensions to fit inside target while maintaining aspect ratio
     const imgAspectRatio = img.width / img.height;

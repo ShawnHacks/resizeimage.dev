@@ -193,7 +193,16 @@
     "toolsComparison": "ツール比較",
     "seoGuide": "SEOガイド",
     "tutorial": "チュートリアル",
-    "blog": "ブログ"
+    "blog": "ブログ",
+    "category": "カテゴリ",
+    "categories": "カテゴリ",
+    "articles": "{count}件の記事",
+    "noArticles": "このカテゴリにはまだ記事がありません。",
+    "readMore": "続きを読む",
+    "categoryNotFound": "カテゴリが見つかりません",
+    "categoryNotFoundDescription": "リクエストされたカテゴリは見つかりませんでした。",
+    "postNotFound": "投稿が見つかりません",
+    "postNotFoundDescription": "リクエストされたブログ投稿は見つかりませんでした。"
   },
   "ImageUploader": {
     "titleSingle": "画像をドラッグ＆ドロップ",
@@ -231,8 +240,10 @@
       "selectedPlural": "画像",
       "selectedCount": "選択済み",
       "addMore": "さらに追加",
-      "showLess": "少なく表示",
-      "showAll": "すべて表示({count}件以上)"
+      "showLess": "表示を減らす",
+      "showAll": "すべて表示 ({count} 枚以上)",
+      "dialogTitle": "選択された画像",
+      "dialogDescription": "{count}枚の選択された画像を管理します。×ボタンをクリックして画像を削除するか、さらに画像を追加できます。"
     },
     "controls": {
       "resizeMode": "リサイズモード",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "背景色",
-        "description": "JPEGに変換された透明な画像に使用されます"
+        "description": "JPEGに変換された透明な画像に使用されます",
+        "transparent": "透明な背景を使用",
+        "transparentValue": "透明"
       },
       "presets": {
         "title": "クイックプリセット",

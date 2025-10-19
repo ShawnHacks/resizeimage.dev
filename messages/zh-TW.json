@@ -193,7 +193,16 @@
     "toolsComparison": "工具比較",
     "seoGuide": "SEO 指南",
     "tutorial": "教學",
-    "blog": "部落格"
+    "blog": "部落格",
+    "category": "分類",
+    "categories": "分類",
+    "articles": "{count} 篇文章",
+    "noArticles": "此分類中尚無文章。",
+    "readMore": "閱讀更多",
+    "categoryNotFound": "找不到分類",
+    "categoryNotFoundDescription": "找不到請求的分類。",
+    "postNotFound": "找不到文章",
+    "postNotFoundDescription": "找不到請求的部落格文章。"
   },
   "ImageUploader": {
     "titleSingle": "拖放您的圖片到此處",
@@ -229,10 +238,12 @@
     "imagePreview": {
       "selected": "張圖片",
       "selectedPlural": "張圖片",
-      "selectedCount": "已選取",
+      "selectedCount": "已選擇",
       "addMore": "新增更多",
-      "showLess": "顯示較少",
-      "showAll": "全部顯示（還有 {count} 張）"
+      "showLess": "顯示更少",
+      "showAll": "顯示全部 ({count} 張)",
+      "dialogTitle": "已選擇的圖片",
+      "dialogDescription": "管理您選擇的 {count} {count, plural, one {張圖片} other {張圖片}}。點擊 × 按鈕可刪除任意圖片，或新增更多圖片。"
     },
     "controls": {
       "resizeMode": "調整大小模式",
@@ -284,7 +295,9 @@
       },
       "backgroundColor": {
         "label": "背景顏色",
-        "description": "用於轉換為 JPEG 的透明圖片"
+        "description": "用於轉換為 JPEG 的透明圖片",
+        "transparent": "使用透明背景",
+        "transparentValue": "透明"
       },
       "presets": {
         "title": "快速預設集",
