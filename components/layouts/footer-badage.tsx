@@ -43,8 +43,12 @@ export default function FooterBadges() {
         <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://startupfa.me/badges/featured/dark.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
-        <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
+        {/* <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
           <img src="https://startupfa.me/badges/featured/light.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        </a> */}
+
+        <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://startupfa.me/badges/featured-badge.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
 
         <a href="https://www.producthunt.com/products/bulkresizeimage-online?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-bulkresizeimages&#0045;online" target="_blank" rel="noopener" className="hidden dark:block">
