@@ -18,6 +18,7 @@ import { toast } from 'sonner';
 import { motion } from 'motion/react';
 import { Loader2, ArrowLeft, Upload, Download, Image as ImageIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { useSearchParams } from "next/navigation"
 
 export default function ResizeImagePage() {
   const t = useTranslations('ResizeTool');
@@ -25,12 +26,21 @@ export default function ResizeImagePage() {
   const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);
   const [progress, setProgress] = useState({ current: 0, total: 0 });
-  
+  const searchParams = useSearchParams();
   // Track blob URLs for cleanup
   const blobUrlsRef = useRef<Set<string>>(new Set());
   
   // Track if we're currently loading files to prevent concurrent calls
   const isLoadingRef = useRef(false);
+
+  // Clear images and processed images when URL parameters are cleared
+  // This allow click back home 
+  useEffect(() => {
+    if (searchParams.size === 0) {
+      setImages([]);
+      setProcessedImages([]);
+    }
+  }, [searchParams]);
 
   // Cleanup all blob URLs on unmount
   useEffect(() => {
