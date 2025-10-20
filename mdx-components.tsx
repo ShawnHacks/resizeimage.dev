@@ -22,7 +22,7 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
     
     // Paragraphs
     p: ({ children }) => (
-      <p className="text-foreground leading-relaxed mb-4">
+      <p className="text-foreground leading-relaxed p+p:mt-4">
         {children}
       </p>
     ),

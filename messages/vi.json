@@ -33,87 +33,6 @@
     "description": "Không thể tìm thấy trang bạn đang tìm kiếm. Trang có thể đã bị di chuyển, xóa hoặc bạn đã nhập sai URL.",
     "backToHome": "Quay lại trang chủ"
   },
-  "AboutPage": {
-    "metaTitle": "Giới thiệu về chúng tôi - Công cụ thay đổi kích thước hình ảnh hàng loạt miễn phí trực tuyến",
-    "metaDescription": "Tìm hiểu về dịch vụ thay đổi kích thước hình ảnh hàng loạt của chúng tôi. Thay đổi kích thước, nén và tối ưu hóa hình ảnh hàng loạt với nhiều định dạng và kích thước tùy chỉnh. Miễn phí và riêng tư 100%.",
-    "metaKeywords": "công cụ thay đổi kích thước hình ảnh hàng loạt, thay đổi kích thước hình ảnh hàng loạt, công cụ tối ưu hóa hình ảnh trực tuyến, công cụ thay đổi kích thước ảnh, công cụ nén ảnh",
-    "hero": {
-      "title": "Giới thiệu về Dịch vụ thay đổi kích thước hình ảnh của chúng tôi",
-      "description": "Chúng tôi cung cấp một công cụ thay đổi kích thước hình ảnh hàng loạt chuyên nghiệp giúp các nhiếp ảnh gia, nhà thiết kế, nhà phát triển và doanh nghiệp thay đổi kích thước, nén và tối ưu hóa hình ảnh ngay lập tức. Dịch vụ của chúng tôi xử lý mọi thứ trong trình duyệt của bạn - 100% an toàn, riêng tư và miễn phí mãi mãi.",
-      "cta": "Bắt đầu thay đổi kích thước hình ảnh",
-      "learnMore": "Tìm hiểu thêm"
-    },
-    "mission": {
-      "title": "Nhiệm vụ của chúng tôi",
-      "description": "Nhiệm vụ của chúng tôi là cung cấp công cụ thay đổi kích thước hình ảnh mạnh mẽ nhất nhưng đơn giản nhất hiện có. Chúng tôi tin rằng việc thay đổi kích thước và tối ưu hóa hình ảnh phải nhanh chóng, miễn phí và có thể truy cập được cho tất cả mọi người - cho dù bạn là một nhiếp ảnh gia chuẩn bị hình ảnh cho web, một nhà thiết kế tạo hình thu nhỏ hay một chủ doanh nghiệp tối ưu hóa nội dung cho phương tiện truyền thông xã hội.",
-      "quote": "Làm cho việc thay đổi kích thước hình ảnh chuyên nghiệp trở nên đơn giản, nhanh chóng và dễ tiếp cận cho mọi người, ở mọi nơi."
-    },
-    "stats": {
-      "title": "Được người dùng trên toàn thế giới tin cậy",
-      "description": "Công cụ thay đổi kích thước hình ảnh của chúng tôi được hàng nghìn người dùng trên toàn cầu sử dụng cho các mục đích khác nhau.",
-      "users": {
-        "number": "10K+",
-        "label": "Người dùng đang hoạt động"
-      },
-      "screenshots": {
-        "number": "100K+",
-        "label": "Hình ảnh đã thay đổi kích thước"
-      },
-      "websites": {
-        "number": "50K+",
-        "label": "Hoạt động hàng loạt"
-      },
-      "uptime": {
-        "number": "99.9%",
-        "label": "Thời gian hoạt động của dịch vụ"
-      }
-    },
-    "features": {
-      "title": "Tại sao chọn Công cụ thay đổi kích thước hình ảnh của chúng tôi?",
-      "description": "Công cụ thay đổi kích thước hình ảnh hàng loạt của chúng tôi cung cấp các tính năng và khả năng nâng cao khiến nó trở thành lựa chọn tốt nhất cho các chuyên gia và doanh nghiệp.",
-      "highQuality": {
-        "title": "Nhiều chế độ thay đổi kích thước",
-        "description": "Thay đổi kích thước theo tỷ lệ phần trăm, kích thước, kích thước tệp, chiều rộng, chiều cao hoặc cạnh dài nhất. Chọn chế độ phù hợp hoàn hảo với nhu cầu của bạn."
-      },
-      "multipleFormats": {
-        "title": "Nhiều định dạng đầu ra",
-        "description": "Xuất hình ảnh của bạn ở định dạng JPEG, PNG hoặc WebP với cài đặt chất lượng có thể điều chỉnh để có kết quả tối ưu."
-      },
-      "responsive": {
-        "title": "Cài đặt sẵn thông minh",
-        "description": "Cài đặt sẵn nhanh cho Instagram, Twitter, Facebook, YouTube, v.v. Thay đổi kích thước hình ảnh cho bất kỳ nền tảng nào ngay lập tức."
-      },
-      "fast": {
-        "title": "Xử lý nhanh như chớp",
-        "description": "Xử lý hình ảnh ngay lập tức trong trình duyệt của bạn. Không cần tải lên, không cần chờ đợi - thay đổi kích thước hàng trăm hình ảnh trong vài giây."
-      },
-      "privacy": {
-        "title": "100% riêng tư và an toàn",
-        "description": "Tất cả quá trình xử lý diễn ra trong trình duyệt của bạn. Hình ảnh của bạn không bao giờ rời khỏi thiết bị của bạn - đảm bảo quyền riêng tư hoàn toàn."
-      },
-      "noLimits": {
-        "title": "Không giới hạn, không cần đăng ký",
-        "description": "Thay đổi kích thước hình ảnh không giới hạn mà không cần đăng ký, không có hình mờ hoặc phí ẩn. Hoàn toàn miễn phí mãi mãi."
-      }
-    },
-    "technology": {
-      "title": "Được xây dựng bằng công nghệ hiện đại",
-      "description": "Công cụ thay đổi kích thước hình ảnh của chúng tôi được xây dựng bằng các công nghệ web tiên tiến để đảm bảo hiệu suất nhanh như chớp và chất lượng hoàn hảo.",
-      "frontend": {
-        "title": "Giao diện người dùng hiện đại",
-        "description": "Được xây dựng bằng Next.js và React cho trải nghiệm người dùng nhanh và nhạy với kết xuất phía máy chủ để tối ưu hóa SEO."
-      },
-      "backend": {
-        "title": "Xử lý phía máy khách",
-        "description": "Được cung cấp bởi Canvas API để xử lý hình ảnh chính xác hoàn toàn trong trình duyệt của bạn, đảm bảo tốc độ và quyền riêng tư."
-      }
-    },
-    "cta": {
-      "title": "Sẵn sàng thay đổi kích thước hình ảnh của bạn?",
-      "description": "Tham gia cùng hàng nghìn người dùng tin tưởng công cụ thay đổi kích thước hình ảnh của chúng tôi cho nhu cầu tối ưu hóa ảnh của họ. Bắt đầu thay đổi kích thước hình ảnh ngay hôm nay - nhanh chóng, miễn phí và riêng tư.",
-      "button": "Bắt đầu thay đổi kích thước hình ảnh"
-    }
-  },
   "CookiePolicyPage": {
     "metaTitle": "Chính sách cookie - Cách chúng tôi sử dụng cookie",
     "metaDescription": "Tìm hiểu cách dịch vụ trang web của chúng tôi sử dụng cookie để cải thiện trải nghiệm của bạn. Hiểu các loại cookie, tùy chọn quản lý và quyền riêng tư của bạn.",
@@ -142,23 +61,6 @@
       "6": "thay đổi kích thước nhiều ảnh",
       "7": "công cụ kích thước ảnh"
     }
-  },
-  "CookieConsent": {
-    "title": "Chúng tôi sử dụng cookie",
-    "description": "Chúng tôi sử dụng cookie để cải thiện trải nghiệm của bạn và phân tích việc sử dụng trang web. Bạn có thể tùy chỉnh tùy chọn của mình hoặc chấp nhận tất cả cookie.",
-    "acceptAll": "Chấp nhận tất cả",
-    "necessary": "Chỉ cần thiết",
-    "customize": "Tùy chỉnh",
-    "preferences": "Tùy chọn cookie",
-    "necessaryTitle": "Cookie cần thiết",
-    "necessaryDesc": "Bắt buộc đối với chức năng cơ bản của trang web",
-    "analyticsTitle": "Cookie phân tích",
-    "analyticsDesc": "Giúp chúng tôi hiểu cách bạn sử dụng trang web của chúng tôi",
-    "marketingTitle": "Cookie tiếp thị",
-    "marketingDesc": "Được sử dụng cho nội dung và quảng cáo được cá nhân hóa",
-    "required": "Bắt buộc",
-    "savePreferences": "Lưu tùy chọn",
-    "cancel": "Hủy"
   },
   "BlogPage": {
     "title": "Blog",

@@ -11,7 +11,6 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 // import { getTranslations } from 'next-intl/server';
 import { getLocalizedSiteConfig } from '@/config/site-i18n'
-// import { CookieConsent } from "@/components/cookie-consent";
 
 import { GoogleAnalytics } from "@/components/analytics/google-analytics"
 import { MicrosoftClarityAnalytics } from "@/components/analytics/microsoft-clarity"
@@ -134,7 +133,6 @@ export default async function RootLayout({
           <NextIntlClientProvider>
             <PWARegister />
             <SiteLayout>{children}</SiteLayout>
-            {/* <CookieConsent /> */}
             <Toaster richColors />
           </NextIntlClientProvider>
         </Providers>

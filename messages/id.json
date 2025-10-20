@@ -33,87 +33,6 @@
     "description": "Halaman yang Anda cari tidak dapat ditemukan. Mungkin telah dipindahkan, dihapus, atau Anda salah memasukkan URL.",
     "backToHome": "Kembali ke Beranda"
   },
-  "AboutPage": {
-    "metaTitle": "Tentang Kami - Pengubah Ukuran Gambar Massal Gratis Online",
-    "metaDescription": "Pelajari tentang layanan pengubah ukuran gambar massal kami. Ubah ukuran, kompres, dan optimalkan gambar dalam batch dengan berbagai format dan dimensi khusus. 100% gratis dan pribadi.",
-    "metaKeywords": "pengubah ukuran gambar massal, ubah ukuran gambar batch, pengoptimal gambar online, pengubah ukuran foto, alat kompresi gambar",
-    "hero": {
-      "title": "Tentang Layanan Pengubah Ukuran Gambar Kami",
-      "description": "Kami menyediakan pengubah ukuran gambar massal profesional yang membantu fotografer, desainer, pengembang, dan bisnis mengubah ukuran, mengompres, dan mengoptimalkan gambar secara instan. Layanan kami memproses semuanya di browser Anda - 100% aman, pribadi, dan gratis selamanya.",
-      "cta": "Mulai Mengubah Ukuran Gambar",
-      "learnMore": "Pelajari Lebih Lanjut"
-    },
-    "mission": {
-      "title": "Misi Kami",
-      "description": "Misi kami adalah menyediakan alat pengubah ukuran gambar yang paling kuat namun sederhana yang tersedia. Kami percaya bahwa mengubah ukuran dan mengoptimalkan gambar harus cepat, gratis, dan dapat diakses oleh semua orang - baik Anda seorang fotografer yang menyiapkan gambar untuk web, seorang desainer yang membuat gambar mini, atau pemilik bisnis yang mengoptimalkan konten untuk media sosial.",
-      "quote": "Menjadikan pengubahan ukuran gambar profesional menjadi sederhana, cepat, dan dapat diakses oleh semua orang, di mana saja."
-    },
-    "stats": {
-      "title": "Dipercaya oleh Pengguna di Seluruh Dunia",
-      "description": "Pengubah ukuran gambar kami digunakan oleh ribuan pengguna di seluruh dunia untuk berbagai keperluan.",
-      "users": {
-        "number": "10K+",
-        "label": "Pengguna Aktif"
-      },
-      "screenshots": {
-        "number": "100K+",
-        "label": "Gambar yang Diubah Ukurannya"
-      },
-      "websites": {
-        "number": "50K+",
-        "label": "Operasi Batch"
-      },
-      "uptime": {
-        "number": "99.9%",
-        "label": "Waktu Aktif Layanan"
-      }
-    },
-    "features": {
-      "title": "Mengapa Memilih Pengubah Ukuran Gambar Kami?",
-      "description": "Pengubah ukuran gambar massal kami menawarkan fitur dan kemampuan canggih yang menjadikannya pilihan terbaik bagi para profesional dan bisnis.",
-      "highQuality": {
-        "title": "Beberapa Mode Pengubahan Ukuran",
-        "description": "Ubah ukuran berdasarkan persentase, dimensi, ukuran file, lebar, tinggi, atau sisi terpanjang. Pilih mode yang paling sesuai dengan kebutuhan Anda."
-      },
-      "multipleFormats": {
-        "title": "Beberapa Format Output",
-        "description": "Ekspor gambar Anda dalam format JPEG, PNG, atau WebP dengan pengaturan kualitas yang dapat disesuaikan untuk hasil yang optimal."
-      },
-      "responsive": {
-        "title": "Preset Cerdas",
-        "description": "Preset cepat untuk Instagram, Twitter, Facebook, YouTube, dan lainnya. Ubah ukuran gambar untuk platform apa pun secara instan."
-      },
-      "fast": {
-        "title": "Pemrosesan Secepat Kilat",
-        "description": "Proses gambar secara instan di browser Anda. Tanpa unggahan, tanpa menunggu - ubah ukuran ratusan gambar dalam hitungan detik."
-      },
-      "privacy": {
-        "title": "100% Pribadi & Aman",
-        "description": "Semua pemrosesan terjadi di browser Anda. Gambar Anda tidak pernah meninggalkan perangkat Anda - privasi lengkap dijamin."
-      },
-      "noLimits": {
-        "title": "Tanpa Batas, Tanpa Registrasi",
-        "description": "Ubah ukuran gambar tanpa batas tanpa pendaftaran, tanda air, atau biaya tersembunyi. Sepenuhnya gratis selamanya."
-      }
-    },
-    "technology": {
-      "title": "Dibangun dengan Teknologi Modern",
-      "description": "Pengubah ukuran gambar kami dibuat menggunakan teknologi web mutakhir untuk memastikan kinerja secepat kilat dan kualitas sempurna.",
-      "frontend": {
-        "title": "Frontend Modern",
-        "description": "Dibangun dengan Next.js dan React untuk pengalaman pengguna yang cepat dan responsif dengan rendering sisi server untuk SEO yang optimal."
-      },
-      "backend": {
-        "title": "Pemrosesan Sisi Klien",
-        "description": "Didukung oleh Canvas API for pemrosesan gambar yang akurat sepenuhnya di browser Anda, memastikan kecepatan dan privasi."
-      }
-    },
-    "cta": {
-      "title": "Siap Mengubah Ukuran Gambar Anda?",
-      "description": "Bergabunglah dengan ribuan pengguna yang mempercayai pengubah ukuran gambar kami untuk kebutuhan pengoptimalan foto mereka. Mulai ubah ukuran gambar hari ini - cepat, gratis, dan pribadi.",
-      "button": "Mulai Mengubah Ukuran Gambar"
-    }
-  },
   "CookiePolicyPage": {
     "metaTitle": "Kebijakan Cookie - Cara Kami Menggunakan Cookie",
     "metaDescription": "Pelajari bagaimana layanan situs web kami menggunakan cookie untuk meningkatkan pengalaman Anda. Pahami jenis cookie, opsi pengelolaan, dan hak privasi Anda.",
@@ -142,23 +61,6 @@
       "6": "ubah ukuran banyak gambar",
       "7": "alat dimensi gambar"
     }
-  },
-  "CookieConsent": {
-    "title": "Kami menggunakan cookie",
-    "description": "Kami menggunakan cookie untuk meningkatkan pengalaman Anda dan menganalisis penggunaan situs. Anda dapat menyesuaikan preferensi Anda atau menerima semua cookie.",
-    "acceptAll": "Terima Semua",
-    "necessary": "Hanya yang Diperlukan",
-    "customize": "Sesuaikan",
-    "preferences": "Preferensi Cookie",
-    "necessaryTitle": "Cookie yang Diperlukan",
-    "necessaryDesc": "Diperlukan untuk fungsionalitas situs dasar",
-    "analyticsTitle": "Cookie Analitik",
-    "analyticsDesc": "Bantu kami memahami cara Anda menggunakan situs kami",
-    "marketingTitle": "Cookie Pemasaran",
-    "marketingDesc": "Digunakan untuk konten dan iklan yang dipersonalisasi",
-    "required": "Wajib",
-    "savePreferences": "Simpan Preferensi",
-    "cancel": "Batal"
   },
   "BlogPage": {
     "title": "Blog",

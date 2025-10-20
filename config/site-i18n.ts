@@ -158,7 +158,8 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       },
       {
         labelKey: "Footer.SiteMap",
-        href: `/sitemap.xml`,
+        // note：must use absolute url，sitemap no locale prefix
+        href: `${baseSiteConfig.url}/sitemap.xml`,
       },
     ],
   },

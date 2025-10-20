@@ -33,87 +33,6 @@
     "description": "Die von Ihnen gesuchte Seite konnte nicht gefunden werden. Sie wurde möglicherweise verschoben, gelöscht oder Sie haben die falsche URL eingegeben.",
     "backToHome": "Zurück zur Startseite"
   },
-  "AboutPage": {
-    "metaTitle": "Über uns - Kostenloser Online-Bild-Resizer für große Mengen",
-    "metaDescription": "Erfahren Sie mehr über unseren Service zur Größenänderung von Bildern in großen Mengen. Passen Sie die Größe an, komprimieren und optimieren Sie Bilder im Stapel mit mehreren Formaten und benutzerdefinierten Abmessungen. 100% kostenlos und privat.",
-    "metaKeywords": "Massen-Bild-Resizer, Stapel-Bildgrößenänderung, Online-Bildoptimierer, Foto-Resizer, Bildkomprimierungstool",
-    "hero": {
-      "title": "Über unseren Bild-Resizer-Service",
-      "description": "Wir bieten einen professionellen Massen-Bild-Resizer, der Fotografen, Designern, Entwicklern und Unternehmen hilft, die Größe von Bildern sofort anzupassen, zu komprimieren und zu optimieren. Unser Service verarbeitet alles in Ihrem Browser - 100% sicher, privat und für immer kostenlos.",
-      "cta": "Bilder anpassen starten",
-      "learnMore": "Mehr erfahren"
-    },
-    "mission": {
-      "title": "Unsere Mission",
-      "description": "Unsere Mission ist es, das leistungsstärkste und dennoch einfachste Tool zur Größenänderung von Bildern anzubieten. Wir glauben, dass das Anpassen und Optimieren von Bildern schnell, kostenlos und für jedermann zugänglich sein sollte - egal ob Sie ein Fotograf sind, der Bilder für das Web vorbereitet, ein Designer, der Thumbnails erstellt, oder ein Geschäftsinhaber, der Inhalte für soziale Medien optimiert.",
-      "quote": "Professionelle Bildgrößenänderung einfach, schnell und für jedermann und überall zugänglich machen."
-    },
-    "stats": {
-      "title": "Weltweit von Benutzern vertraut",
-      "description": "Unser Bild-Resizer wird von Tausenden von Benutzern weltweit für verschiedene Zwecke verwendet.",
-      "users": {
-        "number": "10K+",
-        "label": "Aktive Benutzer"
-      },
-      "screenshots": {
-        "number": "100K+",
-        "label": "Angepasste Bilder"
-      },
-      "websites": {
-        "number": "50K+",
-        "label": "Stapelverarbeitungen"
-      },
-      "uptime": {
-        "number": "99.9%",
-        "label": "Service-Verfügbarkeit"
-      }
-    },
-    "features": {
-      "title": "Warum unseren Bild-Resizer wählen?",
-      "description": "Unser Massen-Bild-Resizer bietet erweiterte Funktionen und Möglichkeiten, die ihn zur besten Wahl für Profis und Unternehmen machen.",
-      "highQuality": {
-        "title": "Mehrere Anpassungsmodi",
-        "description": "Größe nach Prozentsatz, Abmessungen, Dateigröße, Breite, Höhe oder längster Seite anpassen. Wählen Sie den Modus, der Ihren Anforderungen perfekt entspricht."
-      },
-      "multipleFormats": {
-        "title": "Mehrere Ausgabeformate",
-        "description": "Exportieren Sie Ihre Bilder in den Formaten JPEG, PNG oder WebP mit einstellbaren Qualitätseinstellungen für optimale Ergebnisse."
-      },
-      "responsive": {
-        "title": "Intelligente Voreinstellungen",
-        "description": "Schnelle Voreinstellungen für Instagram, Twitter, Facebook, YouTube und mehr. Passen Sie Bilder für jede Plattform sofort an."
-      },
-      "fast": {
-        "title": "Blitzschnelle Verarbeitung",
-        "description": "Verarbeiten Sie Bilder sofort in Ihrem Browser. Keine Uploads, kein Warten - passen Sie Hunderte von Bildern in Sekunden an."
-      },
-      "privacy": {
-        "title": "100% privat & sicher",
-        "description": "Die gesamte Verarbeitung erfolgt in Ihrem Browser. Ihre Bilder verlassen Ihr Gerät nie - vollständige Privatsphäre garantiert."
-      },
-      "noLimits": {
-        "title": "Keine Limits, keine Registrierung",
-        "description": "Passen Sie unbegrenzt viele Bilder an, ohne Anmeldung, Wasserzeichen oder versteckte Gebühren. Für immer völlig kostenlos."
-      }
-    },
-    "technology": {
-      "title": "Mit moderner Technologie entwickelt",
-      "description": "Unser Bild-Resizer wurde mit modernsten Web-Technologien entwickelt, um eine blitzschnelle Leistung und perfekte Qualität zu gewährleisten.",
-      "frontend": {
-        "title": "Modernes Frontend",
-        "description": "Entwickelt mit Next.js und React für eine schnelle, reaktionsschnelle Benutzererfahrung mit serverseitigem Rendering für optimale SEO."
-      },
-      "backend": {
-        "title": "Client-seitige Verarbeitung",
-        "description": "Angetrieben von der Canvas-API für eine genaue Bildverarbeitung vollständig in Ihrem Browser, um Geschwindigkeit und Datenschutz zu gewährleisten."
-      }
-    },
-    "cta": {
-      "title": "Bereit, Ihre Bilder anzupassen?",
-      "description": "Schließen Sie sich Tausenden von Benutzern an, die unserem Bild-Resizer für ihre Fotooptimierungsanforderungen vertrauen. Beginnen Sie noch heute mit der Größenänderung von Bildern - schnell, kostenlos und privat.",
-      "button": "Bilder anpassen starten"
-    }
-  },
   "CookiePolicyPage": {
     "metaTitle": "Cookie-Richtlinie - Wie wir Cookies verwenden",
     "metaDescription": "Erfahren Sie, wie unser Website-Service Cookies verwendet, um Ihre Erfahrung zu verbessern. Verstehen Sie Cookie-Typen, Verwaltungsoptionen und Ihre Datenschutzrechte.",
@@ -142,23 +61,6 @@
       "6": "mehrere Bilder anpassen",
       "7": "Bildabmessungen-Tool"
     }
-  },
-  "CookieConsent": {
-    "title": "Wir verwenden Cookies",
-    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern und die Nutzung der Website zu analysieren. Sie können Ihre Präferenzen anpassen oder alle Cookies akzeptieren.",
-    "acceptAll": "Alle akzeptieren",
-    "necessary": "Nur notwendige",
-    "customize": "Anpassen",
-    "preferences": "Cookie-Einstellungen",
-    "necessaryTitle": "Notwendige Cookies",
-    "necessaryDesc": "Erforderlich für die grundlegende Funktionalität der Website",
-    "analyticsTitle": "Analyse-Cookies",
-    "analyticsDesc": "Helfen Sie uns zu verstehen, wie Sie unsere Website nutzen",
-    "marketingTitle": "Marketing-Cookies",
-    "marketingDesc": "Wird für personalisierte Inhalte und Anzeigen verwendet",
-    "required": "Erforderlich",
-    "savePreferences": "Einstellungen speichern",
-    "cancel": "Abbrechen"
   },
   "BlogPage": {
     "title": "Blog",

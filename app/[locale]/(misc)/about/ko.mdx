@@ -1,0 +1,155 @@
+import { Maximize2, Monitor, Smartphone, Zap, Shield, Globe, Users, Award, Image as ImageIcon } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import { Link } from '@/i18n/navigation'
+
+<Section id="hero">
+<div className="text-center py-12 px-4 bg-gradient-to-br from-purple-50 via-purple-50 to-purple-100 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20 rounded-lg mb-8">
+  <h1 className="text-3xl md:text-4xl font-heading font-bold mb-6 text-foreground">
+    이미지 리사이저 서비스 소개
+  </h1>
+  <p className="text-lg text-foreground mb-8 leading-relaxed max-w-3xl mx-auto">
+    사진작가, 디자이너, 개발자 및 기업이 즉시 이미지 크기를 조절하고 압축하고 최적화하는 데 도움이 되는 전문적인 대량 이미지 리사이저를 제공합니다. 저희 서비스는 브라우저에서 모든 것을 처리합니다 - 100% 안전하고 비공개이며 영원히 무료입니다.
+  </p>
+  <Button asChild size="lg" variant="outline" className="text-primary hover:text-primary/80 font-bold">
+    <Link href="/">
+      <ImageIcon className="h-5 w-5 mr-2" />
+      이미지 크기 조절 시작
+    </Link>
+  </Button>
+</div>
+</Section>
+
+<Section id="mission">
+## 우리의 사명
+
+우리의 사명은 가장 강력하면서도 가장 간단한 이미지 크기 조절 도구를 제공하는 것입니다. 웹용 이미지를 준비하는 사진작가, 썸네일을 만드는 디자이너, 소셜 미디어용 콘텐츠를 최적화하는 사업주 등 누구나 빠르고 무료로 이미지 크기를 조절하고 최적화할 수 있어야 한다고 믿습니다.
+
+<div className="bg-card border rounded-lg p-8 my-6 text-center">
+  <blockquote className="text-xl italic text-foreground">
+    "전문적인 이미지 크기 조절을 모든 사람이 어디서나 간단하고 빠르고 쉽게 이용할 수 있도록 합니다."
+  </blockquote>
+</div>
+</Section>
+
+<Section id="stats">
+## 전 세계 사용자가 신뢰하는
+
+저희 이미지 리사이저는 전 세계 수천 명의 사용자가 다양한 목적으로 사용하고 있습니다.
+
+<div className="grid grid-cols-2 md:grid-cols-4 gap-8 my-8">
+  <div className="text-center">
+    <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 dark:bg-primary/10 rounded-full mb-4">
+      <Users className="h-8 w-8 text-primary dark:text-primary" />
+    </div>
+    <div className="text-3xl font-heading font-bold text-foreground mb-2">10K+</div>
+    <div className="text-sm text-foreground">활성 사용자</div>
+  </div>
+  
+  <div className="text-center">
+    <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 dark:bg-primary/10 rounded-full mb-4">
+      <ImageIcon className="h-8 w-8 text-primary dark:text-primary" />
+    </div>
+    <div className="text-3xl font-heading font-bold text-foreground mb-2">100K+</div>
+    <div className="text-sm text-foreground">크기가 조절된 이미지</div>
+  </div>
+  
+  <div className="text-center">
+    <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 dark:bg-primary/10 rounded-full mb-4">
+      <Globe className="h-8 w-8 text-primary dark:text-primary" />
+    </div>
+    <div className="text-3xl font-heading font-bold text-foreground mb-2">50K+</div>
+    <div className="text-sm text-foreground">일괄 작업</div>
+  </div>
+  
+  <div className="text-center">
+    <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 dark:bg-primary/10 rounded-full mb-4">
+      <Award className="h-8 w-8 text-primary dark:text-primary" />
+    </div>
+    <div className="text-3xl font-heading font-bold text-foreground mb-2">99.9%</div>
+    <div className="text-sm text-foreground">서비스 가동 시간</div>
+  </div>
+</div>
+</Section>
+
+<Section id="features">
+## 왜 저희 이미지 리사이저를 선택해야 할까요?
+
+저희 대량 이미지 리사이저는 전문가와 기업에게 최고의 선택이 될 수 있는 고급 기능과 성능을 제공합니다.
+
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 my-8">
+  <div className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow">
+    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
+      <Maximize2 className="h-6 w-6 text-primary dark:text-primary" />
+    </div>
+    <h3 className="text-xl font-heading font-bold mb-3">다중 크기 조절 모드</h3>
+    <p className="text-foreground">백분율, 치수, 파일 크기, 너비, 높이 또는 가장 긴 변으로 크기를 조절합니다. 필요에 맞는 모드를 완벽하게 선택하세요.</p>
+  </div>
+  
+  <div className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow">
+    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
+      <Monitor className="h-6 w-6 text-primary dark:text-primary" />
+    </div>
+    <h3 className="text-xl font-heading font-bold mb-3">다중 출력 형식</h3>
+    <p className="text-foreground">최적의 결과를 위해 조정 가능한 품질 설정으로 이미지를 JPEG, PNG 또는 WebP 형식으로 내보냅니다.</p>
+  </div>
+  
+  <div className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow">
+    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
+      <Smartphone className="h-6 w-6 text-primary dark:text-primary" />
+    </div>
+    <h3 className="text-xl font-heading font-bold mb-3">스마트 사전 설정</h3>
+    <p className="text-foreground">Instagram, Twitter, Facebook, YouTube 등을 위한 빠른 사전 설정. 모든 플랫폼에 맞게 즉시 이미지 크기를 조절합니다.</p>
+  </div>
+  
+  <div className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow">
+    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
+      <Zap className="h-6 w-6 text-primary dark:text-primary" />
+    </div>
+    <h3 className="text-xl font-heading font-bold mb-3">초고속 처리</h3>
+    <p className="text-foreground">브라우저에서 즉시 이미지를 처리합니다. 업로드, 대기 없음 - 수백 개의 이미지를 몇 초 만에 크기 조절합니다.</p>
+  </div>
+  
+  <div className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow">
+    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
+      <Shield className="h-6 w-6 text-primary dark:text-primary" />
+    </div>
+    <h3 className="text-xl font-heading font-bold mb-3">100% 비공개 및 보안</h3>
+    <p className="text-foreground">모든 처리는 브라우저에서 이루어집니다. 이미지는 기기를 떠나지 않습니다 - 완벽한 개인 정보 보호가 보장됩니다.</p>
+  </div>
+  
+  <div className="bg-card border rounded-lg p-6 hover:shadow-lg transition-shadow">
+    <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 dark:bg-primary/10 rounded-lg mb-4">
+      <Globe className="h-6 w-6 text-primary dark:text-primary" />
+    </div>
+    <h3 className="text-xl font-heading font-bold mb-3">제한 없음, 가입 없음</h3>
+    <p className="text-foreground">가입, 워터마크 또는 숨겨진 수수료 없이 무제한으로 이미지 크기를 조절하세요. 영원히 완전히 무료입니다.</p>
+  </div>
+</div>
+</Section>
+
+<Section id="technology">
+## 최신 기술로 구축
+
+저희 이미지 리사이저는 최첨단 웹 기술을 사용하여 구축되어 초고속 성능과 완벽한 품질을 보장합니다.
+
+<InfoBox type="success" title="클라이언트 측 처리">
+속도와 개인 정보 보호를 보장하면서 브라우저에서 완전히 정확한 이미지 처리를 위해 Canvas API로 구동됩니다.
+</InfoBox>
+</Section>
+
+<Section id="cta">
+<div className="text-center py-16 px-4 bg-gradient-to-br from-purple-50 via-purple-50 to-purple-100 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20 text-white rounded-lg my-8">
+  <h2 className="text-3xl md:text-4xl font-heading font-bold mb-6">
+    이미지 크기를 조절할 준비가 되셨습니까?
+  </h2>
+  <div className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
+    사진 최적화 요구에 저희 이미지 리사이저를 신뢰하는 수천 명의 사용자와 함께하세요. 오늘 바로 이미지 크기 조절을 시작하세요 - 빠르고 무료이며 비공개입니다.
+  </div>
+  <Button asChild size="lg" variant="outline" className="bg-white !text-primary hover:bg-gray-100">
+    <Link href="/">
+      <ImageIcon className="h-5 w-5 mr-2" />
+      이미지 크기 조절 시작
+    </Link>
+  </Button>
+</div>
+</Section>

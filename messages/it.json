@@ -33,87 +33,6 @@
     "description": "La pagina che stai cercando non è stata trovata. Potrebbe essere stata spostata, eliminata o potresti aver inserito l'URL sbagliato.",
     "backToHome": "Torna alla homepage"
   },
-  "AboutPage": {
-    "metaTitle": "Chi siamo - Ridimensionatore di immagini in blocco gratuito online",
-    "metaDescription": "Scopri di più sul nostro servizio di ridimensionamento di immagini in blocco. Ridimensiona, comprime e ottimizza le immagini in batch con più formati e dimensioni personalizzate. 100% gratuito e privato.",
-    "metaKeywords": "ridimensionatore di immagini in blocco, ridimensionamento di immagini in batch, ottimizzatore di immagini online, ridimensionatore di foto, strumento di compressione di immagini",
-    "hero": {
-      "title": "Informazioni sul nostro servizio di ridimensionamento di immagini",
-      "description": "Forniamo un ridimensionatore di immagini in blocco professionale che aiuta fotografi, designer, sviluppatori e aziende a ridimensionare, comprimere e ottimizzare le immagini all'istante. Il nostro servizio elabora tutto nel tuo browser: 100% sicuro, privato e gratuito per sempre.",
-      "cta": "Inizia a ridimensionare le immagini",
-      "learnMore": "Saperne di più"
-    },
-    "mission": {
-      "title": "La nostra missione",
-      "description": "La nostra missione è fornire lo strumento di ridimensionamento delle immagini più potente ma semplice disponibile. Crediamo che il ridimensionamento e l'ottimizzazione delle immagini debbano essere veloci, gratuiti e accessibili a tutti, che tu sia un fotografo che prepara immagini per il web, un designer che crea miniature o un imprenditore che ottimizza i contenuti per i social media.",
-      "quote": "Rendere il ridimensionamento professionale delle immagini semplice, veloce e accessibile a tutti, ovunque."
-    },
-    "stats": {
-      "title": "Scelto da utenti di tutto il mondo",
-      "description": "Il nostro ridimensionatore di immagini è utilizzato da migliaia di utenti in tutto il mondo per vari scopi.",
-      "users": {
-        "number": "10K+",
-        "label": "Utenti attivi"
-      },
-      "screenshots": {
-        "number": "100K+",
-        "label": "Immagini ridimensionate"
-      },
-      "websites": {
-        "number": "50K+",
-        "label": "Operazioni batch"
-      },
-      "uptime": {
-        "number": "99.9%",
-        "label": "Disponibilità del servizio"
-      }
-    },
-    "features": {
-      "title": "Perché scegliere il nostro ridimensionatore di immagini?",
-      "description": "Il nostro ridimensionatore di immagini in blocco offre funzionalità e capacità avanzate che lo rendono la scelta migliore per professionisti e aziende.",
-      "highQuality": {
-        "title": "Molteplici modalità di ridimensionamento",
-        "description": "Ridimensiona per percentuale, dimensioni, dimensione del file, larghezza, altezza o lato più lungo. Scegli la modalità che si adatta perfettamente alle tue esigenze."
-      },
-      "multipleFormats": {
-        "title": "Molteplici formati di output",
-        "description": "Esporta le tue immagini nei formati JPEG, PNG o WebP con impostazioni di qualità regolabili per risultati ottimali."
-      },
-      "responsive": {
-        "title": "Preimpostazioni intelligenti",
-        "description": "Preimpostazioni rapide per Instagram, Twitter, Facebook, YouTube e altro ancora. Ridimensiona le immagini per qualsiasi piattaforma all'istante."
-      },
-      "fast": {
-        "title": "Elaborazione fulminea",
-        "description": "Elabora le immagini all'istante nel tuo browser. Nessun caricamento, nessuna attesa: ridimensiona centinaia di immagini in pochi secondi."
-      },
-      "privacy": {
-        "title": "100% privato e sicuro",
-        "description": "Tutta l'elaborazione avviene nel tuo browser. Le tue immagini non lasciano mai il tuo dispositivo: privacy completa garantita."
-      },
-      "noLimits": {
-        "title": "Nessun limite, nessuna registrazione",
-        "description": "Ridimensiona immagini illimitate senza alcuna iscrizione, filigrane o costi nascosti. Completamente gratuito per sempre."
-      }
-    },
-    "technology": {
-      "title": "Costruito con tecnologia moderna",
-      "description": "Il nostro ridimensionatore di immagini è costruito utilizzando tecnologie web all'avanguardia for garantire prestazioni fulminee e una qualità perfetta.",
-      "frontend": {
-        "title": "Frontend moderno",
-        "description": "Costruito con Next.js e React per un'esperienza utente veloce e reattiva con rendering lato server per un SEO ottimale."
-      },
-      "backend": {
-        "title": "Elaborazione lato client",
-        "description": "Basato sull'API Canvas per un'elaborazione accurata delle immagini interamente nel tuo browser, garantendo velocità e privacy."
-      }
-    },
-    "cta": {
-      "title": "Pronto a ridimensionare le tue immagini?",
-      "description": "Unisciti a migliaia di utenti che si affidano al nostro ridimensionatore di immagini per le loro esigenze di ottimizzazione delle foto. Inizia a ridimensionare le immagini oggi stesso: veloce, gratuito e privato.",
-      "button": "Inizia a ridimensionare le immagini"
-    }
-  },
   "CookiePolicyPage": {
     "metaTitle": "Informativa sui cookie - Come utilizziamo i cookie",
     "metaDescription": "Scopri come il nostro servizio di sito Web utilizza i cookie per migliorare la tua esperienza. Comprendi i tipi di cookie, le opzioni di gestione e i tuoi diritti sulla privacy.",
@@ -142,23 +61,6 @@
       "6": "ridimensiona più immagini",
       "7": "strumento per le dimensioni delle immagini"
     }
-  },
-  "CookieConsent": {
-    "title": "Utilizziamo i cookie",
-    "description": "Utilizziamo i cookie per migliorare la tua esperienza e analizzare l'utilizzo del sito. Puoi personalizzare le tue preferenze o accettare tutti i cookie.",
-    "acceptAll": "Accetta tutto",
-    "necessary": "Solo necessari",
-    "customize": "Personalizza",
-    "preferences": "Preferenze sui cookie",
-    "necessaryTitle": "Cookie necessari",
-    "necessaryDesc": "Richiesto per le funzionalità di base del sito",
-    "analyticsTitle": "Cookie di analisi",
-    "analyticsDesc": "Aiutaci a capire come utilizzi il nostro sito",
-    "marketingTitle": "Cookie di marketing",
-    "marketingDesc": "Utilizzato per contenuti e annunci personalizzati",
-    "required": "Richiesto",
-    "savePreferences": "Salva preferenze",
-    "cancel": "Annulla"
   },
   "BlogPage": {
     "title": "Blog",

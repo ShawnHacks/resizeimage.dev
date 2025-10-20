@@ -33,87 +33,6 @@
     "description": "您正在查找的页面不存在。它可能已被移动、删除，或者您输入的网址有误。",
     "backToHome": "返回首页"
   },
-  "AboutPage": {
-    "metaTitle": "关于我们 - 免费批量调整图片大小在线工具",
-    "metaDescription": "了解我们的批量图片调整服务。批量调整、压缩和优化图片，支持多种格式和自定义尺寸。100% 免费且私密。",
-    "metaKeywords": "批量图片调整, 批量调整图片大小, 在线图片优化, 照片调整工具, 图片压缩工具",
-    "hero": {
-      "title": "关于我们的图片调整服务",
-      "description": "我们提供专业的批量图片调整工具，帮助摄影师、设计师、开发者和企业即时调整、压缩和优化图片。我们的服务完全在浏览器中处理 - 100% 安全、私密且永久免费。",
-      "cta": "开始调整图片",
-      "learnMore": "了解更多"
-    },
-    "mission": {
-      "title": "我们的使命",
-      "description": "我们的使命是提供最强大而又简单的图片调整工具。我们相信，调整和优化图片应该快速、免费，并且对每个人都可用 - 无论您是为网页准备图片的摄影师、创建缩略图的设计师，还是为社交媒体优化内容的企业主。",
-      "quote": "让专业的图片调整变得简单、快速，并且对每个人、在任何地方都可用。"
-    },
-    "stats": {
-      "title": "深受全球用户信赖",
-      "description": "我们的图片调整工具被全球成千上万的用户用于各种目的。",
-      "users": {
-        "number": "1万+",
-        "label": "活跃用户"
-      },
-      "screenshots": {
-        "number": "10万+",
-        "label": "已调整图片"
-      },
-      "websites": {
-        "number": "5万+",
-        "label": "批量操作"
-      },
-      "uptime": {
-        "number": "99.9%",
-        "label": "服务正常运行时间"
-      }
-    },
-    "features": {
-      "title": "为什么选择我们的图片调整工具？",
-      "description": "我们的批量图片调整工具提供先进的功能和能力，使其成为专业人士和企业的最佳选择。",
-      "highQuality": {
-        "title": "多种调整模式",
-        "description": "按百分比、尺寸、文件大小、宽度、高度或最长边调整。选择完美适合您需求的模式。"
-      },
-      "multipleFormats": {
-        "title": "多种输出格式",
-        "description": "将图片导出为 JPEG、PNG 或 WebP 格式，可调节质量设置以获得最佳效果。"
-      },
-      "responsive": {
-        "title": "智能预设",
-        "description": "为 Instagram、Twitter、Facebook、YouTube 等平台提供快速预设。即时调整任何平台的图片。"
-      },
-      "fast": {
-        "title": "闪电般快速处理",
-        "description": "在浏览器中即时处理图片。无需上传，无需等待 - 几秒钟内调整数百张图片。"
-      },
-      "privacy": {
-        "title": "100% 私密且安全",
-        "description": "所有处理都在您的浏览器中进行。您的图片永远不会离开您的设备 - 完全保证隐私。"
-      },
-      "noLimits": {
-        "title": "无限制，无需注册",
-        "description": "无限调整图片，无需注册、无水印、无隐藏费用。永久完全免费。"
-      }
-    },
-    "technology": {
-      "title": "采用现代技术构建",
-      "description": "我们的图片调整工具使用最先进的网络技术构建，确保极快的性能和完美的质量。",
-      "frontend": {
-        "title": "现代前端",
-        "description": "使用 Next.js 和 React 构建，具有服务器端渲染功能，提供快速、响应式的用户体验，以获得最佳 SEO。"
-      },
-      "backend": {
-        "title": "客户端处理",
-        "description": "由 Canvas API 驱动，完全在浏览器中进行准确的图片处理，确保速度和隐私。"
-      }
-    },
-    "cta": {
-      "title": "准备好调整您的图片了吗？",
-      "description": "加入信任我们图片调整工具来满足其照片优化需求的数千名用户。立即开始调整图片 - 快速、免费且私密。",
-      "button": "开始调整图片"
-    }
-  },
   "CookiePolicyPage": {
     "metaTitle": "Cookie 政策 - 我们如何使用 Cookie",
     "metaDescription": "了解我们的网站截图服务如何使用Cookie来改善您的体验。了解Cookie类型、管理选项和您的隐私权。",
@@ -142,23 +61,6 @@
       "6": "批量调整多张图片",
       "7": "图片尺寸工具"
     }
-  },
-  "CookieConsent": {
-    "title": "我们使用 Cookie",
-    "description": "我们使用Cookie来改善您的体验并分析网站使用情况。您可以自定义您的偏好或接受所有Cookie。",
-    "acceptAll": "全部接受",
-    "necessary": "仅限必要",
-    "customize": "自定义",
-    "preferences": "Cookie 偏好设置",
-    "necessaryTitle": "必要 Cookie",
-    "necessaryDesc": "网站基本功能所需",
-    "analyticsTitle": "分析 Cookie",
-    "analyticsDesc": "帮助我们了解您如何使用我们的网站",
-    "marketingTitle": "营销 Cookie",
-    "marketingDesc": "用于个性化内容和广告",
-    "required": "必需",
-    "savePreferences": "保存偏好",
-    "cancel": "取消"
   },
   "BlogPage": {
     "title": "博客",

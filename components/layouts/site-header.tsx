@@ -134,7 +134,7 @@ export function SiteHeader({
         {/* <div className="flex gap-6 md:gap-10"> */}
           {/* Logo */}
         <div className="flex items-center space-x-1">
-          <Image src={logo} width={32} height={32} alt={siteConfig.name} />
+          <Image src={logo} width={32} height={32} alt={siteConfig.title} />
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold tracking-tighter">
               {siteConfig.name}

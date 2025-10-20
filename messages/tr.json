@@ -33,87 +33,6 @@
     "description": "Aradığınız sayfa bulunamadı. Taşınmış, silinmiş veya yanlış URL girmiş olabilirsiniz.",
     "backToHome": "Ana Sayfaya Dön"
   },
-  "AboutPage": {
-    "metaTitle": "Hakkımızda - Ücretsiz Toplu Görüntü Yeniden Boyutlandırıcı Çevrimiçi",
-    "metaDescription": "Toplu görüntü yeniden boyutlandırma hizmetimiz hakkında bilgi edinin. Görüntüleri toplu olarak birden çok format ve özel boyutlarla yeniden boyutlandırın, sıkıştırın ve optimize edin. %100 ücretsiz ve özel.",
-    "metaKeywords": "toplu görüntü yeniden boyutlandırıcı, toplu görüntü yeniden boyutlandırma, çevrimiçi görüntü iyileştirici, fotoğraf yeniden boyutlandırıcı, görüntü sıkıştırma aracı",
-    "hero": {
-      "title": "Görüntü Yeniden Boyutlandırma Hizmetimiz Hakkında",
-      "description": "Fotoğrafçıların, tasarımcıların, geliştiricilerin ve işletmelerin görüntüleri anında yeniden boyutlandırmasına, sıkıştırmasına ve optimize etmesine yardımcı olan profesyonel bir toplu görüntü yeniden boyutlandırıcı sağlıyoruz. Hizmetimiz her şeyi tarayıcınızda işler - %100 güvenli, özel ve sonsuza kadar ücretsiz.",
-      "cta": "Görüntüleri Yeniden Boyutlandırmaya Başlayın",
-      "learnMore": "Daha Fazla Bilgi Edinin"
-    },
-    "mission": {
-      "title": "Misyonumuz",
-      "description": "Misyonumuz, mevcut en güçlü ancak en basit görüntü yeniden boyutlandırma aracını sağlamaktır. Görüntüleri yeniden boyutlandırmanın ve optimize etmenin hızlı, ücretsiz ve herkes için erişilebilir olması gerektiğine inanıyoruz - ister web için görüntü hazırlayan bir fotoğrafçı, ister küçük resimler oluşturan bir tasarımcı, ister sosyal medya için içeriği optimize eden bir işletme sahibi olun.",
-      "quote": "Profesyonel görüntü yeniden boyutlandırmayı herkes için, her yerde basit, hızlı ve erişilebilir hale getirmek."
-    },
-    "stats": {
-      "title": "Dünya Çapındaki Kullanıcılar Tarafından Güvenilen",
-      "description": "Görüntü yeniden boyutlandırıcımız, dünya çapında binlerce kullanıcı tarafından çeşitli amaçlarla kullanılmaktadır.",
-      "users": {
-        "number": "10K+",
-        "label": "Aktif Kullanıcılar"
-      },
-      "screenshots": {
-        "number": "100K+",
-        "label": "Yeniden Boyutlandırılmış Görüntüler"
-      },
-      "websites": {
-        "number": "50K+",
-        "label": "Toplu İşlemler"
-      },
-      "uptime": {
-        "number": "99.9%",
-        "label": "Hizmet Çalışma Süresi"
-      }
-    },
-    "features": {
-      "title": "Neden Görüntü Yeniden Boyutlandırıcımızı Seçmelisiniz?",
-      "description": "Toplu görüntü yeniden boyutlandırıcımız, profesyoneller ve işletmeler için en iyi seçim olmasını sağlayan gelişmiş özellikler ve yetenekler sunar.",
-      "highQuality": {
-        "title": "Çoklu Yeniden Boyutlandırma Modları",
-        "description": "Yüzde, boyutlar, dosya boyutu, genişlik, yükseklik veya en uzun kenara göre yeniden boyutlandırın. İhtiyaçlarınıza en uygun modu seçin."
-      },
-      "multipleFormats": {
-        "title": "Çoklu Çıktı Formatları",
-        "description": "Optimum sonuçlar için ayarlanabilir kalite ayarlarıyla görüntülerinizi JPEG, PNG veya WebP formatlarında dışa aktarın."
-      },
-      "responsive": {
-        "title": "Akıllı Ön Ayarlar",
-        "description": "Instagram, Twitter, Facebook, YouTube ve daha fazlası için hızlı ön ayarlar. Herhangi bir platform için görüntüleri anında yeniden boyutlandırın."
-      },
-      "fast": {
-        "title": "Yıldırım Hızında İşleme",
-        "description": "Görüntüleri tarayıcınızda anında işleyin. Yükleme yok, bekleme yok - saniyeler içinde yüzlerce görüntüyü yeniden boyutlandırın."
-      },
-      "privacy": {
-        "title": "%100 Özel ve Güvenli",
-        "description": "Tüm işlemler tarayıcınızda gerçekleşir. Görüntüleriniz asla cihazınızdan ayrılmaz - tam gizlilik garantilidir."
-      },
-      "noLimits": {
-        "title": "Sınır Yok, Kayıt Yok",
-        "description": "Herhangi bir kayıt, filigran veya gizli ücret olmadan sınırsız görüntüyü yeniden boyutlandırın. Sonsuza kadar tamamen ücretsiz."
-      }
-    },
-    "technology": {
-      "title": "Modern Teknoloji ile Üretildi",
-      "description": "Görüntü yeniden boyutlandırıcımız, ışık hızında performans ve mükemmel kalite sağlamak için en son web teknolojileri kullanılarak oluşturulmuştur.",
-      "frontend": {
-        "title": "Modern Ön Uç",
-        "description": "Optimum SEO için sunucu tarafı oluşturma ile hızlı, duyarlı bir kullanıcı deneyimi için Next.js ve React ile oluşturulmuştur."
-      },
-      "backend": {
-        "title": "İstemci Tarafı İşleme",
-        "description": "Hız ve gizlilik sağlayarak tarayıcınızda tamamen doğru görüntü işleme için Canvas API tarafından desteklenmektedir."
-      }
-    },
-    "cta": {
-      "title": "Görüntülerinizi Yeniden Boyutlandırmaya Hazır mısınız?",
-      "description": "Fotoğraf optimizasyon ihtiyaçları için görüntü yeniden boyutlandırıcımıza güvenen binlerce kullanıcıya katılın. Görüntüleri bugün yeniden boyutlandırmaya başlayın - hızlı, ücretsiz ve özel.",
-      "button": "Görüntüleri Yeniden Boyutlandırmaya Başlayın"
-    }
-  },
   "CookiePolicyPage": {
     "metaTitle": "Çerez Politikası - Çerezleri Nasıl Kullanıyoruz",
     "metaDescription": "Web sitemizin deneyiminizi iyileştirmek için çerezleri nasıl kullandığını öğrenin. Çerez türlerini, yönetim seçeneklerini ve gizlilik haklarınızı anlayın.",
@@ -142,23 +61,6 @@
       "6": "birden çok resmi yeniden boyutlandırın",
       "7": "resim boyutları aracı"
     }
-  },
-  "CookieConsent": {
-    "title": "Çerez kullanıyoruz",
-    "description": "Deneyiminizi geliştirmek ve site kullanımını analiz etmek için çerez kullanıyoruz. Tercihlerinizi özelleştirebilir veya tüm çerezleri kabul edebilirsiniz.",
-    "acceptAll": "Tümünü Kabul Et",
-    "necessary": "Yalnızca Gerekli",
-    "customize": "Özelleştir",
-    "preferences": "Çerez Tercihleri",
-    "necessaryTitle": "Gerekli Çerezler",
-    "necessaryDesc": "Temel site işlevselliği için gerekli",
-    "analyticsTitle": "Analitik Çerezleri",
-    "analyticsDesc": "Sitemizi nasıl kullandığınızı anlamamıza yardımcı olun",
-    "marketingTitle": "Pazarlama Çerezleri",
-    "marketingDesc": "Kişiselleştirilmiş içerik ve reklamlar için kullanılır",
-    "required": "Gerekli",
-    "savePreferences": "Tercihleri Kaydet",
-    "cancel": "İptal"
   },
   "BlogPage": {
     "title": "Blog",

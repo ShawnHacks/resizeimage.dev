@@ -20,7 +20,7 @@ import { Loader2, ArrowLeft, Upload, Download, Image as ImageIcon } from 'lucide
 import { Button } from '@/components/ui/button';
 import { useSearchParams } from "next/navigation"
 
-export default function ResizeImagePage() {
+export default function ResizeImageClient() {
   const t = useTranslations('ResizeTool');
   const [images, setImages] = useState<ImageFile[]>([]);
   const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);

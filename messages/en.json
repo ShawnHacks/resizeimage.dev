@@ -33,87 +33,6 @@
     "description": "The page you are looking for could not be found. It might have been moved, deleted, or you entered the wrong URL.",
     "backToHome": "Back to Homepage"
   },
-  "AboutPage": {
-    "metaTitle": "About Us - Free Bulk Image Resizer Online",
-    "metaDescription": "Learn about our bulk image resizer service. Resize, compress, and optimize images in batch with multiple formats and custom dimensions. 100% free and private.",
-    "metaKeywords": "bulk image resizer, batch image resize, online image optimizer, photo resizer, image compression tool",
-    "hero": {
-      "title": "About Our Image Resizer Service",
-      "description": "We provide a professional bulk image resizer that helps photographers, designers, developers, and businesses resize, compress, and optimize images instantly. Our service processes everything in your browser - 100% secure, private, and free forever.",
-      "cta": "Start Resizing Images",
-      "learnMore": "Learn More"
-    },
-    "mission": {
-      "title": "Our Mission",
-      "description": "Our mission is to provide the most powerful yet simple image resizing tool available. We believe that resizing and optimizing images should be fast, free, and accessible to everyone - whether you're a photographer preparing images for web, a designer creating thumbnails, or a business owner optimizing content for social media.",
-      "quote": "Making professional image resizing simple, fast, and accessible for everyone, everywhere."
-    },
-    "stats": {
-      "title": "Trusted by Users Worldwide",
-      "description": "Our image resizer is used by thousands of users globally for various purposes.",
-      "users": {
-        "number": "10K+",
-        "label": "Active Users"
-      },
-      "screenshots": {
-        "number": "100K+",
-        "label": "Images Resized"
-      },
-      "websites": {
-        "number": "50K+",
-        "label": "Batch Operations"
-      },
-      "uptime": {
-        "number": "99.9%",
-        "label": "Service Uptime"
-      }
-    },
-    "features": {
-      "title": "Why Choose Our Image Resizer?",
-      "description": "Our bulk image resizer offers advanced features and capabilities that make it the best choice for professionals and businesses.",
-      "highQuality": {
-        "title": "Multiple Resize Modes",
-        "description": "Resize by percentage, dimensions, file size, width, height, or longest side. Choose the mode that fits your needs perfectly."
-      },
-      "multipleFormats": {
-        "title": "Multiple Output Formats",
-        "description": "Export your images in JPEG, PNG, or WebP formats with adjustable quality settings for optimal results."
-      },
-      "responsive": {
-        "title": "Smart Presets",
-        "description": "Quick presets for Instagram, Twitter, Facebook, YouTube, and more. Resize images for any platform instantly."
-      },
-      "fast": {
-        "title": "Lightning Fast Processing",
-        "description": "Process images instantly in your browser. No uploads, no waiting - resize hundreds of images in seconds."
-      },
-      "privacy": {
-        "title": "100% Private & Secure",
-        "description": "All processing happens in your browser. Your images never leave your device - complete privacy guaranteed."
-      },
-      "noLimits": {
-        "title": "No Limits, No Registration",
-        "description": "Resize unlimited images without any sign-up, watermarks, or hidden fees. Completely free forever."
-      }
-    },
-    "technology": {
-      "title": "Built with Modern Technology",
-      "description": "Our image resizer is built using cutting-edge web technologies to ensure blazing-fast performance and perfect quality.",
-      "frontend": {
-        "title": "Modern Frontend",
-        "description": "Built with Next.js and React for a fast, responsive user experience with server-side rendering for optimal SEO."
-      },
-      "backend": {
-        "title": "Client-Side Processing",
-        "description": "Powered by Canvas API for accurate image processing entirely in your browser, ensuring speed and privacy."
-      }
-    },
-    "cta": {
-      "title": "Ready to Resize Your Images?",
-      "description": "Join thousands of users who trust our image resizer for their photo optimization needs. Start resizing images today - fast, free, and private.",
-      "button": "Start Resizing Images"
-    }
-  },
   "CookiePolicyPage": {
     "metaTitle": "Cookie Policy - How We Use Cookies",
     "metaDescription": "Learn about how our website service uses cookies to improve your experience. Understand cookie types, management options, and your privacy rights.",
@@ -142,23 +61,6 @@
       "6": "resize multiple images",
       "7": "image dimensions tool"
     }
-  },
-  "CookieConsent": {
-    "title": "We use cookies",
-    "description": "We use cookies to improve your experience and analyze site usage. You can customize your preferences or accept all cookies.",
-    "acceptAll": "Accept All",
-    "necessary": "Necessary Only",
-    "customize": "Customize",
-    "preferences": "Cookie Preferences",
-    "necessaryTitle": "Necessary Cookies",
-    "necessaryDesc": "Required for basic site functionality",
-    "analyticsTitle": "Analytics Cookies",
-    "analyticsDesc": "Help us understand how you use our site",
-    "marketingTitle": "Marketing Cookies",
-    "marketingDesc": "Used for personalized content and ads",
-    "required": "Required",
-    "savePreferences": "Save Preferences",
-    "cancel": "Cancel"
   },
   "BlogPage": {
     "title": "Blog",
