@@ -1,6 +1,6 @@
 {
-  "name": "BulkresizeImages - Resize Images Online",
-  "short_name": "BulkresizeImages",
+  "name": "BulkResizeImages - Resize Images Online",
+  "short_name": "BulkResizeImages",
   "description": "Resize images instantly in your browser. 100% private, no upload required.",
   "start_url": "/",
   "display": "standalone",
@@ -24,8 +24,8 @@
   "categories": ["image", "photo", "productivity", "utilities"],
   "shortcuts": [
     {
-      "name": "BulkresizeImages",
-      "short_name": "BulkresizeImages",
+      "name": "BulkResizeImages",
+      "short_name": "BulkResizeImages",
       "description": "Start resizing images",
       "url": "/",
       "icons": [
