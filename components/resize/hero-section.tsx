@@ -3,7 +3,7 @@
 import { Zap, Infinity, ThumbsUp, Shield, CheckCircle, Upload } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
-import { ImageUploader } from './image-uploader';
+import { ImageUploader } from '@/components/image-uploader';
 
 interface HeroSectionProps {
   onFilesSelected: (files: File[]) => void;
