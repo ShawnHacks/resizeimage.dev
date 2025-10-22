@@ -25,8 +25,8 @@
     "Terms of Service": "服務條款"
   },
   "HomePage": {
-    "title": "線上大量調整圖片大小",
-    "subtitle": "無限制的免費圖片大小調整工具，可用於單一或批次處理。在您的瀏覽器中即時調整、壓縮和最佳化圖片。無需註冊，無需上傳 - 100% 安全和私密。"
+    "title": "免費線上圖片尺寸調整器 - 立即調整圖像與照片",
+    "subtitle": "專業級免費圖片調整工具，支援單張或批次處理。在瀏覽器中即時調整尺寸、壓縮照片並優化圖片，全程免註冊、免上傳，100% 安全私密。"
   },
   "NotFoundPage": {
     "title": "找不到頁面",
@@ -49,18 +49,20 @@
     "metaKeywords": "條款與條件、服務協議、使用條款、網站工具、使用者協議"
   },
   "SiteConfig": {
-    "title": "線上大量調整圖片大小 - 即時調整圖片大小",
-    "description": "無限制的免費圖片大小調整工具，可用於單一或批次處理。在您的瀏覽器中即時調整、壓縮和最佳化圖片。無需註冊，無需上傳 - 100% 安全和私密。",
+    "title": "圖片尺寸調整器 - 免費線上照片調整 | resizeimage.dev",
+    "description": "最好用的免費線上圖片尺寸調整工具。在瀏覽器內即時調整圖片尺寸，完全不用上傳。",
     "keywords": {
-      "0": "線上大量圖片大小調整工具",
-      "1": "免費批次圖片大小調整",
-      "2": "線上調整圖片大小",
-      "3": "免費壓縮圖片",
-      "4": "圖片最佳化工具",
-      "5": "相片大小調整工具",
-      "6": "調整多張圖片大小",
-      "7": "圖片尺寸工具"
-    }
+      "0": "圖片尺寸調整器",
+      "1": "免費圖片尺寸調整",
+      "2": "照片尺寸調整",
+      "3": "調整圖片尺寸",
+      "4": "線上調整圖片尺寸",
+      "5": "免費圖片調整工具",
+      "6": "線上圖片調整器",
+      "7": "免費照片調整器",
+      "8": "調整照片尺寸"
+    },
+    "InstallApp": "安裝應用"
   },
   "BlogPage": {
     "title": "部落格",
@@ -135,7 +137,8 @@
       "noSignup": "無需註冊",
       "secure": "安全與私密",
       "unlimited": "處理無限數量的圖片",
-      "browser": "在您的瀏覽器中運作"
+      "browser": "在您的瀏覽器中運作",
+      "singleImageCta": "TODO: translate :: ResizeTool.features.singleImageCta"
     },
     "imagePreview": {
       "selected": "張圖片",
@@ -346,51 +349,126 @@
     }
   },
   "SingleResize": {
+    "badge": "線上調整圖片尺寸",
+    "pageTitle": "免費線上圖片尺寸調整器",
+    "pageDescription": "在瀏覽器中直接調整圖片尺寸。選擇預設尺寸或自訂裁剪，無需上傳即可下載 JPG、PNG 或 WebP。",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "免費圖片調整器 — 線上即時調整照片尺寸",
+      "description": "在瀏覽器中直接調整圖片尺寸。選擇預設尺寸或自訂裁剪，無需上傳即可下載 JPG、PNG 或 WebP。"
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "重設選取區域",
+      "aspectRatio": "長寬比例",
+      "selectAspect": "選擇平台預設",
+      "customOption": "自訂",
+      "customCardTitle": "自訂尺寸",
+      "customCardDescription": "拖曳控制點或輸入精確尺寸。",
+      "lockAspect": "鎖定比例",
+      "lockAspectHint": "調整時保持寬高連動。",
+      "customWidth": "寬度",
+      "customHeight": "高度",
+      "units": "單位"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "縮放"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "圖片：{width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "輸出格式",
+      "originalSize": "原始大小：{size}",
+      "newSize": "新大小：{size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "下載",
+      "reset": "重設",
+      "changeImage": "更換圖片",
+      "back": "重新選擇圖片",
+      "bulkTool": "切換到批次調整"
+    },
+    "features": {
+      "title": "專業級免費線上圖片調整器",
+      "description": "免上傳即可線上調整圖片與照片，是你最強大的圖片調整工具。",
+      "lightningFast": "超快速",
+      "free": "永久免費圖片調整",
+      "noSignup": "免註冊",
+      "secure": "完全安全私密",
+      "unlimited": "不限次數使用",
+      "browser": "純瀏覽器運作"
+    },
+    "howTo": {
+      "title": "如何線上調整圖片尺寸",
+      "subtitle": "3 個步驟完成免費圖片調整",
+      "step1": {
+        "number": "1",
+        "title": "選擇圖片",
+        "description": "將 JPG、PNG 或 WebP 照片匯入我們的免費圖片調整工具。"
+      },
+      "step2": {
+        "number": "2",
+        "title": "調整尺寸",
+        "description": "選用社群平台預設或自訂寬高。"
+      },
+      "step3": {
+        "number": "3",
+        "title": "立即下載",
+        "description": "立刻下載調整後的圖片。"
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "免費線上圖片調整器 - 無需上傳",
+        "description": [
+          "功能最完整的免費圖片尺寸調整工具，幾秒鐘就能調整照片。",
+          "完全在瀏覽器端處理，免上傳、免帳號，資料都留在你的裝置，隱私無虞。"
+        ]
+      },
+      "feature2": {
+        "title": "精準調整到指定寬高",
+        "description": [
+          "專業圖片調整器，可精準設定寬度與高度，適用於社群貼文、網站圖片、電子郵件附件與印刷素材。",
+          "提供多種長寬比與平台預設，讓你線上精準調整圖片尺寸。"
+        ]
+      },
+      "feature3": {
+        "title": "可視化裁切編輯器，支援縮放與格式選擇",
+        "description": [
+          "專業裁切介面，拖曳控制點即可調整區域，搭配縮放即可像素級微調並即時預覽。",
+          "支援輸出 JPG、PNG、WebP，多種格式任你挑選，完全掌控最終圖片。"
+        ]
+      }
+    },
+    "faq": {
+      "title": "圖片調整常見問題",
+      "subtitle": "關於我們的免費線上圖片調整工具常見疑問",
+      "items": [
+        {
+          "question": "這個圖片調整器永久免費嗎？",
+          "answer": "是的！我們的圖片調整器永久免費且無任何限制。不限次調整、無浮水印、免註冊，也沒有隱藏費用。"
+        },
+        {
+          "question": "如何使用這個線上圖片調整工具？",
+          "answer": "操作相當簡單：① 選擇圖片；② 選擇社群平台預設或自訂尺寸；③ 立即下載。所有處理都在瀏覽器本地完成。"
+        },
+        {
+          "question": "支援哪些圖片格式？",
+          "answer": "工具支援常見格式：JPG、JPEG、PNG、WebP。你可以在調整尺寸的同時進行格式轉換。"
+        },
+        {
+          "question": "這個線上圖片調整器安全嗎？",
+          "answer": "完全安全！所有處理都在瀏覽器端進行，圖片不會上傳到任何伺服器。你甚至可以在離線狀態下使用。"
+        },
+        {
+          "question": "能否調整到指定寬高？",
+          "answer": "當然可以！你可以精準設定寬高、保持比例，也能使用社群平台預設（Instagram、Facebook、Twitter、YouTube、LinkedIn、Pinterest 等）或可視化裁切。拖曳控制點、縮放微調並即時預覽，全部都由你掌控。"
+        },
+        {
+          "question": "為什麼這是最好用的線上圖片調整工具？",
+          "answer": "我們的優勢：永久免費、純瀏覽器處理、不限次使用、支援常見格式、社群平台預設齊全、精準尺寸控制並重視隱私，是最完整的圖片調整方案。"
+        }
+      ]
     }
   }
 }

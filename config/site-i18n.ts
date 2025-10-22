@@ -52,6 +52,7 @@ export async function getLocalizedSiteConfig(locale: string): Promise<SiteConfig
     title: t('title'),
     description: t('description'),
     keywords: keywordsArray,
+    installApp: t('InstallApp'),
   }
 }
 

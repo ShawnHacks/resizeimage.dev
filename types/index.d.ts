@@ -15,7 +15,8 @@ export type SiteConfig = {
   mailSupport: string
   links: {
     twitter: string
-  }
+  },
+  installApp?: string
 }
 
 export type BaseNavItem = {

@@ -25,8 +25,8 @@
     "Terms of Service": "服务条款"
   },
   "HomePage": {
-    "title": "批量调整图片大小在线工具",
-    "subtitle": "无限免费的图片调整工具，支持单张或批量处理。在浏览器中瞬间调整、压缩和优化图片。无需注册，无需上传 - 100% 安全私密。"
+    "title": "免费在线图片尺寸调整器 - 即刻调整图像与照片",
+    "subtitle": "专业级免费图片调整工具，支持单张或批量处理。在浏览器中即时调整尺寸、压缩照片并优化图片，全程无需注册、无需上传，100% 安全私密。"
   },
   "NotFoundPage": {
     "title": "页面未找到",
@@ -49,18 +49,20 @@
     "metaKeywords": "条款和条件, 服务协议, 使用条款, 网站截图工具, 用户协议"
   },
   "SiteConfig": {
-    "title": "批量调整图片大小在线工具 - 瞬间调整图片大小",
-    "description": "无限免费的图片调整工具，支持单张或批量处理。在浏览器中瞬间调整、压缩和优化图片。无需注册，无需上传 - 100% 安全私密。",
+    "title": "图片尺寸调整器 - 免费在线照片调整",
+    "description": "最好用的免费在线图片尺寸调整工具。在浏览器里即时调整图片尺寸，无需上传。",
     "keywords": {
-      "0": "批量图片调整大小在线",
-      "1": "免费批量调整图片",
-      "2": "在线调整图片大小",
-      "3": "免费压缩图片",
-      "4": "图片优化工具",
-      "5": "照片调整大小",
-      "6": "批量调整多张图片",
-      "7": "图片尺寸工具"
-    }
+      "0": "图片尺寸调整器",
+      "1": "免费图片尺寸调整",
+      "2": "照片尺寸调整",
+      "3": "调整图片尺寸",
+      "4": "在线调整图片尺寸",
+      "5": "免费图片调整工具",
+      "6": "在线图片调整器",
+      "7": "免费照片调整器",
+      "8": "调整照片尺寸"
+    },
+    "InstallApp": "安装应用"
   },
   "BlogPage": {
     "title": "博客",
@@ -135,7 +137,8 @@
       "noSignup": "无需注册",
       "secure": "安全与隐私",
       "unlimited": "处理无限数量的图片",
-      "browser": "在您的浏览器中运行"
+      "browser": "在您的浏览器中运行",
+      "singleImageCta": "TODO: translate :: ResizeTool.features.singleImageCta"
     },
     "imagePreview": {
       "selected": "张图片",
@@ -346,51 +349,126 @@
     }
   },
   "SingleResize": {
+    "badge": "在线调整图片尺寸",
+    "pageTitle": "免费在线图片尺寸调整器",
+    "pageDescription": "在浏览器中直接调整图片尺寸。选择预设尺寸或自定义裁剪，无需上传即可下载 JPG、PNG 或 WebP。",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "免费图片调整器 — 在线即时调整照片尺寸",
+      "description": "在浏览器中直接调整图片尺寸。选择预设尺寸或自定义裁剪，无需上传即可下载 JPG、PNG 或 WebP。"
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "重置选择区域",
+      "aspectRatio": "长宽比例",
+      "selectAspect": "选择平台预设",
+      "customOption": "自定义",
+      "customCardTitle": "自定义尺寸",
+      "customCardDescription": "拖动控制点或输入精确尺寸。",
+      "lockAspect": "锁定比例",
+      "lockAspectHint": "调整时保持宽高联动。",
+      "customWidth": "宽度",
+      "customHeight": "高度",
+      "units": "单位"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "缩放"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "图片：{width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "输出格式",
+      "originalSize": "原始大小：{size}",
+      "newSize": "新大小：{size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "下载",
+      "reset": "重置",
+      "changeImage": "更换图片",
+      "back": "重新选择图片",
+      "bulkTool": "切换到批量调整"
+    },
+    "features": {
+      "title": "专业级免费在线图片调整器",
+      "description": "无需上传即可在线调整图片和照片，是你最强大的图片调整工具。",
+      "lightningFast": "极速处理",
+      "free": "永久免费图片调整",
+      "noSignup": "无需注册帐号",
+      "secure": "完全安全私密",
+      "unlimited": "不限次数使用",
+      "browser": "纯浏览器运行"
+    },
+    "howTo": {
+      "title": "如何在线调整图片尺寸",
+      "subtitle": "3 个步骤完成免费图片调整",
+      "step1": {
+        "number": "1",
+        "title": "选择图片",
+        "description": "将 JPG、PNG 或 WebP 照片导入我们的免费图片调整工具。"
+      },
+      "step2": {
+        "number": "2",
+        "title": "调整尺寸",
+        "description": "选择社交平台预设或自定义宽高。"
+      },
+      "step3": {
+        "number": "3",
+        "title": "立即下载",
+        "description": "即时下载调整后的图片。"
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "免费在线图片调整器 - 无需上传",
+        "description": [
+          "功能最强大的免费图片尺寸调整工具。几秒钟内即可完成照片调整。",
+          "纯浏览器运行，无需上传、无需账号，数据始终留在你的设备上，隐私安全有保障。"
+        ]
+      },
+      "feature2": {
+        "title": "精确调整到指定宽高",
+        "description": [
+          "专业图片调整器，可精确设置宽度和高度，适用于社交媒体、网站图片、邮件附件及印刷素材。",
+          "提供多种长宽比和平台预设，让你在线精准调整图片尺寸。"
+        ]
+      },
+      "feature3": {
+        "title": "可视化裁剪编辑器，支持缩放与格式选择",
+        "description": [
+          "专业裁剪界面，拖拽控制点即可调整区域，配合缩放实现像素级精度，并可实时预览。",
+          "支持导出 JPG、PNG、WebP，多种格式任你选择，完全掌控最终图片。"
+        ]
+      }
+    },
+    "faq": {
+      "title": "图片调整常见问题",
+      "subtitle": "关于我们的免费在线图片调整工具的常见疑问",
+      "items": [
+        {
+          "question": "这个图片调整器永久免费吗？",
+          "answer": "是的！我们的图片调整器永久免费且无任何限制。调整不限次数，无水印、无需注册，也没有隐藏费用。"
+        },
+        {
+          "question": "如何使用这个在线图片调整工具？",
+          "answer": "操作非常简单：① 选择图片；② 选择社交平台预设或自定义尺寸；③ 即时下载。所有处理都在浏览器本地完成。"
+        },
+        {
+          "question": "支持哪些图片格式？",
+          "answer": "工具支持常见格式：JPG、JPEG、PNG、WebP。你可以在调整尺寸的同时进行格式转换。"
+        },
+        {
+          "question": "这个在线图片调整器安全吗？",
+          "answer": "绝对安全！所有处理都在你的浏览器本地完成，图片不会上传至任何服务器。你甚至可以断网后继续使用。"
+        },
+        {
+          "question": "能否把图片调整到指定尺寸？",
+          "answer": "当然可以！你可以设置精准宽高、保持比例，也可以使用社交媒体预设（Instagram、Facebook、Twitter、YouTube、LinkedIn、Pinterest 等）或可视化裁剪。拖动控制点、缩放微调并实时预览，一切尽在掌握。"
+        },
+        {
+          "question": "为何这是最好用的在线图片调整工具？",
+          "answer": "我们的优势：永久免费、纯浏览器处理、无限制使用、支持常见格式、社交平台预设齐全、精确尺寸控制，并重视隐私，是最完整的图片调整方案。"
+        }
+      ]
     }
   }
 }

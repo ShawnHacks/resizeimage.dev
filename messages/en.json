@@ -49,7 +49,7 @@
     "metaKeywords": "terms and conditions, service agreement, terms of use, website tool, user agreement"
   },
   "SiteConfig": {
-    "title": "Image Resizer - Free Online Photo Resizer | resizeimage.dev",
+    "title": "Image Resizer - Free Online Photo Resizer",
     "description": "Best free image resizer online tool. Resize image, instantly in your browser. Professional photo resizer free with no uploads.",
     "keywords": {
       "0": "image resizer",
@@ -61,7 +61,8 @@
       "6": "online image resizer",
       "7": "photo resizer free",
       "8": "resize photo"
-    }
+    },
+    "InstallApp": "Install App"
   },
   "BlogPage": {
     "title": "Blog",
