@@ -1,5 +1,5 @@
-import BulkResizeImagesPage from "./bulk-resize-images/page";
+import SingleResizePage from "./resize-image/page";
 
 export const runtime = 'edge';
 
-export default BulkResizeImagesPage;
+export default SingleResizePage;
