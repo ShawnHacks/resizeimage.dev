@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "bulkresizeimages",
+      name: "resizeimage",
       script: "pnpm",
       args: "start",
       env_production: {
