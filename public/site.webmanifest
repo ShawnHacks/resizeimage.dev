@@ -1,6 +1,6 @@
 {
-  "name": "BulkResizeImages",
-  "short_name": "BulkResizeImages",
+  "name": "ResizeImage.dev",
+  "short_name": "ResizeImage.dev",
   "icons": [
     { "src": "/favicon.ico", "type": "image/x-icon", "sizes": "48x48" },
     { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },

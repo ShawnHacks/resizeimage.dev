@@ -23,7 +23,8 @@ export function HowToSection({ title, subtitle, steps, className }: HowToSection
     <section 
       className={cn("py-16 md:py-24 relative overflow-hidden", className)}
       style={{
-        background: 'linear-gradient(15deg, #7c84fc, #ff4dd2)'
+        // background: 'linear-gradient(15deg, #7c84fc, #ff4dd2)'
+        background: 'linear-gradient(15deg, oklch(0.646 0.222 41.116), oklch(0.828 0.189 84.429))'
       }}
     >
       <div className="container mx-auto px-4 relative z-10">

@@ -1,7 +1,7 @@
-name = "bulkresizeimages.online"
+name = "resizeimage.dev"
 compatibility_date = "2025-10-11"
 compatibility_flags = ["nodejs_compat"]
 pages_build_output_dir = ".vercel/output/static"
 
 [env.production.vars]
-NEXT_PUBLIC_SITE_URL = "https://bulkresizeimages.online"
+NEXT_PUBLIC_SITE_URL = "https://resizeimage.dev"

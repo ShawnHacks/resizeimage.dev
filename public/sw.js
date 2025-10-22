@@ -1,11 +1,11 @@
-const CACHE_NAME = 'bulkresizeimage-v2';
+const CACHE_NAME = 'resizeimage-v2';
 const urlsToCache = [
   '/',
   '/en',
   '/manifest.json',
   '/icon-192.png',
   '/icon-512.png',
-  '/logo.svg',
+  '/logo.png',
 ];
 
 // Install event - cache resources

@@ -135,8 +135,7 @@
       "noSignup": "No es necesario registrarse",
       "secure": "Seguro y privado",
       "unlimited": "Procese imágenes ilimitadas",
-      "browser": "Funciona en su navegador",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "Funciona en su navegador"
     },
     "imagePreview": {
       "selected": "imagen",

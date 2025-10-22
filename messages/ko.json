@@ -135,8 +135,7 @@
       "noSignup": "가입 필요 없음",
       "secure": "안전하고 비공개",
       "unlimited": "무제한 이미지 처리",
-      "browser": "브라우저에서 작동",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "브라우저에서 작동"
     },
     "imagePreview": {
       "selected": "이미지",

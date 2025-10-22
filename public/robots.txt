@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://bulkresizeimages.online/sitemap.xml
+Sitemap: https://resizeimage.dev/sitemap.xml

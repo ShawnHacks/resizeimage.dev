@@ -149,18 +149,57 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
     };
   }, [imageMetrics.height, imageMetrics.width, selection.height, selection.width, selection.x, selection.y]);
 
-  const convertedSelection = useMemo(() => {
-    if (!imageMetrics.width || !imageMetrics.height) {
+  const [containerSize, setContainerSize] = useState<{ width: number; height: number }>({ width: 0, height: 0 });
+
+  useEffect(() => {
+    const element = imageLayerRef.current;
+    if (!element) return;
+
+    const observer = new ResizeObserver((entries) => {
+      const entry = entries[0];
+      if (!entry) return;
+      const { width, height } = entry.contentRect;
+      setContainerSize({ width, height });
+    });
+
+    observer.observe(element);
+    return () => observer.disconnect();
+  }, []);
+
+  const overlayStyle = useMemo(() => {
+    const { width: imgWidth, height: imgHeight } = imageMetrics;
+    if (!imgWidth || !imgHeight || !selection.width || !containerSize.width || !containerSize.height) {
       return { left: 0, top: 0, width: 0, height: 0 };
     }
 
+    const baseScaleX = containerSize.width / imgWidth;
+    const baseScaleY = containerSize.height / imgHeight;
+
+    const scaleX = baseScaleX;
+    const scaleY = baseScaleY;
+
+    const selectionCenterX = selection.x + selection.width / 2;
+    const selectionCenterY = selection.y + selection.height / 2;
+
+    const screenCenterX = selectionCenterX * baseScaleX;
+    const screenCenterY = selectionCenterY * baseScaleY;
+
+    const screenWidth = selection.width * scaleX;
+    const screenHeight = selection.height * scaleY;
+
+    const maxLeft = containerSize.width - screenWidth;
+    const maxTop = containerSize.height - screenHeight;
+
+    const left = Math.min(Math.max(screenCenterX - screenWidth / 2, 0), Math.max(maxLeft, 0));
+    const top = Math.min(Math.max(screenCenterY - screenHeight / 2, 0), Math.max(maxTop, 0));
+
     return {
-      left: (selection.x / imageMetrics.width) * 100,
-      top: (selection.y / imageMetrics.height) * 100,
-      width: (selection.width / imageMetrics.width) * 100,
-      height: (selection.height / imageMetrics.height) * 100,
+      left,
+      top,
+      width: screenWidth,
+      height: screenHeight,
     };
-  }, [selection, imageMetrics.width, imageMetrics.height]);
+  }, [containerSize, imageMetrics, selection]);
 
   const imageBoxStyle = useMemo(() => {
     if (!imageMetrics.width || !imageMetrics.height) {
@@ -350,48 +389,8 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
   }, [unit, lockAspect, aspectRatio, targetDimensions.width, isCustom, imageMetrics.height, imageMetrics.width, selection, updateSelection]);
 
   const handleZoomChange = useCallback((value: number) => {
-    const nextZoom = Math.max(MIN_ZOOM, value);
-    if (Math.abs(nextZoom - zoom) < 0.0001) return;
-
-    const { width: imgWidth, height: imgHeight } = imageMetricsRef.current;
-    if (!imgWidth || !imgHeight) {
-      setZoom(nextZoom);
-      return;
-    }
-
-    setSelection(prev => {
-      if (!prev.width || !prev.height) {
-        return prev;
-      }
-
-      const scaleRatio = zoom / nextZoom;
-      let newWidth = prev.width * scaleRatio;
-      let newHeight = prev.height * scaleRatio;
-
-      newWidth = Math.max(MIN_SELECTION_SIZE, Math.min(newWidth, imgWidth));
-      newHeight = Math.max(MIN_SELECTION_SIZE, Math.min(newHeight, imgHeight));
-
-      const centerX = prev.x + prev.width / 2;
-      const centerY = prev.y + prev.height / 2;
-
-      let newX = centerX - newWidth / 2;
-      let newY = centerY - newHeight / 2;
-
-      if (newX < 0) newX = 0;
-      if (newY < 0) newY = 0;
-      if (newX + newWidth > imgWidth) newX = imgWidth - newWidth;
-      if (newY + newHeight > imgHeight) newY = imgHeight - newHeight;
-
-      return {
-        x: newX,
-        y: newY,
-        width: newWidth,
-        height: newHeight,
-      };
-    });
-
-    setZoom(nextZoom);
-  }, [zoom]);
+    setZoom(Math.max(MIN_ZOOM, value));
+  }, []);
 
   const updateDerivedBlob = useCallback(async () => {
     if (!imageRef.current || !selection.width || !selection.height || !targetDimensions.width || !targetDimensions.height) {
@@ -416,8 +415,10 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
     const centerX = selection.x + selection.width / 2;
     const centerY = selection.y + selection.height / 2;
 
-    let sourceWidth = selection.width;
-    let sourceHeight = selection.height;
+    const zoomFactor = Math.max(zoom, 1);
+
+    let sourceWidth = selection.width / zoomFactor;
+    let sourceHeight = selection.height / zoomFactor;
 
     sourceWidth = Math.max(1, Math.min(sourceWidth, imgWidth));
     sourceHeight = Math.max(1, Math.min(sourceHeight, imgHeight));
@@ -465,7 +466,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
 
     setDerivedBlob(blob);
     setIsGeneratingBlob(false);
-  }, [format, selection.height, selection.width, selection.x, selection.y, targetDimensions.height, targetDimensions.width]);
+  }, [format, selection.height, selection.width, selection.x, selection.y, targetDimensions.height, targetDimensions.width, zoom]);
 
   useEffect(() => {
     if (!isImageReady) return;
@@ -488,10 +489,8 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
 
     const scaleX = imgWidth / rect.width;
     const scaleY = imgHeight / rect.height;
-    const x = (event.clientX - rect.left) * scaleX;
-    const y = (event.clientY - rect.top) * scaleY;
 
-    return { x, y, scaleX, scaleY, rect };
+    return { x: 0, y: 0, scaleX, scaleY, rect };
   }, []);
 
   const handlePointerMove = useCallback((event: PointerEvent) => {
@@ -624,7 +623,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
     window.addEventListener('pointermove', handlePointerMove);
     window.addEventListener('pointerup', finishDrag);
     window.addEventListener('pointercancel', finishDrag);
-  }, [finishDrag, getPointerPosition, handlePointerMove, isCustom, isImageReady, selection]);
+  }, [finishDrag, getPointerPosition, handlePointerMove, isImageReady, selection]);
 
   const handleDownload = useCallback(async () => {
     if (!imageRef.current) return;
@@ -684,13 +683,13 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
 
   return (
     <div className="grid gap-8 lg:grid-cols-[minmax(0,1.3fr)_minmax(280px,0.7fr)]">
-      <div className="space-y-6">
+      <div className="space-y-3">
         <div
           ref={containerRef}
           className="relative w-full rounded-3xl border border-border bg-muted/60 p-4 sm:p-6"
         >
           <div className="mb-4 flex items-center justify-between gap-3">
-            <p className="text-sm text-muted-foreground">
+            <p className="text-sm text-foreground">
               {t('imageDetails.originalDimensions', {
                 width: imageMetrics.width || '--',
                 height: imageMetrics.height || '--',
@@ -704,12 +703,12 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
           </div>
 
           <div
-            className="relative mx-auto w-full max-h-[640px] overflow-hidden rounded-3xl bg-background p-4"
+            className="relative mx-auto w-full max-h-[640px] overflow-hidden rounded-lg bg-background p-4"
             style={{
               aspectRatio: '1 / 1',
             }}
           >
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-3 flex items-center justify-center">
               <div className="relative flex items-center justify-center" style={imageBoxStyle}>
                 <div ref={imageLayerRef} className="relative h-full w-full">
                   <div
@@ -739,10 +738,10 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
                       className="absolute border-dashed border-primary shadow-[0_0_0_9999px_rgba(0,0,0,0.45)]"
                       style={{
                         borderWidth: '2px',
-                        left: `${convertedSelection.left}%`,
-                        top: `${convertedSelection.top}%`,
-                        width: `${convertedSelection.width}%`,
-                        height: `${convertedSelection.height}%`,
+                        left: overlayStyle.left,
+                        top: overlayStyle.top,
+                        width: overlayStyle.width,
+                        height: overlayStyle.height,
                       }}
                       onPointerDown={handlePointerDown('move')}
                     >
@@ -780,7 +779,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
                       <Handle position="right" onPointerDown={handlePointerDown('right')} />
 
                       <div
-                        className="absolute left-1/2 top-0 -translate-x-1/2 -translate-y-full rounded-md bg-primary px-2 py-1 text-xs font-semibold text-primary-foreground shadow"
+                        className="absolute left-1/2 -top-3 -translate-x-1/2 -translate-y-full rounded-md bg-primary px-2 py-1 text-xs font-semibold text-primary-foreground shadow"
                         style={{ transform: 'scale(1)', transformOrigin: 'center bottom' }}
                       >
                         {`${roundPx(targetDimensions.width)} × ${roundPx(targetDimensions.height)}`}
@@ -793,10 +792,11 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
           </div>
         </div>
 
-        <div className="rounded-2xl border border-border bg-card/60 p-4 sm:p-6">
+        {/* border border-border bg-card/60 sm:p-6  */}
+        <div className="rounded-2xl p-3 w-[400px] mx-auto">
           <div className="flex items-center justify-between">
             <Label className="text-sm font-semibold text-foreground">{t('preview.zoom')}</Label>
-            <span className="text-sm font-medium text-muted-foreground">{`${zoom.toFixed(2)}x`}</span>
+            <span className="text-sm font-medium text-foreground">{`${zoom.toFixed(2)}x`}</span>
           </div>
           <div className="mt-3">
             <Slider
@@ -813,11 +813,11 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
       <div className="space-y-6">
         <div className="rounded-2xl border border-border bg-card/70 p-4 sm:p-6">
           <div className="mb-4 flex items-center justify-between">
-            <Label className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+            <Label className="text-sm font-semibold uppercase tracking-wide text-foreground">
               {t('controls.aspectRatio')}
             </Label>
             {!isCustom && selectedPreset && (
-              <span className="text-xs font-medium text-muted-foreground">
+              <span className="text-xs font-medium text-foreground">
                 {`${selectedPreset.label} · ${selectedPreset.width}×${selectedPreset.height}`}
               </span>
             )}
@@ -839,12 +839,12 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
           </Select>
 
           {categoryId !== 'custom' && (
-            <div className="mt-6 grid grid-cols-3 gap-x-8">
+            <div className="mt-6 grid grid-cols-3 gap-x-2 gap-y-4">
               {getCategoryById(categoryId)?.presets.map(preset => {
                 const isActive = selectedPreset?.id === preset.id;
                 return (
-                  <div key={preset.id} className="flex flex-col items-center gap-4">
-                    <div className="group relative flex aspect-square w-full max-w-[140px] items-center justify-center">
+                  <div key={preset.id} className="flex flex-col items-center gap-x-4">
+                    <div className="group relative flex aspect-square w-full max-w-[140px] items-center justify-center p-2">
                       <div
                         role="button"
                         tabIndex={0}
@@ -856,7 +856,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
                           }
                         }}
                         className={cn(
-                          'relative !bg-muted flex h-full w-full items-center justify-center rounded-2xl border-2 outline-none transition',
+                          'relative !bg-muted flex h-full w-full items-center justify-center rounded-lg border-2 outline-none transition',
                           isActive
                             ? 'border-primary bg-primary/10 shadow-inner'
                             : 'border-dashed border-border/60 bg-card hover:border-primary/50 focus-visible:ring-2 focus-visible:ring-primary'
@@ -886,7 +886,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
                     <div className="text-center">
                       <p className="text-xs font-semibold text-foreground">{preset.label}</p>
                       <p className="text-xs text-muted-foreground">
-                        {categoryId === 'custom' ? `${preset.description}` : 
+                        {categoryId === 'standard' ? `${preset.description}` : 
                         `${preset.width} × ${preset.height}`}
                       </p>
                     </div>
@@ -964,7 +964,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
 
         <div className="rounded-2xl border border-border bg-card/70 p-4 sm:p-6 space-y-4">
           <div className="flex items-center justify-between">
-            <Label className="text-sm font-semibold">{t('export.format')}</Label>
+            <Label className="text-sm font-semibold uppercase tracking-wide text-foreground">{t('export.format')}</Label>
             <Select value={format} onValueChange={value => setFormat(value as SingleImageFormat)}>
               <SelectTrigger className="w-24">
                 <SelectValue placeholder="JPG" />
@@ -981,7 +981,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
             </Select>
           </div>
 
-          <div className="rounded-xl bg-background/70 px-4 py-3">
+          <div className="rounded-xl bg-background/70">
             <p className="text-sm text-foreground">
               {t('export.originalSize', { size: formatFileSize(file.size) })}
             </p>

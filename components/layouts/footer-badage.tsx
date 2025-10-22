@@ -40,14 +40,14 @@ export default function FooterBadges() {
           <img src="https://aiwith.me/ai_with_me_light_badge.svg" alt="Open Launch - Featured on AI With Me" className="h-8" />
         </a> */}
         
-        <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="hidden dark:block">
+        <a href="https://startupfa.me/s/resizeimage.dev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://startupfa.me/badges/featured/dark.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
-        {/* <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
+        {/* <a href="https://startupfa.me/s/resizeimage.dev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="block dark:hidden">
           <img src="https://startupfa.me/badges/featured/light.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a> */}
 
-        <a href="https://startupfa.me/s/bulkresizeimages.online?utm_source=bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
+        <a href="https://startupfa.me/s/resizeimage.dev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="block dark:hidden">
           <img src="https://startupfa.me/badges/featured-badge.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
 
@@ -65,10 +65,10 @@ export default function FooterBadges() {
           <img src="https://magicbox.tools/badge.svg" alt="Featured on MagicBox.tools" className="h-8" />
         </a> */}
 
-        <a href="https://fazier.com/launches/bulkresizeimages.online" target="_blank" rel="noopener" className="block dark:hidden">
+        <a href="https://fazier.com/launches/resizeimage.dev" target="_blank" rel="noopener" className="block dark:hidden">
           <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" className="h-8 w-auto max-w-40" alt="Fazier badge" />
         </a>
-        <a href="https://fazier.com/launches/bulkresizeimages.online" target="_blank" rel="noopener" className="hidden dark:block">
+        <a href="https://fazier.com/launches/resizeimage.dev" target="_blank" rel="noopener" className="hidden dark:block">
           <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" className="h-8 w-auto max-w-40" alt="Fazier badge" />
         </a>
 

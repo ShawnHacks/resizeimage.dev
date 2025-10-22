@@ -1,7 +1,7 @@
 {
-  "name": "BulkResizeImages - Resize Images Online",
-  "short_name": "BulkResizeImages",
-  "description": "Resize images instantly in your browser. 100% private, no upload required.",
+  "name": "ResizeImage.dev - Free Image Resizer Online",
+  "short_name": "ResizeImage.dev",
+  "description": "Resize image instantly in your browser. 100% private, no upload required.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
@@ -24,9 +24,9 @@
   "categories": ["image", "photo", "productivity", "utilities"],
   "shortcuts": [
     {
-      "name": "BulkResizeImages",
-      "short_name": "BulkResizeImages",
-      "description": "Start resizing images",
+      "name": "ResizeImage.dev",
+      "short_name": "ResizeImage.dev",
+      "description": "Start resizing image",
       "url": "/",
       "icons": [
         {

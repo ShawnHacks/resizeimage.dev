@@ -135,8 +135,7 @@
       "noSignup": "無需註冊",
       "secure": "安全與私密",
       "unlimited": "處理無限數量的圖片",
-      "browser": "在您的瀏覽器中運作",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "在您的瀏覽器中運作"
     },
     "imagePreview": {
       "selected": "張圖片",

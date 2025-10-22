@@ -120,7 +120,7 @@ export function ImageUploader({
       transition={{ duration: 0.3 }}
       className={cn("w-full", className)}
     >
-      <div className='md:p-6 rounded-2xl bg-background md:rounded-4xl shadow-xl dark:shadow-purple-700 hover:bg-muted transition-all duration-200'>
+      <div className='md:p-6 rounded-2xl bg-background md:rounded-4xl shadow-xl dark:shadow-white/20 hover:bg-muted transition-all duration-200'>
         <div
           onDragOver={handleDragOver}
           onDragLeave={handleDragLeave}
@@ -152,7 +152,7 @@ export function ImageUploader({
                 <p className="text-sm md:text-xl text-primary font-heading font-bold mb-6">
                   {t('subtitleSingle')}
                 </p>
-                <div className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-br from-primary to-[#5c5ce0] text-white text-base font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200">
+                <div className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-br from-primary to-red-500 text-white text-base font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200">
                   {multiple ? t('selectImagesMultiple') : t('selectImagesSingle')}
                 </div>
                 <div className="flex flex-col gap-1 mt-3">

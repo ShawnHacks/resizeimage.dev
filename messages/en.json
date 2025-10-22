@@ -25,8 +25,8 @@
     "Terms of Service": "Terms of Service"
   },
   "HomePage": {
-    "title": "Bulk Resize Images Online",
-    "subtitle": "Unlimited free image resizer for single or batch processing. Resize, compress, and optimize images instantly in your browser. No registration, no uploads - 100% secure and private."
+    "title": "Free Image Resizer Online - Resize Images & Photos Instantly",
+    "subtitle": "Professional image resizer free tool for single or batch processing. Resize image online, compress photos, and optimize pictures instantly in your browser. No registration, no uploads - 100% secure and private photo resizer."
   },
   "NotFoundPage": {
     "title": "Page not found",
@@ -49,17 +49,18 @@
     "metaKeywords": "terms and conditions, service agreement, terms of use, website tool, user agreement"
   },
   "SiteConfig": {
-    "title": "Free Bulk Resize Images Online",
-    "description": "Unlimited free image resizer for single or batch processing. Resize, compress, and optimize images instantly in your browser. No registration, no uploads - 100% secure and private.",
+    "title": "Image Resizer - Free Online Photo Resizer | resizeimage.dev",
+    "description": "Best free image resizer online tool. Resize image, instantly in your browser. Professional photo resizer free with no uploads.",
     "keywords": {
-      "0": "bulk image resizer online",
-      "1": "free batch image resize",
-      "2": "resize images online",
-      "3": "compress images free",
-      "4": "image optimizer",
-      "5": "photo resizer",
-      "6": "resize multiple images",
-      "7": "image dimensions tool"
+      "0": "image resizer",
+      "1": "image resizer free",
+      "2": "photo resizer",
+      "3": "resize image",
+      "4": "resize image online",
+      "5": "free image resizer",
+      "6": "online image resizer",
+      "7": "photo resizer free",
+      "8": "resize photo"
     }
   },
   "BlogPage": {
@@ -347,19 +348,12 @@
     }
   },
   "SingleResize": {
+    "badge": "Resize image online",
+    "pageTitle": "Free Image Resizer Online",
+    "pageDescription": "Resize image directly in your browser. Pick a preset size, adjust a custom crop, and download in JPG, PNG, or WebP without uploading anything.",
     "metadata": {
-      "title": "Resize Images Online",
-      "description": "Resize a single image directly in your browser. Pick a preset size, adjust a custom crop, and download in JPG, PNG, or WebP without uploading anything."
-    },
-    "landing": {
-      "badge": "New • Browser-based",
-      "title": "Resize a Single Image Instantly",
-      "subtitle": "Upload one photo, choose an aspect ratio, and adjust the crop with pixel-perfect control. Everything happens locally in your browser—private, fast, and free.",
-      "helperText": "We process your image locally in your browser. No server uploads, no privacy worries."
-    },
-    "editor": {
-      "title": "Adjust Your Image",
-      "subtitle": "Original size: {size}"
+      "title": "Free Image Resizer — Resize Photos Online Instantly",
+      "description": "Resize image directly in your browser. Pick a preset size, adjust a custom crop, and download in JPG, PNG, or WebP without uploading anything."
     },
     "controls": {
       "resetAll": "Reset selection",
@@ -392,6 +386,88 @@
       "changeImage": "Change image",
       "back": "Choose another image",
       "bulkTool": "Switch to bulk resize"
+    },
+    "features": {
+      "title": "Professional Image Resizer Free Online",
+      "description": "Resize images and photos online without uploading to any server - your go-to photo resizer tool",
+      "lightningFast": "Lightning-fast",
+      "free": "100% free image resizer forever",
+      "noSignup": "No sign-up or registration",
+      "secure": "100% secure & private",
+      "unlimited": "Unlimited usage",
+      "browser": "Works in browser"
+    },
+    "howTo": {
+      "title": "How to Resize Image Online",
+      "subtitle": "3 simple steps to use our free image resizer",
+      "step1": {
+        "number": "1",
+        "title": "Select Image",
+        "description": "Select your JPG, PNG, or WebP photo to our free photo resizer tool."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Resize Photo",
+        "description": "Choose from preset sizes or custom adjust dimensions."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Download Instantly",
+        "description": "Download your resized photo immediately."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Free Online Image Resizer - No Upload Required",
+        "description": [
+          "The most powerful free image resizer tool. Resize photos online in seconds with our professional photo resizer.",
+          "100% browser-based photo resizer - no uploads, no accounts, no data leaves your device. Perfect for privacy-conscious users."
+        ]
+      },
+      "feature2": {
+        "title": "Resize Image to Exact Dimensions",
+        "description": [
+          "Professional image resizer to adjust photo to exact width and height. Perfect for social media posts, website images, email attachments, and print materials.",
+          "Our free photo resizer supports aspect ratios, and platform-specific presets - resize image online with precision."
+        ]
+      },
+      "feature3": {
+        "title": "Visual Crop Editor with Zoom & Format Options",
+        "description": [
+          "Professional photo resizer with intuitive visual crop editor. Drag handles to adjust crop area, zoom in for precision, and preview changes in real-time before resizing.",
+          "Export your resized images in multiple formats (JPG, PNG, WebP). Our free image resizer gives you complete control."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Image Resizer FAQ",
+      "subtitle": "Common questions about our free photo resizer online tool",
+      "items": [
+        {
+          "question": "Is this image resizer free to use?",
+          "answer": "Yes! Our image resizer is 100% free forever with no limitations. Resize image files unlimited times without watermarks, registration, or hidden fees. The best free photo resizer online."
+        },
+        {
+          "question": "How do I resize image online with this tool?",
+          "answer": "Using our image resizer tool is simple: (1) Select your photo, (2) Choose resize preset social media aspect ratio or custom adjust dimensions, (3) Download instantly. All image processing happens in your browser."
+        },
+        {
+          "question": "What image formats does the photo resizer support?",
+          "answer": "Our online image resizer supports all popular formats: JPG, JPEG, PNG, and WebP. You can resize photos in any format and even convert between formats while resizing."
+        },
+        {
+          "question": "Is this photo resizer online secure?",
+          "answer": "Absolutely! Our image resizer tool processes everything locally in your browser. Your photos never upload to any server - they never leave your device. To test this, load our website, disconnect your internet, and the photo resizer still works perfectly."
+        },
+        {
+          "question": "Can I resize image to specific dimensions?",
+          "answer": "Yes! Our image resizer offers multiple options: set exact width and height, maintain aspect ratio, or use social media presets (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest, and more) to resize photos perfectly for each platform. You can also use intuitive visual crop editor. Drag handles to adjust crop area, zoom in for precision, and preview changes in real-time before resizing.."
+        },
+        {
+          "question": "What makes this the best photo resizer online?",
+          "answer": "Our image resizer stands out: 100% free forever, no uploads (browser-based), unlimited usage, supports common formats, social media presets, exact dimension control, and maintains privacy. It's the complete photo resizer free solution."
+        }
+      ]
     }
   }
 }

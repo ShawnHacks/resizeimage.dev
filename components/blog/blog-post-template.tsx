@@ -57,8 +57,8 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
     },
     "datePublished": post.publishedAt,
     "dateModified": post.updatedAt,
-    "image": post.ogImage || "https://bulkresizeimages.online/og.png",
-    "url": `https://bulkresizeimages.online/${locale === 'en' ? '' : locale + '/'}blog/${post.slug}`,
+    "image": post.ogImage || "https://resizeimage.dev/og.png",
+    "url": `https://resizeimage.dev/${locale === 'en' ? '' : locale + '/'}blog/${post.slug}`,
     "keywords": post.keywords?.join(", ") || "",
     "articleSection": post.tags?.join(", ") || "",
     "publisher": {
@@ -66,7 +66,7 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
       "name": "CrownByte LTD",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://bulkresizeimages.online/logo.png"
+        "url": "https://resizeimage.dev/logo.png"
       }
     }
   }

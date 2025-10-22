@@ -3,17 +3,17 @@ import { useTranslations } from 'next-intl'
 import { FooterColumn, FooterLink, NavItem, SiteConfig } from "@/types"
 
 // Resolve site URL safely for Edge runtime (avoid throwing in new URL)
-const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
+const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev'
 
 // Extract domain name from siteUrl safely
-let domainName = 'bulkresizeimages.online'
+let domainName = 'resizeimage.dev'
 try {
   domainName = new URL(siteUrl).hostname.replace(/^www\./, "")
 } catch {}
 
 // Base site configuration (non-localized parts)
 export const baseSiteConfig = {
-  name: "BulkResizeImages",
+  name: "ResizeImage.dev",
   companyName: "Crownbyte LTD",
   domainName: domainName,
   url: siteUrl,
@@ -167,13 +167,13 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
     titleKey: "Footer.Resources",
     links: [
       {
-        labelKey: "Website Screenshot Online",
-        href: "http://websitescreenshot.online/",
+        labelKey: "Bulk Resize Images Online",
+        href: "https://bulkresizeimages.online",
         noTranslation: true,
       },
       {
-        labelKey: "NestSaaS",
-        href: "https://nestsaas.com",
+        labelKey: "Website Screenshot Online",
+        href: "http://websitescreenshot.online/",
         noTranslation: true,
       },
       {

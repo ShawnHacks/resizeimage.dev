@@ -135,8 +135,7 @@
       "noSignup": "サインアップ不要",
       "secure": "安全&プライベート",
       "unlimited": "無制限の画像を処理",
-      "browser": "ブラウザで動作",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "ブラウザで動作"
     },
     "imagePreview": {
       "selected": "画像",

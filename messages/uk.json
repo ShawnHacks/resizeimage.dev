@@ -135,8 +135,7 @@
       "noSignup": "Реєстрація не потрібна",
       "secure": "Безпечно та конфіденційно",
       "unlimited": "Обробляйте необмежену кількість зображень",
-      "browser": "Працює у вашому браузері",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "Працює у вашому браузері"
     },
     "imagePreview": {
       "selected": "зображення",

@@ -42,8 +42,8 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
   return {
     // title,
     title: {
-      template: '%s - BulkResizeImages.online', // %s will be replaced by the page-specific title
-      default: `${title} | BulkResizeImages.online`, // Fallback title for pages without a specific title
+      template: '%s - ResizeImage.dev', // %s will be replaced by the page-specific title
+      default: `${title} | ResizeImage.dev`, // Fallback title for pages without a specific title
     },
     description,
     keywords: siteConfig.keywords,
@@ -52,14 +52,14 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     publisher: siteConfig.name || 'Crownbyte LTD',
     openGraph: {
       type: 'website',
-      url: siteConfig.url || 'https://bulkresizeimages.online',
+      url: siteConfig.url || 'https://resizeimage.dev',
       locale: locale,
-      title: `${title} - BulkResizeImages.online`,
+      title: `${title} - ResizeImage.dev`,
       description: description,
-      siteName: siteConfig.name || 'BulkResizeImages.online',
+      siteName: siteConfig.name || 'ResizeImage.dev',
       images: [
         {
-          url: siteConfig.ogImage || 'https://bulkresizeimages.online/og.png',
+          url: siteConfig.ogImage || 'https://resizeimage.dev/og.png',
           width: 1200,
           height: 630,
           alt: title,
@@ -68,9 +68,9 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} - BulkResizeImages.online`,
+      title: `${title} - ResizeImage.dev`,
       description: description,
-      images: [siteConfig.ogImage || 'https://bulkresizeimages.online/og.png'],
+      images: [siteConfig.ogImage || 'https://resizeimage.dev/og.png'],
       creator: '@ShawnHacks',
     },
     robots: {
@@ -87,7 +87,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     icons: {
       icon: [
         // { url: `${siteConfig.url}/favicon.ico`, type: 'image/x-icon' }, 
-        { url: `${siteConfig.url}/logo.svg`, type: 'image/svg+xml' }, 
+        { url: `${siteConfig.url}/logo.png`, type: 'image/png' }, 
         { url: `${siteConfig.url}/icon-192.png`, type: 'image/png' }
       ],
       shortcut: `${siteConfig.url}/icon-192.png`,
@@ -97,7 +97,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     appleWebApp: {
       capable: true,
       statusBarStyle: 'default',
-      title: 'BulkResizeImages.online',
+      title: 'ResizeImage.dev',
     },
   }
 }

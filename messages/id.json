@@ -135,8 +135,7 @@
       "noSignup": "Tidak perlu mendaftar",
       "secure": "Aman & pribadi",
       "unlimited": "Proses gambar tanpa batas",
-      "browser": "Bekerja di browser Anda",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "Bekerja di browser Anda"
     },
     "imagePreview": {
       "selected": "gambar",

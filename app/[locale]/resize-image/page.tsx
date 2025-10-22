@@ -15,7 +15,7 @@ export async function generateMetadata({
   const siteConfig = await getLocalizedSiteConfig(locale);
   const t = await getTranslations({ locale, namespace: 'SingleResize' });
 
-  const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online';
+  const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev';
   const basePath = locale === 'en' ? '' : `/${locale}`;
   const canonicalPath = `${urlString}${basePath}/resize-image`;
 

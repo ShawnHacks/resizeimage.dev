@@ -135,8 +135,7 @@
       "noSignup": "Không cần đăng ký",
       "secure": "An toàn và riêng tư",
       "unlimited": "Xử lý hình ảnh không giới hạn",
-      "browser": "Hoạt động trong trình duyệt của bạn",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "Hoạt động trong trình duyệt của bạn"
     },
     "imagePreview": {
       "selected": "hình ảnh",

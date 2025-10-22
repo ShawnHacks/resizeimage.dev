@@ -138,7 +138,7 @@ export function SiteHeader({
           <Link href="/" className="flex items-center space-x-2">
             <span className="text-xl font-bold tracking-tighter">
               {siteConfig.name}
-              <sup className="ml-1 text-xs text-muted-foreground">Online</sup>
+              {/* <sup className="ml-1 text-xs text-muted-foreground">Online</sup> */}
             </span>
           </Link>
         </div>

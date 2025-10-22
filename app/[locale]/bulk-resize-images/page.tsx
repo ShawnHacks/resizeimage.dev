@@ -15,7 +15,7 @@ export async function generateMetadata({
   const { locale = 'en' } = await params
   const siteConfig = await getLocalizedSiteConfig(locale)
   
-  const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
+  const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev'
 
   return {
     title: siteConfig.title,

@@ -135,8 +135,7 @@
       "noSignup": "Kayıt gerekmez",
       "secure": "Güvenli ve özel",
       "unlimited": "Sınırsız görüntü işleyin",
-      "browser": "Tarayıcınızda çalışır",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "Tarayıcınızda çalışır"
     },
     "imagePreview": {
       "selected": "görüntü",

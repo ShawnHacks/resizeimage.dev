@@ -44,6 +44,14 @@ export function ToolsGrid() {
       iconColor: 'text-white',
     },
     {
+      icon: Crop,
+      name: t('crop'),
+      description: t('cropDesc'),
+      href: 'https://resizeimage.dev',
+      iconBg: 'bg-white border-2 border-dashed border-orange-500',
+      iconColor: 'text-orange-500',
+    },
+    {
       src: bulkresizeimages,
       name: t('bulkresizeimages'),
       description: t('bulkresizeimagesDesc'),

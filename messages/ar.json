@@ -135,8 +135,7 @@
       "noSignup": "لا يلزم الاشتراك",
       "secure": "آمن وخاص",
       "unlimited": "معالجة صور غير محدودة",
-      "browser": "يعمل في متصفحك",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "يعمل في متصفحك"
     },
     "imagePreview": {
       "selected": "صورة",

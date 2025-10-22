@@ -135,8 +135,7 @@
       "noSignup": "কোন সাইন-আপের প্রয়োজন নেই",
       "secure": "সুরক্ষিত এবং ব্যক্তিগত",
       "unlimited": "সীমাহীন চিত্র প্রক্রিয়া করুন",
-      "browser": "আপনার ব্রাউজারে কাজ করে",
-      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
+      "browser": "আপনার ব্রাউজারে কাজ করে"
     },
     "imagePreview": {
       "selected": "ছবি",

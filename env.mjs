@@ -27,7 +27,7 @@ export const env = createEnv({
     // GITHUB_CLIENT_ID: process.env.GITHUB_CLIENT_ID,
     // GITHUB_CLIENT_SECRET: process.env.GITHUB_CLIENT_SECRET,
     // DATABASE_URL: process.env.DATABASE_URL,
-    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online',
+    NEXT_PUBLIC_APP_URL: process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev',
     // NEXT_PUBLIC_TURNSTILE_SITE_KEY: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY,
     // TURNSTILE_SECRET_KEY: process.env.TURNSTILE_SECRET_KEY,
     // SCREENSHOTS_DIR: process.env.SCREENSHOTS_DIR,

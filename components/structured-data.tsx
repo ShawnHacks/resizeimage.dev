@@ -94,7 +94,7 @@ export async function WebsiteStructuredData({ locale }: WebsiteStructuredDataPro
     "@type": "WebApplication",
     "name": t('title'),
     "description": t('description'),
-    "url": process.env.NEXT_PUBLIC_APP_URL || "https://bulkresizeimages.online",
+    "url": process.env.NEXT_PUBLIC_APP_URL || "https://resizeimage.dev",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Web Browser",
     "offers": {
@@ -104,13 +104,11 @@ export async function WebsiteStructuredData({ locale }: WebsiteStructuredDataPro
     },
     "featureList": [
       "No registration required",
-      "bulk image resizer online",
-      "free batch image resize",
-      "resize images online",
-      "compress images free",
-      "image optimizer",
+      "image resizer online",
+      "free image resizer",
+      "resize multiple",
+      "resize image online",
       "photo resizer",
-      "resize multiple images",
       "image dimensions tool"
     ],
     "browserRequirements": "Requires JavaScript enabled"
