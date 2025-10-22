@@ -135,7 +135,8 @@
       "noSignup": "Nessuna registrazione richiesta",
       "secure": "Sicuro e privato",
       "unlimited": "Elabora immagini illimitate",
-      "browser": "Funziona nel tuo browser"
+      "browser": "Funziona nel tuo browser",
+      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
     },
     "imagePreview": {
       "selected": "immagine",
@@ -343,6 +344,54 @@
           "answer": "Questo può accadere quando le tue impostazioni producono immagini altamente dettagliate. Per mantenere le dimensioni dei file minime, prova a salvare in formato WebP e imposta la qualità all'80% o inferiore. Se il problema persiste, controlla la risoluzione in pixel dell'immagine per assicurarti che non venga ingrandita."
         }
       ]
+    }
+  },
+  "SingleResize": {
+    "metadata": {
+      "title": "TODO: metadata.title",
+      "description": "TODO: metadata.description"
+    },
+    "landing": {
+      "badge": "TODO: landing.badge",
+      "title": "TODO: landing.title",
+      "subtitle": "TODO: landing.subtitle",
+      "helperText": "TODO: landing.helperText"
+    },
+    "editor": {
+      "title": "TODO: editor.title",
+      "subtitle": "TODO: editor.subtitle"
+    },
+    "controls": {
+      "resetAll": "TODO: controls.resetAll",
+      "aspectRatio": "TODO: controls.aspectRatio",
+      "selectAspect": "TODO: controls.selectAspect",
+      "customOption": "TODO: controls.customOption",
+      "customCardTitle": "TODO: controls.customCardTitle",
+      "customCardDescription": "TODO: controls.customCardDescription",
+      "lockAspect": "TODO: controls.lockAspect",
+      "lockAspectHint": "TODO: controls.lockAspectHint",
+      "customWidth": "TODO: controls.customWidth",
+      "customHeight": "TODO: controls.customHeight",
+      "units": "TODO: controls.units"
+    },
+    "preview": {
+      "zoom": "TODO: preview.zoom"
+    },
+    "imageDetails": {
+      "originalDimensions": "TODO: imageDetails.originalDimensions"
+    },
+    "export": {
+      "format": "TODO: export.format",
+      "originalSize": "TODO: export.originalSize",
+      "newSize": "TODO: export.newSize",
+      "pending": "TODO: export.pending"
+    },
+    "actions": {
+      "download": "TODO: actions.download",
+      "reset": "TODO: actions.reset",
+      "changeImage": "TODO: actions.changeImage",
+      "back": "TODO: actions.back",
+      "bulkTool": "TODO: SingleResize.actions.bulkTool"
     }
   }
 }

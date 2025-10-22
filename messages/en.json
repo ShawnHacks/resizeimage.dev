@@ -135,7 +135,8 @@
       "noSignup": "No sign-up required",
       "secure": "Secure & private",
       "unlimited": "Process unlimited images",
-      "browser": "Works in your browser"
+      "browser": "Works in your browser",
+      "singleImageCta": "Need just one? Try the single-image resizer"
     },
     "imagePreview": {
       "selected": "image",
@@ -343,6 +344,54 @@
           "answer": "This can happen when your settings produce highly detailed images. To keep file sizes minimal, try saving in the WebP format and set the Quality to 80% or below. If the problem persists, check the image’s pixel resolution to make sure it isn’t being upscaled."
         }
       ]
+    }
+  },
+  "SingleResize": {
+    "metadata": {
+      "title": "Resize Images Online",
+      "description": "Resize a single image directly in your browser. Pick a preset size, adjust a custom crop, and download in JPG, PNG, or WebP without uploading anything."
+    },
+    "landing": {
+      "badge": "New • Browser-based",
+      "title": "Resize a Single Image Instantly",
+      "subtitle": "Upload one photo, choose an aspect ratio, and adjust the crop with pixel-perfect control. Everything happens locally in your browser—private, fast, and free.",
+      "helperText": "We process your image locally in your browser. No server uploads, no privacy worries."
+    },
+    "editor": {
+      "title": "Adjust Your Image",
+      "subtitle": "Original size: {size}"
+    },
+    "controls": {
+      "resetAll": "Reset selection",
+      "aspectRatio": "Aspect ratio",
+      "selectAspect": "Choose a platform preset",
+      "customOption": "Custom",
+      "customCardTitle": "Custom size",
+      "customCardDescription": "Drag the handles or type exact dimensions.",
+      "lockAspect": "Lock aspect ratio",
+      "lockAspectHint": "Keep width and height linked while resizing.",
+      "customWidth": "Width",
+      "customHeight": "Height",
+      "units": "Units"
+    },
+    "preview": {
+      "zoom": "Zoom"
+    },
+    "imageDetails": {
+      "originalDimensions": "Image: {width} × {height}"
+    },
+    "export": {
+      "format": "Output format",
+      "originalSize": "Original size: {size}",
+      "newSize": "New size: {size}",
+      "pending": "--"
+    },
+    "actions": {
+      "download": "Download",
+      "reset": "Reset",
+      "changeImage": "Change image",
+      "back": "Choose another image",
+      "bulkTool": "Switch to bulk resize"
     }
   }
 }

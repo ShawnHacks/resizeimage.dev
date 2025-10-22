@@ -135,7 +135,8 @@
       "noSignup": "Регистрация не требуется",
       "secure": "Безопасно и конфиденциально",
       "unlimited": "Обрабатывайте неограниченное количество изображений",
-      "browser": "Работает в вашем браузере"
+      "browser": "Работает в вашем браузере",
+      "singleImageCta": "TODO: ResizeTool.features.singleImageCta"
     },
     "imagePreview": {
       "selected": "изображение",
@@ -343,6 +344,54 @@
           "answer": "Это может произойти, когда ваши настройки создают очень детализированные изображения. Чтобы сохранить размеры файлов минимальными, попробуйте сохранить в формате WebP и установите качество на 80% или ниже. Если проблема не исчезает, проверьте разрешение изображения в пикселях, чтобы убедиться, что оно не увеличивается."
         }
       ]
+    }
+  },
+  "SingleResize": {
+    "metadata": {
+      "title": "TODO: metadata.title",
+      "description": "TODO: metadata.description"
+    },
+    "landing": {
+      "badge": "TODO: landing.badge",
+      "title": "TODO: landing.title",
+      "subtitle": "TODO: landing.subtitle",
+      "helperText": "TODO: landing.helperText"
+    },
+    "editor": {
+      "title": "TODO: editor.title",
+      "subtitle": "TODO: editor.subtitle"
+    },
+    "controls": {
+      "resetAll": "TODO: controls.resetAll",
+      "aspectRatio": "TODO: controls.aspectRatio",
+      "selectAspect": "TODO: controls.selectAspect",
+      "customOption": "TODO: controls.customOption",
+      "customCardTitle": "TODO: controls.customCardTitle",
+      "customCardDescription": "TODO: controls.customCardDescription",
+      "lockAspect": "TODO: controls.lockAspect",
+      "lockAspectHint": "TODO: controls.lockAspectHint",
+      "customWidth": "TODO: controls.customWidth",
+      "customHeight": "TODO: controls.customHeight",
+      "units": "TODO: controls.units"
+    },
+    "preview": {
+      "zoom": "TODO: preview.zoom"
+    },
+    "imageDetails": {
+      "originalDimensions": "TODO: imageDetails.originalDimensions"
+    },
+    "export": {
+      "format": "TODO: export.format",
+      "originalSize": "TODO: export.originalSize",
+      "newSize": "TODO: export.newSize",
+      "pending": "TODO: export.pending"
+    },
+    "actions": {
+      "download": "TODO: actions.download",
+      "reset": "TODO: actions.reset",
+      "changeImage": "TODO: actions.changeImage",
+      "back": "TODO: actions.back",
+      "bulkTool": "TODO: SingleResize.actions.bulkTool"
     }
   }
 }

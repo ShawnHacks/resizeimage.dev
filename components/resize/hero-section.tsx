@@ -1,9 +1,11 @@
 'use client';
 
-import { Zap, Infinity, ThumbsUp, Shield, CheckCircle, Upload } from 'lucide-react';
+import { Zap, Infinity, ThumbsUp, Shield, CheckCircle, Upload, ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 
 import { ImageUploader } from '@/components/image-uploader';
+import { Link } from '@/i18n/navigation';
+import { Button } from '@/components/ui/button';
 
 interface HeroSectionProps {
   onFilesSelected: (files: File[]) => void;
@@ -51,6 +53,15 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <Button asChild variant="secondary" className="gap-2">
+            <Link href="/resize-image">
+              {t('features.singleImageCta')}
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </Button>
         </div>
       </div>
     </div>
