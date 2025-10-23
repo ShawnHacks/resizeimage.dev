@@ -13,7 +13,7 @@
         "description": "学习如何通过掌握图片压缩、格式和其他优化技术来提高网站性能和SEO。"
       }
     },
-    "postCount": 1
+    "postCount": 0
   },
   {
     "slug": "tools-comparison",
@@ -22,14 +22,14 @@
     "translations": {
       "en": {
         "name": "Tools Comparison",
-        "description": "Compare different screenshot tools and find the best solution"
+        "description": "Compare different bulk resize image tools and find the best solution"
       },
       "zh": {
         "name": "工具对比",
-        "description": "比较不同的截图工具，找到最佳解决方案"
+        "description": "比较不同的批量压缩图片工具，找到最佳解决方案"
       }
     },
-    "postCount": 1
+    "postCount": 0
   },
   {
     "slug": "tutorials",
@@ -38,14 +38,14 @@
     "translations": {
       "en": {
         "name": "Tutorials",
-        "description": "Step-by-step guides and how-to articles for website screenshots"
+        "description": "Step-by-step guides and how-to articles for bulk resize image tools"
       },
       "zh": {
         "name": "教程",
-        "description": "网站截图的分步指南和操作教程"
+        "description": "批量压缩图片工具的分步指南和操作教程"
       }
     },
-    "postCount": 1
+    "postCount": 0
   },
   {
     "slug": "use-cases",
@@ -61,6 +61,6 @@
         "description": "在社交媒体、电子商务和网页开发等实际场景中应用图片调整大小的实用指南。"
       }
     },
-    "postCount": 1
+    "postCount": 0
   }
 ]
