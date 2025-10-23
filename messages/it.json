@@ -109,8 +109,12 @@
     "postNotFoundDescription": "Il post del blog richiesto non è stato trovato."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Ridimensiona l'immagine online",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "Ridimensiona immagini in blocco",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Converti formato immagine",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Cattura screenshot",
     "compress": "Compress Image",

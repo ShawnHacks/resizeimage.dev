@@ -109,8 +109,12 @@
     "postNotFoundDescription": "Không thể tìm thấy bài đăng blog được yêu cầu."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Thay đổi kích thước hình ảnh",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "Thay đổi kích thước hàng loạt hình ảnh",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Chuyển đổi định dạng hình ảnh",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Chụp ảnh màn hình",
     "compress": "Compress Image",

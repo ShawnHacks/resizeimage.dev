@@ -108,18 +108,21 @@
     "postNotFound": "Postingan Tidak Ditemukan",
     "postNotFoundDescription": "Postingan blog yang diminta tidak dapat ditemukan."
   },
-  "Toast": {
-    "imagesLoaded": "{count} {count, plural, one {gambar} other {gambar}} dimuat",
-    "imagesAdded": "Menambahkan {count} {count, plural, one {gambar} other {gambar}} lagi",
-    "imagesResizedSuccess": "Gambar berhasil diubah ukurannya!",
-    "downloadComplete": "Pengunduhan selesai!",
-    "urlCopied": "URL disalin ke papan klip!",
-    "processing": "Memproses gambar...",
-    "error": "Terjadi kesalahan. Silakan coba lagi.",
-    "noValidImages": "Tidak ditemukan file gambar yang valid. Silakan pilih gambar yang valid.",
-    "selectImagesFirst": "Silakan pilih gambar terlebih dahulu",
-    "enterWidthOrHeight": "Silakan masukkan lebar atau tinggi",
-    "enterTargetValue": "Silakan masukkan nilai target"
+  "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Ubah Ukuran Gambar",
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "Ubah Ukuran Gambar Massal",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Konversi Format Gambar",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Ambil Tangkapan Layar",
+    "compress": "Compress Image",
+    "compressDesc": "Kompres Gambar",
+    "crop": "Crop image",
+    "cropDesc": "Pangkas Gambar",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Gambar Tanda Air"
   },
   "ImageUploader": {
     "titleSingle": "Seret dan lepas gambar Anda",
@@ -262,17 +265,18 @@
       "urlCopied": "URL konfigurasi disalin ke papan klip!",
       "urlCopyFailed": "Gagal menyalin URL"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "Ubah Ukuran Gambar Massal",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "Ambil Tangkapan Layar",
-      "compress": "Compress Image",
-      "compressDesc": "Kompres Gambar",
-      "crop": "Crop image",
-      "cropDesc": "Pangkas Gambar",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "Gambar Tanda Air"
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {gambar} other {gambar}} dimuat",
+      "imagesAdded": "Menambahkan {count} {count, plural, one {gambar} other {gambar}} lagi",
+      "imagesResizedSuccess": "Gambar berhasil diubah ukurannya!",
+      "downloadComplete": "Pengunduhan selesai!",
+      "urlCopied": "URL disalin ke papan klip!",
+      "processing": "Memproses gambar...",
+      "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "noValidImages": "Tidak ditemukan file gambar yang valid. Silakan pilih gambar yang valid.",
+      "selectImagesFirst": "Silakan pilih gambar terlebih dahulu",
+      "enterWidthOrHeight": "Silakan masukkan lebar atau tinggi",
+      "enterTargetValue": "Silakan masukkan nilai target"
     },
     "howTo": {
       "title": "Cara Mengubah Ukuran Gambar",

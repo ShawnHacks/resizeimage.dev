@@ -109,8 +109,12 @@
     "postNotFoundDescription": "Запитувану публікацію блогу не знайдено."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Змінити розмір зображення",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "Масове змінення розміру зображень",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Конвертер зображень",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Зробити знімки екрана",
     "compress": "Compress Image",

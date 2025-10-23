@@ -109,8 +109,12 @@
     "postNotFoundDescription": "İstenen blog gönderisi bulunamadı."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Görüntü Yeniden Boyutlandırma",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "Toplu Görüntü Yeniden Boyutlandırma",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Resim Dönüştürücü",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Ekran Görüntüsü Al",
     "compress": "Compress Image",

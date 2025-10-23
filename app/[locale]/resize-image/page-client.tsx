@@ -8,7 +8,7 @@ import { motion } from 'motion/react';
 import { HeroSection } from '@/components/single-resize/hero-section';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Download, ImageIcon, Upload } from 'lucide-react';
-import { Link } from '@/i18n/navigation';
+import { ToolsGrid } from '@/components/tools-grid';
 import { HowToSection } from '@/components/common/how-to-section';
 import { FeatureSection } from '@/components/common/feature-section';
 import { FAQSection } from '@/components/common/faq-section';
@@ -113,24 +113,28 @@ export default function SingleResizePageClient() {
 
       
       <main className="container mx-auto px-4 py-8 mb-8">
-          <div className="max-w-5xl mx-auto space-y-4">
-            {!file || !previewUrl ? (
-            <motion.div
-              initial={{ opacity: 0, scale: 0.95 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.3, delay: 0.1 }}
-              className="w-full max-w-4xl"
-            >
-              <HeroSection onFilesSelected={handleFilesSelected}  />
-            </motion.div>) : (
-              <SingleResizeWorkspace
-                file={file}
-                previewUrl={previewUrl}
-                onReset={handleResetImage}
-              />
-            )}
-          </div>
-        </main>
+        <div className="max-w-5xl mx-auto space-y-4">
+          {!file || !previewUrl ? (
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.3, delay: 0.1 }}
+            className="w-full max-w-4xl"
+          >
+            <HeroSection onFilesSelected={handleFilesSelected}  />
+          </motion.div>) : (
+            <SingleResizeWorkspace
+              file={file}
+              previewUrl={previewUrl}
+              onReset={handleResetImage}
+            />
+          )}
+        </div>
+      </main>
+
+      <div className='container mx-auto max-w-4xl pb-16'>
+        <ToolsGrid />
+      </div>
 
       {/* How To Section */}
       <HowToSection

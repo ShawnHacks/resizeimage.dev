@@ -109,8 +109,12 @@
     "postNotFoundDescription": "Запрашиваемая публикация блога не найдена."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Изменить размер изображения онлайн",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "Массовое изменение размера изображений",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Конвертировать формат изображения",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Сделать скриншоты",
     "compress": "Compress Image",

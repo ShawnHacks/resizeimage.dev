@@ -109,8 +109,12 @@
     "postNotFoundDescription": "L'article de blog demandé est introuvable."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Redimensionner des images en ligne",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "Redimensionner des images en masse",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Convertir le format d'image",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Prendre des captures d'écran",
     "compress": "Compress Image",

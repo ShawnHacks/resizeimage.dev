@@ -109,8 +109,12 @@
     "postNotFoundDescription": "لم يتم العثور على منشور المدونة المطلوب."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "تغيير حجم الصورة",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "تغيير حجم الصور دفعة واحدة",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "تحويل صور",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "التقاط لقطات شاشة",
     "compress": "Compress Image",

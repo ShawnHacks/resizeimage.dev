@@ -109,8 +109,12 @@
     "postNotFoundDescription": "No se pudo encontrar la publicación del blog solicitada."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Cambiar el tamaño de la imagen",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "Redimensionar imágenes en masa",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Convertir formato de imagen",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Tomar capturas de pantalla",
     "compress": "Compress Image",

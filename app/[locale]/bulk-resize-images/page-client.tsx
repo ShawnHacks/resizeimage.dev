@@ -7,7 +7,7 @@ import { ResizeControls, type ResizeOptionsState } from '@/components/resize/res
 import { ProcessedList } from '@/components/resize/processed-list';
 import { DownloadButton } from '@/components/resize/download-button';
 import { HeroSection } from '@/components/resize/hero-section';
-// import { ToolsGrid } from '@/components/resize/tools-grid';
+import { ToolsGrid } from '@/components/tools-grid';
 import { HowToSection } from '@/components/common/how-to-section';
 // import { ShowcaseSection } from '@/components/common/showcase-section';
 import { FAQSection } from '@/components/common/faq-section';
@@ -432,9 +432,9 @@ export default function ResizeImageClient() {
         </div>
       </main>
 
-      {/* <div className='container mx-auto max-w-4xl pb-16'>
+      <div className='container mx-auto max-w-4xl pb-16'>
         <ToolsGrid />
-      </div> */}
+      </div>
 
       {/* How To Section */}
       <HowToSection

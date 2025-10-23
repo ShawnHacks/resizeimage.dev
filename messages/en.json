@@ -109,8 +109,12 @@
     "postNotFoundDescription": "The requested blog post could not be found."
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "Resize Image Online",
     "bulkresizeimages": "Bulk Resize Images Online",
-    "bulkresizeimagesDesc": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "Batch Resize Photos",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "Convert Images Format",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "Take Screenshots",
     "compress": "Compress Image",

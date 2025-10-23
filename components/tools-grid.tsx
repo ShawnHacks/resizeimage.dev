@@ -9,7 +9,8 @@ import {
   Camera, 
   FileEdit, 
   ImagePlus,
-  Hash
+  Hash,
+  Images
 } from 'lucide-react';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
@@ -18,6 +19,7 @@ import { StaticImageData } from 'next/image';
 
 import websitescreenshot from '@/public/tools/websitescreenshot.png';
 import bulkresizeimages from '@/public/tools/bulkresizeimages.png';
+import imageconverter from '@/public/tools/imageconverter.png';
 
 
 interface Tool {
@@ -35,21 +37,12 @@ export function ToolsGrid() {
 
   const tools: Tool[] = [
     {
-      // icon: Camera,
-      src: websitescreenshot,
-      name: t('screenshot'),
-      description: t('screenshotDesc'),
-      href: 'https://websitescreenshot.online',
-      iconBg: 'bg-green-600 border-2 border-green-600',
-      iconColor: 'text-white',
-    },
-    {
-      icon: Crop,
-      name: t('crop'),
-      description: t('cropDesc'),
+      icon: Images,
+      name: t('resizeimage'),
+      description: t('resizeimageDesc'),
       href: 'https://resizeimage.dev',
-      iconBg: 'bg-white border-2 border-dashed border-orange-500',
-      iconColor: 'text-orange-500',
+      iconBg: 'bg-orange-500 border-2 border-dashed border-orange-500',
+      iconColor: 'text-white',
     },
     {
       src: bulkresizeimages,
@@ -60,34 +53,51 @@ export function ToolsGrid() {
       iconColor: 'text-white',
     },
     {
-      icon: Minimize2,
-      name: t('compress'),
-      description: t('compressDesc'),
-      href: '#',
+      src: imageconverter,
+      name: t('imageconverter'),
+      description: t('imageconverterDesc'),
+      href: 'https://imageconverter.dev',
       iconBg: 'bg-gradient-to-br from-yellow-400 to-yellow-600',
       iconColor: 'text-gray-900',
     },
+    // {
+    //   icon: Minimize2,
+    //   name: t('compress'),
+    //   description: t('compressDesc'),
+    //   href: '#',
+    //   iconBg: 'bg-gradient-to-br from-yellow-400 to-yellow-600',
+    //   iconColor: 'text-gray-900',
+    // },
     {
-      icon: Crop,
-      name: t('crop'),
-      description: t('cropDesc'),
-      href: '#',
-      iconBg: 'bg-white border-2 border-dashed border-blue-500',
-      iconColor: 'text-blue-500',
-    },
-    {
-      icon: ImagePlus,
-      name: t('watermark'),
-      description: t('watermarkDesc'),
-      href: '#',
-      iconBg: 'bg-gradient-to-br from-blue-500 to-red-500',
+      // icon: Camera,
+      src: websitescreenshot,
+      name: t('screenshot'),
+      description: t('screenshotDesc'),
+      href: 'https://websitescreenshot.online',
+      iconBg: 'bg-green-600 border-2 border-green-600',
       iconColor: 'text-white',
     },
+    // {
+    //   icon: Crop,
+    //   name: t('crop'),
+    //   description: t('cropDesc'),
+    //   href: '#',
+    //   iconBg: 'bg-white border-2 border-dashed border-blue-500',
+    //   iconColor: 'text-blue-500',
+    // },
+    // {
+    //   icon: ImagePlus,
+    //   name: t('watermark'),
+    //   description: t('watermarkDesc'),
+    //   href: '#',
+    //   iconBg: 'bg-gradient-to-br from-blue-500 to-red-500',
+    //   iconColor: 'text-white',
+    // },
   ];
 
   return (
     <div className="mt-16">
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {tools.map((tool, index) => {
           const Icon = tool.icon;
           const src = tool.src;

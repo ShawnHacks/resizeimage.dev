@@ -109,8 +109,12 @@
     "postNotFoundDescription": "找不到請求的部落格文章。"
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "在線圖片尺寸調整",
     "bulkresizeimages": "Bulk Resize Images",
-    "bulkresizeimagesDesc": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "批量調整圖片大小在線工具",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "轉換影像格式",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "擷取螢幕畫面",
     "compress": "Compress Image",

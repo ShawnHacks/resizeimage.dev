@@ -109,8 +109,12 @@
     "postNotFoundDescription": "ไม่พบโพสต์บล็อกที่ร้องขอ"
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "ปรับขนาดภาพ",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "ปรับขนาดภาพจำนวนมาก",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "แปลงรูปภาพ",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "ถ่ายภาพหน้าจอ",
     "compress": "Compress Image",

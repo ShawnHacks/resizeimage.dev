@@ -109,8 +109,12 @@
     "postNotFoundDescription": "অনুরোধকৃত ব্লগ পোস্ট খুঁজে পাওয়া যায়নি।"
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "অনলাইনে ছবির আকার পরিবর্তন করুন",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "বাল্ক ইমেজ রিসাইজ করুন",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "ছবি ফরম্যাট পরিবর্তন করুন",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "স্ক্রিনশট নিন",
     "compress": "Compress Image",

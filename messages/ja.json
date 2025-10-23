@@ -109,8 +109,12 @@
     "postNotFoundDescription": "リクエストされたブログ投稿は見つかりませんでした。"
   },
   "Tools": {
+    "resizeimage": "Image Resizer",
+    "resizeimageDesc": "画像をリサイズ",
     "bulkresizeimages": "Bulk Resize Images",
     "bulkresizeimagesDesc": "画像をまとめてリサイズ",
+    "imageconverter": "Image Converter",
+    "imageconverterDesc": "画像の形式を変換",
     "screenshot": "Website Screenshot Online",
     "screenshotDesc": "スクリーンショットを撮る",
     "compress": "Compress Image",
