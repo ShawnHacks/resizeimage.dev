@@ -12,7 +12,7 @@
 
 **使用示例:**
 ```tsx
-const t = useTranslations('ResizeTool');
+const t = useTranslations('BulkResizeTool');
 <h1>{t('pageTitle')}</h1>
 <p>{t('pageDescription')}</p>
 toast.success(t('toast.imagesLoaded', { count }));
@@ -30,7 +30,7 @@ toast.success(t('toast.imagesLoaded', { count }));
 
 **使用示例:**
 ```tsx
-const t = useTranslations('ResizeTool');
+const t = useTranslations('BulkResizeTool');
 <h3>{t('hero.title')}</h3>
 <p>{t('hero.subtitle')}</p>
 {features.map(f => f.text = t('features.xxx'))}
@@ -48,7 +48,7 @@ const t = useTranslations('ResizeTool');
 
 **使用示例:**
 ```tsx
-const t = useTranslations('ResizeTool.imagePreview');
+const t = useTranslations('BulkResizeTool.imagePreview');
 {images.length} {images.length === 1 ? t('selected') : t('selectedPlural')}
 {t('showAll', { count: images.length - imagesPerRow })}
 ```
@@ -63,7 +63,7 @@ const t = useTranslations('ResizeTool.imagePreview');
 
 **使用示例:**
 ```tsx
-const t = useTranslations('ResizeTool.tools');
+const t = useTranslations('BulkResizeTool.tools');
 const tools = [
   { name: t('compress'), description: t('compressDesc') },
   { name: t('crop'), description: t('cropDesc') },
@@ -83,7 +83,7 @@ const tools = [
 
 **使用示例:**
 ```tsx
-const t = useTranslations('ResizeTool.results');
+const t = useTranslations('BulkResizeTool.results');
 <h3>{t('title')}</h3>
 <p>{t('imagesResized', { count: processedImages.length })}</p>
 <p>{t('originalSize')}</p>
@@ -154,7 +154,7 @@ const t = useTranslations('ResizeTool.results');
 
 **估计时间:** 30-45 分钟
 
-**所有翻译键都已准备好！** 查看 `/messages/en.json` 中的 `ResizeTool.controls` 部分。
+**所有翻译键都已准备好！** 查看 `/messages/en.json` 中的 `BulkResizeTool.controls` 部分。
 
 ---
 
@@ -172,7 +172,7 @@ const t = useTranslations('ResizeTool.results');
 ## 📁 **文件清单**
 
 ### **翻译文件:**
-- ✅ `/messages/en.json` - 完整的 ResizeTool 英语翻译
+- ✅ `/messages/en.json` - 完整的 BulkResizeTool 英语翻译
 
 ### **已国际化组件:**
 - ✅ `/app/page-resize.tsx`
@@ -200,7 +200,7 @@ const t = useTranslations('ResizeTool.results');
 import { useTranslations } from 'next-intl';
 
 export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
-  const t = useTranslations('ResizeTool.controls');
+  const t = useTranslations('BulkResizeTool.controls');
   // ...
 }
 ```
@@ -274,7 +274,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
 
 ### **步骤 7: 更新 Shareable Configuration**
 ```tsx
-const tConfig = useTranslations('ResizeTool.config');
+const tConfig = useTranslations('BulkResizeTool.config');
 <h4>{tConfig('title')}</h4>
 <p>{tConfig('description')}</p>
 <Button>{urlCopied ? tConfig('copied') : tConfig('copy')}</Button>
@@ -319,7 +319,7 @@ const tConfig = useTranslations('ResizeTool.config');
 **示例:**
 ```json
 {
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "在线批量调整图片大小",
     "pageDescription": "免费在线批量调整多张图片。快速、安全，完全在浏览器中运行 — 无需上传。",
     "hero": {

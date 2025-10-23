@@ -14,7 +14,7 @@ import { FeatureSection } from '@/components/common/feature-section';
 import { FAQSection } from '@/components/common/faq-section';
 
 export default function SingleResizePageClient() {
-  const t = useTranslations('SingleResize');
+  const t = useTranslations('SingleResizeTool');
   const [file, setFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
 

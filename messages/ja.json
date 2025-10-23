@@ -25,8 +25,24 @@
     "Terms of Service": "利用規約"
   },
   "HomePage": {
-    "title": "オンラインで画像をまとめてリサイズ",
-    "subtitle": "単一または一括処理のための無制限の無料画像リサイザー。ブラウザで画像を即座にリサイズ、圧縮、最適化します。登録不要、アップロード不要 - 100%安全でプライベート。"
+    "title": "無料のオンライン画像リサイザー - 画像や写真を瞬時にリサイズ",
+    "subtitle": "単一または一括処理のためのプロフェッショナルな画像リサイザー無料ツール。オンラインで画像をリサイズし、写真を圧縮し、ブラウザで即座に画像を最適化します。登録不要、アップロード不要 - 100%安全でプライベートな写真リサイザー。"
+  },
+  "SiteConfig": {
+    "title": "画像リサイザー - 無料のオンライン写真リサイザー",
+    "description": "最高の無料画像リサイザーオンラインツール。ブラウザで即座に画像をリサイズ。アップロードなしのプロフェッショナルな写真リサイザー。",
+    "keywords": {
+      "0": "画像リサイザー",
+      "1": "画像リサイザー 無料",
+      "2": "写真リサイザー",
+      "3": "画像 リサイズ",
+      "4": "画像 リサイズ オンライン",
+      "5": "無料 画像リサイザー",
+      "6": "オンライン 画像リサイザー",
+      "7": "写真リサイザー 無料",
+      "8": "写真 リサイズ"
+    },
+    "installApp": "アプリをインストール"
   },
   "NotFoundPage": {
     "title": "ページが見つかりません",
@@ -47,20 +63,6 @@
     "metaTitle": "利用規約 - サービス契約",
     "metaDescription": "当社のウェブサイトサービスを利用するための規則とガイドラインを理解するために、当社の利用規約をお読みください。",
     "metaKeywords": "利用規約、サービス契約、利用規約、ウェブサイトツール、ユーザー契約"
-  },
-  "SiteConfig": {
-    "title": "オンラインで画像をまとめてリサイズ - 画像を即座にリサイズ",
-    "description": "単一または一括処理のための無制限の無料画像リサイザー。ブラウザで画像を即座にリサイズ、圧縮、最適化します。登録不要、アップロード不要 - 100%安全でプライベート。",
-    "keywords": {
-      "0": "オンラインで画像をまとめてリサイズ",
-      "1": "無料のバッチ画像リサイズ",
-      "2": "オンラインで画像をリサイズ",
-      "3": "画像を無料で圧縮",
-      "4": "画像オプティマイザー",
-      "5": "写真リサイザー",
-      "6": "複数の画像をリサイズ",
-      "7": "画像寸法ツール"
-    }
   },
   "BlogPage": {
     "title": "ブログ",
@@ -106,6 +108,18 @@
     "postNotFound": "投稿が見つかりません",
     "postNotFoundDescription": "リクエストされたブログ投稿は見つかりませんでした。"
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "画像をまとめてリサイズ",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "スクリーンショットを撮る",
+    "compress": "Compress Image",
+    "compressDesc": "画像を圧縮",
+    "crop": "Crop image",
+    "cropDesc": "画像を切り抜く",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "画像に透かしを入れる"
+  },
   "ImageUploader": {
     "titleSingle": "画像をドラッグ＆ドロップ",
     "titleMultiple": "画像をドラッグ＆ドロップ",
@@ -123,7 +137,7 @@
     "errorTooManyFiles": "ファイルが多すぎます",
     "errorFileSizeExceeded": "一部のファイルが大きすぎます"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "オンラインで画像をまとめてリサイズ",
     "pageDescription": "一度に複数の画像をバッチリサイズするための無料のオンラインツール。高速、安全、そして完全にブラウザで動作します — アップロードは不要です。",
     "backButton": "戻る",
@@ -247,18 +261,6 @@
       "urlCopied": "構成URLがクリップボードにコピーされました!",
       "urlCopyFailed": "URLのコピーに失敗しました"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "画像をまとめてリサイズ",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "スクリーンショットを撮る",
-      "compress": "Compress Image",
-      "compressDesc": "画像を圧縮",
-      "crop": "Crop image",
-      "cropDesc": "画像を切り抜く",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "画像に透かしを入れる"
-    },
     "toast": {
       "imagesLoaded": "{count} {count, plural, one {画像} other {画像}}が読み込まれました",
       "imagesAdded": "さらに{count} {count, plural, one {画像} other {画像}}が追加されました",
@@ -345,52 +347,127 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
+    "badge": "オンラインで画像をリサイズ",
+    "pageTitle": "無料のオンライン画像リサイザー",
+    "pageDescription": "ブラウザで直接画像をリサイズ。プリセットサイズを選択し、カスタムクロップを調整し、何もアップロードせずにJPG、PNG、またはWebPでダウンロードします。",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "無料の画像リサイザー — オンラインで写真を瞬時にリサイズ",
+      "description": "ブラウザで直接画像をリサイズ。プリセットサイズを選択し、カスタムクロップを調整し、何もアップロードせずにJPG、PNG、またはWebPでダウンロードします。"
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "選択をリセット",
+      "aspectRatio": "アスペクト比",
+      "selectAspect": "プラットフォームのプリセットを選択",
+      "customOption": "カスタム",
+      "customCardTitle": "カスタムサイズ",
+      "customCardDescription": "ハンドルをドラッグするか、正確な寸法を入力します。",
+      "lockAspect": "アスペクト比をロック",
+      "lockAspectHint": "リサイズ中に幅と高さをリンクさせます。",
+      "customWidth": "幅",
+      "customHeight": "高さ",
+      "units": "単位"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "ズーム"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "画像: {width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "出力形式",
+      "originalSize": "元のサイズ: {size}",
+      "newSize": "新しいサイズ: {size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "ダウンロード",
+      "reset": "リセット",
+      "changeImage": "画像を変更",
+      "back": "別の画像を選択",
+      "bulkTool": "一括リサイズに切り替え"
+    },
+    "features": {
+      "title": "プロフェッショナルな画像リサイザー無料オンライン",
+      "description": "サーバーにアップロードせずにオンラインで画像や写真をリサイズ - あなたの頼れる写真リサイザーツール",
+      "lightningFast": "超高速",
+      "free": "永久に100%無料の画像リサイザー",
+      "noSignup": "サインアップや登録は不要",
+      "secure": "100%安全でプライベート",
+      "unlimited": "無制限の使用",
+      "browser": "ブラウザで動作"
+    },
+    "howTo": {
+      "title": "オンラインで画像をリサイズする方法",
+      "subtitle": "無料の画像リサイザーを使用するための3つの簡単なステップ",
+      "step1": {
+        "number": "1",
+        "title": "画像を選択",
+        "description": "無料の写真リサイザーツールにJPG、PNG、またはWebPの写真を選択します。"
+      },
+      "step2": {
+        "number": "2",
+        "title": "写真をリサイズ",
+        "description": "プリセットサイズから選択するか、カスタムで寸法を調整します。"
+      },
+      "step3": {
+        "number": "3",
+        "title": "すぐにダウンロード",
+        "description": "リサイズした写真をすぐにダウンロードします。"
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "無料のオンライン画像リサイザー - アップロード不要",
+        "description": [
+          "最も強力な無料の画像リサイザーツール。プロフェッショナルな写真リサイザーで、オンラインで写真を数秒でリサイズします。",
+          "100%ブラウザベースの写真リサイザー - アップロードなし、アカウントなし、データはデバイスを離れません。プライバシーを重視するユーザーに最適です。"
+        ]
+      },
+      "feature2": {
+        "title": "画像を正確な寸法にリサイズ",
+        "description": [
+          "プロフェッショナルな画像リサイザーで、写真を正確な幅と高さに調整します。ソーシャルメディアの投稿、ウェブサイトの画像、メールの添付ファイル、印刷物に最適です。",
+          "無料の写真リサイザーは、アスペクト比とプラットフォーム固有のプリセットをサポートしており、オンラインで画像を正確にリサイズできます。"
+        ]
+      },
+      "feature3": {
+        "title": "ズーム＆フォーマットオプション付きのビジュアルクロップエディタ",
+        "description": [
+          "直感的なビジュアルクロップエディタを備えたプロフェッショナルな写真リサイザー。ハンドルをドラッグしてクロップ領域を調整し、ズームインして精度を高め、リサイズ前にリアルタイムで変更をプレビューします。",
+          "リサイズした画像を複数の形式（JPG、PNG、WebP）でエクスポートします。無料の画像リサイザーで完全にコントロールできます。"
+        ]
+      }
+    },
+    "faq": {
+      "title": "画像リサイザーFAQ",
+      "subtitle": "無料のオンライン写真リサイザーツールに関するよくある質問",
+      "items": [
+        {
+          "question": "この画像リサイザーは無料で使用できますか？",
+          "answer": "はい！当社の画像リサイザーは永久に100%無料で、制限はありません。透かし、登録、隠れた料金なしで、画像ファイルを無制限にリサイズできます。最高の無料オンライン写真リサイザーです。"
+        },
+        {
+          "question": "このツールでオンラインで画像をリサイズするにはどうすればよいですか？",
+          "answer": "当社の画像リサイザーツールの使い方は簡単です：（1）写真を選択し、（2）リサイズプリセットのソーシャルメディアアスペクト比を選択するか、カスタムで寸法を調整し、（3）すぐにダウンロードします。すべての画像処理はブラウザで行われます。"
+        },
+        {
+          "question": "写真リサイザーはどの画像形式をサポートしていますか？",
+          "answer": "当社のオンライン画像リサイザーは、JPG、JPEG、PNG、WebPのすべての一般的な形式をサポートしています。どの形式の写真でもリサイズでき、リサイズ中に形式を変換することもできます。"
+        },
+        {
+          "question": "このオンライン写真リサイザーは安全ですか？",
+          "answer": "もちろんです！当社の画像リサイザーツールは、すべてブラウザでローカルに処理します。あなたの写真はどのサーバーにもアップロードされず、デバイスを離れることはありません。これをテストするには、当社のウェブサイトを読み込み、インターネットを切断してから写真リサイザーを使用してみてください。それでも完璧に動作します。"
+        },
+        {
+          "question": "画像を特定の寸法にリサイズできますか？",
+          "answer": "はい！当社の画像リサイザーは複数のオプションを提供しています：正確な幅と高さを設定し、アスペクト比を維持するか、ソーシャルメディアプリセット（Instagram、Facebook、Twitter、YouTube、LinkedIn、Pinterestなど）を使用して、各プラットフォームに完全に合わせて写真をリサイズします。また、直感的なビジュアルクロップエディタも使用できます。ハンドルをドラッグしてクロップ領域を調整し、ズームインして精度を高め、リサイズ前にリアルタイムで変更をプレビューします。"
+        },
+        {
+          "question": "これが最高のオンライン写真リサイザーである理由は何ですか？",
+          "answer": "当社の画像リサイザーは際立っています：永久に100%無料、アップロードなし（ブラウザベース）、無制限の使用、一般的な形式のサポート、ソーシャルメディアプリセット、正確な寸法制御、プライバシーの維持。これは完全な無料の写真リサイザーソリューションです。"
+        }
+      ]
     }
   }
 }

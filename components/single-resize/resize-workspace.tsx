@@ -75,7 +75,7 @@ function roundPx(value: number): number {
 }
 
 export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResizeWorkspaceProps) {
-  const t = useTranslations('SingleResize');
+  const t = useTranslations('SingleResizeTool');
   const [imageMetrics, setImageMetrics] = useState<ImageMetrics>({ width: 0, height: 0 });
   const [isImageReady, setIsImageReady] = useState(false);
   const imageRef = useRef<HTMLImageElement | null>(null);

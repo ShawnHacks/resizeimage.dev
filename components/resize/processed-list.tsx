@@ -10,7 +10,7 @@ interface ProcessedListProps {
 }
 
 export function ProcessedList({ processedImages }: ProcessedListProps) {
-  const t = useTranslations('ResizeTool.results');
+  const t = useTranslations('BulkResizeTool.results');
   if (processedImages.length === 0) return null;
 
   // Calculate totals

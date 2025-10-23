@@ -25,8 +25,24 @@
     "Terms of Service": "Hizmet Şartları"
   },
   "HomePage": {
-    "title": "Toplu Resim Yeniden Boyutlandırma Çevrimiçi",
-    "subtitle": "Tek veya toplu işleme için sınırsız ücretsiz resim yeniden boyutlandırıcı. Tarayıcınızda anında resimleri yeniden boyutlandırın, sıkıştırın ve optimize edin. Kayıt yok, yükleme yok - %100 güvenli ve özel."
+    "title": "Ücretsiz Çevrimiçi Görüntü Yeniden Boyutlandırıcı - Görüntüleri ve Fotoğrafları Anında Yeniden Boyutlandırın",
+    "subtitle": "Tek veya toplu işleme için profesyonel ücretsiz görüntü yeniden boyutlandırma aracı. Tarayıcınızda anında çevrimiçi görüntü yeniden boyutlandırın, fotoğrafları sıkıştırın ve resimleri optimize edin. Kayıt yok, yükleme yok - %100 güvenli ve özel fotoğraf yeniden boyutlandırıcı."
+  },
+  "SiteConfig": {
+    "title": "Görüntü Yeniden Boyutlandırıcı - Ücretsiz Çevrimiçi Fotoğraf Yeniden Boyutlandırıcı",
+    "description": "En iyi ücretsiz çevrimiçi görüntü yeniden boyutlandırma aracı. Görüntüyü tarayıcınızda anında yeniden boyutlandırın. Yükleme gerektirmeyen profesyonel ücretsiz fotoğraf yeniden boyutlandırıcı.",
+    "keywords": {
+      "0": "görüntü yeniden boyutlandırıcı",
+      "1": "ücretsiz görüntü yeniden boyutlandırıcı",
+      "2": "fotoğraf yeniden boyutlandırıcı",
+      "3": "görüntü yeniden boyutlandırma",
+      "4": "çevrimiçi görüntü yeniden boyutlandırma",
+      "5": "ücretsiz görüntü yeniden boyutlandırıcı",
+      "6": "çevrimiçi görüntü yeniden boyutlandırıcı",
+      "7": "ücretsiz fotoğraf yeniden boyutlandırıcı",
+      "8": "fotoğraf yeniden boyutlandırma"
+    },
+    "installApp": "Uygulamayı Yükle"
   },
   "NotFoundPage": {
     "title": "Sayfa bulunamadı",
@@ -47,20 +63,6 @@
     "metaTitle": "Şartlar ve Koşullar - Hizmet Sözleşmesi",
     "metaDescription": "Web sitemizi kullanma kurallarını ve yönergelerini anlamak için şartlar ve koşullarımızı okuyun.",
     "metaKeywords": "şartlar ve koşullar, hizmet sözleşmesi, kullanım koşulları, web sitesi aracı, kullanıcı sözleşmesi"
-  },
-  "SiteConfig": {
-    "title": "Toplu Resim Yeniden Boyutlandırma Çevrimiçi - Resimleri Anında Yeniden Boyutlandırın",
-    "description": "Tek veya toplu işleme için sınırsız ücretsiz resim yeniden boyutlandırıcı. Tarayıcınızda anında resimleri yeniden boyutlandırın, sıkıştırın ve optimize edin. Kayıt yok, yükleme yok - %100 güvenli ve özel.",
-    "keywords": {
-      "0": "çevrimiçi toplu resim yeniden boyutlandırıcı",
-      "1": "ücretsiz toplu resim yeniden boyutlandırma",
-      "2": "çevrimiçi resimleri yeniden boyutlandırın",
-      "3": "resimleri ücretsiz sıkıştırın",
-      "4": "resim iyileştirici",
-      "5": "fotoğraf yeniden boyutlandırıcı",
-      "6": "birden çok resmi yeniden boyutlandırın",
-      "7": "resim boyutları aracı"
-    }
   },
   "BlogPage": {
     "title": "Blog",
@@ -106,6 +108,18 @@
     "postNotFound": "Gönderi Bulunamadı",
     "postNotFoundDescription": "İstenen blog gönderisi bulunamadı."
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "Toplu Görüntü Yeniden Boyutlandırma",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Ekran Görüntüsü Al",
+    "compress": "Compress Image",
+    "compressDesc": "Görüntüleri Sıkıştır",
+    "crop": "Crop image",
+    "cropDesc": "Görüntüleri Kırp",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Görüntülere Filigran Ekle"
+  },
   "ImageUploader": {
     "titleSingle": "Resminizi sürükleyip bırakın",
     "titleMultiple": "Resimlerinizi sürükleyip bırakın",
@@ -123,7 +137,7 @@
     "errorTooManyFiles": "Çok fazla dosya",
     "errorFileSizeExceeded": "Bazı dosyalar çok büyük"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "Toplu Resim Yeniden Boyutlandırma Çevrimiçi",
     "pageDescription": "Aynı anda birden çok görüntüyü toplu olarak yeniden boyutlandırmak için ücretsiz çevrimiçi araç. Hızlı, güvenli ve tamamen tarayıcınızda çalışır — yükleme gerekmez.",
     "backButton": "Geri",
@@ -216,7 +230,7 @@
         "compress": "Küçük Sıkıştır",
         "compressDesc": "< 100 KB"
       },
-      "resizeButton": "%{percentage} Olarak Yeniden Boyutlandır",
+      "resizeButton": "%Olarak Yeniden Boyutlandır",
       "resizeButtonDefault": "Görüntüleri Yeniden Boyutlandır"
     },
     "processing": {
@@ -246,18 +260,6 @@
       "link": "Bağlantı",
       "urlCopied": "Yapılandırma URL'si panoya kopyalandı!",
       "urlCopyFailed": "URL kopyalanamadı"
-    },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "Toplu Görüntü Yeniden Boyutlandırma",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "Ekran Görüntüsü Al",
-      "compress": "Compress Image",
-      "compressDesc": "Görüntüleri Sıkıştır",
-      "crop": "Crop image",
-      "cropDesc": "Görüntüleri Kırp",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "Görüntülere Filigran Ekle"
     },
     "toast": {
       "imagesLoaded": "{count} {count, plural, one {görüntü} other {görüntü}} yüklendi",
@@ -345,52 +347,127 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
+    "badge": "Görüntüyü çevrimiçi yeniden boyutlandır",
+    "pageTitle": "Ücretsiz Çevrimiçi Görüntü Yeniden Boyutlandırıcı",
+    "pageDescription": "Görüntüyü doğrudan tarayıcınızda yeniden boyutlandırın. Önceden ayarlanmış bir boyut seçin, özel bir kırpmayı ayarlayın ve hiçbir şey yüklemeden JPG, PNG veya WebP olarak indirin.",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "Ücretsiz Görüntü Yeniden Boyutlandırıcı — Fotoğrafları Çevrimiçi Olarak Anında Yeniden Boyutlandırın",
+      "description": "Görüntüyü doğrudan tarayıcınızda yeniden boyutlandırın. Önceden ayarlanmış bir boyut seçin, özel bir kırpmayı ayarlayın ve hiçbir şey yüklemeden JPG, PNG veya WebP olarak indirin."
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "Seçimi sıfırla",
+      "aspectRatio": "En boy oranı",
+      "selectAspect": "Bir platform ön ayarı seçin",
+      "customOption": "Özel",
+      "customCardTitle": "Özel boyut",
+      "customCardDescription": "Tutamaçları sürükleyin veya tam boyutları yazın.",
+      "lockAspect": "En boy oranını kilitle",
+      "lockAspectHint": "Yeniden boyutlandırırken genişliği ve yüksekliği bağlı tutun.",
+      "customWidth": "Genişlik",
+      "customHeight": "Yükseklik",
+      "units": "Birimler"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "Yakınlaştır"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "Görüntü: {width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "Çıktı formatı",
+      "originalSize": "Orijinal boyut: {size}",
+      "newSize": "Yeni boyut: {size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "İndir",
+      "reset": "Sıfırla",
+      "changeImage": "Görüntüyü değiştir",
+      "back": "Başka bir görüntü seç",
+      "bulkTool": "Toplu yeniden boyutlandırmaya geç"
+    },
+    "features": {
+      "title": "Profesyonel Ücretsiz Çevrimiçi Görüntü Yeniden Boyutlandırıcı",
+      "description": "Görüntüleri ve fotoğrafları herhangi bir sunucuya yüklemeden çevrimiçi olarak yeniden boyutlandırın - başvuracağınız fotoğraf yeniden boyutlandırma aracınız",
+      "lightningFast": "Yıldırım hızında",
+      "free": "Sonsuza kadar %100 ücretsiz görüntü yeniden boyutlandırıcı",
+      "noSignup": "Kayıt veya üyelik yok",
+      "secure": "%100 güvenli ve özel",
+      "unlimited": "Sınırsız kullanım",
+      "browser": "Tarayıcıda çalışır"
+    },
+    "howTo": {
+      "title": "Çevrimiçi Görüntü Nasıl Yeniden Boyutlandırılır",
+      "subtitle": "Ücretsiz görüntü yeniden boyutlandırıcımızı kullanmak için 3 basit adım",
+      "step1": {
+        "number": "1",
+        "title": "Görüntü Seç",
+        "description": "JPG, PNG veya WebP fotoğrafınızı ücretsiz fotoğraf yeniden boyutlandırma aracımıza seçin."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Fotoğrafı Yeniden Boyutlandır",
+        "description": "Önceden ayarlanmış boyutlardan birini seçin veya özel boyutları ayarlayın."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Anında İndir",
+        "description": "Yeniden boyutlandırılmış fotoğrafınızı hemen indirin."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Ücretsiz Çevrimiçi Görüntü Yeniden Boyutlandırıcı - Yükleme Gerekmez",
+        "description": [
+          "En güçlü ücretsiz görüntü yeniden boyutlandırma aracı. Profesyonel fotoğraf yeniden boyutlandırıcımızla fotoğrafları saniyeler içinde çevrimiçi olarak yeniden boyutlandırın.",
+          "%100 tarayıcı tabanlı fotoğraf yeniden boyutlandırıcı - yükleme yok, hesap yok, veriler cihazınızdan ayrılmaz. Gizliliğe önem veren kullanıcılar için mükemmel."
+        ]
+      },
+      "feature2": {
+        "title": "Görüntüyü Tam Boyutlara Yeniden Boyutlandır",
+        "description": [
+          "Fotoğrafı tam genişlik ve yüksekliğe ayarlamak için profesyonel görüntü yeniden boyutlandırıcı. Sosyal medya gönderileri, web sitesi görüntüleri, e-posta ekleri ve basılı materyaller için mükemmel.",
+          "Ücretsiz fotoğraf yeniden boyutlandırıcımız en boy oranlarını ve platforma özgü ön ayarları destekler - görüntüyü çevrimiçi olarak hassas bir şekilde yeniden boyutlandırın."
+        ]
+      },
+      "feature3": {
+        "title": "Yakınlaştırma ve Biçim Seçenekleriyle Görsel Kırpma Düzenleyici",
+        "description": [
+          "Sezgisel bir görsel kırpma düzenleyicisine sahip profesyonel fotoğraf yeniden boyutlandırıcı. Kırpma alanını ayarlamak için tutamaçları sürükleyin, hassasiyet için yakınlaştırın ve yeniden boyutlandırmadan önce değişiklikleri gerçek zamanlı olarak önizleyin.",
+          "Yeniden boyutlandırılmış görüntülerinizi birden çok formatta (JPG, PNG, WebP) dışa aktarın. Ücretsiz görüntü yeniden boyutlandırıcımız size tam kontrol sağlar."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Görüntü Yeniden Boyutlandırıcı SSS",
+      "subtitle": "Ücretsiz çevrimiçi fotoğraf yeniden boyutlandırma aracımız hakkında sık sorulan sorular",
+      "items": [
+        {
+          "question": "Bu görüntü yeniden boyutlandırıcıyı kullanmak ücretsiz mi?",
+          "answer": "Evet! Görüntü yeniden boyutlandırıcımız sonsuza kadar %100 ücretsizdir ve herhangi bir sınırlama yoktur. Filigran, kayıt veya gizli ücretler olmadan görüntü dosyalarını sınırsız sayıda yeniden boyutlandırın. En iyi ücretsiz çevrimiçi fotoğraf yeniden boyutlandırıcı."
+        },
+        {
+          "question": "Bu araçla çevrimiçi olarak bir görüntüyü nasıl yeniden boyutlandırırım?",
+          "answer": "Görüntü yeniden boyutlandırma aracımızı kullanmak basittir: (1) Fotoğrafınızı seçin, (2) Sosyal medya en boy oranı ön ayarını seçin veya özel boyutları ayarlayın, (3) Anında indirin. Tüm görüntü işleme tarayıcınızda gerçekleşir."
+        },
+        {
+          "question": "Fotoğraf yeniden boyutlandırıcı hangi görüntü formatlarını destekliyor?",
+          "answer": "Çevrimiçi görüntü yeniden boyutlandırıcımız tüm popüler formatları destekler: JPG, JPEG, PNG ve WebP. Herhangi bir formattaki fotoğrafları yeniden boyutlandırabilir ve hatta yeniden boyutlandırırken formatlar arasında dönüştürebilirsiniz."
+        },
+        {
+          "question": "Bu çevrimiçi fotoğraf yeniden boyutlandırıcı güvenli mi?",
+          "answer": "Kesinlikle! Görüntü yeniden boyutlandırma aracımız her şeyi yerel olarak tarayıcınızda işler. Fotoğraflarınız hiçbir zaman herhangi bir sunucuya yüklenmez - cihazınızdan asla ayrılmazlar. Bunu test etmek için web sitemizi yükleyin, internet bağlantınızı kesin ve fotoğraf yeniden boyutlandırıcı hala mükemmel şekilde çalışacaktır."
+        },
+        {
+          "question": "Bir görüntüyü belirli boyutlara yeniden boyutlandırabilir miyim?",
+          "answer": "Evet! Görüntü yeniden boyutlandırıcımız birden çok seçenek sunar: tam genişlik ve yükseklik ayarlayın, en boy oranını koruyun veya her platform için fotoğrafları mükemmel şekilde yeniden boyutlandırmak için sosyal medya ön ayarlarını (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest ve daha fazlası) kullanın. Ayrıca sezgisel bir görsel kırpma düzenleyicisi de kullanabilirsiniz. Kırpma alanını ayarlamak için tutamaçları sürükleyin, hassasiyet için yakınlaştırın ve yeniden boyutlandırmadan önce değişiklikleri gerçek zamanlı olarak önizleyin."
+        },
+        {
+          "question": "Bunu en iyi çevrimiçi fotoğraf yeniden boyutlandırıcı yapan nedir?",
+          "answer": "Görüntü yeniden boyutlandırıcımız öne çıkıyor: sonsuza kadar %100 ücretsiz, yükleme yok (tarayıcı tabanlı), sınırsız kullanım, yaygın formatları destekler, sosyal medya ön ayarları, tam boyut kontrolü ve gizliliği korur. Eksiksiz ücretsiz fotoğraf yeniden boyutlandırma çözümüdür."
+        }
+      ]
     }
   }
 }

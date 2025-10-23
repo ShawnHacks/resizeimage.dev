@@ -180,8 +180,8 @@ const RESIZE_PRESETS: ResizePreset[] = [
 
 #### **基础设置:**
 - ✅ `useTranslations` 导入
-- ✅ `t` hook (ResizeTool.controls)
-- ✅ `tConfig` hook (ResizeTool.config)
+- ✅ `t` hook (BulkResizeTool.controls)
+- ✅ `tConfig` hook (BulkResizeTool.config)
 
 #### **MODES 数组 (第45-52行):**
 - ✅ Percentage: `t('percentage.title')`
@@ -275,7 +275,7 @@ cp messages/en.json messages/zh.json
 ### **步骤 2: 翻译所有值**
 ```json
 {
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "在线批量调整图片大小",
     "controls": {
       "resizeMode": "调整模式",

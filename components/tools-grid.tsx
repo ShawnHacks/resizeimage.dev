@@ -31,7 +31,7 @@ interface Tool {
 }
 
 export function ToolsGrid() {
-  const t = useTranslations('ResizeTool.tools');
+  const t = useTranslations('Tools');
 
   const tools: Tool[] = [
     {

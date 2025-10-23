@@ -38,8 +38,8 @@ export interface ResizeOptionsState {
 }
 
 export function ResizeControls({ onResize, children, disabled }: ResizeControlsProps) {
-  const t = useTranslations('ResizeTool.controls');
-  const tConfig = useTranslations('ResizeTool.config');
+  const t = useTranslations('BulkResizeTool.controls');
+  const tConfig = useTranslations('BulkResizeTool.config');
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const router = useRouter();

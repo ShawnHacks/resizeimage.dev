@@ -13,7 +13,7 @@ interface DownloadButtonProps {
 }
 
 export function DownloadButton({ processedImages, onDownloadComplete }: DownloadButtonProps) {
-  const t = useTranslations('ResizeTool');
+  const t = useTranslations('BulkResizeTool');
   
   const [isDownloading, setIsDownloading] = useState(false);
 

@@ -25,8 +25,24 @@
     "Terms of Service": "Nutzungsbedingungen"
   },
   "HomePage": {
-    "title": "Bilder online in großen Mengen anpassen",
-    "subtitle": "Unbegrenzter kostenloser Bild-Resizer für Einzel- oder Stapelverarbeitung. Passen Sie die Größe an, komprimieren und optimieren Sie Bilder sofort in Ihrem Browser. Keine Registrierung, keine Uploads - 100% sicher und privat."
+    "title": "Kostenloser Online-Bildverkleinerer - Bilder & Fotos sofort in der Größe ändern",
+    "subtitle": "Professionelles kostenloses Tool zur Bildgrößenänderung für Einzel- oder Stapelverarbeitung. Ändern Sie die Bildgröße online, komprimieren Sie Fotos und optimieren Sie Bilder sofort in Ihrem Browser. Keine Registrierung, keine Uploads - 100% sicherer und privater Fotoverkleinerer."
+  },
+  "SiteConfig": {
+    "title": "Bildverkleinerer - Kostenloser Online-Fotoverkleinerer",
+    "description": "Bestes kostenloses Online-Tool zur Bildgrößenänderung. Ändern Sie die Bildgröße sofort in Ihrem Browser. Professioneller Fotoverkleinerer kostenlos ohne Uploads.",
+    "keywords": {
+      "0": "Bildverkleinerer",
+      "1": "Bildverkleinerer kostenlos",
+      "2": "Fotoverkleinerer",
+      "3": "Bildgröße ändern",
+      "4": "Bildgröße online ändern",
+      "5": "kostenloser Bildverkleinerer",
+      "6": "Online-Bildverkleinerer",
+      "7": "Fotoverkleinerer kostenlos",
+      "8": "Fotogröße ändern"
+    },
+    "installApp": "Installiere App"
   },
   "NotFoundPage": {
     "title": "Seite nicht gefunden",
@@ -47,20 +63,6 @@
     "metaTitle": "Allgemeine Geschäftsbedingungen - Servicevereinbarung",
     "metaDescription": "Lesen Sie unsere Allgemeinen Geschäftsbedingungen, um die Regeln und Richtlinien für die Nutzung unseres Website-Service zu verstehen.",
     "metaKeywords": "Allgemeine Geschäftsbedingungen, Servicevereinbarung, Nutzungsbedingungen, Website-Tool, Benutzervereinbarung"
-  },
-  "SiteConfig": {
-    "title": "Bilder online in großen Mengen anpassen - Bilder sofort anpassen",
-    "description": "Unbegrenzter kostenloser Bild-Resizer für Einzel- oder Stapelverarbeitung. Passen Sie die Größe an, komprimieren und optimieren Sie Bilder sofort in Ihrem Browser. Keine Registrierung, keine Uploads - 100% sicher und privat.",
-    "keywords": {
-      "0": "Massen-Bild-Resizer online",
-      "1": "kostenlose Stapel-Bildgrößenänderung",
-      "2": "Bilder online anpassen",
-      "3": "Bilder kostenlos komprimieren",
-      "4": "Bildoptimierer",
-      "5": "Foto-Resizer",
-      "6": "mehrere Bilder anpassen",
-      "7": "Bildabmessungen-Tool"
-    }
   },
   "BlogPage": {
     "title": "Blog",
@@ -106,6 +108,18 @@
     "postNotFound": "Beitrag nicht gefunden",
     "postNotFoundDescription": "Der angeforderte Blogbeitrag konnte nicht gefunden werden."
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "Bilder in großen Mengen anpassen",
+    "screenshot": "Website-Screenshot online",
+    "screenshotDesc": "Screenshots machen",
+    "compress": "Compress Image",
+    "compressDesc": "Bilder komprimieren",
+    "crop": "Crop image",
+    "cropDesc": "Bilder zuschneiden",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Bilder mit Wasserzeichen versehen"
+  },
   "ImageUploader": {
     "titleSingle": "Ziehen Sie Ihr Bild hierher",
     "titleMultiple": "Ziehen Sie Ihre Bilder hierher",
@@ -123,7 +137,7 @@
     "errorTooManyFiles": "Zu viele Dateien",
     "errorFileSizeExceeded": "Einige Dateien sind zu groß"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "Bilder online in großen Mengen anpassen",
     "pageDescription": "Kostenloses Online-Tool zur Stapelverarbeitung mehrerer Bilder gleichzeitig. Schnell, sicher und funktioniert vollständig in Ihrem Browser — kein Upload erforderlich.",
     "backButton": "Zurück",
@@ -247,18 +261,6 @@
       "urlCopied": "Konfigurations-URL in die Zwischenablage kopiert!",
       "urlCopyFailed": "URL konnte nicht kopiert werden"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "Bilder in großen Mengen anpassen",
-      "screenshot": "Website-Screenshot online",
-      "screenshotDesc": "Screenshots machen",
-      "compress": "Compress Image",
-      "compressDesc": "Bilder komprimieren",
-      "crop": "Crop image",
-      "cropDesc": "Bilder zuschneiden",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "Bilder mit Wasserzeichen versehen"
-    },
     "toast": {
       "imagesLoaded": "{count} {count, plural, one {Bild} other {Bilder}} geladen",
       "imagesAdded": "{count} weitere {count, plural, one {Bild} other {Bilder}} hinzugefügt",
@@ -345,52 +347,127 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
+    "badge": "Bildgröße online ändern",
+    "pageTitle": "Kostenloser Online-Bildverkleinerer",
+    "pageDescription": "Ändern Sie die Bildgröße direkt in Ihrem Browser. Wählen Sie eine voreingestellte Größe, passen Sie einen benutzerdefinierten Zuschnitt an und laden Sie es in JPG, PNG oder WebP herunter, ohne etwas hochzuladen.",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "Kostenloser Bildverkleinerer — Fotos online sofort in der Größe ändern",
+      "description": "Ändern Sie die Bildgröße direkt in Ihrem Browser. Wählen Sie eine voreingestellte Größe, passen Sie einen benutzerdefinierten Zuschnitt an und laden Sie es in JPG, PNG oder WebP herunter, ohne etwas hochzuladen."
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "Auswahl zurücksetzen",
+      "aspectRatio": "Seitenverhältnis",
+      "selectAspect": "Wählen Sie eine Plattform-Voreinstellung",
+      "customOption": "Benutzerdefiniert",
+      "customCardTitle": "Benutzerdefinierte Größe",
+      "customCardDescription": "Ziehen Sie die Griffe oder geben Sie genaue Abmessungen ein.",
+      "lockAspect": "Seitenverhältnis sperren",
+      "lockAspectHint": "Breite und Höhe beim Ändern der Größe verknüpft lassen.",
+      "customWidth": "Breite",
+      "customHeight": "Höhe",
+      "units": "Einheiten"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "Zoomen"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "Bild: {width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "Ausgabeformat",
+      "originalSize": "Originalgröße: {size}",
+      "newSize": "Neue Größe: {size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "Herunterladen",
+      "reset": "Zurücksetzen",
+      "changeImage": "Bild ändern",
+      "back": "Anderes Bild wählen",
+      "bulkTool": "Zur Stapelverarbeitung wechseln"
+    },
+    "features": {
+      "title": "Professioneller Bildverkleinerer kostenlos online",
+      "description": "Ändern Sie die Größe von Bildern und Fotos online, ohne sie auf einen Server hochzuladen - Ihr bevorzugtes Tool zur Fotogrößenänderung",
+      "lightningFast": "Blitzschnell",
+      "free": "100% kostenloser Bildverkleinerer für immer",
+      "noSignup": "Keine Anmeldung oder Registrierung",
+      "secure": "100% sicher & privat",
+      "unlimited": "Unbegrenzte Nutzung",
+      "browser": "Funktioniert im Browser"
+    },
+    "howTo": {
+      "title": "So ändern Sie die Bildgröße online",
+      "subtitle": "3 einfache Schritte zur Verwendung unseres kostenlosen Bildverkleinerers",
+      "step1": {
+        "number": "1",
+        "title": "Bild auswählen",
+        "description": "Wählen Sie Ihr JPG-, PNG- oder WebP-Foto für unser kostenloses Fotoverkleinerungstool aus."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Fotogröße ändern",
+        "description": "Wählen Sie aus voreingestellten Größen oder passen Sie die Abmessungen benutzerdefiniert an."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Sofort herunterladen",
+        "description": "Laden Sie Ihr in der Größe geändertes Foto sofort herunter."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Kostenloser Online-Bildverkleinerer - Kein Upload erforderlich",
+        "description": [
+          "Das leistungsstärkste kostenlose Tool zur Bildgrößenänderung. Ändern Sie die Größe von Fotos online in Sekunden mit unserem professionellen Fotoverkleinerer.",
+          "100% browserbasierter Fotoverkleinerer - keine Uploads, keine Konten, keine Daten verlassen Ihr Gerät. Perfekt für datenschutzbewusste Benutzer."
+        ]
+      },
+      "feature2": {
+        "title": "Bild auf exakte Abmessungen zuschneiden",
+        "description": [
+          "Professioneller Bildverkleinerer zum Anpassen von Fotos an exakte Breite und Höhe. Perfekt für Social-Media-Beiträge, Website-Bilder, E-Mail-Anhänge und Druckmaterialien.",
+          "Unser kostenloser Fotoverkleinerer unterstützt Seitenverhältnisse und plattformspezifische Voreinstellungen - ändern Sie die Bildgröße online mit Präzision."
+        ]
+      },
+      "feature3": {
+        "title": "Visueller Zuschneide-Editor mit Zoom- und Formatoptionen",
+        "description": [
+          "Professioneller Fotoverkleinerer mit intuitivem visuellem Zuschneide-Editor. Ziehen Sie die Griffe, um den Zuschneidebereich anzupassen, zoomen Sie für Präzision hinein und sehen Sie sich Änderungen in Echtzeit an, bevor Sie die Größe ändern.",
+          "Exportieren Sie Ihre in der Größe geänderten Bilder in mehreren Formaten (JPG, PNG, WebP). Unser kostenloser Bildverkleinerer gibt Ihnen die volle Kontrolle."
+        ]
+      }
+    },
+    "faq": {
+      "title": "FAQ zum Bildverkleinerer",
+      "subtitle": "Häufig gestellte Fragen zu unserem kostenlosen Online-Tool zur Fotogrößenänderung",
+      "items": [
+        {
+          "question": "Ist dieser Bildverkleinerer kostenlos?",
+          "answer": "Ja! Unser Bildverkleinerer ist für immer 100% kostenlos und ohne Einschränkungen. Ändern Sie die Größe von Bilddateien unbegrenzt oft ohne Wasserzeichen, Registrierung oder versteckte Gebühren. Der beste kostenlose Online-Fotoverkleinerer."
+        },
+        {
+          "question": "Wie ändere ich die Bildgröße online mit diesem Tool?",
+          "answer": "Die Verwendung unseres Bildverkleinerungstools ist einfach: (1) Wählen Sie Ihr Foto aus, (2) Wählen Sie eine Voreinstellung für das Seitenverhältnis für soziale Medien oder passen Sie die Abmessungen benutzerdefiniert an, (3) Laden Sie es sofort herunter. Die gesamte Bildverarbeitung findet in Ihrem Browser statt."
+        },
+        {
+          "question": "Welche Bildformate unterstützt der Fotoverkleinerer?",
+          "answer": "Unser Online-Bildverkleinerer unterstützt alle gängigen Formate: JPG, JPEG, PNG und WebP. Sie können die Größe von Fotos in jedem Format ändern und sogar während der Größenänderung zwischen den Formaten konvertieren."
+        },
+        {
+          "question": "Ist dieser Online-Fotoverkleinerer sicher?",
+          "answer": "Absolut! Unser Bildverkleinerungstool verarbeitet alles lokal in Ihrem Browser. Ihre Fotos werden niemals auf einen Server hochgeladen - sie verlassen Ihr Gerät nie. Um dies zu testen, laden Sie unsere Website, trennen Sie Ihre Internetverbindung und der Fotoverkleinerer funktioniert immer noch einwandfrei."
+        },
+        {
+          "question": "Kann ich die Bildgröße auf bestimmte Abmessungen ändern?",
+          "answer": "Ja! Unser Bildverkleinerer bietet mehrere Optionen: Stellen Sie die genaue Breite und Höhe ein, behalten Sie das Seitenverhältnis bei oder verwenden Sie Voreinstellungen für soziale Medien (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest und mehr), um Fotos für jede Plattform perfekt in der Größe zu ändern. Sie können auch einen intuitiven visuellen Zuschneide-Editor verwenden. Ziehen Sie die Griffe, um den Zuschneidebereich anzupassen, zoomen Sie für Präzision hinein und sehen Sie sich Änderungen in Echtzeit an, bevor Sie die Größe ändern."
+        },
+        {
+          "question": "Was macht diesen zum besten Online-Fotoverkleinerer?",
+          "answer": "Unser Bildverkleinerer zeichnet sich aus: 100% für immer kostenlos, keine Uploads (browserbasiert), unbegrenzte Nutzung, unterstützt gängige Formate, Voreinstellungen für soziale Medien, exakte Dimensionskontrolle und wahrt die Privatsphäre. Es ist die komplette kostenlose Lösung für die Fotogrößenänderung."
+        }
+      ]
     }
   }
 }

@@ -25,8 +25,24 @@
     "Terms of Service": "Termos de Serviço"
   },
   "HomePage": {
-    "title": "Redimensionar imagens em massa online",
-    "subtitle": "Redimensionador de imagens gratuito e ilimitado para processamento único ou em lote. Redimensione, comprima e otimize imagens instantaneamente em seu navegador. Sem registro, sem uploads - 100% seguro e privado."
+    "title": "Redimensionador de Imagens Online Grátis - Redimensione Imagens e Fotos Instantaneamente",
+    "subtitle": "Ferramenta profissional e gratuita de redimensionamento de imagens para processamento único ou em lote. Redimensione imagens online, comprima fotos e otimize imagens instantaneamente no seu navegador. Sem registo, sem uploads - redimensionador de fotos 100% seguro e privado."
+  },
+  "SiteConfig": {
+    "title": "Redimensionador de Imagens - Redimensionador de Fotos Online Grátis",
+    "description": "A melhor ferramenta online e gratuita para redimensionar imagens. Redimensione imagens, instantaneamente no seu navegador. Redimensionador de fotos profissional e gratuito, sem necessidade de uploads.",
+    "keywords": {
+      "0": "redimensionador de imagens",
+      "1": "redimensionador de imagens gratuito",
+      "2": "redimensionador de fotos",
+      "3": "redimensionar imagem",
+      "4": "redimensionar imagem online",
+      "5": "redimensionador de imagens grátis",
+      "6": "redimensionador de imagens online",
+      "7": "redimensionador de fotos gratuito",
+      "8": "redimensionar foto"
+    },
+    "installApp": "Instalar App"
   },
   "NotFoundPage": {
     "title": "Página não encontrada",
@@ -47,20 +63,6 @@
     "metaTitle": "Termos e Condições - Contrato de Serviço",
     "metaDescription": "Leia nossos termos e condições para entender as regras e diretrizes para usar nosso serviço de site.",
     "metaKeywords": "termos e condições, contrato de serviço, termos de uso, ferramenta de site, contrato de usuário"
-  },
-  "SiteConfig": {
-    "title": "Redimensionar imagens em massa online - Redimensionar imagens instantaneamente",
-    "description": "Redimensionador de imagens gratuito e ilimitado para processamento único ou em lote. Redimensione, comprima e otimize imagens instantaneamente em seu navegador. Sem registro, sem uploads - 100% seguro e privado.",
-    "keywords": {
-      "0": "redimensionador de imagens em massa online",
-      "1": "redimensionamento de imagens em lote gratuito",
-      "2": "redimensionar imagens online",
-      "3": "comprimir imagens gratuitamente",
-      "4": "otimizador de imagens",
-      "5": "redimensionador de fotos",
-      "6": "redimensionar várias imagens",
-      "7": "ferramenta de dimensões de imagem"
-    }
   },
   "BlogPage": {
     "title": "Blog",
@@ -106,6 +108,18 @@
     "postNotFound": "Postagem não encontrada",
     "postNotFoundDescription": "A postagem do blog solicitada não pôde ser encontrada."
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "Redimensionar imagens em massa",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Tirar capturas de tela",
+    "compress": "Compress Image",
+    "compressDesc": "Comprimir imagens",
+    "crop": "Crop image",
+    "cropDesc": "Cortar imagens",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Imagens com marca d'água"
+  },
   "ImageUploader": {
     "titleSingle": "Arraste e solte sua imagem",
     "titleMultiple": "Arraste e solte suas imagens",
@@ -123,7 +137,7 @@
     "errorTooManyFiles": "Muitos arquivos",
     "errorFileSizeExceeded": "Alguns arquivos são muito grandes"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "Redimensionar imagens em massa online",
     "pageDescription": "Ferramenta online gratuita para redimensionar várias imagens em lote de uma só vez. Rápido, seguro e funciona inteiramente em seu navegador — não é necessário fazer upload.",
     "backButton": "Voltar",
@@ -247,18 +261,6 @@
       "urlCopied": "URL de configuração copiado para a área de transferência!",
       "urlCopyFailed": "Falha ao copiar o URL"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "Redimensionar imagens em massa",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "Tirar capturas de tela",
-      "compress": "Compress Image",
-      "compressDesc": "Comprimir imagens",
-      "crop": "Crop image",
-      "cropDesc": "Cortar imagens",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "Imagens com marca d'água"
-    },
     "toast": {
       "imagesLoaded": "{count} {count, plural, one {imagem} other {imagens}} carregadas",
       "imagesAdded": "Adicionadas mais {count} {count, plural, one {imagem} other {imagens}}",
@@ -345,52 +347,127 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
+    "badge": "Redimensionar imagem online",
+    "pageTitle": "Redimensionador de Imagens Online Grátis",
+    "pageDescription": "Redimensione a imagem diretamente no seu navegador. Escolha um tamanho predefinido, ajuste um corte personalizado e descarregue em JPG, PNG ou WebP sem carregar nada.",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "Redimensionador de Imagens Grátis — Redimensione Fotos Online Instantaneamente",
+      "description": "Redimensione a imagem diretamente no seu navegador. Escolha um tamanho predefinido, ajuste um corte personalizado e descarregue em JPG, PNG ou WebP sem carregar nada."
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "Redefinir seleção",
+      "aspectRatio": "Proporção",
+      "selectAspect": "Escolha uma predefinição de plataforma",
+      "customOption": "Personalizado",
+      "customCardTitle": "Tamanho personalizado",
+      "customCardDescription": "Arraste as alças ou digite as dimensões exatas.",
+      "lockAspect": "Bloquear proporção",
+      "lockAspectHint": "Mantenha a largura e a altura vinculadas ao redimensionar.",
+      "customWidth": "Largura",
+      "customHeight": "Altura",
+      "units": "Unidades"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "Zoom"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "Imagem: {width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "Formato de saída",
+      "originalSize": "Tamanho original: {size}",
+      "newSize": "Novo tamanho: {size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "Descarregar",
+      "reset": "Redefinir",
+      "changeImage": "Mudar imagem",
+      "back": "Escolha outra imagem",
+      "bulkTool": "Mudar para redimensionamento em massa"
+    },
+    "features": {
+      "title": "Redimensionador de Imagens Profissional Gratuito Online",
+      "description": "Redimensione imagens e fotos online sem carregar para nenhum servidor - a sua ferramenta de redimensionamento de fotos preferida",
+      "lightningFast": "Velocidade da luz",
+      "free": "Redimensionador de imagens 100% gratuito para sempre",
+      "noSignup": "Sem inscrição ou registo",
+      "secure": "100% seguro e privado",
+      "unlimited": "Uso ilimitado",
+      "browser": "Funciona no navegador"
+    },
+    "howTo": {
+      "title": "Como Redimensionar Imagem Online",
+      "subtitle": "3 passos simples para usar o nosso redimensionador de imagens gratuito",
+      "step1": {
+        "number": "1",
+        "title": "Selecionar Imagem",
+        "description": "Selecione a sua foto JPG, PNG ou WebP para a nossa ferramenta gratuita de redimensionamento de fotos."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Redimensionar Foto",
+        "description": "Escolha entre tamanhos predefinidos ou ajuste as dimensões personalizadas."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Descarregar Instantaneamente",
+        "description": "Descarregue a sua foto redimensionada imediatamente."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Redimensionador de Imagens Online Gratuito - Não é Necessário Carregar",
+        "description": [
+          "A mais poderosa ferramenta gratuita de redimensionamento de imagens. Redimensione fotos online em segundos com o nosso redimensionador de fotos profissional.",
+          "Redimensionador de fotos 100% baseado em navegador - sem uploads, sem contas, nenhum dado sai do seu dispositivo. Perfeito para utilizadores preocupados com a privacidade."
+        ]
+      },
+      "feature2": {
+        "title": "Redimensionar Imagem para Dimensões Exatas",
+        "description": [
+          "Redimensionador de imagens profissional para ajustar a foto à largura e altura exatas. Perfeito para publicações em redes sociais, imagens de sites, anexos de e-mail e materiais de impressão.",
+          "O nosso redimensionador de fotos gratuito suporta proporções e predefinições específicas da plataforma - redimensione imagens online com precisão."
+        ]
+      },
+      "feature3": {
+        "title": "Editor de Corte Visual com Opções de Zoom e Formato",
+        "description": [
+          "Redimensionador de fotos profissional com um editor de corte visual intuitivo. Arraste as alças para ajustar a área de corte, amplie para obter precisão e visualize as alterações em tempo real antes de redimensionar.",
+          "Exporte as suas imagens redimensionadas em vários formatos (JPG, PNG, WebP). O nosso redimensionador de imagens gratuito oferece controlo total."
+        ]
+      }
+    },
+    "faq": {
+      "title": "FAQ do Redimensionador de Imagens",
+      "subtitle": "Perguntas comuns sobre a nossa ferramenta online gratuita de redimensionamento de fotos",
+      "items": [
+        {
+          "question": "Este redimensionador de imagens é de uso gratuito?",
+          "answer": "Sim! O nosso redimensionador de imagens é 100% gratuito para sempre, sem limitações. Redimensione ficheiros de imagem ilimitadas vezes sem marcas d'água, registo ou taxas ocultas. O melhor redimensionador de fotos online gratuito."
+        },
+        {
+          "question": "Como redimensiono uma imagem online com esta ferramenta?",
+          "answer": "Usar a nossa ferramenta de redimensionamento de imagens é simples: (1) Selecione a sua foto, (2) Escolha a proporção de redes sociais predefinida para redimensionamento ou ajuste as dimensões personalizadas, (3) Descarregue instantaneamente. Todo o processamento de imagens acontece no seu navegador."
+        },
+        {
+          "question": "Quais formatos de imagem o redimensionador de fotos suporta?",
+          "answer": "O nosso redimensionador de imagens online suporta todos os formatos populares: JPG, JPEG, PNG e WebP. Pode redimensionar fotos em qualquer formato e até mesmo converter entre formatos durante o redimensionamento."
+        },
+        {
+          "question": "Este redimensionador de fotos online é seguro?",
+          "answer": "Com certeza! A nossa ferramenta de redimensionamento de imagens processa tudo localmente no seu navegador. As suas fotos nunca são carregadas para nenhum servidor - elas nunca saem do seu dispositivo. Para testar isso, carregue o nosso site, desconecte a sua internet e o redimensionador de fotos ainda funcionará perfeitamente."
+        },
+        {
+          "question": "Posso redimensionar uma imagem para dimensões específicas?",
+          "answer": "Sim! O nosso redimensionador de imagens oferece várias opções: defina a largura e a altura exatas, mantenha a proporção ou use predefinições de redes sociais (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest e mais) para redimensionar fotos perfeitamente para cada plataforma. Também pode usar um editor de corte visual intuitivo. Arraste as alças para ajustar a área de corte, amplie para obter precisão e visualize as alterações em tempo real antes de redimensionar."
+        },
+        {
+          "question": "O que torna este o melhor redimensionador de fotos online?",
+          "answer": "O nosso redimensionador de imagens destaca-se: 100% gratuito para sempre, sem uploads (baseado em navegador), uso ilimitado, suporta formatos comuns, predefinições de redes sociais, controlo exato de dimensão e mantém a privacidade. É a solução completa e gratuita de redimensionamento de fotos."
+        }
+      ]
     }
   }
 }

@@ -28,6 +28,22 @@
     "title": "免費線上圖片尺寸調整器 - 立即調整圖像與照片",
     "subtitle": "專業級免費圖片調整工具，支援單張或批次處理。在瀏覽器中即時調整尺寸、壓縮照片並優化圖片，全程免註冊、免上傳，100% 安全私密。"
   },
+  "SiteConfig": {
+    "title": "圖片尺寸調整器 - 免費線上照片調整",
+    "description": "最好用的免費線上圖片尺寸調整工具。在瀏覽器內即時調整圖片尺寸，完全不用上傳。",
+    "keywords": {
+      "0": "圖片尺寸調整器",
+      "1": "免費圖片尺寸調整",
+      "2": "照片尺寸調整",
+      "3": "調整圖片尺寸",
+      "4": "線上調整圖片尺寸",
+      "5": "免費圖片調整工具",
+      "6": "線上圖片調整器",
+      "7": "免費照片調整器",
+      "8": "調整照片尺寸"
+    },
+    "installApp": "安裝應用"
+  },
   "NotFoundPage": {
     "title": "找不到頁面",
     "description": "找不到您要尋找的頁面。它可能已被移動、刪除，或者您輸入了錯誤的網址。",
@@ -47,22 +63,6 @@
     "metaTitle": "條款與條件 - 服務協議",
     "metaDescription": "閱讀我們的條款與條件，以了解使用我們網站服務的規則和指南。",
     "metaKeywords": "條款與條件、服務協議、使用條款、網站工具、使用者協議"
-  },
-  "SiteConfig": {
-    "title": "圖片尺寸調整器 - 免費線上照片調整 | resizeimage.dev",
-    "description": "最好用的免費線上圖片尺寸調整工具。在瀏覽器內即時調整圖片尺寸，完全不用上傳。",
-    "keywords": {
-      "0": "圖片尺寸調整器",
-      "1": "免費圖片尺寸調整",
-      "2": "照片尺寸調整",
-      "3": "調整圖片尺寸",
-      "4": "線上調整圖片尺寸",
-      "5": "免費圖片調整工具",
-      "6": "線上圖片調整器",
-      "7": "免費照片調整器",
-      "8": "調整照片尺寸"
-    },
-    "InstallApp": "安裝應用"
   },
   "BlogPage": {
     "title": "部落格",
@@ -108,6 +108,18 @@
     "postNotFound": "找不到文章",
     "postNotFoundDescription": "找不到請求的部落格文章。"
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "Bulk Resize Images",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "擷取螢幕畫面",
+    "compress": "Compress Image",
+    "compressDesc": "壓縮圖片",
+    "crop": "Crop image",
+    "cropDesc": "裁剪圖片",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "為圖片加上浮水印"
+  },
   "ImageUploader": {
     "titleSingle": "拖放您的圖片到此處",
     "titleMultiple": "拖放您的圖片到此處",
@@ -125,7 +137,7 @@
     "errorTooManyFiles": "檔案太多",
     "errorFileSizeExceeded": "某些檔案過大"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "線上大量調整圖片大小",
     "pageDescription": "免費的線上工具，可一次批次調整多張圖片的大小。快速、安全，且完全在您的瀏覽器中運作 — 無需上傳。",
     "backButton": "返回",
@@ -137,8 +149,7 @@
       "noSignup": "無需註冊",
       "secure": "安全與私密",
       "unlimited": "處理無限數量的圖片",
-      "browser": "在您的瀏覽器中運作",
-      "singleImageCta": "TODO: translate :: ResizeTool.features.singleImageCta"
+      "browser": "在您的瀏覽器中運作"
     },
     "imagePreview": {
       "selected": "張圖片",
@@ -250,18 +261,6 @@
       "urlCopied": "設定網址已複製到剪貼簿！",
       "urlCopyFailed": "複製網址失敗"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "Bulk Resize Images",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "擷取螢幕畫面",
-      "compress": "Compress Image",
-      "compressDesc": "壓縮圖片",
-      "crop": "Crop image",
-      "cropDesc": "裁剪圖片",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "為圖片加上浮水印"
-    },
     "toast": {
       "imagesLoaded": "已載入 {count} {count, plural, one {張圖片} other {張圖片}}",
       "imagesAdded": "已新增 {count} {count, plural, one {張圖片} other {張圖片}}",
@@ -348,7 +347,7 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
     "badge": "線上調整圖片尺寸",
     "pageTitle": "免費線上圖片尺寸調整器",
     "pageDescription": "在瀏覽器中直接調整圖片尺寸。選擇預設尺寸或自訂裁剪，無需上傳即可下載 JPG、PNG 或 WebP。",

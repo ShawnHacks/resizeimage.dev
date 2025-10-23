@@ -26,7 +26,7 @@ interface ImagePreviewProps {
 }
 
 export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps) {
-  const t = useTranslations('ResizeTool.imagePreview');
+  const t = useTranslations('BulkResizeTool.imagePreview');
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const theme = useTheme();
   

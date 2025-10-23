@@ -28,6 +28,22 @@
     "title": "免费在线图片尺寸调整器 - 即刻调整图像与照片",
     "subtitle": "专业级免费图片调整工具，支持单张或批量处理。在浏览器中即时调整尺寸、压缩照片并优化图片，全程无需注册、无需上传，100% 安全私密。"
   },
+  "SiteConfig": {
+    "title": "图片尺寸调整器 - 免费在线照片调整",
+    "description": "最好用的免费在线图片尺寸调整工具。在浏览器里即时调整图片尺寸，无需上传。",
+    "keywords": {
+      "0": "图片尺寸调整器",
+      "1": "免费图片尺寸调整",
+      "2": "照片尺寸调整",
+      "3": "调整图片尺寸",
+      "4": "在线调整图片尺寸",
+      "5": "免费图片调整工具",
+      "6": "在线图片调整器",
+      "7": "免费照片调整器",
+      "8": "调整照片尺寸"
+    },
+    "InstallApp": "安装应用"
+  },
   "NotFoundPage": {
     "title": "页面未找到",
     "description": "您正在查找的页面不存在。它可能已被移动、删除，或者您输入的网址有误。",
@@ -47,22 +63,6 @@
     "metaTitle": "条款与条件 - 服务协议",
     "metaDescription": "阅读我们的条款和条件，了解使用我们网站截图服务的规则和指南。",
     "metaKeywords": "条款和条件, 服务协议, 使用条款, 网站截图工具, 用户协议"
-  },
-  "SiteConfig": {
-    "title": "图片尺寸调整器 - 免费在线照片调整",
-    "description": "最好用的免费在线图片尺寸调整工具。在浏览器里即时调整图片尺寸，无需上传。",
-    "keywords": {
-      "0": "图片尺寸调整器",
-      "1": "免费图片尺寸调整",
-      "2": "照片尺寸调整",
-      "3": "调整图片尺寸",
-      "4": "在线调整图片尺寸",
-      "5": "免费图片调整工具",
-      "6": "在线图片调整器",
-      "7": "免费照片调整器",
-      "8": "调整照片尺寸"
-    },
-    "InstallApp": "安装应用"
   },
   "BlogPage": {
     "title": "博客",
@@ -108,6 +108,18 @@
     "postNotFound": "文章未找到",
     "postNotFoundDescription": "请求的博客文章无法找到。"
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "批量调整图片大小在线工具",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "网站截图和录屏",
+    "compress": "Compress Image",
+    "compressDesc": "压缩图片",
+    "crop": "Crop image",
+    "cropDesc": "裁剪图片",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "给图片加水印"
+  },
   "ImageUploader": {
     "titleSingle": "拖放您的图片到此处",
     "titleMultiple": "拖放您的图片到此处",
@@ -125,7 +137,7 @@
     "errorTooManyFiles": "文件太多",
     "errorFileSizeExceeded": "某些文件过大"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "在线批量调整图片大小",
     "pageDescription": "免费在线工具，一次性批量调整多张图片的大小。快速、安全，完全在您的浏览器中运行——无需上传。",
     "backButton": "返回",
@@ -137,8 +149,7 @@
       "noSignup": "无需注册",
       "secure": "安全与隐私",
       "unlimited": "处理无限数量的图片",
-      "browser": "在您的浏览器中运行",
-      "singleImageCta": "TODO: translate :: ResizeTool.features.singleImageCta"
+      "browser": "在您的浏览器中运行"
     },
     "imagePreview": {
       "selected": "张图片",
@@ -250,18 +261,6 @@
       "urlCopied": "配置URL已复制到剪贴板！",
       "urlCopyFailed": "复制URL失败"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "批量调整图片大小在线工具",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "网站截图和录屏",
-      "compress": "Compress Image",
-      "compressDesc": "压缩图片",
-      "crop": "Crop image",
-      "cropDesc": "裁剪图片",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "给图片加水印"
-    },
     "toast": {
       "imagesLoaded": "已加载 {count} {count, plural, one {张图片} other {张图片}}",
       "imagesAdded": "又添加了 {count} {count, plural, one {张图片} other {张图片}}",
@@ -348,7 +347,7 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
     "badge": "在线调整图片尺寸",
     "pageTitle": "免费在线图片尺寸调整器",
     "pageDescription": "在浏览器中直接调整图片尺寸。选择预设尺寸或自定义裁剪，无需上传即可下载 JPG、PNG 或 WebP。",

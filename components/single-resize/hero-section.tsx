@@ -12,7 +12,7 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onFilesSelected }: HeroSectionProps) {
-  const t = useTranslations('SingleResize');
+  const t = useTranslations('SingleResizeTool');
 
   const features = [
     { icon: CheckCircle, text: t('features.free'), color: 'text-white' },

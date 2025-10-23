@@ -12,7 +12,7 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onFilesSelected }: HeroSectionProps) {
-  const t = useTranslations('ResizeTool');
+  const t = useTranslations('BulkResizeTool');
 
   const features = [
     { icon: CheckCircle, text: t('features.free'), color: 'text-white' },

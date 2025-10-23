@@ -21,7 +21,7 @@ import { Button } from '@/components/ui/button';
 import { useSearchParams } from "next/navigation"
 
 export default function ResizeImageClient() {
-  const t = useTranslations('ResizeTool');
+  const t = useTranslations('BulkResizeTool');
   const [images, setImages] = useState<ImageFile[]>([]);
   const [processedImages, setProcessedImages] = useState<ProcessedImage[]>([]);
   const [isProcessing, setIsProcessing] = useState(false);

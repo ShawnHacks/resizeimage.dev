@@ -25,8 +25,24 @@
     "Terms of Service": "Điều khoản dịch vụ"
   },
   "HomePage": {
-    "title": "Thay đổi kích thước hàng loạt hình ảnh trực tuyến",
-    "subtitle": "Công cụ thay đổi kích thước hình ảnh miễn phí không giới hạn để xử lý đơn lẻ hoặc hàng loạt. Thay đổi kích thước, nén và tối ưu hóa hình ảnh ngay lập tức trong trình duyệt của bạn. Không cần đăng ký, không cần tải lên - 100% an toàn và riêng tư."
+    "title": "Trình thay đổi kích thước hình ảnh trực tuyến miễn phí - Thay đổi kích thước hình ảnh & ảnh ngay lập tức",
+    "subtitle": "Công cụ thay đổi kích thước hình ảnh chuyên nghiệp miễn phí để xử lý một hoặc hàng loạt. Thay đổi kích thước hình ảnh trực tuyến, nén ảnh và tối ưu hóa hình ảnh ngay lập tức trong trình duyệt của bạn. Không cần đăng ký, không cần tải lên - trình thay đổi kích thước ảnh an toàn và riêng tư 100%."
+  },
+  "SiteConfig": {
+    "title": "Trình thay đổi kích thước hình ảnh - Trình thay đổi kích thước ảnh trực tuyến miễn phí",
+    "description": "Công cụ thay đổi kích thước hình ảnh trực tuyến miễn phí tốt nhất. Thay đổi kích thước hình ảnh, ngay lập tức trong trình duyệt của bạn. Trình thay đổi kích thước ảnh chuyên nghiệp miễn phí không cần tải lên.",
+    "keywords": {
+      "0": "trình thay đổi kích thước hình ảnh",
+      "1": "trình thay đổi kích thước hình ảnh miễn phí",
+      "2": "trình thay đổi kích thước ảnh",
+      "3": "thay đổi kích thước hình ảnh",
+      "4": "thay đổi kích thước hình ảnh trực tuyến",
+      "5": "trình thay đổi kích thước hình ảnh miễn phí",
+      "6": "trình thay đổi kích thước hình ảnh trực tuyến",
+      "7": "trình thay đổi kích thước ảnh miễn phí",
+      "8": "thay đổi kích thước ảnh"
+    },
+    "installApp": "Cài đặt ứng dụng"
   },
   "NotFoundPage": {
     "title": "Không tìm thấy trang",
@@ -47,20 +63,6 @@
     "metaTitle": "Điều khoản & Điều kiện - Thỏa thuận dịch vụ",
     "metaDescription": "Đọc các điều khoản và điều kiện của chúng tôi để hiểu các quy tắc và nguyên tắc sử dụng dịch vụ trang web của chúng tôi.",
     "metaKeywords": "điều khoản và điều kiện, thỏa thuận dịch vụ, điều khoản sử dụng, công cụ trang web, thỏa thuận người dùng"
-  },
-  "SiteConfig": {
-    "title": "Thay đổi kích thước hàng loạt hình ảnh trực tuyến - Thay đổi kích thước hình ảnh ngay lập tức",
-    "description": "Công cụ thay đổi kích thước hình ảnh miễn phí không giới hạn để xử lý đơn lẻ hoặc hàng loạt. Thay đổi kích thước, nén và tối ưu hóa hình ảnh ngay lập tức trong trình duyệt của bạn. Không cần đăng ký, không cần tải lên - 100% an toàn và riêng tư.",
-    "keywords": {
-      "0": "công cụ thay đổi kích thước hình ảnh hàng loạt trực tuyến",
-      "1": "thay đổi kích thước hình ảnh hàng loạt miễn phí",
-      "2": "thay đổi kích thước hình ảnh trực tuyến",
-      "3": "nén ảnh miễn phí",
-      "4": "công cụ tối ưu hóa hình ảnh",
-      "5": "công cụ thay đổi kích thước ảnh",
-      "6": "thay đổi kích thước nhiều ảnh",
-      "7": "công cụ kích thước ảnh"
-    }
   },
   "BlogPage": {
     "title": "Blog",
@@ -106,6 +108,18 @@
     "postNotFound": "Không tìm thấy bài viết",
     "postNotFoundDescription": "Không thể tìm thấy bài đăng blog được yêu cầu."
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images",
+    "bulkresizeimagesDesc": "Thay đổi kích thước hàng loạt hình ảnh",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Chụp ảnh màn hình",
+    "compress": "Compress Image",
+    "compressDesc": "Nén ảnh",
+    "crop": "Crop image",
+    "cropDesc": "Cắt ảnh",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Hình mờ ảnh"
+  },
   "ImageUploader": {
     "titleSingle": "Kéo và thả hình ảnh của bạn",
     "titleMultiple": "Kéo và thả hình ảnh của bạn",
@@ -123,7 +137,7 @@
     "errorTooManyFiles": "Quá nhiều tệp",
     "errorFileSizeExceeded": "Một số tệp quá lớn"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "Thay đổi kích thước hàng loạt hình ảnh trực tuyến",
     "pageDescription": "Công cụ trực tuyến miễn phí để thay đổi kích thước hàng loạt nhiều hình ảnh cùng một lúc. Nhanh chóng, an toàn và hoạt động hoàn toàn trong trình duyệt của bạn — không cần tải lên.",
     "backButton": "Quay lại",
@@ -247,18 +261,6 @@
       "urlCopied": "URL cấu hình đã được sao chép vào khay nhớ tạm!",
       "urlCopyFailed": "Không thể sao chép URL"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images",
-      "bulkresizeimagesDesc": "Thay đổi kích thước hàng loạt hình ảnh",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "Chụp ảnh màn hình",
-      "compress": "Compress Image",
-      "compressDesc": "Nén ảnh",
-      "crop": "Crop image",
-      "cropDesc": "Cắt ảnh",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "Hình mờ ảnh"
-    },
     "toast": {
       "imagesLoaded": "Đã tải {count} {count, plural, one {hình ảnh} other {hình ảnh}}",
       "imagesAdded": "Đã thêm {count} {count, plural, one {hình ảnh} other {hình ảnh}} nữa",
@@ -345,52 +347,127 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
+    "badge": "Thay đổi kích thước hình ảnh trực tuyến",
+    "pageTitle": "Trình thay đổi kích thước hình ảnh trực tuyến miễn phí",
+    "pageDescription": "Thay đổi kích thước hình ảnh trực tiếp trong trình duyệt của bạn. Chọn kích thước đặt trước, điều chỉnh cắt xén tùy chỉnh và tải xuống dưới dạng JPG, PNG hoặc WebP mà không cần tải lên bất cứ thứ gì.",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "Trình thay đổi kích thước hình ảnh miễn phí — Thay đổi kích thước ảnh trực tuyến ngay lập tức",
+      "description": "Thay đổi kích thước hình ảnh trực tiếp trong trình duyệt của bạn. Chọn kích thước đặt trước, điều chỉnh cắt xén tùy chỉnh và tải xuống dưới dạng JPG, PNG hoặc WebP mà không cần tải lên bất cứ thứ gì."
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "Đặt lại lựa chọn",
+      "aspectRatio": "Tỷ lệ khung hình",
+      "selectAspect": "Chọn một cài đặt trước của nền tảng",
+      "customOption": "Tùy chỉnh",
+      "customCardTitle": "Kích thước tùy chỉnh",
+      "customCardDescription": "Kéo các tay cầm hoặc nhập kích thước chính xác.",
+      "lockAspect": "Khóa tỷ lệ khung hình",
+      "lockAspectHint": "Giữ chiều rộng và chiều cao được liên kết trong khi thay đổi kích thước.",
+      "customWidth": "Chiều rộng",
+      "customHeight": "Chiều cao",
+      "units": "Đơn vị"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "Thu phóng"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "Hình ảnh: {width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "Định dạng đầu ra",
+      "originalSize": "Kích thước ban đầu: {size}",
+      "newSize": "Kích thước mới: {size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "Tải xuống",
+      "reset": "Đặt lại",
+      "changeImage": "Thay đổi hình ảnh",
+      "back": "Chọn một hình ảnh khác",
+      "bulkTool": "Chuyển sang thay đổi kích thước hàng loạt"
+    },
+    "features": {
+      "title": "Trình thay đổi kích thước hình ảnh chuyên nghiệp miễn phí trực tuyến",
+      "description": "Thay đổi kích thước hình ảnh và ảnh trực tuyến mà không cần tải lên bất kỳ máy chủ nào - công cụ thay đổi kích thước ảnh của bạn",
+      "lightningFast": "Nhanh như chớp",
+      "free": "Trình thay đổi kích thước hình ảnh miễn phí 100% mãi mãi",
+      "noSignup": "Không cần đăng ký",
+      "secure": "An toàn và riêng tư 100%",
+      "unlimited": "Sử dụng không giới hạn",
+      "browser": "Hoạt động trong trình duyệt"
+    },
+    "howTo": {
+      "title": "Cách thay đổi kích thước hình ảnh trực tuyến",
+      "subtitle": "3 bước đơn giản để sử dụng trình thay đổi kích thước hình ảnh miễn phí của chúng tôi",
+      "step1": {
+        "number": "1",
+        "title": "Chọn hình ảnh",
+        "description": "Chọn ảnh JPG, PNG hoặc WebP của bạn vào công cụ thay đổi kích thước ảnh miễn phí của chúng tôi."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Thay đổi kích thước ảnh",
+        "description": "Chọn từ các kích thước đặt trước hoặc điều chỉnh kích thước tùy chỉnh."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Tải xuống ngay lập tức",
+        "description": "Tải xuống ảnh đã thay đổi kích thước của bạn ngay lập tức."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Trình thay đổi kích thước hình ảnh trực tuyến miễn phí - Không cần tải lên",
+        "description": [
+          "Công cụ thay đổi kích thước hình ảnh miễn phí mạnh mẽ nhất. Thay đổi kích thước ảnh trực tuyến trong vài giây với trình thay đổi kích thước ảnh chuyên nghiệp của chúng tôi.",
+          "Trình thay đổi kích thước ảnh dựa trên trình duyệt 100% - không cần tải lên, không cần tài khoản, không có dữ liệu nào rời khỏi thiết bị của bạn. Hoàn hảo cho người dùng quan tâm đến quyền riêng tư."
+        ]
+      },
+      "feature2": {
+        "title": "Thay đổi kích thước hình ảnh thành kích thước chính xác",
+        "description": [
+          "Trình thay đổi kích thước hình ảnh chuyên nghiệp để điều chỉnh ảnh theo chiều rộng và chiều cao chính xác. Hoàn hảo cho các bài đăng trên mạng xã hội, hình ảnh trang web, tệp đính kèm email và tài liệu in.",
+          "Trình thay đổi kích thước ảnh miễn phí của chúng tôi hỗ trợ tỷ lệ khung hình và các cài đặt trước dành riêng cho nền tảng - thay đổi kích thước hình ảnh trực tuyến một cách chính xác."
+        ]
+      },
+      "feature3": {
+        "title": "Trình chỉnh sửa cắt xén trực quan với các tùy chọn thu phóng và định dạng",
+        "description": [
+          "Trình thay đổi kích thước ảnh chuyên nghiệp với trình chỉnh sửa cắt xén trực quan trực quan. Kéo các tay cầm để điều chỉnh vùng cắt, phóng to để có độ chính xác và xem trước các thay đổi trong thời gian thực trước khi thay đổi kích thước.",
+          "Xuất hình ảnh đã thay đổi kích thước của bạn ở nhiều định dạng (JPG, PNG, WebP). Trình thay đổi kích thước hình ảnh miễn phí của chúng tôi cho phép bạn kiểm soát hoàn toàn."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp về Trình thay đổi kích thước hình ảnh",
+      "subtitle": "Các câu hỏi phổ biến về công cụ thay đổi kích thước ảnh trực tuyến miễn phí của chúng tôi",
+      "items": [
+        {
+          "question": "Trình thay đổi kích thước hình ảnh này có miễn phí sử dụng không?",
+          "answer": "Có! Trình thay đổi kích thước hình ảnh của chúng tôi miễn phí 100% mãi mãi không có giới hạn. Thay đổi kích thước tệp hình ảnh không giới hạn số lần mà không có hình mờ, đăng ký hoặc phí ẩn. Trình thay đổi kích thước ảnh trực tuyến miễn phí tốt nhất."
+        },
+        {
+          "question": "Làm cách nào để thay đổi kích thước hình ảnh trực tuyến bằng công cụ này?",
+          "answer": "Sử dụng công cụ thay đổi kích thước hình ảnh của chúng tôi rất đơn giản: (1) Chọn ảnh của bạn, (2) Chọn tỷ lệ khung hình đặt trước trên mạng xã hội hoặc điều chỉnh kích thước tùy chỉnh, (3) Tải xuống ngay lập tức. Tất cả quá trình xử lý hình ảnh đều diễn ra trong trình duyệt của bạn."
+        },
+        {
+          "question": "Trình thay đổi kích thước ảnh hỗ trợ những định dạng hình ảnh nào?",
+          "answer": "Trình thay đổi kích thước hình ảnh trực tuyến của chúng tôi hỗ trợ tất cả các định dạng phổ biến: JPG, JPEG, PNG và WebP. Bạn có thể thay đổi kích thước ảnh ở bất kỳ định dạng nào và thậm chí chuyển đổi giữa các định dạng trong khi thay đổi kích thước."
+        },
+        {
+          "question": "Trình thay đổi kích thước ảnh trực tuyến này có an toàn không?",
+          "answer": "Hoàn toàn có! Công cụ thay đổi kích thước hình ảnh của chúng tôi xử lý mọi thứ cục bộ trong trình duyệt của bạn. Ảnh của bạn không bao giờ được tải lên bất kỳ máy chủ nào - chúng không bao giờ rời khỏi thiết bị của bạn. Để kiểm tra điều này, hãy tải trang web của chúng tôi, ngắt kết nối internet và trình thay đổi kích thước ảnh vẫn hoạt động hoàn hảo."
+        },
+        {
+          "question": "Tôi có thể thay đổi kích thước hình ảnh thành các kích thước cụ thể không?",
+          "answer": "Có! Trình thay đổi kích thước hình ảnh của chúng tôi cung cấp nhiều tùy chọn: đặt chiều rộng và chiều cao chính xác, duy trì tỷ lệ khung hình hoặc sử dụng các cài đặt trước trên mạng xã hội (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest, v.v.) để thay đổi kích thước ảnh một cách hoàn hảo cho mỗi nền tảng. Bạn cũng có thể sử dụng trình chỉnh sửa cắt xén trực quan trực quan. Kéo các tay cầm để điều chỉnh vùng cắt, phóng to để có độ chính xác và xem trước các thay đổi trong thời gian thực trước khi thay đổi kích thước."
+        },
+        {
+          "question": "Điều gì làm cho đây là trình thay đổi kích thước ảnh trực tuyến tốt nhất?",
+          "answer": "Trình thay đổi kích thước hình ảnh của chúng tôi nổi bật: miễn phí 100% mãi mãi, không cần tải lên (dựa trên trình duyệt), sử dụng không giới hạn, hỗ trợ các định dạng phổ biến, cài đặt trước trên mạng xã hội, kiểm soát kích thước chính xác và duy trì quyền riêng tư. Đây là giải pháp thay đổi kích thước ảnh miễn phí hoàn chỉnh."
+        }
+      ]
     }
   }
 }

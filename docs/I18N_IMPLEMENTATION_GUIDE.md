@@ -2,7 +2,7 @@
 
 ## ✅ **已完成：英语翻译文件**
 
-已在 `/messages/en.json` 中添加完整的 `ResizeTool` 翻译部分，包含所有需要的文本。
+已在 `/messages/en.json` 中添加完整的 `BulkResizeTool` 翻译部分，包含所有需要的文本。
 
 ---
 
@@ -34,7 +34,7 @@ import { useTranslations } from 'next-intl';
 
 ```tsx
 export function MyComponent() {
-  const t = useTranslations('ResizeTool');
+  const t = useTranslations('BulkResizeTool');
   
   return (
     <div>
@@ -76,7 +76,7 @@ export function MyComponent() {
 import { useTranslations } from 'next-intl';
 
 export default function ResizeImagePage() {
-  const t = useTranslations('ResizeTool');
+  const t = useTranslations('BulkResizeTool');
   
   return (
     <div className="min-h-[calc(100vh-4rem)]">
@@ -126,7 +126,7 @@ export default function ResizeImagePage() {
 import { useTranslations } from 'next-intl';
 
 export function HeroSection({ onFilesSelected }: HeroSectionProps) {
-  const t = useTranslations('ResizeTool');
+  const t = useTranslations('BulkResizeTool');
   
   return (
     <div className="grid lg:grid-cols-2 gap-8 items-start">
@@ -179,7 +179,7 @@ export function HeroSection({ onFilesSelected }: HeroSectionProps) {
 import { useTranslations } from 'next-intl';
 
 export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps) {
-  const t = useTranslations('ResizeTool.imagePreview');
+  const t = useTranslations('BulkResizeTool.imagePreview');
   
   if (images.length === 0) return null;
 
@@ -212,7 +212,7 @@ export function ImagePreview({ images, onRemove, onAddMore }: ImagePreviewProps)
 import { useTranslations } from 'next-intl';
 
 export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
-  const t = useTranslations('ResizeTool.controls');
+  const t = useTranslations('BulkResizeTool.controls');
   
   return (
     <div className="w-full bg-card rounded-2xl border border-border overflow-hidden shadow-sm">
@@ -334,7 +334,7 @@ export function ResizeControls({ onResize, disabled }: ResizeControlsProps) {
 import { useTranslations } from 'next-intl';
 
 export function ProcessedList({ processedImages }: ProcessedListProps) {
-  const t = useTranslations('ResizeTool.results');
+  const t = useTranslations('BulkResizeTool.results');
   
   if (processedImages.length === 0) return null;
 
@@ -401,7 +401,7 @@ export function ProcessedList({ processedImages }: ProcessedListProps) {
 import { useTranslations } from 'next-intl';
 
 export function ToolsGrid() {
-  const t = useTranslations('ResizeTool.tools');
+  const t = useTranslations('BulkResizeTool.tools');
   
   const tools = [
     {
@@ -463,7 +463,7 @@ import { toast } from 'sonner';
 import { useTranslations } from 'next-intl';
 
 function MyComponent() {
-  const t = useTranslations('ResizeTool.toast');
+  const t = useTranslations('BulkResizeTool.toast');
   
   // 成功消息
   toast.success(t('imagesLoaded', { count: files.length }));
@@ -488,12 +488,12 @@ function MyComponent() {
 当需要访问父级翻译时，使用 `..`：
 
 ```tsx
-const t = useTranslations('ResizeTool.controls');
+const t = useTranslations('BulkResizeTool.controls');
 
-// 访问 ResizeTool.config
+// 访问 BulkResizeTool.config
 {t('../config.title')}
 
-// 访问 ResizeTool.toast
+// 访问 BulkResizeTool.toast
 {t('../toast.imagesLoaded', { count: 5 })}
 ```
 
@@ -539,7 +539,7 @@ const t = useTranslations('ResizeTool.controls');
 更新每个组件后，请检查：
 
 - [ ] 导入 `useTranslations`
-- [ ] 使用 `const t = useTranslations('ResizeTool...')`
+- [ ] 使用 `const t = useTranslations('BulkResizeTool...')`
 - [ ] 替换所有硬编码文本
 - [ ] 测试所有翻译键是否正确
 - [ ] 测试参数替换是否正常

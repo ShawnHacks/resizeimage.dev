@@ -146,7 +146,7 @@
 ```
 /messages/en.json
 ```
-- 完整的 ResizeTool 英语翻译
+- 完整的 BulkResizeTool 英语翻译
 - 150+ 翻译键
 - 支持参数插值
 - 支持复数形式
@@ -217,7 +217,7 @@ cp messages/en.json messages/zh.json
 ### **步骤 2: 翻译所有值**
 ```json
 {
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "在线批量调整图片大小",
     "pageDescription": "免费在线批量调整多张图片...",
     "hero": {

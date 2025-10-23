@@ -25,8 +25,24 @@
     "Terms of Service": "Ketentuan Layanan"
   },
   "HomePage": {
-    "title": "Ubah Ukuran Gambar Massal Secara Online",
-    "subtitle": "Pengubah ukuran gambar gratis tanpa batas untuk pemrosesan tunggal atau batch. Ubah ukuran, kompres, dan optimalkan gambar secara instan di browser Anda. Tanpa registrasi, tanpa unggahan - 100% aman dan pribadi."
+    "title": "Pengubah Ukuran Gambar Online Gratis - Ubah Ukuran Gambar & Foto Secara Instan",
+    "subtitle": "Alat gratis pengubah ukuran gambar profesional untuk pemrosesan tunggal atau batch. Ubah ukuran gambar online, kompres foto, dan optimalkan gambar secara instan di browser Anda. Tanpa registrasi, tanpa unggahan - pengubah ukuran foto 100% aman dan pribadi."
+  },
+  "SiteConfig": {
+    "title": "Pengubah Ukuran Gambar - Pengubah Ukuran Foto Online Gratis",
+    "description": "Alat pengubah ukuran gambar online gratis terbaik. Ubah ukuran gambar, secara instan di browser Anda. Pengubah ukuran foto profesional gratis tanpa unggahan.",
+    "keywords": {
+      "0": "pengubah ukuran gambar",
+      "1": "pengubah ukuran gambar gratis",
+      "2": "pengubah ukuran foto",
+      "3": "ubah ukuran gambar",
+      "4": "ubah ukuran gambar online",
+      "5": "pengubah ukuran gambar gratis",
+      "6": "pengubah ukuran gambar online",
+      "7": "pengubah ukuran foto gratis",
+      "8": "ubah ukuran foto"
+    },
+    "installApp": "Instalasi App"
   },
   "NotFoundPage": {
     "title": "Halaman tidak ditemukan",
@@ -47,20 +63,6 @@
     "metaTitle": "Syarat & Ketentuan - Perjanjian Layanan",
     "metaDescription": "Baca syarat dan ketentuan kami untuk memahami aturan dan pedoman penggunaan layanan situs web kami.",
     "metaKeywords": "syarat dan ketentuan, perjanjian layanan, ketentuan penggunaan, alat situs web, perjanjian pengguna"
-  },
-  "SiteConfig": {
-    "title": "Ubah Ukuran Gambar Massal Secara Online - Ubah Ukuran Gambar Secara Instan",
-    "description": "Pengubah ukuran gambar gratis tanpa batas untuk pemrosesan tunggal atau batch. Ubah ukuran, kompres, dan optimalkan gambar secara instan di browser Anda. Tanpa registrasi, tanpa unggahan - 100% aman dan pribadi.",
-    "keywords": {
-      "0": "pengubah ukuran gambar massal online",
-      "1": "ubah ukuran gambar batch gratis",
-      "2": "ubah ukuran gambar online",
-      "3": "kompres gambar gratis",
-      "4": "pengoptimal gambar",
-      "5": "pengubah ukuran foto",
-      "6": "ubah ukuran banyak gambar",
-      "7": "alat dimensi gambar"
-    }
   },
   "BlogPage": {
     "title": "Blog",
@@ -106,6 +108,19 @@
     "postNotFound": "Postingan Tidak Ditemukan",
     "postNotFoundDescription": "Postingan blog yang diminta tidak dapat ditemukan."
   },
+  "Toast": {
+    "imagesLoaded": "{count} {count, plural, one {gambar} other {gambar}} dimuat",
+    "imagesAdded": "Menambahkan {count} {count, plural, one {gambar} other {gambar}} lagi",
+    "imagesResizedSuccess": "Gambar berhasil diubah ukurannya!",
+    "downloadComplete": "Pengunduhan selesai!",
+    "urlCopied": "URL disalin ke papan klip!",
+    "processing": "Memproses gambar...",
+    "error": "Terjadi kesalahan. Silakan coba lagi.",
+    "noValidImages": "Tidak ditemukan file gambar yang valid. Silakan pilih gambar yang valid.",
+    "selectImagesFirst": "Silakan pilih gambar terlebih dahulu",
+    "enterWidthOrHeight": "Silakan masukkan lebar atau tinggi",
+    "enterTargetValue": "Silakan masukkan nilai target"
+  },
   "ImageUploader": {
     "titleSingle": "Seret dan lepas gambar Anda",
     "titleMultiple": "Seret dan lepas gambar Anda",
@@ -123,7 +138,7 @@
     "errorTooManyFiles": "Terlalu banyak file",
     "errorFileSizeExceeded": "Beberapa file terlalu besar"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "Ubah Ukuran Gambar Massal Secara Online",
     "pageDescription": "Alat online gratis untuk mengubah ukuran beberapa gambar sekaligus. Cepat, aman, dan berfungsi sepenuhnya di browser Anda — tidak perlu mengunggah.",
     "backButton": "Kembali",
@@ -259,19 +274,6 @@
       "watermark": "Watermark Image",
       "watermarkDesc": "Gambar Tanda Air"
     },
-    "toast": {
-      "imagesLoaded": "{count} {count, plural, one {gambar} other {gambar}} dimuat",
-      "imagesAdded": "Menambahkan {count} {count, plural, one {gambar} other {gambar}} lagi",
-      "imagesResizedSuccess": "Gambar berhasil diubah ukurannya!",
-      "downloadComplete": "Pengunduhan selesai!",
-      "urlCopied": "URL disalin ke papan klip!",
-      "processing": "Memproses gambar...",
-      "error": "Terjadi kesalahan. Silakan coba lagi.",
-      "noValidImages": "Tidak ditemukan file gambar yang valid. Silakan pilih gambar yang valid.",
-      "selectImagesFirst": "Silakan pilih gambar terlebih dahulu",
-      "enterWidthOrHeight": "Silakan masukkan lebar atau tinggi",
-      "enterTargetValue": "Silakan masukkan nilai target"
-    },
     "howTo": {
       "title": "Cara Mengubah Ukuran Gambar",
       "subtitle": "Langkah sederhana untuk mengubah ukuran gambar secara massal",
@@ -345,52 +347,127 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
+    "badge": "Ubah ukuran gambar online",
+    "pageTitle": "Pengubah Ukuran Gambar Online Gratis",
+    "pageDescription": "Ubah ukuran gambar langsung di browser Anda. Pilih ukuran preset, sesuaikan pemotongan khusus, dan unduh dalam format JPG, PNG, atau WebP tanpa mengunggah apa pun.",
     "metadata": {
-      "title": "TODO: metadata.title",
-      "description": "TODO: metadata.description"
-    },
-    "landing": {
-      "badge": "TODO: landing.badge",
-      "title": "TODO: landing.title",
-      "subtitle": "TODO: landing.subtitle",
-      "helperText": "TODO: landing.helperText"
-    },
-    "editor": {
-      "title": "TODO: editor.title",
-      "subtitle": "TODO: editor.subtitle"
+      "title": "Pengubah Ukuran Gambar Gratis — Ubah Ukuran Foto Online Secara Instan",
+      "description": "Ubah ukuran gambar langsung di browser Anda. Pilih ukuran preset, sesuaikan pemotongan khusus, dan unduh dalam format JPG, PNG, atau WebP tanpa mengunggah apa pun."
     },
     "controls": {
-      "resetAll": "TODO: controls.resetAll",
-      "aspectRatio": "TODO: controls.aspectRatio",
-      "selectAspect": "TODO: controls.selectAspect",
-      "customOption": "TODO: controls.customOption",
-      "customCardTitle": "TODO: controls.customCardTitle",
-      "customCardDescription": "TODO: controls.customCardDescription",
-      "lockAspect": "TODO: controls.lockAspect",
-      "lockAspectHint": "TODO: controls.lockAspectHint",
-      "customWidth": "TODO: controls.customWidth",
-      "customHeight": "TODO: controls.customHeight",
-      "units": "TODO: controls.units"
+      "resetAll": "Setel ulang pilihan",
+      "aspectRatio": "Rasio aspek",
+      "selectAspect": "Pilih preset platform",
+      "customOption": "Kustom",
+      "customCardTitle": "Ukuran kustom",
+      "customCardDescription": "Seret pegangan atau ketik dimensi yang tepat.",
+      "lockAspect": "Kunci rasio aspek",
+      "lockAspectHint": "Jaga agar lebar dan tinggi tetap terhubung saat mengubah ukuran.",
+      "customWidth": "Lebar",
+      "customHeight": "Tinggi",
+      "units": "Unit"
     },
     "preview": {
-      "zoom": "TODO: preview.zoom"
+      "zoom": "Perbesar"
     },
     "imageDetails": {
-      "originalDimensions": "TODO: imageDetails.originalDimensions"
+      "originalDimensions": "Gambar: {width} × {height}"
     },
     "export": {
-      "format": "TODO: export.format",
-      "originalSize": "TODO: export.originalSize",
-      "newSize": "TODO: export.newSize",
-      "pending": "TODO: export.pending"
+      "format": "Format keluaran",
+      "originalSize": "Ukuran asli: {size}",
+      "newSize": "Ukuran baru: {size}",
+      "pending": "--"
     },
     "actions": {
-      "download": "TODO: actions.download",
-      "reset": "TODO: actions.reset",
-      "changeImage": "TODO: actions.changeImage",
-      "back": "TODO: actions.back",
-      "bulkTool": "TODO: SingleResize.actions.bulkTool"
+      "download": "Unduh",
+      "reset": "Setel ulang",
+      "changeImage": "Ubah gambar",
+      "back": "Pilih gambar lain",
+      "bulkTool": "Beralih ke ubah ukuran massal"
+    },
+    "features": {
+      "title": "Pengubah Ukuran Gambar Profesional Gratis Online",
+      "description": "Ubah ukuran gambar dan foto online tanpa mengunggah ke server mana pun - alat pengubah ukuran foto andalan Anda",
+      "lightningFast": "Secepat kilat",
+      "free": "Pengubah ukuran gambar 100% gratis selamanya",
+      "noSignup": "Tanpa daftar atau registrasi",
+      "secure": "100% aman & pribadi",
+      "unlimited": "Penggunaan tak terbatas",
+      "browser": "Bekerja di browser"
+    },
+    "howTo": {
+      "title": "Cara Mengubah Ukuran Gambar Online",
+      "subtitle": "3 langkah sederhana untuk menggunakan pengubah ukuran gambar gratis kami",
+      "step1": {
+        "number": "1",
+        "title": "Pilih Gambar",
+        "description": "Pilih foto JPG, PNG, atau WebP Anda ke alat pengubah ukuran foto gratis kami."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Ubah Ukuran Foto",
+        "description": "Pilih dari ukuran preset atau sesuaikan dimensi khusus."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Unduh Secara Instan",
+        "description": "Unduh foto yang telah diubah ukurannya segera."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Pengubah Ukuran Gambar Online Gratis - Tidak Perlu Mengunggah",
+        "description": [
+          "Alat pengubah ukuran gambar gratis paling kuat. Ubah ukuran foto online dalam hitungan detik dengan pengubah ukuran foto profesional kami.",
+          "Pengubah ukuran foto 100% berbasis browser - tanpa unggahan, tanpa akun, tidak ada data yang meninggalkan perangkat Anda. Sempurna untuk pengguna yang sadar privasi."
+        ]
+      },
+      "feature2": {
+        "title": "Ubah Ukuran Gambar ke Dimensi Tepat",
+        "description": [
+          "Pengubah ukuran gambar profesional untuk menyesuaikan foto ke lebar dan tinggi yang tepat. Sempurna untuk postingan media sosial, gambar situs web, lampiran email, dan materi cetak.",
+          "Pengubah ukuran foto gratis kami mendukung rasio aspek, dan preset khusus platform - ubah ukuran gambar online dengan presisi."
+        ]
+      },
+      "feature3": {
+        "title": "Editor Pangkas Visual dengan Opsi Zoom & Format",
+        "description": [
+          "Pengubah ukuran foto profesional dengan editor pangkas visual yang intuitif. Seret pegangan untuk menyesuaikan area pangkas, perbesar untuk presisi, dan pratinjau perubahan secara real-time sebelum mengubah ukuran.",
+          "Ekspor gambar yang telah diubah ukurannya dalam berbagai format (JPG, PNG, WebP). Pengubah ukuran gambar gratis kami memberi Anda kontrol penuh."
+        ]
+      }
+    },
+    "faq": {
+      "title": "FAQ Pengubah Ukuran Gambar",
+      "subtitle": "Pertanyaan umum tentang alat pengubah ukuran foto online gratis kami",
+      "items": [
+        {
+          "question": "Apakah pengubah ukuran gambar ini gratis untuk digunakan?",
+          "answer": "Ya! Pengubah ukuran gambar kami 100% gratis selamanya tanpa batasan. Ubah ukuran file gambar tanpa batas tanpa tanda air, registrasi, atau biaya tersembunyi. Pengubah ukuran foto online gratis terbaik."
+        },
+        {
+          "question": "Bagaimana cara mengubah ukuran gambar online dengan alat ini?",
+          "answer": "Menggunakan alat pengubah ukuran gambar kami sederhana: (1) Pilih foto Anda, (2) Pilih rasio aspek media sosial preset ubah ukuran atau sesuaikan dimensi khusus, (3) Unduh secara instan. Semua pemrosesan gambar terjadi di browser Anda."
+        },
+        {
+          "question": "Format gambar apa yang didukung oleh pengubah ukuran foto?",
+          "answer": "Pengubah ukuran gambar online kami mendukung semua format populer: JPG, JPEG, PNG, and WebP. Anda dapat mengubah ukuran foto dalam format apa pun dan bahkan mengonversi antar format saat mengubah ukuran."
+        },
+        {
+          "question": "Apakah pengubah ukuran foto online ini aman?",
+          "answer": "Tentu saja! Alat pengubah ukuran gambar kami memproses semuanya secara lokal di browser Anda. Foto Anda tidak pernah diunggah ke server mana pun - foto tidak pernah meninggalkan perangkat Anda. Untuk menguji ini, muat situs web kami, putuskan koneksi internet Anda, dan pengubah ukuran foto masih berfungsi dengan sempurna."
+        },
+        {
+          "question": "Dapatkah saya mengubah ukuran gambar ke dimensi tertentu?",
+          "answer": "Ya! Pengubah ukuran gambar kami menawarkan beberapa opsi: atur lebar dan tinggi yang tepat, pertahankan rasio aspek, atau gunakan preset media sosial (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest, dan lainnya) untuk mengubah ukuran foto dengan sempurna untuk setiap platform. Anda juga dapat menggunakan editor pangkas visual yang intuitif. Seret pegangan untuk menyesuaikan area pangkas, perbesar untuk presisi, dan pratinjau perubahan secara real-time sebelum mengubah ukuran."
+        },
+        {
+          "question": "Apa yang membuat ini menjadi pengubah ukuran foto online terbaik?",
+          "answer": "Pengubah ukuran gambar kami menonjol: 100% gratis selamanya, tanpa unggahan (berbasis browser), penggunaan tak terbatas, mendukung format umum, preset media sosial, kontrol dimensi yang tepat, dan menjaga privasi. Ini adalah solusi pengubah ukuran foto gratis yang lengkap."
+        }
+      ]
     }
   }
 }

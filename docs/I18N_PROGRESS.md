@@ -3,7 +3,7 @@
 ## ✅ **已完成 (Completed)**
 
 ### **1. 翻译文件 (Translation Files)**
-- ✅ `/messages/en.json` - 完整的 ResizeTool 翻译
+- ✅ `/messages/en.json` - 完整的 BulkResizeTool 翻译
 
 ### **2. 已国际化的组件 (Internationalized Components)**
 
@@ -49,20 +49,20 @@
 
 **翻译键已准备好：**
 ```
-ResizeTool.controls.resizeMode
-ResizeTool.controls.percentage.*
-ResizeTool.controls.fileSize.*
-ResizeTool.controls.dimensions.*
-ResizeTool.controls.width.*
-ResizeTool.controls.height.*
-ResizeTool.controls.longestSide.*
-ResizeTool.controls.format.*
-ResizeTool.controls.quality.*
-ResizeTool.controls.backgroundColor.*
-ResizeTool.controls.presets.*
-ResizeTool.controls.resizeButton
-ResizeTool.controls.resizeButtonDefault
-ResizeTool.config.*
+BulkResizeTool.controls.resizeMode
+BulkResizeTool.controls.percentage.*
+BulkResizeTool.controls.fileSize.*
+BulkResizeTool.controls.dimensions.*
+BulkResizeTool.controls.width.*
+BulkResizeTool.controls.height.*
+BulkResizeTool.controls.longestSide.*
+BulkResizeTool.controls.format.*
+BulkResizeTool.controls.quality.*
+BulkResizeTool.controls.backgroundColor.*
+BulkResizeTool.controls.presets.*
+BulkResizeTool.controls.resizeButton
+BulkResizeTool.controls.resizeButtonDefault
+BulkResizeTool.config.*
 ```
 
 #### 2. ⏳ **processed-list.tsx**
@@ -74,12 +74,12 @@ ResizeTool.config.*
 
 **翻译键已准备好：**
 ```
-ResizeTool.results.title
-ResizeTool.results.imagesResized
-ResizeTool.results.originalSize
-ResizeTool.results.newSize
-ResizeTool.results.spaceSaved
-ResizeTool.results.processedImages
+BulkResizeTool.results.title
+BulkResizeTool.results.imagesResized
+BulkResizeTool.results.originalSize
+BulkResizeTool.results.newSize
+BulkResizeTool.results.spaceSaved
+BulkResizeTool.results.processedImages
 ```
 
 #### 3. ⏳ **tools-grid.tsx**
@@ -91,14 +91,14 @@ ResizeTool.results.processedImages
 
 **翻译键已准备好：**
 ```
-ResizeTool.tools.compress
-ResizeTool.tools.compressDesc
-ResizeTool.tools.crop
-ResizeTool.tools.cropDesc
-ResizeTool.tools.screenshot
-ResizeTool.tools.screenshotDesc
-ResizeTool.tools.watermark
-ResizeTool.tools.watermarkDesc
+BulkResizeTool.tools.compress
+BulkResizeTool.tools.compressDesc
+BulkResizeTool.tools.crop
+BulkResizeTool.tools.cropDesc
+BulkResizeTool.tools.screenshot
+BulkResizeTool.tools.screenshotDesc
+BulkResizeTool.tools.watermark
+BulkResizeTool.tools.watermarkDesc
 ```
 
 ---
@@ -125,7 +125,7 @@ ResizeTool.tools.watermarkDesc
 1. 导入翻译：
 ```tsx
 import { useTranslations } from 'next-intl';
-const t = useTranslations('ResizeTool.controls');
+const t = useTranslations('BulkResizeTool.controls');
 ```
 
 2. 更新每个模式的标题和描述：
@@ -156,7 +156,7 @@ const t = useTranslations('ResizeTool.controls');
 
 ```tsx
 import { useTranslations } from 'next-intl';
-const t = useTranslations('ResizeTool.results');
+const t = useTranslations('BulkResizeTool.results');
 
 // 标题
 <h3>{t('title')}</h3>
@@ -174,7 +174,7 @@ const t = useTranslations('ResizeTool.results');
 
 ```tsx
 import { useTranslations } from 'next-intl';
-const t = useTranslations('ResizeTool.tools');
+const t = useTranslations('BulkResizeTool.tools');
 
 const tools = [
   {

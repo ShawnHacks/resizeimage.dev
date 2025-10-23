@@ -167,7 +167,7 @@ export function SiteHeader({
               className="gap-2 animate-in fade-in-50 slide-in-from-top-2 duration-300"
             >
               <Download className="h-4 w-4" />
-              <span>Install App</span>
+              <span>{siteConfig.installApp}</span>
             </Button>
           )}
 

@@ -28,6 +28,22 @@
     "title": "Free Image Resizer Online - Resize Images & Photos Instantly",
     "subtitle": "Professional image resizer free tool for single or batch processing. Resize image online, compress photos, and optimize pictures instantly in your browser. No registration, no uploads - 100% secure and private photo resizer."
   },
+  "SiteConfig": {
+    "title": "Image Resizer - Free Online Photo Resizer",
+    "description": "Best free image resizer online tool. Resize image, instantly in your browser. Professional photo resizer free with no uploads.",
+    "keywords": {
+      "0": "image resizer",
+      "1": "image resizer free",
+      "2": "photo resizer",
+      "3": "resize image",
+      "4": "resize image online",
+      "5": "free image resizer",
+      "6": "online image resizer",
+      "7": "photo resizer free",
+      "8": "resize photo"
+    },
+    "installApp": "Install App"
+  },
   "NotFoundPage": {
     "title": "Page not found",
     "description": "The page you are looking for could not be found. It might have been moved, deleted, or you entered the wrong URL.",
@@ -47,22 +63,6 @@
     "metaTitle": "Terms & Conditions - Service Agreement",
     "metaDescription": "Read our terms and conditions to understand the rules and guidelines for using our website service.",
     "metaKeywords": "terms and conditions, service agreement, terms of use, website tool, user agreement"
-  },
-  "SiteConfig": {
-    "title": "Image Resizer - Free Online Photo Resizer",
-    "description": "Best free image resizer online tool. Resize image, instantly in your browser. Professional photo resizer free with no uploads.",
-    "keywords": {
-      "0": "image resizer",
-      "1": "image resizer free",
-      "2": "photo resizer",
-      "3": "resize image",
-      "4": "resize image online",
-      "5": "free image resizer",
-      "6": "online image resizer",
-      "7": "photo resizer free",
-      "8": "resize photo"
-    },
-    "InstallApp": "Install App"
   },
   "BlogPage": {
     "title": "Blog",
@@ -108,6 +108,18 @@
     "postNotFound": "Post Not Found",
     "postNotFoundDescription": "The requested blog post could not be found."
   },
+  "Tools": {
+    "bulkresizeimages": "Bulk Resize Images Online",
+    "bulkresizeimagesDesc": "Bulk Resize Images",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Take Screenshots",
+    "compress": "Compress Image",
+    "compressDesc": "Compress Images",
+    "crop": "Crop image",
+    "cropDesc": "Crop Images",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Watermark Images"
+  },
   "ImageUploader": {
     "titleSingle": "Drag and Drop Your Image",
     "titleMultiple": "Drag and Drop Your Images",
@@ -125,7 +137,7 @@
     "errorTooManyFiles": "Too many files",
     "errorFileSizeExceeded": "Some files are too large"
   },
-  "ResizeTool": {
+  "BulkResizeTool": {
     "pageTitle": "Bulk Resize Images Online",
     "pageDescription": "Free online tool to batch resize multiple images at once. Fast, secure, and works entirely in your browser — no upload needed.",
     "backButton": "Back",
@@ -137,8 +149,7 @@
       "noSignup": "No sign-up required",
       "secure": "Secure & private",
       "unlimited": "Process unlimited images",
-      "browser": "Works in your browser",
-      "singleImageCta": "Need just one? Try the single-image resizer"
+      "browser": "Works in your browser"
     },
     "imagePreview": {
       "selected": "image",
@@ -250,18 +261,6 @@
       "urlCopied": "Configuration URL copied to clipboard!",
       "urlCopyFailed": "Failed to copy URL"
     },
-    "tools": {
-      "bulkresizeimages": "Bulk Resize Images Online",
-      "bulkresizeimagesDesc": "Bulk Resize Images",
-      "screenshot": "Website Screenshot Online",
-      "screenshotDesc": "Take Screenshots",
-      "compress": "Compress Image",
-      "compressDesc": "Compress Images",
-      "crop": "Crop image",
-      "cropDesc": "Crop Images",
-      "watermark": "Watermark Image",
-      "watermarkDesc": "Watermark Images"
-    },
     "toast": {
       "imagesLoaded": "{count} {count, plural, one {image} other {images}} loaded",
       "imagesAdded": "Added {count} more {count, plural, one {image} other {images}}",
@@ -348,7 +347,7 @@
       ]
     }
   },
-  "SingleResize": {
+  "SingleResizeTool": {
     "badge": "Resize image online",
     "pageTitle": "Free Image Resizer Online",
     "pageDescription": "Resize image directly in your browser. Pick a preset size, adjust a custom crop, and download in JPG, PNG, or WebP without uploading anything.",

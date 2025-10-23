@@ -44,12 +44,12 @@ files.forEach(file => {
     const content = JSON.parse(fs.readFileSync(filePath, 'utf8'));
     
     // Check if toast section exists
-    if (content.ResizeTool && content.ResizeTool.toast) {
+    if (content.BulkResizeTool && content.BulkResizeTool.toast) {
       // Add the new key
       const translation = translations[lang] || translations['en'];
       
       // Insert after "error" key
-      const toast = content.ResizeTool.toast;
+      const toast = content.BulkResizeTool.toast;
       const newToast = {};
       
       for (const [key, value] of Object.entries(toast)) {
@@ -59,13 +59,13 @@ files.forEach(file => {
         }
       }
       
-      content.ResizeTool.toast = newToast;
+      content.BulkResizeTool.toast = newToast;
       
       // Write back
       fs.writeFileSync(filePath, JSON.stringify(content, null, 2) + '\n', 'utf8');
       console.log(`✓ Updated ${file}`);
     } else {
-      console.log(`⚠ ${file} - ResizeTool.toast not found`);
+      console.log(`⚠ ${file} - BulkResizeTool.toast not found`);
     }
   } catch (err) {
     console.error(`✗ Error processing ${file}:`, err.message);
