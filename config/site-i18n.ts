@@ -169,6 +169,11 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
     titleKey: "Footer.Resources",
     links: [
       {
+        labelKey: "Free Image Converter",
+        href: "https://imageconverter.dev",
+        noTranslation: true,
+      },
+      {
         labelKey: "Bulk Resize Images Online",
         href: "https://bulkresizeimages.online",
         noTranslation: true,
