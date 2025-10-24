@@ -42,7 +42,7 @@
       "7": "免费照片调整器",
       "8": "调整照片尺寸"
     },
-    "InstallApp": "安装应用"
+    "installApp": "安装应用"
   },
   "NotFoundPage": {
     "title": "页面未找到",
