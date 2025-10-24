@@ -235,6 +235,11 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         labelKey: "Footer.Terms of Service",
         href: "/terms-of-service",
       },
+      {
+        labelKey: "Stripe Climate Member",
+        href: "https://climate.stripe.com/4JAKCs",
+        noTranslation: true,
+      },
     ],
   },
 ]
