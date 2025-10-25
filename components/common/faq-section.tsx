@@ -49,7 +49,7 @@ function FAQItem({ question, answer }: FAQItem) {
 
 export function FAQSection({ title, subtitle, faqs, className }: FAQSectionProps) {
   return (
-    <section className={cn("py-16 md:py-24", className)}>
+    <section id='faq' className={cn("py-16 md:py-24", className)}>
       <div className="container mx-auto px-4">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">

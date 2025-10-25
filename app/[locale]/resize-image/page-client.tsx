@@ -162,7 +162,7 @@ export default function SingleResizePageClient() {
         ]}
       />
 
-      <div className="pt-16 md:pt-24">
+      <div id='features' className="pt-16 md:pt-24">
         <FeatureSection
           title={t('featureSections.feature1.title')}
           description={t.raw('featureSections.feature1.description')}

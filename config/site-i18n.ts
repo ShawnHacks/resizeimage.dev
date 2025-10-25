@@ -88,22 +88,22 @@ export function useLocalizedSiteConfig(): SiteConfig {
 
 // Navigation items with translation keys
 export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
-  // {
-  //   titleKey: "Header.Features", 
-  //   href: "/#features",
-  // },
-  // {
-  //   titleKey: "Header.FAQ",
-  //   href: "/#faq",
-  // },
-  // {
-  //   titleKey: "Header.Blog", 
-  //   href: "/blog",
-  // },
-  // {
-  //   titleKey: "Header.About",
-  //   href: "/about",
-  // },
+  {
+    titleKey: "Header.Features", 
+    href: "/#features",
+  },
+  {
+    titleKey: "Header.FAQ",
+    href: "/#faq",
+  },
+  {
+    titleKey: "Header.Blog", 
+    href: "/blog",
+  },
+  {
+    titleKey: "Header.About",
+    href: "/about",
+  },
   // {
   //   titleKey: "Header.Blog",
   //   href: "/blog",
@@ -166,7 +166,7 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
     ],
   },
   {
-    titleKey: "Footer.Resources",
+    titleKey: "Footer.Tools",
     links: [
       {
         labelKey: "Free Image Converter",
@@ -183,21 +183,21 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         href: "http://websitescreenshot.online/",
         noTranslation: true,
       },
-      {
-        labelKey: "AIHuntList",
-        href: "https://aihuntlist.com",
-        noTranslation: true,
-      },
-      {
-        labelKey: "TweetCloner",
-        href: "https://tweetcloner.com",
-        noTranslation: true,
-      },
-      {
-        labelKey: "Gemlink.app",
-        href: "https://gemlink.app",
-        noTranslation: true,
-      },
+      // {
+      //   labelKey: "AIHuntList",
+      //   href: "https://aihuntlist.com",
+      //   noTranslation: true,
+      // },
+      // {
+      //   labelKey: "TweetCloner",
+      //   href: "https://tweetcloner.com",
+      //   noTranslation: true,
+      // },
+      // {
+      //   labelKey: "Gemlink.app",
+      //   href: "https://gemlink.app",
+      //   noTranslation: true,
+      // },
       // {
       //   labelKey: "Footer.License",
       //   href: "/license",
