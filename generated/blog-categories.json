@@ -22,14 +22,14 @@
     "translations": {
       "en": {
         "name": "Tools Comparison",
-        "description": "Compare different bulk resize image tools and find the best solution"
+        "description": "Compare different resize image tools and find the best solution"
       },
       "zh": {
         "name": "工具对比",
         "description": "比较不同的批量压缩图片工具，找到最佳解决方案"
       }
     },
-    "postCount": 0
+    "postCount": 1
   },
   {
     "slug": "tutorials",
@@ -38,14 +38,14 @@
     "translations": {
       "en": {
         "name": "Tutorials",
-        "description": "Step-by-step guides and how-to articles for bulk resize image tools"
+        "description": "Step-by-step guides and how-to articles for resize image tools"
       },
       "zh": {
         "name": "教程",
         "description": "批量压缩图片工具的分步指南和操作教程"
       }
     },
-    "postCount": 0
+    "postCount": 1
   },
   {
     "slug": "use-cases",

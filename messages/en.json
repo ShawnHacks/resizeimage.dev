@@ -67,8 +67,8 @@
   },
   "BlogPage": {
     "title": "Blog",
-    "description": "Learn about bulk resize images tools, image compression tools, and digital tools. Expert guides and tutorials for developers and designers.",
-    "keywords": "bulk resize images tools, image compression tools, digital tools guide, image optimizer, image compression, image resize, web design tips",
+    "description": "Learn about resize image tools, image compression tools, and digital tools. Expert guides and tutorials for developers and designers.",
+    "keywords": "resize image tools, image compression tools, digital tools guide, image optimizer, image compression, image resize, web design tips",
     "readMore": "Read More",
     "minRead": "min read",
     "noPosts": "No blog posts available yet. Check back soon!",
