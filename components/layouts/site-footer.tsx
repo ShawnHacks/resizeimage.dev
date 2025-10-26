@@ -43,7 +43,7 @@ export async function SiteFooter({
                   src={logo}
                   width={20}
                   height={20}
-                  alt="Site logo"
+                  alt={siteConfig.title}
                   className="h-6 w-6"
                 />
                 <span className="text-lg font-bold">{siteConfig.name}</span>
@@ -97,7 +97,7 @@ export async function SiteFooter({
         </div>
       </div>
 
-      {/* <FooterBadges /> */}
+      <FooterBadges />
 
       {/* Language selector */}
       <div className="border-t border-b py-4">

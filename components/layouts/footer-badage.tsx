@@ -72,12 +72,12 @@ export default function FooterBadges() {
           <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" className="h-8 w-auto max-w-40" alt="Fazier badge" />
         </a>
 
-        <a href="https://similarlabs.com/?ref=embed" target="_blank" className="block dark:hidden">
+        {/* <a href="https://similarlabs.com/?ref=embed" target="_blank" className="block dark:hidden">
           <img src="https://similarlabs.com/similarlabs-embed-badge-light.svg" alt="SimilarLabs Embed Badge" className="h-8 w-auto max-w-40" />
         </a>
         <a href="https://similarlabs.com/?ref=embed" target="_blank" className="hidden dark:block">
           <img src="https://similarlabs.com/similarlabs-embed-badge-dark.svg" alt="SimilarLabs Embed Badge" className="h-8 w-auto max-w-40" />
-        </a>
+        </a> */}
 
         {/* <a title="ai tools code.market" href="https://code.market?code.market=verified" className="block dark:hidden">
           <img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-bright.svg" className="h-8 w-auto max-w-40" />
@@ -96,10 +96,10 @@ export default function FooterBadges() {
         <a href="https://dofollow.tools" target="_blank" className="hidden dark:block"><img src="https://dofollow.tools/badge/badge_dark.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
         <a href="https://dofollow.tools" target="_blank" className="block dark:hidden"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
 
-        <a href="https://turbo0.com/item/bulkresizeimagesonline" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+        <a href="https://turbo0.com/item/resizeimage.dev" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
           <img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
-        <a href="https://turbo0.com/item/bulkresizeimagesonline" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+        <a href="https://turbo0.com/item/resizeimage.dev" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
           <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
 
