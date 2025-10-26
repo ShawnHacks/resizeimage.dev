@@ -40,15 +40,15 @@ export default function FooterBadges() {
           <img src="https://aiwith.me/ai_with_me_light_badge.svg" alt="Open Launch - Featured on AI With Me" className="h-8" />
         </a> */}
         
-        <a href="https://startupfa.me/s/resizeimage.dev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="hidden dark:block">
-          <img src="https://startupfa.me/badges/featured/dark.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        <a href="https://startupfa.me/s/resizeimagedev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="hidden dark:block">
+          <img src="https://startupfa.me/badges/featured/dark.webp" alt="ResizeImage.dev - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
-        {/* <a href="https://startupfa.me/s/resizeimage.dev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="block dark:hidden">
-          <img src="https://startupfa.me/badges/featured/light.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        {/* <a href="https://startupfa.me/s/resizeimagedev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://startupfa.me/badges/featured/light.webp" alt="ResizeImage.dev - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a> */}
 
-        <a href="https://startupfa.me/s/resizeimage.dev?utm_source=resizeimage.dev" target="_blank" rel="noopener" className="block dark:hidden">
-          <img src="https://startupfa.me/badges/featured-badge.webp" alt="BulkResizeImages - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
+        <a href="https://startupfa.me/s/resizeimagedev?utm_source=resizeimagedev" target="_blank" rel="noopener" className="block dark:hidden">
+          <img src="https://startupfa.me/badges/featured-badge.webp" alt="ResizeImage.dev - Featured on Startup Fame" className="h-8 w-auto max-w-40" />
         </a>
 
         <a href="https://www.producthunt.com/products/resizeimage-dev?embed=true&utm_source=badge-featured&utm_medium=badge&utm_source=badge-resizeimage-dev" target="_blank" rel="noopener" className="hidden dark:block">
