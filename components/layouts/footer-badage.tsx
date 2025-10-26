@@ -86,20 +86,20 @@ export default function FooterBadges() {
           <img alt="ai tools code.market" title="ai tools code.market" src="https://code.market/assets/manage-product/featured-logo-dark.svg" className="h-8 w-auto max-w-40" />
         </a> */}
 
-        <a href="https://findly.tools/bulkresizeimages-online?utm_source=bulkresizeimages-online" target="_blank" className="block dark:hidden">
+        <a href="https://findly.tools/resizeimage-dev?utm_source=resizeimage-dev" target="_blank" className="block dark:hidden">
           <img src="https://findly.tools/badges/findly-tools-badge-light.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
         </a>
-        <a href="https://findly.tools/bulkresizeimages-online?utm_source=bulkresizeimages-online" target="_blank" className="hidden dark:block">
+        <a href="https://findly.tools/resizeimage-dev?utm_source=resizeimage-dev" target="_blank" className="hidden dark:block">
           <img src="https://findly.tools/badges/findly-tools-badge-dark.svg" alt="Featured on findly.tools" className="h-8 w-auto max-w-40" />
         </a>
 
         <a href="https://dofollow.tools" target="_blank" className="hidden dark:block"><img src="https://dofollow.tools/badge/badge_dark.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
         <a href="https://dofollow.tools" target="_blank" className="block dark:hidden"><img src="https://dofollow.tools/badge/badge_light.svg" alt="Featured on Dofollow.Tools" className="h-8 w-auto max-w-40" /></a>
 
-        <a href="https://turbo0.com/item/resizeimage.dev" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+        <a href="https://turbo0.com/item/resizeimagedev" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
           <img src="https://img.turbo0.com/badge-listed-light.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
-        <a href="https://turbo0.com/item/resizeimage.dev" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+        <a href="https://turbo0.com/item/resizeimagedev" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
           <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
 
