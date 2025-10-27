@@ -170,7 +170,7 @@ export function ImageUploader({
             <input
               type="file"
               multiple={multiple}
-              accept="image/jpeg,image/png,image/webp,image/jpg"
+              accept="image/jpeg,image/png,image/webp,image/jpg,image/gif,image/tiff,image/svg+xml,image/avif,image/apng,image/heic,image/heif"
               onChange={handleFileInput}
               className="hidden"
             />

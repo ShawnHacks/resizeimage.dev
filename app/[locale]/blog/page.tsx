@@ -50,7 +50,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
   const { locale } = await params
   const t = await getTranslations('BlogPage')
   const posts = await getBlogPosts(locale)
-  const categories = await getCategories()
+  const categories = await getCategories(locale)
 
   return (
     <main className="min-h-screen py-12">

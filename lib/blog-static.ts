@@ -37,11 +37,16 @@ export interface BlogCategory {
 }
 
 // 获取所有分类
-export async function getCategories(): Promise<BlogCategory[]> {
-  return (blogCategories as any[]).map(category => ({
-    ...category,
-    name: category.translations.en.name,
-    description: category.translations.en.description,
+export async function getCategories(locale?: string): Promise<BlogCategory[]> {
+  return ((blogCategories as any[]).map(category => {
+    const translations = category.translations || {}
+    const localized = (locale && translations[locale]) || translations.en || {}
+
+    return {
+      ...category,
+      name: localized.name || translations.en?.name || category.slug,
+      description: localized.description || translations.en?.description || '',
+    } as BlogCategory
   })) as BlogCategory[]
 }
 

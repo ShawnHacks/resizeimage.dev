@@ -46,9 +46,17 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
   }
 
 
-  const structuredData = {
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
+  const articleUrl = `${baseUrl}/blog/${post.slug}`
+  const categoryUrl = `${baseUrl}/blog/category/${post.category}`
+
+  const articleStructuredData = {
     "@context": "https://schema.org",
-    "@type": "BlogPosting",
+    "@type": "Article",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": articleUrl,
+    },
     "headline": post.title,
     "description": post.description,
     "author": {
@@ -57,23 +65,61 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
     },
     "datePublished": post.publishedAt,
     "dateModified": post.updatedAt,
-    "image": post.ogImage || "https://resizeimage.dev/og.png",
-    "url": `https://resizeimage.dev/${locale === 'en' ? '' : locale + '/'}blog/${post.slug}`,
-    "keywords": post.keywords?.join(", ") || "",
-    "articleSection": post.tags?.join(", ") || "",
+    "image": post.ogImage ? [post.ogImage] : [`${baseUrl}/og.png`],
+    "url": articleUrl,
+    "keywords": post.keywords?.join(", ") || undefined,
+    "articleSection": post.tags?.join(", ") || undefined,
+    "inLanguage": "en",
     "publisher": {
       "@type": "Organization",
       "name": "CrownByte LTD",
+      "url": baseUrl,
       "logo": {
         "@type": "ImageObject",
-        "url": "https://resizeimage.dev/logo.png"
+        "url": `${baseUrl}/logo.png`
       }
     }
   }
 
+  const breadcrumbStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Blog",
+        "item": `${baseUrl}/blog`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": post.category,
+        "item": categoryUrl
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": post.title,
+        "item": articleUrl
+      }
+    ]
+  }
+
   return (
     <>
-      <StructuredData data={structuredData} />
+      {locale === 'en' && (
+        <>
+          <StructuredData
+            id={`article-structured-data-${post.slug}`}
+            data={articleStructuredData}
+          />
+          <StructuredData
+            id={`breadcrumb-structured-data-${post.slug}`}
+            data={breadcrumbStructuredData}
+          />
+        </>
+      )}
       
       {/* Hero Section with Background */}
       {/* bg-gradient-to-br from-primary/20 via-primary/10 to-pink-50 dark:from-primary dark:via-primary/80 dark:to-primary/50 */}

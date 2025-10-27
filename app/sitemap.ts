@@ -1,11 +1,57 @@
 import type { MetadataRoute } from 'next'
-import { routing } from "@/i18n/routing"
+import { routing, EN as DEFAULT_LOCALE } from "@/i18n/routing"
 import { getBlogPosts, getCategories } from '@/lib/blog-static'
+import type { SimpleBlogPost } from '@/lib/blog-static'
 import { baseSiteConfig } from "@/config/site-i18n"
+
+const defaultLocale = routing.defaultLocale ?? DEFAULT_LOCALE
+
+const normalisePath = (path: string): string => {
+  if (!path) return ''
+  return path.startsWith('/') ? path : `/${path}`
+}
+
+const buildUrl = (baseUrl: string, locale: string, path: string): string => {
+  const localePrefix = locale === defaultLocale ? '' : `/${locale}`
+  const normalizedPath = normalisePath(path)
+  return `${baseUrl}${localePrefix}${normalizedPath}`
+}
+
+const toDate = (value?: string): Date | undefined => {
+  if (!value) return undefined
+  const date = new Date(value)
+  return Number.isNaN(date.getTime()) ? undefined : date
+}
+
+const getLatestDate = (posts: SimpleBlogPost[]): Date | undefined =>
+  posts.reduce<Date | undefined>((latest, post) => {
+    const candidate = toDate(post.updatedAt) ?? toDate(post.publishedAt)
+    if (!candidate) {
+      return latest
+    }
+    if (!latest || candidate.getTime() > latest.getTime()) {
+      return candidate
+    }
+    return latest
+  }, undefined)
+
+const groupPostsBySlug = (posts: SimpleBlogPost[]): Map<string, SimpleBlogPost[]> => {
+  return posts.reduce((map, post) => {
+    const list = map.get(post.slug) ?? []
+    list.push(post)
+    map.set(post.slug, list)
+    return map
+  }, new Map<string, SimpleBlogPost[]>())
+}
+
+const pickPostForLocale = (posts: SimpleBlogPost[], locale: string): SimpleBlogPost | undefined => {
+  return posts.find(post => post.language === locale)
+    ?? posts.find(post => post.language === defaultLocale)
+    ?? posts[0]
+}
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = baseSiteConfig.url
-  
   const locales = routing.locales
   const routes = [
     { path: '', priority: 1.0, changeFreq: 'daily' as const },
@@ -17,20 +63,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     { path: '/terms-of-service', priority: 0.6, changeFreq: 'monthly' as const },
     { path: '/cookie-policy', priority: 0.6, changeFreq: 'monthly' as const },
   ]
-  
+
   const sitemapEntries: MetadataRoute.Sitemap = []
-  
+
+  const posts = await getBlogPosts()
+  const postsBySlug = groupPostsBySlug(posts)
+  const postsByCategory = posts.reduce<Map<string, SimpleBlogPost[]>>((map, post) => {
+    const list = map.get(post.category) ?? []
+    list.push(post)
+    map.set(post.category, list)
+    return map
+  }, new Map<string, SimpleBlogPost[]>())
+
   routes.forEach(route => {
-    // Add localized routes for each locale
     locales.forEach(locale => {
-      const url = `${baseUrl}/${locale}${route.path}`
+      const url = buildUrl(baseUrl, locale, route.path)
       const alternateLanguages: Record<string, string> = {}
-      
-      // Create alternate language entries
+
       locales.forEach(altLocale => {
-        alternateLanguages[altLocale] = `${baseUrl}/${altLocale}${route.path}`
+        alternateLanguages[altLocale] = buildUrl(baseUrl, altLocale, route.path)
       })
-      
+      alternateLanguages['x-default'] = buildUrl(baseUrl, defaultLocale, route.path)
+
       sitemapEntries.push({
         url,
         lastModified: new Date(),
@@ -44,21 +98,31 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   })
 
   const categories = await getCategories()
-  
+
   categories.forEach(category => {
+    const categoryPosts = postsByCategory.get(category.slug) ?? []
+
     locales.forEach(locale => {
-      const url = `${baseUrl}/${locale}/blog/category/${category.slug}`
+      const localePosts = categoryPosts.filter(post => post.language === locale)
+      const fallbackPosts = localePosts.length > 0
+        ? localePosts
+        : categoryPosts.filter(post => post.language === defaultLocale)
+      const relevantPosts = fallbackPosts.length > 0 ? fallbackPosts : categoryPosts
+      const lastModified = getLatestDate(relevantPosts) ?? new Date()
+
+      const path = `/blog/category/${category.slug}`
+      const url = buildUrl(baseUrl, locale, path)
       const alternateLanguages: Record<string, string> = {}
-      
-      // Create alternate language entries
+
       locales.forEach(altLocale => {
-        alternateLanguages[altLocale] = `${baseUrl}/${altLocale}/blog/category/${category.slug}`
+        alternateLanguages[altLocale] = buildUrl(baseUrl, altLocale, path)
       })
-      
+      alternateLanguages['x-default'] = buildUrl(baseUrl, defaultLocale, path)
+
       sitemapEntries.push({
         url,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
+        lastModified,
+        changeFrequency: 'weekly',
         priority: 0.8,
         alternates: {
           languages: alternateLanguages,
@@ -66,23 +130,28 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     })
   })
-  
-  const posts = await getBlogPosts()
-  
-  posts.forEach(post => {
+
+  postsBySlug.forEach((slugPosts, slug) => {
     locales.forEach(locale => {
-      const url = `${baseUrl}/${locale}/blog/${post.slug}`
+      const localizedPost = pickPostForLocale(slugPosts, locale)
+      if (!localizedPost) {
+        return
+      }
+
+      const path = `/blog/${localizedPost.slug}`
+      const url = buildUrl(baseUrl, locale, path)
       const alternateLanguages: Record<string, string> = {}
-      
-      // Create alternate language entries
+
       locales.forEach(altLocale => {
-        alternateLanguages[altLocale] = `${baseUrl}/${altLocale}/blog/${post.slug}`
+        const altPost = pickPostForLocale(slugPosts, altLocale) ?? localizedPost
+        alternateLanguages[altLocale] = buildUrl(baseUrl, altLocale, `/blog/${altPost.slug}`)
       })
-    
+      alternateLanguages['x-default'] = buildUrl(baseUrl, defaultLocale, `/blog/${slug}`)
+
       sitemapEntries.push({
         url,
-        lastModified: new Date(),
-        changeFrequency: 'weekly' as const,
+        lastModified: toDate(localizedPost.updatedAt) ?? toDate(localizedPost.publishedAt) ?? new Date(),
+        changeFrequency: 'weekly',
         priority: 0.8,
         alternates: {
           languages: alternateLanguages,
@@ -90,7 +159,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       })
     })
   })
-  
+
   return sitemapEntries
 }
 

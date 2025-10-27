@@ -9,12 +9,10 @@ export default function robots(): MetadataRoute.Robots {
         userAgent: '*',
         allow: '/',
         disallow: [
-          '/api/',
           '/_next/',
           '/.well-known/',
           '/private/',
         ],
-        crawlDelay: 1, // 1 second delay to be respectful
       },
       {
         userAgent: 'GPTBot', // OpenAI's bot
