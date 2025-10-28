@@ -103,6 +103,13 @@ export default function FooterBadges() {
           <img src="https://img.turbo0.com/badge-listed-dark.svg" alt="Listed on Turbo0" className="h-8 w-auto max-w-40" />
         </a>
 
+        <a href="https://launchigniter.com/product/resizeimage-dev?ref=badge-resizeimage-dev" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+          <img src="https://launchigniter.com/api/badge/resizeimage-dev?theme=neutral" alt="Featured on LaunchIgniter" className="h-8 w-auto max-w-40" />
+        </a>
+        <a href="https://launchigniter.com/product/resizeimage-dev?ref=badge-resizeimage-dev" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+          <img src="https://launchigniter.com/api/badge/resizeimage-dev?theme=dark" alt="Featured on LaunchIgniter" className="h-8 w-auto max-w-40" />
+        </a>
+
         <a href="https://launchboard.dev" target="_blank" rel="noopener noreferrer">
           <img src="https://launchboard.dev/launchboard-badge.png" alt="Launched on LaunchBoard - Product Launch Platform" className="h-8 w-auto max-w-40"  />
         </a>
