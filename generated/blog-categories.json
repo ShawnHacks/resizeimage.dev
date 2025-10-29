@@ -29,7 +29,7 @@
         "description": "比较不同的批量压缩图片工具，找到最佳解决方案"
       }
     },
-    "postCount": 1
+    "postCount": 2
   },
   {
     "slug": "tutorials",
@@ -45,7 +45,7 @@
         "description": "批量压缩图片工具的分步指南和操作教程"
       }
     },
-    "postCount": 1
+    "postCount": 2
   },
   {
     "slug": "use-cases",
@@ -61,6 +61,6 @@
         "description": "在社交媒体、电子商务和网页开发等实际场景中应用图片调整大小的实用指南。"
       }
     },
-    "postCount": 0
+    "postCount": 1
   }
 ]
