@@ -186,3 +186,8 @@ https://llmstxt.firecrawl.dev/
 https://imageresizer.com/crop-image 很大的流量，很全的工具，简洁风，非常值得学习！！！！！！！！！ 月流量6M多
 
 https://www.adobe.com/express/feature/image/resize
+
+
+# 写作要求
+请开始撰写文章，我希望文章中有些长尾词能够内链到网站首页，文章格式可以参考已经存在的其他文章，文章字数尽量2000字以上，必要的
+  位置可以使用表格让文章表述更清晰，文章要求不能有太多AI味，要真实朴实实用，文章可以让用户学到东西，找到合适的解决方案等等会更好
