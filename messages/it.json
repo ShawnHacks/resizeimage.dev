@@ -45,6 +45,10 @@
     },
     "installApp": "Installa l'app"
   },
+  "AboutPage": {
+    "metaTitle": "Informazioni - ResizeImage.dev",
+    "metaDescription": "Scopri ResizeImage.dev - il miglior strumento gratuito per ridimensionare immagini online. Ridimensiona le immagini istantaneamente nel tuo browser. Ridimensionatore di foto professionale gratuito senza caricamento."
+  },
   "NotFoundPage": {
     "title": "Pagina non trovata",
     "description": "La pagina che stai cercando non è stata trovata. Potrebbe essere stata spostata, eliminata o potresti aver inserito l'URL sbagliato.",

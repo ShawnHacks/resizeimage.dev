@@ -1,0 +1,265 @@
+# ResizeImage.dev - Free Online Image Resizer
+
+> Professional browser-based image resizer tool. Resize images instantly without uploads - 100% secure and private.
+
+## Overview
+
+ResizeImage.dev is a free online image resizer that processes images entirely in your browser. No uploads, no accounts, no data leaves your device. Perfect for resizing photos for social media, web, email, and print.
+
+## Core Features
+
+### Image Resizer
+- **URL**: https://resizeimage.dev/resize-image
+- **Description**: Single image resizer with visual crop editor
+- **Features**:
+  - Drag-and-drop interface
+  - Real-time preview with zoom (1× to 3×)
+  - Social media presets (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest, Snapchat)
+  - Custom dimensions with aspect ratio lock
+  - Multiple units support (pixels, inches, centimeters, millimeters, points)
+  - Export formats: JPG, PNG, WebP
+  - Quality control slider
+  - Background color selection for transparent images
+
+### Bulk Resize Images
+- **URL**: https://resizeimage.dev/bulk-resize-images
+- **Description**: Batch resize multiple images at once
+- **Features**:
+  - Process unlimited images simultaneously
+  - Multiple resize modes:
+    - Percentage (10% to 200%)
+    - File size target (10 KB to 5000 KB)
+    - Exact dimensions (width × height)
+    - Width only (maintain aspect ratio)
+    - Height only (maintain aspect ratio)
+    - Longest side
+  - Quick presets for social media platforms
+  - Batch download as ZIP
+  - Progress tracking
+  - Format conversion (JPG, PNG, WebP)
+
+### Image Converter
+- **URL**: https://resizeimage.dev/image-converter
+- **Description**: Convert images between formats
+- **Supported Formats**: JPG, PNG, WebP
+
+## Key Benefits
+
+### Privacy & Security
+- **Client-side processing**: All image processing happens in your browser using JavaScript
+- **No uploads**: Images never leave your device
+- **No accounts**: No registration or sign-up required
+- **GDPR & HIPAA compliant**: Safe for sensitive content (medical, legal, corporate)
+- **Offline capable**: Works without internet after initial page load
+
+### Performance
+- **Lightning fast**: Instant processing (typically under 1 second)
+- **No queues**: No waiting for server processing
+- **Unlimited usage**: Process as many images as you need
+- **No file size limits**: Handle large images efficiently
+
+### User Experience
+- **Free forever**: 100% free with no limitations or watermarks
+- **No ads**: Clean, distraction-free interface
+- **Mobile friendly**: Responsive design works on all devices
+- **Modern formats**: Full WebP support for optimal compression
+
+## Use Cases
+
+### Social Media Optimization
+- Resize images for Instagram posts (1080×1080 px)
+- Create Instagram Stories (1080×1920 px)
+- Twitter/X headers (1500×500 px)
+- Facebook covers (820×312 px)
+- YouTube thumbnails (1280×720 px)
+- LinkedIn posts and banners
+- Pinterest pins (1000×1500 px)
+
+### Professional Workflows
+- Email attachments (reduce file size)
+- Website images (optimize for web)
+- Product photography (standardize dimensions)
+- Marketing materials (create multiple sizes)
+- Team collaboration (maintain brand consistency)
+- Print materials (exact dimension control)
+
+### Content Creation
+- Blog post images
+- Thumbnail generation
+- Photo portfolios
+- E-commerce product images
+- Digital marketing assets
+
+## Technical Specifications
+
+### Supported Input Formats
+- JPEG / JPG
+- PNG (with transparency support)
+- WebP
+
+### Supported Output Formats
+- JPEG (with quality control)
+- PNG (lossless)
+- WebP (modern compression)
+
+### Browser Compatibility
+- Chrome / Edge (recommended)
+- Firefox
+- Safari
+- Opera
+- All modern browsers with HTML5 Canvas support
+
+### Processing Technology
+- HTML5 Canvas API
+- Browser Image Compression library
+- Pica (high-quality image resizing)
+- Client-side JavaScript (no server required)
+
+## Blog & Resources
+
+### Categories
+- **Tutorials**: Step-by-step guides for image resizing
+- **Tools Comparison**: Compare image resizing tools
+- **Optimization Guides**: Best practices for image optimization
+- **Use Cases**: Real-world applications and workflows
+
+### Featured Articles
+- "Why resizeimage.dev Is the Browser-First Image Resizer Teams Rely on in 2025"
+- "How to Batch Resize Images Online - Complete Guide"
+- "Ultimate Guide to Social Media Image Sizes 2025"
+- "ResizeImage.dev vs PicResize: Which Free Image Resizer is Better?"
+- "How to Resize ID Photos Online"
+- "Crop Images Without Losing Quality"
+- "Reduce Photo Size for Email"
+- "Canva Alternatives: Free Image Resizer Tools"
+
+**Blog URL**: https://resizeimage.dev/blog
+
+## SEO Keywords
+
+### Primary Keywords
+- image resizer
+- resize image
+- photo resizer
+- image resizer free
+- resize image online
+- free image resizer
+- online image resizer
+- photo resizer free
+
+### Long-tail Keywords
+- resize image online free without watermark
+- resize image for instagram story online
+- resize png with transparent background online
+- online image resizer no upload required
+- resize image locally in browser
+- resize image to exact pixels online free
+- best free image resizer no account
+- resize image for social media 2025
+- batch resize images online free
+- bulk image resizer no upload
+
+### Feature-specific Keywords
+- crop image online
+- compress image online
+- convert image format
+- resize image for web
+- resize photo for email
+- social media image resizer
+- professional image resizer
+- privacy-focused image tool
+
+## Comparison & Alternatives
+
+### Advantages over Competitors
+- **vs PicResize**: Faster (1s vs 22s), no uploads, no ads, modern formats
+- **vs Canva**: Simpler, faster, no account required, privacy-focused
+- **vs Photoshop**: Free, browser-based, no installation, instant access
+- **vs Online converters**: No uploads, unlimited usage, no watermarks
+
+### When to Use ResizeImage.dev
+- Need quick image resizing without uploads
+- Working with sensitive/confidential images
+- Require social media presets
+- Want unlimited free usage
+- Need modern format support (WebP)
+- Prefer privacy-first tools
+- Work offline or have slow internet
+
+## Company Information
+
+- **Name**: ResizeImage.dev
+- **Company**: Crownbyte LTD
+- **Domain**: resizeimage.dev
+- **Support**: support@nestsaas.com
+- **Creator**: ShawnHacks
+- **Twitter**: @ShawnHacks
+
+## Related Tools
+
+- **Image Converter**: https://imageconverter.dev
+- **Bulk Resize Images**: https://bulkresizeimages.online
+- **Website Screenshot**: http://websitescreenshot.online
+
+## Legal & Policies
+
+- **Privacy Policy**: https://resizeimage.dev/privacy-policy
+- **Terms of Service**: https://resizeimage.dev/terms-of-service
+- **Cookie Policy**: https://resizeimage.dev/cookie-policy
+
+## Technical Stack
+
+- **Framework**: Next.js 15 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS 4
+- **UI Components**: Radix UI, shadcn/ui
+- **Icons**: Lucide React
+- **Internationalization**: next-intl (English, Chinese, and more)
+- **Deployment**: Cloudflare Pages
+- **Image Processing**: browser-image-compression, pica
+
+## Frequently Asked Questions
+
+### Is ResizeImage.dev really free?
+Yes, 100% free forever with no limitations, watermarks, or hidden fees.
+
+### Are my images uploaded to a server?
+No. All processing happens locally in your browser. Images never leave your device.
+
+### Can I use it offline?
+Yes. After the initial page load, the tool works without internet connection.
+
+### What's the maximum file size?
+No strict limit. The tool can handle large images efficiently in your browser.
+
+### How many images can I resize?
+Unlimited. There are no restrictions on usage.
+
+### Do I need to create an account?
+No. No registration or sign-up required.
+
+### What image formats are supported?
+Input: JPEG, JPG, PNG, WebP
+Output: JPEG, PNG, WebP
+
+### Can I resize images to exact dimensions?
+Yes. You can specify exact width and height in pixels or other units.
+
+### Does it maintain image quality?
+Yes. You have full control over quality settings. High-quality resizing algorithms preserve image details.
+
+### Is it safe for sensitive images?
+Absolutely. Since processing is client-side, it's safe for medical, legal, or confidential images.
+
+### Can I resize multiple images at once?
+Yes. Use the bulk resize tool at https://resizeimage.dev/bulk-resize-images
+
+### Does it work on mobile devices?
+Yes. The tool is fully responsive and works on smartphones and tablets.
+
+## Last Updated
+2025-11-01
+
+---
+
+For more information, visit https://resizeimage.dev

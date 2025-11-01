@@ -43,7 +43,11 @@
       "7": "免費照片調整器",
       "8": "調整照片尺寸"
     },
-    "installApp": "安裝應用"
+    "installApp": "安裝應用程式"
+  },
+  "AboutPage": {
+    "metaTitle": "關於我們 - ResizeImage.dev",
+    "metaDescription": "了解 ResizeImage.dev - 最好用的免費線上圖片尺寸調整工具。在瀏覽器內即時調整圖片尺寸，完全不用上傳。"
   },
   "NotFoundPage": {
     "title": "找不到頁面",

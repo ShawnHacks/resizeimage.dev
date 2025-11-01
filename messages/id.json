@@ -43,7 +43,11 @@
       "7": "pengubah ukuran foto gratis",
       "8": "ubah ukuran foto"
     },
-    "installApp": "Instalasi App"
+    "installApp": "Instal Aplikasi"
+  },
+  "AboutPage": {
+    "metaTitle": "Tentang - ResizeImage.dev",
+    "metaDescription": "Pelajari tentang ResizeImage.dev - alat pengubah ukuran gambar online gratis terbaik. Ubah ukuran gambar secara instan di browser Anda. Pengubah ukuran foto profesional gratis tanpa unggahan."
   },
   "NotFoundPage": {
     "title": "Halaman tidak ditemukan",

@@ -45,6 +45,10 @@
     },
     "installApp": "Uygulamayı Yükle"
   },
+  "AboutPage": {
+    "metaTitle": "Hakkında - ResizeImage.dev",
+    "metaDescription": "ResizeImage.dev hakkında bilgi edinin - en iyi ücretsiz çevrimiçi görüntü yeniden boyutlandırma aracı. Tarayıcınızda anında görüntüleri yeniden boyutlandırın. Yükleme gerektirmeyen profesyonel ücretsiz fotoğraf yeniden boyutlandırıcı."
+  },
   "NotFoundPage": {
     "title": "Sayfa bulunamadı",
     "description": "Aradığınız sayfa bulunamadı. Taşınmış, silinmiş veya yanlış URL girmiş olabilirsiniz.",

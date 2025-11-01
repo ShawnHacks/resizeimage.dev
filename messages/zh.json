@@ -45,6 +45,10 @@
     },
     "installApp": "安装应用"
   },
+  "AboutPage": {
+    "metaTitle": "关于我们 - ResizeImage.dev",
+    "metaDescription": "了解 ResizeImage.dev - 最好用的免费在线图片尺寸调整工具。在浏览器里即时调整图片尺寸，无需上传。"
+  },
   "NotFoundPage": {
     "title": "页面未找到",
     "description": "您正在查找的页面不存在。它可能已被移动、删除，或者您输入的网址有误。",

@@ -43,7 +43,11 @@
       "7": "Fotoverkleinerer kostenlos",
       "8": "Fotogröße ändern"
     },
-    "installApp": "Installiere App"
+    "installApp": "App installieren"
+  },
+  "AboutPage": {
+    "metaTitle": "Über uns - ResizeImage.dev",
+    "metaDescription": "Erfahren Sie mehr über ResizeImage.dev - das beste kostenlose Online-Tool zur Bildgrößenänderung. Ändern Sie die Bildgröße sofort in Ihrem Browser. Professioneller kostenloser Foto-Resizer ohne Upload."
   },
   "NotFoundPage": {
     "title": "Seite nicht gefunden",

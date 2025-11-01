@@ -43,7 +43,11 @@
       "7": "redimensionneur de photo gratuit",
       "8": "redimensionner la photo"
     },
-    "installApp": "Installez l'application"
+    "installApp": "Installer l'application"
+  },
+  "AboutPage": {
+    "metaTitle": "À propos - ResizeImage.dev",
+    "metaDescription": "Découvrez ResizeImage.dev - le meilleur outil gratuit de redimensionnement d'images en ligne. Redimensionnez les images instantanément dans votre navigateur. Redimensionneur de photos professionnel gratuit sans téléchargement."
   },
   "NotFoundPage": {
     "title": "Page non trouvée",
