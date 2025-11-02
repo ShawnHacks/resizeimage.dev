@@ -66,10 +66,10 @@ export default function FooterBadges() {
         </a> */}
 
         <a href="https://fazier.com/launches/resizeimage.dev" target="_blank" rel="noopener" className="block dark:hidden">
-          <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=neutral" className="h-8 w-auto max-w-40" alt="Fazier badge" />
+          <img src="https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=5811&badge_type=daily&theme=neutral" className="h-8 w-auto max-w-40" alt="Fazier badge" />
         </a>
         <a href="https://fazier.com/launches/resizeimage.dev" target="_blank" rel="noopener" className="hidden dark:block">
-          <img src="https://fazier.com/api/v1//public/badges/launch_badges.svg?badge_type=launched&theme=dark" className="h-8 w-auto max-w-40" alt="Fazier badge" />
+          <img src="https://fazier.com/api/v1/public/badges/embed_image.svg?launch_id=5811&badge_type=daily&theme=dark" className="h-8 w-auto max-w-40" alt="Fazier badge" />
         </a>
 
         {/* <a href="https://similarlabs.com/?ref=embed" target="_blank" className="block dark:hidden">
