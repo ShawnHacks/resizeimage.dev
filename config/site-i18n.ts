@@ -225,20 +225,25 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       //   href: "/docs",
       // },
       // {
-      //   labelKey: "Footer.Blog",
-      //   href: "/blog",
+      //   labelKey: "Footer.Cookie Policy",
+      //   href: "/cookie-policy",
+      // },
+      // {
+      //   labelKey: "Footer.Privacy Policy",
+      //   href: "/privacy-policy",
+      // },
+      // {
+      //   labelKey: "Footer.Terms of Service",
+      //   href: "/terms-of-service",
       // },
       {
-        labelKey: "Footer.Cookie Policy",
-        href: "/cookie-policy",
+        labelKey: "Footer.About",
+        href: "/about",
       },
-      {
-        labelKey: "Footer.Privacy Policy",
-        href: "/privacy-policy",
-      },
-      {
-        labelKey: "Footer.Terms of Service",
-        href: "/terms-of-service",
+      { 
+        labelKey: "Footer.Contact", 
+        href: "/contact", 
+        noTranslation: false 
       },
       {
         labelKey: "Stripe Climate Member",
@@ -250,43 +255,56 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
 ]
 
 
-// export const bottomLinksKeys: Array<{ labelKey: string; href: string }> = [
-//   { labelKey: "Footer.Cookie Policy", href: "/cookie-policy" },
-//   { labelKey: "Footer.Privacy Policy", href: "/privacy" },
-//   { labelKey: "Footer.Terms of Service", href: "/terms" },
-// ]
+export const bottomLinksKeys: Array<{ labelKey: string; href: string, noTranslation?: boolean }> = [
+  { labelKey: "Footer.Cookie Policy", href: "/cookie-policy", noTranslation: false },
+  { labelKey: "Footer.Privacy Policy", href: "/privacy-policy", noTranslation: false },
+  { labelKey: "Footer.Terms of Service", href: "/terms-of-service", noTranslation: false },
+]
 
 /**
  * Get localized footer configuration for server components
  * @param locale - The locale to get translations for
- * @returns Promise<FooterColumn[]> - Localized footer configuration
+ * @returns Promise<{ footerConfig: FooterColumn[], bottomLinks: { label: string; href: string }[] }> - Localized footer configuration
  */
-export async function getLocalizedFooterConfig(locale: string): Promise<FooterColumn[]> {
+export async function getLocalizedFooterConfig(locale: string): Promise<{ footerColumns: FooterColumn[], bottomLinks: { label: string; href: string }[] }> {
   const t = await getTranslations({ locale })
   
-  return siteFooterConfigKeys.map(column => ({
+  const footerColumns = siteFooterConfigKeys.map(column => ({
     title: t(column.titleKey as any),
     links: column.links.map(link => ({
       label: link.noTranslation ? link.labelKey : t(link.labelKey as any),
       href: link.href,
     })),
   }))
+
+  const bottomLinks = bottomLinksKeys.map(link => ({
+    label: link.noTranslation ? link.labelKey : t(link.labelKey as any),
+    href: link.href,
+  }))
+
+  return { footerColumns, bottomLinks }
 }
 
 /**
  * Hook to get localized footer configuration for client components
- * @returns FooterColumn[] - Localized footer configuration
+ * @returns { footerConfig: FooterColumn[], bottomLinks: { label: string; href: string }[] } - Localized footer configuration
  */
-export function useLocalizedFooterConfig(): FooterColumn[] {
+export function useLocalizedFooterConfig(): { footerColumns: FooterColumn[], bottomLinks: { label: string; href: string }[] } {
   const t = useTranslations()
   
-  return siteFooterConfigKeys.map(column => ({
-    title: t(column.titleKey as any),
-    links: column.links.map(link => ({
+  return {
+    footerColumns: siteFooterConfigKeys.map(column => ({
+      title: t(column.titleKey as any),
+      links: column.links.map(link => ({
+        label: link.noTranslation ? link.labelKey : t(link.labelKey as any),
+        href: link.href,
+      })),
+    })),
+    bottomLinks: bottomLinksKeys.map(link => ({
       label: link.noTranslation ? link.labelKey : t(link.labelKey as any),
       href: link.href,
     })),
-  }))
+  }
 }
 
 

@@ -49,6 +49,11 @@
     "metaTitle": "About - ResizeImage.dev",
     "metaDescription": "Learn about ResizeImage.dev - the best free image resizer online tool. Resize image, instantly in your browser. Professional photo resizer free with no uploads."
   },
+  "ContactPage": {
+    "metaTitle": "Contact Us - Get in Touch",
+    "metaDescription": "Have questions or feedback? Contact us for support.",
+    "metaKeywords": "contact us, support, customer service, help, feedback"
+  },
   "NotFoundPage": {
     "title": "Page not found",
     "description": "The page you are looking for could not be found. It might have been moved, deleted, or you entered the wrong URL.",

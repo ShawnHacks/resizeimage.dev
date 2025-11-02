@@ -49,6 +49,11 @@
     "metaTitle": "關於我們 - ResizeImage.dev",
     "metaDescription": "了解 ResizeImage.dev - 最好用的免費線上圖片尺寸調整工具。在瀏覽器內即時調整圖片尺寸，完全不用上傳。"
   },
+  "ContactPage": {
+    "metaTitle": "聯絡我們",
+    "metaDescription": "有問題或意見回饋？聯絡我們以獲得支援。",
+    "metaKeywords": "聯絡我們、支援、客戶服務、幫助、意見回饋"
+  },
   "NotFoundPage": {
     "title": "找不到頁面",
     "description": "找不到您要尋找的頁面。它可能已被移動、刪除，或者您輸入了錯誤的網址。",

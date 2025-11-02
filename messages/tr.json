@@ -49,6 +49,11 @@
     "metaTitle": "Hakkında - ResizeImage.dev",
     "metaDescription": "ResizeImage.dev hakkında bilgi edinin - en iyi ücretsiz çevrimiçi görüntü yeniden boyutlandırma aracı. Tarayıcınızda anında görüntüleri yeniden boyutlandırın. Yükleme gerektirmeyen profesyonel ücretsiz fotoğraf yeniden boyutlandırıcı."
   },
+  "ContactPage": {
+    "metaTitle": "Bize Ulaşın",
+    "metaDescription": "Sorularınız veya geri bildiriminiz mi var? Destek için bize ulaşın.",
+    "metaKeywords": "bize ulaşın, destek, müşteri hizmetleri, yardım, geri bildirim"
+  },
   "NotFoundPage": {
     "title": "Sayfa bulunamadı",
     "description": "Aradığınız sayfa bulunamadı. Taşınmış, silinmiş veya yanlış URL girmiş olabilirsiniz.",

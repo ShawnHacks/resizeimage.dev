@@ -49,6 +49,11 @@
     "metaTitle": "Sobre - ResizeImage.dev",
     "metaDescription": "Conheça o ResizeImage.dev - a melhor ferramenta gratuita de redimensionamento de imagens online. Redimensione imagens instantaneamente no seu navegador. Redimensionador de fotos profissional gratuito sem upload."
   },
+  "ContactPage": {
+    "metaTitle": "Entre em contato",
+    "metaDescription": "Tem perguntas ou feedback? Entre em contato conosco para obter suporte.",
+    "metaKeywords": "entre em contato, suporte, atendimento ao cliente, ajuda, feedback"
+  },
   "NotFoundPage": {
     "title": "Página não encontrada",
     "description": "A página que você está procurando não foi encontrada. Ela pode ter sido movida, excluída ou você digitou o URL errado.",

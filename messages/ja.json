@@ -49,6 +49,11 @@
     "metaTitle": "概要 - ResizeImage.dev",
     "metaDescription": "ResizeImage.dev について - 最高の無料画像リサイザーオンラインツール。ブラウザで即座に画像をリサイズ。アップロードなしのプロフェッショナルな写真リサイザー。"
   },
+  "ContactPage": {
+    "metaTitle": "お問い合わせ",
+    "metaDescription": "ご質問やフィードバックがありますか？サポートについてはお問い合わせください。",
+    "metaKeywords": "お問い合わせ、サポート、カスタマーサービス、ヘルプ、フィードバック"
+  },
   "NotFoundPage": {
     "title": "ページが見つかりません",
     "description": "お探しのページは見つかりませんでした。移動または削除されたか、URLが間違っている可能性があります。",

@@ -26,7 +26,7 @@ export async function SiteFooter({
 
   const locale = await getLocale()
   const siteConfig = await getLocalizedSiteConfig(locale)
-  const footerColumns = await getLocalizedFooterConfig(locale)
+  const { footerColumns, bottomLinks } = await getLocalizedFooterConfig(locale)
   
   const defaultCopyright = `© ${new Date().getFullYear()} ${siteConfig.companyName}. All rights reserved.`
   return (
@@ -128,16 +128,16 @@ export async function SiteFooter({
           </p>
 
           <nav className="flex flex-wrap items-center gap-x-4 gap-y-2">
-            {/* {bottomLinks.map((link, index) => (
+            {bottomLinks.map((link, index) => (
               <Link
                 key={index}
                 href={link.href}
                 className="text-muted-foreground hover:text-foreground text-sm transition-colors"
                 target={link.href.startsWith('http') ? '_blank' : '_self'}
               >
-                {link.hasTranslation ? t(link.label) : link.label}
+                {link.label}
               </Link>
-            ))} */}
+            ))}
             <ModeToggle />
           </nav>
         </div>
