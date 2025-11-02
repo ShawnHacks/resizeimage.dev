@@ -183,6 +183,11 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         href: "http://websitescreenshot.online/",
         noTranslation: true,
       },
+      {
+        labelKey: "SyncVoice AI Voice Clone",
+        href: "http://syncvoice.ai",
+        noTranslation: true,
+      },
       // {
       //   labelKey: "AIHuntList",
       //   href: "https://aihuntlist.com",
