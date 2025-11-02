@@ -140,7 +140,7 @@
     "subtitleSingle": "або натисніть нижче для перегляду",
     "selectImagesSingle": "Вибрати зображення",
     "selectImagesMultiple": "Вибрати зображення",
-    "supportedFormats": "Підтримка: JPEG, JPG, PNG або WebP",
+    "supportedFormats": "Підтримка: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG або WebP",
     "maxFiles": "Максимум {max} файлів",
     "maxSizeMB": "Максимум {size}МБ на файл",
     "dropHere": "Покладіть зображення тут",

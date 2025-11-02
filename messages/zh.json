@@ -140,7 +140,7 @@
     "subtitleSingle": "或点击下方浏览",
     "selectImagesSingle": "选择图片",
     "selectImagesMultiple": "选择图片",
-    "supportedFormats": "支持: JPEG、JPG、PNG 或 WebP",
+    "supportedFormats": "支持: SVG、HEIC、AVIF、TIFF、GIF、JPEG、JPG、PNG 或 WebP",
     "maxFiles": "最多 {max} 个文件",
     "maxSizeMB": "每个文件最大 {size}MB",
     "dropHere": "将图片放到这里",

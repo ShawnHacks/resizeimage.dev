@@ -140,7 +140,7 @@
     "subtitleSingle": "atau klik di bawah untuk menelusuri",
     "selectImagesSingle": "Pilih gambar",
     "selectImagesMultiple": "Pilih gambar",
-    "supportedFormats": "Dukungan: JPEG, JPG, PNG atau WebP",
+    "supportedFormats": "Dukungan: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG, WebP",
     "maxFiles": "Maksimal {max} file",
     "maxSizeMB": "Maksimal {size}MB per file",
     "dropHere": "Lepaskan gambar Anda di sini",

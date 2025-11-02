@@ -140,7 +140,7 @@
     "subtitleSingle": "o clicca qui sotto per sfogliare",
     "selectImagesSingle": "Seleziona immagine",
     "selectImagesMultiple": "Seleziona immagini",
-    "supportedFormats": "Supporto: JPEG, JPG, PNG o WebP",
+    "supportedFormats": "Supporto: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG, WebP",
     "maxFiles": "Massimo {max} file",
     "maxSizeMB": "Massimo {size}MB per file",
     "dropHere": "Rilascia le tue immagini qui",

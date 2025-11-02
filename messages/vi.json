@@ -140,7 +140,7 @@
     "subtitleSingle": "hoặc nhấp vào bên dưới để duyệt",
     "selectImagesSingle": "Chọn hình ảnh",
     "selectImagesMultiple": "Chọn hình ảnh",
-    "supportedFormats": "Hỗ trợ: JPEG, JPG, PNG hoặc WebP",
+    "supportedFormats": "Hỗ trợ: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG hoặc WebP",
     "maxFiles": "Tối đa {max} tệp",
     "maxSizeMB": "Tối đa {size}MB mỗi tệp",
     "dropHere": "Thả hình ảnh của bạn ở đây",

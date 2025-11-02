@@ -140,7 +140,7 @@
     "subtitleSingle": "অথবা ব্রাউজ করতে নীচে ক্লিক করুন",
     "selectImagesSingle": "ছবি নির্বাচন করুন",
     "selectImagesMultiple": "ছবি নির্বাচন করুন",
-    "supportedFormats": "সমর্থন: JPEG, JPG, PNG বা WebP",
+    "supportedFormats": "সমর্থন: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG, WebP",
     "maxFiles": "সর্বোচ্চ {max} ফাইল",
     "maxSizeMB": "প্রতি ফাইল সর্বোচ্চ {size}MB",
     "dropHere": "এখানে আপনার ছবি ছেড়ে দিন",

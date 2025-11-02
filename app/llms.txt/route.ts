@@ -132,13 +132,14 @@ async function generateLLMsTxt(): Promise<string> {
 
   // Key features
   content += `## Key Features\n\n`
-  content += `- **Client-side Processing**: All image processing happens in your browser - images never leave your device\n`
-  content += `- **100% Free**: No limitations, watermarks, or hidden fees\n`
-  content += `- **No Upload Required**: Your images stay on your device for complete privacy\n`
+  content += `- **Lightning-fast**: Instant image processing in your browser\n`
+  content += `- **100% Free**: Image resizer forever - no limitations, watermarks, or hidden fees\n`
+  content += `- **No Sign-up**: No registration required to use all features\n`
+  content += `- **100% Secure & Private**: Your images never leave your device - all processing happens in your browser\n`
+  content += `- **Unlimited Usage**: Resize as many images as you need\n`
+  content += `- **Works in Browser**: No software installation needed\n`
   content += `- **Multiple Formats**: Support for JPG, PNG, and WebP\n`
-  content += `- **Batch Processing**: Resize multiple images at once\n`
   content += `- **Social Media Presets**: Quick presets for Instagram, Facebook, Twitter, YouTube, and more\n`
-  content += `- **No Registration**: Use all features without creating an account\n`
   content += `\n`
 
   // Contact

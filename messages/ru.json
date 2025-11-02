@@ -140,7 +140,7 @@
     "subtitleSingle": "или нажмите ниже для выбора",
     "selectImagesSingle": "Выбрать изображение",
     "selectImagesMultiple": "Выбрать изображения",
-    "supportedFormats": "Поддержка: JPEG, JPG, PNG или WebP",
+    "supportedFormats": "Поддержка: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG или WebP",
     "maxFiles": "Максимум {max} файлов",
     "maxSizeMB": "Максимум {size}МБ на файл",
     "dropHere": "Бросьте изображения здесь",

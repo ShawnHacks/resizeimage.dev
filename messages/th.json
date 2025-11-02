@@ -140,7 +140,7 @@
     "subtitleSingle": "หรือคลิกด้านล่างเพื่อเรียกดู",
     "selectImagesSingle": "เลือกรูปภาพ",
     "selectImagesMultiple": "เลือกรูปภาพ",
-    "supportedFormats": "รองรับ: JPEG, JPG, PNG หรือ WebP",
+    "supportedFormats": "รองรับ: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG หรือ WebP",
     "maxFiles": "สูงสุด {max} ไฟล์",
     "maxSizeMB": "สูงสุด {size}MB ต่อไฟล์",
     "dropHere": "วางรูปภาพของคุณที่นี่",

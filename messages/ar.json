@@ -140,7 +140,7 @@
     "subtitleSingle": "أو انقر أدناه للتصفح",
     "selectImagesSingle": "اختر صورة",
     "selectImagesMultiple": "اختر صور",
-    "supportedFormats": "الدعم: JPEG أو JPG أو PNG أو WebP",
+    "supportedFormats": "الدعم: SVG أو HEIC أو AVIF أو TIFF أو GIF أو JPEG أو JPG أو PNG أو WebP",
     "maxFiles": "الحد الأقصى {max} ملف",
     "maxSizeMB": "الحد الأقصى {size}ميجابايت لكل ملف",
     "dropHere": "أفلت صورك هنا",

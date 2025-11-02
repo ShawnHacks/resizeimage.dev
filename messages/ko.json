@@ -140,7 +140,7 @@
     "subtitleSingle": "또는 아래를 클릭하여 찾아보기",
     "selectImagesSingle": "이미지 선택",
     "selectImagesMultiple": "이미지 선택",
-    "supportedFormats": "지원 형식: JPEG, JPG, PNG, WebP",
+    "supportedFormats": "지원 형식: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG, WebP",
     "maxFiles": "최대 {max}개 파일",
     "maxSizeMB": "파일당 최대 {size}MB",
     "dropHere": "여기에 이미지를 놓으세요",
