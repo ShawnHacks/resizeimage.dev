@@ -151,10 +151,6 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       //   href: "/#faq",
       // },
       {
-        labelKey: "Footer.About",
-        href: "/about",
-      },
-      {
         labelKey: "Footer.Blog",
         href: "/blog",
       },
