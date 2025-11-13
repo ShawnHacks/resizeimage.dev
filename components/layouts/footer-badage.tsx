@@ -110,6 +110,13 @@ export default function FooterBadges() {
           <img src="https://launchigniter.com/api/badge/resizeimage-dev?theme=dark" alt="Featured on LaunchIgniter" className="h-8 w-auto max-w-40" />
         </a>
 
+        <a href="https://open-launch.com/projects/resizeimage-dev" target="_blank" title="Open-Launch Top 2 Daily Winner" className="block dark:hidden">
+          <img src="https://open-launch.com/images/badges/top2-light.svg" alt="Open-Launch Top 2 Daily Winner" className="h-8 w-auto max-w-40" />
+        </a>
+        <a href="https://open-launch.com/projects/resizeimage-dev" target="_blank" title="Open-Launch Top 2 Daily Winner" className="hidden dark:block">
+          <img src="https://open-launch.com/images/badges/top2-dark.svg" alt="Open-Launch Top 2 Daily Winner" className="h-8 w-auto max-w-40" />
+        </a>
+
         <a href="https://launchboard.dev" target="_blank" rel="noopener noreferrer">
           <img src="https://launchboard.dev/launchboard-badge.png" alt="Launched on LaunchBoard - Product Launch Platform" className="h-8 w-auto max-w-40"  />
         </a>
