@@ -20,7 +20,7 @@ import { StaticImageData } from 'next/image';
 import websitescreenshot from '@/public/tools/websitescreenshot.png';
 import bulkresizeimages from '@/public/tools/bulkresizeimages.png';
 import imageconverter from '@/public/tools/imageconverter.png';
-
+import screentell from '@/public/tools/screentell.png';
 
 interface Tool {
   icon?: React.ElementType;
@@ -74,6 +74,15 @@ export function ToolsGrid() {
       name: t('screenshot'),
       description: t('screenshotDesc'),
       href: 'https://websitescreenshot.online',
+      iconBg: 'bg-green-600 border-2 border-green-600',
+      iconColor: 'text-white',
+    },
+    {
+      // icon: Camera,
+      src: screentell,
+      name: 'Screentell',
+      description: t('screentellDesc'),
+      href: 'https://screentell.com',
       iconBg: 'bg-green-600 border-2 border-green-600',
       iconColor: 'text-white',
     },
