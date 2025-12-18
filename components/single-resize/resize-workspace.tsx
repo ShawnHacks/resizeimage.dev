@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import { ASPECT_RATIO_CATEGORIES } from '@/lib/single-resize-presets';
 import type { AspectCategory, AspectPreset, LengthUnit, SelectionRect, SingleImageFormat } from '@/types/single-resize';
-import { clampSelection, ensureMinimumSize, fitSelectionToAspect, fromPixels, getAspectRatio, toPixels } from '@/lib/single-resize-utils';
+import { clampSelection, ensureMinimumSize, fitSelectionToAspect, fromPixels, toPixels } from '@/lib/single-resize-utils';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectGroup, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
@@ -293,6 +293,33 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
     });
   }, [imageMetrics.height, imageMetrics.width, isCustom]);
 
+  const fitDimensionsToImage = useCallback((width: number, height: number) => {
+    const imgWidth = imageMetrics.width;
+    const imgHeight = imageMetrics.height;
+
+    if (!imgWidth || !imgHeight) {
+      return { width, height };
+    }
+
+    const scaleDown = Math.min(imgWidth / width, imgHeight / height, 1);
+    let nextWidth = width * scaleDown;
+    let nextHeight = height * scaleDown;
+
+    const scaleUp = Math.max(
+      MIN_SELECTION_SIZE / Math.max(nextWidth, 1),
+      MIN_SELECTION_SIZE / Math.max(nextHeight, 1),
+      1
+    );
+    nextWidth *= scaleUp;
+    nextHeight *= scaleUp;
+
+    const scaleDownAgain = Math.min(imgWidth / nextWidth, imgHeight / nextHeight, 1);
+    nextWidth *= scaleDownAgain;
+    nextHeight *= scaleDownAgain;
+
+    return { width: nextWidth, height: nextHeight };
+  }, [imageMetrics.height, imageMetrics.width]);
+
   const applyPreset = useCallback((preset: AspectPreset) => {
     if (!imageMetrics.width || !imageMetrics.height) return;
     setSelectedPreset(preset);
@@ -347,46 +374,52 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
   const handleWidthInputChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
     const numericValue = Number(event.target.value);
     if (!Number.isFinite(numericValue) || numericValue <= 0) return;
+    if (!imageMetrics.width || !imageMetrics.height) return;
 
     const widthInPx = toPixels(numericValue, unit);
-    const heightInPx = lockAspect ? widthInPx / aspectRatio : targetDimensions.height;
-    setTargetDimensions({
-      width: widthInPx,
-      height: lockAspect ? heightInPx : targetDimensions.height,
-    });
+    const safeAspect = aspectRatio || 1;
+    const currentHeight = targetDimensions.height || selection.height || imageMetrics.height || 1;
+    const heightInPx = lockAspect ? widthInPx / safeAspect : currentHeight;
 
-    if (isCustom) {
-      const newAspect = lockAspect ? widthInPx / heightInPx : getAspectRatio(selection);
-      const nextSelection = fitSelectionToAspect(
-        newAspect,
-        imageMetrics.width,
-        imageMetrics.height
-      );
-      updateSelection(nextSelection, { updateTarget: !lockAspect });
-    }
-  }, [unit, lockAspect, aspectRatio, targetDimensions.height, isCustom, imageMetrics.height, imageMetrics.width, selection, updateSelection]);
+    const centerX = selection.width ? selection.x + selection.width / 2 : imageMetrics.width / 2;
+    const centerY = selection.height ? selection.y + selection.height / 2 : imageMetrics.height / 2;
+
+    const nextDimensions = lockAspect
+      ? fitDimensionsToImage(widthInPx, heightInPx)
+      : { width: widthInPx, height: heightInPx };
+
+    updateSelection({
+      x: centerX - nextDimensions.width / 2,
+      y: centerY - nextDimensions.height / 2,
+      width: nextDimensions.width,
+      height: nextDimensions.height,
+    }, { updateTarget: true });
+  }, [aspectRatio, fitDimensionsToImage, imageMetrics.height, imageMetrics.width, lockAspect, selection, targetDimensions.height, unit, updateSelection]);
 
   const handleHeightInputChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
     const numericValue = Number(event.target.value);
     if (!Number.isFinite(numericValue) || numericValue <= 0) return;
+    if (!imageMetrics.width || !imageMetrics.height) return;
 
     const heightInPx = toPixels(numericValue, unit);
-    const widthInPx = lockAspect ? heightInPx * aspectRatio : targetDimensions.width;
-    setTargetDimensions({
-      width: lockAspect ? widthInPx : targetDimensions.width,
-      height: heightInPx,
-    });
+    const safeAspect = aspectRatio || 1;
+    const currentWidth = targetDimensions.width || selection.width || imageMetrics.width || 1;
+    const widthInPx = lockAspect ? heightInPx * safeAspect : currentWidth;
 
-    if (isCustom) {
-      const newAspect = lockAspect ? widthInPx / heightInPx : getAspectRatio(selection);
-      const nextSelection = fitSelectionToAspect(
-        newAspect,
-        imageMetrics.width,
-        imageMetrics.height
-      );
-      updateSelection(nextSelection, { updateTarget: !lockAspect });
-    }
-  }, [unit, lockAspect, aspectRatio, targetDimensions.width, isCustom, imageMetrics.height, imageMetrics.width, selection, updateSelection]);
+    const centerX = selection.width ? selection.x + selection.width / 2 : imageMetrics.width / 2;
+    const centerY = selection.height ? selection.y + selection.height / 2 : imageMetrics.height / 2;
+
+    const nextDimensions = lockAspect
+      ? fitDimensionsToImage(widthInPx, heightInPx)
+      : { width: widthInPx, height: heightInPx };
+
+    updateSelection({
+      x: centerX - nextDimensions.width / 2,
+      y: centerY - nextDimensions.height / 2,
+      width: nextDimensions.width,
+      height: nextDimensions.height,
+    }, { updateTarget: true });
+  }, [aspectRatio, fitDimensionsToImage, imageMetrics.height, imageMetrics.width, lockAspect, selection, targetDimensions.width, unit, updateSelection]);
 
   const handleZoomChange = useCallback((value: number) => {
     setZoom(Math.max(MIN_ZOOM, value));

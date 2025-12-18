@@ -69,6 +69,16 @@ export const ASPECT_RATIO_CATEGORIES: AspectCategory[] = [
     ],
   },
   {
+    id: 'xiaohongshu',
+    label: 'Xiaohongshu',
+    presets: [
+      { id: 'xhs-post', label: 'Post', width: 1080, height: 1440, description: '3:4' },
+      { id: 'xhs-square', label: 'Square', width: 1080, height: 1080, description: '1:1' },
+      { id: 'xhs-landscape', label: 'Landscape', width: 1440, height: 1080, description: '4:3' },
+      { id: 'xhs-vertical', label: 'Vertical', width: 1080, height: 1920, description: '9:16' },
+    ],
+  },
+  {
     id: 'standard',
     label: 'Standard',
     presets: [
