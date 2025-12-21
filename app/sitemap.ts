@@ -138,6 +138,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
         return
       }
 
+      // If the post language doesn't match the current locale (and it's not the default locale),
+      // it means we are checking a fallback post. We should NOT include this in the sitemap
+      // to avoid duplicate content issues (serving English content on /es/ URL).
+      if (locale !== defaultLocale && localizedPost.language !== locale) {
+        return
+      }
+
       const path = `/blog/${localizedPost.slug}`
       const url = buildUrl(baseUrl, locale, path)
       const alternateLanguages: Record<string, string> = {}

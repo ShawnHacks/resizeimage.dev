@@ -63,7 +63,11 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       images: post.ogImage ? [post.ogImage] : undefined,
     },
     alternates: {
-      canonical: locale === 'en' ? `/blog/${post.slug}` : `/${locale}/blog/${post.slug}`,
+      // If the post content language is different from the current locale (fallback),
+      // the canonical URL must point to the source content URL to avoid duplicate content punishment.
+      canonical: post.language === 'en'
+        ? `/blog/${post.slug}`
+        : `/${post.language}/blog/${post.slug}`,
       languages: Object.fromEntries(
         routing.locales.map((loc) => [
           loc,
