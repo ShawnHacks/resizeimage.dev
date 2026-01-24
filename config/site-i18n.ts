@@ -9,7 +9,7 @@ const siteUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev'
 let domainName = 'resizeimage.dev'
 try {
   domainName = new URL(siteUrl).hostname.replace(/^www\./, "")
-} catch {}
+} catch { }
 
 // Base site configuration (non-localized parts)
 export const baseSiteConfig = {
@@ -32,7 +32,7 @@ export const baseSiteConfig = {
  */
 export async function getLocalizedSiteConfig(locale: string): Promise<SiteConfig> {
   const t = await getTranslations({ locale, namespace: 'SiteConfig' })
-  
+
   // Convert keywords object to array
   const keywordsArray: string[] = []
   for (let i = 0; i < 6; i++) {
@@ -46,7 +46,7 @@ export async function getLocalizedSiteConfig(locale: string): Promise<SiteConfig
       break
     }
   }
-  
+
   return {
     ...baseSiteConfig,
     title: t('title'),
@@ -62,7 +62,7 @@ export async function getLocalizedSiteConfig(locale: string): Promise<SiteConfig
  */
 export function useLocalizedSiteConfig(): SiteConfig {
   const t = useTranslations('SiteConfig')
-  
+
   // Convert keywords object to array
   const keywordsArray: string[] = []
   for (let i = 0; i < 6; i++) {
@@ -76,7 +76,7 @@ export function useLocalizedSiteConfig(): SiteConfig {
       break
     }
   }
-  
+
   return {
     ...baseSiteConfig,
     title: t('title'),
@@ -89,7 +89,7 @@ export function useLocalizedSiteConfig(): SiteConfig {
 // Navigation items with translation keys
 export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
   {
-    titleKey: "Header.Features", 
+    titleKey: "Header.Features",
     href: "/#features",
   },
   {
@@ -97,7 +97,7 @@ export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
     href: "/#faq",
   },
   {
-    titleKey: "Header.Blog", 
+    titleKey: "Header.Blog",
     href: "/blog",
   },
   {
@@ -117,7 +117,7 @@ export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
  */
 export async function getLocalizedNavItems(locale: string): Promise<NavItem[]> {
   const t = await getTranslations({ locale })
-  
+
   return siteMainNavKeys.map(item => ({
     title: t(item.titleKey as any),
     href: item.href,
@@ -130,7 +130,7 @@ export async function getLocalizedNavItems(locale: string): Promise<NavItem[]> {
  */
 export function useLocalizedNavItems(): NavItem[] {
   const t = useTranslations()
-  
+
   return siteMainNavKeys.map(item => ({
     title: t(item.titleKey as any),
     href: item.href,
@@ -176,12 +176,17 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       },
       {
         labelKey: "Website Screenshot Online",
-        href: "http://websitescreenshot.online/",
+        href: "https://websitescreenshot.online/",
         noTranslation: true,
       },
       {
         labelKey: "SyncVoice AI Voice Clone",
-        href: "http://syncvoice.ai",
+        href: "https://syncvoice.ai",
+        noTranslation: true,
+      },
+      {
+        labelKey: "Cute Wallpaper",
+        href: "https://cutewallpaper.site",
         noTranslation: true,
       },
       // {
@@ -236,10 +241,10 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         labelKey: "Footer.About",
         href: "/about",
       },
-      { 
-        labelKey: "Footer.Contact", 
-        href: "/contact", 
-        noTranslation: false 
+      {
+        labelKey: "Footer.Contact",
+        href: "/contact",
+        noTranslation: false
       },
       {
         labelKey: "Stripe Climate Member",
@@ -264,7 +269,7 @@ export const bottomLinksKeys: Array<{ labelKey: string; href: string, noTranslat
  */
 export async function getLocalizedFooterConfig(locale: string): Promise<{ footerColumns: FooterColumn[], bottomLinks: { label: string; href: string }[] }> {
   const t = await getTranslations({ locale })
-  
+
   const footerColumns = siteFooterConfigKeys.map(column => ({
     title: t(column.titleKey as any),
     links: column.links.map(link => ({
@@ -287,7 +292,7 @@ export async function getLocalizedFooterConfig(locale: string): Promise<{ footer
  */
 export function useLocalizedFooterConfig(): { footerColumns: FooterColumn[], bottomLinks: { label: string; href: string }[] } {
   const t = useTranslations()
-  
+
   return {
     footerColumns: siteFooterConfigKeys.map(column => ({
       title: t(column.titleKey as any),
