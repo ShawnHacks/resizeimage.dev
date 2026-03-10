@@ -28,7 +28,6 @@ export async function generateMetadata({
       languages: {
         ...Object.fromEntries(
           routing.locales
-            .filter((loc: string) => loc !== locale)
             .map((loc: string) => [
               loc,
               `${urlString}${loc === 'en' ? '' : `/${loc}`}/resize-image`,

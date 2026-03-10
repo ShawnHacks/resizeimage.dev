@@ -1,5 +1,5 @@
 import { Metadata } from 'next'
-import {setRequestLocale} from 'next-intl/server';
+import { setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing'
 import ResizeImageClient from './page-client';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
@@ -14,7 +14,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale = 'en' } = await params
   const siteConfig = await getLocalizedSiteConfig(locale)
-  
+
   const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev'
 
   return {
@@ -23,7 +23,7 @@ export async function generateMetadata({
       canonical: locale === 'en' ? urlString : `${urlString}/${locale}`,
       languages: {
         ...Object.fromEntries(
-          routing.locales.filter((loc: string) => loc !== locale).map((loc: string) => [
+          routing.locales.map((loc: string) => [
             loc,
             loc === 'en' ? urlString : `${urlString}/${loc}`
           ])
@@ -35,9 +35,9 @@ export async function generateMetadata({
   }
 }
 
-export default async function Page({params}: {params: Promise<{locale: string}>}) {
-  const {locale} = await params;
+export default async function Page({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   setRequestLocale(locale);
-  
+
   return <ResizeImageClient />;
 }
