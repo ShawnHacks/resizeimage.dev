@@ -35,13 +35,16 @@ export async function generateMetadata({ params }: BlogPageProps): Promise<Metad
       description: t('description'),
     },
     alternates: {
-      canonical: locale === 'en' ? '/blog' : `/${locale}/blog`,
-      languages: Object.fromEntries(
-        routing.locales.map((loc) => [
-          loc,
-          loc === 'en' ? '/blog' : `/${loc}/blog`,
-        ])
-      ),
+      canonical: locale === 'en' ? `${baseSiteConfig.url}/blog` : `${baseSiteConfig.url}/${locale}/blog`,
+      languages: {
+        ...Object.fromEntries(
+          routing.locales.map((loc: string) => [
+            loc,
+            loc === 'en' ? `${baseSiteConfig.url}/blog` : `${baseSiteConfig.url}/${loc}/blog`,
+          ])
+        ),
+        'x-default': `${baseSiteConfig.url}/blog`
+      }
     },
   }
 }
@@ -77,12 +80,12 @@ export default async function BlogPage({ params }: BlogPageProps) {
                 >
                   <Card className="hover:shadow-lg transition-all duration-200 group-hover:scale-105 py-0">
                     <CardContent className="py-4 px-2 text-center">
-                      <div 
+                      <div
                         className="w-12 h-12 rounded-lg mx-auto mb-3 flex items-center justify-center"
                         style={{ backgroundColor: `${category.color}20` }}
                       >
-                        <FolderOpen 
-                          className="h-6 w-6" 
+                        <FolderOpen
+                          className="h-6 w-6"
                           style={{ color: category.color }}
                         />
                       </div>
@@ -132,11 +135,11 @@ export default async function BlogPage({ params }: BlogPageProps) {
                           <Clock className="h-4 w-4" />
                           <span>{post.readingTime} {t('minRead')}</span>
                         </div>
-                        
+
                         {category && (
                           <Link href={`/blog/category/${category.slug}`}>
-                            <Badge 
-                              variant="secondary" 
+                            <Badge
+                              variant="secondary"
                               className="mb-2 w-fit"
                               style={{ backgroundColor: `${category.color}20`, color: category.color }}
                             >
@@ -146,7 +149,7 @@ export default async function BlogPage({ params }: BlogPageProps) {
                         )}
 
                         <CardTitle className="text-xl mb-2">
-                          <Link 
+                          <Link
                             href={`/blog/${post.slug}`}
                             className="hover:text-emerald-600 transition-colors"
                           >

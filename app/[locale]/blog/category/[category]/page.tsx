@@ -19,9 +19,9 @@ export const runtime = "edge";
 
 export async function generateMetadata({ params }: CategoryPageProps): Promise<Metadata> {
   const { locale, category } = await params
-  const t = await getTranslations({locale, namespace: 'BlogPost'})
+  const t = await getTranslations({ locale, namespace: 'BlogPost' })
   const categoryData = await getCategory(category)
-  
+
   if (!categoryData) {
     return {
       title: t('categoryNotFound'),
@@ -46,11 +46,11 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
       description: categoryDesc,
     },
     alternates: {
-      canonical: locale === 'en' ? `/blog/category/${category}` : `/${locale}/blog/category/${category}`,
+      canonical: locale === 'en' ? `${baseSiteConfig.url}/blog/category/${category}` : `${baseSiteConfig.url}/${locale}/blog/category/${category}`,
       languages: Object.fromEntries(
-        routing.locales.map((loc) => [
+        routing.locales.map((loc: string) => [
           loc,
-          loc === 'en' ? `/blog/category/${category}` : `/${loc}/blog/category/${category}`,
+          loc === 'en' ? `${baseSiteConfig.url}/blog/category/${category}` : `${baseSiteConfig.url}/${loc}/blog/category/${category}`,
         ])
       ),
     },
@@ -59,7 +59,7 @@ export async function generateMetadata({ params }: CategoryPageProps): Promise<M
 
 export default async function CategoryPage({ params }: CategoryPageProps) {
   const { locale, category } = await params
-  const t = await getTranslations({locale, namespace: 'BlogPost'})
+  const t = await getTranslations({ locale, namespace: 'BlogPost' })
   const categoryData = await getCategory(category)
   const posts = await getPostsByCategory(category, locale)
 
@@ -77,13 +77,13 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
           {/* Breadcrumb */}
           <nav className="mb-8">
             {/* Breadcrumb Navigation */}
-              <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
-                <Link href={`/blog`} className="hover:text-foreground transition-colors shrink-0">
-                  {t('blog')}
-                </Link>
-                <ChevronRight className="h-4 w-4" />
-                <span className="text-foreground font-medium truncate">{categoryName}</span>
-              </nav>
+            <nav className="flex items-center space-x-2 text-sm text-muted-foreground mb-8">
+              <Link href={`/blog`} className="hover:text-foreground transition-colors shrink-0">
+                {t('blog')}
+              </Link>
+              <ChevronRight className="h-4 w-4" />
+              <span className="text-foreground font-medium truncate">{categoryName}</span>
+            </nav>
             {/* <Button variant="ghost" asChild className="mb-4">
               <Link href="/blog">
                 <ArrowLeft className="h-4 w-4 mr-2" />
@@ -94,12 +94,12 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
 
           {/* Category Header */}
           <div className="text-center mb-12">
-            <div 
+            <div
               className="w-16 h-16 rounded-xl mx-auto mb-4 flex items-center justify-center"
               style={{ backgroundColor: `${categoryData.color}20` }}
             >
-              <FolderOpen 
-                className="h-8 w-8" 
+              <FolderOpen
+                className="h-8 w-8"
                 style={{ color: categoryData.color }}
               />
             </div>
@@ -109,8 +109,8 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
             <p className="text-xl text-foreground max-w-2xl mx-auto mb-4">
               {categoryDesc}
             </p>
-            <Badge 
-              variant="secondary" 
+            <Badge
+              variant="secondary"
               className="text-sm"
               style={{ backgroundColor: `${categoryData.color}20`, color: categoryData.color }}
             >
@@ -148,7 +148,7 @@ export default async function CategoryPage({ params }: CategoryPageProps) {
                     </div>
 
                     <CardTitle className="text-xl mb-2">
-                      <Link 
+                      <Link
                         href={`/blog/${post.slug}`}
                         className="hover:text-emerald-600 transition-colors"
                       >

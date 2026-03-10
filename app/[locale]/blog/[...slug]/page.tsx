@@ -5,6 +5,7 @@ import { BlogPostTemplate } from '@/components/blog/blog-post-template'
 import { getBlogPost, getBlogPosts, getRelatedPosts } from '@/lib/blog-static'
 import type { SimpleBlogPost } from '@/lib/blog-static'
 import { getTranslations } from 'next-intl/server'
+import { baseSiteConfig } from '@/config/site-i18n'
 
 interface BlogPostPageProps {
   params: Promise<{ locale: string; slug: string[] }>
@@ -24,7 +25,7 @@ export const runtime = "edge";
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
   const { locale, slug } = await params
-  const t = await getTranslations({locale, namespace: 'BlogPost'})
+  const t = await getTranslations({ locale, namespace: 'BlogPost' })
   const slugPath = slug?.join('/') || ''
   const post = await getBlogPost(slugPath, locale)
 
@@ -63,17 +64,20 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       images: post.ogImage ? [post.ogImage] : undefined,
     },
     alternates: {
-      // If the post content language is different from the current locale (fallback),
-      // the canonical URL must point to the source content URL to avoid duplicate content punishment.
       canonical: post.language === 'en'
-        ? `/blog/${post.slug}`
-        : `/${post.language}/blog/${post.slug}`,
-      languages: Object.fromEntries(
-        routing.locales.map((loc) => [
-          loc,
-          loc === 'en' ? `/blog/${post.slug}` : `/${loc}/blog/${post.slug}`,
-        ])
-      ),
+        ? `${baseSiteConfig.url}/blog/${post.slug}`
+        : `${baseSiteConfig.url}/${post.language}/blog/${post.slug}`,
+      languages: {
+        ...Object.fromEntries(
+          routing.locales
+            .filter((loc: string) => loc === 'en' || post.availableLanguages.includes(loc))
+            .map((loc: string) => [
+              loc,
+              loc === 'en' ? `${baseSiteConfig.url}/blog/${post.slug}` : `${baseSiteConfig.url}/${loc}/blog/${post.slug}`,
+            ])
+        ),
+        'x-default': `${baseSiteConfig.url}/blog/${post.slug}`
+      }
     },
   }
 }
