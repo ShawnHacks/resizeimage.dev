@@ -18,7 +18,7 @@ export async function generateMetadata({
 
   const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev';
   const basePath = locale === 'en' ? '' : `/${locale}`;
-  const canonicalPath = `${urlString}${basePath}/resize-image`;
+  const canonicalPath = `${urlString}${basePath}`;
 
   return {
     title: t('metadata.title'),
@@ -30,10 +30,10 @@ export async function generateMetadata({
           routing.locales
             .map((loc: string) => [
               loc,
-              `${urlString}${loc === 'en' ? '' : `/${loc}`}/resize-image`,
+              `${urlString}${loc === 'en' ? '' : `/${loc}`}`,
             ])
         ),
-        'x-default': `${urlString}/resize-image`,
+        'x-default': `${urlString}`,
       },
     },
     openGraph: {
