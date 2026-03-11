@@ -1,52 +1,26 @@
-"use client"
-
 import { Link } from '@/i18n/navigation'
-import { ArrowLeft, Calendar, Clock, User, Tag, Share2, BookOpen, Twitter, Linkedin, Facebook, Copy, Eye, Heart, ChevronRight } from 'lucide-react'
+import { Calendar, Clock, User, Tag, BookOpen, ChevronRight } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
-import { Button } from '@/components/ui/button'
 import { Badge } from '@/components/ui/badge'
 import { formatDate } from '@/lib/utils'
 import { SimpleBlogPost } from '@/lib/blog-static'
 import StructuredData from '@/components/structured-data'
-import { MDXRemote } from 'next-mdx-remote/rsc'
-import remarkGfm from 'remark-gfm'
-import { useLocale, useTranslations } from 'next-intl'
-import { toast } from 'sonner'
-
+import { getLocale, getTranslations } from 'next-intl/server'
+import { BlogPostActions } from './blog-post-actions'
 
 import "@/app/article-content.css"
 
-interface BlogPostTemplateProps {
+export interface BlogPostTemplateProps {
   post: SimpleBlogPost
   relatedPosts: SimpleBlogPost[]
+  children: React.ReactNode
 }
 
-export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) {
-  const locale = useLocale();
-  const t = useTranslations('BlogPost')
-  const handleShare = async () => {
-    const shareData = {
-      title: post.title,
-      text: post.description,
-      url: window.location.href,
-    }
-    try {
-      if (navigator.share) {
-        await navigator.share(shareData)
-      } else {
-        throw new Error('Web Share API not supported')
-      }
-    } catch (err) {
-      // Fallback: copy to clipboard
-      navigator.clipboard.writeText(window.location.href)
-      toast.success("Link Copied!", {
-        description: "The article URL has been copied to your clipboard.",
-      })
-    }
-  }
+export async function BlogPostTemplate({ post, relatedPosts, children }: BlogPostTemplateProps) {
+  const locale = await getLocale();
+  const t = await getTranslations({ locale, namespace: 'BlogPost' })
 
-
-  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://bulkresizeimages.online'
+  const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev'
   const articleUrl = `${baseUrl}/blog/${post.slug}`
   const categoryUrl = `${baseUrl}/blog/category/${post.category}`
 
@@ -69,7 +43,7 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
     "url": articleUrl,
     "keywords": post.keywords?.join(", ") || undefined,
     "articleSection": post.tags?.join(", ") || undefined,
-    "inLanguage": "en",
+    "inLanguage": locale,
     "publisher": {
       "@type": "Organization",
       "name": "CrownByte LTD",
@@ -122,13 +96,8 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
       )}
       
       {/* Hero Section with Background */}
-      {/* bg-gradient-to-br from-primary/20 via-primary/10 to-pink-50 dark:from-primary dark:via-primary/80 dark:to-primary/50 */}
       <div className="relative bg-gradient-to-br from-purple-50 via-purple-50 to-purple-100 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20">
         <div className="relative">
-          {/* <div className="absolute inset-0 bg-grid-pattern"></div> */}
-
-          {/* <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-blue-500/10" /> */}
-
           <div className="container mx-auto px-4 py-16">
             <div className="max-w-4xl mx-auto">
               {/* Breadcrumb Navigation */}
@@ -141,14 +110,6 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
                 <ChevronRight className="h-4 w-4" />
                 <span className="text-foreground font-medium truncate">{post.title}</span>
               </nav>
-
-              {/* Back Button */}
-              {/* <Button variant="ghost" asChild className="mb-8 -ml-4">
-                <Link href="/blog">
-                  <ArrowLeft className="h-4 w-4 mr-2" />
-                  {t('backToBlog')}
-                </Link>
-              </Button> */}
 
               {/* Article Header */}
               <header className="text-center mb-12">
@@ -184,10 +145,6 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
                     <Clock className="h-4 w-4" />
                     <span>{post.readingTime} {t('minRead')}</span>
                   </div>
-                  {/* <div className="flex items-center gap-2">
-                    <Eye className="h-4 w-4" />
-                    <span>1.2k {t('views')}</span>
-                  </div> */}
                 </div>
 
                 {/* Tags */}
@@ -227,48 +184,19 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
           <div className="">
             {/* Article Content */}
             <article className="md:col-span-3">
-              <div className="blog-content">
-                <MDXRemote 
-                  source={post.content}
-                  options={{
-                    mdxOptions: {
-                      remarkPlugins: [remarkGfm],
-                    },
-                  }}
-                  components={{
-                    h1: () => null, // 不渲染 h1 标签
-                    table: (props) => (
-                      <div className="overflow-x-auto my-6">
-                        <table className="min-w-full border-collapse border border-gray-300 dark:border-gray-600" {...props} />
-                      </div>
-                    ),
-                    thead: (props) => <thead className="bg-gray-50 dark:bg-gray-800" {...props} />,
-                    tbody: (props) => <tbody {...props} />,
-                    tr: (props) => <tr className="border-b border-gray-200 dark:border-gray-700" {...props} />,
-                    th: (props) => (
-                      <th 
-                        className="px-4 py-3 text-left text-sm font-semibold text-gray-900 dark:text-gray-100 border-r border-gray-300 dark:border-gray-600 last:border-r-0" 
-                        {...props} 
-                      />
-                    ),
-                    td: (props) => (
-                      <td 
-                        className="px-4 py-3 text-sm text-gray-700 dark:text-gray-300 border-r border-gray-300 dark:border-gray-600 last:border-r-0" 
-                        {...props} 
-                      />
-                    ),
-                  }}
-                />
+              <div className="blog-content prose prose-lg dark:prose-invert max-w-none prose-headings:font-heading prose-a:text-primary prose-img:rounded-xl">
+                {children}
               </div>
 
               {/* Article Actions */}
               <div className="mt-12 pt-8 border-t">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <Button variant="outline" size="sm" onClick={handleShare}>
-                      <Share2 className="h-4 w-4 mr-2" />
-                      {t('share')}
-                    </Button>
+                    <BlogPostActions 
+                      title={post.title} 
+                      description={post.description} 
+                      shareLabel={t('share')} 
+                    />
                   </div>
                   <div className="text-sm text-muted-foreground">
                     {t('lastUpdated')} 
@@ -277,49 +205,6 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
                 </div>
               </div>
             </article>
-
-            {/* Sidebar */}
-            {/* <aside className="md:col-span-1">
-              <div className="sticky top-8 space-y-6">
-                <Card>
-                  <CardContent className="px-4">
-                    <h3 className="font-semibold mb-4">{t('quickActions')}</h3>
-                    <div className="space-y-3">
-                      <Button variant="outline" size="sm" className="w-full justify-start">
-                        <Share2 className="h-4 w-4 mr-2" />
-                        {t('shareArticle')}
-                      </Button>
-                      <Button variant="outline" size="sm" className="w-full justify-start">
-                        <Copy className="h-4 w-4 mr-2" />
-                        {t('copyLink')}
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-
-                <Card>
-                  <CardContent className="px-4">
-                    <h3 className="font-semibold mb-4">{t('socialShare')}</h3>
-                    <div className="grid grid-cols-2 gap-2">
-                      <Button variant="outline" size="sm" className="justify-center">
-                        <Twitter className="h-4 w-4" />
-                      </Button>
-                      <Button variant="outline" size="sm" className="justify-center">
-                        <Linkedin className="h-4 w-4" />
-                      </Button>
-                      <Button variant="outline" size="sm" className="justify-center">
-                        <Facebook className="h-4 w-4" />
-                      </Button>
-                      <Button variant="outline" size="sm" className="justify-center">
-                        <Copy className="h-4 w-4" />
-                      </Button>
-                    </div>
-                  </CardContent>
-                </Card>
-
-
-              </div>
-            </aside> */}
           </div>
         </div>
       </main>
@@ -340,7 +225,6 @@ export function BlogPostTemplate({ post, relatedPosts }: BlogPostTemplateProps) 
             {relatedPosts.length > 0 ? (
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {relatedPosts.map((relatedPost) => (
-                  // <Link key={relatedPost.slug} href={`/${locale === 'en' ? '' : locale + '/'}blog/${relatedPost.slug}`}>
                   <Link key={relatedPost.slug} href={`/blog/${relatedPost.slug}`}>
                     <Card className="hover:shadow-lg transition-shadow py-0">
                       <CardContent className="p-6">
