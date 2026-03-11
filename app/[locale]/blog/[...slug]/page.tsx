@@ -12,8 +12,6 @@ interface BlogPostPageProps {
   params: Promise<{ locale: string; slug: string[] }>
 }
 
-export const runtime = "edge";
-
 export async function generateStaticParams() {
   const posts = await getBlogPosts()
   return routing.locales.flatMap((locale) =>
