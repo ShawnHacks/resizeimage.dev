@@ -189,6 +189,11 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         href: "https://cutewallpaper.site",
         noTranslation: true,
       },
+      {
+        labelKey: "Needoh Toys",
+        href: "https://needoh.fun",
+        noTranslation: true,
+      },
       // {
       //   labelKey: "AIHuntList",
       //   href: "https://aihuntlist.com",
