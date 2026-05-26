@@ -12,11 +12,17 @@ export default function FooterBadges() {
 
   const BadgeList = () => (
     <div className="flex items-center gap-4 px-4 shrink-0">
-      <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+      <a href="https://aihuntlist.com?utm_source=resizeimage.dev" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
         <img src="https://aihuntlist.com/badge-light.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40" />
       </a>
-      <a href="https://aihuntlist.com" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+      <a href="https://aihuntlist.com?utm_source=resizeimage.dev" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
         <img src="https://aihuntlist.com/badge-dark.svg" alt="Featured on aihuntlist.com" className="h-8 w-auto max-w-40" />
+      </a>
+      <a href="https://aitrustlist.com?utm_source=resizeimage.dev" target="_blank" rel="noopener noreferrer" className="block dark:hidden">
+        <img src="https://aitrustlist.com/badge-light.svg" alt="Featured on AITrustList" className="h-8 w-auto max-w-40" />
+      </a>
+      <a href="https://aitrustlist.com?utm_source=resizeimage.dev" target="_blank" rel="noopener noreferrer" className="hidden dark:block">
+        <img src="https://aitrustlist.com/badge-dark.svg" alt="Featured on AITrustList" className="h-8 w-auto max-w-40" />
       </a>
 
       <a href="https://twelve.tools" target="_blank" rel="noopener" className="hidden dark:block">
