@@ -36,7 +36,8 @@
       "zoomOut": "تصغير",
       "fitToScreen": "ملء الشاشة",
       "setCanvasToImageSize": "تعيين حجم اللوحة حسب حجم الصورة",
-      "matchCanvasSize": "مطابقة حجم اللوحة"
+      "matchCanvasSize": "مطابقة حجم اللوحة",
+      "settings": "الإعدادات"
     },
     "canvas": {
       "placeholder": "اسحب الصور وأفلتها هنا أو استخدم زر الإضافة لبدء التجميع."

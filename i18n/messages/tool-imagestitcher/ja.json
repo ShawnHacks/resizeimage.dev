@@ -36,7 +36,8 @@
       "zoomOut": "縮小",
       "fitToScreen": "画面に合わせる",
       "setCanvasToImageSize": "キャンバスサイズを画像サイズに合わせる",
-      "matchCanvasSize": "キャンバスサイズに合わせる"
+      "matchCanvasSize": "キャンバスサイズに合わせる",
+      "settings": "設定"
     },
     "canvas": {
       "placeholder": "ここに画像をドラッグ＆ドロップするか、追加ボタンを使用してステッチを開始してください。"

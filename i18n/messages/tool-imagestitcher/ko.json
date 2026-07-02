@@ -36,7 +36,8 @@
       "zoomOut": "축소",
       "fitToScreen": "화면에 맞춤",
       "setCanvasToImageSize": "캔버스 크기를 이미지 크기로 설정",
-      "matchCanvasSize": "캔버스 크기에 맞춤"
+      "matchCanvasSize": "캔버스 크기에 맞춤",
+      "settings": "설정"
     },
     "canvas": {
       "placeholder": "여기에 이미지를 드래그 앤 드롭하거나 추가 버튼을 사용하여 스티칭을 시작하세요."

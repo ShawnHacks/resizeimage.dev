@@ -36,7 +36,8 @@
       "zoomOut": "Verkleinern",
       "fitToScreen": "An Bildschirm anpassen",
       "setCanvasToImageSize": "Leinwandgröße an Bildgröße anpassen",
-      "matchCanvasSize": "Leinwandgröße anpassen"
+      "matchCanvasSize": "Leinwandgröße anpassen",
+      "settings": "Einstellungen"
     },
     "canvas": {
       "placeholder": "Bilder hierher ziehen oder den Hinzufügen-Button verwenden, um mit dem Zusammenfügen zu beginnen."

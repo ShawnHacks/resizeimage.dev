@@ -36,7 +36,8 @@
       "zoom": "缩放",
       "zoomIn": "放大",
       "zoomOut": "缩小",
-      "fitToScreen": "适应屏幕"
+      "fitToScreen": "适应屏幕",
+      "settings": "设置"
     },
     "canvas": {
       "placeholder": "拖放图片到此处或使用添加按钮开始拼合。"

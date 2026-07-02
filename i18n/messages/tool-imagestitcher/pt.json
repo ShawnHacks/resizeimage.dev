@@ -36,7 +36,8 @@
       "zoomOut": "Menos zoom",
       "fitToScreen": "Ajustar ao ecrã",
       "setCanvasToImageSize": "Definir tamanho da tela para o tamanho da imagem",
-      "matchCanvasSize": "Ajustar ao tamanho da tela"
+      "matchCanvasSize": "Ajustar ao tamanho da tela",
+      "settings": "Configurações"
     },
     "canvas": {
       "placeholder": "Arraste e solte imagens aqui ou use o botão adicionar para começar a costurar."

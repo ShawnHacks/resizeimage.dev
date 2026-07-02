@@ -36,7 +36,8 @@
       "zoomOut": "Zoom arrière",
       "fitToScreen": "Ajuster à l'écran",
       "setCanvasToImageSize": "Ajuster le canevas à la taille de l'image",
-      "matchCanvasSize": "Ajuster à la taille du canevas"
+      "matchCanvasSize": "Ajuster à la taille du canevas",
+      "settings": "Paramètres"
     },
     "canvas": {
       "placeholder": "Faites glisser et déposez des images ici ou utilisez le bouton Ajouter pour commencer l'assemblage."

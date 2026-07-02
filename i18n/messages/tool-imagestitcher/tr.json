@@ -36,7 +36,8 @@
       "zoomOut": "Uzaklaştır",
       "fitToScreen": "Ekrana Sığdır",
       "setCanvasToImageSize": "Tuval Boyutunu Resim Boyutuna Ayarla",
-      "matchCanvasSize": "Tuval Boyutuna Ayarla"
+      "matchCanvasSize": "Tuval Boyutuna Ayarla",
+      "settings": "Ayarlar"
     },
     "canvas": {
       "placeholder": "Görüntüleri buraya sürükleyip bırakın veya birleştirmeye başlamak için ekle düğmesini kullanın."

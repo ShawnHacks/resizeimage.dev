@@ -159,7 +159,7 @@ export function ImageStitcherWorkspace() {
 
       const otherItems = prev.filter((item) => item.id !== id);
       const maxZ = Math.max(...otherItems.map((item) => item.zIndex), -1);
-      
+
       const newItems = [
         ...otherItems,
         { ...targetItem, zIndex: maxZ + 1 }
@@ -176,7 +176,7 @@ export function ImageStitcherWorkspace() {
 
       const otherItems = prev.filter((item) => item.id !== id);
       const minZ = Math.min(...otherItems.map((item) => item.zIndex), 0);
-      
+
       const newItems = [
         ...otherItems,
         { ...targetItem, zIndex: minZ - 1 }
@@ -194,7 +194,7 @@ export function ImageStitcherWorkspace() {
       if (currentIndex < sorted.length - 1) {
         const currentItem = sorted[currentIndex];
         const nextItem = sorted[currentIndex + 1];
-        
+
         // Swap zIndices
         const nextZ = nextItem.zIndex;
         const currentZ = currentItem.zIndex;
@@ -219,7 +219,7 @@ export function ImageStitcherWorkspace() {
       if (currentIndex > 0) {
         const currentItem = sorted[currentIndex];
         const prevItem = sorted[currentIndex - 1];
-        
+
         // Swap zIndices
         const prevZ = prevItem.zIndex;
         const currentZ = currentItem.zIndex;
@@ -349,7 +349,7 @@ export function ImageStitcherWorkspace() {
 
         {/* Center: Canvas Area */}
         <main ref={mainRef} className="relative flex flex-col bg-muted/10 overflow-hidden">
-          <div className="flex-1 relative overflow-auto custom-scrollbar flex items-center justify-center">
+          <div className="relative overflow-auto custom-scrollbar flex items-center justify-center">
             <StitchCanvas
               items={items}
               settings={canvasSettings}

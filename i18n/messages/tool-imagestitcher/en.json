@@ -36,7 +36,8 @@
       "zoom": "Zoom",
       "zoomIn": "Zoom In",
       "zoomOut": "Zoom Out",
-      "fitToScreen": "Fit to Screen"
+      "fitToScreen": "Fit to Screen",
+      "settings": "Settings"
     },
     "canvas": {
       "placeholder": "Drag and drop images here or use the add button to start stitching."

@@ -36,7 +36,8 @@
       "zoomOut": "Rimpicciolisci",
       "fitToScreen": "Adatta allo schermo",
       "setCanvasToImageSize": "Imposta dimensione tela alla dimensione immagine",
-      "matchCanvasSize": "Adatta a dimensione tela"
+      "matchCanvasSize": "Adatta a dimensione tela",
+      "settings": "Impostazioni"
     },
     "canvas": {
       "placeholder": "Trascina e rilascia le immagini qui o usa il pulsante Aggiungi per iniziare l'unione."

@@ -86,7 +86,7 @@ export function StitchCanvas({
           justifyContent: 'center',
           overflow: 'hidden', // CRITICAL: Isolates the large logical dimensions of the scaled child
         }}
-        className="shrink-0 shadow-2xl ring-1 ring-border/50 rounded-sm"
+        className="shrink-0 ring-1 ring-border/50 rounded-sm"
       >
         <div
           className="relative transition-all duration-300 ease-in-out shrink-0"

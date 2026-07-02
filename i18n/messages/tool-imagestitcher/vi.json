@@ -36,7 +36,8 @@
       "zoomOut": "Thu nhỏ",
       "fitToScreen": "Vừa khít màn hình",
       "setCanvasToImageSize": "Đặt kích thước canvas theo kích thước ảnh",
-      "matchCanvasSize": "Khớp kích thước canvas"
+      "matchCanvasSize": "Khớp kích thước canvas",
+      "settings": "Cài đặt"
     },
     "canvas": {
       "placeholder": "Kéo và thả hình ảnh vào đây hoặc sử dụng nút thêm để bắt đầu ghép."

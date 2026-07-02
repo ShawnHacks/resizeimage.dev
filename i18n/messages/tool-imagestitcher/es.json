@@ -36,7 +36,8 @@
       "zoomOut": "Alejar",
       "fitToScreen": "Ajustar a la pantalla",
       "setCanvasToImageSize": "Ajustar lienzo al tamaño de la imagen",
-      "matchCanvasSize": "Ajustar al tamaño del lienzo"
+      "matchCanvasSize": "Ajustar al tamaño del lienzo",
+      "settings": "Ajustes"
     },
     "canvas": {
       "placeholder": "Arrastra y suelta imágenes aquí o usa el botón añadir para empezar a unir."

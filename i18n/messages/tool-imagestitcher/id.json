@@ -36,7 +36,8 @@
       "zoomOut": "Perkecil",
       "fitToScreen": "Sesuaikan dengan Layar",
       "setCanvasToImageSize": "Atur Ukuran Kanvas Sesuai Ukuran Gambar",
-      "matchCanvasSize": "Sesuaikan Ukuran Kanvas"
+      "matchCanvasSize": "Sesuaikan Ukuran Kanvas",
+      "settings": "Pengaturan"
     },
     "canvas": {
       "placeholder": "Seret dan lepas gambar di sini atau gunakan tombol tambah untuk mulai menggabungkan."
