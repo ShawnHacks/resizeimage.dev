@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Home": "Ana Sayfa",
+    "Features": "Özellikler",
+    "FAQ": "SSS",
+    "About": "Hakkında",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Ürün",
+    "Tools": "Araçlar",
+    "Resources": "Kaynaklar",
+    "Company": "Şirket",
+    "Features": "Özellikler",
+    "FAQ": "SSS",
+    "About": "Hakkında",
+    "SiteMap": "Site Haritası",
+    "Pricing": "Fiyatlandırma",
+    "License": "Lisans",
+    "Contact": "İletişim",
+    "Roadmap": "Yol Haritası",
+    "Documentation": "Belgeler",
+    "Blog": "Blog",
+    "Cookie Policy": "Çerez Politikası",
+    "Privacy Policy": "Gizlilik Politikası",
+    "Terms of Service": "Hizmet Şartları"
+  },
+  "HomePage": {
+    "tagline": "ImageConverter",
+    "title": "Ücretsiz Görüntü Dönüştürücü",
+    "subtitle": "Görüntüleri tarayıcınızda dönüştürün. Kayıt yok, yükleme yok, %100 güvenli ve özel fotoğraf dönüştürücü.",
+    "localHint": "Görüntü formatlarını tarayıcınızda yerel olarak dönüştürün, yükleme yok, %100 güvenli ve özel",
+    "previewAlt": "Seçili görüntü önizlemesi",
+    "settingsTitle": "Çıktı ayarları",
+    "reset": "Başka bir resim seçin",
+    "formatLabel": "Çıktı formatı",
+    "formatPlaceholder": "Bir format seçin",
+    "qualityLabel": "Kalite",
+    "qualityDisabled": "PNG dışa aktarımları tam kaliteyi otomatik olarak korur.",
+    "qualityHint": "JPG ve WebP dışa aktarımları için kaliteyi ayarlayın.",
+    "downloadCta": "{format} İndir",
+    "unknownFormat": "Bilinmeyen",
+    "quickImageConverters": "Hızlı Görüntü Dönüştürücüler",
+    "benefitsTitle": "Neden ImageConverter'ı seçmelisiniz?",
+    "benefitsDescription": "Özel, tarayıcı öncelikli bir resim dönüştürme araç setiyle iş akışınızı hızlandırın.",
+    "benefits": {
+      "items": [
+        "Tarayıcınızda %100 çalışır, böylece dosyalarınız cihazınızdan asla ayrılmaz.",
+        "HEIC, AVIF, GIF, TIFF, PNG, JPG ve WebP dahil olmak üzere modern ve eski formatları destekler.",
+        "Çıktı kalitesini seçin ve indirmeden önce dosya boyutunu anında önizleyin.",
+        "Kayıt, sınırlama veya filigran olmadan hız için optimize edilmiştir."
+      ]
+    },
+    "howTitle": "ImageConverter nasıl çalışır?",
+    "howSteps": [
+      {
+        "title": "Bir resim seçin veya bırakın",
+        "description": "Bir dosya yükleyin veya çalışma alanına sürükleyin - kaynak biçimini otomatik olarak algılarız."
+      },
+      {
+        "title": "Çıktı ayarlarını seçin",
+        "description": "Hedef biçiminizi seçin ve saniyeler içinde JPG veya WebP çıktıları için kaliteyi ayarlayın."
+      },
+      {
+        "title": "Anında indirin",
+        "description": "Dönüştürülen dosyayı hemen alın. Kuyruk yok, yükleme yok, izleme yok."
+      }
+    ],
+    "ctaTitle": "Resim iş akışınızı optimize etmeye hazır mısınız?",
+    "ctaDescription": "Toplu yeniden boyutlandırma, ekran görüntüleri, meta veri temizleme ve daha fazlası için daha fazla tarayıcı öncelikli aracı keşfedin.",
+    "ctaButton": "Tüm araçlara göz atın"
+  },
+  "SiteConfig": {
+    "title": "Görüntü Dönüştürücü - Ücretsiz Çevrimiçi Fotoğraf Dönüştürücü",
+    "description": "En iyi ücretsiz çevrimiçi görüntü dönüştürme aracı. Görüntü formatlarını tarayıcınızda yerel olarak dönüştürün. Yükleme yok, %100 güvenli ve özel fotoğraf dönüştürücü.",
+    "keywords": {
+      "0": "görüntü dönüştürücü",
+      "1": "ücretsiz görüntü dönüştürücü",
+      "2": "fotoğraf dönüştürücü",
+      "3": "görüntü dönüştürme",
+      "4": "çevrimiçi görüntü dönüştürme",
+      "5": "png'den jpg'ye",
+      "6": "png'den webp'ye",
+      "7": "jpg'den png'ye",
+      "8": "jpg'den webp'ye",
+      "9": "webp'den png'ye",
+      "10": "webp'den jpg'ye"
+    },
+    "installApp": "Uygulamayı Yükle"
+  },
+  "AboutPage": {
+    "metaTitle": "ImageConverter Hakkında - Ücretsiz Çevrimiçi Fotoğraf Dönüştürücü",
+    "metaDescription": "Dosyaları herhangi bir sunucuya yüklemeden birden çok format arasında görüntü dönüştürmenizi sağlayan ücretsiz bir çevrimiçi fotoğraf dönüştürücü olan ImageConverter hakkında bilgi edinin. Tüm dönüşümler tarayıcınızda yerel olarak gerçekleşir ve tam gizlilik ile güvenlik sağlar."
+  },
+  "ContactPage": {
+    "metaTitle": "Bize Ulaşın",
+    "metaDescription": "Sorularınız veya geri bildiriminiz mi var? Destek için bize ulaşın.",
+    "metaKeywords": "bize ulaşın, destek, müşteri hizmetleri, yardım, geri bildirim"
+  },
+  "NotFoundPage": {
+    "title": "Sayfa bulunamadı",
+    "description": "Aradığınız sayfa bulunamadı. Taşınmış, silinmiş veya yanlış URL girmiş olabilirsiniz.",
+    "backToHome": "Ana Sayfaya Dön"
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Çerez Politikası - Çerezleri Nasıl Kullanıyoruz",
+    "metaDescription": "Web sitemizin deneyiminizi iyileştirmek için çerezleri nasıl kullandığını öğrenin. Çerez türlerini, yönetim seçeneklerini ve gizlilik haklarınızı anlayın.",
+    "metaKeywords": "çerez politikası, gizlilik, çerezler, web sitesi aracı, veri koruma, kullanıcı gizliliği"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Gizlilik Politikası",
+    "metaDescription": "Web sitemizi kullanırken kişisel bilgilerinizi nasıl topladığımızı, kullandığımızı ve koruduğumuzu anlamak için gizlilik politikamızı okuyun.",
+    "metaKeywords": "gizlilik politikası, veri koruma, kişisel bilgiler, web sitesi aracı, kullanıcı gizliliği"
+  },
+  "TermsPage": {
+    "metaTitle": "Şartlar ve Koşullar - Hizmet Sözleşmesi",
+    "metaDescription": "Web sitemizi kullanma kurallarını ve yönergelerini anlamak için şartlar ve koşullarımızı okuyun.",
+    "metaKeywords": "şartlar ve koşullar, hizmet sözleşmesi, kullanım koşulları, web sitesi aracı, kullanıcı sözleşmesi"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Web sitesi ekran görüntüleri, web geliştirme ipuçları ve dijital araçlar hakkında bilgi edinin. Geliştiriciler ve tasarımcılar için uzman kılavuzları ve eğitimleri.",
+    "keywords": "web sitesi ekran görüntüsü blogu, web geliştirme eğitimleri, dijital araçlar kılavuzu, ekran görüntüsü eğitimleri, web tasarım ipuçları",
+    "readMore": "Devamını Oku",
+    "minRead": "dakika okuma",
+    "noPosts": "Henüz blog yazısı yok. Yakında tekrar kontrol edin!",
+    "categories": "Kategoriler",
+    "recentPosts": "Son Gönderiler",
+    "posts": "gönderiler"
+  },
+  "BlogPost": {
+    "backToBlog": "Blog'a Geri Dön",
+    "writtenBy": "Yazan",
+    "published": "Yayınlandı",
+    "updated": "Güncellendi",
+    "shareArticle": "Bu makaleyi paylaş",
+    "relatedPosts": "İlgili Makaleler",
+    "tags": "Etiketler",
+    "minRead": "dakika okuma",
+    "views": "görüntüleme",
+    "lastUpdated": "Son güncelleme:",
+    "like": "Beğen",
+    "share": "Paylaş",
+    "quickActions": "Hızlı Eylemler",
+    "copyLink": "Bağlantıyı Kopyala",
+    "socialShare": "Sosyal Paylaşım",
+    "aboutAuthor": "Yazar Hakkında",
+    "relatedArticles": "İlgili Makaleler",
+    "continueExploring": "Daha fazla ilgili içeriği keşfetmeye devam edin",
+    "toolsComparison": "Araç Karşılaştırması",
+    "seoGuide": "SEO Rehberi",
+    "tutorial": "Öğretici",
+    "blog": "Blog",
+    "category": "Kategori",
+    "categories": "Kategoriler",
+    "articles": "{count} {count, plural, one {makale} other {makale}}",
+    "noArticles": "Bu kategoride henüz makale yok.",
+    "readMore": "Devamını Oku",
+    "categoryNotFound": "Kategori Bulunamadı",
+    "categoryNotFoundDescription": "İstenen kategori bulunamadı.",
+    "postNotFound": "Gönderi Bulunamadı",
+    "postNotFoundDescription": "İstenen blog gönderisi bulunamadı."
+  },
+  "Tools": {
+    "title": "Ücretsiz Araçlar",
+    "resizeimage": "Resim Yeniden Boyutlandırıcı",
+    "resizeimageDesc": "Görüntü Yeniden Boyutlandırma",
+    "bulkresizeimages": "Toplu Görüntü Yeniden Boyutlandırma",
+    "bulkresizeimagesDesc": "Toplu Görüntü Yeniden Boyutlandırma",
+    "imageconverter": "Resim Dönüştürücü",
+    "imageconverterDesc": "Resim Dönüştürücü",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Ekran Görüntüsü Al",
+    "screentellDesc": "Ekran demo kaydedici",
+    "imagecompressor": "Resim Sıkıştırıcı",
+    "imagecompressorDesc": "Görüntüleri Sıkıştır",
+    "crop": "Crop image",
+    "cropDesc": "Görüntüleri Kırp",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Görüntülere Filigran Ekle",
+    "stitchimages": "Görüntü Birleştirici",
+    "stitchimagesDesc": "Görüntüleri Birleştir"
+  },
+  "ImageUploader": {
+    "titleSingle": "Resminizi Sürükleyip Bırakın",
+    "titleMultiple": "Resimlerinizi Sürükleyip Bırakın",
+    "subtitleSingle": "veya göz atmak için tıklayın",
+    "selectImagesSingle": "Resim Seç",
+    "selectImagesMultiple": "Resim Seç",
+    "supportedFormats": "Desteklenenler: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG veya WebP",
+    "maxFiles": "Maksimum {max} dosya",
+    "maxSizeMB": "Dosya başına maks. {size}MB",
+    "dropHere": "Resimlerinizi buraya bırakın",
+    "filesSelected": "Dosyalar başarıyla seçildi",
+    "file": "dosya",
+    "files": "dosya",
+    "errorInvalidFiles": "Geçersiz dosya türü",
+    "errorTooManyFiles": "Çok fazla dosya",
+    "errorFileSizeExceeded": "Bazı dosyalar çok büyük"
+  }
+}

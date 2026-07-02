@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "Görüntü Dönüştürücü",
+    "description": "Görüntüleri ve fotoğrafları herhangi bir sunucuya yüklemeden çevrimiçi olarak dönüştürün - başvuracağınız görüntü dönüştürme aracınız",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "Profesyonel Ücretsiz Çevrimiçi Görüntü Yeniden Boyutlandırıcı",
+      "description": "Görüntüleri ve fotoğrafları herhangi bir sunucuya yüklemeden çevrimiçi olarak yeniden boyutlandırın - başvuracağınız fotoğraf yeniden boyutlandırma aracınız",
+      "lightningFast": "Yıldırım hızında",
+      "free": "%100 ücretsiz görüntü dönüştürücü"
+    },
+    "hero": {
+      "badge": "{from} -> {to} dönüştürücü",
+      "title": "{from} öğesini saniyeler içinde {to} öğesine dönüştürün",
+      "description": "Bir {from} görüntüsü yükleyin ve anında yüksek kaliteli bir {to} indirin. Her şey tarayıcınızda kalır — yükleme yok, sınır yok."
+    },
+    "workspace": {
+      "badge": "{from} öğesini {to} öğesine dönüştür",
+      "subtitle": "Çıktı dosyası boyutu {size}.",
+      "sizePending": "hesaplanıyor...",
+      "download": {
+        "pending": "Dönüştürülüyor...",
+        "ready": "{to} İndir"
+      },
+      "reset": "Başka bir görüntü seç",
+      "info": {
+        "original": "Orijinal format: {format}",
+        "converted": "{format} çıktısı",
+        "dimensions": "Çıktı boyutları: {width} × {height} piksel"
+      },
+      "processing": {
+        "title": "{from} dosyanız dönüştürülüyor",
+        "description": "Bu, tarayıcınızda yerel olarak gerçekleşir. Daha büyük görüntüler birkaç saniye sürebilir."
+      },
+      "error": {
+        "title": "Dönüştürme başarısız oldu",
+        "description": "Bu görüntüyü dönüştüremedik. Farklı bir dosya veya dışa aktarma biçimi deneyin.",
+        "cta": "Başka bir resim seç",
+        "generic": "Bu görüntü dönüştürülemiyor. Lütfen farklı bir dosya deneyin."
+      },
+      "previewAlt": "{from} {to} öğesine dönüştürüldü"
+    },
+    "moreOptions": {
+      "title": "Diğer görüntü dönüştürücüleri keşfedin",
+      "description": "Tek bir tıklamayla formatları değiştirin — tüm dönüştürücüler tarayıcınızda yerel olarak çalışır."
+    },
+    "howTo": {
+      "title": "Tarayıcınızda {from} öğesini {to} öğesine nasıl dönüştürürsünüz",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Resminizi yükleyin",
+          "description": "Cihazınızdan bir {from} dosyası bırakın veya seçin. Dosya asla tarayıcınızdan ayrılmaz."
+        },
+        {
+          "number": "2",
+          "title": "Anında dönüştürüyoruz",
+          "description": "Dönüştürücü, görüntünüzü yerel olarak {to} olarak oluşturur, kaliteyi ve boyutları korur."
+        },
+        {
+          "number": "3",
+          "title": "{to} dosyasını indirin",
+          "description": "Dönüştürülen {to} öğesini tek bir tıklamayla kaydedin veya başka bir format seçin."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Görüntü dönüştürücü SSS",
+      "subtitle": "Tarayıcınızda görüntü formatlarını değiştirme hakkında bilmeniz gereken her şey",
+      "items": [
+        {
+          "question": "Görüntü dönüştürücüyü kullanmak ücretsiz mi?",
+          "answer": "Evet—imageconverter.dev'deki her dönüştürücü ücretsiz, sınırsız ve filigransızdır. Bir hesap oluşturmadan istediğiniz kadar dosya dönüştürün."
+        },
+        {
+          "question": "Görüntülerim hiç bir sunucuya yükleniyor mu?",
+          "answer": "Hayır. Tüm dönüşümler, Web API'leri kullanılarak tamamen tarayıcınızda gerçekleşir. Sayfa yüklendikten sonra çevrimdışı bile olabilirsiniz ve dönüştürücü çalışmaya devam edecektir."
+        },
+        {
+          "question": "Dönüştürücü görüntü kalitesini düşürür mü?",
+          "answer": "Görüntü çözünürlüğünü koruyoruz ve yalnızca hedef format gerektirdiğinde hafif bir sıkıştırma uyguluyoruz. JPG'ye dışa aktarırken şeffaf arka planlar otomatik olarak beyaza düzleştirilir."
+        },
+        {
+          "question": "Aynı anda birden fazla görüntüyü dönüştürebilir miyim?",
+          "answer": "Şu anda bu araç, indirmeden önce çıktıyı inceleyebilmeniz için bir seferde bir dosyayı işler. Toplu dönüştürmelere mi ihtiyacınız var? Format değiştirmeyi destekleyen toplu yeniden boyutlandırma aracımızı deneyin."
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "PNG'den JPG'ye",
+        "shortDescription": "Şeffaf PNG'leri çevrimiçi olarak daha hızlı yüklenen hafif JPG'lere düzleştirin.",
+        "metadata": {
+          "title": "PNG'den JPG'ye Dönüştürücü — Ücretsiz Çevrimiçi PNG'den JPEG'e Aracı",
+          "description": "PNG'yi anında JPG'ye dönüştürün ve netliği kaybetmeden dosya boyutunu küçültün. Yükleme olmadan tarayıcınızda %100 çalışır."
+        }
+      },
+      "png-to-webp": {
+        "label": "PNG'den WebP'ye",
+        "shortDescription": "Ağır PNG grafiklerini modern web için ultra hafif WebP dosyalarına sıkıştırın.",
+        "metadata": {
+          "title": "PNG'den WebP'ye Dönüştürücü — PNG Görüntülerini WebP'ye Sıkıştırın",
+          "description": "Netliği korurken dosya boyutunu önemli ölçüde azaltmak için PNG görüntülerini WebP'ye dönüştürün. Tarayıcı tabanlı, güvenli ve hızlı."
+        }
+      },
+      "jpg-to-png": {
+        "label": "JPG'den PNG'ye",
+        "shortDescription": "Şeffaflığa veya daha keskin kenarlara ihtiyacınız olduğunda JPG fotoğraflarını kayıpsız PNG'lere dönüştürün.",
+        "metadata": {
+          "title": "JPG'den PNG'ye Dönüştürücü — JPG'den Çevrimiçi Şeffaf PNG Yapın",
+          "description": "JPG veya JPEG görüntülerini saniyeler içinde PNG'ye dönüştürün. Tarayıcınızdan ayrılmadan kaliteyi koruyun ve şeffaflık ekleyin."
+        }
+      },
+      "jpg-to-webp": {
+        "label": "JPG'den WebP'ye",
+        "shortDescription": "Yıldırım hızında teslimat için JPG fotoğraflarını verimli WebP dosyalarına yükseltin.",
+        "metadata": {
+          "title": "JPG'den WebP'ye Dönüştürücü — Ücretsiz Çevrimiçi JPEG'den WebP'ye Aracı",
+          "description": "JPG veya JPEG dosyalarını anında modern WebP görüntülerine dönüştürün. Daha iyi sıkıştırma, aynı kalite, yükleme yok."
+        }
+      },
+      "webp-to-png": {
+        "label": "WebP'den PNG'ye",
+        "shortDescription": "WebP varlıklarını yaygın olarak desteklenen, kayıpsız PNG formatına geri aktarın.",
+        "metadata": {
+          "title": "WebP'den PNG'ye Dönüştürücü — WebP Görüntülerini Çevrimiçi Olarak PNG'ye Aktarın",
+          "description": "Düzenleme veya uyumluluk için WebP görüntülerini PNG'ye dönüştürün. Hızlı, özel ve tamamen tarayıcınızda çalışır."
+        }
+      },
+      "webp-to-jpg": {
+        "label": "WebP'den JPG'ye",
+        "shortDescription": "WebP fotoğraflarınızı evrensel JPG'ler olarak dışa aktararak paylaşılabilir hale getirin.",
+        "metadata": {
+          "title": "WebP'den JPG'ye Dönüştürücü — Ücretsiz Çevrimiçi WEBP'den JPEG'e Aracı",
+          "description": "WebP görüntülerini anında JPG dosyalarına dönüştürün, böylece onları her yere yükleyebilirsiniz. Kalite sürprizleri yok, sunucu yüklemeleri yok."
+        }
+      },
+      "svg-to-png": {
+        "label": "SVG'den PNG'ye",
+        "shortDescription": "Vektör SVG grafiklerini herhangi bir düzenleyici veya CMS için hazır şeffaf PNG'lere dönüştürün.",
+        "metadata": {
+          "title": "SVG'den PNG'ye Dönüştürücü — SVG Sanat Eserlerini Çevrimiçi Olarak PNG'ye Aktarın",
+          "description": "SVG dosyalarını anında PNG'ye dönüştürürken keskin kenarları ve şeffaflığı koruyun. Yükleme olmadan %100 tarayıcı tabanlı."
+        }
+      },
+      "svg-to-jpg": {
+        "label": "SVG'den JPG'ye",
+        "shortDescription": "SVG çizimlerini saniyeler içinde evrensel olarak uyumlu JPG görüntülerine düzleştirin.",
+        "metadata": {
+          "title": "SVG'den JPG'ye Dönüştürücü — Ücretsiz Çevrimiçi SVG'den JPEG'e Aracı",
+          "description": "SVG grafiklerini her yerde kolay paylaşım için JPG dosyalarına dönüştürün. Hızlı, özel ve tamamen tarayıcınızda çalışır."
+        }
+      },
+      "svg-to-webp": {
+        "label": "SVG'den WebP'ye",
+        "shortDescription": "Tarayıcınızdan ayrılmadan SVG sanat eserlerinden hafif WebP bitmapleri oluşturun.",
+        "metadata": {
+          "title": "SVG'den WebP'ye Dönüştürücü — SVG Görüntülerini Çevrimiçi Olarak WebP'ye Dönüştürün",
+          "description": "Görsel doğruluğu korurken ultra küçük varlıklar elde etmek için SVG dosyalarından WebP görüntüleri oluşturun. Tamamen istemci tarafı ve güvenli."
+        }
+      },
+      "heic-to-png": {
+        "label": "HEIC'den PNG'ye",
+        "shortDescription": "HEIC fotoğraflarını her yerde anında açılan şeffaf PNG'lere dönüştürün.",
+        "metadata": {
+          "title": "HEIC'den PNG'ye Dönüştürücü — Ücretsiz Çevrimiçi HEIC'den PNG'ye Aracı",
+          "description": "HEIC görüntülerini tarayıcınızda PNG dosyalarına dönüştürün. Keskin ayrıntıları koruyun, şeffaflığı koruyun ve tamamen özel kalın."
+        }
+      },
+      "heic-to-jpg": {
+        "label": "HEIC'den JPG'ye",
+        "shortDescription": "HEIC çekimlerini hafif JPG görüntüleri olarak dışa aktararak paylaşılabilir hale getirin.",
+        "metadata": {
+          "title": "HEIC'den JPG'ye Dönüştürücü — HEIC Fotoğraflarını Çevrimiçi Olarak JPEG'e Dönüştürün",
+          "description": "HEIC dosyalarını anında JPG'ye dönüştürün. Yükleme yok, kurulum yok, sadece cihazınızda hızlı HEIC'den JPEG'e dönüştürme."
+        }
+      },
+      "heic-to-webp": {
+        "label": "HEIC'den WebP'ye",
+        "shortDescription": "Modern web için HEIC fotoğraflarını ultra verimli WebP dosyalarına yükseltin.",
+        "metadata": {
+          "title": "HEIC'den WebP'ye Dönüştürücü — Ücretsiz Çevrimiçi HEIC'den WebP'ye Aracı",
+          "description": "Daha küçük dosyalar ve mükemmel kalite için HEIC görüntülerini saniyeler içinde WebP formatına dönüştürün – hepsi tarayıcınızda."
+        }
+      },
+      "avif-to-png": {
+        "label": "AVIF'den PNG'ye",
+        "shortDescription": "AVIF grafiklerini evrensel olarak desteklenen, kayıpsız PNG dosyalarına aktarın.",
+        "metadata": {
+          "title": "AVIF'den PNG'ye Dönüştürücü — AVIF Görüntülerini Çevrimiçi Olarak PNG'ye Dönüştürün",
+          "description": "Tarayıcınızdan ayrılmadan AVIF görüntülerini anında PNG'ye dönüştürün. Sıfır yükleme ile keskin kenarları ve şeffaflığı koruyun."
+        }
+      },
+      "avif-to-jpg": {
+        "label": "AVIF'den JPG'ye",
+        "shortDescription": "Eski iş akışları için AVIF fotoğraflarını uyumlu JPG'lere dönüştürün.",
+        "metadata": {
+          "title": "AVIF'den JPG'ye Dönüştürücü — Ücretsiz Çevrimiçi AVIF'den JPEG'e Aracı",
+          "description": "Anında AVIF dosyalarının JPG kopyalarını oluşturun. Her yerde hızlı paylaşım için tarayıcınızda yerel olarak çalışır."
+        }
+      },
+      "avif-to-webp": {
+        "label": "AVIF'den WebP'ye",
+        "shortDescription": "Tarayıcıdan ayrılmadan AVIF görüntülerini yerden tasarruf sağlayan WebP dosyalarına dönüştürün.",
+        "metadata": {
+          "title": "AVIF'den WebP'ye Dönüştürücü — Çevrimiçi AVIF Görüntü Dönüştürme",
+          "description": "Daha iyi uyumluluk ve benzer sıkıştırma için AVIF varlıklarını WebP'ye değiştirin – hızlı, özel ve %100 istemci tarafı."
+        }
+      },
+      "tiff-to-png": {
+        "label": "TIFF'den PNG'ye",
+        "shortDescription": "Ağır TIFF taramalarını web için hazır şık PNG dosyaları olarak dışa aktarın.",
+        "metadata": {
+          "title": "TIFF'den PNG'ye Dönüştürücü — Ücretsiz Çevrimiçi TIFF'den PNG'ye Aracı",
+          "description": "TIFF görüntülerini anında PNG formatına dönüştürün. Yükleme veya eklenti olmadan ince ayrıntıları koruyun."
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "TIFF'den JPG'ye",
+        "shortDescription": "Tarayıcınızda kalırken TIFF dosyalarını hafif JPG'lere sıkıştırın.",
+        "metadata": {
+          "title": "TIFF'den JPG'ye Dönüştürücü — TIFF'i Çevrimiçi Olarak JPEG'e Dönüştürün",
+          "description": "Küçük dosya boyutları ve geniş uyumluluk için TIFF görüntülerini saniyeler içinde JPG'lere dönüştürün – hepsi yerel olarak yapılır."
+        }
+      },
+      "tiff-to-webp": {
+        "label": "TIFF'den WebP'ye",
+        "shortDescription": "Daha hızlı teslimat için TIFF varlıklarını en yeni WebP dosyalarına dönüştürün.",
+        "metadata": {
+          "title": "TIFF'den WebP'ye Dönüştürücü — Çevrimiçi TIFF Görüntü Dönüştürme",
+          "description": "Dosya boyutunu önemli ölçüde küçültmek için TIFF görüntülerini anında WebP'ye dönüştürün. Özel, hızlı ve tarayıcı tabanlı."
+        }
+      },
+      "gif-to-png": {
+        "label": "GIF'den PNG'ye",
+        "shortDescription": "GIF grafiklerini net, kayıpsız PNG görüntülerine düzleştirin.",
+        "metadata": {
+          "title": "GIF'den PNG'ye Dönüştürücü — Ücretsiz Çevrimiçi GIF'den PNG'ye Aracı",
+          "description": "Şişirilmiş dosya boyutları olmadan kaliteyi korumak için GIF dosyalarını tarayıcınızda PNG'ye dönüştürün."
+        }
+      },
+      "gif-to-jpg": {
+        "label": "GIF'den JPG'ye",
+        "shortDescription": "Geniş destek için GIF varlıklarını uyumlu JPG'lere dönüştürün.",
+        "metadata": {
+          "title": "GIF'den JPG'ye Dönüştürücü — Çevrimiçi GIF'den JPEG'e Dönüştürme",
+          "description": "GIF görüntülerini anında JPG'ye aktarın ve iş akışınızı basit tutun. Yükleme yok, filigran yok."
+        }
+      },
+      "gif-to-webp": {
+        "label": "GIF'den WebP'ye",
+        "shortDescription": "Daha küçük boyutlar için GIF dosyalarını modern WebP görüntülerine dönüştürün.",
+        "metadata": {
+          "title": "GIF'den WebP'ye Dönüştürücü — Ücretsiz Çevrimiçi GIF'den WebP'ye Aracı",
+          "description": "Bant genişliğini azaltmak ve kaliteyi korumak için GIF grafiklerini WebP formatına dönüştürün, hepsi tarayıcınızda."
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "PNG nedir?",
+        "description": "PNG (Taşınabilir Ağ Grafikleri), kayıpsız veri sıkıştırmayı destekleyen bir raster grafik dosya biçimidir. Grafik Değişim Biçimi'nin (GIF) geliştirilmiş, patentsiz bir yedeği olarak geliştirilmiştir.",
+        "bestFor": "Şeffaflık gerektiren web grafikleri, logolar, grafikler ve illüstrasyonlar.",
+        "pros": [
+          "Kayıpsız sıkıştırma (kalite kaybı yok)",
+          "Şeffaflığı destekler (alfa kanalı)",
+          "Geniş tarayıcı desteği"
+        ]
+      },
+      "jpg": {
+        "title": "JPG nedir?",
+        "description": "JPG (Ortak Fotoğraf Uzmanları Grubu), dijital fotoğrafları ve diğer raster grafikleri içermek için yaygın olarak kullanılan sıkıştırılmış bir görüntü biçimidir. Görüntü kalitesi ve dosya boyutunu dengelemek için kayıplı sıkıştırma kullanır.",
+        "bestFor": "Fotoğraflar, çok renkli karmaşık görüntüler ve küçük dosya boyutunun kritik olduğu web görüntüleri.",
+        "pros": [
+          "Küçük dosya boyutu",
+          "Evrensel uyumluluk",
+          "Ayarlanabilir sıkıştırma seviyeleri"
+        ]
+      },
+      "webp": {
+        "title": "WebP nedir?",
+        "description": "WebP, Google tarafından kullanılan, web'deki görüntüler için üstün kayıpsız ve kayıplı sıkıştırma sağlayan modern bir görüntü biçimidir. Web yöneticilerinin ve web geliştiricilerinin web'i daha hızlı hale getiren daha küçük, daha zengin görüntüler oluşturmasını sağlar.",
+        "bestFor": "Sayfa yükleme hızlarını iyileştirmek için web görüntüleri (hem PNG hem de JPG'nin yerine).",
+        "pros": [
+          "Üstün sıkıştırma (JPG/PNG'den daha küçük dosyalar)",
+          "Hem şeffaflığı hem de animasyonu destekler",
+          "Modern tarayıcılar tarafından desteklenir"
+        ]
+      },
+      "heic": {
+        "title": "HEIC nedir?",
+        "description": "HEIC (Yüksek Verimli Görüntü Konteyneri), Apple'ın iOS cihazlarında fotoğraflar için kullandığı dosya biçimidir. JPG'den daha küçük dosya boyutlarında yüksek kaliteli görüntüleri kaydetmek için HEVC (Yüksek Verimli Video Kodlama) standardını kullanır.",
+        "bestFor": "Sınırlı depolama alanına sahip mobil cihazlarda yüksek kaliteli fotoğrafları depolamak.",
+        "pros": [
+          "JPG'nin yarısı boyutunda yüksek kalite",
+          "Canlı Fotoğrafları ve derinlik haritalarını destekler",
+          "Apple cihazları için modern standart"
+        ]
+      },
+      "avif": {
+        "title": "AVIF nedir?",
+        "description": "AVIF (AV1 Görüntü Dosya Biçimi), HEIF dosya biçiminde AV1 ile sıkıştırılmış görüntüleri veya görüntü dizilerini depolamak için açık, telif ücreti gerektirmeyen bir görüntü dosya biçimi spesifikasyonudur.",
+        "bestFor": "Maksimum sıkıştırma verimliliği gerektiren yeni nesil web görüntüleri.",
+        "pros": [
+          "Sınıfının en iyisi sıkıştırma",
+          "HDR ve Geniş Renk Gamı desteği",
+          "Telif ücreti yok"
+        ]
+      },
+      "svg": {
+        "title": "SVG nedir?",
+        "description": "SVG (Ölçeklenebilir Vektör Grafikleri), etkileşim ve animasyon desteği olan iki boyutlu grafikler için XML tabanlı bir vektör görüntü biçimidir. Raster görüntülerin aksine, SVG'ler kalite kaybetmeden sonsuz olarak ölçeklendirilebilir.",
+        "bestFor": "Her boyutta keskin görünmesi gereken logolar, simgeler ve basit illüstrasyonlar.",
+        "pros": [
+          "Sonsuz ölçeklenebilirlik",
+          "Basit grafikler için küçük dosya boyutu",
+          "Kod ile düzenlenebilir"
+        ]
+      },
+      "tiff": {
+        "title": "TIFF nedir?",
+        "description": "TIFF (Etiketli Görüntü Dosya Biçimi), grafik sanatçıları, yayıncılık endüstrisi ve fotoğrafçılar arasında popüler olan raster grafik görüntülerini depolamak için bir bilgisayar dosya biçimidir.",
+        "bestFor": "Kalitenin çok önemli olduğu profesyonel fotoğrafçılık, baskı ve tarama.",
+        "pros": [
+          "Sıkıştırılmamış veya kayıpsız sıkıştırma",
+          "Yüksek renk derinliği desteği",
+          "Baskı için endüstri standardı"
+        ]
+      },
+      "gif": {
+        "title": "GIF nedir?",
+        "description": "GIF (Grafik Değişim Biçimi), animasyonları destekleyen bir bitmap görüntü biçimidir. LZW kayıpsız veri sıkıştırması kullanır ve kare başına 256 renge kadar izin verir.",
+        "bestFor": "Basit animasyonlar, memler ve küçük simgeler.",
+        "pros": [
+          "Animasyonu destekler",
+          "Basit grafikler için küçük dosya boyutu",
+          "Evrensel olarak desteklenir"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "Neden Görüntü Dönüştürücümüzü Kullanmalısınız?",
+      "items": [
+        {
+          "title": "Önce Gizlilik",
+          "description": "Tüm dönüştürmeler tarayıcınızda yerel olarak gerçekleşir. Görüntüleriniz asla sunucularımıza yüklenmez."
+        },
+        {
+          "title": "Şimşek Hızında",
+          "description": "WebAssembly ile desteklenen dönüştürücümüz, gecikme olmadan masaüstü sınıfı performans sunar."
+        },
+        {
+          "title": "Sınırsız",
+          "description": "İstediğiniz kadar görüntü dönüştürün. Dosya boyutu sınırı yok, günlük kısıtlama yok."
+        },
+        {
+          "title": "Yüksek Kalite",
+          "description": "Görüntülerinize özenle davranıyor, her dönüştürmede çözünürlük ve kaliteyi koruyoruz."
+        }
+      ]
+    }
+  }
+}

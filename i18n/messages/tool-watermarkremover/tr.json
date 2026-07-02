@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Ücretsiz Gemini AI Filigran Temizleyici Çevrimiçi",
+    "header": {
+      "title": "Gemini Filigran Temizleyici"
+    },
+    "nav": {
+      "userscript": "Gemini için Userscript Yükle",
+      "principle": "Teknik İlke"
+    },
+    "main": {
+      "title": "Gemini AI Görüntü Filigran Temizleme",
+      "subtitle": "Ters Alfa Karıştırma algoritmasını kullanarak Gemini AI filigranlarını anında kaldırın. %100 gizli, tarayıcıda işleme, ücretsiz ve kayıpsız."
+    },
+    "upload": {
+      "text": "Seçmek için tıklayın veya görüntüleri buraya sürükleyin",
+      "hint": "JPG, PNG, WebP desteklenir"
+    },
+    "step": {
+      "1": "Orijinal görüntüyü seçิน",
+      "2": "Otomatik işleme",
+      "3": "Temiz görüntüyü kaydedin"
+    },
+    "preview": {
+      "original": "Orijinal Önizleme",
+      "result": "İşlenmiş Sonuç"
+    },
+    "panel": {
+      "title": "Kontrol Paneli"
+    },
+    "btn": {
+      "download": "İndir",
+      "reset": "Yeniden Başlat",
+      "downloadAll": "Tümünü İndir"
+    },
+    "progress": {
+      "text": "İşlem Durumu"
+    },
+    "feature": {
+      "title": "Neden Gemini Filigran Temizleyiciyi Seçmelisiniz?",
+      "items": [
+        {
+          "title": "%100 İstemci Tarafı",
+          "desc": "Arka uç yok, sunucu tarafı işleme yok. Verileriniz tamamen tarayıcınızda kalır."
+        },
+        {
+          "title": "Önce Gizlilik",
+          "desc": "Görüntüler asla bir sunucuya yüklenmez. Tam gizlilik ve güvenlik garantisi."
+        },
+        {
+          "title": "Matematiksel Hassasiyet",
+          "desc": "'Halüsinasyon' gören AI modellerinin aksine, Ters Alfa Karıştırma formülüne dayalı matematiksel olarak kesin restorasyon sağlar."
+        },
+        {
+          "title": "Akıllı Otomatik Algılama",
+          "desc": "Mükemmel temizleme için farklı filigran varyasyonlarını (48×48 veya 96×96) akıllıca tanır."
+        },
+        {
+          "title": "Kullanıcı Dostu",
+          "desc": "Anında işleme sunan basit sürükle-bırak arayüzü. Teknik beceri gerektirmez."
+        },
+        {
+          "title": "Platformlar Arası",
+          "desc": "Windows, Mac, Linux ve mobil cihazlardaki tüm modern web tarayıcılarında sorunsuz çalışır."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "Aracın Arkasındaki Teknik Sihir",
+      "sizeDetection": {
+        "title": "Filigran Boyutu Algılama",
+        "description": "Gemini, görüntü boyutlarına göre farklı filigran boyutları kullanır. Aracımız, hassas bir kaldırma sağlamak için doğru boyutu otomatik olarak algılar.",
+        "table": {
+          "dims": "Görüntü Boyutları",
+          "size": "Filigran Boyutu",
+          "margin": "Kenar Boşluğu",
+          "small": "G ≤ 1024 veya Y ≤ 1024",
+          "pixelSmall": "48×48 piksel",
+          "marginSmall": "32px",
+          "large": "G > 1024 ve Y > 1024",
+          "pixelLarge": "96×96 piksel",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: Nasıl Çalışır",
+        "description": "Çoğu filigran, alfa karıştırma kullanılarak eklenen yarı saydam katmanlardır. Tahmin etmek yerine matematiği tersine çeviriyoruz.",
+        "formulaTitle": "KARIŞTIRMA FORMÜLÜ:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "Her piksel için alfa haritasını (α) yeniden oluşturarak, orijinal piksel değerini cebirsel olarak geri kazanabiliriz:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Bu, orijinal görüntü verilerinin matematiksel olarak kesin bir yeniden yapılandırılmasıyla sonuçlanır."
+      },
+      "comparison": {
+        "title": "Bu Neden AI Inpainting'den Daha İyi Çalışır",
+        "intro": "Tipik AI temizleme araçları (Inpainting), filigranın arkasında ne olması gerektiğini 'tahmin eder' ve bu da genellikle bozulmalara yol açar. Yaklaşımımız daha üstündür çünkü:",
+        "items": [
+          {
+            "title": "Tahmin Yok",
+            "desc": "Bilinen filigran desenini kullanarak tam orijinal değerleri hesaplar."
+          },
+          {
+            "title": "Yüksek Hız",
+            "desc": "İşlem son derece hızlı ve verimlidir, tamamen tarayıcınızda çalışır."
+          },
+          {
+            "title": "Düşük Kaynak Kullanımı",
+            "desc": "Araç hafiftir (yaklaşık 4MB) ve ağır AI modelleri gerektirmez."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Mükemmel Kenar İşleme",
+        "description": "Yarı saydam kenarlar alfa haritası tarafından harika bir şekilde işlenir. Ters formül, değişen şeffaflık seviyelerini doğal olarak dikkate alarak görünür dikişler olmadan pürüzsüz geçişler sağlar."
+      },
+      "reference": {
+        "text": "Algoritma hakkında daha derin teknik bilgi için bu",
+        "linkText": "Medium makalesine göz atın"
+      }
+    },
+    "faq": {
+      "title": "Sıkça Sorulan Sorular",
+      "subtitle": "Gemini Filigran Temizleyici teknolojisi ve güvenliği hakkında daha fazla bilgi edinin",
+      "items": [
+        {
+          "question": "Bu filigran temizleyici nasıl çalışır?",
+          "answer": "Filigranın arkasında ne olduğunu tahmin eden genel AI rötuş araçlarının aksine, aracımız 'Ters Alfa Karıştırma' adı verilen özel bir matematiksel yaklaşım kullanır. Gemini filigran deseninin kesin piksel değerlerini bildiğimiz için, orijinal piksel renklerini yüksek hassasiyetle geri yüklemek amacıyla bunu görüntüden matematiksel olarak çıkarabiliriz."
+        },
+        {
+          "question": "Güvenli / özel mi?",
+          "answer": "Evet, kesinlikle. Araç tamamen web tarayıcınızın içinde çalışır. Görüntüleriniz cihazınızda yerel olarak işlenir ve asla sunucularımıza veya üçüncü taraflara yüklenmez. Sayfayı yükledikten sonra internet bağlantınızı kesseniz bile çalışmaya devam edecektir."
+        },
+        {
+          "question": "Gerçekten ücretsiz mi?",
+          "answer": "Evet, bu araç %100 ücretsizdir. Eğitim amaçlı ve topluluğa yardımcı olmak için tasarlanmış açık kaynaklı bir girişimdir."
+        },
+        {
+          "question": "Görüntü kalitesini düşürür mü?",
+          "answer": "Hayır. Filigran olmayan alanlar için silme işlemi kayıpsızdır. Filigranlı alanlar için orijinal renkleri matematiksel olarak mümkün olan en doğru şekilde geri yükler ve diğer AI temizleme araçlarında sıkça görülen bulanıklığı önler."
+        },
+        {
+          "question": "Resim filigranı neden düzgün bir şekilde kaldırılmadı?",
+          "answer": "Aracımız, özellikle Gemini tarafından oluşturulan resimlerdeki filigranların (SynthID) kaldırılmasını destekler. Orijinal, sıkıştırılmamış resimler için kaldırma işlemi kusursuzdur. Ancak, resim sıkıştırılmışsa veya yeniden kodlanmışsa (örneğin sosyal medya platformları veya web sitesi yüklemeleri yoluyla), filigranın meta verileri ve karakteristik özellikleri genellikle zarar görür ve başarılı bir şekilde kaldırılmasını engeller."
+        }
+      ]
+    },
+    "loading": {
+      "text": "İşleniyor..."
+    },
+    "status": {
+      "loading": "Kaynaklar yükleniyor...",
+      "pending": "Bekliyor...",
+      "processing": "İşleniyor...",
+      "success": "Tamamlandı",
+      "failed": "Hata"
+    },
+    "info": {
+      "size": "Boyut",
+      "watermark": "Algılanan Filigran",
+      "position": "Konum",
+      "status": "Durum",
+      "removed": "Filigran Temizlendi"
+    }
+  }
+}

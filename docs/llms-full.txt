@@ -191,7 +191,7 @@ ResizeImage.dev is a free online image resizer that processes images entirely in
 - **Name**: ResizeImage.dev
 - **Company**: Crownbyte LTD
 - **Domain**: resizeimage.dev
-- **Support**: support@nestsaas.com
+- **Support**: support@resizeimage.dev
 - **Creator**: ShawnHacks
 - **Twitter**: @ShawnHacks
 

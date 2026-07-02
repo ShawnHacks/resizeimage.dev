@@ -5,10 +5,10 @@ import { fontVariables } from '@/assets/fonts/fonts';
 import { Providers, ThemeScript } from '@/components/providers';
 import { Toaster } from 'sonner'
 
-import {NextIntlClientProvider, hasLocale, Locale} from 'next-intl';
-import {setRequestLocale} from 'next-intl/server';
-import {notFound} from 'next/navigation';
-import {routing} from '@/i18n/routing';
+import { NextIntlClientProvider, hasLocale, Locale } from 'next-intl';
+import { setRequestLocale } from 'next-intl/server';
+import { notFound } from 'next/navigation';
+import { routing } from '@/i18n/routing';
 // import { getTranslations } from 'next-intl/server';
 import { getLocalizedSiteConfig } from '@/config/site-i18n'
 
@@ -22,7 +22,7 @@ import { SiteLayout } from "@/components/layouts/site-layout";
 
 type Props = {
   children: ReactNode;
-  params: Promise<{locale: Locale}>;
+  params: Promise<{ locale: Locale }>;
 };
 
 export const viewport: Viewport = {
@@ -33,17 +33,18 @@ export const viewport: Viewport = {
 }
 
 export async function generateMetadata(props: Omit<Props, 'children'>) {
-  const {locale} = await props.params;
+  const { locale } = await props.params;
 
   const siteConfig = await getLocalizedSiteConfig(locale)
   const title = siteConfig.title
   const description = siteConfig.description
 
   return {
+    metadataBase: new URL(siteConfig.url || 'https://imageconverter.dev'),
     // title,
     title: {
-      template: '%s - ResizeImage.dev', // %s will be replaced by the page-specific title
-      default: `${title} | ResizeImage.dev`, // Fallback title for pages without a specific title
+      template: '%s - ImageConverter', // %s will be replaced by the page-specific title
+      default: `${title} | ImageConverter`, // Fallback title for pages without a specific title
     },
     description,
     keywords: siteConfig.keywords,
@@ -52,14 +53,14 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     publisher: siteConfig.name || 'Crownbyte LTD',
     openGraph: {
       type: 'website',
-      url: siteConfig.url || 'https://resizeimage.dev',
+      url: siteConfig.url || 'https://imageconverter.dev',
       locale: locale,
-      title: `${title} - ResizeImage.dev`,
+      title: `${title} - ImageConverter`,
       description: description,
-      siteName: siteConfig.name || 'ResizeImage.dev',
+      siteName: siteConfig.name || 'ImageConverter',
       images: [
         {
-          url: siteConfig.ogImage || 'https://resizeimage.dev/og.png',
+          url: siteConfig.ogImage || 'https://imageconverter.dev/og.png',
           width: 1200,
           height: 630,
           alt: title,
@@ -68,9 +69,9 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} - ResizeImage.dev`,
+      title: `${title} - ImageConverter`,
       description: description,
-      images: [siteConfig.ogImage || 'https://resizeimage.dev/og.png'],
+      images: [siteConfig.ogImage || 'https://imageconverter.dev/og.png'],
       creator: '@ShawnHacks',
     },
     robots: {
@@ -87,7 +88,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     icons: {
       icon: [
         // { url: `${siteConfig.url}/favicon.ico`, type: 'image/x-icon' }, 
-        { url: `${siteConfig.url}/logo.png`, type: 'image/png' }, 
+        { url: `${siteConfig.url}/logo.png`, type: 'image/png' },
         { url: `${siteConfig.url}/icon-192.png`, type: 'image/png' }
       ],
       shortcut: `${siteConfig.url}/icon-192.png`,
@@ -97,7 +98,7 @@ export async function generateMetadata(props: Omit<Props, 'children'>) {
     appleWebApp: {
       capable: true,
       statusBarStyle: 'default',
-      title: 'ResizeImage.dev',
+      title: 'ImageConverter',
     },
   }
 }
@@ -107,13 +108,13 @@ export default async function RootLayout({
   params
 }: Props) {
   // Ensure that the incoming `locale` is valid
-  const {locale} = await params;
+  const { locale } = await params;
   if (!hasLocale(routing.locales, locale)) {
     notFound();
   }
 
   setRequestLocale(locale);
-  
+
   return (
     <html lang={locale} suppressHydrationWarning>
       <head>
@@ -123,7 +124,7 @@ export default async function RootLayout({
      crossOrigin="anonymous"></script> */}
 
         <GoogleAdsense />
-        
+
         <ThemeScript />
         <GoogleAnalytics />
         <MicrosoftClarityAnalytics />

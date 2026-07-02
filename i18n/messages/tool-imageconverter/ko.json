@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "이미지 변환기",
+    "description": "서버에 업로드하지 않고 온라인으로 이미지와 사진을 변환하세요 - 여러분이 찾는 이미지 변환기 도구입니다.",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "전문적인 무료 온라인 이미지 리사이저",
+      "description": "서버에 업로드하지 않고 온라인으로 이미지와 사진 크기를 조절하세요 - 여러분이 찾는 사진 리사이저 도구입니다.",
+      "lightningFast": "번개처럼 빠른",
+      "free": "100% 무료 이미지 변환기"
+    },
+    "hero": {
+      "badge": "{from} -> {to} 변환기",
+      "title": "몇 초 만에 {from}을(를) {to}(으)로 변환",
+      "description": "{from} 이미지를 업로드하고 고품질 {to}를 즉시 다운로드하세요. 모든 것이 브라우저에 남아 있습니다 - 업로드도, 제한도 없습니다."
+    },
+    "workspace": {
+      "badge": "{from}을(를) {to}(으)로 변환",
+      "subtitle": "출력 파일 크기 {size}.",
+      "sizePending": "계산 중...",
+      "download": {
+        "pending": "변환 중...",
+        "ready": "{to} 다운로드"
+      },
+      "reset": "다른 이미지 선택",
+      "info": {
+        "original": "원본 형식: {format}",
+        "converted": "{format} 출력",
+        "dimensions": "출력 크기: {width} × {height} px"
+      },
+      "processing": {
+        "title": "{from} 파일 변환 중",
+        "description": "이 작업은 브라우저 내에서 로컬로 발생합니다. 큰 이미지는 몇 초 정도 걸릴 수 있습니다."
+      },
+      "error": {
+        "title": "변환 실패",
+        "description": "이 이미지를 변환할 수 없습니다. 다른 파일이나 내보내기 형식을 시도해 보세요.",
+        "cta": "다른 이미지 선택",
+        "generic": "이 이미지를 변환할 수 없습니다. 다른 파일을 시도해 보세요."
+      },
+      "previewAlt": "{from}이(가) {to}(으)로 변환됨"
+    },
+    "moreOptions": {
+      "title": "다른 이미지 변환기 살펴보기",
+      "description": "클릭 한 번으로 형식 전환 — 모든 변환기는 브라우저에서 로컬로 실행됩니다."
+    },
+    "howTo": {
+      "title": "브라우저에서 {from}을(를) {to}(으)로 변환하는 방법",
+      "steps": [
+        {
+          "number": "1",
+          "title": "이미지 업로드",
+          "description": "기기에서 {from} 파일을 드롭하거나 선택하세요. 파일은 브라우저를 벗어나지 않습니다."
+        },
+        {
+          "number": "2",
+          "title": "즉시 변환합니다",
+          "description": "변환기는 이미지를 로컬에서 {to}(으)로 렌더링하여 품질과 크기를 그대로 유지합니다."
+        },
+        {
+          "number": "3",
+          "title": "{to} 파일 다운로드",
+          "description": "클릭 한 번으로 변환된 {to}를 저장하거나 다른 형식을 선택하세요."
+        }
+      ]
+    },
+    "faq": {
+      "title": "이미지 변환기 FAQ",
+      "subtitle": "브라우저에서 이미지 형식을 전환하는 데 필요한 모든 것",
+      "items": [
+        {
+          "question": "이미지 변환기는 무료로 사용할 수 있나요?",
+          "answer": "네—imageconverter.dev의 모든 변환기는 무료이며 무제한이며 워터마크가 없습니다. 계정을 만들지 않고 원하는 만큼 파일을 변환하세요."
+        },
+        {
+          "question": "내 이미지가 서버에 업로드되나요?",
+          "answer": "아니요. 모든 변환은 웹 API를 사용하여 브라우저에서 완전히 이루어집니다. 페이지가 로드된 후 오프라인 상태가 되어도 변환기는 계속 작동합니다."
+        },
+        {
+          "question": "변환기가 이미지 품질을 저하시키나요?",
+          "answer": "이미지 해상도를 보존하고 대상 형식이 필요할 때만 부드러운 압축을 적용합니다. JPG로 내보낼 때 투명한 배경은 자동으로 흰색으로 평평하게 만들어집니다."
+        },
+        {
+          "question": "한 번에 여러 이미지를 변환할 수 있나요?",
+          "answer": "현재 이 도구는 한 번에 하나의 파일을 처리하므로 다운로드하기 전에 출력을 검토할 수 있습니다. 대량 변환이 필요하신가요? 형식 전환을 지원하는 대량 크기 조절 도구를 사용해 보세요."
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "PNG를 JPG로",
+        "shortDescription": "투명한 PNG를 온라인에서 더 빠르게 로드되는 가벼운 JPG로 평평하게 만듭니다.",
+        "metadata": {
+          "title": "PNG를 JPG로 변환기 — 무료 온라인 PNG를 JPEG로 변환 도구",
+          "description": "선명도를 잃지 않고 즉시 PNG를 JPG로 변환하고 파일 크기를 줄입니다. 업로드 없이 브라우저에서 100% 실행됩니다."
+        }
+      },
+      "png-to-webp": {
+        "label": "PNG를 WebP로",
+        "shortDescription": "무거운 PNG 그래픽을 최신 웹을 위한 초경량 WebP 파일로 압축합니다.",
+        "metadata": {
+          "title": "PNG를 WebP로 변환기 — PNG 이미지를 WebP로 압축",
+          "description": "선명도를 유지하면서 파일 크기를 대폭 줄이려면 PNG 이미지를 WebP로 변환하세요. 브라우저 기반, 안전하고 빠릅니다."
+        }
+      },
+      "jpg-to-png": {
+        "label": "JPG를 PNG로",
+        "shortDescription": "투명도나 더 선명한 가장자리가 필요할 때 JPG 사진을 무손실 PNG로 변환합니다.",
+        "metadata": {
+          "title": "JPG를 PNG로 변환기 — 온라인에서 JPG로 투명한 PNG 만들기",
+          "description": "JPG 또는 JPEG 이미지를 몇 초 만에 PNG로 변환합니다. 브라우저를 벗어나지 않고 품질을 보존하고 투명도를 추가합니다."
+        }
+      },
+      "jpg-to-webp": {
+        "label": "JPG를 WebP로",
+        "shortDescription": "초고속 전송을 위해 JPG 사진을 효율적인 WebP 파일로 업그레이드하세요.",
+        "metadata": {
+          "title": "JPG를 WebP로 변환기 — 무료 온라인 JPEG를 WebP로 변환 도구",
+          "description": "JPG 또는 JPEG 파일을 최신 WebP 이미지로 즉시 변환합니다. 더 나은 압축, 동일한 품질, 업로드 없음."
+        }
+      },
+      "webp-to-png": {
+        "label": "WebP를 PNG로",
+        "shortDescription": "WebP 자산을 널리 지원되는 무손실 PNG 형식으로 다시 내보냅니다.",
+        "metadata": {
+          "title": "WebP를 PNG로 변환기 — 온라인에서 WebP 이미지를 PNG로 내보내기",
+          "description": "편집 또는 호환성을 위해 WebP 이미지를 PNG로 변환합니다. 빠르고 비공개이며 브라우저에서 완전히 실행됩니다."
+        }
+      },
+      "webp-to-jpg": {
+        "label": "WebP를 JPG로",
+        "shortDescription": "WebP 사진을 범용 JPG로 내보내 공유할 수 있도록 만드세요.",
+        "metadata": {
+          "title": "WebP를 JPG로 변환기 — 무료 온라인 WEBP를 JPEG로 변환 도구",
+          "description": "WebP 이미지를 즉시 JPG 파일로 변환하여 어디에나 업로드할 수 있습니다. 품질 문제, 서버 업로드 없음."
+        }
+      },
+      "svg-to-png": {
+        "label": "SVG를 PNG로",
+        "shortDescription": "벡터 SVG 그래픽을 모든 편집기나 CMS에서 사용할 수 있는 투명 PNG로 변환합니다.",
+        "metadata": {
+          "title": "SVG를 PNG로 변환기 — 온라인에서 SVG 아트워크를 PNG로 내보내기",
+          "description": "SVG 파일을 즉시 PNG로 변환하면서 선명한 가장자리와 투명도를 유지합니다. 100% 브라우저 기반이며 업로드가 필요 없습니다."
+        }
+      },
+      "svg-to-jpg": {
+        "label": "SVG를 JPG로",
+        "shortDescription": "SVG 일러스트레이션을 몇 초 만에 보편적으로 호환되는 JPG 이미지로 평면화합니다.",
+        "metadata": {
+          "title": "SVG를 JPG로 변환기 — 무료 온라인 SVG를 JPEG로 변환 도구",
+          "description": "SVG 그래픽을 JPG 파일로 변환하여 어디서나 쉽게 공유할 수 있습니다. 빠르고, 비공개이며, 전적으로 브라우저에서 실행됩니다."
+        }
+      },
+      "svg-to-webp": {
+        "label": "SVG를 WebP로",
+        "shortDescription": "브라우저를 벗어나지 않고 SVG 아트워크에서 경량 WebP 비트맵을 생성합니다.",
+        "metadata": {
+          "title": "SVG를 WebP로 변환기 — 온라인에서 SVG 이미지를 WebP로 변환",
+          "description": "SVG 파일에서 WebP 이미지를 생성하여 시각적 충실도를 유지하면서 초소형 자산을 얻을 수 있습니다. 완전히 클라이언트 측이며 안전합니다."
+        }
+      },
+      "heic-to-png": {
+        "label": "HEIC를 PNG로",
+        "shortDescription": "HEIC 사진을 어디서나 즉시 열 수 있는 투명 PNG로 변환합니다.",
+        "metadata": {
+          "title": "HEIC를 PNG로 변환기 — 무료 온라인 HEIC를 PNG로 변환 도구",
+          "description": "브라우저에서 HEIC 이미지를 PNG 파일로 변환합니다. 선명한 디테일을 유지하고 투명도를 보존하며 완전히 비공개로 유지합니다."
+        }
+      },
+      "heic-to-jpg": {
+        "label": "HEIC를 JPG로",
+        "shortDescription": "HEIC 사진을 경량 JPG 이미지로 내보내 공유할 수 있도록 합니다.",
+        "metadata": {
+          "title": "HEIC를 JPG로 변환기 — 온라인에서 HEIC 사진을 JPEG로 변환",
+          "description": "HEIC 파일을 즉시 JPG로 변환합니다. 업로드나 설치 없이 장치에서 빠른 HEIC에서 JPEG로의 변환이 가능합니다."
+        }
+      },
+      "heic-to-webp": {
+        "label": "HEIC를 WebP로",
+        "shortDescription": "HEIC 사진을 현대 웹을 위한 초효율적인 WebP 파일로 업그레이드합니다.",
+        "metadata": {
+          "title": "HEIC를 WebP로 변환기 — 무료 온라인 HEIC를 WebP로 변환 도구",
+          "description": "HEIC 이미지를 몇 초 만에 WebP 형식으로 변환하여 파일 크기를 줄이고 뛰어난 품질을 얻을 수 있습니다 — 모두 브라우저 내에서 가능합니다."
+        }
+      },
+      "avif-to-png": {
+        "label": "AVIF를 PNG로",
+        "shortDescription": "AVIF 그래픽을 보편적으로 지원되는 무손실 PNG 파일로 내보냅니다.",
+        "metadata": {
+          "title": "AVIF를 PNG로 변환기 — 온라인에서 AVIF 이미지를 PNG로 변환",
+          "description": "브라우저를 벗어나지 않고 AVIF 이미지를 즉시 PNG로 변환합니다. 선명한 가장자리와 투명도를 유지하며 업로드가 필요 없습니다."
+        }
+      },
+      "avif-to-jpg": {
+        "label": "AVIF를 JPG로",
+        "shortDescription": "AVIF 사진을 레거시 워크플로와 호환되는 JPG로 변환합니다.",
+        "metadata": {
+          "title": "AVIF를 JPG로 변환기 — 무료 온라인 AVIF를 JPEG로 변환 도구",
+          "description": "AVIF 파일의 JPG 사본을 즉시 생성합니다. 브라우저에서 로컬로 작동하여 어디서나 빠르게 공유할 수 있습니다."
+        }
+      },
+      "avif-to-webp": {
+        "label": "AVIF를 WebP로",
+        "shortDescription": "브라우저를 벗어나지 않고 AVIF 이미지를 공간 절약형 WebP 파일로 변환합니다.",
+        "metadata": {
+          "title": "AVIF를 WebP로 변환기 — 온라인 AVIF 이미지 변환",
+          "description": "AVIF 자산을 WebP로 전환하여 더 나은 호환성과 유사한 압축을 얻을 수 있습니다 — 빠르고, 비공개이며, 100% 클라이언트 측입니다."
+        }
+      },
+      "tiff-to-png": {
+        "label": "TIFF를 PNG로",
+        "shortDescription": "무거운 TIFF 스캔을 웹에 바로 사용할 수 있는 세련된 PNG 파일로 내보냅니다.",
+        "metadata": {
+          "title": "TIFF를 PNG로 변환기 — 무료 온라인 TIFF를 PNG로 변환 도구",
+          "description": "TIFF 이미지를 즉시 PNG 형식으로 변환합니다. 업로드나 플러그인 없이 세부 사항을 유지합니다."
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "TIFF를 JPG로",
+        "shortDescription": "브라우저 내에서 TIFF 파일을 경량 JPG로 압축합니다.",
+        "metadata": {
+          "title": "TIFF를 JPG로 변환기 — 온라인에서 TIFF를 JPEG로 변환",
+          "description": "TIFF 이미지를 몇 초 만에 JPG로 변환하여 파일 크기를 최소화하고 광범위한 호환성을 확보합니다 — 모두 로컬에서 완료됩니다."
+        }
+      },
+      "tiff-to-webp": {
+        "label": "TIFF를 WebP로",
+        "shortDescription": "TIFF 자산을 최첨단 WebP 파일로 변환하여 전송 속도를 높입니다.",
+        "metadata": {
+          "title": "TIFF를 WebP로 변환기 — 온라인 TIFF 이미지 변환",
+          "description": "TIFF 이미지를 즉시 WebP로 변환하여 파일 크기를 대폭 줄입니다. 비공개, 빠르고, 브라우저 기반입니다."
+        }
+      },
+      "gif-to-png": {
+        "label": "GIF를 PNG로",
+        "shortDescription": "GIF 그래픽을 선명한 무손실 PNG 이미지로 평면화합니다.",
+        "metadata": {
+          "title": "GIF를 PNG로 변환기 — 무료 온라인 GIF를 PNG로 변환 도구",
+          "description": "브라우저에서 GIF 파일을 PNG로 변환하여 파일 크기를 부풀리지 않고 품질을 보존합니다."
+        }
+      },
+      "gif-to-jpg": {
+        "label": "GIF를 JPG로",
+        "shortDescription": "GIF 자산을 호환되는 JPG로 변환하여 광범위한 지원을 받습니다.",
+        "metadata": {
+          "title": "GIF를 JPG로 변환기 — 온라인 GIF를 JPEG로 변환",
+          "description": "GIF 이미지를 즉시 JPG로 내보내고 워크플로를 간단하게 유지합니다. 업로드나 워터마크가 없습니다."
+        }
+      },
+      "gif-to-webp": {
+        "label": "GIF를 WebP로",
+        "shortDescription": "GIF 파일을 최신 WebP 이미지로 변환하여 크기를 줄입니다.",
+        "metadata": {
+          "title": "GIF를 WebP로 변환기 — 무료 온라인 GIF를 WebP로 변환 도구",
+          "description": "GIF 그래픽을 WebP 형식으로 변환하여 대역폭을 줄이고 품질을 유지합니다. 모두 브라우저 내에서 가능합니다."
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "PNG란 무엇인가요?",
+        "description": "PNG(Portable Network Graphics)는 무손실 데이터 압축을 지원하는 래스터 그래픽 파일 형식입니다. GIF(Graphics Interchange Format)의 개선된 특허 없는 대체품으로 개발되었습니다.",
+        "bestFor": "투명도가 필요한 웹 그래픽, 로고, 차트 및 일러스트레이션.",
+        "pros": [
+          "무손실 압축(품질 손실 없음)",
+          "투명도 지원(알파 채널)",
+          "광범위한 브라우저 지원"
+        ]
+      },
+      "jpg": {
+        "title": "JPG란 무엇인가요?",
+        "description": "JPG(Joint Photographic Experts Group)는 디지털 사진 및 기타 래스터 그래픽을 포함하는 데 널리 사용되는 압축 이미지 형식입니다. 이미지 품질과 파일 크기의 균형을 맞추기 위해 손실 압축을 사용합니다.",
+        "bestFor": "사진, 많은 색상이 포함된 복잡한 이미지, 작은 파일 크기가 중요한 웹 이미지.",
+        "pros": [
+          "작은 파일 크기",
+          "범용 호환성",
+          "조정 가능한 압축 수준"
+        ]
+      },
+      "webp": {
+        "title": "WebP란 무엇인가요?",
+        "description": "WebP는 Google이 채택한 최신 이미지 형식으로 웹의 이미지에 대해 우수한 무손실 및 손실 압축을 제공합니다. 웹마스터와 웹 개발자가 더 작고 풍부한 이미지를 만들어 웹을 더 빠르게 만들 수 있습니다.",
+        "bestFor": "페이지 로드 속도를 향상시키기 위한 웹 이미지(PNG와 JPG 모두 대체).",
+        "pros": [
+          "우수한 압축(JPG/PNG보다 작은 파일)",
+          "투명도와 애니메이션 모두 지원",
+          "최신 브라우저에서 지원"
+        ]
+      },
+      "heic": {
+        "title": "HEIC란 무엇인가요?",
+        "description": "HEIC(High Efficiency Image Container)는 Apple이 iOS 기기에서 사진에 사용하는 파일 형식입니다. HEVC(High Efficiency Video Coding) 표준을 사용하여 JPG보다 작은 파일 크기로 고품질 이미지를 저장합니다.",
+        "bestFor": "저장 공간이 제한된 모바일 기기에 고품질 사진 저장.",
+        "pros": [
+          "JPG 크기의 절반으로 고품질",
+          "Live Photos 및 깊이 맵 지원",
+          "Apple 기기의 최신 표준"
+        ]
+      },
+      "avif": {
+        "title": "AVIF란 무엇인가요?",
+        "description": "AVIF(AV1 Image File Format)는 HEIF 파일 형식에서 AV1로 압축된 이미지 또는 이미지 시퀀스를 저장하기 위한 개방형 로열티 프리 이미지 파일 형식 사양입니다.",
+        "bestFor": "최대 압축 효율이 필요한 차세대 웹 이미지.",
+        "pros": [
+          "동급 최고의 압축",
+          "HDR 및 광색역 지원",
+          "로열티 프리"
+        ]
+      },
+      "svg": {
+        "title": "SVG란 무엇인가요?",
+        "description": "SVG(Scalable Vector Graphics)는 상호 작용 및 애니메이션을 지원하는 2차원 그래픽용 XML 기반 벡터 이미지 형식입니다. 래스터 이미지와 달리 SVG는 품질 손실 없이 무한히 확장할 수 있습니다.",
+        "bestFor": "모든 크기에서 선명하게 보여야 하는 로고, 아이콘 및 간단한 일러스트레이션.",
+        "pros": [
+          "무한 확장성",
+          "간단한 그래픽의 작은 파일 크기",
+          "코드로 편집 가능"
+        ]
+      },
+      "tiff": {
+        "title": "TIFF란 무엇인가요?",
+        "description": "TIFF(Tagged Image File Format)는 그래픽 아티스트, 출판 업계 및 사진가들 사이에서 인기 있는 래스터 그래픽 이미지를 저장하기 위한 컴퓨터 파일 형식입니다.",
+        "bestFor": "품질이 가장 중요한 전문 사진, 인쇄 및 스캔.",
+        "pros": [
+          "비압축 또는 무손실 압축",
+          "높은 색 심도 지원",
+          "인쇄 업계 표준"
+        ]
+      },
+      "gif": {
+        "title": "GIF란 무엇인가요?",
+        "description": "GIF(Graphics Interchange Format)는 애니메이션을 지원하는 비트맵 이미지 형식입니다. LZW 무손실 데이터 압축을 사용하며 프레임당 최대 256색을 허용합니다.",
+        "bestFor": "간단한 애니메이션, 밈 및 작은 아이콘.",
+        "pros": [
+          "애니메이션 지원",
+          "간단한 그래픽의 작은 파일 크기",
+          "보편적으로 지원"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "우리 이미지 변환기를 사용하는 이유",
+      "items": [
+        {
+          "title": "개인정보 보호 우선",
+          "description": "모든 변환은 브라우저에서 로컬로 이루어집니다. 이미지가 서버에 업로드되지 않습니다."
+        },
+        {
+          "title": "초고속",
+          "description": "WebAssembly로 구동되어 지연 없이 데스크톱급 성능을 제공합니다."
+        },
+        {
+          "title": "제한 없음",
+          "description": "원하는 만큼 이미지를 변환하세요. 파일 크기 제한 없음, 일일 제한 없음."
+        },
+        {
+          "title": "고품질",
+          "description": "모든 변환에서 해상도와 품질을 유지하며 이미지를 신중하게 처리합니다."
+        }
+      ]
+    }
+  }
+}

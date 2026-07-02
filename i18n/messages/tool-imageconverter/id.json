@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "Konverter Gambar",
+    "description": "Konversi gambar dan foto secara online tanpa mengunggah ke server mana pun - alat konverter gambar andalan Anda",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "Pengubah Ukuran Gambar Profesional Gratis Online",
+      "description": "Ubah ukuran gambar dan foto secara online tanpa mengunggah ke server mana pun - alat pengubah ukuran foto andalan Anda",
+      "lightningFast": "Secepat kilat",
+      "free": "Konverter gambar 100% gratis"
+    },
+    "hero": {
+      "badge": "Konverter {from} -> {to}",
+      "title": "Konversi {from} ke {to} dalam hitungan detik",
+      "description": "Unggah gambar {from} dan langsung unduh {to} berkualitas tinggi. Semuanya tetap ada di browser Anda — tanpa unggahan, tanpa batas."
+    },
+    "workspace": {
+      "badge": "Konversi {from} ke {to}",
+      "subtitle": "Ukuran file keluaran {size}.",
+      "sizePending": "menghitung...",
+      "download": {
+        "pending": "Mengonversi...",
+        "ready": "Unduh {to}"
+      },
+      "reset": "Pilih gambar lain",
+      "info": {
+        "original": "Format asli: {format}",
+        "converted": "Keluaran {format}",
+        "dimensions": "Dimensi keluaran: {width} × {height} piksel"
+      },
+      "processing": {
+        "title": "Mengonversi file {from} Anda",
+        "description": "Ini terjadi secara lokal di dalam browser Anda. Gambar yang lebih besar dapat memakan waktu beberapa detik."
+      },
+      "error": {
+        "title": "Konversi gagal",
+        "description": "Kami tidak dapat mengonversi gambar ini. Coba file atau format ekspor yang berbeda.",
+        "cta": "Pilih gambar lain",
+        "generic": "Tidak dapat mengonversi gambar ini. Silakan coba file yang berbeda."
+      },
+      "previewAlt": "{from} dikonversi menjadi {to}"
+    },
+    "moreOptions": {
+      "title": "Jelajahi konverter gambar lainnya",
+      "description": "Ganti format dalam satu klik — semua konverter berjalan secara lokal di browser Anda."
+    },
+    "howTo": {
+      "title": "Cara mengonversi {from} ke {to} di browser Anda",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Unggah gambar Anda",
+          "description": "Letakkan atau pilih file {from} dari perangkat Anda. File tidak pernah meninggalkan browser Anda."
+        },
+        {
+          "number": "2",
+          "title": "Kami mengonversinya secara instan",
+          "description": "Konverter merender gambar Anda sebagai {to} secara lokal, menjaga kualitas dan dimensi tetap utuh."
+        },
+        {
+          "number": "3",
+          "title": "Unduh file {to}",
+          "description": "Simpan {to} yang telah dikonversi dengan satu klik atau pilih format lain."
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ Konverter Gambar",
+      "subtitle": "Semua yang perlu Anda ketahui tentang mengganti format gambar di browser Anda",
+      "items": [
+        {
+          "question": "Apakah konverter gambar gratis untuk digunakan?",
+          "answer": "Ya—setiap konverter di imageconverter.dev gratis, tidak terbatas, dan bebas tanda air. Konversi file sebanyak yang Anda inginkan tanpa membuat akun."
+        },
+        {
+          "question": "Apakah gambar saya pernah diunggah ke server?",
+          "answer": "Tidak. Semua konversi terjadi sepenuhnya di browser Anda menggunakan API Web. Setelah halaman dimuat, Anda bahkan dapat offline dan konverter akan tetap berfungsi."
+        },
+        {
+          "question": "Apakah konverter akan mengurangi kualitas gambar?",
+          "answer": "Kami menjaga resolusi gambar dan hanya menerapkan kompresi ringan saat format target memerlukannya. Latar belakang transparan secara otomatis diratakan menjadi putih saat mengekspor ke JPG."
+        },
+        {
+          "question": "Dapatkah saya mengonversi beberapa gambar sekaligus?",
+          "answer": "Saat ini alat ini menangani satu file sekaligus sehingga Anda dapat meninjau hasilnya sebelum mengunduh. Butuh konversi massal? Coba alat ubah ukuran massal kami dengan dukungan penggantian format."
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "PNG ke JPG",
+        "shortDescription": "Ratakan PNG transparan menjadi JPG ringan yang dimuat lebih cepat secara online.",
+        "metadata": {
+          "title": "Konverter PNG ke JPG — Alat PNG ke JPEG Online Gratis",
+          "description": "Konversi PNG ke JPG secara instan dan perkecil ukuran file tanpa kehilangan kejelasan. Berjalan 100% di browser Anda tanpa unggahan."
+        }
+      },
+      "png-to-webp": {
+        "label": "PNG ke WebP",
+        "shortDescription": "Kompres grafik PNG berat menjadi file WebP ultra-ringan untuk web modern.",
+        "metadata": {
+          "title": "Konverter PNG ke WebP — Kompres Gambar PNG ke WebP",
+          "description": "Konversi gambar PNG ke WebP untuk mengurangi ukuran file secara dramatis sambil tetap tajam. Berbasis browser, aman, dan cepat."
+        }
+      },
+      "jpg-to-png": {
+        "label": "JPG ke PNG",
+        "shortDescription": "Ubah foto JPG menjadi PNG lossless saat Anda membutuhkan transparansi atau tepi yang lebih tajam.",
+        "metadata": {
+          "title": "Konverter JPG ke PNG — Buat PNG Transparan dari JPG Online",
+          "description": "Konversi gambar JPG atau JPEG ke PNG dalam hitungan detik. Pertahankan kualitas dan tambahkan transparansi tanpa meninggalkan browser Anda."
+        }
+      },
+      "jpg-to-webp": {
+        "label": "JPG ke WebP",
+        "shortDescription": "Tingkatkan foto JPG ke file WebP yang efisien untuk pengiriman secepat kilat.",
+        "metadata": {
+          "title": "Konverter JPG ke WebP — Alat JPEG ke WebP Online Gratis",
+          "description": "Ubah file JPG atau JPEG menjadi gambar WebP modern secara instan. Kompresi lebih baik, kualitas sama, tanpa unggahan."
+        }
+      },
+      "webp-to-png": {
+        "label": "WebP ke PNG",
+        "shortDescription": "Ekspor aset WebP kembali ke format PNG lossless yang didukung secara luas.",
+        "metadata": {
+          "title": "Konverter WebP ke PNG — Ekspor Gambar WebP ke PNG Online",
+          "description": "Konversi gambar WebP ke PNG untuk pengeditan atau kompatibilitas. Cepat, pribadi, dan berjalan sepenuhnya di browser Anda."
+        }
+      },
+      "webp-to-jpg": {
+        "label": "WebP ke JPG",
+        "shortDescription": "Jadikan foto WebP Anda dapat dibagikan dengan mengekspornya sebagai JPG universal.",
+        "metadata": {
+          "title": "Konverter WebP ke JPG — Alat WEBP ke JPEG Online Gratis",
+          "description": "Ubah gambar WebP menjadi file JPG secara instan sehingga Anda dapat mengunggahnya di mana saja. Tidak ada kejutan kualitas, tidak ada unggahan server."
+        }
+      },
+      "svg-to-png": {
+        "label": "SVG ke PNG",
+        "shortDescription": "Ubah grafik vektor SVG menjadi PNG transparan yang siap untuk editor atau CMS apa pun.",
+        "metadata": {
+          "title": "Konverter SVG ke PNG — Ekspor Karya Seni SVG ke PNG Online",
+          "description": "Konversi file SVG ke PNG secara instan sambil menjaga tepi tajam dan transparansi. 100% berbasis browser tanpa unggahan."
+        }
+      },
+      "svg-to-jpg": {
+        "label": "SVG ke JPG",
+        "shortDescription": "Ratakan ilustrasi SVG menjadi gambar JPG yang kompatibel secara universal dalam hitungan detik.",
+        "metadata": {
+          "title": "Konverter SVG ke JPG — Alat SVG ke JPEG Online Gratis",
+          "description": "Ubah grafik SVG menjadi file JPG untuk berbagi dengan mudah di mana saja. Cepat, pribadi, dan berjalan sepenuhnya di browser Anda."
+        }
+      },
+      "svg-to-webp": {
+        "label": "SVG ke WebP",
+        "shortDescription": "Hasilkan bitmap WebP ringan dari karya seni SVG tanpa meninggalkan browser Anda.",
+        "metadata": {
+          "title": "Konverter SVG ke WebP — Konversi Gambar SVG ke WebP Online",
+          "description": "Buat gambar WebP dari file SVG untuk mendapatkan aset ultra-kecil sambil menjaga ketepatan visual. Sepenuhnya di sisi klien dan aman."
+        }
+      },
+      "heic-to-png": {
+        "label": "HEIC ke PNG",
+        "shortDescription": "Konversi foto HEIC menjadi PNG transparan yang dapat dibuka di mana saja secara instan.",
+        "metadata": {
+          "title": "Konverter HEIC ke PNG — Alat HEIC ke PNG Online Gratis",
+          "description": "Ubah gambar HEIC menjadi file PNG di browser Anda. Jaga detail tetap tajam, pertahankan transparansi, dan tetap sepenuhnya pribadi."
+        }
+      },
+      "heic-to-jpg": {
+        "label": "HEIC ke JPG",
+        "shortDescription": "Jadikan foto HEIC dapat dibagikan dengan mengekspornya sebagai gambar JPG ringan.",
+        "metadata": {
+          "title": "Konverter HEIC ke JPG — Konversi Foto HEIC ke JPEG Online",
+          "description": "Konversi file HEIC ke JPG secara instan. Tanpa unggahan, tanpa instalasi, hanya konversi HEIC ke JPEG yang cepat di perangkat Anda."
+        }
+      },
+      "heic-to-webp": {
+        "label": "HEIC ke WebP",
+        "shortDescription": "Tingkatkan foto HEIC ke file WebP ultra-efisien untuk web modern.",
+        "metadata": {
+          "title": "Konverter HEIC ke WebP — Alat HEIC ke WebP Online Gratis",
+          "description": "Ubah gambar HEIC ke format WebP dalam hitungan detik untuk file yang lebih kecil dan kualitas yang hebat – semua di browser Anda."
+        }
+      },
+      "avif-to-png": {
+        "label": "AVIF ke PNG",
+        "shortDescription": "Ekspor grafik AVIF ke file PNG lossless yang didukung secara universal.",
+        "metadata": {
+          "title": "Konverter AVIF ke PNG — Konversi Gambar AVIF ke PNG Online",
+          "description": "Konversi gambar AVIF ke PNG secara instan tanpa meninggalkan browser Anda. Jaga tepi tajam dan transparansi tanpa unggahan."
+        }
+      },
+      "avif-to-jpg": {
+        "label": "AVIF ke JPG",
+        "shortDescription": "Ubah foto AVIF menjadi JPG yang kompatibel untuk alur kerja lawas.",
+        "metadata": {
+          "title": "Konverter AVIF ke JPG — Alat AVIF ke JPEG Online Gratis",
+          "description": "Buat salinan JPG dari file AVIF dalam sekejap. Bekerja secara lokal di browser Anda untuk berbagi cepat di mana saja."
+        }
+      },
+      "avif-to-webp": {
+        "label": "AVIF ke WebP",
+        "shortDescription": "Konversi gambar AVIF menjadi file WebP yang hemat ruang tanpa meninggalkan browser.",
+        "metadata": {
+          "title": "Konverter AVIF ke WebP — Konversi Gambar AVIF Online",
+          "description": "Ganti aset AVIF ke WebP untuk kompatibilitas yang lebih baik dan kompresi serupa – cepat, pribadi, dan 100% di sisi klien."
+        }
+      },
+      "tiff-to-png": {
+        "label": "TIFF ke PNG",
+        "shortDescription": "Ekspor pindaian TIFF berat sebagai file PNG ramping yang siap untuk web.",
+        "metadata": {
+          "title": "Konverter TIFF ke PNG — Alat TIFF ke PNG Online Gratis",
+          "description": "Konversi gambar TIFF ke format PNG secara instan. Jaga detail halus tanpa unggahan atau plugin."
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "TIFF ke JPG",
+        "shortDescription": "Kompres file TIFF menjadi JPG ringan saat berada di browser Anda.",
+        "metadata": {
+          "title": "Konverter TIFF ke JPG — Konversi TIFF ke JPEG Online",
+          "description": "Ubah gambar TIFF menjadi JPG dalam hitungan detik untuk ukuran file kecil dan kompatibilitas luas – semua dilakukan secara lokal."
+        }
+      },
+      "tiff-to-webp": {
+        "label": "TIFF ke WebP",
+        "shortDescription": "Ubah aset TIFF menjadi file WebP mutakhir untuk pengiriman lebih cepat.",
+        "metadata": {
+          "title": "Konverter TIFF ke WebP — Konversi Gambar TIFF Online",
+          "description": "Konversi gambar TIFF ke WebP secara instan untuk mengecilkan ukuran file secara dramatis. Pribadi, cepat, dan berbasis browser."
+        }
+      },
+      "gif-to-png": {
+        "label": "GIF ke PNG",
+        "shortDescription": "Ratakan grafik GIF menjadi gambar PNG lossless yang tajam.",
+        "metadata": {
+          "title": "Konverter GIF ke PNG — Alat GIF ke PNG Online Gratis",
+          "description": "Konversi file GIF ke PNG di browser Anda untuk menjaga kualitas tanpa ukuran file yang membengkak."
+        }
+      },
+      "gif-to-jpg": {
+        "label": "GIF ke JPG",
+        "shortDescription": "Ubah aset GIF menjadi JPG yang kompatibel untuk dukungan luas.",
+        "metadata": {
+          "title": "Konverter GIF ke JPG — Konversi GIF ke JPEG Online",
+          "description": "Ekspor gambar GIF ke JPG secara instan dan jaga alur kerja Anda tetap sederhana. Tanpa unggahan, tanpa tanda air."
+        }
+      },
+      "gif-to-webp": {
+        "label": "GIF ke WebP",
+        "shortDescription": "Konversi file GIF menjadi gambar WebP modern untuk ukuran yang lebih kecil.",
+        "metadata": {
+          "title": "Konverter GIF ke WebP — Alat GIF ke WebP Online Gratis",
+          "description": "Ubah grafik GIF ke format WebP untuk memotong bandwidth dan menjaga kualitas, semua di dalam browser Anda."
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "Apa itu PNG?",
+        "description": "PNG (Portable Network Graphics) adalah format file grafis raster yang mendukung kompresi data lossless. Ini dikembangkan sebagai pengganti yang ditingkatkan dan tidak dipatenkan untuk Graphics Interchange Format (GIF).",
+        "bestFor": "Grafis web, logo, bagan, dan ilustrasi yang memerlukan transparansi.",
+        "pros": [
+          "Kompresi lossless (tanpa kehilangan kualitas)",
+          "Mendukung transparansi (saluran alfa)",
+          "Dukungan browser yang luas"
+        ]
+      },
+      "jpg": {
+        "title": "Apa itu JPG?",
+        "description": "JPG (Joint Photographic Experts Group) adalah format gambar terkompresi yang banyak digunakan untuk foto digital dan grafis raster lainnya. Ini menggunakan kompresi lossy untuk menyeimbangkan kualitas gambar dan ukuran file.",
+        "bestFor": "Foto, gambar kompleks dengan banyak warna, dan gambar web di mana ukuran file kecil sangat penting.",
+        "pros": [
+          "Ukuran file kecil",
+          "Kompatibilitas universal",
+          "Tingkat kompresi yang dapat disesuaikan"
+        ]
+      },
+      "webp": {
+        "title": "Apa itu WebP?",
+        "description": "WebP adalah format gambar modern yang digunakan oleh Google yang menyediakan kompresi lossless dan lossy superior untuk gambar di web. Ini memungkinkan webmaster dan pengembang web membuat gambar yang lebih kecil dan lebih kaya yang membuat web lebih cepat.",
+        "bestFor": "Gambar web (menggantikan PNG dan JPG) untuk meningkatkan kecepatan pemuatan halaman.",
+        "pros": [
+          "Kompresi superior (file lebih kecil dari JPG/PNG)",
+          "Mendukung transparansi dan animasi",
+          "Didukung oleh browser modern"
+        ]
+      },
+      "heic": {
+        "title": "Apa itu HEIC?",
+        "description": "HEIC (High Efficiency Image Container) adalah format file yang digunakan oleh Apple untuk foto di perangkat iOS. Ini menggunakan standar HEVC (High Efficiency Video Coding) untuk menyimpan gambar berkualitas tinggi dengan ukuran file lebih kecil dari JPG.",
+        "bestFor": "Menyimpan foto berkualitas tinggi di perangkat seluler dengan penyimpanan terbatas.",
+        "pros": [
+          "Kualitas tinggi dengan setengah ukuran JPG",
+          "Mendukung Live Photos dan peta kedalaman",
+          "Standar modern untuk perangkat Apple"
+        ]
+      },
+      "avif": {
+        "title": "Apa itu AVIF?",
+        "description": "AVIF (AV1 Image File Format) adalah spesifikasi format file gambar terbuka dan bebas royalti untuk menyimpan gambar atau urutan gambar yang dikompresi dengan AV1 dalam format file HEIF.",
+        "bestFor": "Gambar web generasi berikutnya yang memerlukan efisiensi kompresi maksimum.",
+        "pros": [
+          "Kompresi terbaik di kelasnya",
+          "Dukungan HDR dan Wide Color Gamut",
+          "Bebas royalti"
+        ]
+      },
+      "svg": {
+        "title": "Apa itu SVG?",
+        "description": "SVG (Scalable Vector Graphics) adalah format gambar vektor berbasis XML untuk grafis dua dimensi dengan dukungan untuk interaktivitas dan animasi. Tidak seperti gambar raster, SVG dapat diskalakan tanpa batas tanpa kehilangan kualitas.",
+        "bestFor": "Logo, ikon, dan ilustrasi sederhana yang perlu terlihat tajam di ukuran apa pun.",
+        "pros": [
+          "Skalabilitas tak terbatas",
+          "Ukuran file kecil untuk grafis sederhana",
+          "Dapat diedit melalui kode"
+        ]
+      },
+      "tiff": {
+        "title": "Apa itu TIFF?",
+        "description": "TIFF (Tagged Image File Format) adalah format file komputer untuk menyimpan gambar grafis raster, populer di kalangan seniman grafis, industri penerbitan, dan fotografer.",
+        "bestFor": "Fotografi profesional, pencetakan, dan pemindaian di mana kualitas adalah yang terpenting.",
+        "pros": [
+          "Tidak terkompresi atau kompresi lossless",
+          "Dukungan kedalaman warna tinggi",
+          "Standar industri untuk pencetakan"
+        ]
+      },
+      "gif": {
+        "title": "Apa itu GIF?",
+        "description": "GIF (Graphics Interchange Format) adalah format gambar bitmap yang mendukung animasi. Ini menggunakan kompresi data lossless LZW dan memungkinkan hingga 256 warna per frame.",
+        "bestFor": "Animasi sederhana, meme, dan ikon kecil.",
+        "pros": [
+          "Mendukung animasi",
+          "Ukuran file kecil untuk grafis sederhana",
+          "Didukung secara universal"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "Mengapa Menggunakan Konverter Gambar Kami?",
+      "items": [
+        {
+          "title": "Privasi Pertama",
+          "description": "Semua konversi terjadi secara lokal di browser Anda. Gambar Anda tidak pernah diunggah ke server kami."
+        },
+        {
+          "title": "Sangat Cepat",
+          "description": "Didukung oleh WebAssembly, konverter kami memberikan kinerja kelas desktop tanpa lag."
+        },
+        {
+          "title": "Tanpa Batas",
+          "description": "Konversi sebanyak mungkin gambar yang Anda inginkan. Tanpa batas ukuran file, tanpa pembatasan harian."
+        },
+        {
+          "title": "Kualitas Tinggi",
+          "description": "Kami memperlakukan gambar Anda dengan hati-hati, mempertahankan resolusi dan kualitas selama setiap konversi."
+        }
+      ]
+    }
+  }
+}

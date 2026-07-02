@@ -1,8 +1,10 @@
+
 import { NavItem } from "@/types"
 import { getLocalizedNavItems } from "@/config/site-i18n"
 import { NavMobile } from "@/components/layouts/mobile-nav"
 import { SiteFooter } from "@/components/layouts/site-footer"
 import { SiteHeader } from "@/components/layouts/site-header"
+import { CookieConsent } from "@/components/cookie-consent"
 import { getLocale } from "next-intl/server"
 
 interface SiteLayoutProps {
@@ -20,6 +22,7 @@ export async function SiteLayout({ children, navItems }: SiteLayoutProps) {
       <SiteHeader navItems={finalNavItems} scroll={true} />
       <main className="flex-1 px-2 md:px-0">{children}</main>
       <SiteFooter />
+      <CookieConsent />
     </div>
   )
 }

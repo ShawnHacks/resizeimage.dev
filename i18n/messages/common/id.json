@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Home": "Beranda",
+    "Features": "Fitur",
+    "FAQ": "FAQ",
+    "About": "Tentang",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Produk",
+    "Tools": "Alat",
+    "Resources": "Sumber Daya",
+    "Company": "Perusahaan",
+    "Features": "Fitur",
+    "FAQ": "FAQ",
+    "About": "Tentang",
+    "SiteMap": "Peta Situs",
+    "Pricing": "Harga",
+    "License": "Lisensi",
+    "Contact": "Kontak",
+    "Roadmap": "Peta Jalan",
+    "Documentation": "Dokumentasi",
+    "Blog": "Blog",
+    "Cookie Policy": "Kebijakan Cookie",
+    "Privacy Policy": "Kebijakan Privasi",
+    "Terms of Service": "Ketentuan Layanan"
+  },
+  "HomePage": {
+    "tagline": "ImageConverter",
+    "title": "Konverter Gambar Gratis",
+    "subtitle": "Konversi gambar di browser Anda. Tanpa registrasi, tanpa unggahan, konverter foto 100% aman dan pribadi.",
+    "localHint": "Konversi format gambar secara lokal di browser Anda, tanpa unggahan, 100% aman dan pribadi",
+    "previewAlt": "Pratinjau gambar yang dipilih",
+    "settingsTitle": "Pengaturan keluaran",
+    "reset": "Pilih gambar lain",
+    "formatLabel": "Format keluaran",
+    "formatPlaceholder": "Pilih format",
+    "qualityLabel": "Kualitas",
+    "qualityDisabled": "Ekspor PNG secara otomatis mempertahankan kualitas penuh.",
+    "qualityHint": "Sesuaikan kualitas untuk ekspor JPG dan WebP.",
+    "downloadCta": "Unduh {format}",
+    "unknownFormat": "Tidak dikenal",
+    "quickImageConverters": "Konverter Gambar Cepat",
+    "benefitsTitle": "Mengapa memilih ImageConverter?",
+    "benefitsDescription": "Percepat alur kerja Anda dengan toolkit konversi gambar pribadi yang mengutamakan browser.",
+    "benefits": {
+      "items": [
+        "Berjalan 100% di browser Anda sehingga file Anda tidak pernah meninggalkan perangkat Anda.",
+        "Mendukung format modern dan lama termasuk HEIC, AVIF, GIF, TIFF, PNG, JPG, dan WebP.",
+        "Pilih kualitas output dan pratinjau ukuran file secara instan sebelum mengunduh.",
+        "Dioptimalkan untuk kecepatan tanpa pendaftaran, batasan, atau tanda air."
+      ]
+    },
+    "howTitle": "Cara kerja ImageConverter",
+    "howSteps": [
+      {
+        "title": "Pilih atau letakkan gambar",
+        "description": "Unggah file atau seret ke ruang kerja — kami mendeteksi format sumber secara otomatis."
+      },
+      {
+        "title": "Pilih pengaturan output",
+        "description": "Pilih format target Anda dan sesuaikan kualitas untuk output JPG atau WebP dalam hitungan detik."
+      },
+      {
+        "title": "Unduh secara instan",
+        "description": "Dapatkan file yang dikonversi segera. Tanpa antrian, tanpa unggahan, tanpa pelacakan."
+      }
+    ],
+    "ctaTitle": "Siap mengoptimalkan alur kerja gambar Anda?",
+    "ctaDescription": "Jelajahi lebih banyak alat yang mengutamakan browser untuk pengubahan ukuran massal, tangkapan layar, pembersihan metadata, dan lainnya.",
+    "ctaButton": "Jelajahi semua alat"
+  },
+  "SiteConfig": {
+    "title": "Konverter Gambar - Konverter Foto Online Gratis",
+    "description": "Alat konverter gambar online gratis terbaik. Konversi format gambar secara lokal di browser Anda. Tanpa unggahan, konverter foto 100% aman dan pribadi.",
+    "keywords": {
+      "0": "konverter gambar",
+      "1": "konverter gambar gratis",
+      "2": "konverter foto",
+      "3": "konversi gambar",
+      "4": "konversi gambar online",
+      "5": "png ke jpg",
+      "6": "png ke webp",
+      "7": "jpg ke png",
+      "8": "jpg ke webp",
+      "9": "webp ke png",
+      "10": "webp ke jpg"
+    },
+    "installApp": "Instal Aplikasi"
+  },
+  "AboutPage": {
+    "metaTitle": "Tentang ImageConverter - Konverter Foto Online Gratis",
+    "metaDescription": "Pelajari ImageConverter, konverter foto online gratis yang memungkinkan Anda mengonversi gambar antar berbagai format tanpa mengunggah file ke server mana pun. Semua konversi terjadi secara lokal di browser, memastikan privasi dan keamanan penuh."
+  },
+  "ContactPage": {
+    "metaTitle": "Hubungi Kami",
+    "metaDescription": "Punya pertanyaan atau masukan? Hubungi kami untuk mendapatkan dukungan.",
+    "metaKeywords": "hubungi kami, dukungan, layanan pelanggan, bantuan, masukan"
+  },
+  "NotFoundPage": {
+    "title": "Halaman tidak ditemukan",
+    "description": "Halaman yang Anda cari tidak dapat ditemukan. Mungkin telah dipindahkan, dihapus, atau Anda salah memasukkan URL.",
+    "backToHome": "Kembali ke Beranda"
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Kebijakan Cookie - Cara Kami Menggunakan Cookie",
+    "metaDescription": "Pelajari bagaimana layanan situs web kami menggunakan cookie untuk meningkatkan pengalaman Anda. Pahami jenis cookie, opsi pengelolaan, dan hak privasi Anda.",
+    "metaKeywords": "kebijakan cookie, privasi, cookie, alat situs web, perlindungan data, privasi pengguna"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Kebijakan Privasi",
+    "metaDescription": "Baca kebijakan privasi kami untuk memahami bagaimana kami mengumpulkan, menggunakan, dan melindungi informasi pribadi Anda saat menggunakan layanan situs web kami.",
+    "metaKeywords": "kebijakan privasi, perlindungan data, informasi pribadi, alat situs web, privasi pengguna"
+  },
+  "TermsPage": {
+    "metaTitle": "Syarat & Ketentuan - Perjanjian Layanan",
+    "metaDescription": "Baca syarat dan ketentuan kami untuk memahami aturan dan pedoman penggunaan layanan situs web kami.",
+    "metaKeywords": "syarat dan ketentuan, perjanjian layanan, ketentuan penggunaan, alat situs web, perjanjian pengguna"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Pelajari tentang tangkapan layar situs web, kiat pengembangan web, dan alat digital. Panduan dan tutorial ahli untuk pengembang dan desainer.",
+    "keywords": "blog tangkapan layar situs web, tutorial pengembangan web, panduan alat digital, tutorial tangkapan layar, kiat desain web",
+    "readMore": "Baca Selengkapnya",
+    "minRead": "mnt dibaca",
+    "noPosts": "Belum ada postingan blog. Segera kembali!",
+    "categories": "Kategori",
+    "recentPosts": "Postingan Terbaru",
+    "posts": "postingan"
+  },
+  "BlogPost": {
+    "backToBlog": "Kembali ke Blog",
+    "writtenBy": "Ditulis oleh",
+    "published": "Diterbitkan",
+    "updated": "Diperbarui",
+    "shareArticle": "Bagikan artikel ini",
+    "relatedPosts": "Artikel Terkait",
+    "tags": "Tag",
+    "minRead": "mnt dibaca",
+    "views": "dilihat",
+    "lastUpdated": "Terakhir diperbarui:",
+    "like": "Suka",
+    "share": "Bagikan",
+    "quickActions": "Tindakan Cepat",
+    "copyLink": "Salin Tautan",
+    "socialShare": "Berbagi Sosial",
+    "aboutAuthor": "Tentang Penulis",
+    "relatedArticles": "Artikel Terkait",
+    "continueExploring": "Lanjutkan menjelajahi lebih banyak konten terkait",
+    "toolsComparison": "Perbandingan Alat",
+    "seoGuide": "Panduan SEO",
+    "tutorial": "Tutorial",
+    "blog": "Blog",
+    "category": "Kategori",
+    "categories": "Kategori",
+    "articles": "{count} {count, plural, one {artikel} other {artikel}}",
+    "noArticles": "Belum ada artikel dalam kategori ini.",
+    "readMore": "Baca Selengkapnya",
+    "categoryNotFound": "Kategori Tidak Ditemukan",
+    "categoryNotFoundDescription": "Kategori yang diminta tidak dapat ditemukan.",
+    "postNotFound": "Postingan Tidak Ditemukan",
+    "postNotFoundDescription": "Postingan blog yang diminta tidak dapat ditemukan."
+  },
+  "Tools": {
+    "title": "Alat Gratis",
+    "resizeimage": "Ubah Ukuran Gambar",
+    "resizeimageDesc": "Ubah Ukuran Gambar",
+    "bulkresizeimages": "Ubah Ukuran Gambar Massal",
+    "bulkresizeimagesDesc": "Ubah Ukuran Gambar Massal",
+    "imageconverter": "Konversi Format Gambar",
+    "imageconverterDesc": "Konversi Format Gambar",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Ambil Tangkapan Layar",
+    "screentellDesc": "Perekam demo layar",
+    "imagecompressor": "Kompres Gambar",
+    "imagecompressorDesc": "Kompres Gambar",
+    "crop": "Crop image",
+    "cropDesc": "Pangkas Gambar",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Watermark Images",
+    "stitchimages": "Penyambung Gambar",
+    "stitchimagesDesc": "Sambung Gambar"
+  },
+  "ImageUploader": {
+    "titleSingle": "Seret dan Lepas Gambar Anda",
+    "titleMultiple": "Seret dan Lepas Gambar-gambar Anda",
+    "subtitleSingle": "atau klik untuk menelusuri",
+    "selectImagesSingle": "Pilih Gambar",
+    "selectImagesMultiple": "Pilih Gambar",
+    "supportedFormats": "Mendukung: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG atau WebP",
+    "maxFiles": "Maksimum {max} file",
+    "maxSizeMB": "Maks {size}MB per file",
+    "dropHere": "Lepaskan gambar Anda di sini",
+    "filesSelected": "File berhasil dipilih",
+    "file": "file",
+    "files": "file",
+    "errorInvalidFiles": "Jenis file tidak valid",
+    "errorTooManyFiles": "Terlalu banyak file",
+    "errorFileSizeExceeded": "Beberapa file terlalu besar"
+  }
+}

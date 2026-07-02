@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Penggabung Gambar Online",
+    "pageTitle": "Alat Penggabung Gambar Online Gratis",
+    "pageDescription": "Gabungkan beberapa gambar pada kanvas yang dapat disesuaikan. Seret, ubah ukuran, putar, dan atur gambar secara bebas langsung di browser Anda.",
+    "metadata": {
+      "title": "Gabung Gambar Online Gratis — Kombinasikan & Gabungkan Foto Online",
+      "description": "Alat penggabung gambar online gratis terbaik. Gabungkan beberapa foto pada satu kanvas. Penggabung foto online profesional untuk menyeret, memutar, dan melapis gambar secara instan."
+    },
+    "intro": {
+      "title": "Alat Penggabung Gambar Online Profesional Gratis",
+      "content": "Alat penggabung gambar online gratis kami memungkinkan Anda menggabungkan beberapa foto menjadi satu kreasi beresolusi tinggi tanpa unduhan atau persyaratan akun. Baik Anda membuat kolase, mockup profesional, atau sekadar menggabungkan foto secara online, alat ini memberikan fleksibilitas aplikasi desktop langsung di browser web Anda. Seret, ubah ukuran, dan atur ulang lapisan dengan mudah sambil menjaga privasi penuh karena semua pemrosesan dilakukan secara lokal."
+    },
+    "controls": {
+      "canvasSettings": "Pengaturan Kanvas",
+      "width": "Lebar Kanvas",
+      "height": "Tinggi Kanvas",
+      "backgroundColor": "Warna Latar Belakang",
+      "addItem": "Tambah Gambar",
+      "layers": "Lapisan",
+      "imageProperties": "Properti Gambar",
+      "rotate": "Putar",
+      "opacity": "Opasitas",
+      "bringToFront": "Bawa ke Depan",
+      "sendToBack": "Kirim ke Belakang",
+      "bringForward": "Bawa Maju",
+      "sendBackward": "Kirim Mundur",
+      "remove": "Hapus Gambar",
+      "exportFormat": "Format Ekspor",
+      "transparent": "Transparan",
+      "white": "Putih",
+      "noLayers": "Tidak Ada Layer",
+      "layerName": "Layer {index}",
+      "zoom": "Perbesar",
+      "zoomIn": "Perbesar",
+      "zoomOut": "Perkecil",
+      "fitToScreen": "Sesuaikan dengan Layar",
+      "setCanvasToImageSize": "Atur Ukuran Kanvas Sesuai Ukuran Gambar",
+      "matchCanvasSize": "Sesuaikan Ukuran Kanvas"
+    },
+    "canvas": {
+      "placeholder": "Seret dan lepas gambar di sini atau gunakan tombol tambah untuk mulai menggabungkan."
+    },
+    "errors": {
+      "noImages": "Tidak ada gambar untuk diunduh",
+      "exportFailed": "Gagal mengekspor gambar",
+      "loadFailed": "Gagal memuat {name}"
+    },
+    "actions": {
+      "download": "Unduh Gambar yang Digabung",
+      "preview": "Pratinjau",
+      "reset": "Atur Ulang Kanvas",
+      "uploadMore": "Unggah Lebih Banyak"
+    },
+    "howTo": {
+      "title": "Cara Menggabungkan Gambar Online",
+      "step1": {
+        "number": "1",
+        "title": "Atur Ukuran Kanvas",
+        "description": "Sesuaikan lebar dan tinggi kanvas agar sesuai dengan tata letak yang diinginkan."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Tambah & Atur Gambar",
+        "description": "Unggah gambar Anda dan seret untuk memposisikannya. Ubah ukuran dan putar sesuai kebutuhan."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Ekspor Kreasi Anda",
+        "description": "Klik unduh untuk menyimpan gambar gabungan Anda sebagai satu file."
+      }
+    },
+    "faq": {
+      "title": "Tanya Jawab Penggabung Foto Online",
+      "items": [
+        {
+          "question": "Apakah alat penggabung gambar online ini benar-benar gratis?",
+          "answer": "Ya, alat kami 100% gratis untuk digunakan. Tidak ada biaya tersembunyi, langganan, atau tanda air pada gambar yang Anda ekspor."
+        },
+        {
+          "question": "Bagaimana cara menggunakan penggabung foto online ini?",
+          "answer": "Cukup atur ukuran kanvas Anda, unggah gambar, lalu gunakan mouse untuk menyeret dan mengaturnya. Anda dapat menggunakan panel properti untuk memutar dan menyesuaikan opasitas setiap lapisan."
+        },
+        {
+          "question": "Apakah data saya tetap pribadi saat menggabungkan foto secara online?",
+          "answer": "Tentu saja. Alat ini menggunakan pemrosesan sisi klien, yang berarti gambar Anda tidak pernah meninggalkan komputer Anda atau menyentuh server kami."
+        },
+        {
+          "question": "Format gambar apa saja yang didukung?",
+          "answer": "Kami mendukung semua format web umum termasuk JPG, PNG, WebP, dan SVG."
+        }
+      ]
+    }
+  }
+}

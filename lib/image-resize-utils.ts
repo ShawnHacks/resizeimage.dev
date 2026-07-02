@@ -5,7 +5,7 @@
  * Note: file-saver and jszip are dynamically imported to avoid SSR issues
  */
 
-export type ResizeMode = 
+export type ResizeMode =
   | 'percentage'
   | 'fileSize'
   | 'dimensions'
@@ -17,22 +17,22 @@ export type ImageFormat = 'jpeg' | 'png' | 'webp';
 
 export interface ResizeOptions {
   mode: ResizeMode;
-  
+
   // Percentage mode
   percentage?: number; // 10-200
-  
+
   // File Size mode
   targetFileSize?: number; // KB
   format?: ImageFormat;
   quality?: number; // 0-100
-  
+
   // Dimensions mode
   width?: number;
   height?: number;
   lockAspectRatio?: boolean;
   usePadding?: boolean; // Add padding instead of stretching
   backgroundColor?: string; // Background color for padding
-  
+
   // Width/Height/Longest Side mode
   targetValue?: number; // pixels
 }
@@ -53,14 +53,14 @@ async function loadImage(file: File): Promise<HTMLImageElement> {
   return new Promise((resolve, reject) => {
     const img = new Image();
     let objectUrl: string | null = null;
-    
+
     try {
       objectUrl = URL.createObjectURL(file);
     } catch (err) {
       reject(new Error(`Failed to create blob URL for: ${file.name}`));
       return;
     }
-    
+
     // Add timeout to prevent hanging (10 seconds is enough for most images)
     const timeout = setTimeout(() => {
       if (objectUrl) {
@@ -73,12 +73,12 @@ async function loadImage(file: File): Promise<HTMLImageElement> {
       }
       reject(new Error(`Image load timeout (10s): ${file.name}`));
     }, 10000); // 10 second timeout
-    
+
     img.onload = () => {
       clearTimeout(timeout);
       resolve(img);
     };
-    
+
     img.onerror = () => {
       clearTimeout(timeout);
       if (objectUrl) {
@@ -90,7 +90,7 @@ async function loadImage(file: File): Promise<HTMLImageElement> {
       }
       reject(new Error(`Failed to load image: ${file.name}`));
     };
-    
+
     // Set source after handlers are attached
     try {
       img.src = objectUrl;
@@ -130,7 +130,7 @@ function calculateDimensions(
     case 'dimensions': {
       const targetWidth = options.width || originalWidth;
       const targetHeight = options.height || originalHeight;
-      
+
       if (options.usePadding && options.width && options.height) {
         // With padding: return target dimensions (canvas size)
         // The actual image will be scaled to fit inside these dimensions
@@ -139,10 +139,10 @@ function calculateDimensions(
           height: targetHeight,
         };
       }
-      
+
       if (options.lockAspectRatio) {
         const aspectRatio = originalWidth / originalHeight;
-        
+
         if (options.width && !options.height) {
           return {
             width: options.width,
@@ -161,7 +161,7 @@ function calculateDimensions(
           };
         }
       }
-      
+
       return {
         width: targetWidth,
         height: targetHeight,
@@ -189,7 +189,7 @@ function calculateDimensions(
     case 'longestSide': {
       const targetSize = options.targetValue || Math.max(originalWidth, originalHeight);
       const aspectRatio = originalWidth / originalHeight;
-      
+
       if (originalWidth > originalHeight) {
         return {
           width: targetSize,
@@ -314,7 +314,7 @@ async function resizeToFileSize(
 ): Promise<{ blob: Blob; dimensions: { width: number; height: number } }> {
   const img = await loadImage(file);
   const targetBytes = targetKB * 1024;
-  
+
   let scale = 1.0;
   let currentBlob: Blob;
   let canvas: HTMLCanvasElement;
@@ -328,7 +328,7 @@ async function resizeToFileSize(
     scale -= 0.1;
     const newWidth = Math.round(img.width * scale);
     const newHeight = Math.round(img.height * scale);
-    
+
     canvas = resizeWithCanvas(img, newWidth, newHeight);
     currentBlob = await canvasToBlob(canvas, format, quality);
   }
@@ -371,8 +371,8 @@ export async function resizeImage(
     const usePadding = options.mode === 'dimensions' && options.usePadding === true;
     const backgroundColor = options.backgroundColor || '#FFFFFF';
     const canvas = resizeWithCanvas(
-      img, 
-      dimensions.width, 
+      img,
+      dimensions.width,
       dimensions.height,
       usePadding,
       backgroundColor
@@ -447,7 +447,7 @@ export async function downloadImagesAsZip(
     import('file-saver'),
     import('jszip')
   ]);
-  
+
   const saveAs = fileSaverModule.saveAs || (fileSaverModule as any).default;
   const JSZip = (JSZipModule as any).default || JSZipModule;
   const zip = new JSZip();
@@ -467,7 +467,7 @@ export async function downloadImagesAsZip(
 export async function getImageDimensions(file: File): Promise<{ width: number; height: number }> {
   const img = await loadImage(file);
   const dimensions = { width: img.width, height: img.height };
-  
+
   // Clean up the blob URL used for loading
   try {
     if (img.src && img.src.startsWith('blob:')) {
@@ -479,6 +479,6 @@ export async function getImageDimensions(file: File): Promise<{ width: number; h
       console.warn('Failed to revoke blob URL:', err);
     }
   }
-  
+
   return dimensions;
 }

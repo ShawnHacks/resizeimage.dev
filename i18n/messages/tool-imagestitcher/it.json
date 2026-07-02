@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Unisci Immagini Online",
+    "pageTitle": "Strumento Gratuito per Unire Immagini Online",
+    "pageDescription": "Unisci più immagini su una tela personalizzabile. Trascina, ridimensiona, ruota e disponi le immagini liberamente direttamente nel tuo browser.",
+    "metadata": {
+      "title": "Unisci Immagini Online Gratis — Combinare e Unire Foto Online",
+      "description": "Il miglior strumento gratuito per unire immagini online. Combina più foto su una singola tela. Strumento professionale per unire foto online: trascina, ruota e organizza i livelli all'istante."
+    },
+    "intro": {
+      "title": "Strumento Professionale Gratuito per Unire Immagini Online",
+      "content": "Il nostro strumento gratuito per unire immagini online ti consente di combinare più foto in un'unica creazione ad alta risoluzione senza download o account richiesti. Che tu stia creando un collage, un mockup professionale o semplicemente unendo foto online, questo strumento offre la flessibilità di un'app desktop direttamente nel tuo browser. Trascina, ridimensiona e riorganizza i livelli con facilità, mantenendo la massima privacy poiché tutta l'elaborazione avviene localmente."
+    },
+    "controls": {
+      "canvasSettings": "Impostazioni Tela",
+      "width": "Larghezza Tela",
+      "height": "Altezza Tela",
+      "backgroundColor": "Colore di Sfondo",
+      "addItem": "Aggiungi Immagine",
+      "layers": "Livelli",
+      "imageProperties": "Proprietà Immagine",
+      "rotate": "Ruota",
+      "opacity": "Opacità",
+      "bringToFront": "Porta in Primo Piano",
+      "sendToBack": "Porta in Secondo Piano",
+      "bringForward": "Porta Avanti",
+      "sendBackward": "Porta Indietro",
+      "remove": "Rimuovi Immagine",
+      "exportFormat": "Formato di Esportazione",
+      "transparent": "Trasparente",
+      "white": "Bianco",
+      "noLayers": "Nessun livello",
+      "layerName": "Livello {index}",
+      "zoom": "Zoom",
+      "zoomIn": "Ingrandisci",
+      "zoomOut": "Rimpicciolisci",
+      "fitToScreen": "Adatta allo schermo",
+      "setCanvasToImageSize": "Imposta dimensione tela alla dimensione immagine",
+      "matchCanvasSize": "Adatta a dimensione tela"
+    },
+    "canvas": {
+      "placeholder": "Trascina e rilascia le immagini qui o usa il pulsante Aggiungi per iniziare l'unione."
+    },
+    "errors": {
+      "noImages": "Nessuna immagine da scaricare",
+      "exportFailed": "Esportazione immagine fallita",
+      "loadFailed": "Caricamento fallito {name}"
+    },
+    "actions": {
+      "download": "Scarica Immagine Unita",
+      "preview": "Anteprima",
+      "reset": "Reimposta Tela",
+      "uploadMore": "Carica Altro"
+    },
+    "howTo": {
+      "title": "Come Unire le Immagini Online",
+      "step1": {
+        "number": "1",
+        "title": "Imposta Dimensione Tela",
+        "description": "Regola la larghezza e l'altezza della tela in base al layout desiderato."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Aggiungi e Disponi Immagini",
+        "description": "Carica le tue immagini e trascinale in posizione. Ridimensiona e ruota secondo necessità."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Esporta la Tua Creazione",
+        "description": "Fai clic su download per salvare l'immagine combinata come un unico file."
+      }
+    },
+    "faq": {
+      "title": "FAQ Unione Foto Online",
+      "items": [
+        {
+          "question": "Questo strumento per unire immagini online è davvero gratuito?",
+          "answer": "Sì, il nostro strumento è gratuito al 100%. non ci sono costi nascosti, abbonamenti o filigrane sulle immagini esportate."
+        },
+        {
+          "question": "Come si usa questo strumento per unire le foto online?",
+          "answer": "Imposta semplicemente la dimensione della tela, carica le tue immagini e usa il mouse per trascinarle e disporle. Puoi usare il pannello delle proprietà per ruotare e regolare l'opacità di ogni livello."
+        },
+        {
+          "question": "I miei dati rimangono privati durante l'unione delle foto online?",
+          "answer": "Assolutamente sì. Questo strumento utilizza l'elaborazione lato client, il che significa che le tue immagini non lasciano mai il tuo computer né toccano i nostri server."
+        },
+        {
+          "question": "Quali formati immagine sono supportati?",
+          "answer": "Supportiamo tutti i comuni formati web tra cui JPG, PNG, WebP e SVG."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Image Stitcher Online",
+    "pageTitle": "Free Image Stitcher Online",
+    "pageDescription": "Stitch multiple images together on a customizable canvas. Drag, resize, rotate, and arrange images freely directly in your browser.",
+    "metadata": {
+      "title": "Free Image Stitcher Online — Combine & Photo Stitcher Online",
+      "description": "The best free image stitcher online. Combine multiple photos onto a single canvas. Professional photo stitcher online to drag, rotate, and layer images instantly in your browser."
+    },
+    "intro": {
+      "title": "Professional Free Image Stitcher Online",
+      "content": "Our free image stitcher online tool allows you to combine multiple photos into a single, high-resolution creation without any downloads or account requirements. Whether you are creating a collage, a professional mockup, or simply merging photos online, this photo stitcher online provides the flexibility of a desktop app directly in your web browser. Drag, resize, and reorder layers with ease while maintaining full privacy as all processing happens locally."
+    },
+    "controls": {
+      "canvasSettings": "Canvas Settings",
+      "width": "Canvas Width",
+      "height": "Canvas Height",
+      "backgroundColor": "Background Color",
+      "addItem": "Add Image",
+      "layers": "Layers",
+      "imageProperties": "Image Properties",
+      "rotate": "Rotate",
+      "opacity": "Opacity",
+      "bringToFront": "Bring to Front",
+      "sendToBack": "Send to Back",
+      "bringForward": "Bring Forward",
+      "sendBackward": "Send Backward",
+      "remove": "Remove Image",
+      "matchCanvasSize": "Match Canvas Size",
+      "setCanvasToImageSize": "Set Canvas to Image Size",
+      "exportFormat": "Export Format",
+      "transparent": "Transparent",
+      "white": "White",
+      "noLayers": "No Layers",
+      "layerName": "Layer {index}",
+      "zoom": "Zoom",
+      "zoomIn": "Zoom In",
+      "zoomOut": "Zoom Out",
+      "fitToScreen": "Fit to Screen"
+    },
+    "canvas": {
+      "placeholder": "Drag and drop images here or use the add button to start stitching."
+    },
+    "errors": {
+      "noImages": "No images to download",
+      "exportFailed": "Failed to export image",
+      "loadFailed": "Failed to load {name}"
+    },
+    "actions": {
+      "download": "Download Stitched Image",
+      "preview": "Preview",
+      "reset": "Reset Canvas",
+      "uploadMore": "Upload More"
+    },
+    "howTo": {
+      "title": "How to Stitch Images Together Online",
+      "step1": {
+        "number": "1",
+        "title": "Set Canvas Size",
+        "description": "Adjust the canvas width and height to fit your desired layout."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Add & Arrange Images",
+        "description": "Upload your images and drag them to position. Resize and rotate as needed."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Export Your Creation",
+        "description": "Click download to save your combined image as a single file."
+      }
+    },
+    "faq": {
+      "title": "Photo Stitcher Online FAQ",
+      "items": [
+        {
+          "question": "Is this free image stitcher online really free?",
+          "answer": "Yes, our tool is 100% free to use. There are no hidden fees, subscriptions, or watermarks on your exported images."
+        },
+        {
+          "question": "How do I use this photo stitcher online?",
+          "answer": "Simply set your canvas size, upload your images, and use your mouse to drag and arrange them. You can use the properties panel to rotate and adjust opacity for each layer."
+        },
+        {
+          "question": "Does my data stay private while merging photos online?",
+          "answer": "Absolutely. This tool uses client-side processing, meaning your images never leave your computer or touch our servers."
+        },
+        {
+          "question": "What image formats are supported?",
+          "answer": "We support all common web formats including JPG, PNG, WebP, and SVG, and more."
+        }
+      ]
+    }
+  }
+}

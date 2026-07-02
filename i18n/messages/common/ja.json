@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Home": "ホーム",
+    "Features": "特徴",
+    "FAQ": "よくある質問",
+    "About": "概要",
+    "Blog": "ブログ"
+  },
+  "Footer": {
+    "Product": "製品",
+    "Tools": "ツール",
+    "Resources": "リソース",
+    "Company": "会社",
+    "Features": "特徴",
+    "FAQ": "よくある質問",
+    "About": "概要",
+    "SiteMap": "サイトマップ",
+    "Pricing": "価格",
+    "License": "ライセンス",
+    "Contact": "お問い合わせ",
+    "Roadmap": "ロードマップ",
+    "Documentation": "ドキュメンテーション",
+    "Blog": "ブログ",
+    "Cookie Policy": "クッキーポリシー",
+    "Privacy Policy": "プライバシーポリシー",
+    "Terms of Service": "利用規約"
+  },
+  "HomePage": {
+    "tagline": "ImageConverter",
+    "title": "無料の画像変換ソフト",
+    "subtitle": "ブラウザで画像を変換します。登録不要、アップロード不要、100%安全でプライベートな写真変換ソフトです。",
+    "localHint": "ブラウザでローカルに画像形式を変換、アップロード不要、100%安全でプライベート",
+    "previewAlt": "選択した画像のプレビュー",
+    "settingsTitle": "出力設定",
+    "reset": "別の画像を選択",
+    "formatLabel": "出力形式",
+    "formatPlaceholder": "形式を選択",
+    "qualityLabel": "品質",
+    "qualityDisabled": "PNGエクスポートは自動的に完全な品質を維持します。",
+    "qualityHint": "JPGおよびWebPエクスポートの品質を調整します。",
+    "downloadCta": "{format}をダウンロード",
+    "unknownFormat": "不明",
+    "quickImageConverters": "クイック画像コンバーター",
+    "benefitsTitle": "ImageConverterを選ぶ理由",
+    "benefitsDescription": "プライベートなブラウザファーストの画像変換ツールキットでワークフローを高速化します。",
+    "benefits": {
+      "items": [
+        "100%ブラウザで実行されるため、ファイルがデバイスから離れることはありません。",
+        "HEIC、AVIF、GIF、TIFF、PNG、JPG、WebPなどの最新および従来のフォーマットをサポートします。",
+        "出力品質を選択し、ダウンロード前にファイルサイズを即座にプレビューします。",
+        "サインアップ、制限、透かしなしで速度が最適化されています。"
+      ]
+    },
+    "howTitle": "ImageConverterの仕組み",
+    "howSteps": [
+      {
+        "title": "画像を選択またはドロップ",
+        "description": "ファイルをアップロードするか、ワークスペースにドラッグします — ソース形式を自動的に検出します。"
+      },
+      {
+        "title": "出力設定を選択",
+        "description": "ターゲット形式を選択し、JPGまたはWebP出力の品質を数秒で調整します。"
+      },
+      {
+        "title": "すぐにダウンロード",
+        "description": "変換されたファイルをすぐに取得します。キュー、アップロード、追跡はありません。"
+      }
+    ],
+    "ctaTitle": "画像ワークフローを最適化する準備はできましたか？",
+    "ctaDescription": "一括サイズ変更、スクリーンショット、メタデータクリーンアップなどのブラウザファーストのツールをさらに探索してください。",
+    "ctaButton": "すべてのツールを閲覧"
+  },
+  "SiteConfig": {
+    "title": "画像コンバーター - 無料のオンライン写真コンバーター",
+    "description": "最高の無料オンライン画像変換ツール。ブラウザでローカルに画像形式を変換します。アップロード不要、100%安全でプライベートな写真コンバーター。",
+    "keywords": {
+      "0": "画像コンバーター",
+      "1": "無料の画像コンバーター",
+      "2": "写真コンバーター",
+      "3": "画像を変換",
+      "4": "オンラインで画像を変換",
+      "5": "pngからjpgへ",
+      "6": "pngからwebpへ",
+      "7": "jpgからpngへ",
+      "8": "jpgからwebpへ",
+      "9": "webpからpngへ",
+      "10": "webpからjpgへ"
+    },
+    "installApp": "アプリをインストール"
+  },
+  "AboutPage": {
+    "metaTitle": "ImageConverter について - 無料のオンライン写真コンバーター",
+    "metaDescription": "ImageConverter のご紹介。これは無料のオンライン写真コンバーターで、ファイルをいかなるサーバーにもアップロードすることなく、複数の形式間で画像を変換できます。すべての変換はブラウザ内でローカルに行われ、完全なプライバシーとセキュリティを保証します。"
+  },
+  "ContactPage": {
+    "metaTitle": "お問い合わせ",
+    "metaDescription": "ご質問やフィードバックがありますか？サポートについてはお問い合わせください。",
+    "metaKeywords": "お問い合わせ、サポート、カスタマーサービス、ヘルプ、フィードバック"
+  },
+  "NotFoundPage": {
+    "title": "ページが見つかりません",
+    "description": "お探しのページは見つかりませんでした。移動または削除されたか、URLが間違っている可能性があります。",
+    "backToHome": "ホームページに戻る"
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "クッキーポリシー - クッキーの使用方法",
+    "metaDescription": "当社のウェブサイトサービスがお客様のエクスペリエンスを向上させるためにクッキーをどのように使用するかをご覧ください。クッキーの種類、管理オプション、およびお客様のプライバシー権についてご理解ください。",
+    "metaKeywords": "クッキーポリシー、プライバシー、クッキー、ウェブサイトツール、データ保護、ユーザープライバシー"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "プライバシーポリシー",
+    "metaDescription": "当社のウェブサイトサービスをご利用になる際に、当社がお客様の個人情報をどのように収集、使用、保護するかをご理解いただくために、当社のプライバシーポリシーをお読みください。",
+    "metaKeywords": "プライバシーポリシー、データ保護、個人情報、ウェブサイトツール、ユーザープライバシー"
+  },
+  "TermsPage": {
+    "metaTitle": "利用規約 - サービス契約",
+    "metaDescription": "当社のウェブサイトサービスを利用するための規則とガイドラインを理解するために、当社の利用規約をお読みください。",
+    "metaKeywords": "利用規約、サービス契約、利用規約、ウェブサイトツール、ユーザー契約"
+  },
+  "BlogPage": {
+    "title": "ブログ",
+    "description": "ウェブサイトのスクリーンショット、ウェブ開発のヒント、デジタルツールについて学びましょう。開発者やデザイナー向けの専門家によるガイドとチュートリアル。",
+    "keywords": "ウェブサイトのスクリーンショットブログ、ウェブ開発チュートリアル、デジタルツールガイド、スクリーンショットチュートリアル、ウェブデザインのヒント",
+    "readMore": "続きを読む",
+    "minRead": "分で読めます",
+    "noPosts": "まだブログ投稿はありません。しばらくしてからもう一度ご確認ください。",
+    "categories": "カテゴリ",
+    "recentPosts": "最近の投稿",
+    "posts": "投稿"
+  },
+  "BlogPost": {
+    "backToBlog": "ブログに戻る",
+    "writtenBy": "作成者",
+    "published": "公開日",
+    "updated": "更新日",
+    "shareArticle": "この記事を共有する",
+    "relatedPosts": "関連記事",
+    "tags": "タグ",
+    "minRead": "分で読めます",
+    "views": "閲覧数",
+    "lastUpdated": "最終更新日:",
+    "like": "いいね",
+    "share": "共有",
+    "quickActions": "クイックアクション",
+    "copyLink": "リンクをコピー",
+    "socialShare": "ソーシャルシェア",
+    "aboutAuthor": "著者について",
+    "relatedArticles": "関連記事",
+    "continueExploring": "関連コンテンツをもっと見る",
+    "toolsComparison": "ツール比較",
+    "seoGuide": "SEOガイド",
+    "tutorial": "チュートリアル",
+    "blog": "ブログ",
+    "category": "カテゴリ",
+    "categories": "カテゴリ",
+    "articles": "{count}件の記事",
+    "noArticles": "このカテゴリにはまだ記事がありません。",
+    "readMore": "続きを読む",
+    "categoryNotFound": "カテゴリが見つかりません",
+    "categoryNotFoundDescription": "リクエストされたカテゴリは見つかりませんでした。",
+    "postNotFound": "投稿が見つかりません",
+    "postNotFoundDescription": "リクエストされたブログ投稿は見つかりませんでした。"
+  },
+  "Tools": {
+    "title": "無料ツール",
+    "resizeimage": "画像をリサイズ",
+    "resizeimageDesc": "画像をリサイズ",
+    "bulkresizeimages": "画像をまとめてリサイズ",
+    "bulkresizeimagesDesc": "画像をまとめてリサイズ",
+    "imageconverter": "画像の形式を変換",
+    "imageconverterDesc": "画像の形式を変換",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "スクリーンショットを撮る",
+    "screentellDesc": "画面デモレコーダー",
+    "imagecompressor": "画像を圧縮",
+    "imagecompressorDesc": "画像を圧縮",
+    "crop": "Crop image",
+    "cropDesc": "画像を切り抜く",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Watermark Images",
+    "stitchimages": "画像結合",
+    "stitchimagesDesc": "画像を結合"
+  },
+  "ImageUploader": {
+    "titleSingle": "画像をドラッグ＆ドロップ",
+    "titleMultiple": "画像をドラッグ＆ドロップ",
+    "subtitleSingle": "またはクリックして参照",
+    "selectImagesSingle": "画像を選択",
+    "selectImagesMultiple": "画像を選択",
+    "supportedFormats": "対応形式: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG, WebP",
+    "maxFiles": "最大 {max} ファイル",
+    "maxSizeMB": "1ファイルあたり最大 {size}MB",
+    "dropHere": "ここに画像をドロップ",
+    "filesSelected": "ファイルが正常に選択されました",
+    "file": "ファイル",
+    "files": "ファイル",
+    "errorInvalidFiles": "無効なファイル形式",
+    "errorTooManyFiles": "ファイルが多すぎます",
+    "errorFileSizeExceeded": "一部のファイルサイズが大きすぎます"
+  }
+}

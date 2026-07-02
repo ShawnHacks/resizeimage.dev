@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Assemblage d'images en ligne",
+    "pageTitle": "Assembleur d'images en ligne gratuit",
+    "pageDescription": "Assemblez plusieurs images sur un canevas personnalisable. Faites glisser, redimensionnez, faites pivoter et disposez vos images librement directement dans votre navigateur.",
+    "metadata": {
+      "title": "Assembleur d'images en ligne gratuit — Combiner des photos en ligne",
+      "description": "Le meilleur assembleur d'images en ligne gratuit. Combinez plusieurs photos sur un seul canevas. Assembleur de photos en ligne professionnel pour glisser, pivoter et superposer des images instantanément."
+    },
+    "intro": {
+      "title": "Assembleur d'images en ligne professionnel gratuit",
+      "content": "Notre outil d'assemblage d'images en ligne gratuit vous permet de combiner plusieurs photos en une seule création haute résolution sans aucun téléchargement ni compte requis. Que vous créiez un collage, une maquette professionnelle ou que vous fusionniez simplement des photos en ligne, cet assembleur de photos en ligne offre la flexibilité d'une application de bureau directement dans votre navigateur web. Faites glisser, redimensionnez et réorganisez les calques en toute simplicité tout en préservant votre vie privée, car tout le traitement se fait localement."
+    },
+    "controls": {
+      "canvasSettings": "Paramètres du canevas",
+      "width": "Largeur du canevas",
+      "height": "Hauteur du canevas",
+      "backgroundColor": "Couleur de fond",
+      "addItem": "Ajouter une image",
+      "layers": "Calques",
+      "imageProperties": "Propriétés de l'image",
+      "rotate": "Faire pivoter",
+      "opacity": "Opacité",
+      "bringToFront": "Mettre au premier plan",
+      "sendToBack": "Mettre à l'arrière-plan",
+      "bringForward": "Avancer",
+      "sendBackward": "Reculer",
+      "remove": "Supprimer l'image",
+      "exportFormat": "Format d'exportation",
+      "transparent": "Transparent",
+      "white": "Blanc",
+      "noLayers": "Aucun calque",
+      "layerName": "Calque {index}",
+      "zoom": "Zoom",
+      "zoomIn": "Zoom avant",
+      "zoomOut": "Zoom arrière",
+      "fitToScreen": "Ajuster à l'écran",
+      "setCanvasToImageSize": "Ajuster le canevas à la taille de l'image",
+      "matchCanvasSize": "Ajuster à la taille du canevas"
+    },
+    "canvas": {
+      "placeholder": "Faites glisser et déposez des images ici ou utilisez le bouton Ajouter pour commencer l'assemblage."
+    },
+    "errors": {
+      "noImages": "Aucune image à télécharger",
+      "exportFailed": "Échec de l'exportation de l'image",
+      "loadFailed": "Échec du chargement de {name}"
+    },
+    "actions": {
+      "download": "Télécharger l'image assemblée",
+      "preview": "Aperçu",
+      "reset": "Réinitialiser le canevas",
+      "uploadMore": "Importer plus"
+    },
+    "howTo": {
+      "title": "Comment assembler des images en ligne",
+      "step1": {
+        "number": "1",
+        "title": "Régler la taille du canevas",
+        "description": "Ajustez la largeur et la hauteur du canevas selon la disposition souhaitée."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Ajouter et disposer les images",
+        "description": "Importez vos images et faites-les glisser pour les positionner. Redimensionnez et faites pivoter si nécessaire."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Exporter votre création",
+        "description": "Cliquez sur télécharger pour enregistrer votre image combinée sous forme d'un seul fichier."
+      }
+    },
+    "faq": {
+      "title": "FAQ sur l'assembleur de photos en ligne",
+      "items": [
+        {
+          "question": "Cet assembleur d'images en ligne est-il vraiment gratuit ?",
+          "answer": "Oui, notre outil est 100 % gratuit à utiliser. Il n'y a pas de frais cachés, d'abonnements ou de filigranes sur vos images exportées."
+        },
+        {
+          "question": "Comment utiliser cet assembleur de photos en ligne ?",
+          "answer": "Réglez simplement la taille de votre canevas, importez vos images et utilisez votre souris pour les faire glisser et les disposer. Vous pouvez utiliser le panneau des propriétés pour faire pivoter et ajuster l'opacité de chaque calque."
+        },
+        {
+          "question": "Mes données restent-elles privées pendant la fusion de photos en ligne ?",
+          "answer": "Absolument. Cet outil utilise un traitement côté client, ce qui signifie que vos images ne quittent jamais votre ordinateur et ne touchent pas nos serveurs."
+        },
+        {
+          "question": "Quels formats d'image sont pris en charge ?",
+          "answer": "Nous prenons en charge tous les formats web courants, notamment JPG, PNG, WebP et SVG."
+        }
+      ]
+    }
+  }
+}

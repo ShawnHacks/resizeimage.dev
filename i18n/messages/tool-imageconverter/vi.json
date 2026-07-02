@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "Công cụ chuyển đổi hình ảnh",
+    "description": "Chuyển đổi hình ảnh và ảnh trực tuyến mà không cần tải lên bất kỳ máy chủ nào - công cụ chuyển đổi hình ảnh của bạn",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "Trình thay đổi kích thước hình ảnh chuyên nghiệp miễn phí trực tuyến",
+      "description": "Thay đổi kích thước hình ảnh và ảnh trực tuyến mà không cần tải lên bất kỳ máy chủ nào - công cụ thay đổi kích thước ảnh của bạn",
+      "lightningFast": "Nhanh như chớp",
+      "free": "Công cụ chuyển đổi hình ảnh miễn phí 100%"
+    },
+    "hero": {
+      "badge": "Công cụ chuyển đổi {from} -> {to}",
+      "title": "Chuyển đổi {from} sang {to} trong vài giây",
+      "description": "Tải lên hình ảnh {from} và tải xuống ngay lập tức hình ảnh {to} chất lượng cao. Mọi thứ đều nằm trong trình duyệt của bạn - không cần tải lên, không giới hạn."
+    },
+    "workspace": {
+      "badge": "Chuyển đổi {from} sang {to}",
+      "subtitle": "Kích thước tệp đầu ra {size}.",
+      "sizePending": "đang tính toán...",
+      "download": {
+        "pending": "Đang chuyển đổi...",
+        "ready": "Tải xuống {to}"
+      },
+      "reset": "Chọn một hình ảnh khác",
+      "info": {
+        "original": "Định dạng gốc: {format}",
+        "converted": "Đầu ra {format}",
+        "dimensions": "Kích thước đầu ra: {width} × {height} px"
+      },
+      "processing": {
+        "title": "Đang chuyển đổi tệp {from} của bạn",
+        "description": "Điều này xảy ra cục bộ bên trong trình duyệt của bạn. Hình ảnh lớn hơn có thể mất vài giây."
+      },
+      "error": {
+        "title": "Chuyển đổi không thành công",
+        "description": "Chúng tôi không thể chuyển đổi hình ảnh này. Hãy thử một tệp hoặc định dạng xuất khác.",
+        "cta": "Chọn một hình ảnh khác",
+        "generic": "Không thể chuyển đổi hình ảnh này. Vui lòng thử một tệp khác."
+      },
+      "previewAlt": "{from} được chuyển đổi thành {to}"
+    },
+    "moreOptions": {
+      "title": "Khám phá các công cụ chuyển đổi hình ảnh khác",
+      "description": "Chuyển đổi định dạng chỉ bằng một cú nhấp chuột — tất cả các công cụ chuyển đổi đều chạy cục bộ trong trình duyệt của bạn."
+    },
+    "howTo": {
+      "title": "Cách chuyển đổi {from} sang {to} trong trình duyệt của bạn",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Tải lên hình ảnh của bạn",
+          "description": "Thả hoặc chọn một tệp {from} từ thiết bị của bạn. Tệp không bao giờ rời khỏi trình duyệt của bạn."
+        },
+        {
+          "number": "2",
+          "title": "Chúng tôi chuyển đổi nó ngay lập tức",
+          "description": "Công cụ chuyển đổi hiển thị hình ảnh của bạn dưới dạng {to} cục bộ, giữ nguyên chất lượng và kích thước."
+        },
+        {
+          "number": "3",
+          "title": "Tải xuống tệp {to}",
+          "description": "Lưu tệp {to} đã chuyển đổi bằng một cú nhấp chuột hoặc chọn một định dạng khác."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp về Công cụ chuyển đổi hình ảnh",
+      "subtitle": "Mọi thứ bạn cần biết về việc chuyển đổi định dạng hình ảnh trong trình duyệt của bạn",
+      "items": [
+        {
+          "question": "Công cụ chuyển đổi hình ảnh có miễn phí sử dụng không?",
+          "answer": "Có—mọi công cụ chuyển đổi trên imageconverter.dev đều miễn phí, không giới hạn và không có hình mờ. Chuyển đổi bao nhiêu tệp tùy thích mà không cần tạo tài khoản."
+        },
+        {
+          "question": "Hình ảnh của tôi có bao giờ được tải lên máy chủ không?",
+          "answer": "Không. Tất cả các chuyển đổi đều diễn ra hoàn toàn trong trình duyệt của bạn bằng cách sử dụng API Web. Sau khi trang tải xong, bạn thậm chí có thể ngoại tuyến và công cụ chuyển đổi sẽ tiếp tục hoạt động."
+        },
+        {
+          "question": "Công cụ chuyển đổi có làm giảm chất lượng hình ảnh không?",
+          "answer": "Chúng tôi bảo toàn độ phân giải hình ảnh và chỉ áp dụng nén nhẹ khi định dạng đích yêu cầu. Nền trong suốt sẽ tự động được làm phẳng thành màu trắng khi xuất sang JPG."
+        },
+        {
+          "question": "Tôi có thể chuyển đổi nhiều hình ảnh cùng một lúc không?",
+          "answer": "Hiện tại, công cụ này xử lý mỗi lần một tệp để bạn có thể xem lại đầu ra trước khi tải xuống. Cần chuyển đổi hàng loạt? Hãy thử công cụ thay đổi kích thước hàng loạt của chúng tôi có hỗ trợ chuyển đổi định dạng."
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "PNG sang JPG",
+        "shortDescription": "Làm phẳng các tệp PNG trong suốt thành các tệp JPG nhẹ tải nhanh hơn trực tuyến.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi PNG sang JPG — Công cụ chuyển đổi PNG sang JPEG trực tuyến miễn phí",
+          "description": "Chuyển đổi PNG sang JPG ngay lập tức và thu nhỏ kích thước tệp mà không làm mất độ rõ nét. Chạy 100% trong trình duyệt của bạn mà không cần tải lên."
+        }
+      },
+      "png-to-webp": {
+        "label": "PNG sang WebP",
+        "shortDescription": "Nén đồ họa PNG nặng thành các tệp WebP siêu nhẹ cho web hiện đại.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi PNG sang WebP — Nén hình ảnh PNG sang WebP",
+          "description": "Chuyển đổi hình ảnh PNG sang WebP để giảm đáng kể kích thước tệp trong khi vẫn sắc nét. Dựa trên trình duyệt, an toàn và nhanh chóng."
+        }
+      },
+      "jpg-to-png": {
+        "label": "JPG sang PNG",
+        "shortDescription": "Biến ảnh JPG thành PNG không mất dữ liệu khi bạn cần độ trong suốt hoặc các cạnh sắc nét hơn.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi JPG sang PNG — Tạo PNG trong suốt từ JPG trực tuyến",
+          "description": "Chuyển đổi hình ảnh JPG hoặc JPEG sang PNG trong vài giây. Giữ nguyên chất lượng và thêm độ trong suốt mà không cần rời khỏi trình duyệt của bạn."
+        }
+      },
+      "jpg-to-webp": {
+        "label": "JPG sang WebP",
+        "shortDescription": "Nâng cấp ảnh JPG lên các tệp WebP hiệu quả để phân phối nhanh như chớp.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi JPG sang WebP — Công cụ chuyển đổi JPEG sang WebP trực tuyến miễn phí",
+          "description": "Chuyển đổi tệp JPG hoặc JPEG thành hình ảnh WebP hiện đại ngay lập tức. Nén tốt hơn, chất lượng như cũ, không cần tải lên."
+        }
+      },
+      "webp-to-png": {
+        "label": "WebP sang PNG",
+        "shortDescription": "Xuất tài sản WebP trở lại định dạng PNG không mất dữ liệu được hỗ trợ rộng rãi.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi WebP sang PNG — Xuất hình ảnh WebP sang PNG trực tuyến",
+          "description": "Chuyển đổi hình ảnh WebP sang PNG để chỉnh sửa hoặc tương thích. Nhanh chóng, riêng tư và chạy hoàn toàn trong trình duyệt của bạn."
+        }
+      },
+      "webp-to-jpg": {
+        "label": "WebP sang JPG",
+        "shortDescription": "Làm cho ảnh WebP của bạn có thể chia sẻ được bằng cách xuất chúng dưới dạng JPG phổ quát.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi WebP sang JPG — Công cụ chuyển đổi WEBP sang JPEG trực tuyến miễn phí",
+          "description": "Biến hình ảnh WebP thành tệp JPG ngay lập tức để bạn có thể tải chúng lên bất cứ đâu. Không có bất ngờ về chất lượng, không cần tải lên máy chủ."
+        }
+      },
+      "svg-to-png": {
+        "label": "SVG sang PNG",
+        "shortDescription": "Biến đồ họa vector SVG thành các tệp PNG trong suốt sẵn sàng cho bất kỳ trình chỉnh sửa hoặc CMS nào.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi SVG sang PNG — Xuất tác phẩm nghệ thuật SVG sang PNG trực tuyến",
+          "description": "Chuyển đổi tệp SVG sang PNG ngay lập tức trong khi vẫn giữ được các cạnh sắc nét và độ trong suốt. 100% dựa trên trình duyệt mà không cần tải lên."
+        }
+      },
+      "svg-to-jpg": {
+        "label": "SVG sang JPG",
+        "shortDescription": "Làm phẳng các hình minh họa SVG thành các hình ảnh JPG tương thích phổ biến trong vài giây.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi SVG sang JPG — Công cụ chuyển đổi SVG sang JPEG trực tuyến miễn phí",
+          "description": "Biến đồ họa SVG thành tệp JPG để dễ dàng chia sẻ ở mọi nơi. Nhanh chóng, riêng tư và chạy hoàn toàn trong trình duyệt của bạn."
+        }
+      },
+      "svg-to-webp": {
+        "label": "SVG sang WebP",
+        "shortDescription": "Tạo bitmap WebP nhẹ từ tác phẩm nghệ thuật SVG mà không cần rời khỏi trình duyệt của bạn.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi SVG sang WebP — Chuyển đổi hình ảnh SVG sang WebP trực tuyến",
+          "description": "Tạo hình ảnh WebP từ các tệp SVG để có được các tài sản siêu nhỏ trong khi vẫn giữ được độ trung thực của hình ảnh. Hoàn toàn phía máy khách và an toàn."
+        }
+      },
+      "heic-to-png": {
+        "label": "HEIC sang PNG",
+        "shortDescription": "Chuyển đổi ảnh HEIC thành các tệp PNG trong suốt có thể mở ở mọi nơi ngay lập tức.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi HEIC sang PNG — Công cụ chuyển đổi HEIC sang PNG trực tuyến miễn phí",
+          "description": "Biến hình ảnh HEIC thành tệp PNG trong trình duyệt của bạn. Giữ chi tiết sắc nét, bảo toàn độ trong suốt và hoàn toàn riêng tư."
+        }
+      },
+      "heic-to-jpg": {
+        "label": "HEIC sang JPG",
+        "shortDescription": "Làm cho các bức ảnh HEIC có thể chia sẻ được bằng cách xuất chúng dưới dạng hình ảnh JPG nhẹ.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi HEIC sang JPG — Chuyển đổi ảnh HEIC sang JPEG trực tuyến",
+          "description": "Chuyển đổi tệp HEIC sang JPG ngay lập tức. Không cần tải lên, không cần cài đặt, chỉ cần chuyển đổi HEIC sang JPEG nhanh chóng trên thiết bị của bạn."
+        }
+      },
+      "heic-to-webp": {
+        "label": "HEIC sang WebP",
+        "shortDescription": "Nâng cấp ảnh HEIC lên các tệp WebP siêu hiệu quả cho web hiện đại.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi HEIC sang WebP — Công cụ chuyển đổi HEIC sang WebP trực tuyến miễn phí",
+          "description": "Biến hình ảnh HEIC sang định dạng WebP trong vài giây để có các tệp nhỏ hơn và chất lượng tuyệt vời – tất cả đều có trong trình duyệt của bạn."
+        }
+      },
+      "avif-to-png": {
+        "label": "AVIF sang PNG",
+        "shortDescription": "Xuất đồ họa AVIF sang các tệp PNG không mất dữ liệu được hỗ trợ rộng rãi.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi AVIF sang PNG — Chuyển đổi hình ảnh AVIF sang PNG trực tuyến",
+          "description": "Chuyển đổi hình ảnh AVIF sang PNG ngay lập tức mà không cần rời khỏi trình duyệt của bạn. Giữ các cạnh sắc nét và độ trong suốt mà không cần tải lên."
+        }
+      },
+      "avif-to-jpg": {
+        "label": "AVIF sang JPG",
+        "shortDescription": "Biến ảnh AVIF thành các tệp JPG tương thích cho các quy trình làm việc cũ.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi AVIF sang JPG — Công cụ chuyển đổi AVIF sang JPEG trực tuyến miễn phí",
+          "description": "Tạo các bản sao JPG của các tệp AVIF trong giây lát. Hoạt động cục bộ trong trình duyệt của bạn để chia sẻ nhanh chóng ở mọi nơi."
+        }
+      },
+      "avif-to-webp": {
+        "label": "AVIF sang WebP",
+        "shortDescription": "Chuyển đổi hình ảnh AVIF thành các tệp WebP tiết kiệm dung lượng mà không cần rời khỏi trình duyệt.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi AVIF sang WebP — Chuyển đổi hình ảnh AVIF trực tuyến",
+          "description": "Chuyển đổi tài sản AVIF sang WebP để có khả năng tương thích tốt hơn và nén tương tự – nhanh chóng, riêng tư và 100% phía máy khách."
+        }
+      },
+      "tiff-to-png": {
+        "label": "TIFF sang PNG",
+        "shortDescription": "Xuất các bản quét TIFF nặng dưới dạng các tệp PNG đẹp mắt sẵn sàng cho web.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi TIFF sang PNG — Công cụ chuyển đổi TIFF sang PNG trực tuyến miễn phí",
+          "description": "Chuyển đổi hình ảnh TIFF sang định dạng PNG ngay lập tức. Giữ chi tiết đẹp mà không cần tải lên hoặc plugin."
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "TIFF sang JPG",
+        "shortDescription": "Nén các tệp TIFF thành các tệp JPG nhẹ trong khi vẫn ở trong trình duyệt của bạn.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi TIFF sang JPG — Chuyển đổi TIFF sang JPEG trực tuyến",
+          "description": "Biến hình ảnh TIFF thành JPG trong vài giây để có kích thước tệp nhỏ và khả năng tương thích rộng – tất cả đều được thực hiện cục bộ."
+        }
+      },
+      "tiff-to-webp": {
+        "label": "TIFF sang WebP",
+        "shortDescription": "Biến tài sản TIFF thành các tệp WebP tiên tiến để phân phối nhanh hơn.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi TIFF sang WebP — Chuyển đổi hình ảnh TIFF trực tuyến",
+          "description": "Chuyển đổi hình ảnh TIFF sang WebP ngay lập tức để thu nhỏ đáng kể kích thước tệp. Riêng tư, nhanh chóng và dựa trên trình duyệt."
+        }
+      },
+      "gif-to-png": {
+        "label": "GIF sang PNG",
+        "shortDescription": "Làm phẳng đồ họa GIF thành các hình ảnh PNG sắc nét, không mất dữ liệu.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi GIF sang PNG — Công cụ chuyển đổi GIF sang PNG trực tuyến miễn phí",
+          "description": "Chuyển đổi tệp GIF sang PNG trong trình duyệt của bạn để giữ nguyên chất lượng mà không làm tăng kích thước tệp."
+        }
+      },
+      "gif-to-jpg": {
+        "label": "GIF sang JPG",
+        "shortDescription": "Biến tài sản GIF thành các tệp JPG tương thích để được hỗ trợ rộng rãi.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi GIF sang JPG — Chuyển đổi GIF sang JPEG trực tuyến",
+          "description": "Xuất hình ảnh GIF sang JPG ngay lập tức và giữ cho quy trình làm việc của bạn đơn giản. Không cần tải lên, không có hình mờ."
+        }
+      },
+      "gif-to-webp": {
+        "label": "GIF sang WebP",
+        "shortDescription": "Chuyển đổi tệp GIF thành hình ảnh WebP hiện đại để có kích thước nhỏ hơn.",
+        "metadata": {
+          "title": "Công cụ chuyển đổi GIF sang WebP — Công cụ chuyển đổi GIF sang WebP trực tuyến miễn phí",
+          "description": "Biến đồ họa GIF sang định dạng WebP để cắt giảm băng thông và giữ chất lượng, tất cả đều có trong trình duyệt của bạn."
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "PNG là gì?",
+        "description": "PNG (Portable Network Graphics) là định dạng tệp đồ họa raster hỗ trợ nén dữ liệu không mất dữ liệu. Nó được phát triển như một sự thay thế cải tiến, không có bằng sáng chế cho Graphics Interchange Format (GIF).",
+        "bestFor": "Đồ họa web, logo, biểu đồ và hình minh họa yêu cầu độ trong suốt.",
+        "pros": [
+          "Nén không mất dữ liệu (không mất chất lượng)",
+          "Hỗ trợ độ trong suốt (kênh alpha)",
+          "Hỗ trợ trình duyệt rộng rãi"
+        ]
+      },
+      "jpg": {
+        "title": "JPG là gì?",
+        "description": "JPG (Joint Photographic Experts Group) là định dạng hình ảnh nén được sử dụng rộng rãi để chứa ảnh kỹ thuật số và đồ họa raster khác. Nó sử dụng nén mất dữ liệu để cân bằng chất lượng hình ảnh và kích thước tệp.",
+        "bestFor": "Ảnh chụp, hình ảnh phức tạp với nhiều màu sắc và hình ảnh web nơi kích thước tệp nhỏ là quan trọng.",
+        "pros": [
+          "Kích thước tệp nhỏ",
+          "Tương thích phổ biến",
+          "Mức nén có thể điều chỉnh"
+        ]
+      },
+      "webp": {
+        "title": "WebP là gì?",
+        "description": "WebP là định dạng hình ảnh hiện đại do Google sử dụng, cung cấp khả năng nén không mất dữ liệu và mất dữ liệu vượt trội cho hình ảnh trên web. Nó cho phép quản trị viên web và nhà phát triển web tạo hình ảnh nhỏ hơn, phong phú hơn giúp web nhanh hơn.",
+        "bestFor": "Hình ảnh web (thay thế cả PNG và JPG) để cải thiện tốc độ tải trang.",
+        "pros": [
+          "Nén vượt trội (tệp nhỏ hơn JPG/PNG)",
+          "Hỗ trợ cả độ trong suốt và hoạt ảnh",
+          "Được hỗ trợ bởi các trình duyệt hiện đại"
+        ]
+      },
+      "heic": {
+        "title": "HEIC là gì?",
+        "description": "HEIC (High Efficiency Image Container) là định dạng tệp được Apple sử dụng cho ảnh trên thiết bị iOS. Nó sử dụng tiêu chuẩn HEVC (High Efficiency Video Coding) để lưu hình ảnh chất lượng cao với kích thước tệp nhỏ hơn JPG.",
+        "bestFor": "Lưu trữ ảnh chất lượng cao trên thiết bị di động với bộ nhớ hạn chế.",
+        "pros": [
+          "Chất lượng cao với kích thước bằng một nửa JPG",
+          "Hỗ trợ Live Photos và bản đồ độ sâu",
+          "Tiêu chuẩn hiện đại cho thiết bị Apple"
+        ]
+      },
+      "avif": {
+        "title": "AVIF là gì?",
+        "description": "AVIF (AV1 Image File Format) là đặc tả định dạng tệp hình ảnh mở, miễn phí bản quyền để lưu trữ hình ảnh hoặc chuỗi hình ảnh được nén bằng AV1 trong định dạng tệp HEIF.",
+        "bestFor": "Hình ảnh web thế hệ tiếp theo yêu cầu hiệu quả nén tối đa.",
+        "pros": [
+          "Nén tốt nhất trong lớp",
+          "Hỗ trợ HDR và Wide Color Gamut",
+          "Miễn phí bản quyền"
+        ]
+      },
+      "svg": {
+        "title": "SVG là gì?",
+        "description": "SVG (Scalable Vector Graphics) là định dạng hình ảnh vector dựa trên XML cho đồ họa hai chiều với hỗ trợ tương tác và hoạt ảnh. Không giống như hình ảnh raster, SVG có thể được chia tỷ lệ vô hạn mà không mất chất lượng.",
+        "bestFor": "Logo, biểu tượng và hình minh họa đơn giản cần trông sắc nét ở mọi kích thước.",
+        "pros": [
+          "Khả năng mở rộng vô hạn",
+          "Kích thước tệp nhỏ cho đồ họa đơn giản",
+          "Có thể chỉnh sửa qua mã"
+        ]
+      },
+      "tiff": {
+        "title": "TIFF là gì?",
+        "description": "TIFF (Tagged Image File Format) là định dạng tệp máy tính để lưu trữ hình ảnh đồ họa raster, phổ biến trong số các nghệ sĩ đồ họa, ngành xuất bản và nhiếp ảnh gia.",
+        "bestFor": "Nhiếp ảnh chuyên nghiệp, in ấn và quét nơi chất lượng là tối quan trọng.",
+        "pros": [
+          "Không nén hoặc nén không mất dữ liệu",
+          "Hỗ trợ độ sâu màu cao",
+          "Tiêu chuẩn ngành cho in ấn"
+        ]
+      },
+      "gif": {
+        "title": "GIF là gì?",
+        "description": "GIF (Graphics Interchange Format) là định dạng hình ảnh bitmap hỗ trợ hoạt ảnh. Nó sử dụng nén dữ liệu không mất dữ liệu LZW và cho phép tối đa 256 màu mỗi khung hình.",
+        "bestFor": "Hoạt ảnh đơn giản, meme và biểu tượng nhỏ.",
+        "pros": [
+          "Hỗ trợ hoạt ảnh",
+          "Kích thước tệp nhỏ cho đồ họa đơn giản",
+          "Được hỗ trợ phổ biến"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "Tại sao sử dụng Trình chuyển đổi hình ảnh của chúng tôi?",
+      "items": [
+        {
+          "title": "Quyền riêng tư trước tiên",
+          "description": "Tất cả chuyển đổi xảy ra cục bộ trong trình duyệt của bạn. Hình ảnh của bạn không bao giờ được tải lên máy chủ của chúng tôi."
+        },
+        {
+          "title": "Cực nhanh",
+          "description": "Được hỗ trợ bởi WebAssembly, trình chuyển đổi của chúng tôi mang lại hiệu suất cấp máy tính để bàn mà không bị trễ."
+        },
+        {
+          "title": "Không giới hạn",
+          "description": "Chuyển đổi bao nhiêu hình ảnh tùy thích. Không giới hạn kích thước tệp, không hạn chế hàng ngày."
+        },
+        {
+          "title": "Chất lượng cao",
+          "description": "Chúng tôi xử lý hình ảnh của bạn cẩn thận, bảo toàn độ phân giải và chất lượng trong mỗi lần chuyển đổi."
+        }
+      ]
+    }
+  }
+}

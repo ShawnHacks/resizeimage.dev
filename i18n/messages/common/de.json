@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Home": "Startseite",
+    "Features": "Funktionen",
+    "FAQ": "FAQ",
+    "About": "Über uns",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Produkt",
+    "Tools": "Alat",
+    "Resources": "Ressourcen",
+    "Company": "Unternehmen",
+    "Features": "Funktionen",
+    "FAQ": "FAQ",
+    "About": "Über uns",
+    "SiteMap": "Sitemap",
+    "Pricing": "Preise",
+    "License": "Lizenz",
+    "Contact": "Kontakt",
+    "Roadmap": "Roadmap",
+    "Documentation": "Dokumentation",
+    "Blog": "Blog",
+    "Cookie Policy": "Cookie-Richtlinie",
+    "Privacy Policy": "Datenschutzrichtlinie",
+    "Terms of Service": "Nutzungsbedingungen"
+  },
+  "HomePage": {
+    "tagline": "ImageConverter",
+    "title": "Kostenloser Bildkonverter",
+    "subtitle": "Konvertieren Sie Bilder in Ihrem Browser. Keine Registrierung, keine Uploads, 100% sicherer und privater Fotokonverter.",
+    "localHint": "Konvertieren Sie Bildformate lokal in Ihrem Browser, keine Uploads, 100% sicher und privat",
+    "previewAlt": "Vorschau des ausgewählten Bildes",
+    "settingsTitle": "Ausgabeeinstellungen",
+    "reset": "Anderes Bild wählen",
+    "formatLabel": "Ausgabeformat",
+    "formatPlaceholder": "Wählen Sie ein Format",
+    "qualityLabel": "Qualität",
+    "qualityDisabled": "PNG-Exporte behalten automatisch die volle Qualität bei.",
+    "qualityHint": "Passen Sie die Qualität für JPG- und WebP-Exporte an.",
+    "downloadCta": "{format} herunterladen",
+    "unknownFormat": "Unbekannt",
+    "quickImageConverters": "Schnelle Bildkonverter",
+    "benefitsTitle": "Warum ImageConverter wählen?",
+    "benefitsDescription": "Beschleunigen Sie Ihren Workflow mit einem privaten, browserbasierten Bildkonvertierungs-Toolkit.",
+    "benefits": {
+      "items": [
+        "Läuft zu 100 % in Ihrem Browser, sodass Ihre Dateien Ihr Gerät nie verlassen.",
+        "Unterstützt moderne und ältere Formate wie HEIC, AVIF, GIF, TIFF, PNG, JPG und WebP.",
+        "Wählen Sie die Ausgabequalität und sehen Sie sich die Dateigröße sofort vor dem Herunterladen in der Vorschau an.",
+        "Optimiert für Geschwindigkeit ohne Anmeldungen, Einschränkungen oder Wasserzeichen."
+      ]
+    },
+    "howTitle": "So funktioniert ImageConverter",
+    "howSteps": [
+      {
+        "title": "Bild auswählen oder ablegen",
+        "description": "Laden Sie eine Datei hoch oder ziehen Sie sie in den Arbeitsbereich – wir erkennen das Quellformat automatisch."
+      },
+      {
+        "title": "Ausgabeeinstellungen auswählen",
+        "description": "Wählen Sie Ihr Zielformat und passen Sie die Qualität für JPG- oder WebP-Ausgaben in Sekunden an."
+      },
+      {
+        "title": "Sofort herunterladen",
+        "description": "Erhalten Sie die konvertierte Datei sofort. Keine Warteschlangen, keine Uploads, kein Tracking."
+      }
+    ],
+    "ctaTitle": "Bereit, Ihren Bild-Workflow zu optimieren?",
+    "ctaDescription": "Entdecken Sie weitere browserbasierte Tools für die Stapel-Größenänderung, Screenshots, Metadatenbereinigung und mehr.",
+    "ctaButton": "Alle Tools durchsuchen"
+  },
+  "SiteConfig": {
+    "title": "Bildkonverter - Kostenloser Online-Fotokonverter",
+    "description": "Das beste kostenlose Online-Tool zum Konvertieren von Bildern. Konvertieren Sie Bildformate lokal in Ihrem Browser. Keine Uploads, 100% sicherer und privater Fotokonverter.",
+    "keywords": {
+      "0": "Bildkonverter",
+      "1": "Bildkonverter kostenlos",
+      "2": "Fotokonverter",
+      "3": "Bild konvertieren",
+      "4": "Bild online konvertieren",
+      "5": "png in jpg",
+      "6": "png in webp",
+      "7": "jpg in png",
+      "8": "jpg in webp",
+      "9": "webp in png",
+      "10": "webp in jpg"
+    },
+    "installApp": "App installieren"
+  },
+  "AboutPage": {
+    "metaTitle": "Über ImageConverter – Kostenloser Online-Fotokonverter",
+    "metaDescription": "Erfahren Sie mehr über ImageConverter, einen kostenlosen Online-Fotokonverter, mit dem Sie Bilder zwischen mehreren Formaten konvertieren können, ohne Dateien auf einen Server hochzuladen. Alle Konvertierungen erfolgen lokal im Browser – für volle Privatsphäre und Sicherheit."
+  },
+  "ContactPage": {
+    "metaTitle": "Kontaktieren Sie uns",
+    "metaDescription": "Haben Sie Fragen oder Feedback? Kontaktieren Sie uns für Unterstützung.",
+    "metaKeywords": "kontaktieren Sie uns, Support, Kundenservice, Hilfe, Feedback"
+  },
+  "NotFoundPage": {
+    "title": "Seite nicht gefunden",
+    "description": "Die von Ihnen gesuchte Seite konnte nicht gefunden werden. Sie wurde möglicherweise verschoben, gelöscht oder Sie haben die falsche URL eingegeben.",
+    "backToHome": "Zurück zur Startseite"
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Cookie-Richtlinie - Wie wir Cookies verwenden",
+    "metaDescription": "Erfahren Sie, wie unser Website-Service Cookies verwendet, um Ihre Erfahrung zu verbessern. Verstehen Sie Cookie-Typen, Verwaltungsoptionen und Ihre Datenschutzrechte.",
+    "metaKeywords": "Cookie-Richtlinie, Datenschutz, Cookies, Website-Tool, Datenschutz, Benutzerdatenschutz"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Datenschutzrichtlinie",
+    "metaDescription": "Lesen Sie unsere Datenschutzrichtlinie, um zu verstehen, wie wir Ihre persönlichen Daten erfassen, verwenden und schützen, wenn Sie unseren Website-Service nutzen.",
+    "metaKeywords": "Datenschutzrichtlinie, Datenschutz, persönliche Informationen, Website-Tool, Benutzerdatenschutz"
+  },
+  "TermsPage": {
+    "metaTitle": "Allgemeine Geschäftsbedingungen - Servicevereinbarung",
+    "metaDescription": "Lesen Sie unsere Allgemeinen Geschäftsbedingungen, um die Regeln und Richtlinien für die Nutzung unseres Website-Service zu verstehen.",
+    "metaKeywords": "Allgemeine Geschäftsbedingungen, Servicevereinbarung, Nutzungsbedingungen, Website-Tool, Benutzervereinbarung"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Erfahren Sie mehr über Website-Screenshots, Webentwicklungstipps und digitale Tools. Expertenanleitungen und Tutorials für Entwickler und Designer.",
+    "keywords": "Website-Screenshot-Blog, Webentwicklungs-Tutorials, Leitfaden für digitale Tools, Screenshot-Tutorials, Webdesign-Tipps",
+    "readMore": "Weiterlesen",
+    "minRead": "min Lesezeit",
+    "noPosts": "Noch keine Blogbeiträge verfügbar. Schauen Sie bald wieder vorbei!",
+    "categories": "Kategorien",
+    "recentPosts": "Neueste Beiträge",
+    "posts": "Beiträge"
+  },
+  "BlogPost": {
+    "backToBlog": "Zurück zum Blog",
+    "writtenBy": "Geschrieben von",
+    "published": "Veröffentlicht",
+    "updated": "Aktualisiert",
+    "shareArticle": "Diesen Artikel teilen",
+    "relatedPosts": "Ähnliche Artikel",
+    "tags": "Tags",
+    "minRead": "min Lesezeit",
+    "views": "Ansichten",
+    "lastUpdated": "Zuletzt aktualisiert:",
+    "like": "Gefällt mir",
+    "share": "Teilen",
+    "quickActions": "Schnellaktionen",
+    "copyLink": "Link kopieren",
+    "socialShare": "In sozialen Netzwerken teilen",
+    "aboutAuthor": "Über den Autor",
+    "relatedArticles": "Ähnliche Artikel",
+    "continueExploring": "Entdecken Sie weitere verwandte Inhalte",
+    "toolsComparison": "Werkzeugvergleich",
+    "seoGuide": "SEO-Leitfaden",
+    "tutorial": "Tutorial",
+    "blog": "Blog",
+    "category": "Kategorie",
+    "categories": "Kategorien",
+    "articles": "{count} {count, plural, one {Artikel} other {Artikel}}",
+    "noArticles": "Noch keine Artikel in dieser Kategorie.",
+    "readMore": "Weiterlesen",
+    "categoryNotFound": "Kategorie nicht gefunden",
+    "categoryNotFoundDescription": "Die angeforderte Kategorie konnte nicht gefunden werden.",
+    "postNotFound": "Beitrag nicht gefunden",
+    "postNotFoundDescription": "Der angeforderte Blogbeitrag konnte nicht gefunden werden."
+  },
+  "Tools": {
+    "title": "Kostenlose Tools",
+    "resizeimage": "Bildgröße ändern",
+    "resizeimageDesc": "Bildgröße online ändern",
+    "bulkresizeimages": "Bilder in großen Mengen anpassen",
+    "bulkresizeimagesDesc": "Bilder in großen Mengen anpassen",
+    "imageconverter": "Bildformat konvertieren",
+    "imageconverterDesc": "Bildformat konvertieren",
+    "screenshot": "Website-Screenshot online",
+    "screenshotDesc": "Screenshots machen",
+    "screentellDesc": "Screen-Demo-Recorder",
+    "imagecompressor": "Bilder komprimieren",
+    "imagecompressorDesc": "Bilder komprimieren",
+    "crop": "Crop image",
+    "cropDesc": "Bilder zuschneiden",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Bilder mit Wasserzeichen versehen",
+    "stitchimages": "Bild-Stitcher",
+    "stitchimagesDesc": "Bilder zusammenfügen"
+  },
+  "ImageUploader": {
+    "titleSingle": "Ziehen Sie Ihr Bild hierher",
+    "titleMultiple": "Ziehen Sie Ihre Bilder hierher",
+    "subtitleSingle": "oder klicken Sie zum Durchsuchen",
+    "selectImagesSingle": "Bild auswählen",
+    "selectImagesMultiple": "Bilder auswählen",
+    "supportedFormats": "Unterstützt: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG oder WebP",
+    "maxFiles": "Maximal {max} Dateien",
+    "maxSizeMB": "Max. {size}MB pro Datei",
+    "dropHere": "Bilder hier ablegen",
+    "filesSelected": "Dateien erfolgreich ausgewählt",
+    "file": "Datei",
+    "files": "Dateien",
+    "errorInvalidFiles": "Ungültiger Dateityp",
+    "errorTooManyFiles": "Zu viele Dateien",
+    "errorFileSizeExceeded": "Einige Dateien sind zu groß"
+  }
+}

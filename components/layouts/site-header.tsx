@@ -26,9 +26,11 @@ import { cn } from "@/lib/utils"
 
 import {
   NavigationMenu,
+  NavigationMenuContent,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
+  NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu"
 // import { ModeToggle } from "./mode-toggle"
 import { Button } from "@/components/ui/button"
@@ -67,17 +69,17 @@ export function SiteHeader({
     }
 
     let hasHandled = false
-    
+
     const handler = (e: Event) => {
       // 防止重复处理
       if (hasHandled) return
-      
+
       console.log('PWA: beforeinstallprompt event fired')
       const installEvent = e as BeforeInstallPromptEvent
-      
+
       // 阻止浏览器默认的 PWA 安装横幅
       installEvent.preventDefault()
-      
+
       // 保存事件以便后续手动触发
       setDeferredPrompt(installEvent)
       setIsInstallable(true)
@@ -103,11 +105,11 @@ export function SiteHeader({
     const { outcome } = await deferredPrompt.userChoice
 
     console.log('PWA: Install outcome:', outcome)
-    
+
     // 无论用户接受或取消，都需要清理已使用的 prompt
     // beforeinstallprompt 事件只能使用一次
     setDeferredPrompt(null)
-    
+
     if (outcome === 'accepted') {
       // 安装成功，隐藏按钮
       setIsInstallable(false)
@@ -132,7 +134,7 @@ export function SiteHeader({
     >
       <div className="container flex h-16 items-center justify-between">
         {/* <div className="flex gap-6 md:gap-10"> */}
-          {/* Logo */}
+        {/* Logo */}
         <div className="flex items-center space-x-1">
           <Image src={logo} width={32} height={32} alt={siteConfig.title} />
           <Link href="/" className="flex items-center space-x-2">
@@ -145,15 +147,49 @@ export function SiteHeader({
 
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
-          {navItems.map((item) => {
-            return (
-              <NavigationMenuItem key={item.title}>
-                <NavigationMenuLink asChild>
-                  <Link href={item.href}>{item.title}</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
-            )
-          })}
+            {navItems.map((item) => {
+              if (item.children) {
+                return (
+                  <NavigationMenuItem key={item.title}>
+                    <NavigationMenuTrigger>{item.title}</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
+                        {item.children.map((child) => (
+                          <li key={child.title}>
+                            <NavigationMenuLink asChild>
+                              <Link
+                                href={child.href}
+                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground"
+                              >
+                                <div className="text-sm font-medium leading-none">{child.title}</div>
+                                {child.description && (
+                                  <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
+                                    {child.description}
+                                  </p>
+                                )}
+                              </Link>
+                            </NavigationMenuLink>
+                          </li>
+                        ))}
+                      </ul>
+                    </NavigationMenuContent>
+                  </NavigationMenuItem>
+                )
+              }
+
+              return (
+                <NavigationMenuItem key={item.title}>
+                  <NavigationMenuLink asChild>
+                    <Link
+                      href={item.href}
+                      className="group inline-flex h-9 w-max items-center justify-center rounded-md bg-transparent px-4 py-2 text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground focus:outline-none disabled:pointer-events-none disabled:opacity-50 data-[active]:bg-accent/50 data-[state=open]:bg-accent/50"
+                    >
+                      {item.title}
+                    </Link>
+                  </NavigationMenuLink>
+                </NavigationMenuItem>
+              )
+            })}
           </NavigationMenuList>
         </NavigationMenu>
 

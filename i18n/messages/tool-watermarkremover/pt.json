@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Removedor de marcas d'água Gemini AI gratuito",
+    "header": {
+      "title": "Removedor de Marcas d'Água Gemini"
+    },
+    "nav": {
+      "userscript": "Userscript para Gemini",
+      "principle": "Princípio Técnico"
+    },
+    "main": {
+      "title": "Remoção de marca d'água de imagem Gemini AI",
+      "subtitle": "Remova as marcas d'água do Gemini AI instantaneamente usando o algoritmo reverse alpha blending. 100% privado, processamento no navegador, gratuito e sem perdas."
+    },
+    "upload": {
+      "text": "Clique para selecionar ou arraste imagens aqui",
+      "hint": "Suporta JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Selecione a imagem original",
+      "2": "Processamento automático",
+      "3": "Salvar imagem limpa"
+    },
+    "preview": {
+      "original": "Visualização original",
+      "result": "Resultado processado"
+    },
+    "panel": {
+      "title": "Painel de controlo"
+    },
+    "btn": {
+      "download": "Descarregar",
+      "reset": "Recomeçar",
+      "downloadAll": "Descarregar tudo"
+    },
+    "progress": {
+      "text": "Progresso"
+    },
+    "feature": {
+      "title": "Porquê escolher o Gemini Watermark Remover?",
+      "items": [
+        {
+          "title": "100% no cliente",
+          "desc": "Sem backend, sem processamento no servidor. Os seus dados permanecem inteiramente no seu navegador."
+        },
+        {
+          "title": "Privacidade em primeiro lugar",
+          "desc": "As imagens nunca são carregadas para nenhum servidor. Ponto final. Privacidade e segurança totais."
+        },
+        {
+          "title": "Precisão matemática",
+          "desc": "Baseado na fórmula Reverse Alpha Blending, garantindo um restauro matematicamente exato, ao contrário dos modelos de IA que 'alucinan'."
+        },
+        {
+          "title": "Deteção automática inteligente",
+          "desc": "Reconhecimento inteligente de diferentes variantes de marca d'água (48×48 ou 96×96) para uma remoção perfeita."
+        },
+        {
+          "title": "Fácil de usar",
+          "desc": "Interface simples de arrastar e soltar com processamento instantâneo. Não são necessários conhecimentos técnicos."
+        },
+        {
+          "title": "Multiplataforma",
+          "desc": "Funciona sem problemas em todos os navegadores Web modernos no Windows, Mac, Linux e dispositivos móveis."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "A Magia Técnica por Trás da Ferramenta",
+      "sizeDetection": {
+        "title": "Deteção do Tamanho da Marca d'Água",
+        "description": "O Gemini usa tamanhos de marca d'água diferentes com base nas dimensões da imagem. Nossa ferramenta deteta automaticamente o tamanho correto para garantir uma remoção precisa.",
+        "table": {
+          "dims": "Dimensões da Imagem",
+          "size": "Tamanho da Marca d'Água",
+          "margin": "Margem",
+          "small": "L ≤ 1024 ou A ≤ 1024",
+          "pixelSmall": "48×48 pixels",
+          "marginSmall": "32px",
+          "large": "L > 1024 e A > 1024",
+          "pixelLarge": "96×96 pixels",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: Como Funciona",
+        "description": "A maioria das marcas d'água são sobreposições semitransparentes adicionadas usando alpha blending. Em vez de adivinhar, revertemos a matemática.",
+        "formulaTitle": "A FÓRMULA DE MISTURA:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "Ao reconstruir o mapa alfa (α) para cada pixel, podemos recuperar algebricamente o valor original do pixel:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Isso resulta em uma reconstrução matematicamente precisa dos dados originais da imagem."
+      },
+      "comparison": {
+        "title": "Por que isso Funciona Melhor do que Inpainting de IA",
+        "intro": "As ferramentas de remoção de IA típicas (Inpainting) 'adivinham' o que deve estar por trás da marca d'água, muitas vezes levando a artefatos. Nossa abordagem é superior porque:",
+        "items": [
+          {
+            "title": "Sem Adivinhação",
+            "desc": "Ele calcula os valores originais exatos usando o padrão de marca d'água conhecido."
+          },
+          {
+            "title": "Alta Velocidade",
+            "desc": "O processamento é extremamente rápido e eficiente, rodando inteiramente no seu navegador."
+          },
+          {
+            "title": "Pegada Pequena",
+            "desc": "A ferramenta é leve (cerca de 4MB) e não requer modelos de IA pesados."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Manuseio Perfeito de Bordas",
+        "description": "Bordas semitransparentes são tratadas lindamente pelo mapa alfa. A fórmula reversa naturalmente considera os níveis de transparência variados, garantindo transições suaves sem emendas visíveis."
+      },
+      "reference": {
+        "text": "Para um mergulho técnico mais profundo no algoritmo, confira este",
+        "linkText": "artigo detalhado no Medium"
+      }
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "subtitle": "Saiba mais sobre a tecnologia e segurança do Gemini Watermark Remover",
+      "items": [
+        {
+          "question": "Como funciona este removedor de marca d'água?",
+          "answer": "Ao contrário das ferramentas genéricas de retoque de IA que adivinham o que está por trás de uma marca d'água, a nossa ferramenta utiliza uma abordagem matemática específica chamada 'Reverse Alpha Blending'. Como conhecemos os valores exatos dos píxeis do padrão da marca d'água Gemini, podemos subtraí-la matematicamente da imagem para restaurar as cores originais dos píxeis com alta precisão."
+        },
+        {
+          "question": "É seguro / privado?",
+          "answer": "Sim, absolutamente. A ferramenta corre inteiramente no seu navegador Web. As suas imagens são processadas localmente no seu dispositivo e nunca são carregadas para os nossos servidores ou para terceiros. Pode até desligar a Internet após carregar a página e continuará a funcionar."
+        },
+        {
+          "question": "É realmente gratuito?",
+          "answer": "Sim, esta ferramenta é 100% gratuita. É uma iniciativa de código aberto desenhada para fins educativos e para ajudar a comunidade."
+        },
+        {
+          "question": "Reduz a qualidade da imagem?",
+          "answer": "Não. O processo de remoção é sem perdas para as áreas sem marca d'água. Para as áreas com marca d'água, restaura as cores originais da forma mais precisa possível matematicamente, evitando o desfoque frequentemente visto com outras ferramentas de remoção de IA."
+        },
+        {
+          "question": "Porque é que a marca d'água da imagem não foi removida corretamente?",
+          "answer": "A nossa ferramenta suporta especificamente a remoção de marcas d'água (SynthID) de imagens geradas pelo Gemini. Para imagens originais e não comprimidas, a remoção é perfeita. No entanto, se a imagem foi comprimida ou recodificada (por exemplo, através de redes sociais ou uploads em sites), os metadados e as características da marca d'água costumam ser danificados, impedindo a remoção bem-sucedida."
+        }
+      ]
+    },
+    "loading": {
+      "text": "A processar..."
+    },
+    "status": {
+      "loading": "A carregar recursos...",
+      "pending": "Pendente...",
+      "processing": "A processar...",
+      "success": "Concluído",
+      "failed": "Falhou"
+    },
+    "info": {
+      "size": "Tamanho",
+      "watermark": "Marca d'água detetada",
+      "position": "Posição",
+      "status": "Estado",
+      "removed": "Marca d'água removida"
+    }
+  }
+}

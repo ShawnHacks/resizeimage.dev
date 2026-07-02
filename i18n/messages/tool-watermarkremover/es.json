@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Eliminador de marcas de agua Gemini AI gratuito en línea",
+    "header": {
+      "title": "Eliminador de Marcas de Agua Gemini"
+    },
+    "nav": {
+      "userscript": "Userscript para Gemini",
+      "principle": "Principio Técnico"
+    },
+    "main": {
+      "title": "Eliminación de marca de agua de imagen Gemini AI",
+      "subtitle": "Elimine las marcas de agua de Gemini AI al instante utilizando el algoritmo reverse alpha blending. 100% privado, procesamiento en el navegador, gratuito y sin pérdidas."
+    },
+    "upload": {
+      "text": "Haz clic para seleccionar o arrastra imágenes aquí",
+      "hint": "Soporta JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Selecciona la imagen original",
+      "2": "Procesamiento automático",
+      "3": "Guarda la imagen limpia"
+    },
+    "preview": {
+      "original": "Vista previa original",
+      "result": "Resultado procesado"
+    },
+    "panel": {
+      "title": "Panel de control"
+    },
+    "btn": {
+      "download": "Descargar",
+      "reset": "Reiniciar",
+      "downloadAll": "Descargar todas"
+    },
+    "progress": {
+      "text": "Progreso"
+    },
+    "feature": {
+      "title": "¿Por qué elegir el eliminador de marcas de agua de Gemini?",
+      "items": [
+        {
+          "title": "100% en el cliente",
+          "desc": "Sin backend, sin procesamiento en el servidor. Tus datos permanecen totalmente en tu navegador."
+        },
+        {
+          "title": "Privacidad ante todo",
+          "desc": "Las imágenes nunca se suben a ningún servidor. Punto. Privacidad y seguridad total."
+        },
+        {
+          "title": "Precisión matemática",
+          "desc": "Basado en la fórmula Reverse Alpha Blending, garantizando una restauración matemáticamente exacta, a diferencia de los modelos de IA que 'alucinan'."
+        },
+        {
+          "title": "Detección automática inteligente",
+          "desc": "Reconocimiento inteligente de diferentes variantes de marcas de agua (48×48 o 96×96) para una eliminación perfecta."
+        },
+        {
+          "title": "Fácil de usar",
+          "desc": "Interfaz sencilla de arrastrar y soltar con procesamiento instantáneo. No se requieren conocimientos técnicos."
+        },
+        {
+          "title": "Multiplataforma",
+          "desc": "Funciona sin problemas en todos los navegadores web modernos en Windows, Mac, Linux y dispositivos móviles."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "La Magia Técnica detrás de la Herramienta",
+      "sizeDetection": {
+        "title": "Detección de Tamaño de Marca de Agua",
+        "description": "Gemini utiliza diferentes tamaños de marca de agua según las dimensiones de la imagen. Nuestra herramienta detecta automáticamente el tamaño correcto para asegurar una eliminación precisa.",
+        "table": {
+          "dims": "Dimensiones de Imagen",
+          "size": "Tamaño de Marca de Agua",
+          "margin": "Margen",
+          "small": "Ancho ≤ 1024 o Alto ≤ 1024",
+          "pixelSmall": "48×48 píxeles",
+          "marginSmall": "32px",
+          "large": "Ancho > 1024 y Alto > 1024",
+          "pixelLarge": "96×96 píxeles",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: Cómo Funciona",
+        "description": "La mayoría de las marcas de agua son superposiciones semitransparentes añadidas mediante alpha blending. En lugar de adivinar, revertimos la matemática.",
+        "formulaTitle": "LA FÓRMULA DE MEZCLA:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "Al reconstruir el mapa alfa (α) para cada píxel, podemos recuperar algebraicamente el valor original del píxel:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Esto resulta en una reconstrucción matemáticamente exacta de los datos de imagen originales."
+      },
+      "comparison": {
+        "title": "Por qué esto Funciona Mejor que el Inpainting de IA",
+        "intro": "Las herramientas típicas de eliminación de IA (Inpainting) 'adivinan' qué debería haber detrás de la marca de agua, lo que a menudo genera artefactos. Nuestro enfoque es superior porque:",
+        "items": [
+          {
+            "title": "Sin Adivinanzas",
+            "desc": "Calcula los valores originales exactos utilizando el patrón de marca de agua conocido."
+          },
+          {
+            "title": "Alta Velocidad",
+            "desc": "El procesamiento es extremadamente rápido y eficiente, ejecutándose completamente en su navegador."
+          },
+          {
+            "title": "Ligero",
+            "desc": "La herramienta es liviana (alrededor de 4MB) y no requiere modelos pesados de IA."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Manejo Perfecto de Bordes",
+        "description": "Los bordes semitransparentes son manejados hermosamente por el mapa alfa. La fórmula inversa considera naturalmente los niveles de transparencia variables, asegurando transiciones suaves sin costuras visibles."
+      },
+      "reference": {
+        "text": "Para una profundización técnica en el algoritmo, consulte este",
+        "linkText": "artículo detallado en Medium"
+      }
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "subtitle": "Obtén más información sobre la tecnología y la seguridad del eliminador de marcas de agua de Gemini",
+      "items": [
+        {
+          "question": "¿Cómo funciona este eliminador de marcas de agua?",
+          "answer": "A diferencia de las herramientas genéricas de retoque por IA que adivinan qué hay detrás de una marca de agua, nuestra herramienta utiliza un enfoque matemático específico llamado 'Reverse Alpha Blending'. Dado que conocemos los valores exactos de los píxeles del patrón de la marca de agua de Gemini, podemos restarlo matemáticamente de la imagen para restaurar los colores originales de los píxeles con alta precisión."
+        },
+        {
+          "question": "¿Es seguro / privado?",
+          "answer": "Sí, absolutamente. La herramienta se ejecuta completamente dentro de tu navegador web. Tus imágenes se procesan localmente en tu dispositivo y nunca se suben a nuestros servidores ni a terceros. Incluso puedes desconectar tu internet después de cargar la página y seguirá funcionando."
+        },
+        {
+          "question": "¿Es realmente gratis?",
+          "answer": "Sí, esta herramienta es 100% gratuita. Es una iniciativa de código abierto diseñada con fines educativos y para ayudar a la comunidad."
+        },
+        {
+          "question": "¿Reduce la calidad de la imagen?",
+          "answer": "No. El proceso de eliminación no tiene pérdidas para las áreas sin marca de agua. Para las áreas con marca de agua, restaura los colores originales de la manera más precisa posible matemáticamente, evitando el desenfoque que suele verse con otras herramientas de eliminación por IA."
+        },
+        {
+          "question": "¿Por qué no se eliminó correctamente la marca de agua de la imagen?",
+          "answer": "Nuestra herramienta admite específicamente la eliminación de marcas de agua (SynthID) de imágenes generadas por Gemini. Para imágenes originales sin comprimir, la eliminación es impecable. Sin embargo, si la imagen se ha comprimido o vuelto a codificar (por ejemplo, a través de redes sociales o cargas en sitios web), los metadatos y las características del patrón de la marca de agua suelen dañarse, lo que impide que se elimine con éxito."
+        }
+      ]
+    },
+    "loading": {
+      "text": "Procesando..."
+    },
+    "status": {
+      "loading": "Cargando recursos...",
+      "pending": "Pendiente...",
+      "processing": "Procesando...",
+      "success": "Completado",
+      "failed": "Fallido"
+    },
+    "info": {
+      "size": "Tamaño",
+      "watermark": "Marca de agua detectada",
+      "position": "Posición",
+      "status": "Estado",
+      "removed": "Marca de agua eliminada"
+    }
+  }
+}

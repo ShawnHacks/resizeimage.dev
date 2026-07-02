@@ -29,7 +29,7 @@ export default function ResizeImageClient() {
   const searchParams = useSearchParams();
   // Track blob URLs for cleanup
   const blobUrlsRef = useRef<Set<string>>(new Set());
-  
+
   // Track if we're currently loading files to prevent concurrent calls
   const isLoadingRef = useRef(false);
 
@@ -47,7 +47,7 @@ export default function ResizeImageClient() {
     if (process.env.NODE_ENV === 'development') {
       console.log('[ResizeImagePage] Component mounted');
     }
-    
+
     return () => {
       if (process.env.NODE_ENV === 'development') {
         console.log('[ResizeImagePage] Component unmounting, cleaning up', blobUrlsRef.current.size, 'blob URLs');
@@ -63,7 +63,7 @@ export default function ResizeImageClient() {
       blobUrlsRef.current.clear();
     };
   }, []);
-  
+
   // Debug: Log images state changes (development only)
   useEffect(() => {
     if (process.env.NODE_ENV === 'development') {
@@ -75,7 +75,7 @@ export default function ResizeImageClient() {
     if (process.env.NODE_ENV === 'development') {
       console.log('[handleFilesSelected] Called with', files.length, 'files');
     }
-    
+
     if (files.length === 0) {
       if (process.env.NODE_ENV === 'development') {
         console.log('[handleFilesSelected] No files, returning');
@@ -90,7 +90,7 @@ export default function ResizeImageClient() {
       }
       return;
     }
-    
+
     isLoadingRef.current = true;
 
     try {
@@ -103,29 +103,29 @@ export default function ResizeImageClient() {
         }
       });
       blobUrlsRef.current.clear();
-      
+
       // Reset state
       setProcessedImages([]);
-      
+
       // Process files with proper error handling
       const imageFiles: ImageFile[] = [];
       const errors: string[] = [];
-      
+
       for (let i = 0; i < files.length; i++) {
         const file = files[i];
-        
+
         try {
           if (process.env.NODE_ENV === 'development') {
             console.log(`[handleFilesSelected] Processing ${i + 1}/${files.length}:`, file.name);
           }
-          
+
           // Create preview blob URL
           const preview = URL.createObjectURL(file);
           blobUrlsRef.current.add(preview);
-          
+
           // Get dimensions (this will timeout after 10s if image fails to load)
           const dimensions = await getImageDimensions(file);
-          
+
           imageFiles.push({
             file,
             preview,
@@ -135,7 +135,7 @@ export default function ResizeImageClient() {
         } catch (error) {
           const errorMessage = error instanceof Error ? error.message : 'Unknown error';
           errors.push(`${file.name}: ${errorMessage}`);
-          
+
           // Log in development, but don't spam in production
           if (process.env.NODE_ENV === 'development') {
             console.error(`[handleFilesSelected] Failed to process ${file.name}:`, error);
@@ -147,7 +147,7 @@ export default function ResizeImageClient() {
       if (imageFiles.length > 0) {
         setImages(imageFiles);
         toast.success(t('toast.imagesLoaded', { count: imageFiles.length }));
-        
+
         // Show warning if some files failed
         if (errors.length > 0) {
           setTimeout(() => {
@@ -157,7 +157,7 @@ export default function ResizeImageClient() {
       } else {
         // All files failed
         toast.error(errors.length > 0 ? `Failed to load images: ${errors[0]}` : t('toast.noValidImages'));
-        
+
         // Log all errors in development
         if (process.env.NODE_ENV === 'development') {
           console.error('[handleFilesSelected] All files failed:', errors);
@@ -167,7 +167,7 @@ export default function ResizeImageClient() {
       // Unexpected error in the try block
       console.error('[handleFilesSelected] Unexpected error:', error);
       toast.error(t('toast.error'));
-      
+
       // Clean up any blob URLs that were created before the error
       blobUrlsRef.current.forEach(url => {
         try {
@@ -177,7 +177,7 @@ export default function ResizeImageClient() {
         }
       });
       blobUrlsRef.current.clear();
-      
+
       // Ensure images state is cleared on error
       setImages([]);
     } finally {
@@ -189,7 +189,7 @@ export default function ResizeImageClient() {
     setImages((prev) => {
       const newImages = [...prev];
       const removedUrl = newImages[index].preview;
-      
+
       // Clean up the blob URL
       try {
         URL.revokeObjectURL(removedUrl);
@@ -197,11 +197,11 @@ export default function ResizeImageClient() {
       } catch (err) {
         // Ignore errors
       }
-      
+
       newImages.splice(index, 1);
       return newImages;
     });
-    
+
     if (images.length === 1) {
       setProcessedImages([]);
     }
@@ -218,9 +218,9 @@ export default function ResizeImageClient() {
           const preview = URL.createObjectURL(file);
           // Track the blob URL for cleanup
           blobUrlsRef.current.add(preview);
-          
+
           const dimensions = await getImageDimensions(file);
-          
+
           return {
             file,
             preview,
@@ -298,7 +298,7 @@ export default function ResizeImageClient() {
       }
     });
     blobUrlsRef.current.clear();
-    
+
     setImages([]);
     setProcessedImages([]);
   }, []);
@@ -327,7 +327,7 @@ export default function ResizeImageClient() {
             <HeroSection onFilesSelected={handleFilesSelected} />
           )}
 
-         
+
 
           {/* Controls section */}
           {images.length > 0 && processedImages.length === 0 && (
@@ -335,8 +335,8 @@ export default function ResizeImageClient() {
               <ResizeControls onResize={handleResize} disabled={isProcessing}>
                 {/* Preview */}
                 {images.length > 0 && processedImages.length === 0 && (
-                  <ImagePreview 
-                    images={images} 
+                  <ImagePreview
+                    images={images}
                     onRemove={handleRemoveImage}
                     onAddMore={handleAddMore}
                   />
@@ -387,13 +387,13 @@ export default function ResizeImageClient() {
             <>
               {/* Processed list with statistics */}
               <ProcessedList processedImages={processedImages} />
-              
+
               {/* Download section */}
-              <DownloadButton 
-                processedImages={processedImages} 
+              <DownloadButton
+                processedImages={processedImages}
                 onDownloadComplete={handleDownloadComplete}
               />
-              
+
               {/* Action buttons */}
               <div className="pt-4 flex flex-col sm:flex-row gap-4 justify-center items-center">
                 <Button
@@ -417,7 +417,7 @@ export default function ResizeImageClient() {
                       }
                     });
                     blobUrlsRef.current.clear();
-                    
+
                     setImages([]);
                     setProcessedImages([]);
                   }}
@@ -432,9 +432,9 @@ export default function ResizeImageClient() {
         </div>
       </main>
 
-      <div className='container mx-auto max-w-4xl pb-16'>
+      {/* <div className='container mx-auto max-w-4xl pb-16'>
         <ToolsGrid />
-      </div>
+      </div> */}
 
       {/* How To Section */}
       <HowToSection
@@ -477,7 +477,7 @@ export default function ResizeImageClient() {
           image="/illustration/resizedimensions.webp"
           imageAlt="Resize images dimensions online"
           layout="image-right"
-          // className="bg-muted/30"
+        // className="bg-muted/30"
         />
 
         <FeatureSection
@@ -486,7 +486,7 @@ export default function ResizeImageClient() {
           image="/illustration/resizefilesize.webp"
           imageAlt="Resize images file size online"
           layout="image-left"
-          // className="bg-muted/30"
+        // className="bg-muted/30"
         />
       </div>
 

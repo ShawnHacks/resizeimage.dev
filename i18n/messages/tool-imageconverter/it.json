@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "Convertitore di immagini",
+    "description": "Converti immagini e foto online senza caricarle su nessun server - il tuo strumento di conversione di immagini di riferimento",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "Ridimensionatore di immagini professionale gratuito online",
+      "description": "Ridimensiona immagini e foto online senza caricarle su nessun server - il tuo strumento di ridimensionamento foto di riferimento",
+      "lightningFast": "Velocissimo",
+      "free": "Convertitore di immagini gratuito al 100%"
+    },
+    "hero": {
+      "badge": "Convertitore da {from} a {to}",
+      "title": "Converti da {from} a {to} in pochi secondi",
+      "description": "Carica un'immagine {from} e scarica istantaneamente un'immagine {to} di alta qualità. Tutto rimane nel tuo browser - nessun caricamento, nessun limite."
+    },
+    "workspace": {
+      "badge": "Converti da {from} a {to}",
+      "subtitle": "Dimensione del file di output {size}.",
+      "sizePending": "calcolo in corso...",
+      "download": {
+        "pending": "Conversione in corso...",
+        "ready": "Scarica {to}"
+      },
+      "reset": "Scegli un'altra immagine",
+      "info": {
+        "original": "Formato originale: {format}",
+        "converted": "Output {format}",
+        "dimensions": "Dimensioni di output: {width} × {height} px"
+      },
+      "processing": {
+        "title": "Conversione del tuo file {from}",
+        "description": "Questo avviene localmente nel tuo browser. Le immagini più grandi possono richiedere alcuni secondi."
+      },
+      "error": {
+        "title": "Conversione fallita",
+        "description": "Non siamo riusciti a convertire questa immagine. Prova un file o un formato di esportazione diverso.",
+        "cta": "Scegli un'altra immagine",
+        "generic": "Impossibile convertire questa immagine. Prova un file diverso."
+      },
+      "previewAlt": "{from} convertito in {to}"
+    },
+    "moreOptions": {
+      "title": "Esplora altri convertitori di immagini",
+      "description": "Cambia formato con un clic: tutti i convertitori vengono eseguiti localmente nel tuo browser."
+    },
+    "howTo": {
+      "title": "Come convertire da {from} a {to} nel tuo browser",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Carica la tua immagine",
+          "description": "Trascina o seleziona un file {from} dal tuo dispositivo. Il file non lascia mai il tuo browser."
+        },
+        {
+          "number": "2",
+          "title": "Lo convertiamo all'istante",
+          "description": "Il convertitore esegue il rendering della tua immagine come {to} localmente, mantenendo intatte qualità e dimensioni."
+        },
+        {
+          "number": "3",
+          "title": "Scarica il file {to}",
+          "description": "Salva il {to} convertito con un clic o scegli un altro formato."
+        }
+      ]
+    },
+    "faq": {
+      "title": "FAQ sul convertitore di immagini",
+      "subtitle": "Tutto ciò che devi sapere sulla modifica dei formati di immagine nel tuo browser",
+      "items": [
+        {
+          "question": "Il convertitore di immagini è gratuito?",
+          "answer": "Sì, ogni convertitore su imageconverter.dev è gratuito, illimitato e senza filigrana. Converti tutti i file che vuoi senza creare un account."
+        },
+        {
+          "question": "Le mie immagini vengono mai caricate su un server?",
+          "answer": "No. Tutte le conversioni avvengono interamente nel tuo browser utilizzando le API Web. Dopo il caricamento della pagina puoi anche andare offline e il convertitore continuerà a funzionare."
+        },
+        {
+          "question": "Il convertitore ridurrà la qualità dell'immagine?",
+          "answer": "Preserviamo la risoluzione dell'immagine e applichiamo una compressione leggera solo quando il formato di destinazione lo richiede. Gli sfondi trasparenti vengono automaticamente appiattiti su bianco during l'esportazione in JPG."
+        },
+        {
+          "question": "Posso convertire più immagini contemporaneamente?",
+          "answer": "Al momento questo strumento gestisce un file alla volta in modo da poter rivedere l'output prima di scaricarlo. Hai bisogno di conversioni di massa? Prova il nostro strumento di ridimensionamento di massa con supporto per il cambio di formato."
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "Da PNG a JPG",
+        "shortDescription": "Appiattisci i PNG trasparenti in JPG leggeri che si caricano più velocemente online.",
+        "metadata": {
+          "title": "Convertitore da PNG a JPG — Strumento online gratuito da PNG a JPEG",
+          "description": "Converti istantaneamente da PNG a JPG e riduci le dimensioni del file senza perdere la chiarezza. Funziona al 100% nel tuo browser senza caricamenti."
+        }
+      },
+      "png-to-webp": {
+        "label": "Da PNG a WebP",
+        "shortDescription": "Comprimi grafica PNG pesante in file WebP ultraleggeri per il web moderno.",
+        "metadata": {
+          "title": "Convertitore da PNG a WebP — Comprimi immagini PNG in WebP",
+          "description": "Converti immagini PNG in WebP per ridurre drasticamente le dimensioni del file mantenendo la nitidezza. Basato su browser, sicuro e veloce."
+        }
+      },
+      "jpg-to-png": {
+        "label": "Da JPG a PNG",
+        "shortDescription": "Trasforma le foto JPG in PNG senza perdita di dati quando hai bisogno di trasparenza o bordi più nitidi.",
+        "metadata": {
+          "title": "Convertitore da JPG a PNG — Crea PNG trasparenti da JPG online",
+          "description": "Converti immagini JPG o JPEG in PNG in pochi secondi. Mantieni la qualità e aggiungi la trasparenza senza uscire dal browser."
+        }
+      },
+      "jpg-to-webp": {
+        "label": "Da JPG a WebP",
+        "shortDescription": "Aggiorna le foto JPG a file WebP efficienti per una consegna fulminea.",
+        "metadata": {
+          "title": "Convertitore da JPG a WebP — Strumento online gratuito da JPEG a WebP",
+          "description": "Trasforma istantaneamente file JPG o JPEG in moderne immagini WebP. Migliore compressione, stessa qualità, nessun caricamento."
+        }
+      },
+      "webp-to-png": {
+        "label": "Da WebP a PNG",
+        "shortDescription": "Esporta le risorse WebP nel formato PNG senza perdita di dati e ampiamente supportato.",
+        "metadata": {
+          "title": "Convertitore da WebP a PNG — Esporta immagini WebP in PNG online",
+          "description": "Converti immagini WebP in PNG per la modifica o la compatibilità. Veloce, privato e funziona completamente nel tuo browser."
+        }
+      },
+      "webp-to-jpg": {
+        "label": "Da WebP a JPG",
+        "shortDescription": "Rendi le tue foto WebP condivisibili esportandole come JPG universali.",
+        "metadata": {
+          "title": "Convertitore da WebP a JPG — Strumento online gratuito da WEBP a JPEG",
+          "description": "Trasforma istantaneamente le immagini WebP in file JPG in modo da poterle caricare ovunque. Nessuna sorpresa di qualità, nessun caricamento su server."
+        }
+      },
+      "svg-to-png": {
+        "label": "Da SVG a PNG",
+        "shortDescription": "Trasforma grafica vettoriale SVG in PNG trasparenti pronti per qualsiasi editor o CMS.",
+        "metadata": {
+          "title": "Convertitore da SVG a PNG — Esporta grafica SVG in PNG online",
+          "description": "Converti istantaneamente file SVG in PNG mantenendo bordi nitidi e trasparenza. 100% basato su browser senza caricamenti."
+        }
+      },
+      "svg-to-jpg": {
+        "label": "Da SVG a JPG",
+        "shortDescription": "Appiattisci illustrazioni SVG in immagini JPG universalmente compatibili in pochi secondi.",
+        "metadata": {
+          "title": "Convertitore da SVG a JPG — Strumento online gratuito da SVG a JPEG",
+          "description": "Trasforma grafica SVG in file JPG per una facile condivisione ovunque. Veloce, privato e funziona interamente nel tuo browser."
+        }
+      },
+      "svg-to-webp": {
+        "label": "Da SVG a WebP",
+        "shortDescription": "Genera bitmap WebP leggere da grafica SVG senza uscire dal browser.",
+        "metadata": {
+          "title": "Convertitore da SVG a WebP — Converti immagini SVG in WebP online",
+          "description": "Crea immagini WebP da file SVG per ottenere asset ultra-piccoli preservando la fedeltà visiva. Completamente lato client e sicuro."
+        }
+      },
+      "heic-to-png": {
+        "label": "Da HEIC a PNG",
+        "shortDescription": "Converti foto HEIC in PNG trasparenti che si aprono ovunque all'istante.",
+        "metadata": {
+          "title": "Convertitore da HEIC a PNG — Strumento online gratuito da HEIC a PNG",
+          "description": "Trasforma immagini HEIC in file PNG nel tuo browser. Mantieni dettagli nitidi, preserva la trasparenza e rimani completamente privato."
+        }
+      },
+      "heic-to-jpg": {
+        "label": "Da HEIC a JPG",
+        "shortDescription": "Rendi le foto HEIC condivisibili esportandole come immagini JPG leggere.",
+        "metadata": {
+          "title": "Convertitore da HEIC a JPG — Converti foto HEIC in JPEG online",
+          "description": "Converti istantaneamente file HEIC in JPG. Nessun caricamento, nessuna installazione, solo una rapida conversione da HEIC a JPEG sul tuo dispositivo."
+        }
+      },
+      "heic-to-webp": {
+        "label": "Da HEIC a WebP",
+        "shortDescription": "Aggiorna le foto HEIC a file WebP ultra-efficienti per il web moderno.",
+        "metadata": {
+          "title": "Convertitore da HEIC a WebP — Strumento online gratuito da HEIC a WebP",
+          "description": "Trasforma immagini HEIC in formato WebP in pochi secondi per file più piccoli e ottima qualità – tutto nel tuo browser."
+        }
+      },
+      "avif-to-png": {
+        "label": "Da AVIF a PNG",
+        "shortDescription": "Esporta grafica AVIF in file PNG senza perdita di dati e universalmente supportati.",
+        "metadata": {
+          "title": "Convertitore da AVIF a PNG — Converti immagini AVIF in PNG online",
+          "description": "Converti istantaneamente immagini AVIF in PNG senza uscire dal browser. Mantieni bordi nitidi e trasparenza senza alcun caricamento."
+        }
+      },
+      "avif-to-jpg": {
+        "label": "Da AVIF a JPG",
+        "shortDescription": "Trasforma foto AVIF in JPG compatibili per flussi di lavoro legacy.",
+        "metadata": {
+          "title": "Convertitore da AVIF a JPG — Strumento online gratuito da AVIF a JPEG",
+          "description": "Crea copie JPG di file AVIF in pochi istanti. Funziona localmente nel tuo browser per una condivisione rapida ovunque."
+        }
+      },
+      "avif-to-webp": {
+        "label": "Da AVIF a WebP",
+        "shortDescription": "Converti immagini AVIF in file WebP salvaspazio senza uscire dal browser.",
+        "metadata": {
+          "title": "Convertitore da AVIF a WebP — Conversione di immagini AVIF online",
+          "description": "Passa da asset AVIF a WebP per una migliore compatibilità e una compressione simile – veloce, privato e 100% lato client."
+        }
+      },
+      "tiff-to-png": {
+        "label": "Da TIFF a PNG",
+        "shortDescription": "Esporta pesanti scansioni TIFF come eleganti file PNG pronti per il web.",
+        "metadata": {
+          "title": "Convertitore da TIFF a PNG — Strumento online gratuito da TIFF a PNG",
+          "description": "Converti istantaneamente immagini TIFF in formato PNG. Mantieni i dettagli fini senza caricamenti o plugin."
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "Da TIFF a JPG",
+        "shortDescription": "Comprimi file TIFF in JPG leggeri rimanendo nel tuo browser.",
+        "metadata": {
+          "title": "Convertitore da TIFF a JPG — Converti TIFF in JPEG online",
+          "description": "Trasforma immagini TIFF in JPG in pochi secondi per dimensioni di file minime e ampia compatibilità – tutto fatto localmente."
+        }
+      },
+      "tiff-to-webp": {
+        "label": "Da TIFF a WebP",
+        "shortDescription": "Trasforma asset TIFF in file WebP all'avanguardia per una consegna più rapida.",
+        "metadata": {
+          "title": "Convertitore da TIFF a WebP — Conversione di immagini TIFF online",
+          "description": "Converti istantaneamente immagini TIFF in WebP per ridurre drasticamente le dimensioni del file. Privato, veloce e basato su browser."
+        }
+      },
+      "gif-to-png": {
+        "label": "Da GIF a PNG",
+        "shortDescription": "Appiattisci grafica GIF in immagini PNG nitide e senza perdita di dati.",
+        "metadata": {
+          "title": "Convertitore da GIF a PNG — Strumento online gratuito da GIF a PNG",
+          "description": "Converti file GIF in PNG nel tuo browser per preservare la qualità senza aumentare le dimensioni dei file."
+        }
+      },
+      "gif-to-jpg": {
+        "label": "Da GIF a JPG",
+        "shortDescription": "Trasforma asset GIF in JPG compatibili per un ampio supporto.",
+        "metadata": {
+          "title": "Convertitore da GIF a JPG — Conversione online da GIF a JPEG",
+          "description": "Esporta istantaneamente immagini GIF in JPG e mantieni semplice il tuo flusso di lavoro. Nessun caricamento, nessuna filigrana."
+        }
+      },
+      "gif-to-webp": {
+        "label": "Da GIF a WebP",
+        "shortDescription": "Converti file GIF in moderne immagini WebP per dimensioni più piccole.",
+        "metadata": {
+          "title": "Convertitore da GIF a WebP — Strumento online gratuito da GIF a WebP",
+          "description": "Trasforma grafica GIF in formato WebP per ridurre la larghezza di banda e mantenere la qualità, tutto nel tuo browser."
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "Cos'è PNG?",
+        "description": "PNG (Portable Network Graphics) è un formato di file grafico raster che supporta la compressione dei dati senza perdita. È stato sviluppato come sostituto migliorato e non brevettato del Graphics Interchange Format (GIF).",
+        "bestFor": "Grafica web, loghi, grafici e illustrazioni che richiedono trasparenza.",
+        "pros": [
+          "Compressione senza perdita (nessuna perdita di qualità)",
+          "Supporta la trasparenza (canale alfa)",
+          "Ampio supporto dei browser"
+        ]
+      },
+      "jpg": {
+        "title": "Cos'è JPG?",
+        "description": "JPG (Joint Photographic Experts Group) è un formato di immagine compressa ampiamente utilizzato per contenere fotografie digitali e altri grafici raster. Utilizza la compressione con perdita per bilanciare qualità dell'immagine e dimensione del file.",
+        "bestFor": "Fotografie, immagini complesse con molti colori e immagini web dove la dimensione ridotta del file è critica.",
+        "pros": [
+          "Dimensione file ridotta",
+          "Compatibilità universale",
+          "Livelli di compressione regolabili"
+        ]
+      },
+      "webp": {
+        "title": "Cos'è WebP?",
+        "description": "WebP è un formato di immagine moderno impiegato da Google che fornisce una compressione superiore con e senza perdita per le immagini sul web. Consente ai webmaster e agli sviluppatori web di creare immagini più piccole e ricche che rendono il web più veloce.",
+        "bestFor": "Immagini web (sostituendo sia PNG che JPG) per migliorare la velocità di caricamento della pagina.",
+        "pros": [
+          "Compressione superiore (file più piccoli di JPG/PNG)",
+          "Supporta sia trasparenza che animazione",
+          "Supportato dai browser moderni"
+        ]
+      },
+      "heic": {
+        "title": "Cos'è HEIC?",
+        "description": "HEIC (High Efficiency Image Container) è il formato di file utilizzato da Apple per le foto sui dispositivi iOS. Utilizza lo standard HEVC (High Efficiency Video Coding) per salvare immagini di alta qualità con dimensioni di file inferiori rispetto a JPG.",
+        "bestFor": "Archiviare foto di alta qualità su dispositivi mobili con spazio di archiviazione limitato.",
+        "pros": [
+          "Alta qualità a metà della dimensione di JPG",
+          "Supporta Live Photos e mappe di profondità",
+          "Standard moderno per dispositivi Apple"
+        ]
+      },
+      "avif": {
+        "title": "Cos'è AVIF?",
+        "description": "AVIF (AV1 Image File Format) è una specifica di formato di file immagine aperta e priva di royalty per l'archiviazione di immagini o sequenze di immagini compresse con AV1 nel formato di file HEIF.",
+        "bestFor": "Immagini web di nuova generazione che richiedono la massima efficienza di compressione.",
+        "pros": [
+          "Migliore compressione della categoria",
+          "Supporto HDR e Wide Color Gamut",
+          "Senza royalty"
+        ]
+      },
+      "svg": {
+        "title": "Cos'è SVG?",
+        "description": "SVG (Scalable Vector Graphics) è un formato di immagine vettoriale basato su XML per grafica bidimensionale con supporto per interattività e animazione. A differenza delle immagini raster, gli SVG possono essere ridimensionati all'infinito senza perdere qualità.",
+        "bestFor": "Loghi, icone e illustrazioni semplici che devono apparire nitide a qualsiasi dimensione.",
+        "pros": [
+          "Scalabilità infinita",
+          "Dimensione file minuscola per grafica semplice",
+          "Modificabile tramite codice"
+        ]
+      },
+      "tiff": {
+        "title": "Cos'è TIFF?",
+        "description": "TIFF (Tagged Image File Format) è un formato di file informatico per l'archiviazione di immagini grafiche raster, popolare tra artisti grafici, l'industria editoriale e fotografi.",
+        "bestFor": "Fotografia professionale, stampa e scansione dove la qualità è fondamentale.",
+        "pros": [
+          "Non compresso o compressione senza perdita",
+          "Supporto di alta profondità di colore",
+          "Standard di settore per la stampa"
+        ]
+      },
+      "gif": {
+        "title": "Cos'è GIF?",
+        "description": "GIF (Graphics Interchange Format) è un formato di immagine bitmap che supporta le animazioni. Utilizza la compressione dei dati senza perdita LZW e consente fino a 256 colori per fotogramma.",
+        "bestFor": "Animazioni semplici, meme e piccole icone.",
+        "pros": [
+          "Supporta l'animazione",
+          "Dimensione file ridotta per grafica semplice",
+          "Universalmente supportato"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "Perché usare il nostro convertitore di immagini?",
+      "items": [
+        {
+          "title": "Privacy prima di tutto",
+          "description": "Tutte le conversioni avvengono localmente nel tuo browser. Le tue immagini non vengono mai caricate sui nostri server."
+        },
+        {
+          "title": "Velocissimo",
+          "description": "Alimentato da WebAssembly, il nostro convertitore offre prestazioni di classe desktop senza ritardi."
+        },
+        {
+          "title": "Senza limiti",
+          "description": "Converti tutte le immagini che vuoi. Nessun limite di dimensione file, nessuna restrizione giornaliera."
+        },
+        {
+          "title": "Alta qualità",
+          "description": "Trattiamo le tue immagini con cura, preservando risoluzione e qualità durante ogni conversione."
+        }
+      ]
+    }
+  }
+}

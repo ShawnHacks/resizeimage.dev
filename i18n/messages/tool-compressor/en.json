@@ -1,0 +1,50 @@
+{
+  "ImageCompressor": {
+    "title": "Free Image Compressor Online",
+    "description": "Reduce image file size while maintaining high quality. Professional compress image tool for JPG, PNG, WebP and AVIF. Private, fast, and free.",
+    "metaTitle": "Free Image Compressor Online — Compress Image & Optimize Photos",
+    "metaDescription": "Free image compressor online to reduce file size without losing quality. Best photo compressor to compress image files like JPG, PNG, and WebP instantly in your browser.",
+    "intro": {
+      "title": "Professional Free Image Compressor Online",
+      "content": "Our free image compressor online provides the fastest way to reduce image file size while keeping professional quality. Whether you need to compress image for web, email, or storage, this tool supports multiple formats including JPEG, PNG, WebP, and AVIF. All processing happens directly in your browser, meaning your photos are never uploaded to our servers, ensuring 100% privacy."
+    },
+    "settings": "Settings",
+    "processing": "Processing...",
+    "outputFormat": "Output Format",
+    "quality": "Quality",
+    "original": "Original",
+    "compressed": "Compressed",
+    "download": "Download",
+    "compressing": "Compressing...",
+    "startOver": "Start Over",
+    "dropImage": "Drop an image here to start compressing",
+    "supports": "Supports JPEG, PNG, WebP, AVIF",
+    "qualityHint": "Lower quality results in smaller file sizes but may reduce image detail.",
+    "qualityPng": "PNG compression is lossless so quality adjustment is not available.",
+    "faq": {
+      "title": "Image Compressor FAQ",
+      "items": [
+        {
+          "question": "Is this free image compressor online really free?",
+          "answer": "Yes, our tool is completely free with no hidden charges, registration, or watermarks. You can compress as many images as you want."
+        },
+        {
+          "question": "How do I compress image online using this tool?",
+          "answer": "Simply drag and drop your images into the designated area, adjust the quality settings if needed, and click the download button. Everything is processed instantly."
+        },
+        {
+          "question": "Does it support bulk compression?",
+          "answer": "Our tool is optimized for fast, single-file processing with high quality. You can compress multiple images one by one instantly since it all happens in your browser."
+        },
+        {
+          "question": "Will I lose image quality when I compress image?",
+          "answer": "Our tool uses advanced compression algorithms to minimize quality loss. You can adjust the quality slider to find the perfect balance between file size and visual clarity."
+        }
+      ]
+    },
+    "toast": {
+      "success": "Image downloaded!",
+      "error": "Compression failed. Please try a different image or format."
+    }
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "ImageCompressor": {
+    "title": "Kompresor Gambar Online Gratis (Free Image Compressor Online)",
+    "description": "Kurangi ukuran file gambar dengan tetap menjaga kualitas tinggi. Alat kompresi gambar profesional untuk JPG, PNG, WebP, dan AVIF. Privat, cepat, dan gratis.",
+    "metaTitle": "Kompresor Gambar Online Gratis — Kompres Gambar & Optimalkan Foto",
+    "metaDescription": "Kompresor gambar online gratis untuk memperkecil ukuran file tanpa kehilangan kualitas. Kompresor foto terbaik untuk mengecilkan foto JPG, PNG, dan WebP secara instan di browser.",
+    "intro": {
+      "title": "Kompresor Gambar Online Gratis yang Profesional",
+      "content": "Kompresor gambar online gratis kami menawarkan cara tercepat untuk mengurangi ukuran file gambar dengan kualitas profesional. Baik Anda perlu mengompres gambar untuk web, email, atau penyimpanan, alat ini mendukung berbagai format termasuk JPEG, PNG, WebP, dan AVIF. Semua pemrosesan dilakukan langsung di browser Anda; foto Anda tidak pernah diunggah ke server kami, menjamin privasi 100%."
+    },
+    "settings": "Pengaturan",
+    "processing": "Memproses...",
+    "outputFormat": "Format Keluaran",
+    "quality": "Kualitas",
+    "original": "Asli",
+    "compressed": "Terkonpresi",
+    "download": "Unduh",
+    "compressing": "Mengompresi...",
+    "startOver": "Mulai Ulang",
+    "dropImage": "Lepaskan gambar di sini untuk mulai mengompres",
+    "supports": "Mendukung JPEG, PNG, WebP, AVIF",
+    "qualityHint": "Kualitas yang lebih rendah menghasilkan ukuran file yang lebih kecil tetapi dapat mengurangi detail gambar.",
+    "qualityPng": "Kompresi PNG bersifat lossless sehingga penyesuaian kualitas tidak tersedia.",
+    "faq": {
+      "title": "Pertanyaan Umum Kompresor Gambar",
+      "items": [
+        {
+          "question": "Apakah kompresor gambar online ini benar-benar gratis?",
+          "answer": "Ya, alat kami sepenuhnya gratis tanpa biaya tersembunyi, pendaftaran, atau tanda air. Anda dapat mengompres gambar sebanyak yang Anda butuhkan."
+        },
+        {
+          "question": "Bagaimana cara mengompres gambar secara online dengan alat ini?",
+          "answer": "Cukup tarik dan lepaskan gambar Anda ke area yang ditentukan, sesuaikan pengaturan kualitas jika diperlukan, lalu klik tombol unduh. Semuanya diproses secara instan."
+        },
+        {
+          "question": "Apakah kualitas gambar akan menurun saat dikompresi?",
+          "answer": "Kami menggunakan algoritme kompresi canggih untuk meminimalkan kehilangan kualitas. Anda dapat menyesuaikan slider kualitas untuk menemukan keseimbangan sempurna antara ukuran file dan kejelasan visual."
+        },
+        {
+          "question": "Apakah foto saya diunggah ke server?",
+          "answer": "Tidak. Kompresi dilakukan secara lokal di browser Anda (sisi klien). File Anda tidak pernah meninggalkan komputer Anda."
+        }
+      ]
+    },
+    "toast": {
+      "success": "Gambar diunduh!",
+      "error": "Kompresi gagal. Silakan coba gambar atau format lain."
+    }
+  }
+}

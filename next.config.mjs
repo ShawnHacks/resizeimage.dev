@@ -1,14 +1,16 @@
 import createNextIntlPlugin from 'next-intl/plugin';
 import createMDX from '@next/mdx';
 import { setupDevPlatform } from "@cloudflare/next-on-pages/next-dev";
- 
+
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'mdx', 'ts', 'tsx'],
 
+
+
   // htmlLimitedBots
-//   htmlLimitedBots: /Mediapartners-Google|Googlebot|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview/i
-// ,
-  
+  //   htmlLimitedBots: /Mediapartners-Google|Googlebot|Slurp|DuckDuckBot|baiduspider|yandex|sogou|bitlybot|tumblr|vkShare|quora link preview|redditbot|ia_archiver|Bingbot|BingPreview|applebot|facebookexternalhit|facebookcatalog|Twitterbot|LinkedInBot|Slackbot|Discordbot|WhatsApp|SkypeUriPreview/i
+  // ,
+
   // Optimize for bfcache compatibility
   async headers() {
     return [
@@ -80,7 +82,7 @@ const nextConfig = {
 if (process.env.NODE_ENV === "development") {
   await setupDevPlatform();
 }
- 
+
 const withMDX = createMDX({
   // Add markdown plugins here, as desired
 });

@@ -1,0 +1,212 @@
+{
+  "BulkResizeTool": {
+    "pageTitle": "Ridimensiona immagini in blocco online",
+    "pageDescription": "Strumento online gratuito per ridimensionare in batch più immagini contemporaneamente. Veloce, sicuro e funziona interamente nel tuo browser — non è necessario alcun caricamento.",
+    "backButton": "Indietro",
+    "features": {
+      "title": "Ridimensiona immagini in blocco online e gratuitamente",
+      "description": "Ridimensiona più immagini contemporaneamente senza caricarle su nessun server",
+      "lightningFast": "Elaborazione fulminea",
+      "free": "100% gratuito per sempre",
+      "noSignup": "Nessuna registrazione richiesta",
+      "secure": "Sicuro e privato",
+      "unlimited": "Elabora immagini illimitate",
+      "browser": "Funziona nel tuo browser"
+    },
+    "imagePreview": {
+      "selected": "immagine",
+      "selectedPlural": "immagini",
+      "selectedCount": "selezionata",
+      "addMore": "Aggiungi altro",
+      "showLess": "Mostra meno",
+      "showAll": "Mostra tutto ({count} in più)",
+      "dialogTitle": "Immagini selezionate",
+      "dialogDescription": "Gestisci le tue {count} {count, plural, one {immagine selezionata} other {immagini selezionate}}. Fai clic sul pulsante × per rimuovere qualsiasi immagine o aggiungere altre immagini."
+    },
+    "controls": {
+      "resizeMode": "Modalità di ridimensionamento",
+      "percentage": {
+        "title": "Percentuale",
+        "description": "Ridimensiona le immagini al {percentage}% delle dimensioni originali.",
+        "rangeLabel": "Intervallo: dal 10% al 200%"
+      },
+      "fileSize": {
+        "title": "Dimensione del file",
+        "description": "Comprimi le immagini a circa {size} KB.",
+        "rangeLabel": "Intervallo: da 10 KB a 5000 KB",
+        "targetSize": "Dimensione del file di destinazione (KB)",
+        "note": "La dimensione effettiva del file può variare a seconda della complessità dell'immagine"
+      },
+      "dimensions": {
+        "title": "Dimensioni dell'immagine",
+        "description": "Ridimensiona a larghezza e altezza esatte.",
+        "width": "Larghezza (px)",
+        "height": "Altezza (px)",
+        "maintainRatio": "Mantieni le proporzioni",
+        "usePadding": "Usa riempimento",
+        "paddingNote": "Aggiungi riempimento per mantenere le proporzioni originali"
+      },
+      "width": {
+        "title": "Larghezza",
+        "description": "Ridimensiona a una larghezza specifica mantenendo le proporzioni.",
+        "targetWidth": "Larghezza di destinazione (px)"
+      },
+      "height": {
+        "title": "Altezza",
+        "description": "Ridimensiona a un'altezza specifica mantenendo le proporzioni.",
+        "targetHeight": "Altezza di destinazione (px)"
+      },
+      "longestSide": {
+        "title": "Lato più lungo",
+        "description": "Ridimensiona in base alla dimensione più lunga.",
+        "targetLongest": "Lato più lungo di destinazione (px)"
+      },
+      "format": {
+        "label": "Formato di output",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Qualità",
+        "description": "Qualità superiore = dimensione del file maggiore"
+      },
+      "backgroundColor": {
+        "label": "Colore di sfondo",
+        "description": "Utilizzato per le immagini trasparenti convertite in JPEG",
+        "transparent": "Usa Sfondo Trasparente",
+        "transparentValue": "Trasparente"
+      },
+      "presets": {
+        "title": "Preimpostazioni rapide",
+        "instagram": "Post di Instagram",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "Intestazione di Twitter",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Copertina di Facebook",
+        "facebookDesc": "820×312 px",
+        "youtube": "Miniatura di YouTube",
+        "youtubeDesc": "1280×720 px",
+        "email": "Adatto alle e-mail",
+        "emailDesc": "Larghezza 800 px",
+        "compress": "Comprimi piccolo",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Ridimensiona al {percentage}%",
+      "resizeButtonDefault": "Ridimensiona immagini"
+    },
+    "processing": {
+      "title": "Elaborazione delle immagini...",
+      "progress": "{current} di {total} immagini elaborate"
+    },
+    "results": {
+      "title": "Elaborazione completata!",
+      "imagesResized": "{count} {count, plural, one {immagine} other {immagini}} ridimensionate correttamente",
+      "originalSize": "Dimensione originale",
+      "newSize": "Nuova dimensione",
+      "spaceSaved": "Spazio risparmiato",
+      "processedImages": "Immagini elaborate",
+      "downloadImage": "Scarica",
+      "downloadAll": "Scarica tutte le immagini",
+      "resizeMore": "Ridimensiona altre immagini",
+      "backToEdit": "Regola impostazioni",
+      "downloadSingle": "Scarica immagine",
+      "downloadMultiple": "Scarica tutte le {count} immagini",
+      "downloading": "Download in corso..."
+    },
+    "config": {
+      "title": "Configurazione condivisibile",
+      "description": "Utilizza queste impostazioni automaticamente con questo URL.",
+      "copy": "Copia",
+      "copied": "Copiato!",
+      "link": "Link",
+      "urlCopied": "URL di configurazione copiato negli appunti!",
+      "urlCopyFailed": "Impossibile copiare l'URL"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {immagine} other {immagini}} caricate",
+      "imagesAdded": "Aggiunte altre {count} {count, plural, one {immagine} other {immagini}}",
+      "imagesResizedSuccess": "Immagini ridimensionate correttamente!",
+      "downloadComplete": "Download completato!",
+      "urlCopied": "URL copiato negli appunti!",
+      "processing": "Elaborazione delle immagini...",
+      "error": "Si è verificato un errore. Riprova.",
+      "noValidImages": "Nessun file immagine valido trovato. Seleziona immagini valide.",
+      "selectImagesFirst": "Seleziona prima le immagini",
+      "enterWidthOrHeight": "Inserisci larghezza o altezza",
+      "enterTargetValue": "Inserisci un valore di destinazione"
+    },
+    "howTo": {
+      "title": "Come ridimensionare le immagini",
+      "subtitle": "Semplici passaggi per ridimensionare le tue immagini in blocco",
+      "step1": {
+        "number": "1",
+        "title": "Seleziona",
+        "description": "Seleziona le tue immagini JPG, PNG o WebP per il nostro strumento di ridimensionamento in blocco."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Ridimensiona",
+        "description": "Scegli la modalità di ridimensionamento desiderata e regola le impostazioni per adattarle alle tue esigenze."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Scarica",
+        "description": "Scarica immediatamente le tue immagini ridimensionate o continua a modificarle con più opzioni."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Ridimensiona immagini online gratuitamente in blocco.",
+        "description": [
+          "Il modo più semplice per ridimensionare foto online. Ridimensiona, comprimi e ottimizza le tue immagini in secondi.",
+          "Funziona al 100% nel tuo browser — nessun caricamento, nessun account, i dati non lasciano il tuo dispositivo."
+        ]
+      },
+      "feature2": {
+        "title": "Ridimensiona le dimensioni dell'immagine.",
+        "description": [
+          "Regola facilmente le dimensioni dell'immagine a larghezza e altezza esatte. Perfetto per social media, stampa o uso web.",
+          "Hai bisogno di una dimensione specifica? Puoi personalizzare le dimensioni per ottenere la vestibilità perfetta."
+        ]
+      },
+      "feature3": {
+        "title": "Ridimensiona la dimensione del file immagine.",
+        "description": [
+          "Comprimi immagini in blocco per corrispondere approssimativamente alla dimensione del file scelta — risparmiando spazio di archiviazione e accelerando i caricamenti per siti web, email e piattaforme social.",
+          "Tieni presente: La complessità dell'immagine può influenzare la dimensione finale."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "subtitle": "Tutto ciò che devi sapere sul ridimensionamento in blocco delle immagini",
+      "items": [
+        {
+          "question": "Questo ridimensionatore di immagini è davvero gratuito?",
+          "answer": "Sì! Il nostro ridimensionatore di immagini in blocco è 100% gratuito senza limitazioni. Puoi ridimensionare immagini illimitate senza filigrane o restrizioni."
+        },
+        {
+          "question": "Come funziona il ridimensionamento in blocco?",
+          "answer": "Carica semplicemente più immagini contemporaneamente, scegli le tue impostazioni di ridimensionamento (percentuale, dimensioni o dimensione del file) e fai clic su ridimensiona. Tutte le immagini verranno elaborate insieme nel tuo browser."
+        },
+        {
+          "question": "Quali formati di immagine sono supportati?",
+          "answer": "Supportiamo i formati JPG, JPEG, PNG e WebP. Puoi ridimensionare immagini in uno qualsiasi di questi formati."
+        },
+        {
+          "question": "I miei dati sono sicuri?",
+          "answer": "Assolutamente! Tutta l'elaborazione delle immagini avviene localmente nel tuo browser. Le tue immagini non lasciano mai il tuo dispositivo, garantendo privacy e sicurezza complete. Un modo per dimostrare che tutta l'elaborazione viene eseguita localmente è caricare il sito web, disconnettersi da Internet e quindi utilizzare il sito."
+        },
+        {
+          "question": "Posso ridimensionare le immagini a dimensioni specifiche?",
+          "answer": "Sì! Puoi ridimensionare per percentuale, dimensioni esatte (larghezza × altezza) o dimensione del file di destinazione. Offriamo anche preset rapidi per le piattaforme di social media."
+        },
+        {
+          "question": "La dimensione del file è aumentata inaspettatamente?",
+          "answer": "Questo può accadere quando le tue impostazioni producono immagini altamente dettagliate. Per mantenere le dimensioni dei file minime, prova a salvare in formato WebP e imposta la qualità all'80% o inferiore. Se il problema persiste, controlla la risoluzione in pixel dell'immagine per assicurarti che non venga ingrandita."
+        }
+      ]
+    }
+  }
+}

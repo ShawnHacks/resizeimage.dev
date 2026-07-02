@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "图片转换器",
+    "description": "在线转换图像和照片，无需上传到任何服务器 - 您的首选图像转换工具",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "专业免费在线图像尺寸调整器",
+      "description": "在线调整图像和照片尺寸，无需上传到任何服务器 - 您的首选照片尺寸调整工具",
+      "lightningFast": "闪电般快速",
+      "free": "100% 免费图像转换器"
+    },
+    "hero": {
+      "badge": "{from} -> {to} 转换器",
+      "title": "在几秒钟内将 {from} 转换为 {to}",
+      "description": "上传 {from} 图像并立即下载高质量的 {to}。一切都保留在您的浏览器中 - 无需上传，没有限制。"
+    },
+    "workspace": {
+      "badge": "将 {from} 转换为 {to}",
+      "subtitle": "输出文件大小 {size}。",
+      "sizePending": "计算中...",
+      "download": {
+        "pending": "转换中...",
+        "ready": "下载 {to}"
+      },
+      "reset": "选择另一张图片",
+      "info": {
+        "original": "原始格式：{format}",
+        "converted": "{format} 输出",
+        "dimensions": "输出尺寸：{width} × {height} 像素"
+      },
+      "processing": {
+        "title": "正在转换您的 {from} 文件",
+        "description": "这在您的浏览器本地发生。较大的图像可能需要几秒钟。"
+      },
+      "error": {
+        "title": "转换失败",
+        "description": "我们无法转换此图像。请尝试其他文件或导出格式。",
+        "cta": "选择另一张图片",
+        "generic": "无法转换此图像。请尝试其他文件。"
+      },
+      "previewAlt": "{from} 已转换为 {to}"
+    },
+    "moreOptions": {
+      "title": "探索其他图像转换器",
+      "description": "单击即可切换格式 — 所有转换器都在您的浏览器本地运行。"
+    },
+    "howTo": {
+      "title": "如何在浏览器中将 {from} 转换为 {to}",
+      "steps": [
+        {
+          "number": "1",
+          "title": "上传您的图片",
+          "description": "从您的设备拖放或选择一个 {from} 文件。该文件永远不会离开您的浏览器。"
+        },
+        {
+          "number": "2",
+          "title": "我们立即转换它",
+          "description": "转换器在本地将您的图像呈现为 {to}，并保持质量和尺寸不变。"
+        },
+        {
+          "number": "3",
+          "title": "下载 {to} 文件",
+          "description": "单击即可保存转换后的 {to} 或选择其他格式。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "图像转换器常见问题解答",
+      "subtitle": "您需要了解的有关在浏览器中切换图像格式的所有信息",
+      "items": [
+        {
+          "question": "图像转换器可以免费使用吗？",
+          "answer": "是的——imageconverter.dev 上的每个转换器都是免费、无限制且无水印的。无需创建帐户即可转换任意数量的文件。"
+        },
+        {
+          "question": "我的图片会上传到服务器吗？",
+          "answer": "不会。所有转换都完全在您的浏览器中使用 Web API 进行。页面加载后，您甚至可以离线，转换器将继续工作。"
+        },
+        {
+          "question": "转换器会降低图像质量吗？",
+          "answer": "我们保留图像分辨率，仅在目标格式需要时才应用温和的压缩。导出为 JPG 时，透明背景会自动展平为白色。"
+        },
+        {
+          "question": "我可以一次转换多个图像吗？",
+          "answer": "目前，此工具一次处理一个文件，以便您可以在下载前查看输出。需要批量转换吗？试试我们支持格式切换的批量大小调整工具。"
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "PNG 转 JPG",
+        "shortDescription": "将透明的 PNG 转换为轻量级的 JPG，以便在线加载更快。",
+        "metadata": {
+          "title": "PNG 到 JPG 转换器 — 免费在线 PNG 到 JPEG 工具",
+          "description": "立即将 PNG 转换为 JPG 并缩小文件大小而不失清晰度。在您的浏览器中 100% 运行，无需上传。"
+        }
+      },
+      "png-to-webp": {
+        "label": "PNG 转 WebP",
+        "shortDescription": "将笨重的 PNG 图形压缩为适用于现代网络的超轻量级 WebP 文件。",
+        "metadata": {
+          "title": "PNG 到 WebP 转换器 — 将 PNG 图像压缩为 WebP",
+          "description": "将 PNG 图像转换为 WebP 以显着减小文件大小，同时保持清晰。基于浏览器，安全快速。"
+        }
+      },
+      "jpg-to-png": {
+        "label": "JPG 转 PNG",
+        "shortDescription": "当您需要透明度或更清晰的边缘时，将 JPG 照片转换为无损 PNG。",
+        "metadata": {
+          "title": "JPG 到 PNG 转换器 — 从 JPG 在线制作透明 PNG",
+          "description": "在几秒钟内将 JPG 或 JPEG 图像转换为 PNG。在不离开浏览器的情况下保留质量并添加透明度。"
+        }
+      },
+      "jpg-to-webp": {
+        "label": "JPG 转 WebP",
+        "shortDescription": "将 JPG 照片升级为高效的 WebP 文件，以实现闪电般的快速交付。",
+        "metadata": {
+          "title": "JPG 到 WebP 转换器 — 免费在线 JPEG 到 WebP 工具",
+          "description": "立即将 JPG 或 JPEG 文件转换为现代 WebP 图像。更好的压缩，相同的质量，无需上传。"
+        }
+      },
+      "webp-to-png": {
+        "label": "WebP 转 PNG",
+        "shortDescription": "将 WebP 资产导出回广泛支持的无损 PNG 格式。",
+        "metadata": {
+          "title": "WebP 到 PNG 转换器 — 在线将 WebP 图像导出为 PNG",
+          "description": "将 WebP 图像转换为 PNG 以进行编辑或兼容性。快速、私密，并完全在您的浏览器中运行。"
+        }
+      },
+      "webp-to-jpg": {
+        "label": "WebP 转 JPG",
+        "shortDescription": "通过将 WebP 照片导出为通用 JPG，使其可共享。",
+        "metadata": {
+          "title": "WebP 到 JPG 转换器 — 免费在线 WEBP 到 JPEG 工具",
+          "description": "立即将 WebP 图像转换为 JPG 文件，以便您可以将它们上传到任何地方。没有质量意外，没有服务器上传。"
+        }
+      },
+      "svg-to-png": {
+        "label": "SVG 转 PNG",
+        "shortDescription": "将矢量 SVG 图形转换为适用于任何编辑器或 CMS 的透明 PNG。",
+        "metadata": {
+          "title": "SVG 到 PNG 转换器 — 在线导出 SVG 作品为 PNG",
+          "description": "立即将 SVG 文件转换为 PNG，同时保持锐利边缘和透明效果。100% 在浏览器中运行，无需上传。"
+        }
+      },
+      "svg-to-jpg": {
+        "label": "SVG 转 JPG",
+        "shortDescription": "几秒钟内将 SVG 插画扁平化为通用的 JPG 图片。",
+        "metadata": {
+          "title": "SVG 到 JPG 转换器 — 免费在线 SVG 到 JPEG 工具",
+          "description": "将 SVG 图形转成 JPG 文件，随时随地轻松分享。快速、安全，并完全在您的浏览器中完成。"
+        }
+      },
+      "svg-to-webp": {
+        "label": "SVG 转 WebP",
+        "shortDescription": "无需离开浏览器即可将 SVG 作品生成轻量级 WebP 位图。",
+        "metadata": {
+          "title": "SVG 到 WebP 转换器 — 在线将 SVG 图像转换为 WebP",
+          "description": "从 SVG 文件创建 WebP 图像，获得极小的资源文件同时保持视觉效果。全程客户端处理并保障隐私。"
+        }
+      },
+      "heic-to-png": {
+        "label": "HEIC 转 PNG",
+        "shortDescription": "将 HEIC 照片转换为透明 PNG，随处都能打开。",
+        "metadata": {
+          "title": "HEIC 到 PNG 转换器 — 免费在线 HEIC 转 PNG 工具",
+          "description": "在浏览器中将 HEIC 图像转换为 PNG，保留清晰细节与透明度，全程本地处理。"
+        }
+      },
+      "heic-to-jpg": {
+        "label": "HEIC 转 JPG",
+        "shortDescription": "把 HEIC 照片导出为轻量的 JPG，便于分享。",
+        "metadata": {
+          "title": "HEIC 到 JPG 转换器 — 在线将 HEIC 转为 JPEG",
+          "description": "几秒钟内把 HEIC 文件转换成 JPG，无需上传或安装，快速完成 HEIC 到 JPEG 的转换。"
+        }
+      },
+      "heic-to-webp": {
+        "label": "HEIC 转 WebP",
+        "shortDescription": "将 HEIC 照片转换为高效的 WebP 文件，适配现代网站。",
+        "metadata": {
+          "title": "HEIC 到 WebP 转换器 — 免费在线 HEIC 转 WebP 工具",
+          "description": "在浏览器里把 HEIC 图像转为 WebP，保持画质同时大幅减小体积。"
+        }
+      },
+      "avif-to-png": {
+        "label": "AVIF 转 PNG",
+        "shortDescription": "将 AVIF 图像导出为通用且无损的 PNG 文件。",
+        "metadata": {
+          "title": "AVIF 到 PNG 转换器 — 在线将 AVIF 转为 PNG",
+          "description": "即时把 AVIF 图像转换成 PNG，保留锐利边缘和透明背景，无需上传。"
+        }
+      },
+      "avif-to-jpg": {
+        "label": "AVIF 转 JPG",
+        "shortDescription": "把 AVIF 照片转换为兼容性极高的 JPG 格式。",
+        "metadata": {
+          "title": "AVIF 到 JPG 转换器 — 免费在线 AVIF 转 JPEG 工具",
+          "description": "迅速把 AVIF 文件转成 JPG，方便在任何平台分享，全部在浏览器本地完成。"
+        }
+      },
+      "avif-to-webp": {
+        "label": "AVIF 转 WebP",
+        "shortDescription": "将 AVIF 图像转换为轻量高效的 WebP 文件。",
+        "metadata": {
+          "title": "AVIF 到 WebP 转换器 — 在线 AVIF 图像转换",
+          "description": "把 AVIF 资源转成 WebP，获得更广泛兼容性和接近的压缩率，全程本地处理。"
+        }
+      },
+      "tiff-to-png": {
+        "label": "TIFF 转 PNG",
+        "shortDescription": "将庞大的 TIFF 扫描件导出为精简的 PNG 文件。",
+        "metadata": {
+          "title": "TIFF 到 PNG 转换器 — 免费在线 TIFF 转 PNG 工具",
+          "description": "即时把 TIFF 图像转换为 PNG，保留细节且无需上传或插件。"
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "TIFF 转 JPG",
+        "shortDescription": "把 TIFF 文件压缩成轻量的 JPG，浏览器内即可完成。",
+        "metadata": {
+          "title": "TIFF 到 JPG 转换器 — 在线将 TIFF 转为 JPEG",
+          "description": "几秒钟内把 TIFF 图像转换成 JPG，显著减小文件大小并保持高兼容性。"
+        }
+      },
+      "tiff-to-webp": {
+        "label": "TIFF 转 WebP",
+        "shortDescription": "将 TIFF 资源转换为现代的 WebP 文件以加速加载。",
+        "metadata": {
+          "title": "TIFF 到 WebP 转换器 — 在线 TIFF 图像转换",
+          "description": "将 TIFF 图像转换为 WebP，显著缩小文件体积，同时在浏览器中私密完成。"
+        }
+      },
+      "gif-to-png": {
+        "label": "GIF 转 PNG",
+        "shortDescription": "把 GIF 图形扁平化为清晰的 PNG 图像。",
+        "metadata": {
+          "title": "GIF 到 PNG 转换器 — 免费在线 GIF 转 PNG 工具",
+          "description": "在浏览器中将 GIF 转换为 PNG，保留画质且避免文件臃肿。"
+        }
+      },
+      "gif-to-jpg": {
+        "label": "GIF 转 JPG",
+        "shortDescription": "将 GIF 资源转换为兼容性更高的 JPG 图片。",
+        "metadata": {
+          "title": "GIF 到 JPG 转换器 — 在线 GIF 转 JPEG",
+          "description": "快速把 GIF 图像导出为 JPG，简化分享流程，全程本地处理。"
+        }
+      },
+      "gif-to-webp": {
+        "label": "GIF 转 WebP",
+        "shortDescription": "将 GIF 图片转换为现代化的 WebP，显著减小体积。",
+        "metadata": {
+          "title": "GIF 到 WebP 转换器 — 免费在线 GIF 转 WebP 工具",
+          "description": "把 GIF 图像转换成 WebP，以有效降低带宽占用并保持画质，全部在浏览器内完成。"
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "什么是 PNG？",
+        "description": "PNG（便携式网络图形）是一种支持无损数据压缩的光栅图形文件格式。它是作为图形交换格式（GIF）的改进、无专利替代品而开发的。",
+        "bestFor": "需要透明度的网页图形、徽标、图表和插图。",
+        "pros": [
+          "无损压缩（无质量损失）",
+          "支持透明度（Alpha 通道）",
+          "广泛的浏览器支持"
+        ]
+      },
+      "jpg": {
+        "title": "什么是 JPG？",
+        "description": "JPG（联合图像专家组）是一种广泛使用的压缩图像格式，用于包含数字照片和其他光栅图形。它使用有损压缩来平衡图像质量和文件大小。",
+        "bestFor": "照片、具有许多颜色的复杂图像以及文件大小至关重要的网络图像。",
+        "pros": [
+          "文件体积小",
+          "通用兼容性",
+          "可调节压缩级别"
+        ]
+      },
+      "webp": {
+        "title": "什么是 WebP？",
+        "description": "WebP 是 Google 采用的一种现代图像格式，为网络上的图像提供卓越的无损和有损压缩。它使网站管理员和 Web 开发人员能够创建更小、更丰富的图像，从而使网络更快。",
+        "bestFor": "网络图像（替代 PNG 和 JPG）以提高页面加载速度。",
+        "pros": [
+          "卓越的压缩（文件比 JPG/PNG 更小）",
+          "同时支持透明度和动画",
+          "现代浏览器支持"
+        ]
+      },
+      "heic": {
+        "title": "什么是 HEIC？",
+        "description": "HEIC（高效图像容器）是 Apple 在 iOS 设备上用于照片的文件格式。它使用 HEVC（高效视频编码）标准以比 JPG 更小的文件大小保存高质量图像。",
+        "bestFor": "在存储空间有限的移动设备上存储高质量照片。",
+        "pros": [
+          "高质量，文件大小仅为 JPG 的一半",
+          "支持实况照片和深度图",
+          "Apple 设备的现代标准"
+        ]
+      },
+      "avif": {
+        "title": "什么是 AVIF？",
+        "description": "AVIF（AV1 图像文件格式）是一种开放、免版税的图像文件格式规范，用于存储使用 AV1 压缩的图像或图像序列，采用 HEIF 文件格式。",
+        "bestFor": "需要最大压缩效率的下一代网络图像。",
+        "pros": [
+          "同类最佳压缩",
+          "支持 HDR 和广色域",
+          "免版税"
+        ]
+      },
+      "svg": {
+        "title": "什么是 SVG？",
+        "description": "SVG（可缩放矢量图形）是一种基于 XML 的矢量图像格式，用于支持交互性和动画的二维图形。与光栅图像不同，SVG 可以无限缩放而不会失去质量。",
+        "bestFor": "需要在任何尺寸下都保持清晰的徽标、图标和简单插图。",
+        "pros": [
+          "无限可缩放性",
+          "简单图形的文件体积极小",
+          "可通过代码编辑"
+        ]
+      },
+      "tiff": {
+        "title": "什么是 TIFF？",
+        "description": "TIFF（标记图像文件格式）是一种用于存储光栅图形图像的计算机文件格式，在图形艺术家、出版业和摄影师中很受欢迎。",
+        "bestFor": "质量至上的专业摄影、印刷和扫描。",
+        "pros": [
+          "未压缩或无损压缩",
+          "支持高色深",
+          "印刷行业标准"
+        ]
+      },
+      "gif": {
+        "title": "什么是 GIF？",
+        "description": "GIF（图形交换格式）是一种支持动画的位图图像格式。它使用 LZW 无损数据压缩，每帧最多允许 256 种颜色。",
+        "bestFor": "简单动画、表情包和小图标。",
+        "pros": [
+          "支持动画",
+          "简单图形的文件体积小",
+          "通用支持"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "为什么使用我们的图像转换器？",
+      "items": [
+        {
+          "title": "隐私优先",
+          "description": "所有转换都在您的浏览器本地进行。您的图像永远不会上传到我们的服务器。"
+        },
+        {
+          "title": "闪电般快速",
+          "description": "由 WebAssembly 驱动，我们的转换器提供桌面级性能，没有延迟。"
+        },
+        {
+          "title": "无限制",
+          "description": "转换任意数量的图像。没有文件大小限制，没有每日限制。"
+        },
+        {
+          "title": "高质量",
+          "description": "我们精心处理您的图像，在每次转换过程中保留分辨率和质量。"
+        }
+      ]
+    }
+  }
+}

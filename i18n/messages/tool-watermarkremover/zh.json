@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "免费 Gemini AI 在线去水印工具",
+    "header": {
+      "title": "Gemini 去水印"
+    },
+    "nav": {
+      "userscript": "安装脚本",
+      "principle": "技术原理"
+    },
+    "main": {
+      "title": "专业 Gemini AI 图像去水印",
+      "subtitle": "基于反向 Alpha 混合算法，即时移除 Gemini AI 水印。100% 隐私保护，浏览器本地处理，免费无损。"
+    },
+    "upload": {
+      "text": "点击选择 或 拖拽图片至此",
+      "hint": "支持 JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "选择原始图片",
+      "2": "算法自动解析",
+      "3": "保存无水印图"
+    },
+    "preview": {
+      "original": "原图预览",
+      "result": "处理结果"
+    },
+    "panel": {
+      "title": "操作面板"
+    },
+    "btn": {
+      "download": "下载结果",
+      "reset": "重新开始",
+      "downloadAll": "全部下载"
+    },
+    "progress": {
+      "text": "处理进度"
+    },
+    "feature": {
+      "title": "为什么选择 Gemini Watermark Remover？",
+      "items": [
+        {
+          "title": "100% 客户端处理",
+          "desc": "无后端，无服务端处理。您的数据完全保留在浏览器中。"
+        },
+        {
+          "title": "隐私优先",
+          "desc": "图片绝不会上传到任何服务器。完全的隐私和安全。"
+        },
+        {
+          "title": "数学精度",
+          "desc": "基于反向 Alpha 混合公式，确保数学上的精确还原，不同于会“产生幻觉”的 AI 模型。"
+        },
+        {
+          "title": "智能自动检测",
+          "desc": "智能识别不同的水印变体（48×48 或 96×96）以实现完美移除。"
+        },
+        {
+          "title": "用户友好",
+          "desc": "简单的拖拽界面，即时处理。无需任何技术技能。"
+        },
+        {
+          "title": "跨平台",
+          "desc": "在所有现代网络浏览器上运行流畅，支持 Windows、Mac、Linux 和移动设备。"
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "工具背后的技术奥秘",
+      "sizeDetection": {
+        "title": "水印尺寸检测",
+        "description": "Gemini 根据图像尺寸使用不同的水印大小。我们的工具会自动检测正确的尺寸以确保精确移除。",
+        "table": {
+          "dims": "图像尺寸",
+          "size": "水印大小",
+          "margin": "边距",
+          "small": "宽 ≤ 1024 或 高 ≤ 1024",
+          "large": "宽 > 1024 且 高 > 1024",
+          "pixelSmall": "48×48 像素",
+          "pixelLarge": "96×96 像素",
+          "marginSmall": "32px",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "反向 Alpha 混合：工作原理",
+        "description": "大多数水印是使用 Alpha 混合添加的半透明叠加层。我们不是在猜测，而是通过数学反推。",
+        "formulaTitle": "混合公式：",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "通过重建每个像素的 Alpha 映射 (α)，我们可以代数地恢复原始像素值：",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "这实现了对原始图像数据在数学上的精确重建。"
+      },
+      "comparison": {
+        "title": "为什么这比 AI 修复（Inpainting）效果更好",
+        "intro": "典型的 AI 移除工具（Inpainting）会“猜测”水印背后应该是什么，这通常会导致伪影。我们的方法更优越，因为：",
+        "items": [
+          {
+            "title": "无需猜测",
+            "desc": "它使用已知的水印模式计算出确切的原始值。"
+          },
+          {
+            "title": "极高速度",
+            "desc": "处理过程极其快速且高效，完全在您的浏览器中运行。"
+          },
+          {
+            "title": "极小体积",
+            "desc": "工具非常轻量（约 4MB），不需要沉重的 AI 模型。"
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "完美的边缘处理",
+        "description": "Alpha 映射可以完美处理半透明边缘。反向公式自然地考虑了不同的透明度级别，产生平滑的过渡，没有可见的接缝。"
+      },
+      "reference": {
+        "text": "如需深入了解该算法的技术细节，请查看这篇",
+        "linkText": "Medium 上的详细文章"
+      }
+    },
+    "faq": {
+      "title": "常见问题",
+      "subtitle": "详细了解 Gemini Watermark Remover 的技术和安全性",
+      "items": [
+        {
+          "question": "这款去水印工具是如何工作的？",
+          "answer": "与那些猜测水印背后内容的通用 AI 修复工具不同，我们的工具使用一种称为“反向 Alpha 混合”的特定数学方法。由于我们知道 Gemini 水印图案的确切像素值，我们可以通过数学方式将其从图像中减去，从而高精度地恢复原始像素颜色。"
+        },
+        {
+          "question": "它安全/私密吗？",
+          "answer": "是的，绝对安全。该工具完全在您的网络浏览器中运行。您的图片在您的设备上本地处理，绝不会上传到我们的服务器或任何第三方。您甚至可以在加载页面后断开网络连接，它仍然可以工作。"
+        },
+        {
+          "question": "它真的是免费的吗？",
+          "answer": "是的，这款工具 100% 免费使用。这是一个开源计划，旨在用于教育目的并帮助社区。"
+        },
+        {
+          "question": "它会降低图片质量吗？",
+          "answer": "不会。对于非水印区域，移除过程是无损的。对于水印区域，它会尽可能以数学方式恢复原始颜色，避免了在其他 AI 移除工具中常见的模糊现象。"
+        },
+        {
+          "question": "为什么图片水印没有正常去除？",
+          "answer": "首先只支持Gemini 生成图片水印的去除，其次只要是Gemini生成图片的原图，一定可以完美去除。如果图片经过网站上传下载、社交工具转发后，图片会被压缩，破坏原始图片水印特征信息，这种情况下不能去除。"
+        }
+      ]
+    },
+    "loading": {
+      "text": "正在处理..."
+    },
+    "status": {
+      "loading": "正在加载资源...",
+      "pending": "等待处理...",
+      "processing": "处理中...",
+      "success": "处理完成",
+      "failed": "处理失败"
+    },
+    "info": {
+      "size": "尺寸",
+      "watermark": "检测到的水印",
+      "position": "位置",
+      "status": "状态",
+      "removed": "水印已移除"
+    }
+  }
+}

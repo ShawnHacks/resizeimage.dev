@@ -1,0 +1,212 @@
+{
+  "BulkResizeTool": {
+    "pageTitle": "Ubah Ukuran Gambar Massal Secara Online",
+    "pageDescription": "Alat online gratis untuk mengubah ukuran beberapa gambar sekaligus. Cepat, aman, dan berfungsi sepenuhnya di browser Anda — tidak perlu mengunggah.",
+    "backButton": "Kembali",
+    "features": {
+      "title": "Ubah Ukuran Gambar Massal Secara Online & Gratis",
+      "description": "Ubah ukuran beberapa gambar sekaligus tanpa mengunggah ke server mana pun",
+      "lightningFast": "Pemrosesan secepat kilat",
+      "free": "100% gratis selamanya",
+      "noSignup": "Tidak perlu mendaftar",
+      "secure": "Aman & pribadi",
+      "unlimited": "Proses gambar tanpa batas",
+      "browser": "Bekerja di browser Anda"
+    },
+    "imagePreview": {
+      "selected": "gambar",
+      "selectedPlural": "gambar",
+      "selectedCount": "dipilih",
+      "addMore": "Tambah Lagi",
+      "showLess": "Tampilkan Lebih Sedikit",
+      "showAll": "Tampilkan Semua ({count} lagi)",
+      "dialogTitle": "Gambar yang Dipilih",
+      "dialogDescription": "Kelola {count} {count, plural, one {gambar} other {gambar}} yang dipilih. Klik tombol × untuk menghapus gambar apa pun, atau tambahkan lebih banyak gambar."
+    },
+    "controls": {
+      "resizeMode": "Mode Ubah Ukuran",
+      "percentage": {
+        "title": "Persentase",
+        "description": "Skalakan gambar menjadi {percentage}% dari dimensi asli.",
+        "rangeLabel": "Rentang: 10% hingga 200%"
+      },
+      "fileSize": {
+        "title": "Ukuran File",
+        "description": "Kompres gambar menjadi sekitar {size} KB.",
+        "rangeLabel": "Rentang: 10 KB hingga 5000 KB",
+        "targetSize": "Ukuran File Target (KB)",
+        "note": "Ukuran file sebenarnya dapat bervariasi tergantung pada kompleksitas gambar"
+      },
+      "dimensions": {
+        "title": "Dimensi Gambar",
+        "description": "Ubah ukuran ke lebar dan tinggi yang tepat.",
+        "width": "Lebar (px)",
+        "height": "Tinggi (px)",
+        "maintainRatio": "Pertahankan Rasio Aspek",
+        "usePadding": "Gunakan Padding",
+        "paddingNote": "Tambahkan padding untuk mempertahankan rasio aspek asli"
+      },
+      "width": {
+        "title": "Lebar",
+        "description": "Ubah ukuran ke lebar tertentu dengan tetap mempertahankan rasio aspek.",
+        "targetWidth": "Lebar Target (px)"
+      },
+      "height": {
+        "title": "Tinggi",
+        "description": "Ubah ukuran ke tinggi tertentu dengan tetap mempertahankan rasio aspek.",
+        "targetHeight": "Tinggi Target (px)"
+      },
+      "longestSide": {
+        "title": "Sisi Terpanjang",
+        "description": "Ubah ukuran berdasarkan dimensi terpanjang.",
+        "targetLongest": "Sisi Terpanjang Target (px)"
+      },
+      "format": {
+        "label": "Format Output",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Kualitas",
+        "description": "Kualitas lebih tinggi = ukuran file lebih besar"
+      },
+      "backgroundColor": {
+        "label": "Warna Latar Belakang",
+        "description": "Digunakan untuk gambar transparan yang dikonversi ke JPEG",
+        "transparent": "Gunakan Latar Belakang Transparan",
+        "transparentValue": "Transparan"
+      },
+      "presets": {
+        "title": "Preset Cepat",
+        "instagram": "Postingan Instagram",
+        "instagramDesc": "1080×1080 piksel",
+        "twitter": "Header Twitter",
+        "twitterDesc": "1500×500 piksel",
+        "facebook": "Sampul Facebook",
+        "facebookDesc": "820×312 piksel",
+        "youtube": "Gambar Mini YouTube",
+        "youtubeDesc": "1280×720 piksel",
+        "email": "Ramah Email",
+        "emailDesc": "Lebar 800 piksel",
+        "compress": "Kompres Kecil",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Ubah Ukuran menjadi {percentage}%",
+      "resizeButtonDefault": "Ubah Ukuran Gambar"
+    },
+    "processing": {
+      "title": "Memproses Gambar...",
+      "progress": "{current} dari {total} gambar diproses"
+    },
+    "results": {
+      "title": "Pemrosesan Selesai!",
+      "imagesResized": "{count} {count, plural, one {gambar} other {gambar}} berhasil diubah ukurannya",
+      "originalSize": "Ukuran Asli",
+      "newSize": "Ukuran Baru",
+      "spaceSaved": "Ruang yang Dihemat",
+      "processedImages": "Gambar yang Diproses",
+      "downloadImage": "Unduh",
+      "downloadAll": "Unduh Semua Gambar",
+      "resizeMore": "Ubah Ukuran Lebih Banyak Gambar",
+      "backToEdit": "Sesuaikan Pengaturan",
+      "downloadSingle": "Unduh Gambar",
+      "downloadMultiple": "Unduh Semua {count} Gambar",
+      "downloading": "Mengunduh..."
+    },
+    "config": {
+      "title": "Konfigurasi yang Dapat Dibagikan",
+      "description": "Gunakan pengaturan ini secara otomatis dengan URL ini.",
+      "copy": "Salin",
+      "copied": "Disalin!",
+      "link": "Tautan",
+      "urlCopied": "URL konfigurasi disalin ke papan klip!",
+      "urlCopyFailed": "Gagal menyalin URL"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {gambar} other {gambar}} dimuat",
+      "imagesAdded": "Menambahkan {count} {count, plural, one {gambar} other {gambar}} lagi",
+      "imagesResizedSuccess": "Gambar berhasil diubah ukurannya!",
+      "downloadComplete": "Pengunduhan selesai!",
+      "urlCopied": "URL disalin ke papan klip!",
+      "processing": "Memproses gambar...",
+      "error": "Terjadi kesalahan. Silakan coba lagi.",
+      "noValidImages": "Tidak ditemukan file gambar yang valid. Silakan pilih gambar yang valid.",
+      "selectImagesFirst": "Silakan pilih gambar terlebih dahulu",
+      "enterWidthOrHeight": "Silakan masukkan lebar atau tinggi",
+      "enterTargetValue": "Silakan masukkan nilai target"
+    },
+    "howTo": {
+      "title": "Cara Mengubah Ukuran Gambar",
+      "subtitle": "Langkah sederhana untuk mengubah ukuran gambar secara massal",
+      "step1": {
+        "number": "1",
+        "title": "Pilih",
+        "description": "Pilih gambar JPG, PNG, atau WebP Anda ke alat pengubah ukuran massal kami."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Ubah Ukuran",
+        "description": "Pilih mode pengubahan ukuran yang Anda inginkan dan sesuaikan pengaturan sesuai kebutuhan Anda."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Unduh",
+        "description": "Segera unduh gambar yang telah diubah ukurannya atau lanjutkan mengedit dengan lebih banyak opsi."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Ubah ukuran gambar online gratis secara massal.",
+        "description": [
+          "Cara termudah untuk mengubah ukuran foto online. Ubah ukuran, kompres, dan optimalkan gambar Anda dalam hitungan detik.",
+          "Berjalan 100% di browser Anda — tanpa unggahan, tanpa akun, data tidak meninggalkan perangkat Anda."
+        ]
+      },
+      "feature2": {
+        "title": "Ubah Dimensi Gambar.",
+        "description": [
+          "Sesuaikan dimensi gambar dengan mudah ke lebar dan tinggi yang tepat. Sempurna untuk media sosial, pencetakan, atau penggunaan web.",
+          "Butuh ukuran tertentu? Anda dapat menyesuaikan ukuran untuk mendapatkan kesesuaian yang sempurna."
+        ]
+      },
+      "feature3": {
+        "title": "Ubah Ukuran File Gambar.",
+        "description": [
+          "Kompres gambar secara massal untuk kira-kira sesuai dengan ukuran file yang Anda pilih — menghemat penyimpanan dan mempercepat unggahan untuk situs web, email, dan platform sosial.",
+          "Perlu diingat: Kompleksitas gambar dapat mempengaruhi ukuran akhir."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "subtitle": "Semua yang perlu Anda ketahui tentang pengubahan ukuran gambar secara massal",
+      "items": [
+        {
+          "question": "Apakah pengubah ukuran gambar ini benar-benar gratis?",
+          "answer": "Ya! Pengubah ukuran gambar massal kami 100% gratis tanpa batasan. Anda dapat mengubah ukuran gambar tanpa batas tanpa watermark atau pembatasan."
+        },
+        {
+          "question": "Bagaimana cara kerja pengubahan ukuran massal?",
+          "answer": "Cukup unggah beberapa gambar sekaligus, pilih pengaturan pengubahan ukuran Anda (persentase, dimensi, atau ukuran file) dan klik ubah ukuran. Semua gambar akan diproses bersama di browser Anda."
+        },
+        {
+          "question": "Format gambar apa yang didukung?",
+          "answer": "Kami mendukung format JPG, JPEG, PNG, dan WebP. Anda dapat mengubah ukuran gambar dalam format apa pun dari ini."
+        },
+        {
+          "question": "Apakah data saya aman?",
+          "answer": "Tentu saja! Semua pemrosesan gambar terjadi secara lokal di browser Anda. Gambar Anda tidak pernah meninggalkan perangkat Anda, memastikan privasi dan keamanan lengkap. Salah satu cara untuk menunjukkan bahwa semua pemrosesan dilakukan secara lokal adalah dengan memuat situs web, memutuskan dari internet, dan kemudian menggunakan situs."
+        },
+        {
+          "question": "Bisakah saya mengubah ukuran gambar ke dimensi tertentu?",
+          "answer": "Ya! Anda dapat mengubah ukuran berdasarkan persentase, dimensi tepat (lebar × tinggi), atau ukuran file target. Kami juga menawarkan preset cepat untuk platform media sosial."
+        },
+        {
+          "question": "Ukuran file meningkat secara tidak terduga?",
+          "answer": "Ini dapat terjadi ketika pengaturan Anda menghasilkan gambar yang sangat detail. Untuk menjaga ukuran file minimal, coba simpan dalam format WebP dan atur Kualitas ke 80% atau di bawahnya. Jika masalah berlanjut, periksa resolusi piksel gambar untuk memastikan tidak diperbesar."
+        }
+      ]
+    }
+  }
+}

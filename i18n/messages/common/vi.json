@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Home": "Trang chủ",
+    "Features": "Tính năng",
+    "FAQ": "Câu hỏi thường gặp",
+    "About": "Giới thiệu",
+    "Blog": "Blog"
+  },
+  "Footer": {
+    "Product": "Sản phẩm",
+    "Tools": "Công cụ",
+    "Resources": "Tài nguyên",
+    "Company": "Công ty",
+    "Features": "Tính năng",
+    "FAQ": "Câu hỏi thường gặp",
+    "About": "Giới thiệu",
+    "SiteMap": "Sơ đồ trang web",
+    "Pricing": "Giá cả",
+    "License": "Giấy phép",
+    "Contact": "Liên hệ",
+    "Roadmap": "Lộ trình",
+    "Documentation": "Tài liệu",
+    "Blog": "Blog",
+    "Cookie Policy": "Chính sách cookie",
+    "Privacy Policy": "Chính sách bảo mật",
+    "Terms of Service": "Điều khoản dịch vụ"
+  },
+  "HomePage": {
+    "tagline": "ImageConverter",
+    "title": "Trình chuyển đổi hình ảnh miễn phí",
+    "subtitle": "Chuyển đổi hình ảnh trong trình duyệt của bạn. Không cần đăng ký, không cần tải lên, trình chuyển đổi ảnh an toàn và riêng tư 100%.",
+    "localHint": "Chuyển đổi định dạng hình ảnh cục bộ trong trình duyệt của bạn, không cần tải lên, an toàn và riêng tư 100%",
+    "previewAlt": "Xem trước hình ảnh đã chọn",
+    "settingsTitle": "Cài đặt đầu ra",
+    "reset": "Chọn ảnh khác",
+    "formatLabel": "Định dạng đầu ra",
+    "formatPlaceholder": "Chọn một định dạng",
+    "qualityLabel": "Chất lượng",
+    "qualityDisabled": "Xuất PNG tự động giữ chất lượng đầy đủ.",
+    "qualityHint": "Điều chỉnh chất lượng cho các bản xuất JPG và WebP.",
+    "downloadCta": "Tải xuống {format}",
+    "unknownFormat": "Không xác định",
+    "quickImageConverters": "Bộ chuyển đổi hình ảnh nhanh",
+    "benefitsTitle": "Tại sao chọn ImageConverter?",
+    "benefitsDescription": "Tăng tốc quy trình làm việc của bạn với bộ công cụ chuyển đổi hình ảnh riêng tư, ưu tiên trình duyệt.",
+    "benefits": {
+      "items": [
+        "Chạy 100% trong trình duyệt của bạn để các tệp của bạn không bao giờ rời khỏi thiết bị của bạn.",
+        "Hỗ trợ các định dạng hiện đại và cũ bao gồm HEIC, AVIF, GIF, TIFF, PNG, JPG và WebP.",
+        "Chọn chất lượng đầu ra và xem trước kích thước tệp ngay lập tức trước khi tải xuống.",
+        "Được tối ưu hóa cho tốc độ mà không cần đăng ký, giới hạn hoặc hình mờ."
+      ]
+    },
+    "howTitle": "Cách hoạt động của ImageConverter",
+    "howSteps": [
+      {
+        "title": "Chọn hoặc thả hình ảnh",
+        "description": "Tải lên một tệp hoặc kéo nó vào không gian làm việc — chúng tôi tự động phát hiện định dạng nguồn."
+      },
+      {
+        "title": "Chọn cài đặt đầu ra",
+        "description": "Chọn định dạng mục tiêu của bạn và điều chỉnh chất lượng cho đầu ra JPG hoặc WebP trong vài giây."
+      },
+      {
+        "title": "Tải xuống ngay lập tức",
+        "description": "Nhận tệp đã chuyển đổi ngay lập tức. Không có hàng đợi, không tải lên, không theo dõi."
+      }
+    ],
+    "ctaTitle": "Sẵn sàng tối ưu hóa quy trình làm việc hình ảnh của bạn?",
+    "ctaDescription": "Khám phá thêm các công cụ ưu tiên trình duyệt để thay đổi kích thước hàng loạt, ảnh chụp màn hình, dọn dẹp siêu dữ liệu và hơn thế nữa.",
+    "ctaButton": "Duyệt qua tất cả các công cụ"
+  },
+  "SiteConfig": {
+    "title": "Trình chuyển đổi hình ảnh - Trình chuyển đổi ảnh trực tuyến miễn phí",
+    "description": "Công cụ chuyển đổi hình ảnh trực tuyến miễn phí tốt nhất. Chuyển đổi định dạng hình ảnh cục bộ trong trình duyệt của bạn. Không cần tải lên, trình chuyển đổi ảnh an toàn và riêng tư 100%.",
+    "keywords": {
+      "0": "công cụ chuyển đổi hình ảnh",
+      "1": "công cụ chuyển đổi hình ảnh miễn phí",
+      "2": "công cụ chuyển đổi ảnh",
+      "3": "chuyển đổi hình ảnh",
+      "4": "chuyển đổi hình ảnh trực tuyến",
+      "5": "png sang jpg",
+      "6": "png sang webp",
+      "7": "jpg sang png",
+      "8": "jpg sang webp",
+      "9": "webp sang png",
+      "10": "webp sang jpg"
+    },
+    "installApp": "Cài đặt ứng dụng"
+  },
+  "AboutPage": {
+    "metaTitle": "Giới thiệu ImageConverter - Trình chuyển đổi ảnh trực tuyến miễn phí",
+    "metaDescription": "Tìm hiểu về ImageConverter, trình chuyển đổi ảnh trực tuyến miễn phí cho phép bạn chuyển đổi hình ảnh giữa nhiều định dạng mà không cần tải tệp lên bất kỳ máy chủ nào. Mọi chuyển đổi đều diễn ra cục bộ trong trình duyệt, đảm bảo quyền riêng tư và bảo mật hoàn toàn."
+  },
+  "ContactPage": {
+    "metaTitle": "Liên hệ với chúng tôi",
+    "metaDescription": "Bạn có câu hỏi hoặc phản hồi? Liên hệ với chúng tôi để nhận hỗ trợ.",
+    "metaKeywords": "liên hệ với chúng tôi, hỗ trợ, dịch vụ khách hàng, trợ giúp, phản hồi"
+  },
+  "NotFoundPage": {
+    "title": "Không tìm thấy trang",
+    "description": "Không thể tìm thấy trang bạn đang tìm kiếm. Trang có thể đã bị di chuyển, xóa hoặc bạn đã nhập sai URL.",
+    "backToHome": "Quay lại trang chủ"
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Chính sách cookie - Cách chúng tôi sử dụng cookie",
+    "metaDescription": "Tìm hiểu cách dịch vụ trang web của chúng tôi sử dụng cookie để cải thiện trải nghiệm của bạn. Hiểu các loại cookie, tùy chọn quản lý và quyền riêng tư của bạn.",
+    "metaKeywords": "chính sách cookie, quyền riêng tư, cookie, công cụ trang web, bảo vệ dữ liệu, quyền riêng tư của người dùng"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "Chính sách bảo mật",
+    "metaDescription": "Đọc chính sách bảo mật của chúng tôi để hiểu cách chúng tôi thu thập, sử dụng và bảo vệ thông tin cá nhân của bạn khi sử dụng dịch vụ trang web của chúng tôi.",
+    "metaKeywords": "chính sách bảo mật, bảo vệ dữ liệu, thông tin cá nhân, công cụ trang web, quyền riêng tư của người dùng"
+  },
+  "TermsPage": {
+    "metaTitle": "Điều khoản & Điều kiện - Thỏa thuận dịch vụ",
+    "metaDescription": "Đọc các điều khoản và điều kiện của chúng tôi để hiểu các quy tắc và nguyên tắc sử dụng dịch vụ trang web của chúng tôi.",
+    "metaKeywords": "điều khoản và điều kiện, thỏa thuận dịch vụ, điều khoản sử dụng, công cụ trang web, thỏa thuận người dùng"
+  },
+  "BlogPage": {
+    "title": "Blog",
+    "description": "Tìm hiểu về ảnh chụp màn hình trang web, mẹo phát triển web và các công cụ kỹ thuật số. Hướng dẫn và hướng dẫn của chuyên gia dành cho nhà phát triển và nhà thiết kế.",
+    "keywords": "blog ảnh chụp màn hình trang web, hướng dẫn phát triển web, hướng dẫn công cụ kỹ thuật số, hướng dẫn ảnh chụp màn hình, mẹo thiết kế web",
+    "readMore": "Đọc thêm",
+    "minRead": "phút đọc",
+    "noPosts": "Chưa có bài đăng blog nào. Hãy sớm quay lại!",
+    "categories": "Danh mục",
+    "recentPosts": "Bài viết gần đây",
+    "posts": "bài viết"
+  },
+  "BlogPost": {
+    "backToBlog": "Quay lại blog",
+    "writtenBy": "Viết bởi",
+    "published": "Đã xuất bản",
+    "updated": "Đã cập nhật",
+    "shareArticle": "Chia sẻ bài viết này",
+    "relatedPosts": "Bài viết liên quan",
+    "tags": "Thẻ",
+    "minRead": "phút đọc",
+    "views": "lượt xem",
+    "lastUpdated": "Cập nhật lần cuối:",
+    "like": "Thích",
+    "share": "Chia sẻ",
+    "quickActions": "Hành động nhanh",
+    "copyLink": "Sao chép liên kết",
+    "socialShare": "Chia sẻ xã hội",
+    "aboutAuthor": "Về tác giả",
+    "relatedArticles": "Bài viết liên quan",
+    "continueExploring": "Tiếp tục khám phá thêm nội dung liên quan",
+    "toolsComparison": "So sánh công cụ",
+    "seoGuide": "Hướng dẫn SEO",
+    "tutorial": "Hướng dẫn",
+    "blog": "Blog",
+    "category": "Danh mục",
+    "categories": "Danh mục",
+    "articles": "{count} {count, plural, one {bài viết} other {bài viết}}",
+    "noArticles": "Chưa có bài viết nào trong danh mục này.",
+    "readMore": "Đọc thêm",
+    "categoryNotFound": "Không tìm thấy danh mục",
+    "categoryNotFoundDescription": "Không thể tìm thấy danh mục được yêu cầu.",
+    "postNotFound": "Không tìm thấy bài viết",
+    "postNotFoundDescription": "Không thể tìm thấy bài đăng blog được yêu cầu."
+  },
+  "Tools": {
+    "title": "Công cụ miễn phí",
+    "resizeimage": "Thay đổi kích thước hình ảnh",
+    "resizeimageDesc": "Thay đổi kích thước hình ảnh",
+    "bulkresizeimages": "Thay đổi kích thước hàng loạt hình ảnh",
+    "bulkresizeimagesDesc": "Thay đổi kích thước hàng loạt hình ảnh",
+    "imageconverter": "Công cụ chuyển đổi định dạng hình ảnh",
+    "imageconverterDesc": "Chuyển đổi định dạng hình ảnh",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "Chụp ảnh màn hình",
+    "screentellDesc": "Trình ghi demo màn hình",
+    "imagecompressor": "Công cụ nén ảnh",
+    "imagecompressorDesc": "Nén ảnh",
+    "crop": "Crop image",
+    "cropDesc": "Cắt ảnh",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "Hình mờ ảnh",
+    "stitchimages": "Ghép ảnh",
+    "stitchimagesDesc": "Ghép nối hình ảnh"
+  },
+  "ImageUploader": {
+    "titleSingle": "Kéo và thả hình ảnh của bạn",
+    "titleMultiple": "Kéo và thả các hình ảnh của bạn",
+    "subtitleSingle": "hoặc nhấp để duyệt",
+    "selectImagesSingle": "Chọn hình ảnh",
+    "selectImagesMultiple": "Chọn các hình ảnh",
+    "supportedFormats": "Hỗ trợ: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG hoặc WebP",
+    "maxFiles": "Tối đa {max} tệp",
+    "maxSizeMB": "Tối đa {size}MB mỗi tệp",
+    "dropHere": "Thả hình ảnh của bạn vào đây",
+    "filesSelected": "Đã chọn tệp thành công",
+    "file": "tệp",
+    "files": "các tệp",
+    "errorInvalidFiles": "Loại tệp không hợp lệ",
+    "errorTooManyFiles": "Quá nhiều tệp",
+    "errorFileSizeExceeded": "Một số tệp quá lớn"
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Suppresseur de filigrane Gemini AI gratuit en ligne",
+    "header": {
+      "title": "Suppresseur de Filigrane Gemini"
+    },
+    "nav": {
+      "userscript": "Userscript pour Gemini",
+      "principle": "Principe Technique"
+    },
+    "main": {
+      "title": "Suppression de filigrane d'image Gemini AI",
+      "subtitle": "Supprimez instantanément les filigranes Gemini AI à l'aide de l'algorithme reverse alpha blending. 100 % privé, traitement côté navigateur, gratuit et sans perte."
+    },
+    "upload": {
+      "text": "Cliquez pour sélectionner ou faites glisser des images ici",
+      "hint": "Prend en charge JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Sélectionnez l'image originale",
+      "2": "Traitement automatique",
+      "3": "Enregistrer l'image propre"
+    },
+    "preview": {
+      "original": "Aperçu original",
+      "result": "Résultat traité"
+    },
+    "panel": {
+      "title": "Panneau de contrôle"
+    },
+    "btn": {
+      "download": "Télécharger",
+      "reset": "Recommencer",
+      "downloadAll": "Tout télécharger"
+    },
+    "progress": {
+      "text": "Progression"
+    },
+    "feature": {
+      "title": "Pourquoi choisir Gemini Watermark Remover ?",
+      "items": [
+        {
+          "title": "100% côté client",
+          "desc": "Pas de backend, pas de traitement côté serveur. Vos données restent entièrement dans votre navigateur."
+        },
+        {
+          "title": "Confidentialité avant tout",
+          "desc": "Les images ne sont jamais téléchargées sur un serveur. Point final. Confidentialité et sécurité totales."
+        },
+        {
+          "title": "Précision mathématique",
+          "desc": "Basé sur la formule Reverse Alpha Blending, garantissant une restauration mathématiquement exacte, contrairement aux modèles d'IA qui 'hallucinent'."
+        },
+        {
+          "title": "Auto-détection intelligente",
+          "desc": "Reconnaissance intelligente des différentes variantes de filigrane (48×48 ou 96×96) pour une suppression parfaite."
+        },
+        {
+          "title": "Facile à utiliser",
+          "desc": "Interface simple par glisser-déposer avec traitement instantané. Aucune compétence technique requise."
+        },
+        {
+          "title": "Multiplateforme",
+          "desc": "Fonctionne parfaitement sur tous les navigateurs Web modernes sous Windows, Mac, Linux et appareils mobiles."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "La Magie Technique Derrière l'Outil",
+      "sizeDetection": {
+        "title": "Détection de la Taille du Filigrane",
+        "description": "Gemini utilise différentes tailles de filigrane en fonction des dimensions de l'image. Notre outil détecte automatiquement la taille correcte pour assurer une suppression précise.",
+        "table": {
+          "dims": "Dimensions de l'Image",
+          "size": "Taille du Filigrane",
+          "margin": "Marge",
+          "small": "L ≤ 1024 ou H ≤ 1024",
+          "pixelSmall": "48×48 pixels",
+          "marginSmall": "32px",
+          "large": "L > 1024 et H > 1024",
+          "pixelLarge": "96×96 pixels",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending : Comment ça Marche",
+        "description": "La plupart des filigranes sont des superpositions semi-transparentes ajoutées par alpha blending. Au lieu de deviner, nous inversons le calcul.",
+        "formulaTitle": "LA FORMULE DE MÉLANGE :",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "En reconstruisant la carte alpha (α) pour chaque pixel, nous pouvons algébriquement récupérer la valeur du pixel d'origine :",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Cela donne une reconstruction mathématiquement précise des données d'image d'origine."
+      },
+      "comparison": {
+        "title": "Pourquoi cela Fonctionne Mieux que l'Inpainting IA",
+        "intro": "Les outils de suppression IA typiques (Inpainting) « devinent » ce qui devrait se trouver derrière le filigrane, ce qui entraîne souvent des artefacts. Notre approche est supérieure car :",
+        "items": [
+          {
+            "title": "Pas de Devinettes",
+            "desc": "Il calcule les valeurs d'origine exactes à l'aide du motif de filigrane connu."
+          },
+          {
+            "title": "Vitesse Élevée",
+            "desc": "Le traitement est extrêmement rapide et efficace, s'exécutant entièrement dans votre navigateur."
+          },
+          {
+            "title": "Faible Empreinte",
+            "desc": "L'outil est léger (environ 4 Mo) et ne nécessite pas de modèles d'IA lourds."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Gestion Parfaite des Bords",
+        "description": "Les bords semi-transparents sont magnifiquement gérés par la carte alpha. La formule inverse prend naturellement en compte les niveaux de transparence variables, assurant des transitions fluides sans coutures visibles."
+      },
+      "reference": {
+        "text": "Pour un approfondissement technique sur l'algorithme, consultez cet",
+        "linkText": "article détaillé sur Medium"
+      }
+    },
+    "faq": {
+      "title": "Foire aux questions",
+      "subtitle": "En savoir plus sur la technologie et la sécurité de Gemini Watermark Remover",
+      "items": [
+        {
+          "question": "Comment fonctionne ce suppresseur de filigrane ?",
+          "answer": "Contrairement aux outils de retouche IA génériques qui devinent ce qu'il y a derrière un filigrane, notre outil utilise une approche mathématique spécifique appelée 'Reverse Alpha Blending'. Comme nous connaissons les valeurs de pixels exactes du motif du filigrane Gemini, nous pouvons le soustraire mathématiquement de l'image pour restaurer les couleurs de pixels d'origine avec une grande précision."
+        },
+        {
+          "question": "Est-ce sûr / privé ?",
+          "answer": "Oui, absolument. L'outil s'exécute entièrement dans votre navigateur Web. Vos images sont traitées localement sur votre appareil et ne sont jamais téléchargées sur nos serveurs ou chez des tiers. Vous pouvez même déconnecter votre connexion Internet après avoir chargé la page et cela fonctionnera toujours."
+        },
+        {
+          "question": "Est-ce vraiment gratuit ?",
+          "answer": "Oui, cet outil est 100 % gratuit. C'est une initiative open source conçue à des fins éducatives et pour aider la communauté."
+        },
+        {
+          "question": "Cela réduit-il la qualité de l'image ?",
+          "answer": "No. Le processus de suppression est sans perte pour les zones non filigranées. Pour les zones filigranées, il restaure les couleurs d'origine aussi précisément que possible mathématiquement, évitant le flou souvent observé avec d'autres outils de suppression par IA."
+        },
+        {
+          "question": "Pourquoi le filigrane de l'image n'a-t-il pas été correctement supprimé ?",
+          "answer": "Notre outil prend spécifiquement en charge la suppression des filigranes (SynthID) des images générées par Gemini. Pour les images originales non compressées, la suppression est parfaite. Cependant, si l'image a été compressée ou réencodée (par exemple, via des réseaux sociaux ou des téléchargements sur des sites Web), les métadonnées et les caractéristiques du filigrane sont souvent endommagées, ce qui empêche une suppression réussie."
+        }
+      ]
+    },
+    "loading": {
+      "text": "Traitement..."
+    },
+    "status": {
+      "loading": "Chargement des ressources...",
+      "pending": "En attente...",
+      "processing": "Traitement...",
+      "success": "Terminé",
+      "failed": "Échoué"
+    },
+    "info": {
+      "size": "Taille",
+      "watermark": "Filigrane détecté",
+      "position": "Position",
+      "status": "Statut",
+      "removed": "Filigrane supprimé"
+    }
+  }
+}

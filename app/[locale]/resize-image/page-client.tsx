@@ -111,18 +111,18 @@ export default function SingleResizePageClient() {
         </div>
       </header>
 
-      
+
       <main className="container mx-auto px-4 py-8 mb-8">
         <div className="max-w-5xl mx-auto space-y-4">
           {!file || !previewUrl ? (
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
-            className="w-full max-w-4xl"
-          >
-            <HeroSection onFilesSelected={handleFilesSelected}  />
-          </motion.div>) : (
+            <motion.div
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+              className="w-full max-w-4xl"
+            >
+              <HeroSection onFilesSelected={handleFilesSelected} />
+            </motion.div>) : (
             <SingleResizeWorkspace
               file={file}
               previewUrl={previewUrl}
@@ -132,9 +132,9 @@ export default function SingleResizePageClient() {
         </div>
       </main>
 
-      <div className='container mx-auto max-w-4xl pb-16'>
+      {/* <div className='container mx-auto max-w-4xl pb-16'>
         <ToolsGrid />
-      </div>
+      </div> */}
 
       {/* How To Section */}
       <HowToSection
@@ -177,7 +177,7 @@ export default function SingleResizePageClient() {
           image="/illustration/image-sizes-presets.webp"
           imageAlt="Resize image dimensions online"
           layout="image-right"
-          // className="bg-muted/30"
+        // className="bg-muted/30"
         />
 
         <FeatureSection
@@ -186,7 +186,7 @@ export default function SingleResizePageClient() {
           image="/illustration/crop-image.webp"
           imageAlt="Resize image dimensions online"
           layout="image-left"
-          // className="bg-muted/30"
+        // className="bg-muted/30"
         />
       </div>
 

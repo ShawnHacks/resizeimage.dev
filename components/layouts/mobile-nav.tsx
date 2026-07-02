@@ -52,15 +52,36 @@ export function NavMobile({ navItems = [] }: { navItems: NavItem[] }) {
         <ul className="divide-muted grid divide-y">
           {navItems &&
             navItems.length > 0 &&
-            navItems.map(({ title, href }) => (
-              <li key={href} className="py-3">
-                <Link
-                  href={href}
-                  onClick={() => setOpen(false)}
-                  className="flex w-full font-medium capitalize"
-                >
-                  {title}
-                </Link>
+            navItems.map((item) => (
+              <li key={item.href} className="py-3">
+                {item.children ? (
+                  <div className="space-y-3">
+                    <div className="text-muted-foreground text-xs font-semibold tracking-wider uppercase">
+                      {item.title}
+                    </div>
+                    <ul className="pl-4 space-y-3 border-l ml-1">
+                      {item.children.map((child) => (
+                        <li key={child.href}>
+                          <Link
+                            href={child.href}
+                            onClick={() => setOpen(false)}
+                            className="flex w-full font-medium capitalize"
+                          >
+                            {child.title}
+                          </Link>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ) : (
+                  <Link
+                    href={item.href}
+                    onClick={() => setOpen(false)}
+                    className="flex w-full font-medium capitalize"
+                  >
+                    {item.title}
+                  </Link>
+                )}
               </li>
             ))}
 

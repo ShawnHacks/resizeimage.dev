@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "Image Converter",
+    "description": "Convert images and photos online without uploading to any server - your go-to image converter tool",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "Professional Image Resizer Free Online",
+      "description": "Resize images and photos online without uploading to any server - your go-to photo resizer tool",
+      "lightningFast": "Lightning-fast",
+      "free": "100% free image converter"
+    },
+    "hero": {
+      "badge": "{from} -> {to} converter",
+      "title": "Convert {from} to {to} in seconds",
+      "description": "Upload a {from} image and instantly download a high-quality {to}. Everything stays in your browser — no uploads, no limits."
+    },
+    "workspace": {
+      "badge": "Convert {from} to {to}",
+      "subtitle": "Output file size {size}.",
+      "sizePending": "calculating...",
+      "download": {
+        "pending": "Converting...",
+        "ready": "Download {to}"
+      },
+      "reset": "Choose another image",
+      "info": {
+        "original": "Original format: {format}",
+        "converted": "{format} output",
+        "dimensions": "Output dimensions: {width} × {height} px"
+      },
+      "processing": {
+        "title": "Converting your {from} file",
+        "description": "This happens locally inside your browser. Larger images can take a few seconds."
+      },
+      "error": {
+        "title": "Conversion failed",
+        "description": "We couldn't convert this image. Try a different file or export format.",
+        "cta": "Pick another image",
+        "generic": "Unable to convert this image. Please try a different file."
+      },
+      "previewAlt": "{from} converted into {to}"
+    },
+    "moreOptions": {
+      "title": "Explore other image converters",
+      "description": "Switch formats in one click — all converters run locally in your browser."
+    },
+    "howTo": {
+      "title": "How to convert {from} to {to} in your browser",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Upload your image",
+          "description": "Drop or select a {from} file from your device. The file never leaves your browser."
+        },
+        {
+          "number": "2",
+          "title": "We convert it instantly",
+          "description": "The converter renders your image as {to} locally, keeping quality and dimensions intact."
+        },
+        {
+          "number": "3",
+          "title": "Download the {to} file",
+          "description": "Save the converted {to} with one click or choose another format."
+        }
+      ]
+    },
+    "faq": {
+      "title": "Image converter FAQ",
+      "subtitle": "Everything you need to know about switching image formats in your browser",
+      "items": [
+        {
+          "question": "Is the image converter free to use?",
+          "answer": "Yes—every converter on imageconverter.dev is free, unlimited, and watermark-free. Convert as many files as you want without creating an account."
+        },
+        {
+          "question": "Do my images ever upload to a server?",
+          "answer": "No. All conversions happen entirely in your browser using Web APIs. After the page loads you can even go offline and the converter will keep working."
+        },
+        {
+          "question": "Will the converter reduce image quality?",
+          "answer": "We preserve the image resolution and apply gentle compression only when the target format requires it. Transparent backgrounds are automatically flattened to white when exporting to JPG."
+        },
+        {
+          "question": "Can I convert multiple images at once?",
+          "answer": "Right now this tool handles one file at a time so you can review the output before downloading. Need bulk conversions? Try our bulk resize tool with format switching support."
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "PNG to JPG",
+        "shortDescription": "Flatten transparent PNGs into lightweight JPGs that load faster online.",
+        "metadata": {
+          "title": "PNG to JPG Converter — Free Online PNG to JPEG Tool",
+          "description": "Convert PNG to JPG instantly and shrink file size without losing clarity. Runs 100% in your browser with no uploads."
+        }
+      },
+      "png-to-webp": {
+        "label": "PNG to WebP",
+        "shortDescription": "Compress heavy PNG graphics into ultra-light WebP files for the modern web.",
+        "metadata": {
+          "title": "PNG to WebP Converter — Compress PNG Images to WebP",
+          "description": "Convert PNG images to WebP to cut file size dramatically while staying crisp. Browser-based, secure, and fast."
+        }
+      },
+      "jpg-to-png": {
+        "label": "JPG to PNG",
+        "shortDescription": "Turn JPG photos into lossless PNGs when you need transparency or sharper edges.",
+        "metadata": {
+          "title": "JPG to PNG Converter — Make Transparent PNG from JPG Online",
+          "description": "Convert JPG or JPEG images to PNG in seconds. Preserve quality and add transparency without leaving your browser."
+        }
+      },
+      "jpg-to-webp": {
+        "label": "JPG to WebP",
+        "shortDescription": "Upgrade JPG photos to efficient WebP files for blazing-fast delivery.",
+        "metadata": {
+          "title": "JPG to WebP Converter — Free Online JPEG to WebP Tool",
+          "description": "Transform JPG or JPEG files into modern WebP images instantly. Better compression, same quality, no uploads."
+        }
+      },
+      "webp-to-png": {
+        "label": "WebP to PNG",
+        "shortDescription": "Export WebP assets back to widely supported, lossless PNG format.",
+        "metadata": {
+          "title": "WebP to PNG Converter — Export WebP Images to PNG Online",
+          "description": "Convert WebP images to PNG for editing or compatibility. Fast, private, and runs completely in your browser."
+        }
+      },
+      "webp-to-jpg": {
+        "label": "WebP to JPG",
+        "shortDescription": "Make your WebP photos shareable by exporting them as universal JPGs.",
+        "metadata": {
+          "title": "WebP to JPG Converter — Free Online WEBP to JPEG Tool",
+          "description": "Turn WebP images into JPG files instantly so you can upload them anywhere. No quality surprises, no server uploads."
+        }
+      },
+      "svg-to-png": {
+        "label": "SVG to PNG",
+        "shortDescription": "Turn vector SVG graphics into transparent PNGs ready for any editor or CMS.",
+        "metadata": {
+          "title": "SVG to PNG Converter — Export SVG Artwork to PNG Online",
+          "description": "Convert SVG files to PNG instantly while keeping sharp edges and transparency. 100% browser-based with no uploads."
+        }
+      },
+      "svg-to-jpg": {
+        "label": "SVG to JPG",
+        "shortDescription": "Flatten SVG illustrations into universally compatible JPG images in seconds.",
+        "metadata": {
+          "title": "SVG to JPG Converter — Free Online SVG to JPEG Tool",
+          "description": "Transform SVG graphics into JPG files for easy sharing anywhere. Fast, private, and runs entirely in your browser."
+        }
+      },
+      "svg-to-webp": {
+        "label": "SVG to WebP",
+        "shortDescription": "Generate lightweight WebP bitmaps from SVG artwork without leaving your browser.",
+        "metadata": {
+          "title": "SVG to WebP Converter — Convert SVG Images to WebP Online",
+          "description": "Create WebP images from SVG files to get ultra-small assets while preserving visual fidelity. Fully client-side and secure."
+        }
+      },
+      "heic-to-png": {
+        "label": "HEIC to PNG",
+        "shortDescription": "Convert HEIC photos into transparent PNGs that open anywhere instantly.",
+        "metadata": {
+          "title": "HEIC to PNG Converter — Free Online HEIC to PNG Tool",
+          "description": "Turn HEIC images into PNG files in your browser. Keep crisp detail, preserve transparency, and stay fully private."
+        }
+      },
+      "heic-to-jpg": {
+        "label": "HEIC to JPG",
+        "shortDescription": "Make HEIC shots shareable by exporting them as lightweight JPG images.",
+        "metadata": {
+          "title": "HEIC to JPG Converter — Convert HEIC Photos to JPEG Online",
+          "description": "Convert HEIC files to JPG instantly. No uploads, no installs, just fast HEIC to JPEG conversion on your device."
+        }
+      },
+      "heic-to-webp": {
+        "label": "HEIC to WebP",
+        "shortDescription": "Upgrade HEIC photos to ultra-efficient WebP files for the modern web.",
+        "metadata": {
+          "title": "HEIC to WebP Converter — Free Online HEIC to WebP Tool",
+          "description": "Transform HEIC images into WebP format in seconds for smaller files and great quality — all in your browser."
+        }
+      },
+      "avif-to-png": {
+        "label": "AVIF to PNG",
+        "shortDescription": "Export AVIF graphics to universally supported, lossless PNG files.",
+        "metadata": {
+          "title": "AVIF to PNG Converter — Convert AVIF Images to PNG Online",
+          "description": "Convert AVIF images to PNG instantly without leaving your browser. Keep sharp edges and transparency with zero uploads."
+        }
+      },
+      "avif-to-jpg": {
+        "label": "AVIF to JPG",
+        "shortDescription": "Turn AVIF photos into compatible JPGs for legacy workflows.",
+        "metadata": {
+          "title": "AVIF to JPG Converter — Free Online AVIF to JPEG Tool",
+          "description": "Create JPG copies of AVIF files in moments. Works locally in your browser for quick sharing anywhere."
+        }
+      },
+      "avif-to-webp": {
+        "label": "AVIF to WebP",
+        "shortDescription": "Convert AVIF images into space-saving WebP files without leaving the browser.",
+        "metadata": {
+          "title": "AVIF to WebP Converter — Online AVIF Image Conversion",
+          "description": "Switch AVIF assets to WebP for better compatibility and similar compression — fast, private, and 100% client-side."
+        }
+      },
+      "tiff-to-png": {
+        "label": "TIFF to PNG",
+        "shortDescription": "Export heavy TIFF scans as sleek PNG files ready for the web.",
+        "metadata": {
+          "title": "TIFF to PNG Converter — Free Online TIFF to PNG Tool",
+          "description": "Convert TIFF images to PNG format instantly. Keep fine detail with zero uploads or plugins."
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "TIFF to JPG",
+        "shortDescription": "Compress TIFF files into lightweight JPGs while staying in your browser.",
+        "metadata": {
+          "title": "TIFF to JPG Converter — Convert TIFF to JPEG Online",
+          "description": "Turn TIFF images into JPG in seconds for tiny file sizes and broad compatibility — all done locally."
+        }
+      },
+      "tiff-to-webp": {
+        "label": "TIFF to WebP",
+        "shortDescription": "Transform TIFF assets into cutting-edge WebP files for faster delivery.",
+        "metadata": {
+          "title": "TIFF to WebP Converter — Online TIFF Image Conversion",
+          "description": "Convert TIFF images to WebP instantly to shrink file size dramatically. Private, fast, and browser-based."
+        }
+      },
+      "gif-to-png": {
+        "label": "GIF to PNG",
+        "shortDescription": "Flatten GIF graphics into crisp, lossless PNG images.",
+        "metadata": {
+          "title": "GIF to PNG Converter — Free Online GIF to PNG Tool",
+          "description": "Convert GIF files to PNG in your browser to preserve quality without bloated file sizes."
+        }
+      },
+      "gif-to-jpg": {
+        "label": "GIF to JPG",
+        "shortDescription": "Turn GIF assets into compatible JPGs for broad support.",
+        "metadata": {
+          "title": "GIF to JPG Converter — Online GIF to JPEG Conversion",
+          "description": "Export GIF images to JPG instantly and keep your workflow simple. No uploads, no watermarks."
+        }
+      },
+      "gif-to-webp": {
+        "label": "GIF to WebP",
+        "shortDescription": "Convert GIF files into modern WebP images for smaller sizes.",
+        "metadata": {
+          "title": "GIF to WebP Converter — Free Online GIF to WebP Tool",
+          "description": "Transform GIF graphics into WebP format to cut bandwidth and keep quality, all inside your browser."
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "What is PNG?",
+        "description": "PNG (Portable Network Graphics) is a raster graphics file format that supports lossless data compression. It was developed as an improved, non-patented replacement for Graphics Interchange Format (GIF).",
+        "bestFor": "Web graphics, logos, charts, and illustrations requiring transparency.",
+        "pros": [
+          "Lossless compression (no quality loss)",
+          "Supports transparency (alpha channel)",
+          "Wide browser support"
+        ]
+      },
+      "jpg": {
+        "title": "What is JPG?",
+        "description": "JPG (Joint Photographic Experts Group) is a widely used compressed image format for containing digital photographs and other raster graphics. It uses lossy compression to balance image quality and file size.",
+        "bestFor": "Photographs, complex images with many colors, and web images where small file size is critical.",
+        "pros": [
+          "Small file size",
+          "Universal compatibility",
+          "Adjustable compression levels"
+        ]
+      },
+      "webp": {
+        "title": "What is WebP?",
+        "description": "WebP is a modern image format employed by Google that provides superior lossless and lossy compression for images on the web. It allows webmasters and web developers to create smaller, richer images that make the web faster.",
+        "bestFor": "Web images (replacing both PNG and JPG) to improve page load speeds.",
+        "pros": [
+          "Superior compression (smaller files than JPG/PNG)",
+          "Supports both transparency and animation",
+          "Supported by modern browsers"
+        ]
+      },
+      "heic": {
+        "title": "What is HEIC?",
+        "description": "HEIC (High Efficiency Image Container) is the file format used by Apple for photos on iOS devices. It uses the HEVC (High Efficiency Video Coding) standard to save images with high quality at smaller file sizes than JPG.",
+        "bestFor": "Storing high-quality photos on mobile devices with limited storage.",
+        "pros": [
+          "High quality at half the size of JPG",
+          "Supports Live Photos and depth maps",
+          "Modern standard for Apple devices"
+        ]
+      },
+      "avif": {
+        "title": "What is AVIF?",
+        "description": "AVIF (AV1 Image File Format) is an open, royalty-free image file format specification for storing images or image sequences compressed with AV1 in the HEIF file format.",
+        "bestFor": "Next-generation web images requiring maximum compression efficiency.",
+        "pros": [
+          "Best-in-class compression",
+          "HDR and Wide Color Gamut support",
+          "Royalty-free"
+        ]
+      },
+      "svg": {
+        "title": "What is SVG?",
+        "description": "SVG (Scalable Vector Graphics) is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. Unlike raster images, SVGs can be scaled infinitely without losing quality.",
+        "bestFor": "Logos, icons, and simple illustrations that need to look sharp at any size.",
+        "pros": [
+          "Infinite scalability",
+          "Tiny file size for simple graphics",
+          "Editable via code"
+        ]
+      },
+      "tiff": {
+        "title": "What is TIFF?",
+        "description": "TIFF (Tagged Image File Format) is a computer file format for storing raster graphics images, popular among graphic artists, the publishing industry, and photographers.",
+        "bestFor": "Professional photography, printing, and scanning where quality is paramount.",
+        "pros": [
+          "Uncompressed or lossless compression",
+          "High color depth support",
+          "Industry standard for printing"
+        ]
+      },
+      "gif": {
+        "title": "What is GIF?",
+        "description": "GIF (Graphics Interchange Format) is a bitmap image format that supports animations. It uses LZW lossless data compression and allows up to 256 colors per frame.",
+        "bestFor": "Simple animations, memes, and small icons.",
+        "pros": [
+          "Supports animation",
+          "Small file size for simple graphics",
+          "Universally supported"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "Why Use Our Image Converter?",
+      "items": [
+        {
+          "title": "Privacy First",
+          "description": "All conversions happen locally in your browser. Your images are never uploaded to our servers."
+        },
+        {
+          "title": "Lightning Fast",
+          "description": "Powered by WebAssembly, our converter delivers desktop-class performance without the lag."
+        },
+        {
+          "title": "No Limits",
+          "description": "Convert as many images as you want. No file size limits, no daily restrictions."
+        },
+        {
+          "title": "High Quality",
+          "description": "We treat your images with care, preserving resolution and quality during every conversion."
+        }
+      ]
+    }
+  }
+}

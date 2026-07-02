@@ -1,0 +1,50 @@
+{
+  "ImageCompressor": {
+    "title": "Trình nén ảnh trực tuyến miễn phí (Free Image Compressor Online)",
+    "description": "Giảm kích thước tệp ảnh trong khi vẫn giữ được chất lượng cao. Công cụ nén ảnh chuyên nghiệp cho JPG, PNG, WebP và AVIF. Riêng tư, nhanh chóng và miễn phí.",
+    "metaTitle": "Trình nén ảnh trực tuyến miễn phí — Nén ảnh & Tối ưu hóa hình ảnh",
+    "metaDescription": "Trình nén ảnh trực tuyến miễn phí giúp giảm dung lượng tệp mà không làm giảm chất lượng. Trình nén ảnh tốt nhất để nén ảnh JPG, PNG và WebP ngay trên trình duyệt.",
+    "intro": {
+      "title": "Trình nén ảnh trực tuyến chuyên nghiệp và miễn phí",
+      "content": "Trình nén ảnh trực tuyến miễn phí của chúng tôi cung cấp cách nhanh nhất để giảm dung lượng tệp ảnh với chất lượng chuyên nghiệp. Cho dù bạn cần nén ảnh cho web, email hay lưu trữ, công cụ này hỗ trợ nhiều định dạng bao gồm JPEG, PNG, WebP và AVIF. Tất cả quá trình xử lý được thực hiện trực tiếp trong trình duyệt của bạn; ảnh của bạn không bao giờ được tải lên máy chủ của chúng tôi, đảm bảo quyền riêng tư 100%."
+    },
+    "settings": "Cài đặt",
+    "processing": "Đang xử lý...",
+    "outputFormat": "Định dạng đầu ra",
+    "quality": "Chất lượng",
+    "original": "Gốc",
+    "compressed": "Đã nén",
+    "download": "Tải xuống",
+    "compressing": "Đang nén...",
+    "startOver": "Bắt đầu lại",
+    "dropImage": "Thả hình ảnh vào đây để bắt đầu nén",
+    "supports": "Hỗ trợ JPEG, PNG, WebP, AVIF",
+    "qualityHint": "Chất lượng thấp hơn dẫn đến kích thước tệp nhỏ hơn nhưng có thể làm giảm chi tiết hình ảnh.",
+    "qualityPng": "Nén PNG là không mất dữ liệu nên không có điều chỉnh chất lượng.",
+    "faq": {
+      "title": "Câu hỏi thường gặp về Trình nén ảnh",
+      "items": [
+        {
+          "question": "Trình nén ảnh trực tuyến này có thực sự miễn phí không?",
+          "answer": "Có, công cụของ chúng tôi hoàn toàn miễn phí, không có phí ẩn, không cần đăng ký hoặc đóng dấu bản quyền. Bạn có thể nén bao nhiêu ảnh tùy thích."
+        },
+        {
+          "question": "Làm thế nào để nén ảnh trực tuyến bằng công cụ này?",
+          "answer": "Chỉ cần kéo và thả ảnh của bạn vào khu vực chỉ định, điều chỉnh cài đặt chất lượng nếu cần và nhấp vào nút tải xuống. Mọi thứ được xử lý ngay lập tức."
+        },
+        {
+          "question": "Chất lượng ảnh có bị giảm khi nén không?",
+          "answer": "Chúng tôi sử dụng các thuật toán nén tiên tiến để giảm thiểu việc mất chất lượng. Bạn có thể điều chỉnh thanh trượt chất lượng để tìm thấy sự cân bằng hoàn hảo giữa dung lượng tệp và độ sắc nét."
+        },
+        {
+          "question": "Ảnh của tôi có được tải lên máy chủ không?",
+          "answer": "Không. Việc nén được thực hiện cục bộ trong trình duyệt của bạn (phía máy khách). Các tệp của bạn không bao giờ rời khỏi máy tính của bạn."
+        }
+      ]
+    },
+    "toast": {
+      "success": "Đã tải xuống hình ảnh!",
+      "error": "Nén thất bại. Vui lòng thử hình ảnh hoặc định dạng khác."
+    }
+  }
+}

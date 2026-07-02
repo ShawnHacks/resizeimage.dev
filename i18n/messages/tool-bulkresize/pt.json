@@ -1,0 +1,212 @@
+{
+  "BulkResizeTool": {
+    "pageTitle": "Redimensionar imagens em massa online",
+    "pageDescription": "Ferramenta online gratuita para redimensionar várias imagens em lote de uma só vez. Rápido, seguro e funciona inteiramente em seu navegador — não é necessário fazer upload.",
+    "backButton": "Voltar",
+    "features": {
+      "title": "Redimensionar imagens em massa online e gratuitamente",
+      "description": "Redimensione várias imagens de uma só vez sem fazer upload para nenhum servidor",
+      "lightningFast": "Processamento ultrarrápido",
+      "free": "100% gratuito para sempre",
+      "noSignup": "Não é necessário se inscrever",
+      "secure": "Seguro e privado",
+      "unlimited": "Processe imagens ilimitadas",
+      "browser": "Funciona em seu navegador"
+    },
+    "imagePreview": {
+      "selected": "imagem",
+      "selectedPlural": "imagens",
+      "selectedCount": "selecionada",
+      "addMore": "Adicionar mais",
+      "showLess": "Mostrar menos",
+      "showAll": "Mostrar tudo ({count} mais)",
+      "dialogTitle": "Imagens selecionadas",
+      "dialogDescription": "Gerencie suas {count} {count, plural, one {imagem selecionada} other {imagens selecionadas}}. Clique no botão × para remover qualquer imagem ou adicionar mais imagens."
+    },
+    "controls": {
+      "resizeMode": "Modo de redimensionamento",
+      "percentage": {
+        "title": "Porcentagem",
+        "description": "Dimensione as imagens para {percentage}% das dimensões originais.",
+        "rangeLabel": "Intervalo: 10% a 200%"
+      },
+      "fileSize": {
+        "title": "Tamanho do arquivo",
+        "description": "Comprima as imagens para aproximadamente {size} KB.",
+        "rangeLabel": "Intervalo: 10 KB a 5000 KB",
+        "targetSize": "Tamanho do arquivo de destino (KB)",
+        "note": "O tamanho real do arquivo pode variar dependendo da complexidade da imagem"
+      },
+      "dimensions": {
+        "title": "Dimensões da imagem",
+        "description": "Redimensione para largura e altura exatas.",
+        "width": "Largura (px)",
+        "height": "Altura (px)",
+        "maintainRatio": "Manter proporção",
+        "usePadding": "Usar preenchimento",
+        "paddingNote": "Adicionar preenchimento para manter a proporção original"
+      },
+      "width": {
+        "title": "Largura",
+        "description": "Redimensione para uma largura específica, mantendo a proporção.",
+        "targetWidth": "Largura de destino (px)"
+      },
+      "height": {
+        "title": "Altura",
+        "description": "Redimensione para uma altura específica, mantendo a proporção.",
+        "targetHeight": "Altura de destino (px)"
+      },
+      "longestSide": {
+        "title": "Lado mais longo",
+        "description": "Redimensione com base na dimensão mais longa.",
+        "targetLongest": "Lado mais longo de destino (px)"
+      },
+      "format": {
+        "label": "Formato de saída",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Qualidade",
+        "description": "Qualidade mais alta = tamanho de arquivo maior"
+      },
+      "backgroundColor": {
+        "label": "Cor de fundo",
+        "description": "Usado para imagens transparentes convertidas para JPEG",
+        "transparent": "Usar fundo transparente",
+        "transparentValue": "Transparente"
+      },
+      "presets": {
+        "title": "Predefinições rápidas",
+        "instagram": "Postagem do Instagram",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "Cabeçalho do Twitter",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Capa do Facebook",
+        "facebookDesc": "820×312 px",
+        "youtube": "Miniatura do YouTube",
+        "youtubeDesc": "1280×720 px",
+        "email": "Amigável para e-mail",
+        "emailDesc": "800 px de largura",
+        "compress": "Comprimir pequeno",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Redimensionar para {percentage}%",
+      "resizeButtonDefault": "Redimensionar imagens"
+    },
+    "processing": {
+      "title": "Processando imagens...",
+      "progress": "{current} de {total} imagens processadas"
+    },
+    "results": {
+      "title": "Processamento concluído!",
+      "imagesResized": "{count} {count, plural, one {imagem} other {imagens}} redimensionadas com sucesso",
+      "originalSize": "Tamanho original",
+      "newSize": "Novo tamanho",
+      "spaceSaved": "Espaço economizado",
+      "processedImages": "Imagens processadas",
+      "downloadImage": "Baixar",
+      "downloadAll": "Baixar todas as imagens",
+      "resizeMore": "Redimensionar mais imagens",
+      "backToEdit": "Ajustar configurações",
+      "downloadSingle": "Baixar imagem",
+      "downloadMultiple": "Baixar todas as {count} imagens",
+      "downloading": "Baixando..."
+    },
+    "config": {
+      "title": "Configuração compartilhável",
+      "description": "Use estas configurações automaticamente com este URL.",
+      "copy": "Copiar",
+      "copied": "Copiado!",
+      "link": "Link",
+      "urlCopied": "URL de configuração copiado para a área de transferência!",
+      "urlCopyFailed": "Falha ao copiar o URL"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {imagem} other {imagens}} carregadas",
+      "imagesAdded": "Adicionadas mais {count} {count, plural, one {imagem} other {imagens}}",
+      "imagesResizedSuccess": "Imagens redimensionadas com sucesso!",
+      "downloadComplete": "Download concluído!",
+      "urlCopied": "URL copiado para a área de transferência!",
+      "processing": "Processando imagens...",
+      "error": "Ocorreu um erro. Tente novamente.",
+      "noValidImages": "Nenhum arquivo de imagem válido encontrado. Selecione imagens válidas.",
+      "selectImagesFirst": "Selecione as imagens primeiro",
+      "enterWidthOrHeight": "Insira a largura ou a altura",
+      "enterTargetValue": "Insira um valor de destino"
+    },
+    "howTo": {
+      "title": "Como redimensionar imagens",
+      "subtitle": "Passos simples para redimensionar suas imagens em lote",
+      "step1": {
+        "number": "1",
+        "title": "Selecionar",
+        "description": "Selecione suas imagens JPG, PNG ou WebP para nossa ferramenta de redimensionamento em lote."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Redimensionar",
+        "description": "Escolha seu modo de redimensionamento desejado e ajuste as configurações para atender às suas necessidades."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Baixar",
+        "description": "Baixe instantaneamente suas imagens redimensionadas ou continue editando com mais opções."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Redimensione imagens online gratuitamente em lote.",
+        "description": [
+          "A maneira mais fácil de redimensionar fotos online. Redimensione, comprima e otimize suas imagens em segundos.",
+          "Funciona 100% no seu navegador — sem uploads, sem contas, os dados não saem do seu dispositivo."
+        ]
+      },
+      "feature2": {
+        "title": "Redimensionar dimensões da imagem.",
+        "description": [
+          "Ajuste facilmente as dimensões da imagem para largura e altura exatas. Perfeito para mídia social, impressão ou uso na web.",
+          "Precisa de um tamanho específico? Você pode personalizar os tamanhos para obter o ajuste perfeito."
+        ]
+      },
+      "feature3": {
+        "title": "Redimensionar tamanho do arquivo de imagem.",
+        "description": [
+          "Comprima imagens em lote para corresponder aproximadamente ao tamanho de arquivo escolhido — economizando armazenamento e acelerando uploads para sites, e-mails e plataformas sociais.",
+          "Tenha em mente: A complexidade da imagem pode afetar o tamanho final."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Perguntas frequentes",
+      "subtitle": "Tudo o que você precisa saber sobre redimensionamento em lote de imagens",
+      "items": [
+        {
+          "question": "Este redimensionador de imagens é realmente gratuito?",
+          "answer": "Sim! Nosso redimensionador de imagens em lote é 100% gratuito sem limitações. Você pode redimensionar imagens ilimitadas sem marcas d'água ou restrições."
+        },
+        {
+          "question": "Como funciona o redimensionamento em lote?",
+          "answer": "Simplesmente carregue várias imagens de uma vez, escolha suas configurações de redimensionamento (porcentagem, dimensões ou tamanho de arquivo) e clique em redimensionar. Todas as imagens serão processadas juntas no seu navegador."
+        },
+        {
+          "question": "Quais formatos de imagem são suportados?",
+          "answer": "Suportamos formatos JPG, JPEG, PNG e WebP. Você pode redimensionar imagens em qualquer um desses formatos."
+        },
+        {
+          "question": "Meus dados estão seguros?",
+          "answer": "Absolutamente! Todo o processamento de imagens acontece localmente no seu navegador. Suas imagens nunca saem do seu dispositivo, garantindo privacidade e segurança completas. Uma maneira de demonstrar que todo o processamento está sendo feito localmente é carregar o site, desconectar da internet e depois usar o site."
+        },
+        {
+          "question": "Posso redimensionar imagens para dimensões específicas?",
+          "answer": "Sim! Você pode redimensionar por porcentagem, dimensões exatas (largura × altura) ou tamanho de arquivo de destino. Também oferecemos predefinições rápidas para plataformas de mídia social."
+        },
+        {
+          "question": "O tamanho do arquivo aumentou inesperadamente?",
+          "answer": "Isso pode acontecer quando suas configurações produzem imagens altamente detalhadas. Para manter os tamanhos de arquivo mínimos, tente salvar no formato WebP e defina a Qualidade para 80% ou menos. Se o problema persistir, verifique a resolução de pixels da imagem para garantir que não esteja sendo ampliada."
+        }
+      ]
+    }
+  }
+}

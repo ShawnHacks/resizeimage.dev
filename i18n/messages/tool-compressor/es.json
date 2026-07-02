@@ -1,0 +1,50 @@
+{
+  "ImageCompressor": {
+    "title": "Compresor de imágenes online gratuito (Free Image Compressor Online)",
+    "description": "Reduce el tamaño de las imágenes manteniendo la alta calidad. Herramienta profesional para JPG, PNG, WebP y AVIF. Privado, rápido y gratis.",
+    "metaTitle": "Compresor de imágenes online gratuito — Comprimir y optimizar fotos",
+    "metaDescription": "Compresor de imágenes gratuito para reducir el tamaño de archivo sin perder calidad. El mejor compresor para JPG, PNG y WebP al instante en tu navegador.",
+    "intro": {
+      "title": "Compresor de imágenes online profesional y gratuito",
+      "content": "Nuestro compresor de imágenes online gratuito ofrece la forma más rápida de reducir el tamaño de tus fotos manteniendo una calidad profesional. Ya sea para web, email o almacenamiento, soporta JPEG, PNG, WebP y AVIF. Todo el proceso ocurre en tu navegador, garantizando privacidad total."
+    },
+    "settings": "Configuración",
+    "processing": "Procesando...",
+    "outputFormat": "Formato de salida",
+    "quality": "Calidad",
+    "original": "Original",
+    "compressed": "Comprimido",
+    "download": "Descargar",
+    "compressing": "Comprimiendo...",
+    "startOver": "Empezar de nuevo",
+    "dropImage": "Suelta una imagen aquí para empezar a comprimir",
+    "supports": "Soportua JPEG, PNG, WebP, AVIF",
+    "qualityHint": "Una calidad más baja resulta en archivos más pequeños pero puede reducir el detalle de la imagen.",
+    "qualityPng": "La compresión PNG es sin pérdida, por lo que el ajuste de calidad no está disponible.",
+    "faq": {
+      "title": "Preguntas frecuentes - Compresor de imágenes",
+      "items": [
+        {
+          "question": "¿Este compresor de imágenes online es realmente gratuito?",
+          "answer": "Sí, nuestra herramienta es totalmente gratuita, sin cargos ocultos, registros ni marcas de agua. Puedes usarla ilimitadamente."
+        },
+        {
+          "question": "¿Cómo comprimo una imagen con esta herramienta?",
+          "answer": "Solo arrastra tus fotos, ajusta la calidad si lo deseas y dale a descargar. Se procesa al instante."
+        },
+        {
+          "question": "¿Perderé calidad al comprimir la imagen?",
+          "answer": "Usamos algoritmos avanzados para minimizar la pérdida. Puedes ajustar el control de calidad para encontrar el equilibrio ideal entre tamaño y nitidez."
+        },
+        {
+          "question": "¿Mis fotos se suben a algún servidor?",
+          "answer": "No. La compresión se realiza localmente en tu navegador. Tus archivos nunca salen de tu dispositivo."
+        }
+      ]
+    },
+    "toast": {
+      "success": "¡Imagen descargada!",
+      "error": "Error en la compresión. Intenta con una imagen o formato diferente."
+    }
+  }
+}

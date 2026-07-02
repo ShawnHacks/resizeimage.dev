@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Free Gemini AI Watermark Remover Online",
+    "header": {
+      "title": "Gemini Watermark Remover"
+    },
+    "nav": {
+      "userscript": "Install Userscript",
+      "principle": "How It Works"
+    },
+    "main": {
+      "title": "Professional Gemini AI Watermark Removal",
+      "subtitle": "Remove Gemini AI watermarks instantly using the reverse alpha blending algorithm. 100% private, browser-side processing, Free and Lossless."
+    },
+    "upload": {
+      "text": "Click to select or drag images here",
+      "hint": "Supports JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Select Original Image",
+      "2": "Auto Processing",
+      "3": "Save Clean Image"
+    },
+    "preview": {
+      "original": "Original Preview",
+      "result": "Processed Result"
+    },
+    "panel": {
+      "title": "Control Panel"
+    },
+    "btn": {
+      "download": "Download",
+      "reset": "Start Over",
+      "downloadAll": "Download All"
+    },
+    "progress": {
+      "text": "Progress"
+    },
+    "feature": {
+      "title": "Why Choose Gemini Watermark Remover?",
+      "items": [
+        {
+          "title": "100% Client-Side",
+          "desc": "No backend, no server-side processing. Your data stays entirely in your browser."
+        },
+        {
+          "title": "Privacy-First",
+          "desc": "Images are never uploaded to any server. Period. Total privacy and security."
+        },
+        {
+          "title": "Mathematical Precision",
+          "desc": "Based on the Reverse Alpha Blending formula, ensuring mathematically accurate restoration unlike 'hallucinating' AI models."
+        },
+        {
+          "title": "Smart Auto-Detection",
+          "desc": "Intelligent recognition of different watermark variants (48×48 or 96×96) for perfect removal."
+        },
+        {
+          "title": "User Friendly",
+          "desc": "Simple drag-and-drop interface with instant processing. No technical skills required."
+        },
+        {
+          "title": "Cross-Platform",
+          "desc": "Runs smoothly on all modern web browsers across Windows, Mac, Linux, and mobile devices."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "The Technical Magic Behind the Tool",
+      "sizeDetection": {
+        "title": "Watermark Size Detection",
+        "description": "Gemini uses different watermark sizes based on image dimensions. Our tool automatically detects the correct size to ensure precise removal.",
+        "table": {
+          "dims": "Image Dimensions",
+          "size": "Watermark Size",
+          "margin": "Margin",
+          "small": "W ≤ 1024 or H ≤ 1024",
+          "large": "W > 1024 and H > 1024",
+          "pixelSmall": "48×48 pixels",
+          "pixelLarge": "96×96 pixels",
+          "marginSmall": "32px",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: How It Works",
+        "description": "Most watermarks are semi-transparent overlays added using alpha blending. Instead of guessing, we reverse the math.",
+        "formulaTitle": "The Blending Formula:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "By reconstructing the Alpha map (α) for every pixel, we can algebraically recover the original pixel value:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "This results in a mathematically accurate reconstruction of the original image data."
+      },
+      "comparison": {
+        "title": "Why This Works Better Than AI Inpainting",
+        "intro": "Typical AI removal tools (Inpainting) 'guess' what should be behind the watermark, often leading to artifacts. Our approach is superior because:",
+        "items": [
+          {
+            "title": "No Guessing",
+            "desc": "It calculates the exact original values using the known watermark pattern."
+          },
+          {
+            "title": "High Speed",
+            "desc": "The processing is extremely fast and efficient, running entirely in your browser."
+          },
+          {
+            "title": "Tiny Footprint",
+            "desc": "The tool is lightweight (about 4MB) and doesn't require heavy AI models."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Perfect Edge Handling",
+        "description": "Semi-transparent edges are handled beautifully by the alpha map. The reverse formula naturally accounts for varying transparency levels, producing smooth transitions with no visible seams."
+      },
+      "reference": {
+        "text": "For a deeper technical dive into the algorithm, check out this",
+        "linkText": "detailed article on Medium"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Learn more about Gemini Watermark Remover technology and safety",
+      "items": [
+        {
+          "question": "How does this Watermark Remover work?",
+          "answer": "Unlike generic AI inpainting tools that guess what's behind a watermark, our tool uses a specific mathematical approach called 'Reverse Alpha Blending'. Since we know the exact pixel values of the Gemini watermark pattern, we can mathematically subtract it from the image to restore the original pixel colors with high precision."
+        },
+        {
+          "question": "Is it safe / private?",
+          "answer": "Yes, absolutely. The tool runs completely within your web browser. Your images are processed locally on your device and are never uploaded to our servers or any third party. You can even disconnect your internet after loading the page and it will still work."
+        },
+        {
+          "question": "Is it really free?",
+          "answer": "Yes, this tool is 100% free to use. It is an open-source initiative designed for educational purposes and to help the community."
+        },
+        {
+          "question": "Does it reduce image quality?",
+          "answer": "No. The removal process is lossless for the non-watermarked areas. For the watermarked areas, it restores the original colors as mathematically close as possible, avoiding the blurriness often seen with other AI removal tools."
+        },
+        {
+          "question": "Why wasn't the image watermark removed properly?",
+          "answer": "Our tool specifically supports the removal of watermarks (SynthID) from images generated by Gemini. For original, uncompressed images, the removal is flawless. However, if the image has been compressed or re-encoded (e.g., via social media platforms or website uploads), the watermark's metadata and characteristic features are often damaged, preventing successful removal."
+        }
+      ]
+    },
+    "loading": {
+      "text": "Processing..."
+    },
+    "status": {
+      "loading": "Loading resources...",
+      "pending": "Pending...",
+      "processing": "Processing...",
+      "success": "Completed",
+      "failed": "Failed"
+    },
+    "info": {
+      "size": "Size",
+      "watermark": "Detected Watermark",
+      "position": "Position",
+      "status": "Status",
+      "removed": "Watermark Removed"
+    }
+  }
+}

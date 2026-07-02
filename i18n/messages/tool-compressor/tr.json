@@ -1,0 +1,50 @@
+{
+  "ImageCompressor": {
+    "title": "Ücretsiz Çevrimiçi Resim Sıkıştırıcı (Free Image Compressor Online)",
+    "description": "Yüksek kaliteyi korurken resim dosyası boyutunu küçültün. JPG, PNG, WebP ve AVIF için profesyonel sıkıştırma aracı. Gizli, hızlı ve ücretsiz.",
+    "metaTitle": "Ücretsiz Çevrimiçi Resim Sıkıştırıcı — Resim Sıkıştır ve Fotoğraf Optimize Et",
+    "metaDescription": "Kalite kaybı olmadan dosya boyutunu küçültmek için ücretsiz çevrimiçi resim sıkıştırıcı. JPG, PNG ve WebP resimlerini tarayıcıda hemen sıkıştırmak için en iyi araç.",
+    "intro": {
+      "title": "Profesyonel Ücretsiz Çevrimiçi Resim Sıkıştırıcı",
+      "content": "Ücretsiz çevrimiçi resim sıkıştırıcımız, profesyonel kaliteyi korurken resim boyutu küçültmenin en hızlı yolunu sunar. Web, e-posta veya depolama için JPEG, PNG, WebP ve AVIF formatlarını destekler. Tüm işlemler tarayıcıda yapıldığından fotoğraflarınız sunucuya yüklenmez, %100 gizlilik sağlanır."
+    },
+    "settings": "Ayarlar",
+    "processing": "İşleniyor...",
+    "outputFormat": "Çıktı Formatı",
+    "quality": "Kalite",
+    "original": "Orijinal",
+    "compressed": "Sıkıştırılmış",
+    "download": "İndir",
+    "compressing": "Sıkıştırılıyor...",
+    "startOver": "Baştan Başla",
+    "dropImage": "Sıkıştırmaya başlamak için buraya bir resim bırakın",
+    "supports": "JPEG, PNG, WebP, AVIF destekler",
+    "qualityHint": "Daha düşük kalite daha küçük dosya boyutları sağlar ancak resim detayını azaltabilir.",
+    "qualityPng": "PNG sıkıştırması kayıpsızdır, bu nedenle kalite ayarı mevcut değildir.",
+    "faq": {
+      "title": "Resim Sıkıştırıcı SSS",
+      "items": [
+        {
+          "question": "Bu çevrimiçi resim sıkıştırıcı gerçekten ücretsiz mi?",
+          "answer": "Evet, aracımız tamamen ücretsizdir; gizli ücret, kayıt veya filigran yoktur. İstediğiniz kadar resmi sıkıştırabilirsiniz."
+        },
+        {
+          "question": "Bu araçla çevrimiçi resim nasıl sıkıştırılır?",
+          "answer": "Resimlerinizi sürükleyip bırakın, gerekirse kaliteyi ayarlayın ve indir butonuna tıklayın. Her şey anında gerçekleşir."
+        },
+        {
+          "question": "Sıkıştırma yaparken resim kalitesi bozulur mu?",
+          "answer": "Gelişmiş algoritmalarla kalite kaybını en aza indiriyoruz. Kalite sürgüsüyle dosya boyutu ve netlik arasındaki mükemmel dengeyi bulabilirsiniz."
+        },
+        {
+          "question": "Fotoğraflarım bir sunucuya yükleniyor mu?",
+          "answer": "Hayır. Sıkıştırma işlemi tarayıcınızda (istemci tarafında) yerel olarak yapılır. Dosyalarınız bilgisayarınızdan asla ayrılmaz."
+        }
+      ]
+    },
+    "toast": {
+      "success": "Resim indirildi!",
+      "error": "Sıkıştırma başarısız. Lütfen farklı bir resim veya format deneyin."
+    }
+  }
+}

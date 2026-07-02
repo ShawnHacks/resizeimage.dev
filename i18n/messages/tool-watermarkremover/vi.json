@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Trình xóa dấu mờ Gemini AI miễn phí trực tuyến",
+    "header": {
+      "title": "Trình xóa dấu mờ Gemini"
+    },
+    "nav": {
+      "userscript": "Cài đặt Userscript cho Gemini",
+      "principle": "Nguyên lý kỹ thuật"
+    },
+    "main": {
+      "title": "Xóa dấu mờ hình ảnh AI Gemini",
+      "subtitle": "Xóa dấu mờ Gemini AI ngay lập tức bằng thuật toán Reverse Alpha Blending. 100% riêng tư, xử lý trên trình duyệt, miễn phí và không làm giảm chất lượng."
+    },
+    "upload": {
+      "text": "Nhấp để chọn hoặc kéo hình ảnh vào đây",
+      "hint": "Hỗ trợ JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Chọn hình ảnh gốc",
+      "2": "Tự động xử lý",
+      "3": "Lưu hình ảnh sạch"
+    },
+    "preview": {
+      "original": "Xem trước gốc",
+      "result": "Kết quả xử lý"
+    },
+    "panel": {
+      "title": "Bảng điều khiển"
+    },
+    "btn": {
+      "download": "Tải xuống",
+      "reset": "Bắt đầu lại",
+      "downloadAll": "Tải xuống tất cả"
+    },
+    "progress": {
+      "text": "Tiến độ xử lý"
+    },
+    "feature": {
+      "title": "Tại sao nên chọn Gemini Watermark Remover?",
+      "items": [
+        {
+          "title": "100% Phía người dùng",
+          "desc": "Không có backend, không xử lý trên máy chủ. Dữ liệu của bạn hoàn toàn nằm trên trình duyệt."
+        },
+        {
+          "title": "Quyền riêng tư là trên hết",
+          "desc": "Hình ảnh không bao giờ được tải lên bất kỳ máy chủ nào. Đảm bảo quyền riêng tư và bảo mật tuyệt đối."
+        },
+        {
+          "title": "Độ chính xác toán học",
+          "desc": "Dựa trên công thức Reverse Alpha Blending, đảm bảo khôi phục chính xác về mặt toán học, khác với các mô hình AI hay 'tự tưởng tượng'."
+        },
+        {
+          "title": "Tự động phát hiện thông minh",
+          "desc": "Nhận dạng thông minh các biến thể dấu mờ khác nhau (48×48 hoặc 96×96) để xóa sạch hoàn hảo."
+        },
+        {
+          "title": "Dễ sử dụng",
+          "desc": "Giao diện kéo thả đơn giản với tốc độ xử lý tức thì. Không yêu cầu kỹ năng kỹ thuật."
+        },
+        {
+          "title": "Đa nền tảng",
+          "desc": "Hoạt động mượt mà trên tất cả các trình duyệt web hiện đại trên Windows, Mac, Linux và thiết bị di động."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "Bí mật kỹ thuật đằng sau công cụ",
+      "sizeDetection": {
+        "title": "Phát hiện kích thước dấu mờ",
+        "description": "Gemini sử dụng các kích thước dấu mờ khác nhau dựa trên kích thước hình ảnh. Công cụ của chúng tôi tự động phát hiện kích thước chính xác để đảm bảo xóa sạch.",
+        "table": {
+          "dims": "Kích thước hình ảnh",
+          "size": "Kích thước dấu mờ",
+          "margin": "Lề",
+          "small": "R ≤ 1024 hoặc C ≤ 1024",
+          "pixelSmall": "48×48 pixel",
+          "marginSmall": "32px",
+          "large": "R > 1024 và C > 1024",
+          "pixelLarge": "96×96 pixel",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: Hoạt động như thế nào",
+        "description": "Hầu hết các dấu mờ là các lớp phủ bán trong suốt được thêm vào bằng alpha blending. Thay vì đoán, chúng tôi đảo ngược phép toán.",
+        "formulaTitle": "CÔNG THỨC TRỘN:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "Bằng cách xây dựng lại bản đồ alpha (α) cho mỗi pixel, chúng tôi có thể khôi phục giá trị pixel gốc về mặt đại số:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Điều này mang lại một bản phục hồi chính xác về mặt toán học của dữ liệu hình ảnh gốc."
+      },
+      "comparison": {
+        "title": "Tại sao phương pháp này tốt hơn AI Inpainting",
+        "intro": "Các công cụ xóa AI thông thường (Inpainting) thường 'đoán' những gì sẽ ở phía sau dấu mờ, dẫn đến các lỗi hình ảnh. Cách tiếp cận của chúng tôi vượt trội vì:",
+        "items": [
+          {
+            "title": "Không cần suy đoán",
+            "desc": "Nó tính toán các giá trị gốc chính xác bằng cách sử dụng mẫu dấu mờ đã biết."
+          },
+          {
+            "title": "Tốc độ cực nhanh",
+            "desc": "Xử lý cực kỳ nhanh và hiệu quả, chạy hoàn toàn trong trình duyệt của bạn."
+          },
+          {
+            "title": "Dung lượng nhẹ",
+            "desc": "Công cụ này rất nhẹ (khoảng 4MB) và không yêu cầu các mô hình AI nặng nề."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Xử lý cạnh hoàn hảo",
+        "description": "Các cạnh bán trong suốt được xử lý đẹp mắt bởi bản đồ alpha. Công thức đảo ngược tính toán tự nhiên các mức độ trong suốt khác nhau, đảm bảo chuyển tiếp mượt mà không có vết nối."
+      },
+      "reference": {
+        "text": "Để tìm hiểu kỹ thuật sâu hơn về thuật toán, hãy xem",
+        "linkText": "bài viết chi tiết trên Medium này"
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp",
+      "subtitle": "Tìm hiểu thêm về công nghệ và tính an toàn của Gemini Watermark Remover",
+      "items": [
+        {
+          "question": "Công cụ xóa dấu mờ này hoạt động như thế nào?",
+          "answer": "Khác với các công cụ chỉnh sửa AI thông thường vốn chỉ đoán những gì phía sau dấu mờ, công cụ của chúng tôi sử dụng một phương pháp toán học cụ thể gọi là 'Reverse Alpha Blending'. Vì chúng tôi biết giá trị pixel chính xác của mẫu dấu mờ Gemini, chúng tôi có thể trừ nó khỏi hình ảnh bằng toán học để khôi phục màu pixel gốc với độ chính xác cao."
+        },
+        {
+          "question": "Nó có an toàn / riêng tư không?",
+          "answer": "Có, tuyệt đối an toàn. Công cụ này chạy hoàn toàn trong trình duyệt web của bạn. Hình ảnh được xử lý cục bộ trên thiết bị của bạn và không bao giờ được tải lên máy chủ của chúng tôi hoặc bất kỳ bên thứ ba nào. Bạn thậm chí có thể ngắt kết nối internet sau khi tải trang và nó vẫn hoạt động."
+        },
+        {
+          "question": "Nó có thực sự miễn phí không?",
+          "answer": "Có, công cụ này miễn phí 100%. Đây là một sáng kiến mã nguồn mở được thiết kế cho mục đích giáo dục và giúp đỡ cộng đồng."
+        },
+        {
+          "question": "Nó có làm giảm chất lượng hình ảnh không?",
+          "answer": "Không. Quá trình xóa là không làm giảm chất lượng (lossless) đối với các khu vực không có dấu mờ. Đối với các khu vực có dấu mờ, nó khôi phục màu sắc gốc chính xác nhất có thể về mặt toán học, tránh hiện tượng mờ thường thấy ở các công cụ xóa bằng AI khác."
+        },
+        {
+          "question": "Tại sao hình ảnh watermark không được gỡ bỏ chính xác?",
+          "answer": "Công cụ của chúng tôi hỗ trợ đặc biệt việc gỡ bỏ các dấu mờ (SynthID) từ các hình ảnh được tạo bởi Gemini. Đối với các hình ảnh gốc, không bị nén, việc gỡ bỏ diễn ra hoàn hảo. Tuy nhiên, nếu hình ảnh đã bị nén hoặc mã hóa lại (ví dụ, qua các nền tảng mạng xã hội hoặc tải lên trang web), các siêu dữ liệu và các đặc điểm nhận dạng của dấu mờ thường bị hư hại, làm ngăn cản việc gỡ bỏ thành công."
+        }
+      ]
+    },
+    "loading": {
+      "text": "Đang xử lý..."
+    },
+    "status": {
+      "loading": "Đang tải tài nguyên...",
+      "pending": "Đang chờ...",
+      "processing": "Đang xử lý...",
+      "success": "Hoàn thành",
+      "failed": "Thất bại"
+    },
+    "info": {
+      "size": "Kích thước",
+      "watermark": "Phát hiện dấu mờ",
+      "position": "Vị trí",
+      "status": "Trạng thái",
+      "removed": "Đã xóa dấu mờ"
+    }
+  }
+}

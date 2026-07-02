@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Penghapus Watermark Gemini NanoBanana",
+    "header": {
+      "title": "Penghapus Watermark Gemini NanoBanana"
+    },
+    "nav": {
+      "userscript": "Instal Userscript untuk Gemini",
+      "principle": "Cara Kerjanya"
+    },
+    "main": {
+      "title": "Penghapusan Watermark Gambar AI Gemini NanoBanana",
+      "subtitle": "Berdasarkan algoritma Reverse Alpha Blending, pemrosesan lokal di browser, gratis, cepat, dan tanpa kehilangan kualitas"
+    },
+    "upload": {
+      "text": "Klik untuk memilih atau seret gambar ke sini",
+      "hint": "Mendukung JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Pilih gambar asli",
+      "2": "Pemrosesan otomatis",
+      "3": "Simpan gambar bersih"
+    },
+    "preview": {
+      "original": "Pratinjau Asli",
+      "result": "Hasil Pemrosesan"
+    },
+    "panel": {
+      "title": "Panel Kontrol"
+    },
+    "btn": {
+      "download": "Unduh",
+      "reset": "Mulai Ulang",
+      "downloadAll": "Unduh Semua"
+    },
+    "progress": {
+      "text": "Kemajuan Pemrosesan"
+    },
+    "feature": {
+      "title": "Mengapa Memilih Penghapus Watermark Gemini?",
+      "items": [
+        {
+          "title": "100% Sisi Klien",
+          "desc": "Tanpa backend, tanpa pemrosesan server. Data Anda sepenuhnya tetap berada di browser Anda."
+        },
+        {
+          "title": "Privasi Diutamakan",
+          "desc": "Gambar tidak pernah diunggah ke server mana pun. Privasi dan keamanan total."
+        },
+        {
+          "title": "Presisi Matematika",
+          "desc": "Berdasarkan formula Reverse Alpha Blending, menjamin restorasi yang akurat secara matematis, berbeda dengan model AI yang bisa 'berhalusinasi'."
+        },
+        {
+          "title": "Deteksi Otomatis Cerdas",
+          "desc": "Mengenali variasi watermark yang berbeda (48×48 atau 96×96) secara cerdas untuk penghapusan sempurna."
+        },
+        {
+          "title": "Ramah Pengguna",
+          "desc": "Antarmuka seret-dan-lepas sederhana dengan pemrosesan instan. Tidak memerlukan keahlian teknis."
+        },
+        {
+          "title": "Lintas Platform",
+          "desc": "Berjalan lancar di semua browser web modern di Windows, Mac, Linux, dan perangkat seluler."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "Sisi Teknis di Balik Alat Ini",
+      "sizeDetection": {
+        "title": "Deteksi Ukuran Watermark",
+        "description": "Gemini menggunakan ukuran watermark yang berbeda berdasarkan dimensi gambar. Alat kami secara otomatis mendeteksi ukuran yang tepat untuk memastikan penghapusan yang presisi.",
+        "table": {
+          "dims": "Dimensi Gambar",
+          "size": "Ukuran Watermark",
+          "margin": "Margin",
+          "small": "L ≤ 1024 atau T ≤ 1024",
+          "pixelSmall": "48×48 piksel",
+          "marginSmall": "32px",
+          "large": "L > 1024 dan T > 1024",
+          "pixelLarge": "96×96 piksel",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: Cara Kerjanya",
+        "description": "Sebagian besar watermark adalah lapisan semi-transparan yang ditambahkan menggunakan alpha blending. Daripada menebak, kami membalikkan perhitungan matematikanya.",
+        "formulaTitle": "FORMULA PENCAMPURAN:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "Dengan merekonstruksi peta Alpha (α) untuk setiap piksel, kita dapat memulihkan nilai piksel asli secara aljabar:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Ini menghasilkan rekonstruksi data gambar asli yang akurat secara matematis."
+      },
+      "comparison": {
+        "title": "Mengapa Ini Lebih Baik Daripada AI Inpainting",
+        "intro": "Alat penghapus AI biasa (Inpainting) 'menebak' apa yang seharusnya ada di balik watermark, yang sering kali menyebabkan cacat visual. Pendekatan kami lebih unggul karena:",
+        "items": [
+          {
+            "title": "Tanpa Menebak",
+            "desc": "Ini menghitung nilai asli yang tepat menggunakan pola watermark yang sudah diketahui."
+          },
+          {
+            "title": "Kecepatan Tinggi",
+            "desc": "Pemrosesannya sangat cepat dan efisien, berjalan sepenuhnya di browser Anda."
+          },
+          {
+            "title": "Ringan",
+            "desc": "Alat ini sangat ringan (sekitar 4MB) dan tidak memerlukan model AI yang berat."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Penanganan Tepi yang Sempurna",
+        "description": "Tepi semi-transparan ditangani dengan sangat baik oleh peta alpha. Formula terbalik secara alami memperhitungkan berbagai tingkat transparansi, menghasilkan transisi yang halus tanpa sambungan yang terlihat."
+      },
+      "reference": {
+        "text": "Untuk penjelasan teknis lebih dalam tentang algoritma ini, lihat",
+        "linkText": "artikel terperinci di Medium ini"
+      }
+    },
+    "faq": {
+      "title": "Pertanyaan yang Sering Diajukan",
+      "subtitle": "Pelajari lebih lanjut tentang teknologi dan keamanan Penghapus Watermark Gemini",
+      "items": [
+        {
+          "question": "Bagaimana cara kerja penghapus watermark ini?",
+          "answer": "Berbeda dengan alat retouching AI umum yang menebak apa yang ada di balik watermark, alat kami menggunakan pendekatan matematika khusus yang disebut 'Reverse Alpha Blending'. Karena kami mengetahui nilai piksel yang tepat dari pola watermark Gemini, kami dapat menguranginya secara matematis dari gambar untuk memulihkan warna piksel asli dengan presisi tinggi."
+        },
+        {
+          "question": "Apakah aman / pribadi?",
+          "answer": "Ya, tentu saja. Alat ini berjalan sepenuhnya di dalam browser web Anda. Gambar Anda diproses secara lokal di perangkat Anda dan tidak pernah diunggah ke server kami atau pihak ketiga mana pun. Anda bahkan dapat mematikan koneksi internet setelah halaman dimuat dan alat ini tetap berfungsi."
+        },
+        {
+          "question": "Apakah benar-benar gratis?",
+          "answer": "Ya, alat ini 100% gratis untuk digunakan. Ini adalah inisiatif sumber terbuka yang dirancang untuk tujuan pendidikan dan membantu komunitas."
+        },
+        {
+          "question": "Apakah ini mengurangi kualitas gambar?",
+          "answer": "Tidak. Proses penghapusan tidak merusak kualitas (lossless) para area yang tidak terkena watermark. Untuk area yang terkena watermark, alat ini memulihkan warna asli seakurat mungkin secara matematis, menghindari kekaburan yang sering terlihat pada alat penghapus AI lainnya."
+        },
+        {
+          "question": "Mengapa watermark gambar tidak terhapus dengan benar?",
+          "answer": "Alat kami secara khusus mendukung penghapusan watermark (SynthID) dari gambar yang dihasilkan oleh Gemini. Untuk gambar asli yang tidak terkompresi, penghapusannya akan sempurna. Namun, jika gambar telah dikompresi atau dienkode ulang (misalnya, melalui platform media sosial atau unggahan situs web), metadata dan fitur karakteristik watermark sering kali rusak, sehingga mencegah keberhasilan penghapusan."
+        }
+      ]
+    },
+    "loading": {
+      "text": "Memproses..."
+    },
+    "status": {
+      "loading": "Memuat sumber daya...",
+      "pending": "Menunggu...",
+      "processing": "Memproses...",
+      "success": "Selesai",
+      "failed": "Gagal"
+    },
+    "info": {
+      "size": "Ukuran",
+      "watermark": "Watermark Terdeteksi",
+      "position": "Posisi",
+      "status": "Status",
+      "removed": "Watermark Dihapus"
+    }
+  }
+}

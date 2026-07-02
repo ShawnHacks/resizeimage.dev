@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Costura de Imagens Online",
+    "pageTitle": "Ferramenta Gratuita de Costura de Imagens Online",
+    "pageDescription": "Costure várias imagens em uma tela personalizável. Arraste, redimensione, gire e organize imagens livremente diretamente no seu navegador.",
+    "metadata": {
+      "title": "Costura de Imagens Online Grátis — Combinar e Costurar Fotos Online",
+      "description": "A melhor ferramenta gratuita de costura de imagens online. Combine várias fotos em uma única tela. Costura de fotos online profissional para arrastar, girar e em camadas instantaneamente."
+    },
+    "intro": {
+      "title": "Ferramenta Profissional Gratuita de Costura de Imagens Online",
+      "content": "Nossa ferramenta gratuita de costura de imagens online permite combinar várias fotos em uma única criação de alta resolução sem downloads ou requisitos de conta. Esteja você criando uma colagem, um mockup profissional ou simplesmente mesclando fotos online, esta ferramenta oferece a flexibilidade de um aplicativo de desktop diretamente no seu navegador. Arraste, redimensione e reorganize camadas com facilidade, mantendo total privacidade, pois todo o processamento ocorre localmente."
+    },
+    "controls": {
+      "canvasSettings": "Configurações da Tela",
+      "width": "Largura da Tela",
+      "height": "Altura da Tela",
+      "backgroundColor": "Cor de Fundo",
+      "addItem": "Adicionar Imagem",
+      "layers": "Camadas",
+      "imageProperties": "Propriedades da Imagem",
+      "rotate": "Girar",
+      "opacity": "Opacidade",
+      "bringToFront": "Trazer para a Frente",
+      "sendToBack": "Enviar para Trás",
+      "bringForward": "Trazer para Frente",
+      "sendBackward": "Enviar para Trás",
+      "remove": "Remover Imagem",
+      "exportFormat": "Formato de Exportação",
+      "transparent": "Transparente",
+      "white": "Branco",
+      "noLayers": "Sem Camadas",
+      "layerName": "Camada {index}",
+      "zoom": "Zoom",
+      "zoomIn": "Mais zoom",
+      "zoomOut": "Menos zoom",
+      "fitToScreen": "Ajustar ao ecrã",
+      "setCanvasToImageSize": "Definir tamanho da tela para o tamanho da imagem",
+      "matchCanvasSize": "Ajustar ao tamanho da tela"
+    },
+    "canvas": {
+      "placeholder": "Arraste e solte imagens aqui ou use o botão adicionar para começar a costurar."
+    },
+    "errors": {
+      "noImages": "Nenhuma imagem para baixar",
+      "exportFailed": "Falha ao exportar imagem",
+      "loadFailed": "Falha ao carregar {name}"
+    },
+    "actions": {
+      "download": "Baixar Imagem Costurada",
+      "preview": "Visualizar",
+      "reset": "Redefinir Tela",
+      "uploadMore": "Carregar Mais"
+    },
+    "howTo": {
+      "title": "Como Costurar Imagens Online",
+      "step1": {
+        "number": "1",
+        "title": "Definir Tamanho da Tela",
+        "description": "Ajuste a largura e altura da tela para caber no seu layout desejado."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Adicionar e Organizar Imagens",
+        "description": "Carregue suas imagens e arraste para posicionar. Redimensione e gire conforme necessário."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Exportar Sua Criação",
+        "description": "Clique em baixar para salvar sua imagem combinada como um único arquivo."
+      }
+    },
+    "faq": {
+      "title": "FAQ de Costura de Fotos Online",
+      "items": [
+        {
+          "question": "Esta ferramenta de costura de imagens online é realmente gratuita?",
+          "answer": "Sim, nossa ferramenta é 100% gratuita. Não há taxas ocultas, assinaturas ou marcas d'água nas imagens exportadas."
+        },
+        {
+          "question": "Como uso este costurador de fotos online?",
+          "answer": "Basta definir o tamanho da tela, carregar suas imagens e usar o mouse para arrastar e organizá-las. Use o painel de propriedades para girar e ajustar a opacidade de cada camada."
+        },
+        {
+          "question": "Meus dados permanecem privados ao mesclar fotos online?",
+          "answer": "Com certeza. Esta ferramenta usa processamento no lado do cliente, o que significa que suas imagens nunca saem do seu computador ou tocam nossos servidores."
+        },
+        {
+          "question": "Quais formatos de imagem são suportados?",
+          "answer": "Suportamos todos os formatos comuns da web, incluindo JPG, PNG, WebP e SVG."
+        }
+      ]
+    }
+  }
+}

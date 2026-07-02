@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Unir Imágenes Online",
+    "pageTitle": "Herramienta Gratuita para Unir Imágenes Online",
+    "pageDescription": "Une varias imágenes en un lienzo personalizable. Arrastra, redimensiona, gira y organiza imágenes libremente directamente en tu navegador.",
+    "metadata": {
+      "title": "Unir Imágenes Online Gratis — Combinar y Unir Fotos Online",
+      "description": "La mejor herramienta gratuita para unir imágenes online. Combina varias fotos en un solo lienzo. Herramienta profesional para unir fotos online: arrastra, gira y organiza capas al instante."
+    },
+    "intro": {
+      "title": "Herramienta Profesional Gratuita para Unir Imágenes Online",
+      "content": "Nuestra herramienta gratuita para unir imágenes online te permite combinar varias fotos en una sola creación de alta resolución sin descargas ni cuentas. Ya sea que estés creando un collage, un mockup profesional o simplemente fusionando fotos online, esta herramienta ofrece la flexibilidad de una aplicación de escritorio directamente en tu navegador. Arrastra, redimensiona y reorganiza capas con facilidad, manteniendo total privacidad ya que todo el procesamiento ocurre localmente."
+    },
+    "controls": {
+      "canvasSettings": "Ajustes del Lienzo",
+      "width": "Ancho del Lienzo",
+      "height": "Alto del Lienzo",
+      "backgroundColor": "Color de Fondo",
+      "addItem": "Añadir Imagen",
+      "layers": "Capas",
+      "imageProperties": "Propiedades de Imagen",
+      "rotate": "Girar",
+      "opacity": "Opacidad",
+      "bringToFront": "Traer al Frente",
+      "sendToBack": "Enviar al Fondo",
+      "bringForward": "Traer Adelante",
+      "sendBackward": "Enviar Atrás",
+      "remove": "Eliminar Imagen",
+      "exportFormat": "Formato de Exportación",
+      "transparent": "Transparente",
+      "white": "Blanco",
+      "noLayers": "Sin Capas",
+      "layerName": "Capa {index}",
+      "zoom": "Zoom",
+      "zoomIn": "Acercar",
+      "zoomOut": "Alejar",
+      "fitToScreen": "Ajustar a la pantalla",
+      "setCanvasToImageSize": "Ajustar lienzo al tamaño de la imagen",
+      "matchCanvasSize": "Ajustar al tamaño del lienzo"
+    },
+    "canvas": {
+      "placeholder": "Arrastra y suelta imágenes aquí o usa el botón añadir para empezar a unir."
+    },
+    "errors": {
+      "noImages": "No hay imágenes para descargar",
+      "exportFailed": "Error al exportar la imagen",
+      "loadFailed": "Error al cargar {name}"
+    },
+    "actions": {
+      "download": "Descargar Imagen Unida",
+      "preview": "Vista Previa",
+      "reset": "Reiniciar Lienzo",
+      "uploadMore": "Subir Más"
+    },
+    "howTo": {
+      "title": "Cómo Unir Imágenes Online",
+      "step1": {
+        "number": "1",
+        "title": "Ajustar Tamaño del Lienzo",
+        "description": "Ajusta el ancho y alto del lienzo para que se adapte al diseño deseado."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Añadir y Organizar Imágenes",
+        "description": "Sube tus imágenes y arrastra para posicionarlas. Redimensiona y gira según sea necesario."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Exportar tu Creación",
+        "description": "Haz clic en descargar para guardar tu imagen combinada como un único archivo."
+      }
+    },
+    "faq": {
+      "title": "Preguntas Frecuentes sobre Unir Fotos Online",
+      "items": [
+        {
+          "question": "¿Esta herramienta para unir imágenes online es realmente gratuita?",
+          "answer": "Sí, nuestra herramienta es 100% gratuita. No hay cargos ocultos, suscripciones ni marcas de agua en tus imágenes exportadas."
+        },
+        {
+          "question": "¿Cómo uso esta herramienta para unir fotos online?",
+          "answer": "Simplemente define el tamaño del lienzo, sube tus imágenes y usa el ratón para arrastrarlas y organizarlas. Puedes usar el panel de propiedades para girar y ajustar la opacidad de cada capa."
+        },
+        {
+          "question": "¿Mis datos se mantienen privados al fusionar fotos online?",
+          "answer": "Absolutamente. Esta herramienta utiliza procesamiento en el cliente, lo que significa que tus imágenes nunca salen de tu ordenador ni tocan nuestros servidores."
+        },
+        {
+          "question": "¿Qué formatos de imagen son compatibles?",
+          "answer": "Soportamos todos los formatos web comunes, incluyendo JPG, PNG, WebP y SVG."
+        }
+      ]
+    }
+  }
+}

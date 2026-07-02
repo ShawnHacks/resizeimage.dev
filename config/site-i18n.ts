@@ -22,7 +22,7 @@ export const baseSiteConfig = {
   links: {
     twitter: "https://x.com/intent/user?&region=follow&screen_name=ShawnHacks",
   },
-  mailSupport: "support@nestsaas.com",
+  mailSupport: "support@resizeimage.dev",
 }
 
 /**
@@ -87,36 +87,44 @@ export function useLocalizedSiteConfig(): SiteConfig {
 }
 
 // Navigation items with translation keys
-export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
-  {
-    titleKey: "Tools.resizeimage",
-    href: "/",
-  },
-  {
-    titleKey: "Tools.bulkresizeimages",
-    href: "/bulk-resize-images",
-  },
-  {
-    titleKey: "Header.Features",
-    href: "/#features",
-  },
-  {
-    titleKey: "Header.FAQ",
-    href: "/#faq",
-  },
-  {
-    titleKey: "Header.Blog",
-    href: "/blog",
-  },
-  // {
-  //   titleKey: "Header.About",
-  //   href: "/about",
-  // },
-  // {
-  //   titleKey: "Header.Blog",
-  //   href: "/blog",
-  // },
-]
+export const siteMainNavKeys: Array<{
+  titleKey: string;
+  href: string;
+  children?: Array<{ titleKey: string; href: string; descKey?: string }>
+}> = [
+    {
+      titleKey: "Tools.resizeimage",
+      href: "/",
+    },
+    {
+      titleKey: "Tools.bulkresizeimages",
+      href: "/bulk-resize-images",
+    },
+    {
+      titleKey: "Tools.stitchimages",
+      href: "/stitch-images",
+    },
+    {
+      titleKey: "Tools.imagecompressor",
+      href: "/compress-image",
+    },
+    {
+      titleKey: "GeminiWatermarkRemover.header.title",
+      href: "/gemini-watermark-remover",
+    },
+    // {
+    //   titleKey: "Header.Blog",
+    //   href: "/blog",
+    // },
+    // {
+    //   titleKey: "Header.About",
+    //   href: "/about",
+    // },
+    // {
+    //   titleKey: "Header.Blog",
+    //   href: "/blog",
+    // },
+  ]
 
 /**
  * Get localized navigation items for server components
@@ -129,6 +137,11 @@ export async function getLocalizedNavItems(locale: string): Promise<NavItem[]> {
   return siteMainNavKeys.map(item => ({
     title: t(item.titleKey as any),
     href: item.href,
+    children: item.children?.map(child => ({
+      title: t(child.titleKey as any),
+      href: child.href,
+      description: child.descKey ? t(child.descKey as any) : undefined
+    }))
   }))
 }
 
@@ -142,14 +155,49 @@ export function useLocalizedNavItems(): NavItem[] {
   return siteMainNavKeys.map(item => ({
     title: t(item.titleKey as any),
     href: item.href,
+    children: item.children?.map(child => ({
+      title: t(child.titleKey as any),
+      href: child.href,
+      description: child.descKey ? t(child.descKey as any) : undefined
+    }))
   }))
 }
 
 // Footer configuration with translation keys
 export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labelKey: string; href: string; noTranslation?: boolean }> }> = [
+  // {
+  //   titleKey: "ImageConverterTool.title",
+  //   links: conversions,
+  // },
   {
-    titleKey: "Footer.Product",
+    titleKey: "Footer.Tools",
     links: [
+      {
+        labelKey: "Tools.imageconverter",
+        href: "/",
+      },
+      {
+        labelKey: "Tools.imagecompressor",
+        href: "/compress-image",
+      },
+      // {
+      //   titleKey: "GeminiWatermarkRemover.title",
+      //   href: "/gemini-watermark-remover",
+      //   descKey: "GeminiWatermarkRemover.main.subtitle",
+      // },
+      {
+        labelKey: "Tools.resizeimage",
+        href: "/resize-image",
+      },
+      {
+        labelKey: "Image Stitcher",
+        href: "/stitch-images",
+        noTranslation: true,
+      },
+      {
+        labelKey: "Tools.bulkresizeimages",
+        href: "/bulk-resize-images",
+      },
       // {
       //   labelKey: "Footer.Features",
       //   href: "/#features",
@@ -158,23 +206,32 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       //   labelKey: "Footer.FAQ",
       //   href: "/#faq",
       // },
-      {
-        labelKey: "Footer.Blog",
-        href: "/blog",
-      },
-      {
-        labelKey: "Footer.SiteMap",
-        // note：must use absolute url，sitemap no locale prefix
-        href: `${baseSiteConfig.url}/sitemap.xml`,
-      },
+      // {
+      //   labelKey: "Footer.About",
+      //   href: "/about",
+      // },
+      // {
+      //   labelKey: "Footer.Blog",
+      //   href: "/blog",
+      // },
+      // {
+      //   labelKey: "Footer.SiteMap",
+      //   // note：must use absolute url，sitemap no locale prefix
+      //   href: `${baseSiteConfig.url}/sitemap.xml`,
+      // },
     ],
   },
   {
-    titleKey: "Footer.Tools",
+    titleKey: "Footer.Product",
     links: [
       {
-        labelKey: "Free Image Converter",
-        href: "https://imageconverter.dev",
+        labelKey: "Screentell",
+        href: "https://screentell.com",
+        noTranslation: true,
+      },
+      {
+        labelKey: "Beautyface AI",
+        href: "https://beautyface.app",
         noTranslation: true,
       },
       {
@@ -188,20 +245,11 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         noTranslation: true,
       },
       {
-        labelKey: "SyncVoice AI Voice Clone",
-        href: "https://syncvoice.ai",
-        noTranslation: true,
-      },
-      {
         labelKey: "Cute Wallpaper",
         href: "https://cutewallpaper.site",
         noTranslation: true,
       },
-      {
-        labelKey: "Needoh Toys",
-        href: "https://needoh.fun",
-        noTranslation: true,
-      },
+
       // {
       //   labelKey: "AIHuntList",
       //   href: "https://aihuntlist.com",
@@ -239,6 +287,19 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       //   href: "/docs",
       // },
       // {
+      //   labelKey: "Footer.Blog",
+      //   href: "/blog",
+      // },
+      {
+        labelKey: "Footer.About",
+        href: "/about",
+      },
+      {
+        labelKey: "Footer.Contact",
+        href: "/contact",
+        noTranslation: false
+      },
+      // {
       //   labelKey: "Footer.Cookie Policy",
       //   href: "/cookie-policy",
       // },
@@ -250,23 +311,25 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       //   labelKey: "Footer.Terms of Service",
       //   href: "/terms-of-service",
       // },
+      // {
+      //   labelKey: "Stripe Climate Member",
+      //   href: "https://climate.stripe.com/4JAKCs",
+      //   noTranslation: true,
+      // },
+
       {
-        labelKey: "Footer.About",
-        href: "/about",
+        labelKey: "Footer.Blog",
+        href: "/blog",
       },
       {
-        labelKey: "Footer.Contact",
-        href: "/contact",
-        noTranslation: false
-      },
-      {
-        labelKey: "Stripe Climate Member",
-        href: "https://climate.stripe.com/4JAKCs",
-        noTranslation: true,
+        labelKey: "Footer.SiteMap",
+        // note：must use absolute url，sitemap no locale prefix
+        href: `${baseSiteConfig.url}/sitemap.xml`,
       },
     ],
   },
 ]
+
 
 
 export const bottomLinksKeys: Array<{ labelKey: string; href: string, noTranslation?: boolean }> = [

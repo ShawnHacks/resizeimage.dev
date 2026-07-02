@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Home": "홈",
+    "Features": "기능",
+    "FAQ": "자주 묻는 질문",
+    "About": "소개",
+    "Blog": "블로그"
+  },
+  "Footer": {
+    "Product": "제품",
+    "Tools": "도구",
+    "Resources": "자료",
+    "Company": "회사",
+    "Features": "기능",
+    "FAQ": "자주 묻는 질문",
+    "About": "소개",
+    "SiteMap": "사이트맵",
+    "Pricing": "가격",
+    "License": "라이선스",
+    "Contact": "문의",
+    "Roadmap": "로드맵",
+    "Documentation": "문서",
+    "Blog": "블로그",
+    "Cookie Policy": "쿠키 정책",
+    "Privacy Policy": "개인정보 처리방침",
+    "Terms of Service": "서비스 약관"
+  },
+  "HomePage": {
+    "tagline": "ImageConverter",
+    "title": "무료 이미지 변환기",
+    "subtitle": "브라우저에서 이미지를 변환하세요. 등록, 업로드 없이 100% 안전하고 비공개적인 사진 변환기.",
+    "localHint": "브라우저에서 로컬로 이미지 형식 변환, 업로드 없이 100% 안전하고 비공개",
+    "previewAlt": "선택한 이미지 미리보기",
+    "settingsTitle": "출력 설정",
+    "reset": "다른 이미지 선택",
+    "formatLabel": "출력 형식",
+    "formatPlaceholder": "형식 선택",
+    "qualityLabel": "품질",
+    "qualityDisabled": "PNG 내보내기는 자동으로 전체 품질을 유지합니다.",
+    "qualityHint": "JPG 및 WebP 내보내기의 품질을 조정합니다.",
+    "downloadCta": "{format} 다운로드",
+    "unknownFormat": "알 수 없음",
+    "quickImageConverters": "빠른 이미지 변환기",
+    "benefitsTitle": "왜 ImageConverter를 선택해야 할까요?",
+    "benefitsDescription": "개인 정보 보호, 브라우저 우선 이미지 변환 툴킷으로 워크플로를 가속화하세요.",
+    "benefits": {
+      "items": [
+        "100% 브라우저에서 실행되므로 파일이 기기를 떠나지 않습니다.",
+        "HEIC, AVIF, GIF, TIFF, PNG, JPG, WebP를 포함한 최신 및 레거시 형식을 지원합니다.",
+        "출력 품질을 선택하고 다운로드하기 전에 파일 크기를 즉시 미리 봅니다.",
+        "가입, 제한 또는 워터마킹 없이 속도에 최적화되었습니다."
+      ]
+    },
+    "howTitle": "ImageConverter 작동 방식",
+    "howSteps": [
+      {
+        "title": "이미지 선택 또는 드롭",
+        "description": "파일을 업로드하거나 작업 공간으로 드래그하세요 — 소스 형식을 자동으로 감지합니다."
+      },
+      {
+        "title": "출력 설정 선택",
+        "description": "대상 형식을 선택하고 몇 초 만에 JPG 또는 WebP 출력의 품질을 조정합니다."
+      },
+      {
+        "title": "즉시 다운로드",
+        "description": "변환된 파일을 즉시 받으세요. 대기열, 업로드, 추적이 없습니다."
+      }
+    ],
+    "ctaTitle": "이미지 워크플로를 최적화할 준비가 되셨나요?",
+    "ctaDescription": "대량 크기 조정, 스크린샷, 메타데이터 정리 등을 위한 더 많은 브라우저 우선 도구를 살펴보세요.",
+    "ctaButton": "모든 도구 찾아보기"
+  },
+  "SiteConfig": {
+    "title": "이미지 변환기 - 무료 온라인 사진 변환기",
+    "description": "최고의 무료 온라인 이미지 변환 도구. 브라우저에서 로컬로 이미지 형식 변환. 업로드 없이 100% 안전하고 비공개적인 사진 변환기.",
+    "keywords": {
+      "0": "이미지 변환기",
+      "1": "무료 이미지 변환기",
+      "2": "사진 변환기",
+      "3": "이미지 변환",
+      "4": "온라인 이미지 변환",
+      "5": "png를 jpg로",
+      "6": "png를 webp로",
+      "7": "jpg를 png로",
+      "8": "jpg를 webp로",
+      "9": "webp를 png로",
+      "10": "webp를 jpg로"
+    },
+    "installApp": "앱 설치"
+  },
+  "AboutPage": {
+    "metaTitle": "ImageConverter 소개 - 무료 온라인 사진 변환기",
+    "metaDescription": "ImageConverter는 파일을 어떤 서버에도 업로드하지 않고 브라우저에서 로컬로 여러 형식 간 이미지를 변환할 수 있는 무료 온라인 사진 변환기입니다. 모든 변환은 브라우저에서 이루어져 완전한 프라이버시와 보안을 보장합니다."
+  },
+  "ContactPage": {
+    "metaTitle": "문의하기",
+    "metaDescription": "질문이나 피드백이 있으신가요? 지원을 받으려면 문의하세요.",
+    "metaKeywords": "문의하기, 지원, 고객 서비스, 도움말, 피드백"
+  },
+  "NotFoundPage": {
+    "title": "페이지를 찾을 수 없습니다",
+    "description": "찾고 있는 페이지를 찾을 수 없습니다. 페이지가 이동되었거나 삭제되었거나 잘못된 URL을 입력했을 수 있습니다.",
+    "backToHome": "홈페이지로 돌아가기"
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "쿠키 정책 - 쿠키 사용 방법",
+    "metaDescription": "당사 웹사이트 서비스가 귀하의 경험을 개선하기 위해 쿠키를 사용하는 방법에 대해 알아보십시오. 쿠키 유형, 관리 옵션 및 개인 정보 보호 권리를 이해하십시오.",
+    "metaKeywords": "쿠키 정책, 개인 정보, 쿠키, 웹사이트 도구, 데이터 보호, 사용자 개인 정보"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "개인정보 처리방침",
+    "metaDescription": "당사 웹사이트 서비스를 사용할 때 당사가 귀하의 개인 정보를 수집, 사용 및 보호하는 방법을 이해하려면 당사의 개인정보 처리방침을 읽어보십시오.",
+    "metaKeywords": "개인정보 처리방침, 데이터 보호, 개인 정보, 웹사이트 도구, 사용자 개인 정보"
+  },
+  "TermsPage": {
+    "metaTitle": "이용약관 - 서비스 계약",
+    "metaDescription": "당사 웹사이트 서비스를 사용하기 위한 규칙 및 지침을 이해하려면 당사의 이용약관을 읽어보십시오.",
+    "metaKeywords": "이용약관, 서비스 계약, 이용 약관, 웹사이트 도구, 사용자 계약"
+  },
+  "BlogPage": {
+    "title": "블로그",
+    "description": "웹사이트 스크린샷, 웹 개발 팁 및 디지털 도구에 대해 알아보세요. 개발자 및 디자이너를 위한 전문가 가이드 및 튜토리얼.",
+    "keywords": "웹사이트 스크린샷 블로그, 웹 개발 튜토리얼, 디지털 도구 가이드, 스크린샷 튜토리얼, 웹 디자인 팁",
+    "readMore": "더 읽어보기",
+    "minRead": "분 읽기",
+    "noPosts": "아직 블로그 게시물이 없습니다. 곧 다시 확인해주세요!",
+    "categories": "카테고리",
+    "recentPosts": "최근 게시물",
+    "posts": "게시물"
+  },
+  "BlogPost": {
+    "backToBlog": "블로그로 돌아가기",
+    "writtenBy": "작성자",
+    "published": "게시됨",
+    "updated": "업데이트됨",
+    "shareArticle": "이 기사 공유하기",
+    "relatedPosts": "관련 기사",
+    "tags": "태그",
+    "minRead": "분 읽기",
+    "views": "조회수",
+    "lastUpdated": "마지막 업데이트:",
+    "like": "좋아요",
+    "share": "공유",
+    "quickActions": "빠른 작업",
+    "copyLink": "링크 복사",
+    "socialShare": "소셜 공유",
+    "aboutAuthor": "저자 소개",
+    "relatedArticles": "관련 기사",
+    "continueExploring": "더 많은 관련 콘텐츠 계속 탐색",
+    "toolsComparison": "도구 비교",
+    "seoGuide": "SEO 가이드",
+    "tutorial": "튜토리얼",
+    "blog": "블로그",
+    "category": "카테고리",
+    "categories": "카테고리",
+    "articles": "{count}개의 글",
+    "noArticles": "이 카테고리에는 아직 글이 없습니다.",
+    "readMore": "더 읽어보기",
+    "categoryNotFound": "카테고리를 찾을 수 없음",
+    "categoryNotFoundDescription": "요청한 카테고리를 찾을 수 없습니다.",
+    "postNotFound": "게시글을 찾을 수 없음",
+    "postNotFoundDescription": "요청한 블로그 게시글을 찾을 수 없습니다."
+  },
+  "Tools": {
+    "title": "무료 도구",
+    "resizeimage": "이미지 리사이저",
+    "resizeimageDesc": "이미지 리사이저",
+    "bulkresizeimages": "이미지 일괄 리사이즈",
+    "bulkresizeimagesDesc": "여러 이미지 크기 조절",
+    "imageconverter": "이미지 변환기",
+    "imageconverterDesc": "이미지 형식 변환",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "스크린샷 찍기",
+    "screentellDesc": "스크린 데모 레코더",
+    "imagecompressor": "이미지 압축기",
+    "imagecompressorDesc": "이미지 압축",
+    "crop": "Crop image",
+    "cropDesc": "이미지 자르기",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "이미지 워터마크",
+    "stitchimages": "이미지 스티처",
+    "stitchimagesDesc": "이미지 이어붙이기"
+  },
+  "ImageUploader": {
+    "titleSingle": "이미지를 드래그 앤 드롭하세요",
+    "titleMultiple": "이미지를 드래그 앤 드롭하세요",
+    "subtitleSingle": "또는 클릭하여 찾아보기",
+    "selectImagesSingle": "이미지 선택",
+    "selectImagesMultiple": "이미지 선택",
+    "supportedFormats": "지원: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG, WebP",
+    "maxFiles": "최대 {max}개 파일",
+    "maxSizeMB": "파일당 최대 {size}MB",
+    "dropHere": "여기에 이미지를 놓으세요",
+    "filesSelected": "파일이 성공적으로 선택되었습니다",
+    "file": "파일",
+    "files": "파일",
+    "errorInvalidFiles": "유효하지 않은 파일 형식",
+    "errorTooManyFiles": "파일이 너무 많습니다",
+    "errorFileSizeExceeded": "일부 파일이 너무 큽니다"
+  }
+}

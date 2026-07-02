@@ -1,0 +1,50 @@
+{
+  "ImageCompressor": {
+    "title": "Kostenloser Online-Bildkompressor (Free Image Compressor Online)",
+    "description": "Reduzieren Sie die Bilddateigröße bei gleichbleibend hoher Qualität. Professionelles Tool zum Komprimieren von JPG, PNG, WebP und AVIF. Privat, schnell und kostenlos.",
+    "metaTitle": "Kostenloser Online-Bildkompressor — Bilder komprimieren & Fotos optimieren",
+    "metaDescription": "Kostenloser Online-Bildkompressor zur Reduzierung der Dateigröße ohne Qualitätsverlust. Bester Fotokompressor zum sofortigen Komprimieren von JPG-, PNG- und WebP-Dateien im Browser.",
+    "intro": {
+      "title": "Professioneller kostenloser Online-Bildkompressor",
+      "content": "Unser kostenloser Online-Bildkompressor bietet den schnellsten Weg, die Bilddateigröße bei professioneller Qualität zu reduzieren. Ob für Web, E-Mail oder Speicherung – dieses Tool unterstützt JPEG, PNG, WebP und AVIF. Die gesamte Verarbeitung erfolgt direkt im Browser; Ihre Fotos werden nie auf unsere Server hochgeladen, was 100 % Privatsphäre garantiert."
+    },
+    "settings": "Einstellungen",
+    "processing": "Verarbeiten...",
+    "outputFormat": "Ausgabeformat",
+    "quality": "Qualität",
+    "original": "Original",
+    "compressed": "Komprimiert",
+    "download": "Herunterladen",
+    "compressing": "Komprimierung...",
+    "startOver": "Neu starten",
+    "dropImage": "Bild hier ablegen, um die Komprimierung zu starten",
+    "supports": "Unterstützt JPEG, PNG, WebP, AVIF",
+    "qualityHint": "Eine niedrigere Qualität führt zu kleineren Dateigrößen, kann aber Bilddetails verringern.",
+    "qualityPng": "PNG-Komprimierung ist verlustfrei, daher ist keine Qualitätsanpassung verfügbar.",
+    "faq": {
+      "title": "Bildkompressor FAQ",
+      "items": [
+        {
+          "question": "Ist dieser Online-Bildkompressor wirklich kostenlos?",
+          "answer": "Ja, unser Tool ist völlig kostenlos – ohne versteckte Gebühren, Registrierung oder Wasserzeichen. Sie können unbegrenzt viele Bilder komprimieren."
+        },
+        {
+          "question": "Wie komprimiere ich Bilder online mit diesem Tool?",
+          "answer": "Ziehen Sie Ihre Bilder einfach in den markierten Bereich, passen Sie bei Bedarf die Qualität an und klicken Sie auf den Download-Button. Alles wird sofort verarbeitet."
+        },
+        {
+          "question": "Wird die Bildqualität beim Komprimieren schlechter?",
+          "answer": "Unser Tool verwendet fortschrittliche Algorithmen, um Qualitätsverluste zu minimieren. Mit dem Qualitätsregler finden Sie die perfekte Balance zwischen Dateigröße und Klarheit."
+        },
+        {
+          "question": "Werden meine Bilder auf einen Server geladen?",
+          "answer": "Nein. Die Komprimierung erfolgt lokal in Ihrem Browser (Client-seitig). Ihre Dateien verlassen niemals Ihren Computer."
+        }
+      ]
+    },
+    "toast": {
+      "success": "Bild heruntergeladen!",
+      "error": "Komprimierung fehlgeschlagen. Bitte versuchen Sie ein anderes Bild oder Format."
+    }
+  }
+}

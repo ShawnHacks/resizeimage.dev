@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Bilder zusammenfügen online",
+    "pageTitle": "Kostenloses Online-Bild-Zusammenfügungstool",
+    "pageDescription": "Fügen Sie mehrere Bilder auf einer anpassbaren Leinwand zusammen. Verschieben, skalieren, drehen und ordnen Sie Bilder frei direkt in Ihrem Browser an.",
+    "metadata": {
+      "title": "Kostenloses Online-Bild-Zusammenfügungstool — Fotos online kombinieren",
+      "description": "Das beste kostenlose Online-Bild-Zusammenfügungstool. Kombinieren Sie mehrere Fotos auf einer Leinwand. Professionelles Online-Foto-Zusammenfügungstool zum Verschieben, Drehen und Überlagern von Bildern."
+    },
+    "intro": {
+      "title": "Professionelles kostenloses Online-Bild-Zusammenfügungstool",
+      "content": "Mit unserem kostenlosen Online-Bild-Zusammenfügungstool können Sie mehrere Fotos zu einer einzigen hochauflösenden Kreation kombinieren, ohne Downloads oder Konten. Egal, ob Sie eine Collage, ein professionelles Mockup erstellen oder einfach nur Fotos online zusammenführen, dieses Online-Foto-Zusammenfügungstool bietet die Flexibilität einer Desktop-App direkt in Ihrem Webbrowser. Verschieben, skalieren und ordnen Sie Ebenen mühelos neu an, während Ihre Privatsphäre gewahrt bleibt, da die gesamte Verarbeitung lokal erfolgt."
+    },
+    "controls": {
+      "canvasSettings": "Leinwandeinstellungen",
+      "width": "Leinwandbreite",
+      "height": "Leinwandhöhe",
+      "backgroundColor": "Hintergrundfarbe",
+      "addItem": "Bild hinzufügen",
+      "layers": "Ebenen",
+      "imageProperties": "Bildeigenschaften",
+      "rotate": "Drehen",
+      "opacity": "Deckkraft",
+      "bringToFront": "In den Vordergrund",
+      "sendToBack": "In den Hintergrund",
+      "bringForward": "Eins nach vorne",
+      "sendBackward": "Eins nach hinten",
+      "remove": "Bild entfernen",
+      "exportFormat": "Exportformat",
+      "transparent": "Transparent",
+      "white": "Weiß",
+      "noLayers": "Keine Ebenen",
+      "layerName": "Ebene {index}",
+      "zoom": "Zoom",
+      "zoomIn": "Vergrößern",
+      "zoomOut": "Verkleinern",
+      "fitToScreen": "An Bildschirm anpassen",
+      "setCanvasToImageSize": "Leinwandgröße an Bildgröße anpassen",
+      "matchCanvasSize": "Leinwandgröße anpassen"
+    },
+    "canvas": {
+      "placeholder": "Bilder hierher ziehen oder den Hinzufügen-Button verwenden, um mit dem Zusammenfügen zu beginnen."
+    },
+    "errors": {
+      "noImages": "Keine Bilder zum Herunterladen",
+      "exportFailed": "Bildexport fehlgeschlagen",
+      "loadFailed": "Fehler beim Laden von {name}"
+    },
+    "actions": {
+      "download": "Zusammengefügtes Bild herunterladen",
+      "preview": "Vorschau",
+      "reset": "Leinwand zurücksetzen",
+      "uploadMore": "Mehr hochladen"
+    },
+    "howTo": {
+      "title": "So fügen Sie Bilder online zusammen",
+      "step1": {
+        "number": "1",
+        "title": "Leinwandgröße festlegen",
+        "description": "Passen Sie die Breite und Höhe der Leinwand an das gewünschte Layout an."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Bilder hinzufügen & anordnen",
+        "description": "Laden Sie Ihre Bilder hoch und verschieben Sie sie an die gewünschte Position. Skalieren und drehen Sie sie nach Bedarf."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Ihre Kreation exportieren",
+        "description": "Klicken Sie auf Download, um Ihr kombiniertes Bild als einzelne Datei zu speichern."
+      }
+    },
+    "faq": {
+      "title": "FAQ zum Online-Foto-Zusammenfügungstool",
+      "items": [
+        {
+          "question": "Ist dieses kostenlose Online-Bild-Zusammenfügungstool wirklich kostenlos?",
+          "answer": "Ja, unser Tool ist zu 100 % kostenlos. Es gibt keine versteckten Gebühren, Abonnements oder Wasserzeichen auf Ihren exportierten Bildern."
+        },
+        {
+          "question": "Wie benutze ich dieses Online-Foto-Zusammenfügungstool?",
+          "answer": "Legen Sie einfach Ihre Leinwandgröße fest, laden Sie Ihre Bilder hoch und ziehen und ordnen Sie sie mit der Maus an. Über das Eigenschaftsfenster können Sie jede Ebene drehen und die Deckkraft anpassen."
+        },
+        {
+          "question": "Bleiben meine Daten beim Zusammenführen von Fotos online privat?",
+          "answer": "Absolut. Dieses Tool verwendet clientseitige Verarbeitung, was bedeutet, dass Ihre Bilder niemals Ihren Computer verlassen oder unsere Server erreichen."
+        },
+        {
+          "question": "Welche Bildformate werden unterstützt?",
+          "answer": "Wir unterstützen alle gängigen Webformate einschließlich JPG, PNG, WebP und SVG."
+        }
+      ]
+    }
+  }
+}

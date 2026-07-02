@@ -1,0 +1,201 @@
+{
+  "Header": {
+    "Home": "首页",
+    "Features": "功能特性",
+    "FAQ": "常见问题",
+    "About": "关于我们",
+    "Blog": "博客"
+  },
+  "Footer": {
+    "Product": "产品",
+    "Tools": "工具",
+    "Resources": "资源",
+    "Company": "公司",
+    "Features": "功能特性",
+    "FAQ": "常见问题",
+    "About": "关于我们",
+    "SiteMap": "网站地图",
+    "Pricing": "价格",
+    "License": "许可证",
+    "Contact": "联系我们",
+    "Roadmap": "路线图",
+    "Documentation": "文档",
+    "Blog": "博客",
+    "Cookie Policy": "Cookie 政策",
+    "Privacy Policy": "隐私政策",
+    "Terms of Service": "服务条款"
+  },
+  "HomePage": {
+    "tagline": "ImageConverter",
+    "title": "免费图片转换器",
+    "subtitle": "在浏览器中转换图像。无需注册，无需上传，100% 安全和私密照片转换器。",
+    "localHint": "在浏览器本地转换图像格式，无需上传，100% 安全和私密",
+    "previewAlt": "所选图像预览",
+    "settingsTitle": "输出设置",
+    "reset": "选择另一张图片",
+    "formatLabel": "输出格式",
+    "formatPlaceholder": "选择一个格式",
+    "qualityLabel": "质量",
+    "qualityDisabled": "PNG 导出自动保持完整质量。",
+    "qualityHint": "为 JPG 和 WebP 导出调整质量。",
+    "downloadCta": "下载 {format}",
+    "unknownFormat": "未知",
+    "quickImageConverters": "快速图像转换器",
+    "benefitsTitle": "为什么选择 ImageConverter？",
+    "benefitsDescription": "使用私有的、浏览器优先的图像转换工具包加快您的工作流程。",
+    "benefits": {
+      "items": [
+        "100% 在您的浏览器中运行，因此您的文件永远不会离开您的设备。",
+        "支持现代和传统格式，包括 HEIC、AVIF、GIF、TIFF、PNG、JPG 和 WebP。",
+        "在下载前选择输出质量并即时预览文件大小。",
+        "为速度而优化，无需注册、无限制、无水印。"
+      ]
+    },
+    "howTitle": "ImageConverter 如何工作",
+    "howSteps": [
+      {
+        "title": "选择或拖放图像",
+        "description": "上传文件或将其拖到工作区 — 我们会自动检测源格式。"
+      },
+      {
+        "title": "选择输出设置",
+        "description": "选择您的目标格式并在几秒钟内调整 JPG 或 WebP 输出的质量。"
+      },
+      {
+        "title": "立即下载",
+        "description": "立即获取转换后的文件。没有队列，没有上传，没有跟踪。"
+      }
+    ],
+    "ctaTitle": "准备好优化您的图像工作流程了吗？",
+    "ctaDescription": "探索更多浏览器优先的工具，用于批量调整大小、屏幕截图、元数据清理等。",
+    "ctaButton": "浏览所有工具"
+  },
+  "SiteConfig": {
+    "title": "图像转换器 - 免费在线照片转换器",
+    "description": "最好的免费在线图像转换工具。在浏览器本地转换图像格式。无需上传，100% 安全和私密照片转换器。",
+    "keywords": {
+      "0": "图像转换器",
+      "1": "免费图像转换器",
+      "2": "照片转换器",
+      "3": "转换图像",
+      "4": "在线转换图像",
+      "5": "png到jpg",
+      "6": "png到webp",
+      "7": "jpg到png",
+      "8": "jpg到webp",
+      "9": "webp到png",
+      "10": "webp到jpg"
+    },
+    "installApp": "安装应用"
+  },
+  "AboutPage": {
+    "metaTitle": "关于 ImageConverter - 免费在线照片转换器",
+    "metaDescription": "了解 ImageConverter，这是一款免费在线照片转换器，可在不将文件上传到任何服务器的情况下在多种格式之间转换图像。所有转换都在浏览器本地完成，确保完全的隐私和安全。"
+  },
+  "ContactPage": {
+    "metaTitle": "联系我们",
+    "metaDescription": "有问题或反馈？联系我们获取支持。",
+    "metaKeywords": "联系我们, 支持, 客户服务, 帮助, 反馈"
+  },
+  "NotFoundPage": {
+    "title": "页面未找到",
+    "description": "您正在查找的页面不存在。它可能已被移动、删除，或者您输入的网址有误。",
+    "backToHome": "返回首页"
+  },
+  "CookiePolicyPage": {
+    "metaTitle": "Cookie 政策 - 我们如何使用 Cookie",
+    "metaDescription": "了解我们的网站截图服务如何使用Cookie来改善您的体验。了解Cookie类型、管理选项和您的隐私权。",
+    "metaKeywords": "cookie政策, 隐私, cookies, 网站截图工具, 数据保护, 用户隐私"
+  },
+  "PrivacyPolicyPage": {
+    "metaTitle": "隐私政策 - 网站截图工具",
+    "metaDescription": "阅读我们的隐私政策，了解在使用我们的网站截图服务时，我们如何收集、使用和保护您的个人信息。",
+    "metaKeywords": "隐私政策, 数据保护, 个人信息, 网站截图工具, 用户隐私"
+  },
+  "TermsPage": {
+    "metaTitle": "条款与条件 - 服务协议",
+    "metaDescription": "阅读我们的条款和条件，了解使用我们网站截图服务的规则和指南。",
+    "metaKeywords": "条款和条件, 服务协议, 使用条款, 网站截图工具, 用户协议"
+  },
+  "BlogPage": {
+    "title": "博客",
+    "description": "了解网站截图、Web开发技巧和数字工具。为开发者和设计师提供专家指南和教程。",
+    "keywords": "网站截图博客, web开发教程, 数字工具指南, 截图教程, 网页设计技巧",
+    "readMore": "阅读更多",
+    "minRead": "分钟阅读",
+    "noPosts": "暂无博客文章。请稍后再回来查看！",
+    "categories": "分类",
+    "recentPosts": "最近文章",
+    "posts": "篇文章"
+  },
+  "BlogPost": {
+    "backToBlog": "返回博客",
+    "writtenBy": "作者",
+    "published": "发布于",
+    "updated": "更新于",
+    "shareArticle": "分享本文",
+    "relatedPosts": "相关文章",
+    "tags": "标签",
+    "minRead": "分钟阅读",
+    "views": "次浏览",
+    "lastUpdated": "最后更新：",
+    "like": "喜欢",
+    "share": "分享",
+    "quickActions": "快捷操作",
+    "copyLink": "复制链接",
+    "socialShare": "社交分享",
+    "aboutAuthor": "关于作者",
+    "relatedArticles": "相关文章",
+    "continueExploring": "继续探索更多相关内容",
+    "toolsComparison": "工具比较",
+    "seoGuide": "SEO指南",
+    "tutorial": "教程",
+    "blog": "博客",
+    "category": "分类",
+    "categories": "分类",
+    "articles": "{count} 篇文章",
+    "noArticles": "该分类下暂无文章。",
+    "readMore": "阅读更多",
+    "categoryNotFound": "分类未找到",
+    "categoryNotFoundDescription": "请求的分类无法找到。",
+    "postNotFound": "文章未找到",
+    "postNotFoundDescription": "请求的博客文章无法找到。"
+  },
+  "Tools": {
+    "title": "图片工具",
+    "resizeimage": "图片尺寸调整",
+    "resizeimageDesc": "在线图片尺寸调整",
+    "bulkresizeimages": "批量调整图片大小",
+    "bulkresizeimagesDesc": "批量调整图片大小在线工具",
+    "imageconverter": "图片格式转换",
+    "imageconverterDesc": "图片格式转换",
+    "screenshot": "Website Screenshot Online",
+    "screenshotDesc": "网站截图和录屏",
+    "screentellDesc": "屏幕录制与DEMO制作",
+    "imagecompressor": "图片压缩",
+    "imagecompressorDesc": "压缩图片",
+    "crop": "Crop image",
+    "cropDesc": "裁剪图片",
+    "watermark": "Watermark Image",
+    "watermarkDesc": "给图片加水印",
+    "stitchimages": "图片拼合",
+    "stitchimagesDesc": "拼接图片"
+  },
+  "ImageUploader": {
+    "titleSingle": "拖放您的图片",
+    "titleMultiple": "拖放您的图片",
+    "subtitleSingle": "或点击浏览",
+    "selectImagesSingle": "选择图片",
+    "selectImagesMultiple": "选择图片",
+    "supportedFormats": "支持: SVG, HEIC, AVIF, TIFF, GIF, JPEG, JPG, PNG 或 WebP",
+    "maxFiles": "最多 {max} 个文件",
+    "maxSizeMB": "每个文件最大 {size}MB",
+    "dropHere": "把图片拖放到这里",
+    "filesSelected": "文件选择成功",
+    "file": "文件",
+    "files": "文件",
+    "errorInvalidFiles": "无效的文件类型",
+    "errorTooManyFiles": "文件太多",
+    "errorFileSizeExceeded": "部分文件过大"
+  }
+}

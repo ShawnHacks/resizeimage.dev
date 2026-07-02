@@ -1,0 +1,372 @@
+{
+  "ImageConverterTool": {
+    "title": "画像変換",
+    "description": "サーバーにアップロードせずにオンラインで画像や写真を変換 - あなたの頼れる画像変換ツール",
+    "formats": {
+      "png": "PNG",
+      "jpg": "JPG",
+      "webp": "WebP",
+      "svg": "SVG",
+      "heic": "HEIC",
+      "avif": "AVIF",
+      "tiff": "TIFF",
+      "gif": "GIF"
+    },
+    "features": {
+      "title": "プロフェッショナルな無料オンライン画像リサイザー",
+      "description": "サーバーにアップロードせずにオンラインで画像や写真をリサイズ - あなたの頼れる写真リサイザーツール",
+      "lightningFast": "超高速",
+      "free": "100%無料の画像コンバーター"
+    },
+    "hero": {
+      "badge": "{from} -> {to} 変換",
+      "title": "数秒で{from}を{to}に変換",
+      "description": "{from}画像をアップロードして、高品質の{to}をすぐにダウンロードします。すべてがブラウザ内で行われます - アップロードも制限もありません。"
+    },
+    "workspace": {
+      "badge": "{from}を{to}に変換",
+      "subtitle": "出力ファイルサイズ {size}.",
+      "sizePending": "計算中...",
+      "download": {
+        "pending": "変換中...",
+        "ready": "{to}をダウンロード"
+      },
+      "reset": "別の画像を選択",
+      "info": {
+        "original": "元の形式: {format}",
+        "converted": "{format}出力",
+        "dimensions": "出力寸法: {width} × {height} px"
+      },
+      "processing": {
+        "title": "{from}ファイルを変換しています",
+        "description": "これはブラウザ内でローカルに発生します。大きな画像には数秒かかる場合があります。"
+      },
+      "error": {
+        "title": "変換に失敗しました",
+        "description": "この画像を変換できませんでした。別のファイルまたはエクスポート形式を試してください。",
+        "cta": "別の画像を選択",
+        "generic": "この画像を変換できません。別のファイルをお試しください。"
+      },
+      "previewAlt": "{from}が{to}に変換されました"
+    },
+    "moreOptions": {
+      "title": "他の画像コンバーターを探す",
+      "description": "ワンクリックでフォーマットを切り替え — すべてのコンバーターはブラウザでローカルに実行されます。"
+    },
+    "howTo": {
+      "title": "ブラウザで{from}を{to}に変換する方法",
+      "steps": [
+        {
+          "number": "1",
+          "title": "画像をアップロード",
+          "description": "デバイスから{from}ファイルをドロップまたは選択します。ファイルがブラウザから離れることはありません。"
+        },
+        {
+          "number": "2",
+          "title": "すぐに変換します",
+          "description": "コンバーターは画像をローカルで{to}としてレンダリングし、品質と寸法を維持します。"
+        },
+        {
+          "number": "3",
+          "title": "{to}ファイルをダウンロード",
+          "description": "変換された{to}をワンクリックで保存するか、別の形式を選択します。"
+        }
+      ]
+    },
+    "faq": {
+      "title": "画像コンバーターFAQ",
+      "subtitle": "ブラウザで画像形式を切り替えるために知っておくべきことすべて",
+      "items": [
+        {
+          "question": "画像コンバーターは無料で使用できますか？",
+          "answer": "はい—imageconverter.devのすべてのコンバーターは無料で、無制限で、透かしもありません。アカウントを作成せずに好きなだけファイルを変換できます。"
+        },
+        {
+          "question": "私の画像はサーバーにアップロードされますか？",
+          "answer": "いいえ。すべての変換は、Web APIを使用してブラウザ内で完全に実行されます。ページが読み込まれた後、オフラインになってもコンバーターは機能し続けます。"
+        },
+        {
+          "question": "コンバーターは画質を低下させますか？",
+          "answer": "画像の解像度を維持し、ターゲット形式で必要な場合にのみ穏やかな圧縮を適用します。JPGにエクスポートする場合、透明な背景は自動的に白にフラット化されます。"
+        },
+        {
+          "question": "一度に複数の画像を変換できますか？",
+          "answer": "現在、このツールは一度に1つのファイルを処理するため、ダウンロードする前に出力を確認できます。一括変換が必要ですか？フォーマット切り替えをサポートする一括リサイズツールをお試しください。"
+        }
+      ]
+    },
+    "conversions": {
+      "png-to-jpg": {
+        "label": "PNGからJPGへ",
+        "shortDescription": "透明なPNGを軽量のJPGにフラット化して、オンラインでより速く読み込みます。",
+        "metadata": {
+          "title": "PNGからJPGへのコンバーター — 無料のオンラインPNGからJPEGへのツール",
+          "description": "PNGをJPGに即座に変換し、鮮明さを失うことなくファイルサイズを縮小します。アップロードなしでブラウザで100%動作します。"
+        }
+      },
+      "png-to-webp": {
+        "label": "PNGからWebPへ",
+        "shortDescription": "重いPNGグラフィックを最新のWeb向けの超軽量WebPファイルに圧縮します。",
+        "metadata": {
+          "title": "PNGからWebPへのコンバーター — PNG画像をWebPに圧縮",
+          "description": "PNG画像をWebPに変換して、鮮明さを保ちながらファイルサイズを劇的に削減します。ブラウザベースで、安全かつ高速です。"
+        }
+      },
+      "jpg-to-png": {
+        "label": "JPGからPNGへ",
+        "shortDescription": "透明度やよりシャープなエッジが必要な場合は、JPG写真をロスレスPNGに変換します。",
+        "metadata": {
+          "title": "JPGからPNGへのコンバーター — JPGからオンラインで透明なPNGを作成",
+          "description": "JPGまたはJPEG画像を数秒でPNGに変換します。ブラウザを離れることなく、品質を維持し、透明度を追加します。"
+        }
+      },
+      "jpg-to-webp": {
+        "label": "JPGからWebPへ",
+        "shortDescription": "JPG写真を効率的なWebPファイルにアップグレードして、超高速配信を実現します。",
+        "metadata": {
+          "title": "JPGからWebPへのコンバーター — 無料のオンラインJPEGからWebPへのツール",
+          "description": "JPGまたはJPEGファイルを最新のWebP画像に即座に変換します。より良い圧縮、同じ品質、アップロードなし。"
+        }
+      },
+      "webp-to-png": {
+        "label": "WebPからPNGへ",
+        "shortDescription": "WebPアセットを広くサポートされているロスレスPNG形式にエクスポートし直します。",
+        "metadata": {
+          "title": "WebPからPNGへのコンバーター — WebP画像をオンラインでPNGにエクスポート",
+          "description": "編集または互換性のためにWebP画像をPNGに変換します。高速、プライベートで、ブラウザで完全に実行されます。"
+        }
+      },
+      "webp-to-jpg": {
+        "label": "WebPからJPGへ",
+        "shortDescription": "WebP写真をユニバーサルJPGとしてエクスポートして共有可能にします。",
+        "metadata": {
+          "title": "WebPからJPGへのコンバーター — 無料のオンラインWEBPからJPEGへのツール",
+          "description": "WebP画像をJPGファイルに即座に変換して、どこにでもアップロードできるようにします。品質の驚きも、サーバーへのアップロードもありません。"
+        }
+      },
+      "svg-to-png": {
+        "label": "SVGからPNGへ",
+        "shortDescription": "ベクターSVGグラフィックを、どのエディターやCMSでも使える透明PNGに変換します。",
+        "metadata": {
+          "title": "SVGからPNGへのコンバーター — SVGアートワークをオンラインでPNGにエクスポート",
+          "description": "SVGファイルを瞬時にPNGに変換し、シャープなエッジと透明性を維持します。アップロード不要で100%ブラウザベースです。"
+        }
+      },
+      "svg-to-jpg": {
+        "label": "SVGからJPGへ",
+        "shortDescription": "SVGイラストを数秒で普遍的に互換性のあるJPG画像にフラット化します。",
+        "metadata": {
+          "title": "SVGからJPGへのコンバーター — 無料のオンラインSVGからJPEGへのツール",
+          "description": "SVGグラフィックをJPGファイルに変換して、どこでも簡単に共有できます。高速、プライベートで、完全にブラウザで実行されます。"
+        }
+      },
+      "svg-to-webp": {
+        "label": "SVGからWebPへ",
+        "shortDescription": "ブラウザを離れることなく、SVGアートワークから軽量のWebPビットマップを生成します。",
+        "metadata": {
+          "title": "SVGからWebPへのコンバーター — オンラインでSVG画像をWebPに変換",
+          "description": "SVGファイルからWebP画像を作成して、視覚的な忠実度を維持しながら超小型のアセットを取得します。完全にクライアントサイドで安全です。"
+        }
+      },
+      "heic-to-png": {
+        "label": "HEICからPNGへ",
+        "shortDescription": "HEIC写真をどこでもすぐに開ける透明PNGに変換します。",
+        "metadata": {
+          "title": "HEICからPNGへのコンバーター — 無料のオンラインHEICからPNGへのツール",
+          "description": "ブラウザでHEIC画像をPNGファイルに変換します。鮮明なディテールを維持し、透明性を保持し、完全にプライベートな状態を保ちます。"
+        }
+      },
+      "heic-to-jpg": {
+        "label": "HEICからJPGへ",
+        "shortDescription": "HEICショットを軽量のJPG画像としてエクスポートして共有可能にします。",
+        "metadata": {
+          "title": "HEICからJPGへのコンバーター — オンラインでHEIC写真をJPEGに変換",
+          "description": "HEICファイルを瞬時にJPGに変換します。アップロードもインストールも不要で、デバイス上で高速なHEICからJPEGへの変換が可能です。"
+        }
+      },
+      "heic-to-webp": {
+        "label": "HEICからWebPへ",
+        "shortDescription": "HEIC写真を現代のウェブ向けの超効率的なWebPファイルにアップグレードします。",
+        "metadata": {
+          "title": "HEICからWebPへのコンバーター — 無料のオンラインHEICからWebPへのツール",
+          "description": "HEIC画像を数秒でWebP形式に変換し、ファイルサイズを小さくし、優れた品質を実現します — すべてブラウザ内で行えます。"
+        }
+      },
+      "avif-to-png": {
+        "label": "AVIFからPNGへ",
+        "shortDescription": "AVIFグラフィックを普遍的にサポートされているロスレスPNGファイルにエクスポートします。",
+        "metadata": {
+          "title": "AVIFからPNGへのコンバーター — オンラインでAVIF画像をPNGに変換",
+          "description": "ブラウザを離れることなく、AVIF画像を瞬時にPNGに変換します。シャープなエッジと透明性を維持し、アップロードは不要です。"
+        }
+      },
+      "avif-to-jpg": {
+        "label": "AVIFからJPGへ",
+        "shortDescription": "AVIF写真をレガシーワークフロー用の互換性のあるJPGに変換します。",
+        "metadata": {
+          "title": "AVIFからJPGへのコンバーター — 無料のオンラインAVIFからJPEGへのツール",
+          "description": "AVIFファイルのJPGコピーを瞬時に作成します。ブラウザでローカルに動作するため、どこでもすばやく共有できます。"
+        }
+      },
+      "avif-to-webp": {
+        "label": "AVIFからWebPへ",
+        "shortDescription": "ブラウザを離れることなく、AVIF画像を省スペースのWebPファイルに変換します。",
+        "metadata": {
+          "title": "AVIFからWebPへのコンバーター — オンラインAVIF画像変換",
+          "description": "AVIFアセットをWebPに切り替えて、互換性を向上させ、同様の圧縮を実現します — 高速、プライベート、100%クライアントサイド。"
+        }
+      },
+      "tiff-to-png": {
+        "label": "TIFFからPNGへ",
+        "shortDescription": "重いTIFFスキャンをウェブ対応の洗練されたPNGファイルとしてエクスポートします。",
+        "metadata": {
+          "title": "TIFFからPNGへのコンバーター — 無料のオンラインTIFFからPNGへのツール",
+          "description": "TIFF画像を瞬時にPNG形式に変換します。アップロードやプラグインなしで、細かいディテールを維持します。"
+        }
+      },
+      "tiff-to-jpg": {
+        "label": "TIFFからJPGへ",
+        "shortDescription": "ブラウザ内でTIFFファイルを軽量のJPGに圧縮します。",
+        "metadata": {
+          "title": "TIFFからJPGへのコンバーター — オンラインでTIFFをJPEGに変換",
+          "description": "TIFF画像を数秒でJPGに変換し、ファイルサイズを極小化し、幅広い互換性を実現します — すべてローカルで完了します。"
+        }
+      },
+      "tiff-to-webp": {
+        "label": "TIFFからWebPへ",
+        "shortDescription": "TIFFアセットを最先端のWebPファイルに変換して、配信を高速化します。",
+        "metadata": {
+          "title": "TIFFからWebPへのコンバーター — オンラインTIFF画像変換",
+          "description": "TIFF画像を瞬時にWebPに変換して、ファイルサイズを劇的に縮小します。プライベート、高速、ブラウザベース。"
+        }
+      },
+      "gif-to-png": {
+        "label": "GIFからPNGへ",
+        "shortDescription": "GIFグラフィックを鮮明なロスレスPNG画像にフラット化します。",
+        "metadata": {
+          "title": "GIFからPNGへのコンバーター — 無料のオンラインGIFからPNGへのツール",
+          "description": "ブラウザでGIFファイルをPNGに変換し、ファイルサイズを肥大化させることなく品質を維持します。"
+        }
+      },
+      "gif-to-jpg": {
+        "label": "GIFからJPGへ",
+        "shortDescription": "GIFアセットを互換性のあるJPGに変換して、幅広いサポートを実現します。",
+        "metadata": {
+          "title": "GIFからJPGへのコンバーター — オンラインGIFからJPEGへの変換",
+          "description": "GIF画像をJPGに即座にエクスポートし、ワークフローをシンプルに保ちます。アップロードも透かしもありません。"
+        }
+      },
+      "gif-to-webp": {
+        "label": "GIFからWebPへ",
+        "shortDescription": "GIFファイルを最新のWebP画像に変換して、サイズを小さくします。",
+        "metadata": {
+          "title": "GIFからWebPへのコンバーター — 無料のオンラインGIFからWebPへのツール",
+          "description": "GIFグラフィックをWebP形式に変換して、帯域幅を削減し、品質を維持します。すべてブラウザ内で行えます。"
+        }
+      }
+    },
+    "formatInfo": {
+      "png": {
+        "title": "PNGとは？",
+        "description": "PNG（Portable Network Graphics）は、可逆圧縮をサポートするラスターグラフィックスファイル形式です。GIF（Graphics Interchange Format）の改良版として、特許フリーで開発されました。",
+        "bestFor": "透明度が必要なWebグラフィックス、ロゴ、チャート、イラスト。",
+        "pros": [
+          "可逆圧縮（品質劣化なし）",
+          "透明度をサポート（アルファチャンネル）",
+          "幅広いブラウザサポート"
+        ]
+      },
+      "jpg": {
+        "title": "JPGとは？",
+        "description": "JPG（Joint Photographic Experts Group）は、デジタル写真やその他のラスターグラフィックスを含む広く使用されている圧縮画像形式です。画質とファイルサイズのバランスを取るために非可逆圧縮を使用します。",
+        "bestFor": "写真、多くの色を含む複雑な画像、ファイルサイズが重要なWeb画像。",
+        "pros": [
+          "小さいファイルサイズ",
+          "普遍的な互換性",
+          "調整可能な圧縮レベル"
+        ]
+      },
+      "webp": {
+        "title": "WebPとは？",
+        "description": "WebPは、Googleが採用した最新の画像形式で、Web上の画像に対して優れた可逆および非可逆圧縮を提供します。ウェブマスターやWeb開発者が、より小さく豊かな画像を作成し、Webを高速化できるようにします。",
+        "bestFor": "ページ読み込み速度を向上させるためのWeb画像（PNGとJPGの両方を置き換える）。",
+        "pros": [
+          "優れた圧縮（JPG/PNGより小さいファイル）",
+          "透明度とアニメーションの両方をサポート",
+          "最新のブラウザでサポート"
+        ]
+      },
+      "heic": {
+        "title": "HEICとは？",
+        "description": "HEIC（High Efficiency Image Container）は、AppleがiOSデバイスで写真に使用するファイル形式です。HEVC（High Efficiency Video Coding）標準を使用して、JPGよりも小さいファイルサイズで高品質の画像を保存します。",
+        "bestFor": "ストレージが限られたモバイルデバイスで高品質の写真を保存する。",
+        "pros": [
+          "JPGの半分のサイズで高品質",
+          "Live Photosと深度マップをサポート",
+          "Appleデバイスの最新標準"
+        ]
+      },
+      "avif": {
+        "title": "AVIFとは？",
+        "description": "AVIF（AV1 Image File Format）は、HEIFファイル形式でAV1で圧縮された画像または画像シーケンスを保存するためのオープンでロイヤリティフリーの画像ファイル形式仕様です。",
+        "bestFor": "最大の圧縮効率を必要とする次世代のWeb画像。",
+        "pros": [
+          "クラス最高の圧縮",
+          "HDRと広色域のサポート",
+          "ロイヤリティフリー"
+        ]
+      },
+      "svg": {
+        "title": "SVGとは？",
+        "description": "SVG（Scalable Vector Graphics）は、インタラクティビティとアニメーションをサポートする2次元グラフィックス用のXMLベースのベクター画像形式です。ラスター画像とは異なり、SVGは品質を失うことなく無限に拡大縮小できます。",
+        "bestFor": "どのサイズでも鮮明に見える必要があるロゴ、アイコン、シンプルなイラスト。",
+        "pros": [
+          "無限のスケーラビリティ",
+          "シンプルなグラフィックスの小さいファイルサイズ",
+          "コードで編集可能"
+        ]
+      },
+      "tiff": {
+        "title": "TIFFとは？",
+        "description": "TIFF（Tagged Image File Format）は、グラフィックアーティスト、出版業界、写真家の間で人気のあるラスターグラフィックス画像を保存するためのコンピューターファイル形式です。",
+        "bestFor": "品質が最優先のプロフェッショナル写真、印刷、スキャン。",
+        "pros": [
+          "非圧縮または可逆圧縮",
+          "高い色深度のサポート",
+          "印刷業界標準"
+        ]
+      },
+      "gif": {
+        "title": "GIFとは？",
+        "description": "GIF（Graphics Interchange Format）は、アニメーションをサポートするビットマップ画像形式です。LZW可逆データ圧縮を使用し、フレームごとに最大256色を許可します。",
+        "bestFor": "シンプルなアニメーション、ミーム、小さなアイコン。",
+        "pros": [
+          "アニメーションをサポート",
+          "シンプルなグラフィックスの小さいファイルサイズ",
+          "普遍的にサポート"
+        ]
+      }
+    },
+    "converterFeatures": {
+      "title": "当社の画像コンバーターを使用する理由",
+      "items": [
+        {
+          "title": "プライバシー第一",
+          "description": "すべての変換はブラウザ内でローカルに行われます。画像が当社のサーバーにアップロードされることはありません。"
+        },
+        {
+          "title": "超高速",
+          "description": "WebAssemblyを搭載し、遅延なくデスクトップクラスのパフォーマンスを提供します。"
+        },
+        {
+          "title": "制限なし",
+          "description": "好きなだけ画像を変換できます。ファイルサイズ制限なし、1日の制限なし。"
+        },
+        {
+          "title": "高品質",
+          "description": "すべての変換で解像度と品質を保持し、画像を丁寧に扱います。"
+        }
+      ]
+    }
+  }
+}

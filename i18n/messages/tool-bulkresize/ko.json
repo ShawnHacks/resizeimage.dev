@@ -1,0 +1,212 @@
+{
+  "BulkResizeTool": {
+    "pageTitle": "온라인에서 여러 이미지 크기 조절",
+    "pageDescription": "한 번에 여러 이미지의 크기를 일괄적으로 조절하는 무료 온라인 도구. 빠르고 안전하며 업로드 없이 브라우저에서 완전히 작동합니다.",
+    "backButton": "뒤로",
+    "features": {
+      "title": "온라인에서 무료로 여러 이미지 크기 조절",
+      "description": "서버에 업로드하지 않고 한 번에 여러 이미지 크기 조절",
+      "lightningFast": "초고속 처리",
+      "free": "영원히 100% 무료",
+      "noSignup": "가입 필요 없음",
+      "secure": "안전하고 비공개",
+      "unlimited": "무제한 이미지 처리",
+      "browser": "브라우저에서 작동"
+    },
+    "imagePreview": {
+      "selected": "이미지",
+      "selectedPlural": "이미지",
+      "selectedCount": "선택됨",
+      "addMore": "더 추가",
+      "showLess": "덜 보기",
+      "showAll": "모두 보기 ({count}개 더)",
+      "dialogTitle": "선택된 이미지",
+      "dialogDescription": "선택된 {count}개의 이미지를 관리하세요. × 버튼을 클릭하여 이미지를 제거하거나 더 많은 이미지를 추가할 수 있습니다."
+    },
+    "controls": {
+      "resizeMode": "크기 조절 모드",
+      "percentage": {
+        "title": "백분율",
+        "description": "이미지를 원래 크기의 {percentage}%로 조절합니다.",
+        "rangeLabel": "범위: 10% ~ 200%"
+      },
+      "fileSize": {
+        "title": "파일 크기",
+        "description": "이미지를 약 {size}KB로 압축합니다.",
+        "rangeLabel": "범위: 10KB ~ 5000KB",
+        "targetSize": "대상 파일 크기(KB)",
+        "note": "실제 파일 크기는 이미지 복잡도에 따라 다를 수 있습니다."
+      },
+      "dimensions": {
+        "title": "이미지 크기",
+        "description": "정확한 너비와 높이로 크기를 조절합니다.",
+        "width": "너비(px)",
+        "height": "높이(px)",
+        "maintainRatio": "종횡비 유지",
+        "usePadding": "패딩 사용",
+        "paddingNote": "원래 종횡비를 유지하기 위해 패딩 추가"
+      },
+      "width": {
+        "title": "너비",
+        "description": "종횡비를 유지하면서 특정 너비로 크기를 조절합니다.",
+        "targetWidth": "대상 너비(px)"
+      },
+      "height": {
+        "title": "높이",
+        "description": "종횡비를 유지하면서 특정 높이로 크기를 조절합니다.",
+        "targetHeight": "대상 높이(px)"
+      },
+      "longestSide": {
+        "title": "가장 긴 변",
+        "description": "가장 긴 치수를 기준으로 크기를 조절합니다.",
+        "targetLongest": "대상 가장 긴 변(px)"
+      },
+      "format": {
+        "label": "출력 형식",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "품질",
+        "description": "품질이 높을수록 파일 크기가 커집니다."
+      },
+      "backgroundColor": {
+        "label": "배경색",
+        "description": "JPEG로 변환된 투명 이미지에 사용",
+        "transparent": "투명 배경 사용",
+        "transparentValue": "투명"
+      },
+      "presets": {
+        "title": "빠른 사전 설정",
+        "instagram": "Instagram 게시물",
+        "instagramDesc": "1080×1080px",
+        "twitter": "Twitter 헤더",
+        "twitterDesc": "1500×500px",
+        "facebook": "Facebook 커버",
+        "facebookDesc": "820×312px",
+        "youtube": "YouTube 썸네일",
+        "youtubeDesc": "1280×720px",
+        "email": "이메일 친화적",
+        "emailDesc": "너비 800px",
+        "compress": "작게 압축",
+        "compressDesc": "< 100KB"
+      },
+      "resizeButton": "{percentage}%로 크기 조절",
+      "resizeButtonDefault": "이미지 크기 조절"
+    },
+    "processing": {
+      "title": "이미지 처리 중...",
+      "progress": "{total}개 중 {current}개 이미지 처리됨"
+    },
+    "results": {
+      "title": "처리가 완료되었습니다!",
+      "imagesResized": "{count}개의 {count, plural, one {이미지} other {이미지}}가 성공적으로 크기 조절되었습니다.",
+      "originalSize": "원본 크기",
+      "newSize": "새 크기",
+      "spaceSaved": "절약된 공간",
+      "processedImages": "처리된 이미지",
+      "downloadImage": "다운로드",
+      "downloadAll": "모든 이미지 다운로드",
+      "resizeMore": "더 많은 이미지 크기 조절",
+      "backToEdit": "설정 조정",
+      "downloadSingle": "이미지 다운로드",
+      "downloadMultiple": "모든 {count}개 이미지 다운로드",
+      "downloading": "다운로드 중..."
+    },
+    "config": {
+      "title": "공유 가능한 구성",
+      "description": "이 URL로 이 설정을 자동으로 사용합니다.",
+      "copy": "복사",
+      "copied": "복사되었습니다!",
+      "link": "링크",
+      "urlCopied": "구성 URL이 클립보드에 복사되었습니다!",
+      "urlCopyFailed": "URL 복사 실패"
+    },
+    "toast": {
+      "imagesLoaded": "{count}개의 {count, plural, one {이미지} other {이미지}}가 로드되었습니다.",
+      "imagesAdded": "{count}개의 {count, plural, one {이미지} other {이미지}}가 더 추가되었습니다.",
+      "imagesResizedSuccess": "이미지 크기가 성공적으로 조절되었습니다!",
+      "downloadComplete": "다운로드가 완료되었습니다!",
+      "urlCopied": "URL이 클립보드에 복사되었습니다!",
+      "processing": "이미지 처리 중...",
+      "error": "오류가 발생했습니다. 다시 시도하십시오.",
+      "noValidImages": "유효한 이미지 파일을 찾을 수 없습니다. 유효한 이미지를 선택하십시오.",
+      "selectImagesFirst": "먼저 이미지를 선택하십시오.",
+      "enterWidthOrHeight": "너비 또는 높이를 입력하십시오.",
+      "enterTargetValue": "대상 값을 입력하십시오."
+    },
+    "howTo": {
+      "title": "이미지 크기 조절 방법",
+      "subtitle": "이미지를 일괄 크기 조절하는 간단한 단계",
+      "step1": {
+        "number": "1",
+        "title": "선택",
+        "description": "JPG, PNG 또는 WebP 이미지를 일괄 크기 조절 도구에 선택하세요."
+      },
+      "step2": {
+        "number": "2",
+        "title": "크기 조절",
+        "description": "원하는 크기 조절 모드를 선택하고 필요에 맞게 설정을 조정하세요."
+      },
+      "step3": {
+        "number": "3",
+        "title": "다운로드",
+        "description": "크기가 조절된 이미지를 즉시 다운로드하거나 더 많은 옵션으로 계속 편집하세요."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "무료로 온라인에서 이미지를 일괄 크기 조절하세요.",
+        "description": [
+          "온라인에서 사진 크기를 조절하는 가장 쉬운 방법. 몇 초 만에 이미지를 크기 조절, 압축 및 최적화하세요.",
+          "100% 브라우저에서 실행 — 업로드 없음, 계정 없음, 데이터가 기기를 떠나지 않습니다."
+        ]
+      },
+      "feature2": {
+        "title": "이미지 크기를 조정하세요.",
+        "description": [
+          "이미지 크기를 정확한 너비와 높이로 쉽게 조정할 수 있습니다. 소셜 미디어, 인쇄 또는 웹 사용에 완벽합니다.",
+          "특정 크기가 필요하신가요? 완벽하게 맞도록 크기를 사용자 지정할 수 있습니다."
+        ]
+      },
+      "feature3": {
+        "title": "이미지 파일 크기를 조정하세요.",
+        "description": [
+          "선택한 파일 크기에 대략 맞도록 이미지를 일괄 압축 — 저장 공간을 절약하고 웹사이트, 이메일 및 소셜 플랫폼의 업로드 속도를 높입니다.",
+          "참고: 이미지 복잡도가 최종 크기에 영향을 줄 수 있습니다."
+        ]
+      }
+    },
+    "faq": {
+      "title": "자주 묻는 질문",
+      "subtitle": "이미지 일괄 크기 조절에 대해 알아야 할 모든 것",
+      "items": [
+        {
+          "question": "이 이미지 크기 조절 도구는 정말 무료인가요?",
+          "answer": "네! 저희 일괄 이미지 크기 조절 도구는 제한 없이 100% 무료입니다. 워터마크나 제한 없이 무제한으로 이미지 크기를 조절할 수 있습니다."
+        },
+        {
+          "question": "일괄 크기 조절은 어떻게 작동하나요?",
+          "answer": "여러 이미지를 한 번에 업로드하고 크기 조절 설정(백분율, 크기 또는 파일 크기)을 선택한 다음 크기 조절을 클릭하기만 하면 됩니다. 모든 이미지가 브라우저에서 함께 처리됩니다."
+        },
+        {
+          "question": "어떤 이미지 형식이 지원되나요?",
+          "answer": "JPG, JPEG, PNG 및 WebP 형식을 지원합니다. 이러한 형식 중 하나로 이미지 크기를 조절할 수 있습니다."
+        },
+        {
+          "question": "내 데이터는 안전한가요?",
+          "answer": "물론입니다! 모든 이미지 처리는 브라우저에서 로컬로 수행됩니다. 이미지가 기기를 떠나지 않아 완전한 개인 정보 보호와 보안이 보장됩니다. 모든 처리가 로컬에서 수행되고 있음을 증명하는 한 가지 방법은 웹사이트를 로드하고 인터넷 연결을 끊은 다음 사이트를 사용하는 것입니다."
+        },
+        {
+          "question": "이미지를 특정 크기로 조절할 수 있나요?",
+          "answer": "네! 백분율, 정확한 크기(너비 × 높이) 또는 대상 파일 크기로 크기를 조절할 수 있습니다. 소셜 미디어 플랫폼용 빠른 사전 설정도 제공합니다."
+        },
+        {
+          "question": "파일 크기가 예기치 않게 증가했나요?",
+          "answer": "설정이 매우 상세한 이미지를 생성할 때 이런 일이 발생할 수 있습니다. 파일 크기를 최소화하려면 WebP 형식으로 저장하고 품질을 80% 이하로 설정해 보세요. 문제가 지속되면 이미지의 픽셀 해상도를 확인하여 확대되지 않았는지 확인하세요."
+        }
+      ]
+    }
+  }
+}

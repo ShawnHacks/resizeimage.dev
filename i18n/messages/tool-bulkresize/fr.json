@@ -1,0 +1,212 @@
+{
+  "BulkResizeTool": {
+    "pageTitle": "Redimensionner des images en masse en ligne",
+    "pageDescription": "Outil en ligne gratuit pour redimensionner par lots plusieurs images à la fois. Rapide, sécurisé et fonctionne entièrement dans votre navigateur — aucun téléchargement requis.",
+    "backButton": "Retour",
+    "features": {
+      "title": "Redimensionner des images en masse en ligne et gratuitement",
+      "description": "Redimensionnez plusieurs images à la fois sans les télécharger sur un serveur",
+      "lightningFast": "Traitement ultra-rapide",
+      "free": "100% gratuit pour toujours",
+      "noSignup": "Aucune inscription requise",
+      "secure": "Sécurisé et privé",
+      "unlimited": "Traiter un nombre illimité d'images",
+      "browser": "Fonctionne dans votre navigateur"
+    },
+    "imagePreview": {
+      "selected": "image",
+      "selectedPlural": "images",
+      "selectedCount": "sélectionnée",
+      "addMore": "Ajouter plus",
+      "showLess": "Afficher moins",
+      "showAll": "Afficher tout ({count} de plus)",
+      "dialogTitle": "Images sélectionnées",
+      "dialogDescription": "Gérez vos {count} {count, plural, one {image sélectionnée} other {images sélectionnées}}. Cliquez sur le bouton × pour supprimer une image ou ajouter plus d'images."
+    },
+    "controls": {
+      "resizeMode": "Mode de redimensionnement",
+      "percentage": {
+        "title": "Pourcentage",
+        "description": "Mettre à l'échelle les images à {percentage}% des dimensions d'origine.",
+        "rangeLabel": "Plage : 10% à 200%"
+      },
+      "fileSize": {
+        "title": "Taille du fichier",
+        "description": "Compresser les images à environ {size} Ko.",
+        "rangeLabel": "Plage : 10 Ko à 5000 Ko",
+        "targetSize": "Taille de fichier cible (Ko)",
+        "note": "La taille réelle du fichier peut varier en fonction de la complexité de l'image"
+      },
+      "dimensions": {
+        "title": "Dimensions de l'image",
+        "description": "Redimensionner à la largeur et à la hauteur exactes.",
+        "width": "Largeur (px)",
+        "height": "Hauteur (px)",
+        "maintainRatio": "Conserver le rapport d'aspect",
+        "usePadding": "Utiliser le rembourrage",
+        "paddingNote": "Ajouter un rembourrage pour conserver le rapport d'aspect d'origine"
+      },
+      "width": {
+        "title": "Largeur",
+        "description": "Redimensionner à une largeur spécifique tout en conservant le rapport d'aspect.",
+        "targetWidth": "Largeur cible (px)"
+      },
+      "height": {
+        "title": "Hauteur",
+        "description": "Redimensionner à une hauteur spécifique tout en conservant le rapport d'aspect.",
+        "targetHeight": "Hauteur cible (px)"
+      },
+      "longestSide": {
+        "title": "Côté le plus long",
+        "description": "Redimensionner en fonction de la dimension la plus longue.",
+        "targetLongest": "Côté le plus long cible (px)"
+      },
+      "format": {
+        "label": "Format de sortie",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Qualité",
+        "description": "Qualité supérieure = taille de fichier plus grande"
+      },
+      "backgroundColor": {
+        "label": "Couleur de fond",
+        "description": "Utilisé pour les images transparentes converties en JPEG",
+        "transparent": "Utiliser un fond transparent",
+        "transparentValue": "Transparent"
+      },
+      "presets": {
+        "title": "Préréglages rapides",
+        "instagram": "Publication Instagram",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "En-tête Twitter",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Couverture Facebook",
+        "facebookDesc": "820×312 px",
+        "youtube": "Vignette YouTube",
+        "youtubeDesc": "1280×720 px",
+        "email": "Adapté aux e-mails",
+        "emailDesc": "800 px de largeur",
+        "compress": "Compresser petit",
+        "compressDesc": "< 100 Ko"
+      },
+      "resizeButton": "Redimensionner à {percentage}%",
+      "resizeButtonDefault": "Redimensionner les images"
+    },
+    "processing": {
+      "title": "Traitement des images...",
+      "progress": "{current} sur {total} images traitées"
+    },
+    "results": {
+      "title": "Traitement terminé !",
+      "imagesResized": "{count} {count, plural, one {image} other {images}} redimensionnée(s) avec succès",
+      "originalSize": "Taille d'origine",
+      "newSize": "Nouvelle taille",
+      "spaceSaved": "Espace économisé",
+      "processedImages": "Images traitées",
+      "downloadImage": "Télécharger",
+      "downloadAll": "Télécharger toutes les images",
+      "resizeMore": "Redimensionner plus d'images",
+      "backToEdit": "Ajuster les paramètres",
+      "downloadSingle": "Télécharger l'image",
+      "downloadMultiple": "Télécharger toutes les {count} images",
+      "downloading": "Téléchargement..."
+    },
+    "config": {
+      "title": "Configuration partageable",
+      "description": "Utilisez ces paramètres automatiquement avec cette URL.",
+      "copy": "Copier",
+      "copied": "Copié !",
+      "link": "Lien",
+      "urlCopied": "URL de configuration copiée dans le presse-papiers !",
+      "urlCopyFailed": "Échec de la copie de l'URL"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {image} other {images}} chargée(s)",
+      "imagesAdded": "Ajout de {count} {count, plural, one {image} other {images}} supplémentaire(s)",
+      "imagesResizedSuccess": "Images redimensionnées avec succès !",
+      "downloadComplete": "Téléchargement terminé !",
+      "urlCopied": "URL copiée dans le presse-papiers !",
+      "processing": "Traitement des images...",
+      "error": "Une erreur s'est produite. Veuillez réessayer.",
+      "noValidImages": "Aucun fichier image valide trouvé. Veuillez sélectionner des images valides.",
+      "selectImagesFirst": "Veuillez d'abord sélectionner des images",
+      "enterWidthOrHeight": "Veuillez saisir la largeur ou la hauteur",
+      "enterTargetValue": "Veuillez saisir une valeur cible"
+    },
+    "howTo": {
+      "title": "Comment redimensionner les images",
+      "subtitle": "Étapes simples pour redimensionner vos images par lots",
+      "step1": {
+        "number": "1",
+        "title": "Sélectionner",
+        "description": "Sélectionnez vos images JPG, PNG ou WebP dans notre outil de redimensionnement par lots."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Redimensionner",
+        "description": "Choisissez votre mode de redimensionnement souhaité et ajustez les paramètres selon vos besoins."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Télécharger",
+        "description": "Téléchargez instantanément vos images redimensionnées ou continuez à les éditer avec plus d'options."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Redimensionnez des images en ligne gratuitement par lots.",
+        "description": [
+          "Le moyen le plus simple de redimensionner des photos en ligne. Redimensionnez, compressez et optimisez vos images en quelques secondes.",
+          "Fonctionne à 100% dans votre navigateur — pas de téléchargements, pas de comptes, les données ne quittent pas votre appareil."
+        ]
+      },
+      "feature2": {
+        "title": "Redimensionner les dimensions de l'image.",
+        "description": [
+          "Ajustez facilement les dimensions de l'image à une largeur et une hauteur exactes. Parfait pour les réseaux sociaux, l'impression ou l'utilisation web.",
+          "Besoin d'une taille spécifique ? Vous pouvez personnaliser les tailles pour obtenir l'ajustement parfait."
+        ]
+      },
+      "feature3": {
+        "title": "Redimensionner la taille du fichier image.",
+        "description": [
+          "Compressez des images par lots pour correspondre approximativement à la taille de fichier choisie — économisant du stockage et accélérant les téléchargements pour les sites web, les e-mails et les plateformes sociales.",
+          "Gardez à l'esprit : La complexité de l'image peut affecter la taille finale."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Questions fréquemment posées",
+      "subtitle": "Tout ce que vous devez savoir sur le redimensionnement par lots d'images",
+      "items": [
+        {
+          "question": "Ce redimensionneur d'images est-il vraiment gratuit ?",
+          "answer": "Oui ! Notre redimensionneur d'images par lots est 100% gratuit sans limitations. Vous pouvez redimensionner un nombre illimité d'images sans filigranes ni restrictions."
+        },
+        {
+          "question": "Comment fonctionne le redimensionnement par lots ?",
+          "answer": "Téléchargez simplement plusieurs images à la fois, choisissez vos paramètres de redimensionnement (pourcentage, dimensions ou taille de fichier) et cliquez sur redimensionner. Toutes les images seront traitées ensemble dans votre navigateur."
+        },
+        {
+          "question": "Quels formats d'image sont pris en charge ?",
+          "answer": "Nous prenons en charge les formats JPG, JPEG, PNG et WebP. Vous pouvez redimensionner des images dans n'importe lequel de ces formats."
+        },
+        {
+          "question": "Mes données sont-elles sécurisées ?",
+          "answer": "Absolument ! Tout le traitement des images se fait localement dans votre navigateur. Vos images ne quittent jamais votre appareil, garantissant une confidentialité et une sécurité complètes. Une façon de démontrer que tout le traitement se fait localement est de charger le site web, de se déconnecter d'Internet, puis d'utiliser le site."
+        },
+        {
+          "question": "Puis-je redimensionner les images à des dimensions spécifiques ?",
+          "answer": "Oui ! Vous pouvez redimensionner par pourcentage, dimensions exactes (largeur × hauteur) ou taille de fichier cible. Nous offrons également des préréglages rapides pour les plateformes de réseaux sociaux."
+        },
+        {
+          "question": "La taille du fichier a augmenté de manière inattendue ?",
+          "answer": "Cela peut se produire lorsque vos paramètres produisent des images très détaillées. Pour garder les tailles de fichier minimales, essayez d'enregistrer au format WebP et de régler la qualité à 80% ou moins. Si le problème persiste, vérifiez la résolution en pixels de l'image pour vous assurer qu'elle n'est pas agrandie."
+        }
+      ]
+    }
+  }
+}

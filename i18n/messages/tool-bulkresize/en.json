@@ -1,0 +1,212 @@
+{
+  "BulkResizeTool": {
+    "pageTitle": "Bulk Resize Images Online",
+    "pageDescription": "Free online tool to batch resize multiple images at once. Fast, secure, and works entirely in your browser — no upload needed.",
+    "backButton": "Back",
+    "features": {
+      "title": "Batch Resize Images Online & Free",
+      "description": "Resize multiple images at once without uploading to any server",
+      "lightningFast": "Lightning-fast processing",
+      "free": "100% free forever",
+      "noSignup": "No sign-up required",
+      "secure": "Secure & private",
+      "unlimited": "Process unlimited images",
+      "browser": "Works in your browser"
+    },
+    "imagePreview": {
+      "selected": "image",
+      "selectedPlural": "images",
+      "selectedCount": "selected",
+      "addMore": "Add More",
+      "showLess": "Show Less",
+      "showAll": "Show All ({count} more)",
+      "dialogTitle": "Selected Images",
+      "dialogDescription": "Manage your {count} selected {count, plural, one {image} other {images}}. Click the × button to remove any image, or add more images."
+    },
+    "controls": {
+      "resizeMode": "Resize Mode",
+      "percentage": {
+        "title": "Percentage",
+        "description": "Scale images to {percentage}% of the original dimensions.",
+        "rangeLabel": "Range: 10% to 200%"
+      },
+      "fileSize": {
+        "title": "File Size",
+        "description": "Compress images to approximately {size} KB.",
+        "rangeLabel": "Range: 10 KB to 5000 KB",
+        "targetSize": "Target File Size (KB)",
+        "note": "Actual file size may vary depending on image complexity"
+      },
+      "dimensions": {
+        "title": "Image Dimensions",
+        "description": "Resize to exact width and height.",
+        "width": "Width (px)",
+        "height": "Height (px)",
+        "maintainRatio": "Maintain Aspect Ratio",
+        "usePadding": "Use Padding",
+        "paddingNote": "Add padding to maintain original aspect ratio"
+      },
+      "width": {
+        "title": "Width",
+        "description": "Resize to specific width while maintaining aspect ratio.",
+        "targetWidth": "Target Width (px)"
+      },
+      "height": {
+        "title": "Height",
+        "description": "Resize to specific height while maintaining aspect ratio.",
+        "targetHeight": "Target Height (px)"
+      },
+      "longestSide": {
+        "title": "Longest Side",
+        "description": "Resize based on the longest dimension.",
+        "targetLongest": "Target Longest Side (px)"
+      },
+      "format": {
+        "label": "Output Format",
+        "jpeg": "JPEG",
+        "png": "PNG",
+        "webp": "WebP"
+      },
+      "quality": {
+        "label": "Quality",
+        "description": "Higher quality = larger file size"
+      },
+      "backgroundColor": {
+        "label": "Background Color",
+        "description": "Used for transparent images converted to JPEG",
+        "transparent": "Use Transparent Background",
+        "transparentValue": "Transparent"
+      },
+      "presets": {
+        "title": "Quick Presets",
+        "instagram": "Instagram Post",
+        "instagramDesc": "1080×1080 px",
+        "twitter": "Twitter Header",
+        "twitterDesc": "1500×500 px",
+        "facebook": "Facebook Cover",
+        "facebookDesc": "820×312 px",
+        "youtube": "YouTube Thumbnail",
+        "youtubeDesc": "1280×720 px",
+        "email": "Email Friendly",
+        "emailDesc": "800 px width",
+        "compress": "Compress Small",
+        "compressDesc": "< 100 KB"
+      },
+      "resizeButton": "Resize to {percentage}%",
+      "resizeButtonDefault": "Resize Images"
+    },
+    "processing": {
+      "title": "Processing Images...",
+      "progress": "{current} of {total} images processed"
+    },
+    "results": {
+      "title": "Processing Complete!",
+      "imagesResized": "Successfully resized {count} {count, plural, one {image} other {images}}",
+      "originalSize": "Original Size",
+      "newSize": "New Size",
+      "spaceSaved": "Space Saved",
+      "processedImages": "Processed Images",
+      "downloadImage": "Download",
+      "downloadAll": "Download All",
+      "resizeMore": "Resize More Images",
+      "backToEdit": "Adjust Settings",
+      "downloadSingle": "Download Image",
+      "downloadMultiple": "Download All {count} Images",
+      "downloading": "Downloading..."
+    },
+    "config": {
+      "title": "Shareable Configuration",
+      "description": "Use these settings automatically with this URL.",
+      "copy": "Copy",
+      "copied": "Copied!",
+      "link": "Link",
+      "urlCopied": "Configuration URL copied to clipboard!",
+      "urlCopyFailed": "Failed to copy URL"
+    },
+    "toast": {
+      "imagesLoaded": "{count} {count, plural, one {image} other {images}} loaded",
+      "imagesAdded": "Added {count} more {count, plural, one {image} other {images}}",
+      "imagesResizedSuccess": "Images resized successfully!",
+      "downloadComplete": "Download completed!",
+      "urlCopied": "URL copied to clipboard!",
+      "processing": "Processing images...",
+      "error": "An error occurred. Please try again.",
+      "noValidImages": "No valid image files found. Please select valid images.",
+      "selectImagesFirst": "Please select images first",
+      "enterWidthOrHeight": "Please enter width or height",
+      "enterTargetValue": "Please enter a target value"
+    },
+    "howTo": {
+      "title": "How to Resize Images",
+      "subtitle": "Simple steps to batch resize your images",
+      "step1": {
+        "number": "1",
+        "title": "Select",
+        "description": "Select your JPG, PNG, or WebP images to our bulk resize tool."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Resize",
+        "description": "Choose your desired resize mode and adjust settings to fit your needs."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Download",
+        "description": "Instantly download your resized images or continue editing with more options."
+      }
+    },
+    "featureSections": {
+      "feature1": {
+        "title": "Batch resize images online for free.",
+        "description": [
+          "The easiest way to resize photos online. Resize, compress, and optimize your images in seconds.",
+          "Runs 100% in your browser — no uploads, no accounts, no data leaves your device."
+        ]
+      },
+      "feature2": {
+        "title": "Resize Image Dimensions.",
+        "description": [
+          "Easily adjust image dimensions size to exact width and height. perfect for social media, printing, or web use.",
+          "Need a specific size? You can customize sizes to get the perfect fit."
+        ]
+      },
+      "feature3": {
+        "title": "Resize Image File Size.",
+        "description": [
+          "Batch compress images to roughly match your chosen file size — saving storage and speeding up uploads for websites, emails, and social platforms.",
+          "Keep in mind: Image complexity can affect the final size."
+        ]
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Everything you need to know about batch resizing images",
+      "items": [
+        {
+          "question": "Is this image resizer really free?",
+          "answer": "Yes! Our bulk image resizer is 100% free with no limitations. You can resize unlimited images without any watermarks or restrictions."
+        },
+        {
+          "question": "How does batch resizing work?",
+          "answer": "Simply upload multiple images at once, choose your resize settings (percentage, dimensions, or file size), and click resize. All images will be processed together in your browser."
+        },
+        {
+          "question": "What image formats are supported?",
+          "answer": "We support JPG, JPEG, PNG, and WebP formats. You can resize images in any of these formats."
+        },
+        {
+          "question": "Is my data secure?",
+          "answer": "Absolutely! All image processing happens locally in your browser. Your images never leave your device, ensuring complete privacy and security. One way to demonstrate that all processing is being done locally is to load the website, disconnect from the internet, and then use the site."
+        },
+        {
+          "question": "Can I resize images to specific dimensions?",
+          "answer": "Yes! You can resize by percentage, exact dimensions (width × height), or target file size. We also offer quick presets for social media platforms."
+        },
+        {
+          "question": "File size increased unexpectedly?",
+          "answer": "This can happen when your settings produce highly detailed images. To keep file sizes minimal, try saving in the WebP format and set the Quality to 80% or below. If the problem persists, check the image’s pixel resolution to make sure it isn’t being upscaled."
+        }
+      ]
+    }
+  }
+}

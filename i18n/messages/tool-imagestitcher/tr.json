@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Görüntü Birleştirme Online",
+    "pageTitle": "Ücretsiz Online Görüntü Birleştirme Aracı",
+    "pageDescription": "Özelleştirilebilir bir tuval üzerinde birden fazla görüntüyü birleştirin. Görüntüleri doğrudan tarayıcınızda serbestçe sürükleyin, yeniden boyutlandırın, döndürün ve düzenleyin.",
+    "metadata": {
+      "title": "Ücretsiz Online Görüntü Birleştirme — Online Fotoğrafları Birleştir",
+      "description": "En iyi ücretsiz online görüntü birleştirme aracı. Birden fazla fotoğrafı tek bir tuvalde birleştirin. Anında sürüklemek, döndürmek ve katmanlamak için profesyonel online fotoğraf birleştirici."
+    },
+    "intro": {
+      "title": "Profesyonel Ücretsiz Online Görüntü Birleştirme Aracı",
+      "content": "Ücretsiz online görüntü birleştirme aracımız, indirme veya hesap gereksinimi olmadan birden fazla fotoğrafı yüksek çözünürlüklü tek bir çalışmada birleştirmenize olanak tanır. İster kolaj, ister profesyonel bir örnek çalışma oluşturun, ister sadece fotoğrafları online olarak birleştirin, bu araç tarayıcınızda bir masaüstü uygulaması esnekliği sunar. Katmanları kolayca sürükleyin, boyutlandırın ve yeniden düzenleyin; tüm işlemler yerel olarak yapıldığından tam gizlilik sağlanır."
+    },
+    "controls": {
+      "canvasSettings": "Tuval Ayarları",
+      "width": "Tuval Genişliği",
+      "height": "Tuval Yüksekliği",
+      "backgroundColor": "Arka Plan Rengi",
+      "addItem": "Görüntü Ekle",
+      "layers": "Katmanlar",
+      "imageProperties": "Görüntü Özellikleri",
+      "rotate": "Döndür",
+      "opacity": "Opaklık",
+      "bringToFront": "En Öne Getir",
+      "sendToBack": "En Arkaya Gönder",
+      "bringForward": "Öne Getir",
+      "sendBackward": "Arkaya Gönder",
+      "remove": "Görüntüyü Kaldır",
+      "exportFormat": "Dışa Aktarma Formatı",
+      "transparent": "Şeffaf",
+      "white": "Beyaz",
+      "noLayers": "Katman Yok",
+      "layerName": "Katman {index}",
+      "zoom": "Yakınlaştır",
+      "zoomIn": "Yakınlaştır",
+      "zoomOut": "Uzaklaştır",
+      "fitToScreen": "Ekrana Sığdır",
+      "setCanvasToImageSize": "Tuval Boyutunu Resim Boyutuna Ayarla",
+      "matchCanvasSize": "Tuval Boyutuna Ayarla"
+    },
+    "canvas": {
+      "placeholder": "Görüntüleri buraya sürükleyip bırakın veya birleştirmeye başlamak için ekle düğmesini kullanın."
+    },
+    "errors": {
+      "noImages": "İndirilecek görüntü yok",
+      "exportFailed": "Görüntü dışa aktarılamadı",
+      "loadFailed": "Yükleme başarısız {name}"
+    },
+    "actions": {
+      "download": "Birleştirilmiş Görüntüyü İndir",
+      "preview": "Önizleme",
+      "reset": "Tuvali Sıfırla",
+      "uploadMore": "Daha Fazla Yükle"
+    },
+    "howTo": {
+      "title": "Online Olarak Görüntüler Nasıl Birleştirilir",
+      "step1": {
+        "number": "1",
+        "title": "Tuval Boyutunu Ayarlayın",
+        "description": "Tuval genişliğini ve yüksekliğini istediğiniz düzene göre ayarlayın."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Görüntüleri Ekleyin ve Düzenleyin",
+        "description": "Görüntülerinizi yükleyin ve konumlandırmak için sürükleyin. Gerektiğinde boyutlandırın ve döndürün."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Çalışmanızı Dışa Aktarın",
+        "description": "Birleştirilmiş görüntünüzü tek bir dosya olarak kaydetmek için indire tıklayın."
+      }
+    },
+    "faq": {
+      "title": "Online Fotoğraf Birleştirme SSS",
+      "items": [
+        {
+          "question": "Bu online görüntü birleştirme aracı gerçekten ücretsiz mi?",
+          "answer": "Evet, aracımızın kullanımı %100 ücretsizdir. Gizli ücretler, abonelikler veya dışa aktarılan görsellerde filigran bulunmaz."
+        },
+        {
+          "question": "Bu online fotoğraf birleştiriciyi nasıl kullanırım?",
+          "answer": "Sadece tuval boyutunuzu ayarlayın, görsellerinizi yükleyin ve farenizi kullanarak sürükleyip düzenleyin. Her katman için döndürmek ve opaklığı ayarlamak üzere özellikler panelini kullanabilirsiniz."
+        },
+        {
+          "question": "Online fotoğrafları birleştirirken verilerim gizli kalıyor mu?",
+          "answer": "Kesinlikle. Bu araç istemci tarafı işleme kullanır, yani görselleriniz asla bilgisayarınızdan ayrılmaz veya sunucularımıza dokunmaz."
+        },
+        {
+          "question": "Hangi görüntü formatları destekleniyor?",
+          "answer": "JPG, PNG, WebP ve SVG dahil tüm yaygın web formatlarını destekliyoruz."
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Rimozione filigrana Gemini AI gratuita online",
+    "header": {
+      "title": "Rimozione Filigrana Gemini"
+    },
+    "nav": {
+      "userscript": "Userscript per Gemini",
+      "principle": "Principio Tecnico"
+    },
+    "main": {
+      "title": "Rimozione filigrana immagine Gemini AI",
+      "subtitle": "Rimuovi istantaneamente le filigrane Gemini AI utilizzando l'algoritmo reverse alpha blending. 100% privato, elaborazione lato browser, gratuito e senza perdite."
+    },
+    "upload": {
+      "text": "Clicca per selezionare o trascina le immagini qui",
+      "hint": "Supporta JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Seleziona l'image originale",
+      "2": "Elaborazione automatica",
+      "3": "Salva immagine pulita"
+    },
+    "preview": {
+      "original": "Anteprima originale",
+      "result": "Risultato elaborato"
+    },
+    "panel": {
+      "title": "Pannello di controllo"
+    },
+    "btn": {
+      "download": "Scarica",
+      "reset": "Ricomincia",
+      "downloadAll": "Scarica tutto"
+    },
+    "progress": {
+      "text": "Progresso"
+    },
+    "feature": {
+      "title": "Perché scegliere Gemini Watermark Remover?",
+      "items": [
+        {
+          "title": "100% lato client",
+          "desc": "Nessun backend, nessuna elaborazione lato server. I tuoi dati rimangono interamente nel tuo browser."
+        },
+        {
+          "title": "Privacy al primo posto",
+          "desc": "Le immagini non vengono mai caricate su alcun server. Punto. Privacy e sicurezza totali."
+        },
+        {
+          "title": "Precisione matematica",
+          "desc": "Basato sulla formula Reverse Alpha Blending, garantisce un ripristino matematicamente accurato, a differenza dei modelli di IA che 'allucinano'."
+        },
+        {
+          "title": "Rilevamento automatico intelligente",
+          "desc": "Riconoscimento intelligente delle diverse varianti di filigrana (48×48 o 96×96) per una rimozione perfetta."
+        },
+        {
+          "title": "Facile da usare",
+          "desc": "Semplice interfaccia drag-and-drop con elaborazione istantanea. Nessuna competenza tecnica richiesta."
+        },
+        {
+          "title": "Multipiattaforma",
+          "desc": "Funziona perfettamente su tutti i moderni browser web su Windows, Mac, Linux e dispositivi mobili."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "La Magia Tecnica Dietro lo Strumento",
+      "sizeDetection": {
+        "title": "Rilevamento della Dimensione della Filigrana",
+        "description": "Gemini utilizza diverse dimensioni di filigrana in base alle dimensioni dell'immagine. Il nostro strumento rileva automaticamente la dimensione corretta per garantire una rimozione precisa.",
+        "table": {
+          "dims": "Dimensioni Immagine",
+          "size": "Dimensione Filigrana",
+          "margin": "Margine",
+          "small": "L ≤ 1024 o A ≤ 1024",
+          "pixelSmall": "48×48 pixel",
+          "marginSmall": "32px",
+          "large": "L > 1024 e A > 1024",
+          "pixelLarge": "96×96 pixel",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: Come Funziona",
+        "description": "La maggior parte delle filigrane sono sovrapposizioni semitrasparenti aggiunte tramite alpha blending. Invece di indovinare, invertiamo il calcolo matematico.",
+        "formulaTitle": "LA FORMULA DI MISCELAZIONE:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "Ricostruendo la mappa alfa (α) per ogni pixel, possiamo recuperare algebricamente il valore del pixel originale:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Ciò si traduce in una ricostruzione matematicamente accurata dei dati dell'immagine originale."
+      },
+      "comparison": {
+        "title": "Perché Funziona Meglio dell'Inpainting IA",
+        "intro": "I tipici strumenti di rimozione IA (Inpainting) «indovinano» cosa dovrebbe esserci dietro la filigrana, portando spesso ad artefatti. Il nostro approccio è superiore perché:",
+        "items": [
+          {
+            "title": "Nessuna Congettura",
+            "desc": "Calcola gli esatti valori originali utilizzando il pattern di filigrana noto."
+          },
+          {
+            "title": "Alta Velocità",
+            "desc": "L'elaborazione è estremamente veloce ed efficiente, essendo eseguita interamente nel browser."
+          },
+          {
+            "title": "Piccolo Ingombro",
+            "desc": "Lo strumento è leggero (circa 4 MB) e non richiede pesanti modelli IA."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Gestione Perfetta dei Bordi",
+        "description": "I bordi semitrasparenti sono gestiti splendidamente dalla mappa alfa. La formula inversa considera naturalmente i vari livelli di trasparenza, garantendo transizioni fluide senza giunture visibili."
+      },
+      "reference": {
+        "text": "Per un approfondimento tecnico sull'algoritmo, consulta questo",
+        "linkText": "articolo dettagliato su Medium"
+      }
+    },
+    "faq": {
+      "title": "Domande frequenti",
+      "subtitle": "Scopri di più sulla tecnologia e sulla sicurezza di Gemini Watermark Remover",
+      "items": [
+        {
+          "question": "Come funziona questo strumento di rimozione della filigrana?",
+          "answer": "A differenza dei generici strumenti di ritocco IA che indovinano cosa c'è dietro una filigrana, il nostro strumento utilizza uno specifico approccio matematico chiamato 'Reverse Alpha Blending'. Poiché conosciamo gli esatti valori dei pixel del pattern della filigrana Gemini, possiamo sottrarla matematicamente dall'immagine per ripristinare i colori originali dei pixel con alta precisione."
+        },
+        {
+          "question": "È sicuro / privato?",
+          "answer": "Sì, assolutamente. Lo strumento viene eseguito interamente all'interno del browser web. Le tue immagini vengono elaborate localmente sul tuo dispositivo e non vengono mai caricate sui nostri server o su terze parti. Puoi anche disconnettere Internet dopo aver caricato la pagina e continuerà a funzionare."
+        },
+        {
+          "question": "È davvero gratuito?",
+          "answer": "Sì, questo strumento è gratuito al 100%. È un'iniziativa open source progettata per scopi educativi e per aiutare la comunità."
+        },
+        {
+          "question": "Riduce la qualità dell'immagine?",
+          "answer": "No. Il processo di rimozione è senza perdita di qualità per le aree non filigranate. Per le aree filigranate, ripristina i colori originali nel modo più matematicamente accurato possibile, evitando la sfocatura spesso visibile con altri strumenti di rimozione IA."
+        },
+        {
+          "question": "Perché la filigrana dell'immagine non è stata rimossa correttamente?",
+          "answer": "Il nostro strumento supporta specificamente la rimozione delle filigrane (SynthID) dalle immagini generate da Gemini. Per le immagini originali e non compresse, la rimozione è perfetta. Tuttavia, se l'immagine è stata compressa o ricodificata (ad esempio, tramite piattaforme di social media o caricamenti su siti web), i metadati e le caratteristiche della filigrana sono spesso danneggiati, impedendo una rimozione corretta."
+        }
+      ]
+    },
+    "loading": {
+      "text": "Elaborazione in corso..."
+    },
+    "status": {
+      "loading": "Caricamento risorse...",
+      "pending": "In attesa...",
+      "processing": "Elaborazione...",
+      "success": "Completato",
+      "failed": "Fallito"
+    },
+    "info": {
+      "size": "Dimensione",
+      "watermark": "Filigrana rilevata",
+      "position": "Posizione",
+      "status": "Stato",
+      "removed": "Filigrana rimossa"
+    }
+  }
+}

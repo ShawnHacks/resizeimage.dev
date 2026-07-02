@@ -1,0 +1,50 @@
+{
+  "ImageCompressor": {
+    "title": "Compresseur d'images en ligne gratuit (Free Image Compressor Online)",
+    "description": "Réduisez la taille des images tout en gardant une qualité élevée. Outil professionnel pour compresser JPG, PNG, WebP et AVIF. Privé, rapide et gratuit.",
+    "metaTitle": "Compresseur d'images en ligne gratuit — Compresser et optimiser des photos",
+    "metaDescription": "Compresseur d'images gratuit pour réduire la taille des fichiers sans perte de qualité. Le meilleur compresseur pour JPG, PNG et WebP directement dans votre navigateur.",
+    "intro": {
+      "title": "Compresseur d'images en ligne professionnel et gratuit",
+      "content": "Notre compresseur d'images en ligne gratuit offre le moyen le plus rapide de réduire la taille de vos fichiers tout en conservant une qualité professionnelle. Que ce soit pour le Web, les e-mails ou le stockage, cet outil supporte le JPEG, PNG, WebP et AVIF. Tout le traitement se fait directement dans votre navigateur, garantissant une confidentialité totale."
+    },
+    "settings": "Paramètres",
+    "processing": "Traitement...",
+    "outputFormat": "Format de sortie",
+    "quality": "Qualité",
+    "original": "Original",
+    "compressed": "Compressé",
+    "download": "Télécharger",
+    "compressing": "Compression...",
+    "startOver": "Recommencer",
+    "dropImage": "Déposez une image ici pour commencer la compression",
+    "supports": "Prend en charge JPEG, PNG, WebP, AVIF",
+    "qualityHint": "Une qualité inférieure réduit la taille du fichier mais peut diminuer les détails de l'image.",
+    "qualityPng": "La compression PNG est sans perte, le réglage de la qualité n'est donc pas disponible.",
+    "faq": {
+      "title": "FAQ Compresseur d'images",
+      "items": [
+        {
+          "question": "Ce compresseur d'images en ligne est-il vraiment gratuit ?",
+          "answer": "Oui, notre outil est 100 % gratuit, sans frais cachés, ni inscription, ni filigrane. Vous pouvez compresser autant d'images que vous le souhaitez."
+        },
+        {
+          "question": "Comment compresser une image avec cet outil ?",
+          "answer": "Faites simplement glisser vos images, ajustez la qualité si nécessaire, puis cliquez sur télécharger. Tout est traité instantanément."
+        },
+        {
+          "question": "Vais-je perdre en qualité en compressant mon image ?",
+          "answer": "Notre outil utilise des algorithmes avancés pour minimiser la perte. Vous pouvez ajuster le curseur de qualité pour trouver l'équilibre parfait entre poids et clarté."
+        },
+        {
+          "question": "Mes photos sont-elles téléchargées sur vos serveurs ?",
+          "answer": "Non. La compression est effectuée localement dans votre navigateur. Vos fichiers ne quittent jamais votre ordinateur."
+        }
+      ]
+    },
+    "toast": {
+      "success": "Image téléchargée !",
+      "error": "Échec de la compression. Veuillez essayer une autre image ou un autre format."
+    }
+  }
+}

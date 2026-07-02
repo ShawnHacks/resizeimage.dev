@@ -13,14 +13,20 @@ interface ImageUploaderProps {
   maxFiles?: number;
   maxSizeMB?: number;
   className?: string;
+  title?: string;
+  description?: string;
+  ctaText?: string;
 }
 
-export function ImageUploader({ 
+export function ImageUploader({
   multiple = true,
-  onFilesSelected, 
+  onFilesSelected,
   maxFiles = 50,
   maxSizeMB = 50,
-  className 
+  className,
+  title,
+  description,
+  ctaText
 }: ImageUploaderProps) {
   const t = useTranslations('ImageUploader');
   const [isDragging, setIsDragging] = useState(false);
@@ -80,7 +86,7 @@ export function ImageUploader({
 
   const handleFileInput = useCallback((e: React.ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(e.target.files || []);
-    
+
     if (files.length === 0) return;
 
     if (files.length > maxFiles) {
@@ -108,14 +114,14 @@ export function ImageUploader({
       description: `${files.length} ${files.length === 1 ? t('file') : t('files')}`
     });
     onFilesSelected(files);
-    
+
     // Reset input
     e.target.value = '';
   }, [onFilesSelected, maxFiles, maxSizeMB, t]);
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={false}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.3 }}
       className={cn("w-full", className)}
@@ -128,14 +134,14 @@ export function ImageUploader({
           // // border-6 border-dashed border-muted-foreground/80
           className={`
             relative p-4 md:p-0 border-4 border-dashed md:border-0 rounded-2xl transition-all duration-200 md:bg-[url('/svgs/dash-rectangle.svg')] bg-no-repeat bg-size-[100%_100%]
-            ${isDragging 
-              ? 'border-primary bg-primary/10 scale-[1.02]' 
+            ${isDragging
+              ? 'border-primary bg-primary/10 scale-[1.02]'
               : 'border-primary/30 bg-card hover:border-primary/50 dark:border-primary/50 dark:bg-card/50'
             }
           `}
         >
           <label className="flex flex-col items-center justify-center md:p-6 cursor-pointer">
-            <AnimatePresence mode="wait">
+            <AnimatePresence mode="wait" initial={false}>
               <motion.div
                 key="idle"
                 initial={{ scale: 0.8, opacity: 0 }}
@@ -147,21 +153,21 @@ export function ImageUploader({
                   <ImageIcon className="w-6 h-6 text-[#86868B] dark:text-[#86868B]" />
                 </div>
                 <h3 className="text-xl md:text-3xl font-heading font-bold text-foreground mb-2">
-                  {multiple ? t('titleMultiple') : t('titleSingle')}
+                  {title || (multiple ? t('titleMultiple') : t('titleSingle'))}
                 </h3>
                 <p className="text-sm md:text-xl text-primary font-heading font-bold mb-6">
-                  {t('subtitleSingle')}
+                  {description || t('subtitleSingle')}
                 </p>
-                <div className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-br from-primary to-red-500 text-white text-base font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200">
-                  {multiple ? t('selectImagesMultiple') : t('selectImagesSingle')}
+                <div className="inline-flex items-center px-8 py-3 rounded-full bg-gradient-to-br from-primary to-primary/80 text-white text-base font-semibold hover:shadow-lg hover:scale-105 transition-all duration-200">
+                  {ctaText || (multiple ? t('selectImagesMultiple') : t('selectImagesSingle'))}
                 </div>
                 <div className="flex flex-col gap-1 mt-3">
                   <p className="text-sm text-foreground">
                     {t('supportedFormats')}
                   </p>
                   <p className="text-xs text-muted-foreground">
-                    {t('maxSizeMB', {size: maxSizeMB})} 
-                    {multiple && ` • ${t('maxFiles', {max: maxFiles})}`}
+                    {t('maxSizeMB', { size: maxSizeMB })}
+                    {multiple && ` • ${t('maxFiles', { max: maxFiles })}`}
                   </p>
                 </div>
               </motion.div>
@@ -170,7 +176,7 @@ export function ImageUploader({
             <input
               type="file"
               multiple={multiple}
-              accept="image/jpeg,image/png,image/webp,image/jpg,image/gif,image/tiff,image/svg+xml,image/avif,image/apng,image/heic,image/heif"
+              accept="image/jpeg,image/png,image/webp,image/jpg,image/svg+xml,image/heic,image/heif,image/avif,image/tiff,image/gif"
               onChange={handleFileInput}
               className="hidden"
             />

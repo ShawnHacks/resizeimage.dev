@@ -1,0 +1,165 @@
+{
+  "GeminiWatermarkRemover": {
+    "title": "Kostenloser Gemini AI Wasserzeichen-Entferner Online",
+    "header": {
+      "title": "Gemini AI Wasserzeichen-Entferner"
+    },
+    "nav": {
+      "userscript": "Userscript für Gemini",
+      "principle": "Technisches Prinzip"
+    },
+    "main": {
+      "title": "Gemini AI Bild-Wasserzeichen-Entfernung",
+      "subtitle": "Entfernen Sie Gemini AI Wasserzeichen sofort mit dem Reverse Alpha Blending Algorithmus. 100 % privat, browserseitige Verarbeitung, kostenlos und verlustfrei."
+    },
+    "upload": {
+      "text": "Klicken oder Bilder hierher ziehen",
+      "hint": "Unterstützt JPG, PNG, WebP"
+    },
+    "step": {
+      "1": "Originalbild auswählen",
+      "2": "Automatische Verarbeitung",
+      "3": "Sauberes Bild speichern"
+    },
+    "preview": {
+      "original": "Original Vorschau",
+      "result": "Verarbeitetes Ergebnis"
+    },
+    "panel": {
+      "title": "Bedienfeld"
+    },
+    "btn": {
+      "download": "Herunterladen",
+      "reset": "Neu starten",
+      "downloadAll": "Alle herunterladen"
+    },
+    "progress": {
+      "text": "Fortschritt"
+    },
+    "feature": {
+      "title": "Warum Gemini Wasserzeichen-Entferner wählen?",
+      "items": [
+        {
+          "title": "100% Client-seitig",
+          "desc": "Kein Backend, keine serverseitige Verarbeitung. Ihre Daten bleiben vollständig in Ihrem Browser."
+        },
+        {
+          "title": "Privatsphäre zuerst",
+          "desc": "Bilder werden niemals auf einen Server hochgeladen. Punkt. Absolute Privatsphäre und Sicherheit."
+        },
+        {
+          "title": "Mathematische Präzision",
+          "desc": "Basierend auf der Reverse Alpha Blending Formel, die eine mathematisch genaue Wiederherstellung gewährleistet, im Gegensatz zu 'halluzinierenden' KI-Modellen."
+        },
+        {
+          "title": "Intelligente Auto-Erkennung",
+          "desc": "Intelligente Erkennung verschiedener Wasserzeichenvarianten (48×48 oder 96×96) für eine perfekte Entfernung."
+        },
+        {
+          "title": "Benutzerfreundlich",
+          "desc": "Einfache Drag-and-Drop-Oberfläche mit sofortiger Verarbeitung. Keine technischen Kenntnisse erforderlich."
+        },
+        {
+          "title": "Plattformübergreifend",
+          "desc": "Läuft reibungslos auf allen modernen Webbrowsern unter Windows, Mac, Linux und Mobilgeräten."
+        }
+      ]
+    },
+    "techDetails": {
+      "title": "Die technische Magie hinter dem Tool",
+      "sizeDetection": {
+        "title": "Erkennung der Wasserzeichengröße",
+        "description": "Gemini verwendet je nach Bildabmessungen unterschiedliche Wasserzeichengrößen. Unser Tool erkennt automatisch die richtige Größe, um eine präzise Entfernung zu gewährleisten.",
+        "table": {
+          "dims": "Bildabmessungen",
+          "size": "Wasserzeichengröße",
+          "margin": "Rand",
+          "small": "B ≤ 1024 oder H ≤ 1024",
+          "pixelSmall": "48×48 Pixel",
+          "marginSmall": "32px",
+          "large": "B > 1024 und H > 1024",
+          "pixelLarge": "96×96 Pixel",
+          "marginLarge": "64px"
+        }
+      },
+      "reverseAlpha": {
+        "title": "Reverse Alpha Blending: So funktioniert es",
+        "description": "Die meisten Wasserzeichen sind halbtransparente Overlays, die mittels Alpha Blending hinzugefügt werden. Anstatt zu raten, kehren wir die Mathematik um.",
+        "formulaTitle": "DIE MISCHFORMEL:",
+        "formula": "watermarked = α × logo + (1 - α) × original",
+        "formulaDesc": "Durch die Rekonstruktion der Alpha-Map (α) für jedes Pixel können wir den ursprünglichen Pixelwert algebraisch wiederherstellen:",
+        "reverseFormula": "original = (watermarked - α × 255) / (1 - α)",
+        "result": "Dies führt zu einer mathematisch exakten Rekonstruktion der ursprünglichen Bilddaten."
+      },
+      "comparison": {
+        "title": "Warum dies besser funktioniert als KI-Inpainting",
+        "intro": "Typische KI-Entfernungswerkzeuge (Inpainting) 'raten', was sich hinter dem Wasserzeichen befinden sollte, was oft zu Artefakten führt. Unser Ansatz ist überlegen, weil:",
+        "items": [
+          {
+            "title": "Kein Raten",
+            "desc": "Berechnet die exakten Originalwerte unter Verwendung des bekannten Wasserzeichenmusters."
+          },
+          {
+            "title": "Hohe Geschwindigkeit",
+            "desc": "Die Verarbeitung ist extrem schnell und effizient und läuft vollständig in Ihrem Browser."
+          },
+          {
+            "title": "Minimaler Ressourcenbedarf",
+            "desc": "Das Tool ist leichtgewichtig (ca. 4 MB) und benötigt keine schweren KI-Modelle."
+          }
+        ]
+      },
+      "edgeHandling": {
+        "title": "Perfekte Kantenbehandlung",
+        "description": "Halbtransparente Kanten werden durch die Alpha-Map perfekt behandelt. Die Umkehrformel berücksichtigt natürlich die unterschiedlichen Transparenzgrade und sorgt für glatte Übergänge ohne sichtbare Nähte."
+      },
+      "reference": {
+        "text": "Für einen tieferen technischen Einblick in den Algorithmus lesen Sie diesen",
+        "linkText": "detaillierten Artikel auf Medium"
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "subtitle": "Erfahren Sie mehr über die Technologie und Sicherheit des Gemini Wasserzeichen-Entferners",
+      "items": [
+        {
+          "question": "Wie funktioniert dieser Wasserzeichen-Entferner?",
+          "answer": "Im Gegensatz zu generischen KI-Retusche-Tools, die raten, was sich hinter einem Wasserzeichen befindet, verwendet unser Tool einen spezifischen mathematischen Ansatz namens 'Reverse Alpha Blending'. Da wir die exakten Pixelwerte des Gemini-Wasserzeichenmusters kennen, können wir es mathematisch vom Bild subtrahieren, um die ursprünglichen Pixelfarben mit hoher Präzision wiederherzustellen."
+        },
+        {
+          "question": "Ist es sicher / privat?",
+          "answer": "Ja, absolut. Das Tool läuft vollständig in Ihrem Webbrowser. Ihre Bilder werden lokal auf Ihrem Gerät verarbeitet und niemals auf unsere Server oder an Dritte hochgeladen. Sie können sogar Ihre Internetverbindung trennen, nachdem die Seite geladen wurde, und es wird weiterhin funktionieren."
+        },
+        {
+          "question": "Ist es wirklich kostenlos?",
+          "answer": "Ja, dieses Tool ist zu 100 % kostenlos. Es ist eine Open-Source-Initiative, die für Bildungszwecke und zur Unterstützung der Community entwickelt wurde."
+        },
+        {
+          "question": "Wird die Bildqualität verringert?",
+          "answer": "Nein. Der Entfernungsprozess ist für die nicht wasserzeichenhaltigen Bereiche verlustfrei. Für die wasserzeichenhaltigen Bereiche werden die ursprünglichen Farben so mathematisch genau wie möglich wiederhergestellt, wodurch Unschärfen vermieden werden, die oft bei anderen KI-Entfernungswerkzeugen auftreten."
+        },
+        {
+          "question": "Warum wurde das Bildwasserzeichen nicht richtig entfernt?",
+          "answer": "Unser Tool unterstützt speziell das Entfernen von Wasserzeichen (SynthID) aus von Gemini generierten Bildern. Bei originalen, unkomprimierten Bildern ist die Entfernung makellos. Wenn das Bild jedoch komprimiert oder neu kodiert wurde (z. B. über Social-Media-Plattformen oder Website-Uploads), werden die Metadaten und Merkmale des Wasserzeichens oft beschädigt, was eine erfolgreiche Entfernung verhindert."
+        }
+      ]
+    },
+    "loading": {
+      "text": "Verarbeitung..."
+    },
+    "status": {
+      "loading": "Ressourcen werden geladen...",
+      "pending": "Ausstehend...",
+      "processing": "Verarbeitung...",
+      "success": "Abgeschlossen",
+      "failed": "Fehlgeschlagen"
+    },
+    "info": {
+      "size": "Größe",
+      "watermark": "Erkanntes Wasserzeichen",
+      "position": "Position",
+      "status": "Status",
+      "removed": "Wasserzeichen entfernt"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "ImageStitcherTool": {
+    "badge": "Ghép ảnh trực tuyến",
+    "pageTitle": "Công cụ ghép ảnh trực tuyến miễn phí",
+    "pageDescription": "Ghép nhiều hình ảnh trên một canvas có thể tùy chỉnh. Tự do kéo, thay đổi kích thước, xoay và sắp xếp hình ảnh trực tiếp trong trình duyệt của bạn.",
+    "metadata": {
+      "title": "Ghép ảnh trực tuyến miễn phí — Kết hợp và ghép ảnh trực tuyến",
+      "description": "Công cụ ghép ảnh trực tuyến miễn phí tốt nhất. Kết hợp nhiều ảnh trên một canvas duy nhất. Ghép ảnh chuyên nghiệp trực tuyến để kéo, xoay và tạo lớp ngay lập tức."
+    },
+    "intro": {
+      "title": "Công cụ ghép ảnh trực tuyến chuyên nghiệp miễn phí",
+      "content": "Công cụ ghép ảnh trực tuyến miễn phí của chúng tôi cho phép bạn kết hợp nhiều ảnh thành một tác phẩm có độ phân giải cao duy nhất mà không cần tải xuống hoặc yêu cầu tài khoản. Cho dù bạn đang tạo ảnh ghép, mockup chuyên nghiệp hay chỉ đơn giản là hợp nhất ảnh trực tuyến, công cụ này mang lại sự linh hoạt của một ứng dụng máy tính ngay trong trình duyệt web của bạn. Kéo, thay đổi kích thước và sắp xếp lại các lớp dễ dàng trong khi vẫn duy trì quyền riêng tư hoàn toàn vì mọi quá trình xử lý đều diễn ra tại thiết bị."
+    },
+    "controls": {
+      "canvasSettings": "Cài đặt Canvas",
+      "width": "Chiều rộng Canvas",
+      "height": "Chiều cao Canvas",
+      "backgroundColor": "Màu nền",
+      "addItem": "Thêm hình ảnh",
+      "layers": "Lớp",
+      "imageProperties": "Thuộc tính hình ảnh",
+      "rotate": "Xoay",
+      "opacity": "Độ mờ",
+      "bringToFront": "Đưa lên trên cùng",
+      "sendToBack": "Gửi ra sau cùng",
+      "bringForward": "Đưa lên trên",
+      "sendBackward": "Gửi ra sau",
+      "remove": "Xóa hình ảnh",
+      "exportFormat": "Định dạng xuất",
+      "transparent": "Trong suốt",
+      "white": "Trắng",
+      "noLayers": "Không có lớp",
+      "layerName": "Lớp {index}",
+      "zoom": "Phóng to",
+      "zoomIn": "Phóng to",
+      "zoomOut": "Thu nhỏ",
+      "fitToScreen": "Vừa khít màn hình",
+      "setCanvasToImageSize": "Đặt kích thước canvas theo kích thước ảnh",
+      "matchCanvasSize": "Khớp kích thước canvas"
+    },
+    "canvas": {
+      "placeholder": "Kéo và thả hình ảnh vào đây hoặc sử dụng nút thêm để bắt đầu ghép."
+    },
+    "errors": {
+      "noImages": "Không có hình ảnh để tải về",
+      "exportFailed": "Xuất hình ảnh thất bại",
+      "loadFailed": "Tải lên thất bại {name}"
+    },
+    "actions": {
+      "download": "Tải ảnh đã ghép",
+      "preview": "Xem trước",
+      "reset": "Đặt lại Canvas",
+      "uploadMore": "Tải lên thêm"
+    },
+    "howTo": {
+      "title": "Cách ghép ảnh trực tuyến",
+      "step1": {
+        "number": "1",
+        "title": "Thiết lập kích thước Canvas",
+        "description": "Điều chỉnh chiều rộng và chiều cao canvas để phù hợp với bố cục mong muốn."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Thêm và sắp xếp hình ảnh",
+        "description": "Tải hình ảnh của bạn lên và kéo để định vị. Thay đổi kích thước và xoay nếu cần."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Xuất tác phẩm của bạn",
+        "description": "Nhấp vào tải xuống để lưu hình ảnh kết hợp của bạn dưới dạng một tệp duy nhất."
+      }
+    },
+    "faq": {
+      "title": "Câu hỏi thường gặp về ghép ảnh trực tuyến",
+      "items": [
+        {
+          "question": "Công cụ ghép ảnh trực tuyến này có thực sự miễn phí không?",
+          "answer": "Có, công cụ của chúng tôi miễn phí 100% để sử dụng. Không có phí ẩn, đăng ký hoặc watermark trên hình ảnh đã xuất của bạn."
+        },
+        {
+          "question": "Làm cách nào để sử dụng công cụ ghép ảnh trực tuyến này?",
+          "answer": "Chỉ cần thiết lập kích thước canvas, tải lên hình ảnh của bạn và sử dụng chuột để kéo và sắp xếp chúng. Bạn có thể sử dụng bảng thuộc tính để xoay và điều chỉnh độ mờ cho mỗi lớp."
+        },
+        {
+          "question": "Dữ liệu của tôi có được bảo mật khi ghép ảnh trực tuyến không?",
+          "answer": "Chắc chắn rồi. Công cụ này xử lý tại phía máy khách (client-side), nghĩa là hình ảnh của bạn không bao giờ rời khỏi máy tính hoặc chạm vào máy chủ của chúng tôi."
+        },
+        {
+          "question": "Những định dạng hình ảnh nào được hỗ trợ?",
+          "answer": "Chúng tôi hỗ trợ tất cả các định dạng web phổ biến bao gồm JPG, PNG, WebP và SVG."
+        }
+      ]
+    }
+  }
+}
