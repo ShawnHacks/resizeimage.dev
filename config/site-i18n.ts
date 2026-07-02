@@ -89,6 +89,14 @@ export function useLocalizedSiteConfig(): SiteConfig {
 // Navigation items with translation keys
 export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
   {
+    titleKey: "Tools.resizeimage",
+    href: "/",
+  },
+  {
+    titleKey: "Tools.bulkresizeimages",
+    href: "/bulk-resize-images",
+  },
+  {
     titleKey: "Header.Features",
     href: "/#features",
   },
@@ -100,10 +108,10 @@ export const siteMainNavKeys: Array<{ titleKey: string; href: string }> = [
     titleKey: "Header.Blog",
     href: "/blog",
   },
-  {
-    titleKey: "Header.About",
-    href: "/about",
-  },
+  // {
+  //   titleKey: "Header.About",
+  //   href: "/about",
+  // },
   // {
   //   titleKey: "Header.Blog",
   //   href: "/blog",

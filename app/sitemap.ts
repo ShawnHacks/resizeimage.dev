@@ -54,11 +54,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = baseSiteConfig.url
   const locales = routing.locales
   const routes = [
-    { path: '', priority: 1.0, changeFreq: 'daily' as const },
+    { path: '', priority: 1.0, changeFreq: 'weekly' as const },
+    { path: '/bulk-resize-images', priority: 0.9, changeFreq: 'weekly' as const },
     // { path: '/pricing', priority: 1.0, changeFreq: 'daily' as const },
     // { path: '/docs', priority: 1.0, changeFreq: 'daily' as const },
-    { path: '/blog', priority: 1.0, changeFreq: 'daily' as const },
-    { path: '/about', priority: 1.0, changeFreq: 'daily' as const },
+    { path: '/blog', priority: 0.8, changeFreq: 'daily' as const },
+    { path: '/about', priority: 0.6, changeFreq: 'daily' as const },
     { path: '/privacy-policy', priority: 0.6, changeFreq: 'monthly' as const },
     { path: '/terms-of-service', priority: 0.6, changeFreq: 'monthly' as const },
     { path: '/cookie-policy', priority: 0.6, changeFreq: 'monthly' as const },
