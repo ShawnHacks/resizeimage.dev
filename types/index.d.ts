@@ -24,6 +24,7 @@ export type BaseNavItem = {
   href: string
 }
 export type NavItem = BaseNavItem & {
+  description?: string
   external?: boolean
   defaultOpen?: boolean
   icon?: keyof typeof Icons
