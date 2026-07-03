@@ -364,10 +364,10 @@
   },
   "SingleResizeTool": {
     "badge": "Resize image online",
-    "pageTitle": "Free Image Resizer Online",
+    "pageTitle": "Free Online Image Resizer",
     "pageDescription": "Resize image directly in your browser. Pick a preset size, adjust a custom crop, and download in JPG, PNG, or WebP without uploading anything.",
     "metadata": {
-      "title": "Free Image Resizer — Resize Photos Online Instantly",
+      "title": "Free Online Image Resizer — Best Tool to Resize Image Instantly",
       "description": "Resize image directly in your browser. Pick a preset size, adjust a custom crop, and download in JPG, PNG, or WebP without uploading anything."
     },
     "controls": {
@@ -404,9 +404,9 @@
     },
     "features": {
       "title": "Professional Image Resizer Free Online",
-      "description": "Resize images and photos online without uploading to any server - your go-to photo resizer tool",
+      "description": "Resize image files and photos online without uploading to any server - your go-to resize image tool",
       "lightningFast": "Lightning-fast",
-      "free": "100% free image resizer forever",
+      "free": "100% free tool to resize image files forever",
       "noSignup": "No sign-up or registration",
       "secure": "100% secure & private",
       "unlimited": "Unlimited usage",
@@ -414,73 +414,73 @@
     },
     "howTo": {
       "title": "How to Resize Image Online",
-      "subtitle": "3 simple steps to use our free image resizer",
+      "subtitle": "3 simple steps to resize image files with our free image resizer",
       "step1": {
         "number": "1",
         "title": "Select Image",
-        "description": "Select your JPG, PNG, or WebP photo to our free photo resizer tool."
+        "description": "Select your JPG, PNG, or WebP photo to resize image dimensions of in the image resizer."
       },
       "step2": {
         "number": "2",
-        "title": "Resize Photo",
-        "description": "Choose from preset sizes or custom adjust dimensions."
+        "title": "Resize Image",
+        "description": "Choose preset sizes or custom dimensions to resize image files."
       },
       "step3": {
         "number": "3",
         "title": "Download Instantly",
-        "description": "Download your resized photo immediately."
+        "description": "Download your resized photo to resize image format instantly."
       }
     },
     "featureSections": {
       "feature1": {
-        "title": "Free Online Image Resizer - No Upload Required",
+        "title": "Free Online Tool to Resize Image - No Upload Required",
         "description": [
-          "The most powerful free image resizer tool. Resize photos online in seconds with our professional photo resizer.",
-          "100% browser-based photo resizer - no uploads, no accounts, no data leaves your device. Perfect for privacy-conscious users."
+          "The most powerful free tool to resize image files online. Adjust and resize image dimensions in seconds without uploading.",
+          "A 100% browser-based image resizer - no uploads, no accounts, no data leaves your device. Perfect to resize image files safely."
         ]
       },
       "feature2": {
         "title": "Resize Image to Exact Dimensions",
         "description": [
-          "Professional image resizer to adjust photo to exact width and height. Perfect for social media posts, website images, email attachments, and print materials.",
-          "Our free photo resizer supports aspect ratios, and platform-specific presets - resize image online with precision."
+          "A professional tool to resize image width, height, and overall size. Perfect to resize image coordinates for social media.",
+          "This free image resizer supports aspect ratios, custom scaling, and presets to help you resize image files online with precision."
         ]
       },
       "feature3": {
-        "title": "Visual Crop Editor with Zoom & Format Options",
+        "title": "Visual Crop & Resize Image Editor",
         "description": [
-          "Professional photo resizer with intuitive visual crop editor. Drag handles to adjust crop area, zoom in for precision, and preview changes in real-time before resizing.",
-          "Export your resized images in multiple formats (JPG, PNG, WebP). Our free image resizer gives you complete control."
+          "Intuitive visual crop editor to crop and resize image files. Drag handles to adjust crop area and resize image in real-time.",
+          "Export in multiple formats. Our free tool lets you resize image files with complete control."
         ]
       }
     },
     "faq": {
-      "title": "Image Resizer FAQ",
-      "subtitle": "Common questions about our free photo resizer online tool",
+      "title": "Resize Image FAQ",
+      "subtitle": "Common questions about how to resize image online with our free tool",
       "items": [
         {
           "question": "Is this image resizer free to use?",
-          "answer": "Yes! Our image resizer is 100% free forever with no limitations. Resize image files unlimited times without watermarks, registration, or hidden fees. The best free photo resizer online."
+          "answer": "Yes! Our image resizer is 100% free forever. You can resize image files unlimited times without watermarks or registration. The best free tool to resize image online."
         },
         {
           "question": "How do I resize image online with this tool?",
-          "answer": "Using our image resizer tool is simple: (1) Select your photo, (2) Choose resize preset social media aspect ratio or custom adjust dimensions, (3) Download instantly. All image processing happens in your browser."
+          "answer": "To resize image online, select your photo, choose custom dimensions in the image resizer, and download. All steps to resize image happen locally."
         },
         {
           "question": "What image formats does the photo resizer support?",
-          "answer": "Our online image resizer supports all popular formats: JPG, JPEG, PNG, and WebP. You can resize photos in any format and even convert between formats while resizing."
+          "answer": "Our online image resizer supports JPG, JPEG, PNG, and WebP. You can resize image files in any of these formats easily."
         },
         {
           "question": "Is this photo resizer online secure?",
-          "answer": "Absolutely! Our image resizer tool processes everything locally in your browser. Your photos never upload to any server - they never leave your device. To test this, load our website, disconnect your internet, and the photo resizer still works perfectly."
+          "answer": "Absolutely! Our tool allows you to resize image files locally. The image resizer processes everything in your browser, meaning you can resize image files without uploading."
         },
         {
           "question": "Can I resize image to specific dimensions?",
-          "answer": "Yes! Our image resizer offers multiple options: set exact width and height, maintain aspect ratio, or use social media presets (Instagram, Facebook, Twitter, YouTube, LinkedIn, Pinterest, and more) to resize photos perfectly for each platform. You can also use intuitive visual crop editor. Drag handles to adjust crop area, zoom in for precision, and preview changes in real-time before resizing.."
+          "answer": "Yes! To resize image to specific dimensions, our image resizer offers multiple options: set width and height, maintain aspect ratio, or use presets."
         },
         {
           "question": "What makes this the best photo resizer online?",
-          "answer": "Our image resizer stands out: 100% free forever, no uploads (browser-based), unlimited usage, supports common formats, social media presets, exact dimension control, and maintains privacy. It's the complete photo resizer free solution."
+          "answer": "If you want to resize image files safely, our tool is the best. The image resizer is 100% free, browser-based, and protects your privacy."
         }
       ]
     }
