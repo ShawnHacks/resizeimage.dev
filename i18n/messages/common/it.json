@@ -71,26 +71,24 @@
     "ctaButton": "Sfoglia tutti gli strumenti"
   },
   "SiteConfig": {
-    "title": "Convertitore di immagini - Convertitore di foto online gratuito",
-    "description": "Il miglior strumento di conversione di immagini online gratuito. Converti formati di immagine localmente nel tuo browser. Nessun caricamento, convertitore di foto sicuro e privato al 100%.",
+    "title": "Ridimensionatore di Immagini - Ridimensionatore di Foto Online Gratuito",
+    "description": "Il miglior strumento online gratuito per ridimensionare le immagini. Ridimensiona le immagini, istantaneamente nel tuo browser. Ridimensionatore di foto professionale gratuito senza caricamenti.",
     "keywords": {
-      "0": "convertitore di immagini",
-      "1": "convertitore di immagini gratuito",
-      "2": "convertitore di foto",
-      "3": "converti immagine",
-      "4": "converti immagine online",
-      "5": "da png a jpg",
-      "6": "da png a webp",
-      "7": "da jpg a png",
-      "8": "da jpg a webp",
-      "9": "da webp a png",
-      "10": "da webp a jpg"
+      "0": "ridimensionatore di immagini",
+      "1": "ridimensionatore di immagini gratuito",
+      "2": "ridimensionatore di foto",
+      "3": "ridimensiona immagine",
+      "4": "ridimensiona immagine online",
+      "5": "ridimensionatore di immagini gratuito",
+      "6": "ridimensionatore di immagini online",
+      "7": "ridimensionatore di foto gratuito",
+      "8": "ridimensiona foto"
     },
     "installApp": "Installa l'app"
   },
   "AboutPage": {
-    "metaTitle": "Informazioni su ImageConverter - Convertitore di foto online gratuito",
-    "metaDescription": "Scopri ImageConverter, un convertitore di foto online gratuito che consente di convertire le immagini tra più formati senza caricare file su alcun server. Tutte le conversioni avvengono localmente nel browser, garantendo completa privacy e sicurezza."
+    "metaTitle": "Informazioni - ResizeImage.dev",
+    "metaDescription": "Scopri ResizeImage.dev - il miglior strumento gratuito per ridimensionare immagini online. Ridimensiona le immagini istantaneamente nel tuo browser. Ridimensionatore di foto professionale gratuito senza caricamento."
   },
   "ContactPage": {
     "metaTitle": "Contattaci",

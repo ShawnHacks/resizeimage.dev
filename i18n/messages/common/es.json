@@ -71,26 +71,24 @@
     "ctaButton": "Explorar todas las herramientas"
   },
   "SiteConfig": {
-    "title": "Convertidor de imágenes - Convertidor de fotos en línea gratuito",
-    "description": "La mejor herramienta de conversión de imágenes en línea gratuita. Convierte formatos de imagen localmente en tu navegador. Sin subidas, convertidor de fotos 100% seguro y privado.",
+    "title": "Redimensionador de Imágenes - Redimensionador de Fotos Online Gratis",
+    "description": "La mejor herramienta gratuita para redimensionar imágenes en línea. Redimensiona imágenes al instante en tu navegador. Redimensionador de fotos profesional y gratuito sin necesidad de subidas.",
     "keywords": {
-      "0": "convertidor de imágenes",
-      "1": "convertidor de imágenes gratuito",
-      "2": "convertidor de fotos",
-      "3": "convertir imagen",
-      "4": "convertir imagen en línea",
-      "5": "png a jpg",
-      "6": "png a webp",
-      "7": "jpg a png",
-      "8": "jpg a webp",
-      "9": "webp a png",
-      "10": "webp a jpg"
+      "0": "redimensionador de imágenes",
+      "1": "redimensionador de imágenes gratis",
+      "2": "redimensionador de fotos",
+      "3": "redimensionar imagen",
+      "4": "redimensionar imagen en línea",
+      "5": "redimensionador de imágenes gratuito",
+      "6": "redimensionador de imágenes online",
+      "7": "redimensionador de fotos gratis",
+      "8": "redimensionar foto"
     },
     "installApp": "Instalar App"
   },
   "AboutPage": {
-    "metaTitle": "Acerca de ImageConverter - Convertidor de fotos en línea gratuito",
-    "metaDescription": "Conozca ImageConverter, un convertidor de fotos en línea gratuito que le permite convertir imágenes entre múltiples formatos sin subir archivos a ningún servidor. Todas las conversiones se realizan localmente en el navegador, lo que garantiza total privacidad y seguridad."
+    "metaTitle": "Acerca de - ResizeImage.dev",
+    "metaDescription": "Conozca ResizeImage.dev - la mejor herramienta gratuita para redimensionar imágenes en línea. Redimensiona imágenes al instante en tu navegador sin necesidad de subidas."
   },
   "ContactPage": {
     "metaTitle": "Contáctenos",

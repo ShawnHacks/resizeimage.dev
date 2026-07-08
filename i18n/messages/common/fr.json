@@ -71,26 +71,24 @@
     "ctaButton": "Parcourir tous les outils"
   },
   "SiteConfig": {
-    "title": "Convertisseur d'images - Convertisseur de photos en ligne gratuit",
-    "description": "Le meilleur outil de conversion d'images en ligne gratuit. Convertissez les formats d'image localement dans votre navigateur. Aucun téléchargement, convertisseur de photos 100% sécurisé et privé.",
+    "title": "Redimensionneur d'Image - Redimensionneur de Photos en Ligne Gratuit",
+    "description": "Meilleur outil gratuit de redimensionnement d'images en ligne. Redimensionnez une image, instantanément dans votre navigateur. Redimensionneur de photos professionnel gratuit sans téléchargement.",
     "keywords": {
-      "0": "convertisseur d'images",
-      "1": "convertisseur d'images gratuit",
-      "2": "convertisseur de photos",
-      "3": "convertir une image",
-      "4": "convertir une image en ligne",
-      "5": "png en jpg",
-      "6": "png en webp",
-      "7": "jpg en png",
-      "8": "jpg en webp",
-      "9": "webp en png",
-      "10": "webp en jpg"
+      "0": "redimensionneur d'image",
+      "1": "redimensionneur d'image gratuit",
+      "2": "redimensionneur de photo",
+      "3": "redimensionner l'image",
+      "4": "redimensionner l'image en ligne",
+      "5": "redimensionneur d'image gratuit",
+      "6": "redimensionneur d'image en ligne",
+      "7": "redimensionneur de photo gratuit",
+      "8": "redimensionner la photo"
     },
-    "installApp": "Installez l'application"
+    "installApp": "Installer l'application"
   },
   "AboutPage": {
-    "metaTitle": "À propos d'ImageConverter - Convertisseur de photos en ligne gratuit",
-    "metaDescription": "Découvrez ImageConverter, un convertisseur de photos en ligne gratuit qui vous permet de convertir des images entre plusieurs formats sans télécharger de fichiers sur un serveur. Toutes les conversions s'effectuent localement dans le navigateur, garantissant une confidentialité et une sécurité totales."
+    "metaTitle": "À propos - ResizeImage.dev",
+    "metaDescription": "Découvrez ResizeImage.dev - le meilleur outil gratuit de redimensionnement d'images en ligne. Redimensionnez les images instantanément dans votre navigateur. Redimensionneur de photos professionnel gratuit sans téléchargement."
   },
   "ContactPage": {
     "metaTitle": "Contactez-nous",

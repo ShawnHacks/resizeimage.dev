@@ -71,26 +71,24 @@
     "ctaButton": "Navegar por todas as ferramentas"
   },
   "SiteConfig": {
-    "title": "Conversor de Imagem - Conversor de Fotos Online Gratuito",
-    "description": "A melhor ferramenta de conversão de imagem online gratuita. Converta formatos de imagem localmente no seu navegador. Sem uploads, conversor de fotos 100% seguro e privado.",
+    "title": "Redimensionador de Imagens - Redimensionador de Fotos Online Grátis",
+    "description": "A melhor ferramenta online e gratuita para redimensionar imagens. Redimensione imagens, instantaneamente no seu navegador. Redimensionador de fotos profissional e gratuito, sem necessidade de uploads.",
     "keywords": {
-      "0": "conversor de imagens",
-      "1": "conversor de imagens gratuito",
-      "2": "conversor de fotos",
-      "3": "converter imagem",
-      "4": "converter imagem online",
-      "5": "png para jpg",
-      "6": "png para webp",
-      "7": "jpg para png",
-      "8": "jpg para webp",
-      "9": "webp para png",
-      "10": "webp para jpg"
+      "0": "redimensionador de imagens",
+      "1": "redimensionador de imagens gratuito",
+      "2": "redimensionador de fotos",
+      "3": "redimensionar imagem",
+      "4": "redimensionar imagem online",
+      "5": "redimensionador de imagens grátis",
+      "6": "redimensionador de imagens online",
+      "7": "redimensionador de fotos gratuito",
+      "8": "redimensionar foto"
     },
-    "installApp": "Instalar App"
+    "installApp": "Instalar aplicativo"
   },
   "AboutPage": {
-    "metaTitle": "Sobre o ImageConverter - Conversor de fotos online gratuito",
-    "metaDescription": "Conheça o ImageConverter, um conversor de fotos online gratuito que permite converter imagens entre vários formatos sem enviar arquivos para nenhum servidor. Todas as conversões acontecem localmente no navegador, garantindo total privacidade e segurança."
+    "metaTitle": "Sobre - ResizeImage.dev",
+    "metaDescription": "Conheça o ResizeImage.dev - a melhor ferramenta gratuita de redimensionamento de imagens online. Redimensione imagens instantaneamente no seu navegador. Redimensionador de fotos profissional gratuito sem upload."
   },
   "ContactPage": {
     "metaTitle": "Entre em contato",

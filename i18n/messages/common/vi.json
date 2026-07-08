@@ -71,26 +71,24 @@
     "ctaButton": "Duyệt qua tất cả các công cụ"
   },
   "SiteConfig": {
-    "title": "Trình chuyển đổi hình ảnh - Trình chuyển đổi ảnh trực tuyến miễn phí",
-    "description": "Công cụ chuyển đổi hình ảnh trực tuyến miễn phí tốt nhất. Chuyển đổi định dạng hình ảnh cục bộ trong trình duyệt của bạn. Không cần tải lên, trình chuyển đổi ảnh an toàn và riêng tư 100%.",
+    "title": "Trình thay đổi kích thước hình ảnh - Trình thay đổi kích thước ảnh trực tuyến miễn phí",
+    "description": "Công cụ thay đổi kích thước hình ảnh trực tuyến miễn phí tốt nhất. Thay đổi kích thước hình ảnh, ngay lập tức trong trình duyệt của bạn. Trình thay đổi kích thước ảnh chuyên nghiệp miễn phí không cần tải lên.",
     "keywords": {
-      "0": "công cụ chuyển đổi hình ảnh",
-      "1": "công cụ chuyển đổi hình ảnh miễn phí",
-      "2": "công cụ chuyển đổi ảnh",
-      "3": "chuyển đổi hình ảnh",
-      "4": "chuyển đổi hình ảnh trực tuyến",
-      "5": "png sang jpg",
-      "6": "png sang webp",
-      "7": "jpg sang png",
-      "8": "jpg sang webp",
-      "9": "webp sang png",
-      "10": "webp sang jpg"
+      "0": "trình thay đổi kích thước hình ảnh",
+      "1": "trình thay đổi kích thước hình ảnh miễn phí",
+      "2": "trình thay đổi kích thước ảnh",
+      "3": "thay đổi kích thước hình ảnh",
+      "4": "thay đổi kích thước hình ảnh trực tuyến",
+      "5": "trình thay đổi kích thước hình ảnh miễn phí",
+      "6": "trình thay đổi kích thước hình ảnh trực tuyến",
+      "7": "trình thay đổi kích thước ảnh miễn phí",
+      "8": "thay đổi kích thước ảnh"
     },
     "installApp": "Cài đặt ứng dụng"
   },
   "AboutPage": {
-    "metaTitle": "Giới thiệu ImageConverter - Trình chuyển đổi ảnh trực tuyến miễn phí",
-    "metaDescription": "Tìm hiểu về ImageConverter, trình chuyển đổi ảnh trực tuyến miễn phí cho phép bạn chuyển đổi hình ảnh giữa nhiều định dạng mà không cần tải tệp lên bất kỳ máy chủ nào. Mọi chuyển đổi đều diễn ra cục bộ trong trình duyệt, đảm bảo quyền riêng tư và bảo mật hoàn toàn."
+    "metaTitle": "Giới thiệu - ResizeImage.dev",
+    "metaDescription": "Tìm hiểu về ResizeImage.dev - công cụ thay đổi kích thước hình ảnh trực tuyến miễn phí tốt nhất. Thay đổi kích thước hình ảnh ngay lập tức trong trình duyệt của bạn. Công cụ thay đổi kích thước ảnh chuyên nghiệp miễn phí không cần tải lên."
   },
   "ContactPage": {
     "metaTitle": "Liên hệ với chúng tôi",

@@ -71,26 +71,24 @@
     "ctaButton": "Tüm araçlara göz atın"
   },
   "SiteConfig": {
-    "title": "Görüntü Dönüştürücü - Ücretsiz Çevrimiçi Fotoğraf Dönüştürücü",
-    "description": "En iyi ücretsiz çevrimiçi görüntü dönüştürme aracı. Görüntü formatlarını tarayıcınızda yerel olarak dönüştürün. Yükleme yok, %100 güvenli ve özel fotoğraf dönüştürücü.",
+    "title": "Görüntü Yeniden Boyutlandırıcı - Ücretsiz Çevrimiçi Fotoğraf Yeniden Boyutlandırıcı",
+    "description": "En iyi ücretsiz çevrimiçi görüntü yeniden boyutlandırma aracı. Görüntüyü tarayıcınızda anında yeniden boyutlandırın. Yükleme gerektirmeyen profesyonel ücretsiz fotoğraf yeniden boyutlandırıcı.",
     "keywords": {
-      "0": "görüntü dönüştürücü",
-      "1": "ücretsiz görüntü dönüştürücü",
-      "2": "fotoğraf dönüştürücü",
-      "3": "görüntü dönüştürme",
-      "4": "çevrimiçi görüntü dönüştürme",
-      "5": "png'den jpg'ye",
-      "6": "png'den webp'ye",
-      "7": "jpg'den png'ye",
-      "8": "jpg'den webp'ye",
-      "9": "webp'den png'ye",
-      "10": "webp'den jpg'ye"
+      "0": "görüntü yeniden boyutlandırıcı",
+      "1": "ücretsiz görüntü yeniden boyutlandırıcı",
+      "2": "fotoğraf yeniden boyutlandırıcı",
+      "3": "görüntü yeniden boyutlandırma",
+      "4": "çevrimiçi görüntü yeniden boyutlandırma",
+      "5": "ücretsiz görüntü yeniden boyutlandırıcı",
+      "6": "çevrimiçi görüntü yeniden boyutlandırıcı",
+      "7": "ücretsiz fotoğraf yeniden boyutlandırıcı",
+      "8": "fotoğraf yeniden boyutlandırma"
     },
     "installApp": "Uygulamayı Yükle"
   },
   "AboutPage": {
-    "metaTitle": "ImageConverter Hakkında - Ücretsiz Çevrimiçi Fotoğraf Dönüştürücü",
-    "metaDescription": "Dosyaları herhangi bir sunucuya yüklemeden birden çok format arasında görüntü dönüştürmenizi sağlayan ücretsiz bir çevrimiçi fotoğraf dönüştürücü olan ImageConverter hakkında bilgi edinin. Tüm dönüşümler tarayıcınızda yerel olarak gerçekleşir ve tam gizlilik ile güvenlik sağlar."
+    "metaTitle": "Hakkında - ResizeImage.dev",
+    "metaDescription": "ResizeImage.dev hakkında bilgi edinin - en iyi ücretsiz çevrimiçi görüntü yeniden boyutlandırma aracı. Tarayıcınızda anında görüntüleri yeniden boyutlandırın. Yükleme gerektirmeyen profesyonel ücretsiz fotoğraf yeniden boyutlandırıcı."
   },
   "ContactPage": {
     "metaTitle": "Bize Ulaşın",

@@ -71,26 +71,24 @@
     "ctaButton": "Alle Tools durchsuchen"
   },
   "SiteConfig": {
-    "title": "Bildkonverter - Kostenloser Online-Fotokonverter",
-    "description": "Das beste kostenlose Online-Tool zum Konvertieren von Bildern. Konvertieren Sie Bildformate lokal in Ihrem Browser. Keine Uploads, 100% sicherer und privater Fotokonverter.",
+    "title": "Bildverkleinerer - Kostenloser Online-Fotoverkleinerer",
+    "description": "Bestes kostenloses Online-Tool zur Bildgrößenänderung. Ändern Sie die Bildgröße sofort in Ihrem Browser. Professioneller Fotoverkleinerer kostenlos ohne Uploads.",
     "keywords": {
-      "0": "Bildkonverter",
-      "1": "Bildkonverter kostenlos",
-      "2": "Fotokonverter",
-      "3": "Bild konvertieren",
-      "4": "Bild online konvertieren",
-      "5": "png in jpg",
-      "6": "png in webp",
-      "7": "jpg in png",
-      "8": "jpg in webp",
-      "9": "webp in png",
-      "10": "webp in jpg"
+      "0": "Bildverkleinerer",
+      "1": "Bildverkleinerer kostenlos",
+      "2": "Fotoverkleinerer",
+      "3": "Bildgröße ändern",
+      "4": "Bildgröße online ändern",
+      "5": "kostenloser Bildverkleinerer",
+      "6": "Online-Bildverkleinerer",
+      "7": "Fotoverkleinerer kostenlos",
+      "8": "Fotogröße ändern"
     },
     "installApp": "App installieren"
   },
   "AboutPage": {
-    "metaTitle": "Über ImageConverter – Kostenloser Online-Fotokonverter",
-    "metaDescription": "Erfahren Sie mehr über ImageConverter, einen kostenlosen Online-Fotokonverter, mit dem Sie Bilder zwischen mehreren Formaten konvertieren können, ohne Dateien auf einen Server hochzuladen. Alle Konvertierungen erfolgen lokal im Browser – für volle Privatsphäre und Sicherheit."
+    "metaTitle": "Über uns - ResizeImage.dev",
+    "metaDescription": "Erfahren Sie mehr über ResizeImage.dev - das beste kostenlose Online-Tool zur Bildgrößenänderung. Ändern Sie die Bildgröße sofort in Ihrem Browser. Professioneller kostenloser Foto-Resizer ohne Upload."
   },
   "ContactPage": {
     "metaTitle": "Kontaktieren Sie uns",

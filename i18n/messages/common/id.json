@@ -71,26 +71,24 @@
     "ctaButton": "Jelajahi semua alat"
   },
   "SiteConfig": {
-    "title": "Konverter Gambar - Konverter Foto Online Gratis",
-    "description": "Alat konverter gambar online gratis terbaik. Konversi format gambar secara lokal di browser Anda. Tanpa unggahan, konverter foto 100% aman dan pribadi.",
+    "title": "Pengubah Ukuran Gambar - Pengubah Ukuran Foto Online Gratis",
+    "description": "Alat pengubah ukuran gambar online gratis terbaik. Ubah ukuran gambar, secara instan di browser Anda. Pengubah ukuran foto profesional gratis tanpa unggahan.",
     "keywords": {
-      "0": "konverter gambar",
-      "1": "konverter gambar gratis",
-      "2": "konverter foto",
-      "3": "konversi gambar",
-      "4": "konversi gambar online",
-      "5": "png ke jpg",
-      "6": "png ke webp",
-      "7": "jpg ke png",
-      "8": "jpg ke webp",
-      "9": "webp ke png",
-      "10": "webp ke jpg"
+      "0": "pengubah ukuran gambar",
+      "1": "pengubah ukuran gambar gratis",
+      "2": "pengubah ukuran foto",
+      "3": "ubah ukuran gambar",
+      "4": "ubah ukuran gambar online",
+      "5": "pengubah ukuran gambar gratis",
+      "6": "pengubah ukuran gambar online",
+      "7": "pengubah ukuran foto gratis",
+      "8": "ubah ukuran foto"
     },
     "installApp": "Instal Aplikasi"
   },
   "AboutPage": {
-    "metaTitle": "Tentang ImageConverter - Konverter Foto Online Gratis",
-    "metaDescription": "Pelajari ImageConverter, konverter foto online gratis yang memungkinkan Anda mengonversi gambar antar berbagai format tanpa mengunggah file ke server mana pun. Semua konversi terjadi secara lokal di browser, memastikan privasi dan keamanan penuh."
+    "metaTitle": "Tentang - ResizeImage.dev",
+    "metaDescription": "Pelajari tentang ResizeImage.dev - alat pengubah ukuran gambar online gratis terbaik. Ubah ukuran gambar secara instan di browser Anda. Pengubah ukuran foto profesional gratis tanpa unggahan."
   },
   "ContactPage": {
     "metaTitle": "Hubungi Kami",

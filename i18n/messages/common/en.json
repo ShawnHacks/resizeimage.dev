@@ -76,26 +76,24 @@
     }
   },
   "SiteConfig": {
-    "title": "Image Converter - Free Online Photo Converter",
-    "description": "Best free image converter online tool. Convert image between formats locally in your browser. No uploads, 100% secure and private photo converter.",
+    "title": "ResizeImage - Free Online Image Resizer",
+    "description": "Best free image resizer online tool. Resize image, instantly in your browser. Professional photo resizer free with no uploads.",
     "keywords": {
-      "0": "image converter",
-      "1": "image converter free",
-      "2": "photo converter",
-      "3": "convert image",
-      "4": "convert image online",
-      "5": "png to jpg",
-      "6": "png to webp",
-      "7": "jpg to png",
-      "8": "jpg to webp",
-      "9": "webp to png",
-      "10": "webp to jpg"
+      "0": "image resizer",
+      "1": "image resizer free",
+      "2": "photo resizer",
+      "3": "resize image",
+      "4": "resize image online",
+      "5": "free image resizer",
+      "6": "online image resizer",
+      "7": "photo resizer free",
+      "8": "resize photo"
     },
     "installApp": "Install App"
   },
   "AboutPage": {
-    "metaTitle": "About ImageConverter - Free Online Photo Converter",
-    "metaDescription": "Learn about ImageConverter, a free online photo converter that allows you to convert images between multiple formats without uploading files to any server. All conversions happen locally in the browser, ensuring complete privacy and security."
+    "metaTitle": "About - ResizeImage.dev",
+    "metaDescription": "Learn about ResizeImage.dev - the best free image resizer online tool. Resize image, instantly in your browser. Professional photo resizer free with no uploads."
   },
   "ContactPage": {
     "metaTitle": "Contact Us - Get in Touch",
@@ -124,8 +122,8 @@
   },
   "BlogPage": {
     "title": "Blog",
-    "description": "Learn about image converter tools, image compression tools, and digital tools. Expert guides and tutorials for developers and designers.",
-    "keywords": "bulk resize images tools, image compression tools, digital tools guide, image optimizer, image compression, image resize, image converter",
+    "description": "Learn about resize image tools, image compression tools, and digital tools. Expert guides and tutorials for developers and designers.",
+    "keywords": "resize image tools, image compression tools, digital tools guide, image optimizer, image compression, image resize, web design tips",
     "readMore": "Read More",
     "minRead": "min read",
     "noPosts": "No blog posts available yet. Check back soon!",
