@@ -14,7 +14,7 @@ import { Slider } from '@/components/ui/slider';
 import { Switch } from '@/components/ui/switch';
 import { formatFileSize } from '@/lib/utils';
 import { cn } from '@/lib/utils';
-import { Lock, Unlock } from 'lucide-react';
+import { Download, Lock, RotateCcw, Unlock } from 'lucide-react';
 
 interface SingleResizeWorkspaceProps {
   file: File;
@@ -719,7 +719,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
       <div className="space-y-3">
         <div
           ref={containerRef}
-          className="relative w-full rounded-3xl border border-border bg-muted/60 p-4 sm:p-6"
+          className="relative w-full rounded-3xl border border-border bg-muted/60 p-3 sm:p-6"
         >
           <div className="mb-4 flex items-center justify-between gap-3">
             <p className="text-sm text-foreground">
@@ -826,7 +826,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
         </div>
 
         {/* border border-border bg-card/60 sm:p-6  */}
-        <div className="rounded-2xl p-3 w-[400px] mx-auto">
+        <div className="rounded-2xl p-3 w-full max-w-[400px] mx-auto">
           <div className="flex items-center justify-between">
             <Label className="text-sm font-semibold text-foreground">{t('preview.zoom')}</Label>
             <span className="text-sm font-medium text-foreground">{`${zoom.toFixed(2)}x`}</span>
@@ -857,7 +857,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
           </div>
 
           <Select value={categoryId} onValueChange={handleCategoryChange}>
-            <SelectTrigger>
+            <SelectTrigger className="h-11 sm:h-10 data-[size=default]:h-11 sm:data-[size=default]:h-10 text-base sm:text-sm font-medium">
               <SelectValue placeholder={t('controls.selectAspect')} />
             </SelectTrigger>
             <SelectContent>
@@ -872,12 +872,12 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
           </Select>
 
           {categoryId !== 'custom' && (
-            <div className="mt-6 grid grid-cols-3 gap-x-2 gap-y-4">
+            <div className="mt-6 grid grid-cols-3 gap-2 sm:gap-3">
               {getCategoryById(categoryId)?.presets.map(preset => {
                 const isActive = selectedPreset?.id === preset.id;
                 return (
                   <div key={preset.id} className="flex flex-col items-center gap-x-4">
-                    <div className="group relative flex aspect-square w-full max-w-[140px] items-center justify-center p-2">
+                    <div className="group relative flex aspect-square w-full max-w-[140px] items-center justify-center p-1.5 sm:p-2">
                       <div
                         role="button"
                         tabIndex={0}
@@ -916,9 +916,9 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
                         </div>
                       </div>
                     </div>
-                    <div className="text-center">
-                      <p className="text-xs font-semibold text-foreground">{preset.label}</p>
-                      <p className="text-xs text-muted-foreground">
+                    <div className="text-center w-full px-1">
+                      <p className="text-xs font-semibold text-foreground truncate">{preset.label}</p>
+                      <p className="text-xs text-muted-foreground truncate">
                         {categoryId === 'standard' ? `${preset.description}` : 
                         `${preset.width} × ${preset.height}`}
                       </p>
@@ -943,7 +943,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
 
           {isCustom && (
             <div className="mt-6 space-y-4">
-              <div className="flex items-center justify-between rounded-xl border border-border/60 bg-background px-3 py-2">
+              <div className="flex items-center justify-between rounded-xl border border-border/60 bg-background px-3 py-2.5">
                 <div>
                   <p className="text-sm font-semibold text-foreground">{t('controls.lockAspect')}</p>
                   <p className="text-xs text-muted-foreground">{t('controls.lockAspectHint')}</p>
@@ -954,29 +954,31 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
                 </div>
               </div>
 
-              <div className="grid grid-cols-3 gap-4">
+              <div className="grid grid-cols-[1fr_1fr_80px] sm:grid-cols-[1fr_1fr_90px] gap-2 sm:gap-4">
                 <div>
-                  <Label className="text-sm font-semibold text-muted-foreground">{t('controls.customWidth')}</Label>
+                  <Label className="mb-1.5 block text-xs sm:text-sm font-semibold text-muted-foreground">{t('controls.customWidth')}</Label>
                   <Input
                     type="number"
                     min={1}
+                    className="h-11 sm:h-10 text-base sm:text-sm font-medium"
                     value={Number.isFinite(displayWidthValue) ? Number(displayWidthValue.toFixed(2)) : ''}
                     onChange={handleWidthInputChange}
                   />
                 </div>
                 <div>
-                  <Label className="text-sm font-semibold text-muted-foreground">{t('controls.customHeight')}</Label>
+                  <Label className="mb-1.5 block text-xs sm:text-sm font-semibold text-muted-foreground">{t('controls.customHeight')}</Label>
                   <Input
                     type="number"
                     min={1}
+                    className="h-11 sm:h-10 text-base sm:text-sm font-medium"
                     value={Number.isFinite(displayHeightValue) ? Number(displayHeightValue.toFixed(2)) : ''}
                     onChange={handleHeightInputChange}
                   />
                 </div>
-                <div className="">
-                  <Label className="text-sm font-semibold text-muted-foreground">{t('controls.units')}</Label>
+                <div>
+                  <Label className="mb-1.5 block text-xs sm:text-sm font-semibold text-muted-foreground">{t('controls.units')}</Label>
                   <Select value={unit} onValueChange={value => handleUnitChange(value as LengthUnit)}>
-                    <SelectTrigger className="w-16">
+                    <SelectTrigger className="w-full h-11 sm:h-10 data-[size=default]:h-11 sm:data-[size=default]:h-10 text-base sm:text-sm font-medium">
                       <SelectValue />
                     </SelectTrigger>
                     <SelectContent>
@@ -999,7 +1001,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
           <div className="flex items-center justify-between">
             <Label className="text-sm font-semibold uppercase tracking-wide text-foreground">{t('export.format')}</Label>
             <Select value={format} onValueChange={value => setFormat(value as SingleImageFormat)}>
-              <SelectTrigger className="w-24">
+              <SelectTrigger className="w-24 h-11 sm:h-10 data-[size=default]:h-11 sm:data-[size=default]:h-10 text-base sm:text-sm font-medium">
                 <SelectValue placeholder="JPG" />
               </SelectTrigger>
               <SelectContent>
@@ -1014,7 +1016,7 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
             </Select>
           </div>
 
-          <div className="rounded-xl bg-background/70">
+          <div className="rounded-xl bg-background/80 p-3 sm:p-4 border border-border/40">
             <p className="text-sm text-foreground">
               {t('export.originalSize', { size: formatFileSize(file.size) })}
             </p>
@@ -1028,10 +1030,20 @@ export function SingleResizeWorkspace({ file, onReset, previewUrl }: SingleResiz
         </div>
 
         <div className="flex flex-col gap-3 sm:flex-row">
-          <Button className="flex-1" size="lg" onClick={handleDownload} disabled={isGeneratingBlob}>
+          <Button
+            className="w-full h-14 min-h-[52px] sm:flex-1 text-base sm:text-lg font-bold rounded-xl shadow-lg shadow-primary/25 hover:shadow-xl transition-all"
+            onClick={handleDownload}
+            disabled={isGeneratingBlob}
+          >
+            <Download className="mr-2 h-5 w-5" />
             {t('actions.download')}
           </Button>
-          <Button variant="outline" className="flex-1" size="lg" onClick={handleResetSelection}>
+          <Button
+            variant="outline"
+            className="w-full h-14 min-h-[52px] sm:flex-1 text-base sm:text-lg font-semibold rounded-xl border-2 hover:bg-accent"
+            onClick={handleResetSelection}
+          >
+            <RotateCcw className="mr-2 h-5 w-5" />
             {t('actions.reset')}
           </Button>
         </div>
