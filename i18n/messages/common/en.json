@@ -28,8 +28,8 @@
   "HomePage": {
     "tagline": "ImageConverter - Convert images between formats, locally",
     "title": "Free Online Image Converter",
-    "subtitle": "Convert images in your browser. No registration, no uploads 100% secure and private photo converter.",
-    "localHint": "Convert images between formats, locally in your browser, no uploads 100% secure and private",
+    "subtitle": "Free online image converter in your browser — convert photos with no registration, no uploads, and 100% privacy.",
+    "localHint": "Free online image converter — convert images locally in your browser with zero uploads and total security.",
     "previewAlt": "Selected image preview",
     "settingsTitle": "Output settings",
     "reset": "Choose another image",
@@ -41,17 +41,17 @@
     "downloadCta": "Download {format}",
     "unknownFormat": "Unknown",
     "quickImageConverters": "Quick Image Converters",
-    "benefitsTitle": "Why choose ImageConverter?",
-    "benefitsDescription": "Speed up your workflow with a private, browser-first image conversion toolkit.",
+    "benefitsTitle": "Why Choose Our Free Online Image Converter?",
+    "benefitsDescription": "Speed up your workflow with our private, browser-first online image converter.",
     "benefits": {
       "items": [
-        "Runs 100% in your browser so your files never leave your device.",
-        "Supports modern and legacy formats including HEIC, AVIF, GIF, TIFF, PNG, JPG, and WebP.",
+        "Our image converter runs 100% in your browser so your files never leave your device.",
+        "Convert modern and legacy formats including HEIC, AVIF, GIF, TIFF, PNG, JPG, and WebP.",
         "Choose output quality and instantly preview file size before downloading.",
-        "Optimised for speed with zero sign-ups, limits, or watermarking."
+        "Optimised image converter for speed with zero sign-ups, limits, or watermarking."
       ]
     },
-    "howTitle": "How ImageConverter works",
+    "howTitle": "How to Use Our Free Online Image Converter",
     "howSteps": [
       {
         "title": "Select or drop an image",

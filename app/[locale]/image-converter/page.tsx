@@ -2,7 +2,7 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
-import { JsonLd, getSoftwareAppSchema, getHowToSchema } from '@/components/common/json-ld';
+import { JsonLd, getSoftwareAppSchema, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
 
 import { routing } from '@/i18n/routing';
 import { PageClient } from './page-client';
@@ -53,7 +53,6 @@ export async function generateMetadata({
       ],
     },
   };
-
 }
 
 export default async function Page({
@@ -64,9 +63,19 @@ export default async function Page({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'ImageConverterTool' });
+  const homeT = await getTranslations({ locale, namespace: 'HomePage' });
+
+  const rawFaqs = t.raw('mainFaq.items') as Array<{ question: string; answer: string }>;
+  const faqSchema = getFaqSchema(rawFaqs);
+
+  const rawSteps = homeT.raw('howSteps') as Array<{ title: string; description: string }>;
+  const howToSchema = getHowToSchema({
+    name: homeT('howTitle'),
+    description: t('description'),
+    steps: rawSteps.map(step => ({ title: step.title, text: step.description })),
+  });
 
   return (
-
     <PageClient>
       <JsonLd data={getSoftwareAppSchema({
         name: t('title'),
@@ -74,20 +83,10 @@ export default async function Page({
         url: `${process.env.NEXT_PUBLIC_APP_URL}${locale === 'en' ? '' : `/${locale}`}`,
         image: `${process.env.NEXT_PUBLIC_APP_URL}/og.png`,
       })} />
-      {/* <JsonLd data={getHowToSchema({
-        name: t('howTo.title'),
-        description: t('description'),
-        steps: [
-          { title: t('howTo.steps.0.title'), text: t('howTo.steps.0.description') },
-          { title: t('howTo.steps.1.title'), text: t('howTo.steps.1.description') },
-          { title: t('howTo.steps.2.title'), text: t('howTo.steps.2.description') },
-        ],
-      })} /> */}
-      <></>
+      <JsonLd data={faqSchema} />
+      <JsonLd data={howToSchema} />
     </PageClient>
-
   );
-
 }
 
 

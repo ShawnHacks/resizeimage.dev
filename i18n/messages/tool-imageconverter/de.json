@@ -367,6 +367,36 @@
           "description": "Wir behandeln Ihre Bilder mit Sorgfalt und bewahren Auflösung und Qualität bei jeder Konvertierung."
         }
       ]
+    },
+    "mainFaq": {
+      "title": "Kostenloser Online Image Converter — FAQ",
+      "subtitle": "Alles, was Sie über unseren kostenlosen Online Image Converter wissen müssen",
+      "items": [
+        {
+          "question": "Ist dieser Online Image Converter wirklich kostenlos?",
+          "answer": "Ja! Unser kostenloser Online Image Converter ist zu 100% gratis, ohne Registrierung und ohne Wasserzeichen."
+        },
+        {
+          "question": "Wie funktioniert der Image Converter?",
+          "answer": "Ziehen Sie Ihr Bild einfach per Drag-and-Drop in den Image Converter, wählen Sie das Zielformat und laden Sie die Datei herunter. Alle Prozesse laufen lokal ab."
+        },
+        {
+          "question": "Welche Formate unterstützt der Image Converter?",
+          "answer": "Unser Image Converter unterstützt PNG, JPG, JPEG, WebP, HEIC, AVIF, SVG, TIFF und GIF."
+        },
+        {
+          "question": "Sind meine Bilder beim Image Converter sicher?",
+          "answer": "Absolut. Der Image Converter arbeitet vollständig in Ihrem Browser, sodass Ihre Dateien nie auf externe Server hochgeladen werden."
+        },
+        {
+          "question": "Kann ich den Image Converter auf dem Smartphone nutzen?",
+          "answer": "Ja, der Online Image Converter funktioniert nahtlos auf Smartphones, Tablets und PCs."
+        }
+      ]
+    },
+    "mainSeoContent": {
+      "title": "Der beste kostenlose Online Image Converter",
+      "body": "Suchen Sie einen schnellen und sicheren Online Image Converter? Unser kostenloser Image Converter konvertiert Bilder zwischen PNG, JPG, WebP, HEIC, AVIF, SVG, TIFF und GIF direkt in Ihrem Browser ohne Uploads."
     }
   }
 }

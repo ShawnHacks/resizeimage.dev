@@ -367,6 +367,36 @@
           "description": "Tratamos sus imágenes con cuidado, preservando la resolución y la calidad durante cada conversión."
         }
       ]
+    },
+    "mainFaq": {
+      "title": "Convertidor de Imágenes Online Gratis — Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber sobre el uso de nuestro convertidor de imágenes gratuito",
+      "items": [
+        {
+          "question": "¿Este convertidor de imágenes online es realmente gratis?",
+          "answer": "¡Sí! Nuestro convertidor de imágenes es 100% gratuito, sin límites, sin marcas de agua y sin necesidad de registro."
+        },
+        {
+          "question": "¿Cómo funciona este convertidor de imágenes?",
+          "answer": "Simplemente arrastra y suelta tu imagen en nuestro convertidor de imágenes, elige el formato de salida (JPG, PNG o WebP) y descárgala. Todo se procesa en tu navegador."
+        },
+        {
+          "question": "¿Qué formatos admite este convertidor de imágenes?",
+          "answer": "Admite formatos populares como PNG, JPG, JPEG, WebP, HEIC, AVIF, SVG, TIFF y GIF."
+        },
+        {
+          "question": "¿Están seguras mis fotos con este convertidor de imágenes?",
+          "answer": "¡Sí! Tu privacidad está garantizada ya que nuestro convertidor de imágenes funciona 100% en tu navegador y los archivos nunca se suben a ningún servidor."
+        },
+        {
+          "question": "¿Puedo usar este convertidor de imágenes en dispositivos móviles?",
+          "answer": "Sí, nuestro convertidor de imágenes online funciona perfectamente en navegadores de escritorio, móviles y tabletas."
+        }
+      ]
+    },
+    "mainSeoContent": {
+      "title": "El Mejor Convertidor de Imágenes Online Gratis",
+      "body": "¿Buscas un convertidor de imágenes rápido y seguro? Nuestro convertidor de imágenes gratuito te permite transformar fotos entre PNG, JPG, WebP, HEIC, AVIF, SVG, TIFF y GIF directamente en tu navegador sin subir archivos."
     }
   }
 }

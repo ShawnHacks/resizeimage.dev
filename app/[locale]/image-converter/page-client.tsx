@@ -478,10 +478,20 @@ export function PageClient({ children }: { children: React.ReactNode }) {
         </section> */}
 
         <FAQSection
-          title={imageT('faq.title')}
-          subtitle={imageT('faq.subtitle')}
-          faqs={imageT.raw('faq.items')}
+          title={imageT('mainFaq.title')}
+          subtitle={imageT('mainFaq.subtitle')}
+          faqs={imageT.raw('mainFaq.items')}
         />
+
+        {/* SEO Content Section */}
+        <section className="py-16 md:py-20 text-center max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+            {imageT('mainSeoContent.title')}
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            {imageT('mainSeoContent.body')}
+          </p>
+        </section>
 
         <section className="rounded-3xl border border-border bg-primary/5 p-6 text-center">
           <h2 className="text-2xl font-heading font-semibold text-foreground">

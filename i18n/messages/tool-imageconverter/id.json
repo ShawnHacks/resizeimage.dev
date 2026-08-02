@@ -367,6 +367,36 @@
           "description": "Kami memperlakukan gambar Anda dengan hati-hati, mempertahankan resolusi dan kualitas selama setiap konversi."
         }
       ]
+    },
+    "mainFaq": {
+      "title": "Free Online Image Converter — FAQ",
+      "subtitle": "Everything you need to know about using our free online image converter tool",
+      "items": [
+        {
+          "question": "Is this online image converter really free to use?",
+          "answer": "Yes! Our free online image converter is 100% free with no limits, no watermarks, and no sign-up required. Convert as many files as you need."
+        },
+        {
+          "question": "How does this image converter work?",
+          "answer": "Simply drag and drop your image into our image converter, select your target format (JPG, PNG, or WebP), and download. All processing happens locally in your browser."
+        },
+        {
+          "question": "What image formats can I convert with this image converter?",
+          "answer": "Our image converter supports popular formats including PNG, JPG, JPEG, WebP, HEIC, AVIF, SVG, TIFF, and GIF."
+        },
+        {
+          "question": "Are my images secure with this image converter?",
+          "answer": "Yes! Your privacy is guaranteed because our image converter runs entirely client-side in your browser. Your images are never uploaded to any remote server."
+        },
+        {
+          "question": "Can I use this image converter on mobile devices?",
+          "answer": "Yes, our online image converter works seamlessly on desktop, mobile, and tablet browsers without installing any apps or plugins."
+        }
+      ]
+    },
+    "mainSeoContent": {
+      "title": "The Best Free Online Image Converter Tool",
+      "body": "Looking for a fast, reliable, and secure online image converter? Our free image converter lets you convert photos and graphics between all major formats — including PNG, JPG, WebP, HEIC, AVIF, SVG, TIFF, and GIF — right inside your web browser. Unlike conventional server-side tools, when you use our image converter, all processing happens locally on your device. This means your files stay completely private and are never uploaded to any remote server. Whether you need an image converter to shrink file sizes for faster web loading, prepare photos for social media, or convert legacy image files for compatibility, our image converter delivers instant results with zero quality loss and no watermarks."
     }
   }
 }

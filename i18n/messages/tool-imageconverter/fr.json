@@ -367,6 +367,36 @@
           "description": "Nous traitons vos images avec soin, en préservant la résolution et la qualité lors de chaque conversion."
         }
       ]
+    },
+    "mainFaq": {
+      "title": "Convertisseur d'Image en Ligne Gratuit — FAQ",
+      "subtitle": "Tout ce que vous devez savoir sur notre convertisseur d'image en ligne gratuit",
+      "items": [
+        {
+          "question": "Ce convertisseur d'image en ligne est-il vraiment gratuit ?",
+          "answer": "Oui ! Notre convertisseur d'image en ligne est 100% gratuit, sans filigrane ni limite et sans inscription."
+        },
+        {
+          "question": "Comment fonctionne ce convertisseur d'image ?",
+          "answer": "Glissez-déposez simplement votre fichier dans notre convertisseur d'image, choisissez le format de sortie et téléchargez-le."
+        },
+        {
+          "question": "Quels formats sont pris en charge ?",
+          "answer": "Notre convertisseur d'image prend en charge PNG, JPG, JPEG, WebP, HEIC, AVIF, SVG, TIFF et GIF."
+        },
+        {
+          "question": "Mes fichiers sont-ils sécurisés ?",
+          "answer": "Oui ! Tout le traitement est effectué localement dans votre navigateur sans aucun transfert vers un serveur."
+        },
+        {
+          "question": "Puis-je l'utiliser sur mobile ?",
+          "answer": "Oui, notre convertisseur d'image fonctionne parfaitement sur tous les appareils mobiles et ordinateurs."
+        }
+      ]
+    },
+    "mainSeoContent": {
+      "title": "Le Meilleur Convertisseur d'Image en Ligne Gratuit",
+      "body": "Vous cherchez un convertisseur d'image rapide et sécurisé ? Notre convertisseur d'image vous permet de convertir vos photos entre PNG, JPG, WebP, HEIC, AVIF, SVG, TIFF et GIF sans aucun envoi vers un serveur."
     }
   }
 }

@@ -12,6 +12,8 @@ import { routing } from '@/i18n/routing';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import { ImageConverterPageClient } from './page-client';
 
+import { JsonLd, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
+
 export const runtime = 'edge';
 
 export async function generateMetadata({
@@ -95,15 +97,11 @@ export default async function Page({
   const t = await getTranslations({ locale, namespace: 'ImageConverterTool' });
   const formatLabel = (format: typeof conversionDef.from) => t(`formats.${format}`);
 
-  const heroTitle = t('hero.title', {
-    from: formatLabel(conversionDef.from),
-    to: formatLabel(conversionDef.to),
-  });
+  const fromLabel = formatLabel(conversionDef.from);
+  const toLabel = formatLabel(conversionDef.to);
 
-  const heroDescription = t('hero.description', {
-    from: formatLabel(conversionDef.from),
-    to: formatLabel(conversionDef.to),
-  });
+  const heroTitle = t('hero.title', { from: fromLabel, to: toLabel });
+  const heroDescription = t('hero.description', { from: fromLabel, to: toLabel });
 
   const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://imageconverter.dev';
   const basePath = locale === 'en' ? '' : `/${locale}`;
@@ -132,14 +130,39 @@ export default async function Page({
     featureList,
   };
 
+  const rawFaqs = t.raw('faq.items') as Array<{ question: string; answer: string }>;
+  const faqItems = rawFaqs.map((_, index) => ({
+    question: t(`faq.items.${index}.question`, { from: fromLabel, to: toLabel }),
+    answer: t(`faq.items.${index}.answer`, { from: fromLabel, to: toLabel }),
+  }));
+  const faqSchema = getFaqSchema(faqItems);
+
+  const howToSchema = getHowToSchema({
+    name: t('howTo.title', { from: fromLabel, to: toLabel }),
+    description: heroDescription,
+    steps: [
+      {
+        title: t('howTo.steps.0.title', { from: fromLabel, to: toLabel }),
+        text: t('howTo.steps.0.description', { from: fromLabel, to: toLabel }),
+      },
+      {
+        title: t('howTo.steps.1.title', { from: fromLabel, to: toLabel }),
+        text: t('howTo.steps.1.description', { from: fromLabel, to: toLabel }),
+      },
+      {
+        title: t('howTo.steps.2.title', { from: fromLabel, to: toLabel }),
+        text: t('howTo.steps.2.description', { from: fromLabel, to: toLabel }),
+      },
+    ],
+  });
+
   const relatedConversions = getOtherConversions(conversionDef.slug);
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
+      <JsonLd data={structuredData} />
+      <JsonLd data={faqSchema} />
+      <JsonLd data={howToSchema} />
       <ImageConverterPageClient
         conversion={conversionDef}
         relatedConversions={relatedConversions}

@@ -117,6 +117,20 @@ export function ImageConverterPageClient({
     }));
   }, [conversion.from, conversion.to, formatLabel, t]);
 
+  const faqItems = useMemo(() => {
+    const rawFaqs = t.raw('faq.items') as Array<{ question: string; answer: string }>;
+    return rawFaqs.map((_, index) => ({
+      question: t(`faq.items.${index}.question`, {
+        from: formatLabel(conversion.from),
+        to: formatLabel(conversion.to),
+      }),
+      answer: t(`faq.items.${index}.answer`, {
+        from: formatLabel(conversion.from),
+        to: formatLabel(conversion.to),
+      }),
+    }));
+  }, [conversion.from, conversion.to, formatLabel, t]);
+
   return (
     <div className="mx-auto w-full">
       <header className="bg-background">
@@ -183,15 +197,43 @@ export function ImageConverterPageClient({
       </div>
 
       <div className="mx-auto mt-8 max-w-7xl">
-        <ConverterFeatures />
+        <ConverterFeatures
+          from={formatLabel(conversion.from)}
+          to={formatLabel(conversion.to)}
+        />
       </div>
 
       <FAQSection
-        title={t('faq.title')}
-        subtitle={t('faq.subtitle')}
-        faqs={t.raw('faq.items')}
+        title={t('faq.title', {
+          from: formatLabel(conversion.from),
+          to: formatLabel(conversion.to),
+        })}
+        subtitle={t('faq.subtitle', {
+          from: formatLabel(conversion.from),
+          to: formatLabel(conversion.to),
+        })}
+        faqs={faqItems}
       />
 
+      {/* SEO Content Section */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+              {t('seoContent.title', {
+                from: formatLabel(conversion.from),
+                to: formatLabel(conversion.to),
+              })}
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {t('seoContent.body', {
+                from: formatLabel(conversion.from),
+                to: formatLabel(conversion.to),
+              })}
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
