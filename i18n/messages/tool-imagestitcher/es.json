@@ -1,15 +1,15 @@
 {
   "ImageStitcherTool": {
     "badge": "Unir Imágenes Online",
-    "pageTitle": "Herramienta Gratuita para Unir Imágenes Online",
-    "pageDescription": "Une varias imágenes en un lienzo personalizable. Arrastra, redimensiona, gira y organiza imágenes libremente directamente en tu navegador.",
+    "pageTitle": "Herramienta Gratis para Unir Imágenes Online — Combinar Fotos",
+    "pageDescription": "Une imágenes online gratis. Usa nuestro empalmador de imágenes para combinar fotos en un lienzo personalizado — rápido, privado y en tu navegador.",
     "metadata": {
-      "title": "Unir Imágenes Online Gratis — Combinar y Unir Fotos Online",
-      "description": "La mejor herramienta gratuita para unir imágenes online. Combina varias fotos en un solo lienzo. Herramienta profesional para unir fotos online: arrastra, gira y organiza capas al instante."
+      "title": "Unir Imágenes Online Gratis — Empalmador de Fotos y Combinador",
+      "description": "La mejor herramienta gratuita para unir imágenes online. Combina múltiples fotos e imágenes en un solo archivo con total privacidad."
     },
     "intro": {
-      "title": "Herramienta Profesional Gratuita para Unir Imágenes Online",
-      "content": "Nuestra herramienta gratuita para unir imágenes online te permite combinar varias fotos en una sola creación de alta resolución sin descargas ni cuentas. Ya sea que estés creando un collage, un mockup profesional o simplemente fusionando fotos online, esta herramienta ofrece la flexibilidad de una aplicación de escritorio directamente en tu navegador. Arrastra, redimensiona y reorganiza capas con facilidad, manteniendo total privacidad ya que todo el procesamiento ocurre localmente."
+      "title": "La Forma Fácil de Unir Imágenes Online",
+      "content": "¿Buscas una forma sencilla de unir imágenes online? Nuestro empalmador de imágenes te permite combinar fotos sin problemas. Arrastra, ajusta el tamaño, gira y organiza tus capas con total libertad en tu navegador."
     },
     "controls": {
       "canvasSettings": "Ajustes del Lienzo",
@@ -54,43 +54,48 @@
       "uploadMore": "Subir Más"
     },
     "howTo": {
-      "title": "Cómo Unir Imágenes Online",
+      "title": "Cómo Unir Imágenes Online en 3 Pasos",
       "step1": {
         "number": "1",
-        "title": "Ajustar Tamaño del Lienzo",
-        "description": "Ajusta el ancho y alto del lienzo para que se adapte al diseño deseado."
+        "title": "Ajusta el Lienzo",
+        "description": "Configura el ancho y alto del lienzo para preparar tus imágenes."
       },
       "step2": {
         "number": "2",
-        "title": "Añadir y Organizar Imágenes",
-        "description": "Sube tus imágenes y arrastra para posicionarlas. Redimensiona y gira según sea necesario."
+        "title": "Une las Imágenes",
+        "description": "Sube tus archivos y arrástralos sobre el lienzo según necesites."
       },
       "step3": {
         "number": "3",
-        "title": "Exportar tu Creación",
-        "description": "Haz clic en descargar para guardar tu imagen combinada como un único archivo."
+        "title": "Descarga el Resultado",
+        "description": "Haz clic en descargar para guardar la imagen combinada."
       }
     },
     "faq": {
-      "title": "Preguntas Frecuentes sobre Unir Fotos Online",
+      "title": "Unir Imágenes Online — Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber para unir imágenes online",
       "items": [
         {
-          "question": "¿Esta herramienta para unir imágenes online es realmente gratuita?",
-          "answer": "Sí, nuestra herramienta es 100% gratuita. No hay cargos ocultos, suscripciones ni marcas de agua en tus imágenes exportadas."
+          "question": "¿La herramienta para unir imágenes online es realmente gratis?",
+          "answer": "¡Sí! Es 100% gratuita, sin límites ni marcas de agua."
         },
         {
-          "question": "¿Cómo uso esta herramienta para unir fotos online?",
-          "answer": "Simplemente define el tamaño del lienzo, sube tus imágenes y usa el ratón para arrastrarlas y organizarlas. Puedes usar el panel de propiedades para girar y ajustar la opacidad de cada capa."
+          "question": "¿Cómo combino mis fotos?",
+          "answer": "Sube tus archivos, ajusta el lienzo y arrastra tus fotos libremente."
         },
         {
-          "question": "¿Mis datos se mantienen privados al fusionar fotos online?",
-          "answer": "Absolutamente. Esta herramienta utiliza procesamiento en el cliente, lo que significa que tus imágenes nunca salen de tu ordenador ni tocan nuestros servidores."
+          "question": "¿Es seguro unir imágenes aquí?",
+          "answer": "Totalmente seguro. Todo el proceso ocurre localmente en tu navegador."
         },
         {
-          "question": "¿Qué formatos de imagen son compatibles?",
-          "answer": "Soportamos todos los formatos web comunes, incluyendo JPG, PNG, WebP y SVG."
+          "question": "¿Qué formatos son compatibles?",
+          "answer": "Admite JPG, PNG, WebP, SVG y más."
         }
       ]
+    },
+    "seoContent": {
+      "title": "La Mejor Herramienta Gratuita para Unir Imágenes Online",
+      "body": "Nuestra herramienta gratuita te permite unir imágenes online en segundos con total privacidad."
     }
   }
 }

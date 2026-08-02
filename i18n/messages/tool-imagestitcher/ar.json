@@ -1,15 +1,15 @@
 {
   "ImageStitcherTool": {
-    "badge": "تجميع الصور أونلاين",
-    "pageTitle": "أداة مجانية لتجميع الصور أونلاين",
-    "pageDescription": "قم بتجميع عدة صور على لوحة قابلة للتخصيص. اسحب الصور وغير حجمها ودوّرها ورتبها بحرية مباشرة في متصفحك.",
+    "badge": "Image Merge Online",
+    "pageTitle": "Free Image Merge Online Tool — Join Images Together",
+    "pageDescription": "Image merge online for free. Use our flexible image stitcher to join images together and join photos together on a custom canvas — fast, private, and 100% in your browser.",
     "metadata": {
-      "title": "تجميع الصور أونلاين مجاناً — دمج وتجميع الصور أونلاين",
-      "description": "أفضل أداة مجانية لتجميع الصور أونلاين. ادمج صوراً متعددة في لوحة واحدة. أداة احترافية لتجميع الصور أونلاين للسحب والتدوير والترتيب الفوري."
+      "title": "Image Merge Online Free — Image Stitcher & Join Photos Together",
+      "description": "The best free tool to image merge online. Use our online image stitcher to join images together and join photos together into one high-quality image right in your browser."
     },
     "intro": {
-      "title": "أداة احترافية مجانية لتجميع الصور أونلاين",
-      "content": "تتيح لك أداتنا المجانية لتجميع الصور أونلاين دمج صور متعددة في عمل واحد عالي الدقة دون الحاجة إلى تنزيلات أو إنشاء حساب. سواء كنت تقوم بإنشاء ملصقات (كولاج)، أو نماذج احترافية، أو مجرد دمج الصور أونلاين، فإن هذه الأداة توفر مرونة تطبيقات سطح المكتب مباشرة في متصفحك. اسحب الطبقات وغير حجمها ورتبها بسهولة مع الحفاظ على الخصوصية الكاملة حيث تتم المعالجة محلياً."
+      "title": "The Easy Way to Image Merge Online",
+      "content": "Looking for a simple way to image merge online? Our free image stitcher lets you join images together and join photos together seamlessly on a customizable canvas. Whether you want to image merge online for side-by-side photo comparisons, create photo collages, or combine graphics, our tool makes it effortless. Drag, resize, rotate, and layer your images freely. When you image merge online with our tool, all processing happens locally on your device for complete privacy."
     },
     "controls": {
       "canvasSettings": "إعدادات اللوحة",
@@ -54,43 +54,48 @@
       "uploadMore": "تحميل المزيد"
     },
     "howTo": {
-      "title": "كيفية تجميع الصور أونلاين",
+      "title": "How to Image Merge Online in 3 Steps",
       "step1": {
         "number": "1",
-        "title": "ضبط حجم اللوحة",
-        "description": "اضبط عرض وارتفاع اللوحة لتناسب التصميم المطلوب."
+        "title": "Set Canvas & Start Image Merge Online",
+        "description": "Adjust the canvas width and height to prepare your layout for image merge online."
       },
       "step2": {
         "number": "2",
-        "title": "إضافة وترتيب الصور",
-        "description": "قم بتحميل صورك واسحبها لوضعها في المكان المناسب. قم بتغيير الحجم والتدوير حسب الحاجة."
+        "title": "Join Images Together on Canvas",
+        "description": "Upload your files to join images together. Drag, scale, and rotate as an intuitive image stitcher."
       },
       "step3": {
         "number": "3",
-        "title": "تصدير عملك",
-        "description": "انقر على تنزيل لحفظ صورتك المجمعة كملف واحد."
+        "title": "Join Photos Together & Download",
+        "description": "Click download to save your merged creation after you join photos together into a single file."
       }
     },
     "faq": {
-      "title": "الأسئلة الشائعة حول تجميع الصور أونلاين",
+      "title": "Image Merge Online — Frequently Asked Questions",
+      "subtitle": "Everything you need to know about how to image merge online in your browser",
       "items": [
         {
-          "question": "هل هذه الأداة لتجميع الصور أونلاين مجانية حقاً؟",
-          "answer": "نعم، أداتنا مجانية 100%. لا توجد رسوم خفية أو اشتراكات أو علامات مائية على الصور المصدرة."
+          "question": "Is the image merge online tool really free to use?",
+          "answer": "Yes! Our tool to image merge online is 100% free with no limits, no watermarks, and no sign-up. Join images together as often as you like."
         },
         {
-          "question": "كيف أستخدم أداة تجميع الصور هذه أونلاين؟",
-          "answer": "ببساطة اضبط حجم اللوحة، وحمل صورك، واستخدم الماوس لسحبها وترتيبها. يمكنك استخدام لوحة الخصائص لتدوير كل طبقة وضبط شفافيتها."
+          "question": "How do I use this image stitcher to join photos together?",
+          "answer": "Simply set your canvas size, upload your photos to join photos together, and drag them into position. Our image stitcher gives you full control over layer order and rotation."
         },
         {
-          "question": "هل تبقى بياناتي خاصة أثناء دمج الصور أونلاين؟",
-          "answer": "بالتأكيد. تستخدم هذه الأداة المعالجة من جانب المستخدم (client-side)، مما يعني أن صورك لا تغادر جهاز الكمبيوتر الخاص بك أبداً."
+          "question": "Is it safe and private to image merge online with this tool?",
+          "answer": "Absolutely. When you image merge online here, all processing is client-side. Your files never leave your browser when you join images together."
         },
         {
-          "question": "ما هي تنسيقات الصور المدعومة؟",
-          "answer": "نحن ندعم جميع تنسيقات الويب الشائعة بما في ذلك JPG و PNG و WebP و SVG."
+          "question": "What image formats can I join photos together with?",
+          "answer": "You can image merge online using JPG, PNG, WebP, SVG, and more. Our image stitcher exports your merged result in high resolution."
         }
       ]
+    },
+    "seoContent": {
+      "title": "The Best Free Tool to Image Merge Online",
+      "body": "Need a reliable tool to image merge online? Our free browser-based image stitcher makes it simple to join images together and join photos together into a single image. Whether you want to image merge online for social media posts, real estate photo comparisons, or creative design collages, our image stitcher offers complete flexibility. Drag, rotate, resize, and layer photos in any order. Because you image merge online directly in your browser, your files remain 100% private and are never uploaded to any server. Try our free tool to join photos together today and get instant, high-quality results."
     }
   }
 }

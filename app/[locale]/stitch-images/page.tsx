@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import ImageStitcherPageClient from './page-client';
-import StructuredData from '@/components/structured-data'
+import { JsonLd, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
 
 export const runtime = 'edge';
 
@@ -98,34 +98,24 @@ export default async function Page({
 
   const faqT = await getTranslations({ locale, namespace: 'ImageStitcherTool.faq' });
   const faqItems = faqT.raw('items') as Array<{ question: string; answer: string }>;
+  const faqStructuredData = getFaqSchema(faqItems);
 
-  const faqStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  }
+  const howToT = await getTranslations({ locale, namespace: 'ImageStitcherTool.howTo' });
+  const howToStructuredData = getHowToSchema({
+    name: howToT('title'),
+    description: t('pageDescription'),
+    steps: [
+      { title: howToT('step1.title'), text: howToT('step1.description') },
+      { title: howToT('step2.title'), text: howToT('step2.description') },
+      { title: howToT('step3.title'), text: howToT('step3.description') },
+    ],
+  });
 
   return (
     <>
-      {softwareStructuredData && (
-        <StructuredData
-          id="software-application-structured-data"
-          data={softwareStructuredData}
-        />
-      )}
-      {faqStructuredData && (
-        <StructuredData
-          id="faq-structured-data"
-          data={faqStructuredData}
-        />
-      )}
+      {softwareStructuredData && <JsonLd data={softwareStructuredData} />}
+      {faqStructuredData && <JsonLd data={faqStructuredData} />}
+      {howToStructuredData && <JsonLd data={howToStructuredData} />}
       <ImageStitcherPageClient />
     </>
   );

@@ -1,15 +1,15 @@
 {
   "ImageStitcherTool": {
-    "badge": "画像結合オンライン",
-    "pageTitle": "無料オンライン画像結合ツール",
-    "pageDescription": "カスタマイズ可能なキャンバスで複数の画像を結合します。ブラウザで直接、画像を自由にドラッグ、リサイズ、回転、配置できます。",
+    "badge": "Image Merge Online",
+    "pageTitle": "Free Image Merge Online Tool — Join Images Together",
+    "pageDescription": "Image merge online for free. Use our flexible image stitcher to join images together and join photos together on a custom canvas — fast, private, and 100% in your browser.",
     "metadata": {
-      "title": "無料オンライン画像結合ツール — 写真結合・合成オンライン",
-      "description": "最高の無料オンライン画像結合ツールです。複数の写真を1つのキャンバスに結合します。ブラウザで即座に画像をドラッグ、回転、レイヤー化できるプロ仕様のオンライン写真結合ツールです。"
+      "title": "Image Merge Online Free — Image Stitcher & Join Photos Together",
+      "description": "The best free tool to image merge online. Use our online image stitcher to join images together and join photos together into one high-quality image right in your browser."
     },
     "intro": {
-      "title": "プロ仕様の無料オンライン画像結合ツール",
-      "content": "当社の無料オンライン画像結合ツールを使用すると、ダウンロードやアカウント登録なしで、複数の写真を1つの高解像度作品に結合できます。コラージュ作成、プロ仕様のモックアップ、あるいは単純な写真のオンライン合成など、このオンライン写真結合ツールはブラウザ上でデスクトップアプリのような柔軟性を提供します。レイヤーのドラッグ、リサイズ、順序変更も簡単で、すべての処理はローカルで行われるため、完全なプライバシーが保たれます。"
+      "title": "The Easy Way to Image Merge Online",
+      "content": "Looking for a simple way to image merge online? Our free image stitcher lets you join images together and join photos together seamlessly on a customizable canvas. Whether you want to image merge online for side-by-side photo comparisons, create photo collages, or combine graphics, our tool makes it effortless. Drag, resize, rotate, and layer your images freely. When you image merge online with our tool, all processing happens locally on your device for complete privacy."
     },
     "controls": {
       "canvasSettings": "キャンバス設定",
@@ -54,43 +54,48 @@
       "uploadMore": "さらにアップロード"
     },
     "howTo": {
-      "title": "オンラインで画像を結合する方法",
+      "title": "How to Image Merge Online in 3 Steps",
       "step1": {
         "number": "1",
-        "title": "キャンバスサイズを設定",
-        "description": "目的のレイアウトに合わせてキャンバスの幅と高さを調整します。"
+        "title": "Set Canvas & Start Image Merge Online",
+        "description": "Adjust the canvas width and height to prepare your layout for image merge online."
       },
       "step2": {
         "number": "2",
-        "title": "画像を追加して配置",
-        "description": "画像をアップロードし、位置をドラッグして調整します。必要に応じてリサイズや回転を行います。"
+        "title": "Join Images Together on Canvas",
+        "description": "Upload your files to join images together. Drag, scale, and rotate as an intuitive image stitcher."
       },
       "step3": {
         "number": "3",
-        "title": "作品を書き出す",
-        "description": "ダウンロードをクリックして、結合した画像を1つのファイルとして保存します."
+        "title": "Join Photos Together & Download",
+        "description": "Click download to save your merged creation after you join photos together into a single file."
       }
     },
     "faq": {
-      "title": "写真結合オンライン よくある質問",
+      "title": "Image Merge Online — Frequently Asked Questions",
+      "subtitle": "Everything you need to know about how to image merge online in your browser",
       "items": [
         {
-          "question": "この無料オンライン画像結合ツールは本当に無料ですか？",
-          "answer": "はい、当社のツールは100%無料で利用できます。隠れた費用、サブスクリプション、書き出した画像へのウォーターマークなどは一切ありません。"
+          "question": "Is the image merge online tool really free to use?",
+          "answer": "Yes! Our tool to image merge online is 100% free with no limits, no watermarks, and no sign-up. Join images together as often as you like."
         },
         {
-          "question": "このオンライン写真結合ツールはどうやって使いますか？",
-          "answer": "キャンバスサイズを設定し、画像をアップロードしたら、マウスでドラッグして配置するだけです。プロパティパネルで各レイヤーの回転や不透明度を調整できます。"
+          "question": "How do I use this image stitcher to join photos together?",
+          "answer": "Simply set your canvas size, upload your photos to join photos together, and drag them into position. Our image stitcher gives you full control over layer order and rotation."
         },
         {
-          "question": "オンラインで写真を合成している間、データは非公開に保たれますか？",
-          "answer": "もちろんです。このツールはクライアントサイドでの処理を行うため、画像がコンピュータの外に出たり、当社のサーバーに送信されたりすることはありません。"
+          "question": "Is it safe and private to image merge online with this tool?",
+          "answer": "Absolutely. When you image merge online here, all processing is client-side. Your files never leave your browser when you join images together."
         },
         {
-          "question": "サポートされている画像形式は何ですか？",
-          "answer": "JPG、PNG、WebP、SVGを含む、すべての一般的なウェブ形式をサポートしています。"
+          "question": "What image formats can I join photos together with?",
+          "answer": "You can image merge online using JPG, PNG, WebP, SVG, and more. Our image stitcher exports your merged result in high resolution."
         }
       ]
+    },
+    "seoContent": {
+      "title": "The Best Free Tool to Image Merge Online",
+      "body": "Need a reliable tool to image merge online? Our free browser-based image stitcher makes it simple to join images together and join photos together into a single image. Whether you want to image merge online for social media posts, real estate photo comparisons, or creative design collages, our image stitcher offers complete flexibility. Drag, rotate, resize, and layer photos in any order. Because you image merge online directly in your browser, your files remain 100% private and are never uploaded to any server. Try our free tool to join photos together today and get instant, high-quality results."
     }
   }
 }

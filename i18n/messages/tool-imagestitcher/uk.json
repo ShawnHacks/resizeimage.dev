@@ -1,15 +1,15 @@
 {
   "ImageStitcherTool": {
-    "badge": "Зшивання зображень онлайн",
-    "pageTitle": "Безкоштовний онлайн-інструмент для зшивання зображень",
-    "pageDescription": "Зшивайте кілька зображень на налаштовуваному полотні. Вільно перетягуйте, змінюйте розмір, повертайте та розташовуйте зображення безпосередньо у своєму браузері.",
+    "badge": "Image Merge Online",
+    "pageTitle": "Free Image Merge Online Tool — Join Images Together",
+    "pageDescription": "Image merge online for free. Use our flexible image stitcher to join images together and join photos together on a custom canvas — fast, private, and 100% in your browser.",
     "metadata": {
-      "title": "Безкоштовне зшивання зображень онлайн — комбінування та поєднання фото",
-      "description": "Найкращий безкоштовний онлайн-інструмент для зшивання зображень. Об'єднуйте кілька фотографій на одному полотні. Професійний інструмент для зшивання фото онлайн."
+      "title": "Image Merge Online Free — Image Stitcher & Join Photos Together",
+      "description": "The best free tool to image merge online. Use our online image stitcher to join images together and join photos together into one high-quality image right in your browser."
     },
     "intro": {
-      "title": "Професійний безкоштовний онлайн-інструмент для зшивання зображень",
-      "content": "Наш безкоштовний інструмент для зшивання зображень онлайн дозволяє об'єднувати кілька фотографій в одну роботу високої роздільної здатності без завантажень або реєстрації. Незалежно від того, чи створюєте ви колаж, професійний макет або просто об'єднуєте фото, цей інструмент забезпечує гнучкість настільного додатка безпосередньо у вашому браузері. Перетягуйте зображення, змінюйте їх розмір та порядок шарів, зберігаючи повну конфіденційність, оскільки вся обробка відбувається локально."
+      "title": "The Easy Way to Image Merge Online",
+      "content": "Looking for a simple way to image merge online? Our free image stitcher lets you join images together and join photos together seamlessly on a customizable canvas. Whether you want to image merge online for side-by-side photo comparisons, create photo collages, or combine graphics, our tool makes it effortless. Drag, resize, rotate, and layer your images freely. When you image merge online with our tool, all processing happens locally on your device for complete privacy."
     },
     "controls": {
       "canvasSettings": "Налаштування полотна",
@@ -54,43 +54,48 @@
       "uploadMore": "Завантажити ще"
     },
     "howTo": {
-      "title": "Як зшити зображення онлайн",
+      "title": "How to Image Merge Online in 3 Steps",
       "step1": {
         "number": "1",
-        "title": "Встановити розмір полотна",
-        "description": "Налаштуйте ширину та висоту полотна відповідно до бажаного макета."
+        "title": "Set Canvas & Start Image Merge Online",
+        "description": "Adjust the canvas width and height to prepare your layout for image merge online."
       },
       "step2": {
         "number": "2",
-        "title": "Додати та розташувати зображення",
-        "description": "Завантажте зображення та перетягніть їх на потрібні позиції. Змінюйте розмір та повертайте за потреби."
+        "title": "Join Images Together on Canvas",
+        "description": "Upload your files to join images together. Drag, scale, and rotate as an intuitive image stitcher."
       },
       "step3": {
         "number": "3",
-        "title": "Експортувати результат",
-        "description": "Натисніть «Завантажити», щоб зберегти об'єднане зображення як один файл."
+        "title": "Join Photos Together & Download",
+        "description": "Click download to save your merged creation after you join photos together into a single file."
       }
     },
     "faq": {
-      "title": "Часті запитання щодо зшивання фото онлайн",
+      "title": "Image Merge Online — Frequently Asked Questions",
+      "subtitle": "Everything you need to know about how to image merge online in your browser",
       "items": [
         {
-          "question": "Цей безкоштовний онлайн-інструмент для зшивання зображень справді безкоштовний?",
-          "answer": "Так, наш інструмент на 100% безкоштовний. Немає прихованих комісій, підписок або водяних знаків на вихідних зображеннях."
+          "question": "Is the image merge online tool really free to use?",
+          "answer": "Yes! Our tool to image merge online is 100% free with no limits, no watermarks, and no sign-up. Join images together as often as you like."
         },
         {
-          "question": "Як користуватися цим онлайн-інструментом для зшивання фото?",
-          "answer": "Просто встановіть розмір полотна, завантажте зображення та використовуйте мишу, щоб перетягнути та розташувати їх. Ви можете використовувати панель властивостей для повороту та налаштування прозорості кожного шару."
+          "question": "How do I use this image stitcher to join photos together?",
+          "answer": "Simply set your canvas size, upload your photos to join photos together, and drag them into position. Our image stitcher gives you full control over layer order and rotation."
         },
         {
-          "question": "Чи залишаються мої дані конфіденційними під час об'єднання фото онлайн?",
-          "answer": "Безумовно. Цей інструмент використовує обробку на стороні клієнта, що означає, що ваші зображення ніколи не залишають ваш комп'ютер і не потрапляють на наші сервери."
+          "question": "Is it safe and private to image merge online with this tool?",
+          "answer": "Absolutely. When you image merge online here, all processing is client-side. Your files never leave your browser when you join images together."
         },
         {
-          "question": "Які формати зображень підтримуються?",
-          "answer": "Ми підтримуємо всі поширені веб-формати, включаючи JPG, PNG, WebP та SVG."
+          "question": "What image formats can I join photos together with?",
+          "answer": "You can image merge online using JPG, PNG, WebP, SVG, and more. Our image stitcher exports your merged result in high resolution."
         }
       ]
+    },
+    "seoContent": {
+      "title": "The Best Free Tool to Image Merge Online",
+      "body": "Need a reliable tool to image merge online? Our free browser-based image stitcher makes it simple to join images together and join photos together into a single image. Whether you want to image merge online for social media posts, real estate photo comparisons, or creative design collages, our image stitcher offers complete flexibility. Drag, rotate, resize, and layer photos in any order. Because you image merge online directly in your browser, your files remain 100% private and are never uploaded to any server. Try our free tool to join photos together today and get instant, high-quality results."
     }
   }
 }
