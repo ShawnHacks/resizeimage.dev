@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Free Online Image Compressor",
-    "description": "Free online image compressor to reduce image size and reduce picture size. Fast, private PNG compressor & photo optimizer running 100% in your browser.",
-    "metaTitle": "Free Image Compressor Online — Reduce Image Size & PNG Compressor",
-    "metaDescription": "Best free online image compressor to reduce image size and reduce picture size without quality loss. Powerful PNG compressor and JPG optimizer.",
+    "title": "เครื่องมือบีบอัดรูปภาพออนไลน์ฟรี",
+    "description": "เครื่องมือบีบอัดรูปภาพออนไลน์ฟรีเพื่อลดขนาดไฟล์ภาพ บีบอัด PNG, JPG, WebP & AVIF รวดเร็วและเป็นส่วนตัว ทำงานในเบราว์เซอร์ 100%",
+    "metaTitle": "เครื่องมือบีบอัดรูปภาพออนไลน์ฟรี — ลดขนาดรูปภาพ & บีบอัด PNG",
+    "metaDescription": "เครื่องมือบีบอัดรูปภาพออนไลน์ฟรีที่ดีที่สุด ลดขนาดรูปภาพโดยไม่เสียความละเอียด ออปติไมเซอร์ PNG และ JPG ทรงพลัง",
     "intro": {
-      "title": "The Best Free Online Image Compressor Tool",
-      "content": "Looking for a fast, free online image compressor to reduce image size? Our browser-based image compressor allows you to reduce picture size instantly without quality loss. Whether you need a dedicated PNG compressor for graphics or a JPEG optimizer to speed up your website, our tool handles it all. Easily compress photos to meet upload limits or save disk space. Because our image compressor processes files locally on your device, your images remain 100% private and are never uploaded to any remote server."
+      "title": "เครื่องมือบีบอัดรูปภาพออนไลน์ฟรีที่ดีที่สุด",
+      "content": "กำลังมองหาเครื่องมือบีบอัดรูปภาพออนไลน์ที่รวดเร็วและฟรีเพื่อลดขนาดรูปภาพใช่ไหม? เครื่องมือของเราช่วยลดขนาดไฟล์ภาพได้ทันทีโดยไม่สูญเสียความคมชัด ทำงานในเบราว์เซอร์ปลอดภัย 100%"
     },
     "settings": "การตั้งค่า",
     "processing": "กำลังประมวลผล...",
@@ -22,24 +22,24 @@
     "qualityHint": "ผลลัพธ์คุณภาพต่ำลงจะทำให้ขนาดไฟล์เล็กลง แต่อาจลดรายละเอียดของรูปภาพ",
     "qualityPng": "การบีบอัด PNG เป็นแบบไม่สูญเสียข้อมูล ดังนั้นจึงไม่สามารถปรับคุณภาพได้",
     "faq": {
-      "title": "Free Online Image Compressor — FAQ",
-      "subtitle": "Everything you need to know about using our image compressor to reduce image size",
+      "title": "เครื่องมือบีบอัดรูปภาพออนไลน์ฟรี — FAQ",
+      "subtitle": "คำถามที่พบบ่อยเกี่ยวกับการใช้เครื่องมือลดขนาดรูปภาพ",
       "items": [
         {
-          "question": "Is this online image compressor really free to use?",
-          "answer": "Yes! Our online image compressor is 100% free with no limits, no watermarks, and no registration required. Use our PNG compressor and image compressor as often as you need."
+          "question": "เครื่องมือบีบอัดรูปภาพนี้ฟรีจริงหรือ?",
+          "answer": "ใช่! ฟรี 100% ไม่มีลายน้ำและไม่ต้องลงทะเบียน"
         },
         {
-          "question": "How does an image compressor reduce image size without losing quality?",
-          "answer": "Our image compressor uses smart optimization techniques to remove unnecessary metadata and apply efficient compression. This allows you to reduce image size and reduce picture size while keeping visual clarity intact."
+          "question": "บีบอัดรูปภาพโดยไม่เสียความคมชัดได้อย่างไร?",
+          "answer": "เครื่องมือจะลบข้อมูลเมตาที่ไม่จำเป็นและใช้เทคโนโลยีบีบอัดที่ชาญฉลาด"
         },
         {
-          "question": "Is it safe to use this PNG compressor and image compressor?",
-          "answer": "Absolutely. When you use our image compressor to reduce picture size, all processing happens locally inside your browser. Your images never leave your computer."
+          "question": "ปลอดภัยหรือไม่ในการใช้งาน?",
+          "answer": "ปลอดภัยแน่นอน การประมวลผลทั้งหมดทำในเบราว์เซอร์ของคุณ"
         },
         {
-          "question": "What image formats does this image compressor support?",
-          "answer": "Our image compressor supports JPG, JPEG, PNG, WebP, and AVIF. Whether you need a PNG compressor or JPEG optimizer, you can reduce image size effortlessly."
+          "question": "รองรับไฟล์ภาพรูปแบบใดบ้าง?",
+          "answer": "รองรับ JPG, JPEG, PNG, WebP และ AVIF"
         }
       ]
     },
@@ -48,26 +48,26 @@
       "error": "การบีบอัดล้มเหลว โปรดลองใช้รูปภาพหรือรูปแบบอื่น"
     },
     "howTo": {
-      "title": "How to Use Our Image Compressor to Reduce Image Size in 3 Steps",
+      "title": "วิธีลดขนาดรูปภาพใน 3 ขั้นตอน",
       "step1": {
         "number": "1",
-        "title": "Upload File to Image Compressor",
-        "description": "Select or drag and drop your photo into our free online image compressor to reduce picture size."
+        "title": "อัปโหลดไฟล์ไปยังเครื่องมือบีบอัด",
+        "description": "เลือกหรือลากไฟล์ภาพของคุณมาวางในเครื่องมือ"
       },
       "step2": {
         "number": "2",
-        "title": "Adjust Settings on PNG Compressor",
-        "description": "Fine-tune output format and quality settings on our image compressor or PNG compressor."
+        "title": "ปรับแต่งการตั้งค่า",
+        "description": "ปรับรูปแบบไฟล์ขาออกและระดับคุณภาพการบีบอัด"
       },
       "step3": {
         "number": "3",
-        "title": "Reduce Image Size & Download",
-        "description": "Download your compressed image file immediately after our image compressor reduces image size."
+        "title": "ลดขนาดรูปภาพ & ดาวน์โหลด",
+        "description": "ดาวน์โหลดไฟล์รูปภาพที่บีบอัดแล้วได้ทันที"
       }
     },
     "seoContent": {
-      "title": "Why You Need a Powerful Online Image Compressor",
-      "body": "Uncompressed photos and heavy graphics slow down website load times, take up storage, and exceed email attachment limits. Using an effective online image compressor is the easiest way to reduce image size and reduce picture size without sacrificing visual fidelity. Our browser-first image compressor functions as a high-performance PNG compressor, WebP optimizer, and JPG reducer all in one. You can reduce picture size for web design, social media posts, or mobile apps in seconds. Because our online image compressor processes everything client-side, your files stay completely private and secure. Try our free image compressor today to reduce image size instantly."
+      "title": "ทำไมคุณถึงต้องการเครื่องมือบีบอัดรูปภาพออนไลน์",
+      "body": "รูปภาพที่ไม่ได้บีบอัดทำให้เว็บไซต์โหลดช้า ใช้เครื่องมือบีบอัดรูปภาพของเราเพื่อลดขนาดไฟล์ได้อย่างรวดเร็วและปลอดภัย"
     }
   }
 }

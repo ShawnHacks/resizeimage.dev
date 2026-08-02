@@ -1,15 +1,15 @@
 {
   "ImageStitcherTool": {
-    "badge": "Image Merge Online",
-    "pageTitle": "Free Image Merge Online Tool — Join Images Together",
-    "pageDescription": "Image merge online for free. Use our flexible image stitcher to join images together and join photos together on a custom canvas — fast, private, and 100% in your browser.",
+    "badge": "অনলাইন ছবি জোড়া লাগান",
+    "pageTitle": "ফ্রি অনলাইন ছবি জোড়া লাগানোর টুল — একাধিক ছবি একত্র করুন",
+    "pageDescription": "বিনামূল্যে অনলাইনে ছবি জোড়া লাগান। কাস্টম ক্যানভাসে একাধিক ছবি একত্র করতে আমাদের ফ্লেক্সিবল ইমেজ স্টিচার ব্যবহার করুন — দ্রুত, সুরক্ষিত এবং ১০০% ব্রাউজারে।",
     "metadata": {
-      "title": "Image Merge Online Free — Image Stitcher & Join Photos Together",
-      "description": "The best free tool to image merge online. Use our online image stitcher to join images together and join photos together into one high-quality image right in your browser."
+      "title": "ফ্রি অনলাইন ছবি জোড়া লাগান — ছবি একত্র করার টুল",
+      "description": "অনলাইনে ছবি জোড়া লাগানোর সেরা ফ্রি টুল। আপনার ব্রাউজারে সরাসরি একাধিক ছবি জোড়া লাগিয়ে একটি উচ্চমানের ছবি তৈরি করুন।"
     },
     "intro": {
-      "title": "The Easy Way to Image Merge Online",
-      "content": "Looking for a simple way to image merge online? Our free image stitcher lets you join images together and join photos together seamlessly on a customizable canvas. Whether you want to image merge online for side-by-side photo comparisons, create photo collages, or combine graphics, our tool makes it effortless. Drag, resize, rotate, and layer your images freely. When you image merge online with our tool, all processing happens locally on your device for complete privacy."
+      "title": "সহজে অনলাইনে ছবি জোড়া লাগানোর উপায়",
+      "content": "অনলাইনে ছবি জোড়া লাগানোর সহজ উপায় খুঁজছেন? আমাদের ফ্রি ইমেজ স্টিচার কাস্টম ক্যানভাসে ছবি একত্র করা সহজ করে তোলে। ছবি ড্র্যাগ, রিসাইজ, রোটেট এবং লেয়ারিং করুন সম্পূর্ণ প্রাইভেসি সহ।"
     },
     "controls": {
       "canvasSettings": "ক্যানভাস সেটিংস",
@@ -54,48 +54,48 @@
       "uploadMore": "আরও আপলোড করুন"
     },
     "howTo": {
-      "title": "How to Image Merge Online in 3 Steps",
+      "title": "৩ ধাপে অনলাইনে ছবি জোড়া লাগান",
       "step1": {
         "number": "1",
-        "title": "Set Canvas & Start Image Merge Online",
-        "description": "Adjust the canvas width and height to prepare your layout for image merge online."
+        "title": "ক্যানভাস সেট করুন ও শুরু করুন",
+        "description": "ক্যানভাসের প্রস্থ ও উচ্চতা সমন্বয় করে লেআউট তৈরি করুন।"
       },
       "step2": {
         "number": "2",
-        "title": "Join Images Together on Canvas",
-        "description": "Upload your files to join images together. Drag, scale, and rotate as an intuitive image stitcher."
+        "title": "ক্যানভাসে ছবি জোড়া লাগান",
+        "description": "আপনার ফাইল আপলোড করুন। সহজে ড্র্যাগ, স্কেল ও রোটেট করুন।"
       },
       "step3": {
         "number": "3",
-        "title": "Join Photos Together & Download",
-        "description": "Click download to save your merged creation after you join photos together into a single file."
+        "title": "ছবি একত্র করুন ও ডাউনলোড করুন",
+        "description": "ছবি জোড়া লাগানোর পর ডাউনলোড বাটনে ক্লিক করে সেভ করুন।"
       }
     },
     "faq": {
-      "title": "Image Merge Online — Frequently Asked Questions",
-      "subtitle": "Everything you need to know about how to image merge online in your browser",
+      "title": "অনলাইন ছবি জোড়া লাগান — সাধারণ প্রশ্নাবলী",
+      "subtitle": "ব্রাউজারে ছবি জোড়া লাগানোর বিষয়ে যা জানা দরকার",
       "items": [
         {
-          "question": "Is the image merge online tool really free to use?",
-          "answer": "Yes! Our tool to image merge online is 100% free with no limits, no watermarks, and no sign-up. Join images together as often as you like."
+          "question": "এই টুলটি কি সত্যিই ফ্রি?",
+          "answer": "হ্যাঁ! ১০০% ফ্রি, কোনো সীমা বা ওয়াটারমার্ক নেই এবং রেজিস্ট্রেশনের প্রয়োজন নেই।"
         },
         {
-          "question": "How do I use this image stitcher to join photos together?",
-          "answer": "Simply set your canvas size, upload your photos to join photos together, and drag them into position. Our image stitcher gives you full control over layer order and rotation."
+          "question": "আমি কীভাবে একাধিক ছবি জোড়া লাগাব?",
+          "answer": "ক্যানভাসের সাইজ সেট করুন, ছবি আপলোড করুন এবং পজিশনে ড্র্যাগ করুন।"
         },
         {
-          "question": "Is it safe and private to image merge online with this tool?",
-          "answer": "Absolutely. When you image merge online here, all processing is client-side. Your files never leave your browser when you join images together."
+          "question": "ছবি জোড়া লাগানো কি নিরাপদ ও গোপনীয়?",
+          "answer": "হ্যাঁ, সম্পূর্ণ নিরাপদ। সব প্রসেসিং ব্রাউজারের ভেতর লোকালি সম্পন্ন হয়।"
         },
         {
-          "question": "What image formats can I join photos together with?",
-          "answer": "You can image merge online using JPG, PNG, WebP, SVG, and more. Our image stitcher exports your merged result in high resolution."
+          "question": "কোন কোন ইমেজ ফরম্যাট সাপোর্ট করে?",
+          "answer": "JPG, PNG, WebP, SVG সহ প্রধান সব ফরম্যাট সাপোর্ট করে।"
         }
       ]
     },
     "seoContent": {
-      "title": "The Best Free Tool to Image Merge Online",
-      "body": "Need a reliable tool to image merge online? Our free browser-based image stitcher makes it simple to join images together and join photos together into a single image. Whether you want to image merge online for social media posts, real estate photo comparisons, or creative design collages, our image stitcher offers complete flexibility. Drag, rotate, resize, and layer photos in any order. Because you image merge online directly in your browser, your files remain 100% private and are never uploaded to any server. Try our free tool to join photos together today and get instant, high-quality results."
+      "title": "অনলাইনে ছবি জোড়া লাগানোর সেরা ফ্রি টুল",
+      "body": "অনলাইনে ছবি জোড়া লাগানোর নির্ভরযোগ্য টুল প্রয়োজন? আমাদের ফ্রি ব্রাউজার-ভিত্তিক ইমেজ স্টিচার দিয়ে সহজে একাধিক ছবি জোড়া লাগিয়ে নিন।"
     }
   }
 }

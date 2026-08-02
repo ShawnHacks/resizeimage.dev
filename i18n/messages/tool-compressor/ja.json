@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Free Online Image Compressor",
-    "description": "Free online image compressor to reduce image size and reduce picture size. Fast, private PNG compressor & photo optimizer running 100% in your browser.",
-    "metaTitle": "Free Image Compressor Online — Reduce Image Size & PNG Compressor",
-    "metaDescription": "Best free online image compressor to reduce image size and reduce picture size without quality loss. Powerful PNG compressor and JPG optimizer.",
+    "title": "無料オンライン画像圧縮ツール",
+    "description": "画像サイズを縮小する無料オンライン画像圧縮ツール。ブラウザ内で100%動作する高速・安全なPNG圧縮＆写真最適化ツール。",
+    "metaTitle": "無料オンライン画像圧縮 — 画像サイズ削減＆PNG圧縮ツール",
+    "metaDescription": "画質を落とさずに画像サイズや写真の容量を削減する最高の無料オンライン画像圧縮ツール。強力なPNG＆JPG最適化。",
     "intro": {
-      "title": "The Best Free Online Image Compressor Tool",
-      "content": "Looking for a fast, free online image compressor to reduce image size? Our browser-based image compressor allows you to reduce picture size instantly without quality loss. Whether you need a dedicated PNG compressor for graphics or a JPEG optimizer to speed up your website, our tool handles it all. Easily compress photos to meet upload limits or save disk space. Because our image compressor processes files locally on your device, your images remain 100% private and are never uploaded to any remote server."
+      "title": "最高の無料オンライン画像圧縮ツール",
+      "content": "画像サイズを縮小するための高速で無料のオンライン画像圧縮ツールをお探しですか？当社のブラウザベースの圧縮ツールを使用すると、画質を損なうことなく即座に写真の容量を削減できます。PNG圧縮やJPEG最適化など、あらゆるニーズに対応。処理は100%ローカルで行われるため安全です。"
     },
     "settings": "設定",
     "processing": "処理中...",
@@ -22,24 +22,24 @@
     "qualityHint": "品質を下げるとファイルサイズは小さくなりますが、画像の細部が失われる可能性があります。",
     "qualityPng": "PNG圧縮は可逆圧縮のため、品質調整は利用できません。",
     "faq": {
-      "title": "Free Online Image Compressor — FAQ",
-      "subtitle": "Everything you need to know about using our image compressor to reduce image size",
+      "title": "無料オンライン画像圧縮ツール — FAQ",
+      "subtitle": "画像サイズ削減と圧縮ツールの使い方に関するよくある質問",
       "items": [
         {
-          "question": "Is this online image compressor really free to use?",
-          "answer": "Yes! Our online image compressor is 100% free with no limits, no watermarks, and no registration required. Use our PNG compressor and image compressor as often as you need."
+          "question": "この画像圧縮ツールは本当に無料ですか？",
+          "answer": "はい！制限や水増し・ウォーターマーク、ユーザー登録なしで100%無料です。"
         },
         {
-          "question": "How does an image compressor reduce image size without losing quality?",
-          "answer": "Our image compressor uses smart optimization techniques to remove unnecessary metadata and apply efficient compression. This allows you to reduce image size and reduce picture size while keeping visual clarity intact."
+          "question": "画質を落とさずにどうやって容量を減らすのですか？",
+          "answer": "不要なメタデータを削除し、スマートな最適化圧縮を適用することで、視覚的な鮮明さを維持しながら容量を削減します。"
         },
         {
-          "question": "Is it safe to use this PNG compressor and image compressor?",
-          "answer": "Absolutely. When you use our image compressor to reduce picture size, all processing happens locally inside your browser. Your images never leave your computer."
+          "question": "この圧縮ツールを使うのは安全ですか？",
+          "answer": "完全に安全です。すべての処理はブラウザ内でローカルに完結するため、ファイルが外部へ送信されることはありません。"
         },
         {
-          "question": "What image formats does this image compressor support?",
-          "answer": "Our image compressor supports JPG, JPEG, PNG, WebP, and AVIF. Whether you need a PNG compressor or JPEG optimizer, you can reduce image size effortlessly."
+          "question": "どの画像フォーマットに対応していますか？",
+          "answer": "JPG、JPEG、PNG、WebP、AVIFに対応しています。"
         }
       ]
     },
@@ -48,26 +48,26 @@
       "error": "圧縮に失敗しました。別の画像または形式をお試しください。"
     },
     "howTo": {
-      "title": "How to Use Our Image Compressor to Reduce Image Size in 3 Steps",
+      "title": "3ステップで画像サイズを削減",
       "step1": {
         "number": "1",
-        "title": "Upload File to Image Compressor",
-        "description": "Select or drag and drop your photo into our free online image compressor to reduce picture size."
+        "title": "画像を圧縮ツールにアップロード",
+        "description": "圧縮したい写真を選択するか、ドラッグ＆ドロップします。"
       },
       "step2": {
         "number": "2",
-        "title": "Adjust Settings on PNG Compressor",
-        "description": "Fine-tune output format and quality settings on our image compressor or PNG compressor."
+        "title": "設定を調整",
+        "description": "出力フォーマットと圧縮品質設定を調整します。"
       },
       "step3": {
         "number": "3",
-        "title": "Reduce Image Size & Download",
-        "description": "Download your compressed image file immediately after our image compressor reduces image size."
+        "title": "サイズを削減してダウンロード",
+        "description": "最適化された圧縮画像をすぐにダウンロードします。"
       }
     },
     "seoContent": {
-      "title": "Why You Need a Powerful Online Image Compressor",
-      "body": "Uncompressed photos and heavy graphics slow down website load times, take up storage, and exceed email attachment limits. Using an effective online image compressor is the easiest way to reduce image size and reduce picture size without sacrificing visual fidelity. Our browser-first image compressor functions as a high-performance PNG compressor, WebP optimizer, and JPG reducer all in one. You can reduce picture size for web design, social media posts, or mobile apps in seconds. Because our online image compressor processes everything client-side, your files stay completely private and secure. Try our free image compressor today to reduce image size instantly."
+      "title": "強力なオンライン画像圧縮ツールが必要な理由",
+      "body": "未圧縮の重い写真はウェブサイトの読み込み速度を低下させ、ストレージを圧迫します。当社のオンライン画像圧縮ツールを使用すれば、画質を犠牲にすることなく写真やグラフィックのサイズを効率的に削減できます。"
     }
   }
 }

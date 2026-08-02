@@ -1,15 +1,15 @@
 {
   "ImageStitcherTool": {
-    "badge": "Image Merge Online",
-    "pageTitle": "Free Image Merge Online Tool — Join Images Together",
-    "pageDescription": "Image merge online for free. Use our flexible image stitcher to join images together and join photos together on a custom canvas — fast, private, and 100% in your browser.",
+    "badge": "온라인 이미지 합치기",
+    "pageTitle": "무료 온라인 이미지 합치기 도구 — 여러 사진 이어붙이기",
+    "pageDescription": "무료로 온라인에서 이미지를 합치세요. 유연한 이미지 스티처를 사용하여 사용자 지정 캔버스에서 여러 사진과 이미지를 이어붙이세요 — 빠르고 안전하며 100% 브라우저 내에서 실행됩니다.",
     "metadata": {
-      "title": "Image Merge Online Free — Image Stitcher & Join Photos Together",
-      "description": "The best free tool to image merge online. Use our online image stitcher to join images together and join photos together into one high-quality image right in your browser."
+      "title": "무료 온라인 이미지 합치기 — 이미지 스티처 및 사진 이어붙이기",
+      "description": "최고의 무료 온라인 이미지 합치기 도구. 온라인 이미지 스티처를 사용하여 브라우저에서 직접 여러 사진을 고화질 단일 이미지로 합치세요."
     },
     "intro": {
-      "title": "The Easy Way to Image Merge Online",
-      "content": "Looking for a simple way to image merge online? Our free image stitcher lets you join images together and join photos together seamlessly on a customizable canvas. Whether you want to image merge online for side-by-side photo comparisons, create photo collages, or combine graphics, our tool makes it effortless. Drag, resize, rotate, and layer your images freely. When you image merge online with our tool, all processing happens locally on your device for complete privacy."
+      "title": "온라인에서 이미지를 쉽게 합치는 방법",
+      "content": "온라인에서 이미지를 합치는 간단한 방법을 찾고 계신가요? 무료 이미지 스티처를 사용하면 맞춤형 캔버스에서 이미지를 매끄럽게 이어붙일 수 있습니다. 사진 비교, 콜라주 제작, 그래픽 결합 등 어떤 목적이든 자유롭게 드래그, 크기 조절, 회전 및 레이어 정렬이 가능합니다. 모든 처리는 사용자의 기기에서 로컬로 진행되어 완벽한 개인정보 보호를 보장합니다."
     },
     "controls": {
       "canvasSettings": "캔버스 설정",
@@ -54,48 +54,48 @@
       "uploadMore": "추가 업로드"
     },
     "howTo": {
-      "title": "How to Image Merge Online in 3 Steps",
+      "title": "3단계로 온라인 이미지 합치기",
       "step1": {
         "number": "1",
-        "title": "Set Canvas & Start Image Merge Online",
-        "description": "Adjust the canvas width and height to prepare your layout for image merge online."
+        "title": "캔버스 설정 및 시작",
+        "description": "캔버스 너비와 높이를 조정하여 이미지 레이아웃을 준비합니다."
       },
       "step2": {
         "number": "2",
-        "title": "Join Images Together on Canvas",
-        "description": "Upload your files to join images together. Drag, scale, and rotate as an intuitive image stitcher."
+        "title": "캔버스에 이미지 이어붙이기",
+        "description": "파일을 업로드하고 직관적으로 드래그, 크기 조절 및 회전하여 배치합니다."
       },
       "step3": {
         "number": "3",
-        "title": "Join Photos Together & Download",
-        "description": "Click download to save your merged creation after you join photos together into a single file."
+        "title": "사진 합치기 및 다운로드",
+        "description": "사진을 하나의 파일로 합친 후 다운로드 버튼을 클릭하여 저장합니다."
       }
     },
     "faq": {
-      "title": "Image Merge Online — Frequently Asked Questions",
-      "subtitle": "Everything you need to know about how to image merge online in your browser",
+      "title": "온라인 이미지 합치기 — 자주 묻는 질문",
+      "subtitle": "브라우저에서 이미지를 합치는 방법에 대해 알아야 할 모든 것",
       "items": [
         {
-          "question": "Is the image merge online tool really free to use?",
-          "answer": "Yes! Our tool to image merge online is 100% free with no limits, no watermarks, and no sign-up. Join images together as often as you like."
+          "question": "온라인 이미지 합치기 도구가 정말 무료인가요?",
+          "answer": "네! 제한이나 워터마크, 회원가입 없이 100% 무료로 사용할 수 있습니다."
         },
         {
-          "question": "How do I use this image stitcher to join photos together?",
-          "answer": "Simply set your canvas size, upload your photos to join photos together, and drag them into position. Our image stitcher gives you full control over layer order and rotation."
+          "question": "사진을 어떻게 이어붙이나요?",
+          "answer": "캔버스 크기를 설정하고 사진을 업로드한 후 원하는 위치로 드래그하세요. 레이어 순서와 회전을 자유롭게 조절할 수 있습니다."
         },
         {
-          "question": "Is it safe and private to image merge online with this tool?",
-          "answer": "Absolutely. When you image merge online here, all processing is client-side. Your files never leave your browser when you join images together."
+          "question": "이미지를 합치는 과정이 안전하고 비공개인가요?",
+          "answer": "절대적으로 안전합니다. 모든 작업이 브라우저 내부에서 진행되어 사진이 서버로 전송되지 않습니다."
         },
         {
-          "question": "What image formats can I join photos together with?",
-          "answer": "You can image merge online using JPG, PNG, WebP, SVG, and more. Our image stitcher exports your merged result in high resolution."
+          "question": "어떤 이미지 형식을 지원하나요?",
+          "answer": "JPG, PNG, WebP, SVG 등을 모두 지원하며 고해상도로 결과를 내보낼 수 있습니다."
         }
       ]
     },
     "seoContent": {
-      "title": "The Best Free Tool to Image Merge Online",
-      "body": "Need a reliable tool to image merge online? Our free browser-based image stitcher makes it simple to join images together and join photos together into a single image. Whether you want to image merge online for social media posts, real estate photo comparisons, or creative design collages, our image stitcher offers complete flexibility. Drag, rotate, resize, and layer photos in any order. Because you image merge online directly in your browser, your files remain 100% private and are never uploaded to any server. Try our free tool to join photos together today and get instant, high-quality results."
+      "title": "최고의 무료 온라인 이미지 합치기 도구",
+      "body": "신뢰할 수 있는 온라인 이미지 합치기 도구가 필요하신가요? 당사의 무료 웹 기반 이미지 스티처는 여러 사진과 이미지를 하나로 합치는 작업을 매우 쉽게 만들어 줍니다. 소셜 미디어 게시물, 부동산 사진 비교, 디자인 콜라주 등 어떤 작업이든 자유롭게 사진을 드래그하고 회전하며 레이어를 쌓을 수 있습니다. 모든 작업은 브라우저에서 직접 수행되므로 파일이 100% 안전하게 보호됩니다."
     }
   }
 }

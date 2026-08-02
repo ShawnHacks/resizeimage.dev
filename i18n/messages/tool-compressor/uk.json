@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Free Online Image Compressor",
-    "description": "Free online image compressor to reduce image size and reduce picture size. Fast, private PNG compressor & photo optimizer running 100% in your browser.",
-    "metaTitle": "Free Image Compressor Online — Reduce Image Size & PNG Compressor",
-    "metaDescription": "Best free online image compressor to reduce image size and reduce picture size without quality loss. Powerful PNG compressor and JPG optimizer.",
+    "title": "Безкоштовний онлайн стискач зображень",
+    "description": "Безкоштовний онлайн стискач зображень для зменшення розміру файлів. Швидкий та приватний оптимізатор PNG, JPG, WebP та AVIF у браузері.",
+    "metaTitle": "Безкоштовний стискач зображень онлайн — Зменшити розмір фото & PNG",
+    "metaDescription": "Найкращий безкоштовний онлайн стискач зображень без втрати якості. Потужний оптимізатор PNG та JPG.",
     "intro": {
-      "title": "The Best Free Online Image Compressor Tool",
-      "content": "Looking for a fast, free online image compressor to reduce image size? Our browser-based image compressor allows you to reduce picture size instantly without quality loss. Whether you need a dedicated PNG compressor for graphics or a JPEG optimizer to speed up your website, our tool handles it all. Easily compress photos to meet upload limits or save disk space. Because our image compressor processes files locally on your device, your images remain 100% private and are never uploaded to any remote server."
+      "title": "Найкращий безкоштовний онлайн інструмент для стиснення зображень",
+      "content": "Шукаєте швидкий та безкоштовний стискач зображень? Наш інструмент дозволяє миттєво зменшити розмір фотографій без помітної втрати якості."
     },
     "settings": "Налаштування",
     "processing": "Обробка...",
@@ -22,24 +22,24 @@
     "qualityHint": "Нижча якість призводить до меншого розміру файлів, але може зменшити деталізацію зображення.",
     "qualityPng": "Стиснення PNG є безвтратним, тому регулювання якості недоступне.",
     "faq": {
-      "title": "Free Online Image Compressor — FAQ",
-      "subtitle": "Everything you need to know about using our image compressor to reduce image size",
+      "title": "Безкоштовний онлайн стискач зображень — FAQ",
+      "subtitle": "Все, що потрібно знати про зменшення розміру зображень",
       "items": [
         {
-          "question": "Is this online image compressor really free to use?",
-          "answer": "Yes! Our online image compressor is 100% free with no limits, no watermarks, and no registration required. Use our PNG compressor and image compressor as often as you need."
+          "question": "Чи дійсно цей стискач безкоштовний?",
+          "answer": "Так! 100% безкоштовно, без обмежень та водяних знаків."
         },
         {
-          "question": "How does an image compressor reduce image size without losing quality?",
-          "answer": "Our image compressor uses smart optimization techniques to remove unnecessary metadata and apply efficient compression. This allows you to reduce image size and reduce picture size while keeping visual clarity intact."
+          "question": "Як відбувається стиснення без втрати якості?",
+          "answer": "Використовуються розумні алгоритми для видалення зайвих метаданих."
         },
         {
-          "question": "Is it safe to use this PNG compressor and image compressor?",
-          "answer": "Absolutely. When you use our image compressor to reduce picture size, all processing happens locally inside your browser. Your images never leave your computer."
+          "question": "Чи безпечно користуватися стискачем?",
+          "answer": "Абсолютно. Обробка відбувається у браузері."
         },
         {
-          "question": "What image formats does this image compressor support?",
-          "answer": "Our image compressor supports JPG, JPEG, PNG, WebP, and AVIF. Whether you need a PNG compressor or JPEG optimizer, you can reduce image size effortlessly."
+          "question": "Які формати підтримуються?",
+          "answer": "JPG, JPEG, PNG, WebP та AVIF."
         }
       ]
     },
@@ -48,26 +48,26 @@
       "error": "Стиснення не вдалося. Будь ласка, спробуйте інше зображення або формат."
     },
     "howTo": {
-      "title": "How to Use Our Image Compressor to Reduce Image Size in 3 Steps",
+      "title": "Як зменшити розмір зображення за 3 кроки",
       "step1": {
         "number": "1",
-        "title": "Upload File to Image Compressor",
-        "description": "Select or drag and drop your photo into our free online image compressor to reduce picture size."
+        "title": "Завантажте файл",
+        "description": "Оберіть або перетягніть фото у стискач зображень."
       },
       "step2": {
         "number": "2",
-        "title": "Adjust Settings on PNG Compressor",
-        "description": "Fine-tune output format and quality settings on our image compressor or PNG compressor."
+        "title": "Налаштуйте параметри",
+        "description": "Оберіть формат та рівень якості стиснення."
       },
       "step3": {
         "number": "3",
-        "title": "Reduce Image Size & Download",
-        "description": "Download your compressed image file immediately after our image compressor reduces image size."
+        "title": "Зменшіть розмір та завантажте",
+        "description": "Завантажте оптимізоване зображення одразу після стиснення."
       }
     },
     "seoContent": {
-      "title": "Why You Need a Powerful Online Image Compressor",
-      "body": "Uncompressed photos and heavy graphics slow down website load times, take up storage, and exceed email attachment limits. Using an effective online image compressor is the easiest way to reduce image size and reduce picture size without sacrificing visual fidelity. Our browser-first image compressor functions as a high-performance PNG compressor, WebP optimizer, and JPG reducer all in one. You can reduce picture size for web design, social media posts, or mobile apps in seconds. Because our online image compressor processes everything client-side, your files stay completely private and secure. Try our free image compressor today to reduce image size instantly."
+      "title": "Чому вам потрібен потужний онлайн стискач зображень",
+      "body": "Нестиснуті фотографії уповільнюють завантаження сайтів. Використовуйте наш онлайн стискач для швидкої та безпечної оптимізації."
     }
   }
 }

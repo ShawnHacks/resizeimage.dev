@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Free Online Image Compressor",
-    "description": "Free online image compressor to reduce image size and reduce picture size. Fast, private PNG compressor & photo optimizer running 100% in your browser.",
-    "metaTitle": "Free Image Compressor Online — Reduce Image Size & PNG Compressor",
-    "metaDescription": "Best free online image compressor to reduce image size and reduce picture size without quality loss. Powerful PNG compressor and JPG optimizer.",
+    "title": "무료 온라인 이미지 압축기",
+    "description": "이미지 용량을 줄여주는 무료 온라인 이미지 압축기. 브라우저에서 100% 실행되는 빠르고 안전한 PNG 압축 및 사진 최적화 도구.",
+    "metaTitle": "무료 온라인 이미지 압축기 — 이미지 용량 줄이기 & PNG 압축",
+    "metaDescription": "화질 손상 없이 이미지 용량과 사진 크기를 줄여주는 최고의 무료 온라인 이미지 압축기. 강력한 PNG 및 JPG 최적화 도구.",
     "intro": {
-      "title": "The Best Free Online Image Compressor Tool",
-      "content": "Looking for a fast, free online image compressor to reduce image size? Our browser-based image compressor allows you to reduce picture size instantly without quality loss. Whether you need a dedicated PNG compressor for graphics or a JPEG optimizer to speed up your website, our tool handles it all. Easily compress photos to meet upload limits or save disk space. Because our image compressor processes files locally on your device, your images remain 100% private and are never uploaded to any remote server."
+      "title": "최고의 무료 온라인 이미지 압축 도구",
+      "content": "이미지 용량을 줄이기 위한 빠르고 무료인 온라인 이미지 압축기를 찾고 계신가요? 브라우저 기반 이미지 압축기를 사용하면 화질 손상 없이 사진 크기를 즉시 줄일 수 있습니다. PNG 압축이든 JPEG 최적화든 모두 지원합니다. 모든 파일 처리가 기기 로컬에서 수행되므로 100% 비공개로 안전합니다."
     },
     "settings": "설정",
     "processing": "처리 중...",
@@ -22,24 +22,24 @@
     "qualityHint": "품질을 낮추면 파일 크기는 작아지지만 이미지 세부 정보가 줄어들 수 있습니다.",
     "qualityPng": "PNG 압축은 무손실이므로 품질 조정이 불가능합니다.",
     "faq": {
-      "title": "Free Online Image Compressor — FAQ",
-      "subtitle": "Everything you need to know about using our image compressor to reduce image size",
+      "title": "무료 온라인 이미지 압축기 — 자주 묻는 질문",
+      "subtitle": "이미지 용량을 줄이는 압축기 사용에 관한 모든 정보",
       "items": [
         {
-          "question": "Is this online image compressor really free to use?",
-          "answer": "Yes! Our online image compressor is 100% free with no limits, no watermarks, and no registration required. Use our PNG compressor and image compressor as often as you need."
+          "question": "이 온라인 이미지 압축기가 정말 무료인가요?",
+          "answer": "네! 제한, 워터마크, 회원가입 없이 100% 무료로 이용할 수 있습니다."
         },
         {
-          "question": "How does an image compressor reduce image size without losing quality?",
-          "answer": "Our image compressor uses smart optimization techniques to remove unnecessary metadata and apply efficient compression. This allows you to reduce image size and reduce picture size while keeping visual clarity intact."
+          "question": "화질 손상 없이 어떻게 이미지 용량을 줄이나요?",
+          "answer": "스마트 최적화 기술을 사용하여 불필요한 메타데이터를 제거하고 효율적인 압축을 적용하여 선명한 화질을 유지합니다."
         },
         {
-          "question": "Is it safe to use this PNG compressor and image compressor?",
-          "answer": "Absolutely. When you use our image compressor to reduce picture size, all processing happens locally inside your browser. Your images never leave your computer."
+          "question": "이 압축기를 사용하는 것이 안전한가요?",
+          "answer": "절대적으로 안전합니다. 모든 작업이 브라우저 내부에서 진행되므로 파일이 외부 서버로 전송되지 않습니다."
         },
         {
-          "question": "What image formats does this image compressor support?",
-          "answer": "Our image compressor supports JPG, JPEG, PNG, WebP, and AVIF. Whether you need a PNG compressor or JPEG optimizer, you can reduce image size effortlessly."
+          "question": "어떤 이미지 형식을 지원하나요?",
+          "answer": "JPG, JPEG, PNG, WebP, AVIF 형식을 완벽하게 지원합니다."
         }
       ]
     },
@@ -48,26 +48,26 @@
       "error": "압축 실패. 다른 이미지나 형식을 시도해 보세요."
     },
     "howTo": {
-      "title": "How to Use Our Image Compressor to Reduce Image Size in 3 Steps",
+      "title": "3단계로 이미지 용량 줄이기",
       "step1": {
         "number": "1",
-        "title": "Upload File to Image Compressor",
-        "description": "Select or drag and drop your photo into our free online image compressor to reduce picture size."
+        "title": "이미지 압축기에 파일 업로드",
+        "description": "압축할 사진을 선택하거나 드래그 앤 드롭으로 업로드합니다."
       },
       "step2": {
         "number": "2",
-        "title": "Adjust Settings on PNG Compressor",
-        "description": "Fine-tune output format and quality settings on our image compressor or PNG compressor."
+        "title": "설정 조정",
+        "description": "출력 형식과 압축 품질 설정을 미세 조정합니다."
       },
       "step3": {
         "number": "3",
-        "title": "Reduce Image Size & Download",
-        "description": "Download your compressed image file immediately after our image compressor reduces image size."
+        "title": "이미지 용량 줄이기 및 다운로드",
+        "description": "압축 완료 후 최적화된 이미지를 즉시 다운로드합니다."
       }
     },
     "seoContent": {
-      "title": "Why You Need a Powerful Online Image Compressor",
-      "body": "Uncompressed photos and heavy graphics slow down website load times, take up storage, and exceed email attachment limits. Using an effective online image compressor is the easiest way to reduce image size and reduce picture size without sacrificing visual fidelity. Our browser-first image compressor functions as a high-performance PNG compressor, WebP optimizer, and JPG reducer all in one. You can reduce picture size for web design, social media posts, or mobile apps in seconds. Because our online image compressor processes everything client-side, your files stay completely private and secure. Try our free image compressor today to reduce image size instantly."
+      "title": "강력한 온라인 이미지 압축기가 필요한 이유",
+      "body": "압축되지 않은 대용량 사진은 웹사이트 로딩 속도를 느리게 하고 저장 공간을 차지합니다. 당사의 온라인 이미지 압축기를 사용하면 화질 저하 없이 사진 용량을 효율적으로 줄일 수 있습니다. 웹 디자인, 소셜 미디어, 모바일 앱용 이미지를 몇 초 만에 최적화하세요."
     }
   }
 }

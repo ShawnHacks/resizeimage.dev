@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Free Online Image Compressor",
-    "description": "Free online image compressor to reduce image size and reduce picture size. Fast, private PNG compressor & photo optimizer running 100% in your browser.",
-    "metaTitle": "Free Image Compressor Online — Reduce Image Size & PNG Compressor",
-    "metaDescription": "Best free online image compressor to reduce image size and reduce picture size without quality loss. Powerful PNG compressor and JPG optimizer.",
+    "title": "ফ্রি অনলাইন ইমেজ কম্প্রেশার",
+    "description": "ছবি সাইজ কমানোর ফ্রি অনলাইন ইমেজ কম্প্রেশার। ব্রাউজারে ১০০% দ্রুত ও সুরক্ষিত PNG ও JPG অপটিমাইজার।",
+    "metaTitle": "ফ্রি অনলাইন ইমেজ কম্প্রেশার — ছবি সাইজ কমান ও PNG কম্প্রেশ করুন",
+    "metaDescription": "কোয়ালিটি নষ্ট না করে ছবির সাইজ কমানোর সেরা ফ্রি অনলাইন ইমেজ কম্প্রেশার। শক্তিশালী PNG ও JPG কম্প্রেশার।",
     "intro": {
-      "title": "The Best Free Online Image Compressor Tool",
-      "content": "Looking for a fast, free online image compressor to reduce image size? Our browser-based image compressor allows you to reduce picture size instantly without quality loss. Whether you need a dedicated PNG compressor for graphics or a JPEG optimizer to speed up your website, our tool handles it all. Easily compress photos to meet upload limits or save disk space. Because our image compressor processes files locally on your device, your images remain 100% private and are never uploaded to any remote server."
+      "title": "সেরা ফ্রি অনলাইন ইমেজ কম্প্রেশার টুল",
+      "content": "ছবি সাইজ কমানোর জন্য একটি দ্রুত ও ফ্রি অনলাইন ইমেজ কম্প্রেশার খুঁজছেন? আমাদের টুল কোয়ালিটি নষ্ট না করেই ছবির সাইজ কমিয়ে দেয়।"
     },
     "settings": "সেটিংস",
     "processing": "প্রক্রিয়াকরণ করা হচ্ছে...",
@@ -22,24 +22,24 @@
     "qualityHint": "নিম্ন মানের ফলাফল ছোট ফাইলের আকারের হয় তবে ছবির বিবরণ হ্রাস করতে পারে।",
     "qualityPng": "PNG কম্প্রেশন লসলেস তাই গুণমান সামঞ্জস্য উপলব্ধ নয়।",
     "faq": {
-      "title": "Free Online Image Compressor — FAQ",
-      "subtitle": "Everything you need to know about using our image compressor to reduce image size",
+      "title": "ফ্রি অনলাইন ইমেজ কম্প্রেশার — FAQ",
+      "subtitle": "ছবি সাইজ কমানো সম্পর্কে সাধারণ প্রশ্নাবলী",
       "items": [
         {
-          "question": "Is this online image compressor really free to use?",
-          "answer": "Yes! Our online image compressor is 100% free with no limits, no watermarks, and no registration required. Use our PNG compressor and image compressor as often as you need."
+          "question": "এই ইমেজ কম্প্রেশারটি কি সত্যিই ফ্রি?",
+          "answer": "হ্যাঁ! ১০০% ফ্রি, কোনো ওয়াটারমার্ক বা সীমাবদ্ধতা নেই।"
         },
         {
-          "question": "How does an image compressor reduce image size without losing quality?",
-          "answer": "Our image compressor uses smart optimization techniques to remove unnecessary metadata and apply efficient compression. This allows you to reduce image size and reduce picture size while keeping visual clarity intact."
+          "question": "কোয়ালিটি না হারিয়ে কীভাবে সাইজ কমে?",
+          "answer": "স্মার্ট অপটিমাইজেশনের মাধ্যমে অপ্রয়োজনীয় মেটাডেটা বাদ দিয়ে ফাইল ছোট করা হয়।"
         },
         {
-          "question": "Is it safe to use this PNG compressor and image compressor?",
-          "answer": "Absolutely. When you use our image compressor to reduce picture size, all processing happens locally inside your browser. Your images never leave your computer."
+          "question": "এটি ব্যবহার করা কি নিরাপদ?",
+          "answer": "হ্যাঁ, সম্পূর্ণ নিরাপদ। সব প্রসেসিং লোকালি সম্পন্ন হয়।"
         },
         {
-          "question": "What image formats does this image compressor support?",
-          "answer": "Our image compressor supports JPG, JPEG, PNG, WebP, and AVIF. Whether you need a PNG compressor or JPEG optimizer, you can reduce image size effortlessly."
+          "question": "কোন কোন ফরম্যাট সাপোর্ট করে?",
+          "answer": "JPG, JPEG, PNG, WebP এবং AVIF সাপোর্ট করে।"
         }
       ]
     },
@@ -48,26 +48,26 @@
       "error": "কম্প্রেশন ব্যর্থ হয়েছে। দয়া করে একটি ভিন্ন ছবি বা ফরম্যাট চেষ্টা করুন।"
     },
     "howTo": {
-      "title": "How to Use Our Image Compressor to Reduce Image Size in 3 Steps",
+      "title": "৩ ধাপে ছবির সাইজ কমান",
       "step1": {
         "number": "1",
-        "title": "Upload File to Image Compressor",
-        "description": "Select or drag and drop your photo into our free online image compressor to reduce picture size."
+        "title": "কম্প্রেশারে ছবি আপলোড করুন",
+        "description": "আপনার ছবি সিলেক্ট করুন বা ড্র্যাগ করে কম্প্রেশারে ফেলুন।"
       },
       "step2": {
         "number": "2",
-        "title": "Adjust Settings on PNG Compressor",
-        "description": "Fine-tune output format and quality settings on our image compressor or PNG compressor."
+        "title": "সেটিংস অ্যাডজাস্ট করুন",
+        "description": "আউটপুট ফরম্যাট এবং কম্প্রেশন কোয়ালিটি সেট করুন।"
       },
       "step3": {
         "number": "3",
-        "title": "Reduce Image Size & Download",
-        "description": "Download your compressed image file immediately after our image compressor reduces image size."
+        "title": "সাইজ কমান ও ডাউনলোড করুন",
+        "description": "অপটিমাইজড ছবি সাথে সাথে ডাউনলোড করুন।"
       }
     },
     "seoContent": {
-      "title": "Why You Need a Powerful Online Image Compressor",
-      "body": "Uncompressed photos and heavy graphics slow down website load times, take up storage, and exceed email attachment limits. Using an effective online image compressor is the easiest way to reduce image size and reduce picture size without sacrificing visual fidelity. Our browser-first image compressor functions as a high-performance PNG compressor, WebP optimizer, and JPG reducer all in one. You can reduce picture size for web design, social media posts, or mobile apps in seconds. Because our online image compressor processes everything client-side, your files stay completely private and secure. Try our free image compressor today to reduce image size instantly."
+      "title": "কেন একটি শক্তিশালী অনলাইন ইমেজ কম্প্রেশার প্রয়োজন",
+      "body": "বড় সাইজের ছবি ওয়েবসাইট স্লো করে দেয়। আমাদের অনলাইন ইমেজ কম্প্রেশার দিয়ে মুহূর্তেই ছবি ছোট ও অপটিমাইজ করুন।"
     }
   }
 }
