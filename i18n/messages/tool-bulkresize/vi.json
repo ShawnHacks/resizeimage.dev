@@ -1,17 +1,17 @@
 {
   "BulkResizeTool": {
-    "pageTitle": "Thay đổi kích thước hàng loạt hình ảnh trực tuyến",
-    "pageDescription": "Công cụ trực tuyến miễn phí để thay đổi kích thước hàng loạt nhiều hình ảnh cùng một lúc. Nhanh chóng, an toàn và hoạt động hoàn toàn trong trình duyệt của bạn — không cần tải lên.",
+    "pageTitle": "Thay Đổi Kích Thước Ảnh Hàng Loạt Trực Tuyến — Miễn Phí",
+    "pageDescription": "Thay đổi kích thước ảnh hàng loạt trực tuyến miễn phí. Điều chỉnh hàng trăm bức ảnh cùng lúc ngay trên trình duyệt nhanh chóng và bảo mật.",
     "backButton": "Quay lại",
     "features": {
-      "title": "Thay đổi kích thước hàng loạt hình ảnh trực tuyến và miễn phí",
-      "description": "Thay đổi kích thước nhiều hình ảnh cùng một lúc mà không cần tải lên bất kỳ máy chủ nào",
-      "lightningFast": "Xử lý nhanh như chớp",
+      "title": "Thay Đổi Kích Thước Ảnh Hàng Loạt Trực Tuyến & Miễn Phí",
+      "description": "Thay đổi kích thước nhiều ảnh cùng lúc không cần tải lên máy chủ — nhanh chóng, riêng tư",
+      "lightningFast": "Xử lý siêu nhanh",
       "free": "Miễn phí 100% mãi mãi",
       "noSignup": "Không cần đăng ký",
-      "secure": "An toàn và riêng tư",
-      "unlimited": "Xử lý hình ảnh không giới hạn",
-      "browser": "Hoạt động trong trình duyệt của bạn"
+      "secure": "An toàn & bảo mật",
+      "unlimited": "Không giới hạn số lượng ảnh",
+      "browser": "Chạy ngay trên trình duyệt"
     },
     "imagePreview": {
       "selected": "hình ảnh",
@@ -137,76 +137,80 @@
       "enterTargetValue": "Vui lòng nhập giá trị mục tiêu"
     },
     "howTo": {
-      "title": "Cách thay đổi kích thước hình ảnh",
-      "subtitle": "Các bước đơn giản để thay đổi kích thước hàng loạt hình ảnh của bạn",
+      "title": "Thay đổi kích thước ảnh hàng loạt trong 3 bước",
+      "subtitle": "Thay đổi kích thước hàng loạt ảnh chỉ trong vài giây — không cần cài phần mềm",
       "step1": {
         "number": "1",
-        "title": "Chọn",
-        "description": "Chọn hình ảnh JPG, PNG hoặc WebP của bạn vào công cụ thay đổi kích thước hàng loạt của chúng tôi."
+        "title": "Tải ảnh lên",
+        "description": "Kéo thả hoặc chọn các tệp JPG, PNG, WebP cần thay đổi kích thước."
       },
       "step2": {
         "number": "2",
-        "title": "Thay đổi kích thước",
-        "description": "Chọn chế độ thay đổi kích thước mong muốn và điều chỉnh cài đặt để phù hợp với nhu cầu của bạn."
+        "title": "Chọn cài đặt",
+        "description": "Chọn chế độ (phần trăm, kích thước pixel hoặc dung lượng KB) và chỉnh sửa."
       },
       "step3": {
         "number": "3",
-        "title": "Tải xuống",
-        "description": "Tải xuống ngay lập tức hình ảnh đã thay đổi kích thước hoặc tiếp tục chỉnh sửa với nhiều tùy chọn hơn."
+        "title": "Tải ảnh về",
+        "description": "Tải xuống tất cả ảnh dưới dạng ZIP hoặc từng ảnh một. Xử lý 100% nội bộ."
       }
     },
     "featureSections": {
       "feature1": {
-        "title": "Thay đổi kích thước hàng loạt hình ảnh trực tuyến miễn phí.",
+        "title": "Thay Đổi Kích Thước Ảnh Hàng Loạt Trực Tuyến",
         "description": [
-          "Cách dễ nhất để thay đổi kích thước ảnh trực tuyến. Thay đổi kích thước, nén và tối ưu hóa hình ảnh của bạn trong vài giây.",
-          "Chạy 100% trong trình duyệt của bạn — không cần tải lên, không cần tài khoản, dữ liệu không rời khỏi thiết bị của bạn."
+          "Cách dễ nhất để điều chỉnh kích thước nhiều hình ảnh cùng lúc trực tuyến.",
+          "Công cụ chạy 100% trong trình duyệt của bạn mà không gửi dữ liệu ra ngoài."
         ]
       },
       "feature2": {
-        "title": "Thay đổi kích thước hình ảnh.",
+        "title": "Thay Đổi Kích Thước Ảnh Hàng Loạt Theo Pixel Chính Xác",
         "description": [
-          "Dễ dàng điều chỉnh kích thước hình ảnh đến chiều rộng và chiều cao chính xác. Hoàn hảo cho mạng xã hội, in ấn hoặc sử dụng web.",
-          "Cần kích thước cụ thể? Bạn có thể tùy chỉnh kích thước để đạt được sự phù hợp hoàn hảo."
+          "Đặt chiều rộng và chiều cao chính xác cho mạng xã hội hoặc website.",
+          "Sử dụng cài đặt có sẵn hoặc nhập kích thước tùy chỉnh chỉ bằng một cú nhấp."
         ]
       },
       "feature3": {
-        "title": "Thay đổi kích thước tệp hình ảnh.",
+        "title": "Thay Đổi Kích Thước Ảnh Hàng Loạt Theo Dung Lượng Tệp",
         "description": [
-          "Nén hàng loạt hình ảnh để khớp xấp xỉ với kích thước tệp bạn chọn — tiết kiệm dung lượng và tăng tốc tải lên cho trang web, email và nền tảng xã hội.",
-          "Lưu ý: Độ phức tạp của hình ảnh có thể ảnh hưởng đến kích thước cuối cùng."
+          "Nén ảnh hàng loạt theo dung lượng KB mục tiêu để tiết kiệm bộ nhớ.",
+          "Đặt mức KB mong muốn và nén ảnh nhưng vẫn giữ chất lượng tốt nhất."
         ]
       }
     },
     "faq": {
-      "title": "Câu hỏi thường gặp",
-      "subtitle": "Tất cả những gì bạn cần biết về thay đổi kích thước hàng loạt hình ảnh",
+      "title": "Thay Đổi Kích Thước Ảnh Hàng Loạt — Câu Hỏi Thường Gặp",
+      "subtitle": "Mọi điều bạn cần biết về thay đổi kích thước ảnh hàng loạt",
       "items": [
         {
-          "question": "Công cụ thay đổi kích thước hình ảnh này có thật sự miễn phí không?",
-          "answer": "Có! Công cụ thay đổi kích thước hàng loạt hình ảnh của chúng tôi hoàn toàn miễn phí 100% không có giới hạn. Bạn có thể thay đổi kích thước hình ảnh không giới hạn mà không có hình mờ hoặc hạn chế."
+          "question": "Công cụ này có thực sự miễn phí không?",
+          "answer": "Có! Bạn có thể thay đổi kích thước ảnh hàng loạt miễn phí không giới hạn và không có hình mờ."
         },
         {
-          "question": "Thay đổi kích thước hàng loạt hoạt động như thế nào?",
-          "answer": "Chỉ cần tải lên nhiều hình ảnh cùng một lúc, chọn cài đặt thay đổi kích thước của bạn (phần trăm, kích thước hoặc kích thước tệp) và nhấp thay đổi kích thước. Tất cả hình ảnh sẽ được xử lý cùng nhau trong trình duyệt của bạn."
+          "question": "Quy trình xử lý hàng loạt hoạt động như thế nào?",
+          "answer": "Tải nhiều ảnh lên, chọn cài đặt và nhấn nút xử lý. Mọi thứ diễn ra trong trình duyệt."
         },
         {
-          "question": "Những định dạng hình ảnh nào được hỗ trợ?",
-          "answer": "Chúng tôi hỗ trợ định dạng JPG, JPEG, PNG và WebP. Bạn có thể thay đổi kích thước hình ảnh ở bất kỳ định dạng nào trong số này."
+          "question": "Hỗ trợ những định dạng ảnh nào?",
+          "answer": "Hỗ trợ định dạng JPG, JPEG, PNG, WebP và cho phép chuyển đổi định dạng."
         },
         {
           "question": "Dữ liệu của tôi có an toàn không?",
-          "answer": "Hoàn toàn! Tất cả việc xử lý hình ảnh diễn ra cục bộ trong trình duyệt của bạn. Hình ảnh của bạn không bao giờ rời khỏi thiết bị của bạn, đảm bảo quyền riêng tư và bảo mật hoàn toàn. Một cách để chứng minh rằng tất cả việc xử lý được thực hiện cục bộ là tải trang web, ngắt kết nối internet và sau đó sử dụng trang."
+          "answer": "Hoàn toàn an toàn. Ảnh của bạn không bao giờ rời khỏi thiết bị."
         },
         {
-          "question": "Tôi có thể thay đổi kích thước hình ảnh đến kích thước cụ thể không?",
-          "answer": "Có! Bạn có thể thay đổi kích thước theo phần trăm, kích thước chính xác (chiều rộng × chiều cao) hoặc kích thước tệp mục tiêu. Chúng tôi cũng cung cấp cài đặt sẵn nhanh cho các nền tảng mạng xã hội."
+          "question": "Tôi có thể đặt kích thước chính xác không?",
+          "answer": "Có, bạn có thể chỉnh theo %, pixel chính xác hoặc dung lượng tệp target."
         },
         {
-          "question": "Kích thước tệp tăng bất ngờ?",
-          "answer": "Điều này có thể xảy ra khi cài đặt của bạn tạo ra hình ảnh rất chi tiết. Để giữ kích thước tệp tối thiểu, hãy thử lưu ở định dạng WebP và đặt Chất lượng ở 80% hoặc thấp hơn. Nếu vấn đề vẫn tiếp diễn, hãy kiểm tra độ phân giải pixel của hình ảnh để đảm bảo nó không bị phóng to."
+          "question": "Tại sao dung lượng tệp lại tăng sau khi đổi kích thước?",
+          "answer": "Có thể do cài đặt chất lượng quá cao. Hãy thử dùng WebP với chất lượng 80%."
         }
       ]
+    },
+    "seoContent": {
+      "title": "Công Cụ Thay Đổi Kích Thước Ảnh Hàng Loạt Miễn Phí Tốt Nhất",
+      "body": "Cần điều chỉnh kích thước nhiều bức ảnh nhanh chóng? Công cụ trực tuyến miễn phí của chúng tôi giúp bạn xử lý ảnh hàng loạt trong vài giây ngay trên trình duyệt."
     }
   }
 }

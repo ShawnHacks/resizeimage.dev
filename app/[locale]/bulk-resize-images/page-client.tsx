@@ -467,7 +467,7 @@ export default function ResizeImageClient() {
           title={t('featureSections.feature1.title')}
           description={t.raw('featureSections.feature1.description')}
           image="/illustration/resizeimages.webp"
-          imageAlt="Bulk resize images online"
+          imageAlt="Bulk resize images online for free"
           layout="image-left"
         />
 
@@ -475,7 +475,7 @@ export default function ResizeImageClient() {
           title={t('featureSections.feature2.title')}
           description={t.raw('featureSections.feature2.description')}
           image="/illustration/resizedimensions.webp"
-          imageAlt="Resize images dimensions online"
+          imageAlt="Bulk resize images to exact dimensions online"
           layout="image-right"
         // className="bg-muted/30"
         />
@@ -484,7 +484,7 @@ export default function ResizeImageClient() {
           title={t('featureSections.feature3.title')}
           description={t.raw('featureSections.feature3.description')}
           image="/illustration/resizefilesize.webp"
-          imageAlt="Resize images file size online"
+          imageAlt="Bulk resize images by file size online"
           layout="image-left"
         // className="bg-muted/30"
         />
@@ -496,6 +496,20 @@ export default function ResizeImageClient() {
         subtitle={t('faq.subtitle')}
         faqs={t.raw('faq.items')}
       />
+
+      {/* SEO Content Section */}
+      <section className="py-16 md:py-24">
+        <div className="container mx-auto px-4">
+          <div className="mx-auto max-w-3xl text-center">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+              {t('seoContent.title')}
+            </h2>
+            <p className="text-lg text-muted-foreground leading-relaxed">
+              {t('seoContent.body')}
+            </p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

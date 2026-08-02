@@ -1,16 +1,16 @@
 {
   "BulkResizeTool": {
-    "pageTitle": "Bulk Resize Images Online",
-    "pageDescription": "Free online tool to batch resize multiple images at once. Fast, secure, and works entirely in your browser — no upload needed.",
+    "pageTitle": "Bulk Resize Images Online — Free Batch Image Resizer",
+    "pageDescription": "Bulk resize images online for free — resize hundreds of photos at once with our fast, private batch resizer. No uploads, no limits, everything runs in your browser.",
     "backButton": "Back",
     "features": {
-      "title": "Batch Resize Images Online & Free",
-      "description": "Resize multiple images at once without uploading to any server",
-      "lightningFast": "Lightning-fast processing",
+      "title": "Bulk Resize Images Online & Free",
+      "description": "Bulk resize images without uploading to any server — fast, private, and unlimited",
+      "lightningFast": "Lightning-fast bulk resize",
       "free": "100% free forever",
       "noSignup": "No sign-up required",
       "secure": "Secure & private",
-      "unlimited": "Process unlimited images",
+      "unlimited": "Bulk resize unlimited images",
       "browser": "Works in your browser"
     },
     "imagePreview": {
@@ -137,76 +137,80 @@
       "enterTargetValue": "Please enter a target value"
     },
     "howTo": {
-      "title": "How to Resize Images",
-      "subtitle": "Simple steps to batch resize your images",
+      "title": "How to Bulk Resize Images in 3 Steps",
+      "subtitle": "Bulk resize images in seconds — no software to install",
       "step1": {
         "number": "1",
-        "title": "Select",
-        "description": "Select your JPG, PNG, or WebP images to our bulk resize tool."
+        "title": "Upload your images",
+        "description": "Drag and drop or select the JPG, PNG, or WebP files you want to bulk resize. Add as many images as you need."
       },
       "step2": {
         "number": "2",
-        "title": "Resize",
-        "description": "Choose your desired resize mode and adjust settings to fit your needs."
+        "title": "Choose resize settings",
+        "description": "Pick your preferred resize mode — percentage, exact dimensions, width, height, or target file size — and bulk resize images to the perfect size."
       },
       "step3": {
         "number": "3",
-        "title": "Download",
-        "description": "Instantly download your resized images or continue editing with more options."
+        "title": "Download resized images",
+        "description": "Download all your resized images at once as a ZIP or individually. Every time you bulk resize images, the processing happens locally on your device for maximum privacy."
       }
     },
     "featureSections": {
       "feature1": {
-        "title": "Batch resize images online for free.",
+        "title": "Bulk Resize Images Online for Free",
         "description": [
-          "The easiest way to resize photos online. Resize, compress, and optimize your images in seconds.",
-          "Runs 100% in your browser — no uploads, no accounts, no data leaves your device."
+          "The easiest way to bulk resize images online. Upload hundreds of photos, pick your settings, and resize them all at once — in seconds.",
+          "Our bulk resize images tool runs 100% in your browser. No uploads, no accounts, and no data ever leaves your device."
         ]
       },
       "feature2": {
-        "title": "Resize Image Dimensions.",
+        "title": "Bulk Resize Images to Exact Dimensions",
         "description": [
-          "Easily adjust image dimensions size to exact width and height. perfect for social media, printing, or web use.",
-          "Need a specific size? You can customize sizes to get the perfect fit."
+          "Need to resize multiple images to a specific width and height? Set exact pixel dimensions for social media posts, print projects, or web use.",
+          "Use our presets or enter custom dimensions to get the perfect size in one click."
         ]
       },
       "feature3": {
-        "title": "Resize Image File Size.",
+        "title": "Bulk Resize Images by File Size",
         "description": [
-          "Batch compress images to roughly match your chosen file size — saving storage and speeding up uploads for websites, emails, and social platforms.",
-          "Keep in mind: Image complexity can affect the final size."
+          "Bulk resize images to your target file size — ideal for saving storage, speeding up page loads, and meeting upload limits on websites, emails, and social platforms.",
+          "Choose your target size in KB and the tool will compress each image while keeping the best possible quality."
         ]
       }
     },
     "faq": {
-      "title": "Frequently Asked Questions",
-      "subtitle": "Everything you need to know about batch resizing images",
+      "title": "Bulk Resize Images — FAQ",
+      "subtitle": "Everything you need to know about how to bulk resize images online",
       "items": [
         {
-          "question": "Is this image resizer really free?",
-          "answer": "Yes! Our bulk image resizer is 100% free with no limitations. You can resize unlimited images without any watermarks or restrictions."
+          "question": "Is the bulk resize images tool really free?",
+          "answer": "Yes! You can bulk resize images for free with no limitations. No watermarks, no daily caps, and no account required."
         },
         {
-          "question": "How does batch resizing work?",
-          "answer": "Simply upload multiple images at once, choose your resize settings (percentage, dimensions, or file size), and click resize. All images will be processed together in your browser."
+          "question": "How does the batch resizer work?",
+          "answer": "Upload multiple images at once, choose your resize settings (percentage, exact dimensions, or target file size), and click resize. Our tool will bulk resize images right in your browser — nothing is uploaded to a server."
         },
         {
-          "question": "What image formats are supported?",
-          "answer": "We support JPG, JPEG, PNG, and WebP formats. You can resize images in any of these formats."
+          "question": "What image formats can I bulk resize?",
+          "answer": "You can bulk resize images in JPG, JPEG, PNG, and WebP formats. The tool also lets you change the output format, so you can resize and convert at the same time."
         },
         {
-          "question": "Is my data secure?",
-          "answer": "Absolutely! All image processing happens locally in your browser. Your images never leave your device, ensuring complete privacy and security. One way to demonstrate that all processing is being done locally is to load the website, disconnect from the internet, and then use the site."
+          "question": "Is it safe to resize images with this tool?",
+          "answer": "Absolutely. When you bulk resize images here, all processing happens locally in your browser. Your files never leave your device, and you can even work offline after loading the page."
         },
         {
           "question": "Can I resize images to specific dimensions?",
-          "answer": "Yes! You can resize by percentage, exact dimensions (width × height), or target file size. We also offer quick presets for social media platforms."
+          "answer": "Yes! You can resize by percentage, exact pixel dimensions (width × height), target width, target height, longest side, or target file size. We also provide quick presets for popular social media sizes."
         },
         {
-          "question": "File size increased unexpectedly?",
-          "answer": "This can happen when your settings produce highly detailed images. To keep file sizes minimal, try saving in the WebP format and set the Quality to 80% or below. If the problem persists, check the image’s pixel resolution to make sure it isn’t being upscaled."
+          "question": "Why did my file size increase after resizing?",
+          "answer": "This can happen when your settings produce highly detailed outputs. To keep files small when you bulk resize images, try using WebP format and set quality to 80% or below. Also check that images aren't being upscaled beyond their original resolution."
         }
       ]
+    },
+    "seoContent": {
+      "title": "The Best Free Tool to Bulk Resize Images Online",
+      "body": "Need to bulk resize images quickly? Our free online tool lets you bulk resize images in seconds — just drag and drop your photos, choose your settings, and download the results. Whether you need to bulk resize images for a website, social media, email campaigns, or print, this tool handles it all. Unlike other services, when you bulk resize images here everything runs locally in your browser, so your photos stay private and are never uploaded to any server. Resize by percentage, exact dimensions, target width or height, or even by file size. There are no limits — completely free, with no watermarks and no account required."
     }
   }
 }

@@ -1,17 +1,17 @@
 {
   "BulkResizeTool": {
-    "pageTitle": "Redimensionar imágenes en masa en línea",
-    "pageDescription": "Herramienta gratuita en línea para redimensionar por lotes varias imágenes a la vez. Rápido, seguro y funciona completamente en su navegador, sin necesidad de subidas.",
+    "pageTitle": "Cambiar Tamaño de Imágenes en Lote Online — Redimensionador Gratuito",
+    "pageDescription": "Cambia el tamaño de imágenes en lote online gratis. Redimensiona cientos de fotos a la vez con nuestro redimensionador rápido y privado en tu navegador.",
     "backButton": "Atrás",
     "features": {
-      "title": "Redimensionar imágenes en masa en línea y gratis",
-      "description": "Redimensione varias imágenes a la vez sin subirlas a ningún servidor",
-      "lightningFast": "Procesamiento ultrarrápido",
+      "title": "Cambiar Tamaño de Imágenes en Lote Online y Gratis",
+      "description": "Cambia el tamaño de imágenes en lote sin subir archivos a ningún servidor — rápido, privado e ilimitado",
+      "lightningFast": "Redimensionado ultrarrápido",
       "free": "100% gratis para siempre",
-      "noSignup": "No es necesario registrarse",
+      "noSignup": "Sin registro requerido",
       "secure": "Seguro y privado",
-      "unlimited": "Procese imágenes ilimitadas",
-      "browser": "Funciona en su navegador"
+      "unlimited": "Redimensiona imágenes ilimitadas",
+      "browser": "Funciona en tu navegador"
     },
     "imagePreview": {
       "selected": "imagen",
@@ -137,76 +137,80 @@
       "enterTargetValue": "Por favor, introduzca un valor de destino"
     },
     "howTo": {
-      "title": "Cómo redimensionar imágenes",
-      "subtitle": "Pasos sencillos para redimensionar imágenes por lotes",
+      "title": "Cómo cambiar el tamaño de imágenes en lote en 3 pasos",
+      "subtitle": "Cambia el tamaño de imágenes en lote en segundos — sin instalar software",
       "step1": {
         "number": "1",
-        "title": "Seleccionar",
-        "description": "Seleccione sus imágenes JPG, PNG o WebP en nuestra herramienta de redimensionamiento por lotes."
+        "title": "Sube tus imágenes",
+        "description": "Arrastra y suelta o selecciona archivos JPG, PNG o WebP que quieras redimensionar en lote. Añade todas las que necesites."
       },
       "step2": {
         "number": "2",
-        "title": "Redimensionar",
-        "description": "Elija su modo de redimensionamiento deseado y ajuste la configuración para adaptarse a sus necesidades."
+        "title": "Elige la configuración",
+        "description": "Elige el modo — porcentaje, dimensiones exactas, ancho, alto o tamaño de archivo — y redimensiona en lote al tamaño perfecto."
       },
       "step3": {
         "number": "3",
-        "title": "Descargar",
-        "description": "Descargue instantáneamente sus imágenes redimensionadas o continúe editando con más opciones."
+        "title": "Descarga las imágenes",
+        "description": "Descarga todas tus imágenes redimensionadas en un ZIP o individualmente. Todo el proceso ocurre en tu dispositivo localmente."
       }
     },
     "featureSections": {
       "feature1": {
-        "title": "Redimensione imágenes en línea de forma gratuita por lotes.",
+        "title": "Cambiar Tamaño de Imágenes en Lote Online y Gratis",
         "description": [
-          "La forma más fácil de redimensionar fotos en línea. Redimensione, comprima y optimice sus imágenes en segundos.",
-          "Funciona 100% en su navegador — sin cargas, sin cuentas, los datos no salen de su dispositivo."
+          "La forma más fácil de cambiar el tamaño de imágenes en lote online. Sube cientos de fotos y redimensiona todo en segundos.",
+          "Nuestra herramienta funciona 100% en tu navegador. Sin subidas, sin cuentas y sin que tus datos salgan del dispositivo."
         ]
       },
       "feature2": {
-        "title": "Redimensionar dimensiones de imagen.",
+        "title": "Redimensionar Imágenes en Lote a Dimensiones Exactas",
         "description": [
-          "Ajuste fácilmente las dimensiones de la imagen a un ancho y alto exactos. Perfecto para redes sociales, impresión o uso web.",
-          "¿Necesita un tamaño específico? Puede personalizar los tamaños para obtener el ajuste perfecto."
+          "¿Necesitas redimensionar varias imágenes a un ancho y alto específicos? Establece dimensiones exactas en píxeles para redes sociales o web.",
+          "Usa nuestros ajustes preestablecidos o ingresa dimensiones personalizadas en un solo clic."
         ]
       },
       "feature3": {
-        "title": "Redimensionar tamaño de archivo de imagen.",
+        "title": "Redimensionar Imágenes en Lote por Tamaño de Archivo",
         "description": [
-          "Comprima imágenes por lotes para que coincidan aproximadamente con su tamaño de archivo elegido — ahorrando almacenamiento y acelerando las cargas para sitios web, correos electrónicos y plataformas sociales.",
-          "Tenga en cuenta: La complejidad de la imagen puede afectar el tamaño final."
+          "Redimensiona imágenes en lote al tamaño de archivo objetivo — ideal para ahorrar espacio y acelerar la carga en sitios web y correos.",
+          "Elige el tamaño objetivo en KB y comprime tus imágenes manteniendo la mejor calidad posible."
         ]
       }
     },
     "faq": {
-      "title": "Preguntas frecuentes",
-      "subtitle": "Todo lo que necesita saber sobre el redimensionamiento por lotes de imágenes",
+      "title": "Redimensionar Imágenes en Lote — Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber sobre cómo cambiar el tamaño de imágenes en lote online",
       "items": [
         {
-          "question": "¿Este redimensionador de imágenes es realmente gratuito?",
-          "answer": "¡Sí! Nuestro redimensionador de imágenes por lotes es 100% gratuito sin limitaciones. Puede redimensionar imágenes ilimitadas sin marcas de agua ni restricciones."
+          "question": "¿La herramienta para cambiar el tamaño de imágenes en lote es realmente gratis?",
+          "answer": "¡Sí! Puedes cambiar el tamaño de imágenes en lote gratis sin restricciones. Sin marcas de agua, sin límites diarios y sin registro."
         },
         {
-          "question": "¿Cómo funciona el redimensionamiento por lotes?",
-          "answer": "Simplemente cargue varias imágenes a la vez, elija su configuración de redimensionamiento (porcentaje, dimensiones o tamaño de archivo) y haga clic en redimensionar. Todas las imágenes se procesarán juntas en su navegador."
+          "question": "¿Cómo funciona el redimensionador en lote?",
+          "answer": "Sube varias imágenes a la vez, elige los ajustes de tamaño y haz clic en redimensionar. La herramienta procesa todo en tu navegador."
         },
         {
-          "question": "¿Qué formatos de imagen son compatibles?",
-          "answer": "Admitimos formatos JPG, JPEG, PNG y WebP. Puede redimensionar imágenes en cualquiera de estos formatos."
+          "question": "¿Qué formatos puedo redimensionar en lote?",
+          "answer": "Puedes redimensionar imágenes en formato JPG, JPEG, PNG y WebP. También puedes cambiar el formato de salida durante el proceso."
         },
         {
-          "question": "¿Mis datos están seguros?",
-          "answer": "¡Absolutamente! Todo el procesamiento de imágenes ocurre localmente en su navegador. Sus imágenes nunca salen de su dispositivo, garantizando privacidad y seguridad completas. Una forma de demostrar que todo el procesamiento se realiza localmente es cargar el sitio web, desconectarse de Internet y luego usar el sitio."
+          "question": "¿Es seguro redimensionar imágenes en lote con esta herramienta?",
+          "answer": "Absolutamente. Todo el procesamiento se realiza localmente en tu navegador. Tus archivos nunca salen de tu dispositivo."
         },
         {
           "question": "¿Puedo redimensionar imágenes a dimensiones específicas?",
-          "answer": "¡Sí! Puede redimensionar por porcentaje, dimensiones exactas (ancho × alto) o tamaño de archivo objetivo. También ofrecemos ajustes rápidos para plataformas de redes sociales."
+          "answer": "¡Sí! Puedes redimensionar por porcentaje, dimensiones exactas (ancho × alto), ancho, alto o tamaño de archivo objetivo."
         },
         {
-          "question": "¿El tamaño del archivo aumentó inesperadamente?",
-          "answer": "Esto puede suceder cuando su configuración produce imágenes muy detalladas. Para mantener los tamaños de archivo mínimos, intente guardar en formato WebP y establezca la Calidad en 80% o menos. Si el problema persiste, verifique la resolución de píxeles de la imagen para asegurarse de que no se esté ampliando."
+          "question": "¿Por qué aumentó el tamaño del archivo después de redimensionar?",
+          "answer": "Esto puede suceder si los ajustes generan imágenes con gran detalle. Para mantener archivos pequeños, usa WebP y calidad al 80% o menos."
         }
       ]
+    },
+    "seoContent": {
+      "title": "La Mejor Herramienta Gratuita para Cambiar el Tamaño de Imágenes en Lote Online",
+      "body": "¿Necesitas cambiar el tamaño de imágenes en lote rápidamente? Nuestra herramienta online gratuita te permite redimensionar fotos en segundos. Ya sea para un sitio web, redes sociales o correo, procesa todo localmente en tu navegador de forma 100% privada."
     }
   }
 }

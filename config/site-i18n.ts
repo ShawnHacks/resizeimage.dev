@@ -105,6 +105,10 @@ export const siteMainNavKeys: Array<{
       href: "/stitch-images",
     },
     {
+      titleKey: "Tools.imageconverter",
+      href: "/image-converter",
+    },
+    {
       titleKey: "Tools.imagecompressor",
       href: "/compress-image",
     },

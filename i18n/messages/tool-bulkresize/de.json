@@ -1,17 +1,17 @@
 {
   "BulkResizeTool": {
-    "pageTitle": "Bilder online in großen Mengen anpassen",
-    "pageDescription": "Kostenloses Online-Tool zur Stapelverarbeitung mehrerer Bilder gleichzeitig. Schnell, sicher und funktioniert vollständig in Ihrem Browser — kein Upload erforderlich.",
+    "pageTitle": "Bilder im Stapel Ändern Online — Kostenloser Batch Image Resizer",
+    "pageDescription": "Ändere die Größe von Bildern im Stapel kostenlos online — passe Hunderte von Fotos auf einmal in deinem Browser an. Schnell, privat und ohne Limits.",
     "backButton": "Zurück",
     "features": {
-      "title": "Bilder online & kostenlos in großen Mengen anpassen",
-      "description": "Passen Sie die Größe mehrerer Bilder gleichzeitig an, ohne sie auf einen Server hochzuladen",
-      "lightningFast": "Blitzschnelle Verarbeitung",
+      "title": "Bilder im Stapel Ändern Online & Kostenlos",
+      "description": "Passe die Größe mehrerer Bilder an, ohne sie auf einen Server hochzuladen — schnell, sicher und unbegrenzt",
+      "lightningFast": "Blitzschnelles Anpassen",
       "free": "100% für immer kostenlos",
-      "noSignup": "Keine Anmeldung erforderlich",
+      "noSignup": "Keine Registrierung erforderlich",
       "secure": "Sicher & privat",
-      "unlimited": "Unbegrenzt viele Bilder verarbeiten",
-      "browser": "Funktioniert in Ihrem Browser"
+      "unlimited": "Unbegrenzt viele Bilder anpassen",
+      "browser": "Läuft direkt im Browser"
     },
     "imagePreview": {
       "selected": "Bild",
@@ -137,76 +137,80 @@
       "enterTargetValue": "Bitte geben Sie einen Zielwert ein"
     },
     "howTo": {
-      "title": "So ändern Sie die Bildgröße",
-      "subtitle": "Einfache Schritte zum Stapel-Resize Ihrer Bilder",
+      "title": "Bilder im Stapel in 3 Schritten anpassen",
+      "subtitle": "Größe mehrerer Bilder in Sekunden ändern — ohne Softwareinstallation",
       "step1": {
         "number": "1",
-        "title": "Auswählen",
-        "description": "Wählen Sie Ihre JPG-, PNG- oder WebP-Bilder für unser Stapel-Resize-Tool aus."
+        "title": "Bilder hochladen",
+        "description": "Ziehe JPG-, PNG- oder WebP-Dateien hinein, um die Größe im Stapel anzupassen."
       },
       "step2": {
         "number": "2",
-        "title": "Größe ändern",
-        "description": "Wählen Sie Ihren gewünschten Resize-Modus und passen Sie die Einstellungen an Ihre Bedürfnisse an."
+        "title": "Einstellungen wählen",
+        "description": "Wähle Modus (Prozent, Pixel, Dateigröße) und passe die Größe deiner Bilder an."
       },
       "step3": {
         "number": "3",
-        "title": "Herunterladen",
-        "description": "Laden Sie Ihre angepassten Bilder sofort herunter oder bearbeiten Sie sie mit weiteren Optionen."
+        "title": "Bilder herunterladen",
+        "description": "Lade alle angepassten Bilder als ZIP oder einzeln herunter. Die Verarbeitung erfolgt lokal."
       }
     },
     "featureSections": {
       "feature1": {
-        "title": "Bilder kostenlos online stapelweise anpassen.",
+        "title": "Bilder im Stapel Online & Kostenlos Anpassen",
         "description": [
-          "Der einfachste Weg, Fotos online anzupassen. Passen Sie Ihre Bilder in Sekunden an, komprimieren und optimieren Sie sie.",
-          "Läuft zu 100% in Ihrem Browser — keine Uploads, keine Konten, keine Daten verlassen Ihr Gerät."
+          "Der einfachste Weg, die Größe von Bildern im Stapel anzupassen. Passe Hunderte Fotos in Sekunden an.",
+          "Unser Tool läuft zu 100% in deinem Browser. Keine Uploads, keine Konten, maximale Privatsphäre."
         ]
       },
       "feature2": {
-        "title": "Bildabmessungen ändern.",
+        "title": "Bilder im Stapel auf Exakte Maße Anpassen",
         "description": [
-          "Passen Sie Bildabmessungen einfach auf exakte Breite und Höhe an. Perfekt für soziale Medien, Druck oder Web-Nutzung.",
-          "Benötigen Sie eine bestimmte Größe? Sie können Größen anpassen, um die perfekte Passform zu erhalten."
+          "Stelle exakte Pixelmaße für Social Media, Druck oder Webseiten ein.",
+          "Nutze Voreinstellungen oder erstelle eigene Abmessungen mit einem Klick."
         ]
       },
       "feature3": {
-        "title": "Bilddateigröße ändern.",
+        "title": "Bilder im Stapel nach Dateigröße Anpassen",
         "description": [
-          "Komprimieren Sie Bilder stapelweise, um ungefähr Ihrer gewählten Dateigröße zu entsprechen — Speicherplatz sparen und Uploads für Websites, E-Mails und soziale Plattformen beschleunigen.",
-          "Beachten Sie: Die Bildkomplexität kann die endgültige Größe beeinflussen."
+          "Reduziere die Dateigröße im Stapel auf dein Ziel-KB-Limit.",
+          "Wähle deine Zielgröße in KB und komprimiere Bilder bei bester Qualität."
         ]
       }
     },
     "faq": {
-      "title": "Häufig gestellte Fragen",
-      "subtitle": "Alles, was Sie über das Stapel-Resize von Bildern wissen müssen",
+      "title": "Bilder im Stapel Anpassen — FAQ",
+      "subtitle": "Alles, was du über die Stapelverarbeitung von Bildgrößen wissen musst",
       "items": [
         {
-          "question": "Ist dieser Bildgrößen-Anpasser wirklich kostenlos?",
-          "answer": "Ja! Unser Stapel-Bildgrößen-Anpasser ist 100% kostenlos ohne Einschränkungen. Sie können unbegrenzt Bilder ohne Wasserzeichen oder Einschränkungen anpassen."
+          "question": "Ist das Tool zum Anpassen der Bildgröße wirklich kostenlos?",
+          "answer": "Ja! Du kannst die Größe von Bildern im Stapel komplett kostenlos und ohne Einschränkungen anpassen."
         },
         {
-          "question": "Wie funktioniert das Stapel-Resize?",
-          "answer": "Laden Sie einfach mehrere Bilder auf einmal hoch, wählen Sie Ihre Resize-Einstellungen (Prozentsatz, Abmessungen oder Dateigröße) und klicken Sie auf Größe ändern. Alle Bilder werden zusammen in Ihrem Browser verarbeitet."
+          "question": "Wie funktioniert die Stapelverarbeitung?",
+          "answer": "Lade mehrere Bilder hoch, wähle deine Einstellungen und klicke auf Anpassen. Alles läuft direkt im Browser ab."
         },
         {
           "question": "Welche Bildformate werden unterstützt?",
-          "answer": "Wir unterstützen JPG-, JPEG-, PNG- und WebP-Formate. Sie können Bilder in jedem dieser Formate anpassen."
+          "answer": "Unterstützt werden JPG, JPEG, PNG und WebP. Du kannst das Ausgabeformat während des Vorgangs ändern."
         },
         {
           "question": "Sind meine Daten sicher?",
-          "answer": "Absolut! Die gesamte Bildverarbeitung erfolgt lokal in Ihrem Browser. Ihre Bilder verlassen niemals Ihr Gerät, was vollständige Privatsphäre und Sicherheit gewährleistet. Eine Möglichkeit zu demonstrieren, dass die gesamte Verarbeitung lokal erfolgt, besteht darin, die Website zu laden, die Internetverbindung zu trennen und dann die Website zu verwenden."
+          "answer": "Absolut. Alle Dateien werden lokal in deinem Browser verarbeitet und verlassen niemals dein Gerät."
         },
         {
-          "question": "Kann ich Bilder auf bestimmte Abmessungen anpassen?",
-          "answer": "Ja! Sie können nach Prozentsatz, exakten Abmessungen (Breite × Höhe) oder Zieldateigröße anpassen. Wir bieten auch schnelle Voreinstellungen für Social-Media-Plattformen."
+          "question": "Kann ich genaue Maße angeben?",
+          "answer": "Ja, du kannst nach Prozent, exakten Pixeln (Breite × Höhe) oder Ziel-Dateigröße anpassen."
         },
         {
-          "question": "Dateigröße unerwartet erhöht?",
-          "answer": "Dies kann passieren, wenn Ihre Einstellungen hochdetaillierte Bilder erzeugen. Um die Dateigröße minimal zu halten, versuchen Sie, im WebP-Format zu speichern und die Qualität auf 80% oder niedriger einzustellen. Wenn das Problem weiterhin besteht, überprüfen Sie die Pixelauflösung des Bildes, um sicherzustellen, dass es nicht hochskaliert wird."
+          "question": "Warum ist die Datei nach dem Anpassen größer?",
+          "answer": "Das kann passieren, wenn Einstellungen eine sehr hohe Qualität erzwingen. Nutze WebP bei 80% Qualität für kleine Dateien."
         }
       ]
+    },
+    "seoContent": {
+      "title": "Das beste kostenlose Online-Tool zum Anpassen von Bildgrößen im Stapel",
+      "body": "Musst du die Größe mehrerer Bilder schnell ändern? Unser kostenloses Online-Tool erledigt das im Handumdrehen. Ziehe deine Fotos einfach per Drag-and-Drop hinein und lade die Ergebnisse herunter."
     }
   }
 }

@@ -3,7 +3,7 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing'
 import ResizeImageClient from './page-client';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
-import { JsonLd, getSoftwareAppSchema, getHowToSchema } from '@/components/common/json-ld';
+import { JsonLd, getSoftwareAppSchema, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
 
 export const runtime = 'edge'
 // export const revalidate = 3600
@@ -56,5 +56,37 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
   const { locale } = await params;
   setRequestLocale(locale);
 
-  return <ResizeImageClient />;
+  const t = await getTranslations({ locale, namespace: 'BulkResizeTool' });
+  const urlString = process.env.NEXT_PUBLIC_APP_URL || 'https://imageconverter.dev';
+  const basePath = locale === 'en' ? '' : `/${locale}`;
+  const canonicalUrl = `${urlString}${basePath}/bulk-resize-images`;
+
+  const softwareAppSchema = getSoftwareAppSchema({
+    name: t('pageTitle'),
+    description: t('pageDescription'),
+    url: canonicalUrl,
+    image: `${urlString}/og.png`,
+  });
+
+  const faqItems = t.raw('faq.items') as Array<{ question: string; answer: string }>;
+  const faqSchema = getFaqSchema(faqItems);
+
+  const howToSchema = getHowToSchema({
+    name: t('howTo.title'),
+    description: t('howTo.subtitle'),
+    steps: [
+      { title: t('howTo.step1.title'), text: t('howTo.step1.description') },
+      { title: t('howTo.step2.title'), text: t('howTo.step2.description') },
+      { title: t('howTo.step3.title'), text: t('howTo.step3.description') },
+    ],
+  });
+
+  return (
+    <>
+      <JsonLd data={softwareAppSchema} />
+      <JsonLd data={faqSchema} />
+      <JsonLd data={howToSchema} />
+      <ResizeImageClient />
+    </>
+  );
 }

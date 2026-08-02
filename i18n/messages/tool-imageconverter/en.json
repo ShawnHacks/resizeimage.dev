@@ -21,7 +21,7 @@
     "hero": {
       "badge": "{from} -> {to} converter",
       "title": "Convert {from} to {to} in seconds",
-      "description": "Upload a {from} image and instantly download a high-quality {to}. Everything stays in your browser — no uploads, no limits."
+      "description": "Convert {from} to {to} instantly — just upload your {from} file and download a high-quality {to} in seconds. Our free {from} to {to} converter runs 100% in your browser with no uploads, no limits, and no watermarks."
     },
     "workspace": {
       "badge": "Convert {from} to {to}",
@@ -58,40 +58,44 @@
       "steps": [
         {
           "number": "1",
-          "title": "Upload your image",
-          "description": "Drop or select a {from} file from your device. The file never leaves your browser."
+          "title": "Upload your {from} file",
+          "description": "Drag and drop or select the {from} file you want to convert to {to}. The file never leaves your browser."
         },
         {
           "number": "2",
-          "title": "We convert it instantly",
-          "description": "The converter renders your image as {to} locally, keeping quality and dimensions intact."
+          "title": "Convert {from} to {to} instantly",
+          "description": "Our converter transforms your {from} to {to} locally in your browser, keeping quality and dimensions intact."
         },
         {
           "number": "3",
-          "title": "Download the {to} file",
-          "description": "Save the converted {to} with one click or choose another format."
+          "title": "Download your {to} file",
+          "description": "Your {from} to {to} conversion is complete — save the file with one click or choose another format."
         }
       ]
     },
     "faq": {
-      "title": "Image converter FAQ",
-      "subtitle": "Everything you need to know about switching image formats in your browser",
+      "title": "{from} to {to} converter FAQ",
+      "subtitle": "Everything you need to know about converting {from} to {to} in your browser",
       "items": [
         {
-          "question": "Is the image converter free to use?",
-          "answer": "Yes—every converter on imageconverter.dev is free, unlimited, and watermark-free. Convert as many files as you want without creating an account."
+          "question": "Is the {from} to {to} converter free to use?",
+          "answer": "Yes — our {from} to {to} converter is completely free, unlimited, and watermark-free. Convert as many {from} files to {to} as you want without creating an account or installing any software."
         },
         {
-          "question": "Do my images ever upload to a server?",
-          "answer": "No. All conversions happen entirely in your browser using Web APIs. After the page loads you can even go offline and the converter will keep working."
+          "question": "Will converting {from} to {to} reduce image quality?",
+          "answer": "Our {from} to {to} converter preserves the original resolution and applies only the minimal compression required by the {to} format. You get the best possible quality every time you convert {from} to {to}."
         },
         {
-          "question": "Will the converter reduce image quality?",
-          "answer": "We preserve the image resolution and apply gentle compression only when the target format requires it. Transparent backgrounds are automatically flattened to white when exporting to JPG."
+          "question": "How long does it take to convert {from} to {to}?",
+          "answer": "Converting {from} to {to} is nearly instant. Because the conversion runs locally in your browser using WebAssembly, most {from} to {to} conversions finish in under a second — even for large files."
         },
         {
-          "question": "Can I convert multiple images at once?",
-          "answer": "Right now this tool handles one file at a time so you can review the output before downloading. Need bulk conversions? Try our bulk resize tool with format switching support."
+          "question": "Can I convert {from} to {to} offline?",
+          "answer": "Yes! Once this page has loaded, you can convert {from} to {to} even without an internet connection. All processing happens on your device, so your {from} files are never uploaded to any server."
+        },
+        {
+          "question": "Is it safe to convert {from} to {to} with this tool?",
+          "answer": "Absolutely. Our {from} to {to} converter processes everything locally in your browser. Your images never leave your device, making it the most private way to convert {from} to {to} online."
         }
       ]
     },
@@ -348,25 +352,29 @@
       }
     },
     "converterFeatures": {
-      "title": "Why Use Our Image Converter?",
+      "title": "Why choose our {from} to {to} converter?",
       "items": [
         {
           "title": "Privacy First",
-          "description": "All conversions happen locally in your browser. Your images are never uploaded to our servers."
+          "description": "Every {from} to {to} conversion happens locally in your browser. Your {from} files are never uploaded to any server."
         },
         {
           "title": "Lightning Fast",
-          "description": "Powered by WebAssembly, our converter delivers desktop-class performance without the lag."
+          "description": "Powered by WebAssembly, our {from} to {to} converter delivers desktop-class speed — most conversions finish in under a second."
         },
         {
           "title": "No Limits",
-          "description": "Convert as many images as you want. No file size limits, no daily restrictions."
+          "description": "Convert as many {from} files to {to} as you want. No file size limits, no daily caps, no account required."
         },
         {
-          "title": "High Quality",
-          "description": "We treat your images with care, preserving resolution and quality during every conversion."
+          "title": "High Quality Output",
+          "description": "Our {from} to {to} converter preserves your original resolution and quality, so every converted file looks exactly as it should."
         }
       ]
+    },
+    "seoContent": {
+      "title": "The best free {from} to {to} converter online",
+      "body": "Looking for a fast, free way to convert {from} to {to}? Our online {from} to {to} converter makes it simple — just upload your {from} file, and the tool instantly produces a high-quality {to} output. Unlike other services, this {from} to {to} converter runs entirely in your browser, so your images stay private and never touch a remote server. Whether you need to convert a single {from} image to {to} or process dozens of files, there are no limits and no watermarks. The {from} to {to} conversion is powered by WebAssembly for blazing-fast performance on any device. Try our free {from} to {to} converter today and see how easy format conversion can be."
     }
   }
 }

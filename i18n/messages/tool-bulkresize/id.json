@@ -1,17 +1,17 @@
 {
   "BulkResizeTool": {
-    "pageTitle": "Ubah Ukuran Gambar Massal Secara Online",
-    "pageDescription": "Alat online gratis untuk mengubah ukuran beberapa gambar sekaligus. Cepat, aman, dan berfungsi sepenuhnya di browser Anda — tidak perlu mengunggah.",
+    "pageTitle": "Ubah Ukuran Gambar Secara Masal Online — Alat Gratis",
+    "pageDescription": "Ubah ukuran gambar secara masal online gratis. Ubah ukuran ratusan foto sekaligus langsung di browser Anda dengan cepat dan aman.",
     "backButton": "Kembali",
     "features": {
-      "title": "Ubah Ukuran Gambar Massal Secara Online & Gratis",
-      "description": "Ubah ukuran beberapa gambar sekaligus tanpa mengunggah ke server mana pun",
-      "lightningFast": "Pemrosesan secepat kilat",
+      "title": "Ubah Ukuran Gambar Secara Masal Online & Gratis",
+      "description": "Ubah ukuran banyak gambar sekaligus tanpa mengunggah ke server — cepat, aman, dan tanpa batas",
+      "lightningFast": "Pemrosesan super cepat",
       "free": "100% gratis selamanya",
-      "noSignup": "Tidak perlu mendaftar",
-      "secure": "Aman & pribadi",
-      "unlimited": "Proses gambar tanpa batas",
-      "browser": "Bekerja di browser Anda"
+      "noSignup": "Tanpa perlu pendaftaran",
+      "secure": "Aman & privat",
+      "unlimited": "Ubah ukuran tanpa batas",
+      "browser": "Berjalan di browser Anda"
     },
     "imagePreview": {
       "selected": "gambar",
@@ -137,76 +137,80 @@
       "enterTargetValue": "Silakan masukkan nilai target"
     },
     "howTo": {
-      "title": "Cara Mengubah Ukuran Gambar",
-      "subtitle": "Langkah sederhana untuk mengubah ukuran gambar secara massal",
+      "title": "Cara Ubah Ukuran Gambar Secara Masal dalam 3 Langkah",
+      "subtitle": "Ubah ukuran gambar secara masal dalam hitungan detik — tanpa instalasi perangkat lunak",
       "step1": {
         "number": "1",
-        "title": "Pilih",
-        "description": "Pilih gambar JPG, PNG, atau WebP Anda ke alat pengubah ukuran massal kami."
+        "title": "Unggah gambar Anda",
+        "description": "Pilih atau tarik file JPG, PNG, atau WebP yang ingin diubah ukurannya secara masal."
       },
       "step2": {
         "number": "2",
-        "title": "Ubah Ukuran",
-        "description": "Pilih mode pengubahan ukuran yang Anda inginkan dan sesuaikan pengaturan sesuai kebutuhan Anda."
+        "title": "Pilih pengaturan",
+        "description": "Tentukan mode (persentase, piksel persis, atau ukuran file) lalu atur ukuran foto Anda."
       },
       "step3": {
         "number": "3",
-        "title": "Unduh",
-        "description": "Segera unduh gambar yang telah diubah ukurannya atau lanjutkan mengedit dengan lebih banyak opsi."
+        "title": "Unduh gambar",
+        "description": "Unduh semua hasil dalam format ZIP atau satu per satu. Pemrosesan 100% lokal."
       }
     },
     "featureSections": {
       "feature1": {
-        "title": "Ubah ukuran gambar online gratis secara massal.",
+        "title": "Ubah Ukuran Gambar Secara Masal Online & Gratis",
         "description": [
-          "Cara termudah untuk mengubah ukuran foto online. Ubah ukuran, kompres, dan optimalkan gambar Anda dalam hitungan detik.",
-          "Berjalan 100% di browser Anda — tanpa unggahan, tanpa akun, data tidak meninggalkan perangkat Anda."
+          "Cara termudah untuk mengubah ukuran banyak foto sekaligus secara online.",
+          "Alat kami berjalan 100% di browser Anda tanpa ada data yang dikirim keluar."
         ]
       },
       "feature2": {
-        "title": "Ubah Dimensi Gambar.",
+        "title": "Ubah Ukuran Gambar Secara Masal ke Dimensi Persis",
         "description": [
-          "Sesuaikan dimensi gambar dengan mudah ke lebar dan tinggi yang tepat. Sempurna untuk media sosial, pencetakan, atau penggunaan web.",
-          "Butuh ukuran tertentu? Anda dapat menyesuaikan ukuran untuk mendapatkan kesesuaian yang sempurna."
+          "Atur lebar dan tinggi piksel yang tepat untuk kebutuhan media sosial atau situs web.",
+          "Gunakan preset yang tersedia atau masukkan ukuran khusus dalam satu klik."
         ]
       },
       "feature3": {
-        "title": "Ubah Ukuran File Gambar.",
+        "title": "Ubah Ukuran Gambar Secara Masal Berdasarkan Ukuran File",
         "description": [
-          "Kompres gambar secara massal untuk kira-kira sesuai dengan ukuran file yang Anda pilih — menghemat penyimpanan dan mempercepat unggahan untuk situs web, email, dan platform sosial.",
-          "Perlu diingat: Kompleksitas gambar dapat mempengaruhi ukuran akhir."
+          "Kompres gambar sesuai batas KB untuk menghemat ruang penyimpanan dan mempercepat loading.",
+          "Tentukan target KB dan kecilkan ukuran file dengan kualitas terbaik."
         ]
       }
     },
     "faq": {
-      "title": "Pertanyaan yang Sering Diajukan",
-      "subtitle": "Semua yang perlu Anda ketahui tentang pengubahan ukuran gambar secara massal",
+      "title": "Ubah Ukuran Gambar Secara Masal — Pertanyaan Umum",
+      "subtitle": "Segala hal yang perlu Anda ketahui tentang mengubah ukuran gambar secara masal",
       "items": [
         {
-          "question": "Apakah pengubah ukuran gambar ini benar-benar gratis?",
-          "answer": "Ya! Pengubah ukuran gambar massal kami 100% gratis tanpa batasan. Anda dapat mengubah ukuran gambar tanpa batas tanpa watermark atau pembatasan."
+          "question": "Apakah alat ubah ukuran gambar masal ini benar-benar gratis?",
+          "answer": "Ya! Anda dapat mengubah ukuran gambar secara masal gratis tanpa batas dan tanpa watermark."
         },
         {
-          "question": "Bagaimana cara kerja pengubahan ukuran massal?",
-          "answer": "Cukup unggah beberapa gambar sekaligus, pilih pengaturan pengubahan ukuran Anda (persentase, dimensi, atau ukuran file) dan klik ubah ukuran. Semua gambar akan diproses bersama di browser Anda."
+          "question": "Bagaimana cara kerja pengubahan ukuran masal ini?",
+          "answer": "Unggah beberapa foto, pilih pengaturan, lalu klik ubah ukuran. Pemrosesan dilakukan di browser."
         },
         {
-          "question": "Format gambar apa yang didukung?",
-          "answer": "Kami mendukung format JPG, JPEG, PNG, dan WebP. Anda dapat mengubah ukuran gambar dalam format apa pun dari ini."
+          "question": "Format apa saja yang didukung?",
+          "answer": "Kami mendukung JPG, JPEG, PNG, dan WebP serta konversi antar format."
         },
         {
-          "question": "Apakah data saya aman?",
-          "answer": "Tentu saja! Semua pemrosesan gambar terjadi secara lokal di browser Anda. Gambar Anda tidak pernah meninggalkan perangkat Anda, memastikan privasi dan keamanan lengkap. Salah satu cara untuk menunjukkan bahwa semua pemrosesan dilakukan secara lokal adalah dengan memuat situs web, memutuskan dari internet, dan kemudian menggunakan situs."
+          "question": "Apakah file saya aman?",
+          "answer": "Sangat aman. Semua pemrosesan terjadi secara lokal di perangkat Anda."
         },
         {
-          "question": "Bisakah saya mengubah ukuran gambar ke dimensi tertentu?",
-          "answer": "Ya! Anda dapat mengubah ukuran berdasarkan persentase, dimensi tepat (lebar × tinggi), atau ukuran file target. Kami juga menawarkan preset cepat untuk platform media sosial."
+          "question": "Bisakah saya menentukan ukuran piksel persis?",
+          "answer": "Bisa! Anda dapat mengatur berdasarkan persentase, piksel (lebar × tinggi), atau target KB."
         },
         {
-          "question": "Ukuran file meningkat secara tidak terduga?",
-          "answer": "Ini dapat terjadi ketika pengaturan Anda menghasilkan gambar yang sangat detail. Untuk menjaga ukuran file minimal, coba simpan dalam format WebP dan atur Kualitas ke 80% atau di bawahnya. Jika masalah berlanjut, periksa resolusi piksel gambar untuk memastikan tidak diperbesar."
+          "question": "Mengapa ukuran file bertambah besar setelah diubah?",
+          "answer": "Hal ini bisa terjadi jika kualitas diatur terlalu tinggi. Gunakan format WebP pada kualitas 80%."
         }
       ]
+    },
+    "seoContent": {
+      "title": "Alat Gratis Terbaik untuk Ubah Ukuran Gambar Secara Masal Online",
+      "body": "Perlu mengubah ukuran banyak foto dengan cepat? Alat online gratis kami memungkinkan Anda mengubah ukuran gambar secara masal dalam hitungan detik langsung dari browser."
     }
   }
 }
