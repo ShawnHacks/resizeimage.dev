@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Ücretsiz Çevrimiçi Resim Sıkıştırıcı (Free Image Compressor Online)",
-    "description": "Yüksek kaliteyi korurken resim dosyası boyutunu küçültün. JPG, PNG, WebP ve AVIF için profesyonel sıkıştırma aracı. Gizli, hızlı ve ücretsiz.",
-    "metaTitle": "Ücretsiz Çevrimiçi Resim Sıkıştırıcı — Resim Sıkıştır ve Fotoğraf Optimize Et",
-    "metaDescription": "Kalite kaybı olmadan dosya boyutunu küçültmek için ücretsiz çevrimiçi resim sıkıştırıcı. JPG, PNG ve WebP resimlerini tarayıcıda hemen sıkıştırmak için en iyi araç.",
+    "title": "Free Online Image Compressor",
+    "description": "Free online image compressor to reduce image size and reduce picture size. Fast, private PNG compressor & photo optimizer running 100% in your browser.",
+    "metaTitle": "Free Image Compressor Online — Reduce Image Size & PNG Compressor",
+    "metaDescription": "Best free online image compressor to reduce image size and reduce picture size without quality loss. Powerful PNG compressor and JPG optimizer.",
     "intro": {
-      "title": "Profesyonel Ücretsiz Çevrimiçi Resim Sıkıştırıcı",
-      "content": "Ücretsiz çevrimiçi resim sıkıştırıcımız, profesyonel kaliteyi korurken resim boyutu küçültmenin en hızlı yolunu sunar. Web, e-posta veya depolama için JPEG, PNG, WebP ve AVIF formatlarını destekler. Tüm işlemler tarayıcıda yapıldığından fotoğraflarınız sunucuya yüklenmez, %100 gizlilik sağlanır."
+      "title": "The Best Free Online Image Compressor Tool",
+      "content": "Looking for a fast, free online image compressor to reduce image size? Our browser-based image compressor allows you to reduce picture size instantly without quality loss. Whether you need a dedicated PNG compressor for graphics or a JPEG optimizer to speed up your website, our tool handles it all. Easily compress photos to meet upload limits or save disk space. Because our image compressor processes files locally on your device, your images remain 100% private and are never uploaded to any remote server."
     },
     "settings": "Ayarlar",
     "processing": "İşleniyor...",
@@ -22,29 +22,52 @@
     "qualityHint": "Daha düşük kalite daha küçük dosya boyutları sağlar ancak resim detayını azaltabilir.",
     "qualityPng": "PNG sıkıştırması kayıpsızdır, bu nedenle kalite ayarı mevcut değildir.",
     "faq": {
-      "title": "Resim Sıkıştırıcı SSS",
+      "title": "Free Online Image Compressor — FAQ",
+      "subtitle": "Everything you need to know about using our image compressor to reduce image size",
       "items": [
         {
-          "question": "Bu çevrimiçi resim sıkıştırıcı gerçekten ücretsiz mi?",
-          "answer": "Evet, aracımız tamamen ücretsizdir; gizli ücret, kayıt veya filigran yoktur. İstediğiniz kadar resmi sıkıştırabilirsiniz."
+          "question": "Is this online image compressor really free to use?",
+          "answer": "Yes! Our online image compressor is 100% free with no limits, no watermarks, and no registration required. Use our PNG compressor and image compressor as often as you need."
         },
         {
-          "question": "Bu araçla çevrimiçi resim nasıl sıkıştırılır?",
-          "answer": "Resimlerinizi sürükleyip bırakın, gerekirse kaliteyi ayarlayın ve indir butonuna tıklayın. Her şey anında gerçekleşir."
+          "question": "How does an image compressor reduce image size without losing quality?",
+          "answer": "Our image compressor uses smart optimization techniques to remove unnecessary metadata and apply efficient compression. This allows you to reduce image size and reduce picture size while keeping visual clarity intact."
         },
         {
-          "question": "Sıkıştırma yaparken resim kalitesi bozulur mu?",
-          "answer": "Gelişmiş algoritmalarla kalite kaybını en aza indiriyoruz. Kalite sürgüsüyle dosya boyutu ve netlik arasındaki mükemmel dengeyi bulabilirsiniz."
+          "question": "Is it safe to use this PNG compressor and image compressor?",
+          "answer": "Absolutely. When you use our image compressor to reduce picture size, all processing happens locally inside your browser. Your images never leave your computer."
         },
         {
-          "question": "Fotoğraflarım bir sunucuya yükleniyor mu?",
-          "answer": "Hayır. Sıkıştırma işlemi tarayıcınızda (istemci tarafında) yerel olarak yapılır. Dosyalarınız bilgisayarınızdan asla ayrılmaz."
+          "question": "What image formats does this image compressor support?",
+          "answer": "Our image compressor supports JPG, JPEG, PNG, WebP, and AVIF. Whether you need a PNG compressor or JPEG optimizer, you can reduce image size effortlessly."
         }
       ]
     },
     "toast": {
       "success": "Resim indirildi!",
       "error": "Sıkıştırma başarısız. Lütfen farklı bir resim veya format deneyin."
+    },
+    "howTo": {
+      "title": "How to Use Our Image Compressor to Reduce Image Size in 3 Steps",
+      "step1": {
+        "number": "1",
+        "title": "Upload File to Image Compressor",
+        "description": "Select or drag and drop your photo into our free online image compressor to reduce picture size."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Adjust Settings on PNG Compressor",
+        "description": "Fine-tune output format and quality settings on our image compressor or PNG compressor."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Reduce Image Size & Download",
+        "description": "Download your compressed image file immediately after our image compressor reduces image size."
+      }
+    },
+    "seoContent": {
+      "title": "Why You Need a Powerful Online Image Compressor",
+      "body": "Uncompressed photos and heavy graphics slow down website load times, take up storage, and exceed email attachment limits. Using an effective online image compressor is the easiest way to reduce image size and reduce picture size without sacrificing visual fidelity. Our browser-first image compressor functions as a high-performance PNG compressor, WebP optimizer, and JPG reducer all in one. You can reduce picture size for web design, social media posts, or mobile apps in seconds. Because our online image compressor processes everything client-side, your files stay completely private and secure. Try our free image compressor today to reduce image size instantly."
     }
   }
 }

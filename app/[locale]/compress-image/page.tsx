@@ -1,10 +1,12 @@
 
 import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
-import { useTranslations } from 'next-intl';
 import { routing } from '@/i18n/routing';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import { CompressorView } from '@/components/image-compressor/compressor-view';
+import { JsonLd, getSoftwareAppSchema, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
+import { FAQSection } from '@/components/common/faq-section';
+import { HowToSection } from '@/components/common/how-to-section';
 
 export const runtime = 'edge';
 
@@ -56,9 +58,6 @@ export async function generateMetadata({
   };
 }
 
-import StructuredData from '@/components/structured-data';
-import { FAQSection } from '@/components/common/faq-section';
-
 export default async function Page({
   params,
 }: {
@@ -67,75 +66,37 @@ export default async function Page({
   const locale = (await params).locale;
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'ImageCompressor' });
-  const siteConfig = await getLocalizedSiteConfig(locale);
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://imageconverter.dev';
 
-  const softwareStructuredData = siteConfig ? {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": t('metaTitle'),
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "Web Browser",
-    "description": t('metaDescription'),
-    "inLanguage": locale,
-    "url": `${appUrl}${locale === 'en' ? '' : `/${locale}`}/compress-image`,
-    "image": [`${appUrl}/og.png`],
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": siteConfig.companyName || siteConfig.name,
-      "url": siteConfig.url,
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${appUrl}/logo.png`
-      }
-    },
-    "featureList": [
-      "Compress JPG, PNG, WebP, and AVIF images",
-      "Privacy-first processing entirely in the browser",
-      "No file uploads to servers",
-      "Adjustable quality for perfect balance of size and clarity",
-      "Fast and free with no registration needed"
-    ]
-  } : null;
-
   const faqItems = t.raw('faq.items') as Array<{ question: string; answer: string }>;
+  const faqSchema = getFaqSchema(faqItems);
 
-  const faqStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqItems.map(item => ({
-      "@type": "Question",
-      "name": item.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": item.answer
-      }
-    }))
-  };
+  const howToSchema = getHowToSchema({
+    name: t('howTo.title'),
+    description: t('description'),
+    steps: [
+      { title: t('howTo.step1.title'), text: t('howTo.step1.description') },
+      { title: t('howTo.step2.title'), text: t('howTo.step2.description') },
+      { title: t('howTo.step3.title'), text: t('howTo.step3.description') },
+    ],
+  });
+
+  const softwareSchema = getSoftwareAppSchema({
+    name: t('metaTitle'),
+    description: t('metaDescription'),
+    url: `${appUrl}${locale === 'en' ? '' : `/${locale}`}/compress-image`,
+    image: `${appUrl}/og.png`,
+  });
 
   return (
-    <div className="mx-auto w-full gap-4">
-      {softwareStructuredData && (
-        <StructuredData
-          id="software-application-structured-data"
-          data={softwareStructuredData}
-        />
-      )}
-      {faqStructuredData && (
-        <StructuredData
-          id="faq-structured-data"
-          data={faqStructuredData}
-        />
-      )}
+    <div className="mx-auto w-full gap-4 pt-8">
+      <JsonLd data={softwareSchema} />
+      <JsonLd data={faqSchema} />
+      <JsonLd data={howToSchema} />
 
       {/* Header */}
       <header className="bg-background">
-        <div className="container mx-auto px-4 pt-12">
+        <div className="container mx-auto px-4 py-8">
           <div className="text-center max-w-3xl mx-auto">
             <h1 className="text-4xl md:text-5xl font-heading font-bold text-foreground mb-3">
               {t('title')}
@@ -163,11 +124,46 @@ export default async function Page({
         </div>
       </main>
 
+      {/* How To Section */}
+      <HowToSection
+        title={t('howTo.title')}
+        steps={[
+          {
+            number: t('howTo.step1.number'),
+            title: t('howTo.step1.title'),
+            description: t('howTo.step1.description'),
+          },
+          {
+            number: t('howTo.step2.number'),
+            title: t('howTo.step2.title'),
+            description: t('howTo.step2.description'),
+          },
+          {
+            number: t('howTo.step3.number'),
+            title: t('howTo.step3.title'),
+            description: t('howTo.step3.description'),
+          },
+        ]}
+      />
+
       {/* FAQ Section */}
       <FAQSection
         title={t('faq.title')}
+        subtitle={t('faq.subtitle')}
         faqs={faqItems}
       />
+
+      {/* SEO Content Section */}
+      <section className="py-16 md:py-20">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-foreground mb-6">
+            {t('seoContent.title')}
+          </h2>
+          <p className="text-lg text-muted-foreground leading-relaxed">
+            {t('seoContent.body')}
+          </p>
+        </div>
+      </section>
     </div>
   );
 }

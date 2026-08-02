@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Бесплатный онлайн-компрессор изображений (Free Image Compressor Online)",
-    "description": "Уменьшайте размер файлов изображений, сохраняя высокое качество. Профессиональный инструмент для сжатия JPG, PNG, WebP и AVIF. Конфиденциально, быстро и бесплатно.",
-    "metaTitle": "Бесплатный онлайн-компрессор изображений — Сжатие и оптимизация фото",
-    "metaDescription": "Бесплатный онлайн-компрессор изображений для уменьшения размера файлов без потери качества. Лучший фотокомпрессор для сжатия JPG, PNG и WebP в браузере.",
+    "title": "Free Online Image Compressor",
+    "description": "Free online image compressor to reduce image size and reduce picture size. Fast, private PNG compressor & photo optimizer running 100% in your browser.",
+    "metaTitle": "Free Image Compressor Online — Reduce Image Size & PNG Compressor",
+    "metaDescription": "Best free online image compressor to reduce image size and reduce picture size without quality loss. Powerful PNG compressor and JPG optimizer.",
     "intro": {
-      "title": "Профессиональный бесплатный онлайн-компрессор изображений",
-      "content": "Наш бесплатный онлайн-компрессор изображений — это самый быстрый способ уменьшить размер файлов при сохранении профессионального качества. Инструмент поддерживает JPEG, PNG, WebP и AVIF для веба, почты или хранения. Все процессы происходят в браузере; ваши фото не загружаются на сервер, что гарантирует 100% конфиденциальность."
+      "title": "The Best Free Online Image Compressor Tool",
+      "content": "Looking for a fast, free online image compressor to reduce image size? Our browser-based image compressor allows you to reduce picture size instantly without quality loss. Whether you need a dedicated PNG compressor for graphics or a JPEG optimizer to speed up your website, our tool handles it all. Easily compress photos to meet upload limits or save disk space. Because our image compressor processes files locally on your device, your images remain 100% private and are never uploaded to any remote server."
     },
     "settings": "Настройки",
     "processing": "Обработка...",
@@ -22,29 +22,52 @@
     "qualityHint": "Более низкое качество приводит к меньшему размеру файла, но может уменьшить детализацию изображения.",
     "qualityPng": "Сжатие PNG происходит без потерь, поэтому регулировка качества недоступна.",
     "faq": {
-      "title": "Часто задаваемые вопросы о компрессоре изображений",
+      "title": "Free Online Image Compressor — FAQ",
+      "subtitle": "Everything you need to know about using our image compressor to reduce image size",
       "items": [
         {
-          "question": "Этот онлайн-компрессор изображений действительно бесплатный?",
-          "answer": "Да, наш инструмент полностью бесплатен — без скрытых платежей, регистрации и водяных знаков. Вы можете сжимать неограниченное количество изображений."
+          "question": "Is this online image compressor really free to use?",
+          "answer": "Yes! Our online image compressor is 100% free with no limits, no watermarks, and no registration required. Use our PNG compressor and image compressor as often as you need."
         },
         {
-          "question": "Как сжать изображения онлайн с помощью этого инструмента?",
-          "answer": "Просто перетащите фотографии в зону загрузки, при необходимости настройте качество и нажмите кнопку скачивания. Все обрабатывается мгновенно."
+          "question": "How does an image compressor reduce image size without losing quality?",
+          "answer": "Our image compressor uses smart optimization techniques to remove unnecessary metadata and apply efficient compression. This allows you to reduce image size and reduce picture size while keeping visual clarity intact."
         },
         {
-          "question": "Ухудшится ли качество при сжатии?",
-          "answer": "Мы используем передовые алгоритмы для минимизации потерь. Вы можете настроить слайдер качества, чтобы найти идеальный баланс между размером и четкостью."
+          "question": "Is it safe to use this PNG compressor and image compressor?",
+          "answer": "Absolutely. When you use our image compressor to reduce picture size, all processing happens locally inside your browser. Your images never leave your computer."
         },
         {
-          "question": "Загружаются ли мои фото на сервер?",
-          "answer": "Нет. Сжатие выполняется локально в вашем браузере. Ваши файлы никогда не покидают ваш компьютер."
+          "question": "What image formats does this image compressor support?",
+          "answer": "Our image compressor supports JPG, JPEG, PNG, WebP, and AVIF. Whether you need a PNG compressor or JPEG optimizer, you can reduce image size effortlessly."
         }
       ]
     },
     "toast": {
       "success": "Изображение скачано!",
       "error": "Сжатие не удалось. Попробуйте другое изображение или формат."
+    },
+    "howTo": {
+      "title": "How to Use Our Image Compressor to Reduce Image Size in 3 Steps",
+      "step1": {
+        "number": "1",
+        "title": "Upload File to Image Compressor",
+        "description": "Select or drag and drop your photo into our free online image compressor to reduce picture size."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Adjust Settings on PNG Compressor",
+        "description": "Fine-tune output format and quality settings on our image compressor or PNG compressor."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Reduce Image Size & Download",
+        "description": "Download your compressed image file immediately after our image compressor reduces image size."
+      }
+    },
+    "seoContent": {
+      "title": "Why You Need a Powerful Online Image Compressor",
+      "body": "Uncompressed photos and heavy graphics slow down website load times, take up storage, and exceed email attachment limits. Using an effective online image compressor is the easiest way to reduce image size and reduce picture size without sacrificing visual fidelity. Our browser-first image compressor functions as a high-performance PNG compressor, WebP optimizer, and JPG reducer all in one. You can reduce picture size for web design, social media posts, or mobile apps in seconds. Because our online image compressor processes everything client-side, your files stay completely private and secure. Try our free image compressor today to reduce image size instantly."
     }
   }
 }

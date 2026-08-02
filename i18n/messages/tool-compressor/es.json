@@ -1,12 +1,12 @@
 {
   "ImageCompressor": {
-    "title": "Compresor de imágenes online gratuito (Free Image Compressor Online)",
-    "description": "Reduce el tamaño de las imágenes manteniendo la alta calidad. Herramienta profesional para JPG, PNG, WebP y AVIF. Privado, rápido y gratis.",
-    "metaTitle": "Compresor de imágenes online gratuito — Comprimir y optimizar fotos",
-    "metaDescription": "Compresor de imágenes gratuito para reducir el tamaño de archivo sin perder calidad. El mejor compresor para JPG, PNG y WebP al instante en tu navegador.",
+    "title": "Compresor de Imágenes Online Gratis",
+    "description": "Compresor de imágenes gratis para reducir el tamaño de las imágenes. Herramienta rápida para comprimir PNG, JPG, WebP y AVIF en tu navegador.",
+    "metaTitle": "Compresor de Imágenes Online Gratis — Reducir Tamaño de Imagen",
+    "metaDescription": "El mejor compresor de imágenes online gratis para reducir el tamaño de tus fotos sin perder calidad. Potente compresor PNG y optimizador JPG.",
     "intro": {
-      "title": "Compresor de imágenes online profesional y gratuito",
-      "content": "Nuestro compresor de imágenes online gratuito ofrece la forma más rápida de reducir el tamaño de tus fotos manteniendo una calidad profesional. Ya sea para web, email o almacenamiento, soporta JPEG, PNG, WebP y AVIF. Todo el proceso ocurre en tu navegador, garantizando privacidad total."
+      "title": "La Mejor Herramienta de Compresor de Imágenes Online",
+      "content": "¿Buscas un compresor de imágenes online rápido y gratuito? Nuestra herramienta te permite reducir el tamaño de tus fotos e imágenes al instante y de forma 100% privada."
     },
     "settings": "Configuración",
     "processing": "Procesando...",
@@ -22,29 +22,52 @@
     "qualityHint": "Una calidad más baja resulta en archivos más pequeños pero puede reducir el detalle de la imagen.",
     "qualityPng": "La compresión PNG es sin pérdida, por lo que el ajuste de calidad no está disponible.",
     "faq": {
-      "title": "Preguntas frecuentes - Compresor de imágenes",
+      "title": "Compresor de Imágenes Online — Preguntas Frecuentes",
+      "subtitle": "Todo lo que necesitas saber sobre nuestro compresor de imágenes",
       "items": [
         {
-          "question": "¿Este compresor de imágenes online es realmente gratuito?",
-          "answer": "Sí, nuestra herramienta es totalmente gratuita, sin cargos ocultos, registros ni marcas de agua. Puedes usarla ilimitadamente."
+          "question": "¿Este compresor de imágenes online es gratuito?",
+          "answer": "¡Sí! Es 100% gratis, sin registros ni marcas de agua."
         },
         {
-          "question": "¿Cómo comprimo una imagen con esta herramienta?",
-          "answer": "Solo arrastra tus fotos, ajusta la calidad si lo deseas y dale a descargar. Se procesa al instante."
+          "question": "¿Cómo se reduce el tamaño sin perder calidad?",
+          "answer": "Utiliza algoritmos de compresión inteligentes que eliminan datos innecesarios manteniendo la claridad visual."
         },
         {
-          "question": "¿Perderé calidad al comprimir la imagen?",
-          "answer": "Usamos algoritmos avanzados para minimizar la pérdida. Puedes ajustar el control de calidad para encontrar el equilibrio ideal entre tamaño y nitidez."
+          "question": "¿Es seguro usar este compresor PNG?",
+          "answer": "Totalmente seguro. Todo el procesamiento se realiza localmente en tu navegador."
         },
         {
-          "question": "¿Mis fotos se suben a algún servidor?",
-          "answer": "No. La compresión se realiza localmente en tu navegador. Tus archivos nunca salen de tu dispositivo."
+          "question": "¿Qué formatos son compatibles?",
+          "answer": "Admite JPG, PNG, WebP y AVIF."
         }
       ]
     },
     "toast": {
       "success": "¡Imagen descargada!",
       "error": "Error en la compresión. Intenta con una imagen o formato diferente."
+    },
+    "howTo": {
+      "title": "Cómo Reducir el Tamaño de Imagen en 3 Pasos",
+      "step1": {
+        "number": "1",
+        "title": "Sube tu Archivo",
+        "description": "Arrastra o selecciona la foto que deseas comprimir."
+      },
+      "step2": {
+        "number": "2",
+        "title": "Ajusta la Configuración",
+        "description": "Selecciona el formato de salida y el nivel de compresión deseado."
+      },
+      "step3": {
+        "number": "3",
+        "title": "Descarga tu Imagen",
+        "description": "Descarga de inmediato el archivo optimizado con menor tamaño."
+      }
+    },
+    "seoContent": {
+      "title": "¿Por qué usar un Compresor de Imágenes Online?",
+      "body": "Las imágenes optimizadas mejoran la velocidad de carga de tus sitios web y ahorran espacio en tu dispositivo."
     }
   }
 }
