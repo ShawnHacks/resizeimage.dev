@@ -112,10 +112,10 @@ export const siteMainNavKeys: Array<{
       titleKey: "Tools.imagecompressor",
       href: "/compress-image",
     },
-    {
-      titleKey: "GeminiWatermarkRemover.header.title",
-      href: "/gemini-watermark-remover",
-    },
+    // {
+    //   titleKey: "GeminiWatermarkRemover.header.title",
+    //   href: "/gemini-watermark-remover",
+    // },
     // {
     //   titleKey: "Header.Blog",
     //   href: "/blog",
@@ -177,21 +177,16 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
     titleKey: "Footer.Tools",
     links: [
       {
-        labelKey: "Tools.imageconverter",
+        labelKey: "Tools.resizeimage",
         href: "/",
+      },
+      {
+        labelKey: "Tools.imageconverter",
+        href: "/image-converter",
       },
       {
         labelKey: "Tools.imagecompressor",
         href: "/compress-image",
-      },
-      // {
-      //   titleKey: "GeminiWatermarkRemover.title",
-      //   href: "/gemini-watermark-remover",
-      //   descKey: "GeminiWatermarkRemover.main.subtitle",
-      // },
-      {
-        labelKey: "Tools.resizeimage",
-        href: "/resize-image",
       },
       {
         labelKey: "Image Stitcher",
@@ -201,6 +196,11 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
       {
         labelKey: "Tools.bulkresizeimages",
         href: "/bulk-resize-images",
+      },
+      {
+        labelKey: "Gemini Watermark Remover",
+        href: "/gemini-watermark-remover",
+        noTranslation: true,
       },
       // {
       //   labelKey: "Footer.Features",
@@ -234,11 +234,6 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         noTranslation: true,
       },
       {
-        labelKey: "Beautyface AI",
-        href: "https://beautyface.app",
-        noTranslation: true,
-      },
-      {
         labelKey: "Bulk Resize Images Online",
         href: "https://bulkresizeimages.online",
         noTranslation: true,
@@ -249,8 +244,13 @@ export const siteFooterConfigKeys: Array<{ titleKey: string; links: Array<{ labe
         noTranslation: true,
       },
       {
-        labelKey: "Cute Wallpaper",
-        href: "https://cutewallpaper.site",
+        labelKey: "Beautyface AI",
+        href: "https://beautyface.app",
+        noTranslation: true,
+      },
+      {
+        labelKey: "Needoh Fun",
+        href: "https://needoh.fun",
         noTranslation: true,
       },
 
