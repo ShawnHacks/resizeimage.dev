@@ -2,7 +2,13 @@ import { Metadata } from 'next';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
-import { JsonLd, getSoftwareAppSchema, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
+import {
+  JsonLd,
+  getSoftwareAppSchema,
+  getHowToSchema,
+  getFaqSchema,
+  getBreadcrumbListSchema,
+} from '@/components/common/json-ld';
 
 import { routing } from '@/i18n/routing';
 import { PageClient } from './page-client';
@@ -75,16 +81,25 @@ export default async function Page({
     steps: rawSteps.map(step => ({ title: step.title, text: step.description })),
   });
 
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev';
+  const localePrefix = locale === 'en' ? '' : `/${locale}`;
+  const breadcrumbSchema = getBreadcrumbListSchema([
+    { name: 'Home', item: appUrl },
+    { name: 'Tools', item: `${appUrl}${localePrefix}` },
+    { name: t('title'), item: `${appUrl}${localePrefix}/image-converter` },
+  ]);
+
   return (
     <PageClient>
       <JsonLd data={getSoftwareAppSchema({
         name: t('title'),
         description: t('description'),
         url: `${process.env.NEXT_PUBLIC_APP_URL}${locale === 'en' ? '' : `/${locale}`}`,
-        image: `${process.env.NEXT_PUBLIC_APP_URL}/og.png`,
+        image: `${appUrl}/og.png`,
       })} />
       <JsonLd data={faqSchema} />
       <JsonLd data={howToSchema} />
+      <JsonLd data={breadcrumbSchema} />
     </PageClient>
   );
 }

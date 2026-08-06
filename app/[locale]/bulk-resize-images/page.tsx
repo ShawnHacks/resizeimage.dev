@@ -3,7 +3,13 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing'
 import ResizeImageClient from './page-client';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
-import { JsonLd, getSoftwareAppSchema, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
+import {
+  JsonLd,
+  getSoftwareAppSchema,
+  getHowToSchema,
+  getFaqSchema,
+  getBreadcrumbListSchema,
+} from '@/components/common/json-ld';
 
 export const runtime = 'edge'
 // export const revalidate = 3600
@@ -81,11 +87,18 @@ export default async function Page({ params }: { params: Promise<{ locale: strin
     ],
   });
 
+  const breadcrumbSchema = getBreadcrumbListSchema([
+    { name: 'Home', item: urlString },
+    { name: 'Tools', item: `${urlString}${basePath}` },
+    { name: t('pageTitle'), item: canonicalUrl },
+  ]);
+
   return (
     <>
       <JsonLd data={softwareAppSchema} />
       <JsonLd data={faqSchema} />
       <JsonLd data={howToSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <ResizeImageClient />
     </>
   );

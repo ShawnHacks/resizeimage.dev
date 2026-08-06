@@ -12,7 +12,13 @@ import { routing } from '@/i18n/routing';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import { ImageConverterPageClient } from './page-client';
 
-import { JsonLd, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
+import {
+  JsonLd,
+  getHowToSchema,
+  getFaqSchema,
+  getBreadcrumbListSchema,
+  getSoftwareAppSchema,
+} from '@/components/common/json-ld';
 
 export const runtime = 'edge';
 
@@ -112,23 +118,15 @@ export default async function Page({
     t('features.free'),
   ];
 
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@type': 'SoftwareApplication',
+  const structuredData = getSoftwareAppSchema({
     name: heroTitle,
-    applicationCategory: 'UtilitiesApplication',
-    applicationSubCategory: 'ImageConversion',
-    operatingSystem: 'Browser',
-    offers: {
-      '@type': 'Offer',
-      price: '0',
-      priceCurrency: 'USD',
-    },
     description: heroDescription,
     url: canonicalPath,
-    inLanguage: locale,
+    image: `${urlString}/og.png`,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Browser',
     featureList,
-  };
+  });
 
   const rawFaqs = t.raw('faq.items') as Array<{ question: string; answer: string }>;
   const faqItems = rawFaqs.map((_, index) => ({
@@ -158,11 +156,19 @@ export default async function Page({
 
   const relatedConversions = getOtherConversions(conversionDef.slug);
 
+  const breadcrumbSchema = getBreadcrumbListSchema([
+    { name: 'Home', item: urlString },
+    { name: 'Tools', item: `${urlString}${basePath}` },
+    { name: 'Image Converter', item: `${urlString}${basePath}/image-converter` },
+    { name: heroTitle, item: canonicalPath },
+  ]);
+
   return (
     <>
       <JsonLd data={structuredData} />
       <JsonLd data={faqSchema} />
       <JsonLd data={howToSchema} />
+      <JsonLd data={breadcrumbSchema} />
       <ImageConverterPageClient
         conversion={conversionDef}
         relatedConversions={relatedConversions}

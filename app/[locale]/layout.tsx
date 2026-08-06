@@ -19,6 +19,12 @@ import { GoogleAdsense } from "@/components/ads/google-adsense"
 
 import "@/app/globals.css";
 import { SiteLayout } from "@/components/layouts/site-layout";
+import {
+  getOrganizationSchema,
+  getPersonSchema,
+  getWebSiteSchema,
+  JsonLdScript,
+} from "@/components/common/structured-data";
 
 type Props = {
   children: ReactNode;
@@ -128,6 +134,11 @@ export default async function RootLayout({
         <ThemeScript />
         <GoogleAnalytics />
         <MicrosoftClarityAnalytics />
+
+        {/* Site-wide entity schemas — replicate identically on every locale. */}
+        <JsonLdScript id="org-structured-data" data={getOrganizationSchema()} />
+        <JsonLdScript id="person-structured-data" data={getPersonSchema()} />
+        <JsonLdScript id="website-structured-data" data={getWebSiteSchema({ inLanguage: locale })} />
       </head>
       <body className={`${fontVariables} antialiased`}>
         <Providers>

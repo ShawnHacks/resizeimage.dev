@@ -4,7 +4,13 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import { CompressorView } from '@/components/image-compressor/compressor-view';
-import { JsonLd, getSoftwareAppSchema, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
+import {
+  JsonLd,
+  getSoftwareAppSchema,
+  getHowToSchema,
+  getFaqSchema,
+  getBreadcrumbListSchema,
+} from '@/components/common/json-ld';
 import { FAQSection } from '@/components/common/faq-section';
 import { HowToSection } from '@/components/common/how-to-section';
 
@@ -88,11 +94,21 @@ export default async function Page({
     image: `${appUrl}/og.png`,
   });
 
+  const breadcrumbSchema = getBreadcrumbListSchema([
+    { name: 'Home', item: appUrl },
+    { name: 'Tools', item: `${appUrl}${locale === 'en' ? '' : `/${locale}`}` },
+    {
+      name: t('title'),
+      item: `${appUrl}${locale === 'en' ? '' : `/${locale}`}/compress-image`,
+    },
+  ]);
+
   return (
     <div className="mx-auto w-full gap-4 pt-8">
       <JsonLd data={softwareSchema} />
       <JsonLd data={faqSchema} />
       <JsonLd data={howToSchema} />
+      <JsonLd data={breadcrumbSchema} />
 
       {/* Header */}
       <header className="bg-background">

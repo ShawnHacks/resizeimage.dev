@@ -75,9 +75,13 @@ async function generateLLMsTxt(): Promise<string> {
 
   // Tools
   content += `## Tools\n\n`
-  content += `- [Image Resizer](${baseUrl}/resize-image): Single image resizer with visual crop editor\n`
-  // content += `- [Bulk Resize Images](${baseUrl}/bulk-resize-images): Batch resize multiple images at once\n`
-  // content += `- [Image Converter](${baseUrl}/image-converter): Convert images between formats (JPG, PNG, WebP)\n`
+  content += `- [Image Resizer](${baseUrl}/resize-image): Single image resizer with visual crop editor — resize JPG, PNG, WebP, AVIF, HEIC\n`
+  content += `- [Bulk Resize Images](${baseUrl}/bulk-resize-images): Batch resize dozens of photos at once — perfect for e-commerce and bloggers\n`
+  content += `- [Image Compressor](${baseUrl}/compress-image): Reduce image file size without visible quality loss — supports JPG, PNG, WebP\n`
+  content += `- [Image Converter](${baseUrl}/image-converter): Convert images between JPG, PNG, WebP, AVIF, HEIC, GIF, SVG, and TIFF\n`
+  content += `- [Image Stitcher](${baseUrl}/stitch-images): Combine multiple images on a custom canvas — vertical, horizontal, or grid layouts\n`
+  content += `- [Gemini Watermark Remover](${baseUrl}/gemini-watermark-remover): Remove Gemini/Google AI watermarks from generated images\n`
+  content += `- [Format Converters](${baseUrl}/image-converter): Quick JPG↔PNG, JPG↔WebP, HEIC→JPG, AVIF→WebP, GIF→WebP, and more\n`
   content += `\n`
 
   // Blog categories
@@ -146,6 +150,27 @@ async function generateLLMsTxt(): Promise<string> {
   content += `## Contact\n\n`
   content += `- Email: ${baseSiteConfig.mailSupport}\n`
   content += `- Website: ${baseUrl}\n`
+  content += `\n`
+
+  // Authoritative sources — third-party coverage of the brand.
+  content += `## Authoritative Sources\n\n`
+  content += `- [Product Hunt — ResizeImage.dev](https://www.producthunt.com/products/resizeimage-dev)\n`
+  content += `- [Fazier — ResizeImage.dev](https://fazier.com/launches/resizeimage.dev)\n`
+  content += `- [Findly.tools — ResizeImage.dev](https://findly.tools/resizeimage-dev)\n`
+  content += `- [AI Hunt List](https://aihuntlist.com)\n`
+  content += `- [AI Trust List](https://aitrustlist.com)\n`
+  content += `- [Startup Fame — ResizeImage.dev](https://startupfa.me/s/resizeimagedev)\n`
+  content += `- [Dofollow.Tools](https://dofollow.tools)\n`
+  content += `- [Turbo0 — ResizeImage.dev](https://turbo0.com/item/resizeimagedev)\n`
+  content += `- [LaunchIgniter — ResizeImage.dev](https://launchigniter.com/product/resizeimage-dev)\n`
+  content += `- [GoodFirms — Photo Editing Software](https://www.goodfirms.co/photo-editing-software/)\n`
+  content += `\n`
+
+  // Author / founder
+  content += `## Author\n\n`
+  content += `- Founder: Shawn H. (a.k.a. ShawnHacks)\n`
+  content += `- Twitter / X: [@ShawnHacks](https://twitter.com/ShawnHacks)\n`
+  content += `- Avatar: ${baseUrl}/avatar/shawn.webp\n`
   content += `\n`
 
   // Footer

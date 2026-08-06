@@ -3,7 +3,14 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import SingleResizePageClient from './resize-image/page-client';
-import StructuredData from '@/components/structured-data'
+import {
+  JsonLdScript,
+  getBreadcrumbSchema,
+  getFaqSchema,
+  getSoftwareApplicationSchema,
+  ORG_ID,
+  PERSON_ID,
+} from '@/components/common/structured-data';
 
 export const runtime = 'edge';
 
@@ -59,53 +66,91 @@ export default async function Page({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const isEnglish = locale === 'en'
-  const siteConfig = isEnglish ? await getLocalizedSiteConfig(locale) : null
-  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev'
+  const siteConfig = await getLocalizedSiteConfig(locale);
+  const t = await getTranslations({ locale, namespace: 'SingleResizeTool' });
+  const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://resizeimage.dev';
 
-  const softwareStructuredData = isEnglish && siteConfig ? {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": siteConfig.title,
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "Web Browser",
-    "description": siteConfig.description,
-    "inLanguage": "en",
-    "url": appUrl,
-    "image": [`${appUrl}/og.png`],
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": siteConfig.companyName || siteConfig.name,
-      "url": siteConfig.url,
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${appUrl}/logo.png`
+  const faqItems = (t.raw('faq.items') as Array<{ question: string; answer: string }>) ?? [];
+  const howSteps = (t.raw('howTo') as {
+    step1: { title: string; description: string };
+    step2: { title: string; description: string };
+    step3: { title: string; description: string };
+  }) ?? null;
+
+  const softwareStructuredData = getSoftwareApplicationSchema({
+    name: siteConfig.title,
+    description: siteConfig.description,
+    url: appUrl,
+    image: `${appUrl}/og.png`,
+    applicationCategory: 'MultimediaApplication',
+    operatingSystem: 'Any modern browser (Chrome, Firefox, Safari, Edge)',
+    featureList: [
+      'Resize image at once directly in the browser',
+      'No uploads required—privacy safe processing',
+      'Support for JPG, PNG, WebP, SVG, HEIC, HEIF, GIF, and AVIF formats',
+      'Target dimensions or file size with instant previews',
+      'Free tool with no account or registration needed',
+    ],
+  });
+
+  // Reference Person/Org by @id so the entity graph stays consistent.
+  const softwareWithRefs = {
+    ...softwareStructuredData,
+    publisher: { '@id': ORG_ID },
+    author: { '@id': PERSON_ID },
+  };
+
+  const faqStructuredData = faqItems.length > 0 ? getFaqSchema(faqItems) : null;
+
+  const howToStructuredData = howSteps
+    ? {
+        '@context': 'https://schema.org',
+        '@type': 'HowTo',
+        name: t('howTo.title'),
+        description: t('howTo.subtitle'),
+        totalTime: 'PT1M',
+        estimatedCost: { '@type': 'MonetaryAmount', value: '0', currency: 'USD' },
+        step: [
+          {
+            '@type': 'HowToStep',
+            position: 1,
+            name: howSteps.step1.title,
+            text: howSteps.step1.description,
+            url: `${appUrl}/#step1`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 2,
+            name: howSteps.step2.title,
+            text: howSteps.step2.description,
+            url: `${appUrl}/#step2`,
+          },
+          {
+            '@type': 'HowToStep',
+            position: 3,
+            name: howSteps.step3.title,
+            text: howSteps.step3.description,
+            url: `${appUrl}/#step3`,
+          },
+        ],
       }
-    },
-    "featureList": [
-      "Resize image at once directly in the browser",
-      "No uploads required—privacy safe processing",
-      "Support for JPG, PNG, WebP, SVG, HEIC, HEIF, GIF, and AVIF formats",
-      "Target dimensions or file size with instant previews",
-      "Free tool with no account or registration needed"
-    ]
-  } : null
+    : null;
+
+  const breadcrumbStructuredData = getBreadcrumbSchema([
+    { name: 'Home', item: appUrl },
+  ]);
 
   return (
     <>
-      {softwareStructuredData && (
-        <StructuredData
-          id="software-application-structured-data"
-          data={softwareStructuredData}
-        />
+      <JsonLdScript id="software-application-structured-data" data={softwareWithRefs} />
+      {faqStructuredData && (
+        <JsonLdScript id="faq-structured-data-home" data={faqStructuredData} />
       )}
+      {howToStructuredData && (
+        <JsonLdScript id="howto-structured-data-home" data={howToStructuredData} />
+      )}
+      <JsonLdScript id="breadcrumb-structured-data-home" data={breadcrumbStructuredData} />
       <SingleResizePageClient />
     </>
   );
-  // return <SingleResizePageClient />;
 }

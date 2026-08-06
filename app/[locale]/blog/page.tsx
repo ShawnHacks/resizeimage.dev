@@ -9,6 +9,10 @@ import { Badge } from '@/components/ui/badge'
 import { Calendar, Clock, User, FolderOpen } from 'lucide-react'
 import { formatDate } from '@/lib/utils'
 import { baseSiteConfig } from '@/config/site-i18n'
+import {
+  JsonLdScript,
+  getBreadcrumbSchema,
+} from '@/components/common/structured-data'
 
 interface BlogPageProps {
   params: Promise<{ locale: string }>
@@ -55,18 +59,51 @@ export default async function BlogPage({ params }: BlogPageProps) {
   const posts = await getBlogPosts(locale)
   const categories = await getCategories(locale)
 
+  const baseUrl = baseSiteConfig.url
+  const localePrefix = locale === 'en' ? '' : `/${locale}`
+  const blogUrl = `${baseUrl}${localePrefix}/blog`
+
+  const breadcrumbStructuredData = getBreadcrumbSchema([
+    { name: 'Home', item: baseUrl },
+    { name: 'Blog', item: blogUrl },
+  ])
+
+  const blogIndexStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    '@id': `${blogUrl}#blog`,
+    url: blogUrl,
+    name: t('title'),
+    description: t('description'),
+    inLanguage: locale,
+    publisher: { '@id': `${baseUrl}/#organization` },
+    author: { '@id': `${baseUrl}/#person-shawn` },
+    blogPost: posts.slice(0, 20).map((post) => ({
+      '@type': 'BlogPosting',
+      headline: post.title,
+      url: `${baseUrl}${locale === 'en' ? '' : `/${locale}`}/blog/${post.slug}`,
+      datePublished: post.publishedAt,
+      dateModified: post.updatedAt,
+      inLanguage: locale,
+      author: { '@id': `${baseUrl}/#person-shawn` },
+    })),
+  }
+
   return (
-    <main className="min-h-screen py-12">
-      <div className="container mx-auto px-4">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground py-2">
-              {t('title')}
-            </h1>
-            <p className="text-xl text-foreground max-w-2xl mx-auto">
-              {t('description')}
-            </p>
-          </div>
+    <>
+      <JsonLdScript id="blog-index-structured-data" data={blogIndexStructuredData} />
+      <JsonLdScript id="breadcrumb-structured-data-blog" data={breadcrumbStructuredData} />
+      <main className="min-h-screen py-12">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-12">
+              <h1 className="text-4xl md:text-5xl font-heading font-bold mb-4 text-foreground py-2">
+                {t('title')}
+              </h1>
+              <p className="text-xl text-foreground max-w-2xl mx-auto">
+                {t('description')}
+              </p>
+            </div>
 
           {/* Categories */}
           <div className="mb-12">
@@ -182,5 +219,6 @@ export default async function BlogPage({ params }: BlogPageProps) {
         </div>
       </div>
     </main>
+    </>
   )
 }

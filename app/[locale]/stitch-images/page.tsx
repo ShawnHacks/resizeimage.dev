@@ -3,7 +3,13 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import ImageStitcherPageClient from './page-client';
-import { JsonLd, getHowToSchema, getFaqSchema } from '@/components/common/json-ld';
+import {
+  JsonLd,
+  getHowToSchema,
+  getFaqSchema,
+  getBreadcrumbListSchema,
+  getSoftwareAppSchema,
+} from '@/components/common/json-ld';
 
 export const runtime = 'edge';
 
@@ -63,38 +69,23 @@ export default async function Page({
   const appUrl = process.env.NEXT_PUBLIC_APP_URL || 'https://imageconverter.dev'
   const t = await getTranslations({ locale, namespace: 'ImageStitcherTool' });
 
-  const softwareStructuredData = siteConfig ? {
-    "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": t('metadata.title'),
-    "applicationCategory": "MultimediaApplication",
-    "operatingSystem": "Web Browser",
-    "description": t('metadata.description'),
-    "inLanguage": locale,
-    "url": `${appUrl}${locale === 'en' ? '' : `/${locale}`}/stitch-images`,
-    "image": [`${appUrl}/og.png`],
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": siteConfig.companyName || siteConfig.name,
-      "url": siteConfig.url,
-      logo: {
-        "@type": "ImageObject",
-        "url": `${appUrl}/logo.png`
-      }
-    },
-    "featureList": [
-      "Combine multiple images on a custom canvas",
-      "No uploads required—privacy safe processing",
-      "Support for JPG, PNG, WebP, and SVG formats",
-      "Rotate, resize, and reorder layers",
-      "Free tool with no account or registration needed"
-    ]
-  } : null
+  const softwareStructuredData = siteConfig
+    ? getSoftwareAppSchema({
+        name: t('metadata.title'),
+        description: t('metadata.description'),
+        url: `${appUrl}${locale === 'en' ? '' : `/${locale}`}/stitch-images`,
+        image: `${appUrl}/og.png`,
+        applicationCategory: 'MultimediaApplication',
+        operatingSystem: 'Web Browser',
+        featureList: [
+          'Combine multiple images on a custom canvas',
+          'No uploads required—privacy safe processing',
+          'Support for JPG, PNG, WebP, and SVG formats',
+          'Rotate, resize, and reorder layers',
+          'Free tool with no account or registration needed',
+        ],
+      })
+    : null;
 
   const faqT = await getTranslations({ locale, namespace: 'ImageStitcherTool.faq' });
   const faqItems = faqT.raw('items') as Array<{ question: string; answer: string }>;
@@ -111,11 +102,22 @@ export default async function Page({
     ],
   });
 
+  const localePrefix = locale === 'en' ? '' : `/${locale}`;
+  const breadcrumbSchema = getBreadcrumbListSchema([
+    { name: 'Home', item: appUrl },
+    { name: 'Tools', item: `${appUrl}${localePrefix}` },
+    {
+      name: t('metadata.title'),
+      item: `${appUrl}${localePrefix}/stitch-images`,
+    },
+  ]);
+
   return (
     <>
       {softwareStructuredData && <JsonLd data={softwareStructuredData} />}
       {faqStructuredData && <JsonLd data={faqStructuredData} />}
       {howToStructuredData && <JsonLd data={howToStructuredData} />}
+      <JsonLd data={breadcrumbSchema} />
       <ImageStitcherPageClient />
     </>
   );

@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { formatDate } from '@/lib/utils'
 import { SimpleBlogPost } from '@/lib/blog-static'
-import StructuredData from '@/components/structured-data'
+import { JsonLdScript, getBlogPostingSchema, getBreadcrumbSchema } from '@/components/common/structured-data'
 import { getLocale, getTranslations } from 'next-intl/server'
 import { BlogPostActions } from './blog-post-actions'
 
@@ -24,71 +24,33 @@ export async function BlogPostTemplate({ post, relatedPosts, children }: BlogPos
   const articleUrl = `${baseUrl}/blog/${post.slug}`
   const categoryUrl = `${baseUrl}/blog/category/${post.category}`
 
-  const articleStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": articleUrl,
-    },
-    "headline": post.title,
-    "description": post.description,
-    "author": {
-      "@type": "Person",
-      "name": post.author || "CrownByte LTD"
-    },
-    "datePublished": post.publishedAt,
-    "dateModified": post.updatedAt,
-    "image": post.ogImage ? [post.ogImage] : [`${baseUrl}/og.png`],
-    "url": articleUrl,
-    "keywords": post.keywords?.join(", ") || undefined,
-    "articleSection": post.tags?.join(", ") || undefined,
-    "inLanguage": locale,
-    "publisher": {
-      "@type": "Organization",
-      "name": "CrownByte LTD",
-      "url": baseUrl,
-      "logo": {
-        "@type": "ImageObject",
-        "url": `${baseUrl}/logo.png`
-      }
-    }
-  }
+  const articleStructuredData = getBlogPostingSchema({
+    headline: post.title,
+    description: post.description,
+    image: post.ogImage ? [post.ogImage] : [`${baseUrl}/og.png`],
+    datePublished: post.publishedAt,
+    dateModified: post.updatedAt,
+    url: articleUrl,
+    inLanguage: locale,
+    articleSection: post.tags?.join(', '),
+    keywords: post.keywords,
+  })
 
-  const breadcrumbStructuredData = {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Blog",
-        "item": `${baseUrl}/blog`
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": post.category,
-        "item": categoryUrl
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": post.title,
-        "item": articleUrl
-      }
-    ]
-  }
+  const breadcrumbStructuredData = getBreadcrumbSchema([
+    { name: 'Blog', item: `${baseUrl}/blog` },
+    { name: post.category, item: categoryUrl },
+    { name: post.title, item: articleUrl },
+  ])
 
   return (
     <>
       {locale === 'en' && (
         <>
-          <StructuredData
+          <JsonLdScript
             id={`article-structured-data-${post.slug}`}
             data={articleStructuredData}
           />
-          <StructuredData
+          <JsonLdScript
             id={`breadcrumb-structured-data-${post.slug}`}
             data={breadcrumbStructuredData}
           />

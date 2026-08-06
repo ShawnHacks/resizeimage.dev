@@ -3,7 +3,12 @@ import { getTranslations, setRequestLocale } from 'next-intl/server';
 import { GeminiWatermarkClient } from './client';
 import { getLocalizedSiteConfig } from '@/config/site-i18n';
 import { routing } from '@/i18n/routing';
-import { JsonLd, getSoftwareAppSchema, getFaqSchema } from '@/components/common/json-ld';
+import {
+  JsonLd,
+  getSoftwareAppSchema,
+  getFaqSchema,
+  getBreadcrumbListSchema,
+} from '@/components/common/json-ld';
 
 export const runtime = 'edge';
 
@@ -72,6 +77,13 @@ export default async function GeminiWatermarkPage({
     console.error('Failed to load FAQ items:', e);
   }
 
+  const localePrefix = locale === 'en' ? '' : `/${locale}`;
+  const breadcrumbSchema = getBreadcrumbListSchema([
+    { name: 'Home', item: urlString },
+    { name: 'Tools', item: `${urlString}${localePrefix}` },
+    { name: t('title'), item: canonicalUrl },
+  ]);
+
   return (
     <>
       <JsonLd data={getSoftwareAppSchema({
@@ -86,6 +98,7 @@ export default async function GeminiWatermarkPage({
           answer: f.answer
         })))} />
       )}
+      <JsonLd data={breadcrumbSchema} />
       <GeminiWatermarkClient />
     </>
   );

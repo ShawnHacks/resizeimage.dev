@@ -2,6 +2,11 @@ import { getTranslations } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
 import { routing } from '@/i18n/routing'
+import {
+  JsonLdScript,
+  getBreadcrumbSchema,
+} from '@/components/common/structured-data'
+import { baseSiteConfig } from '@/config/site-i18n'
 
 type Props = {
   params: Promise<{ locale: string }>
@@ -12,7 +17,7 @@ export const runtime = "edge";
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale } = await params
   const t = await getTranslations({ locale, namespace: 'AboutPage' })
-  
+
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
@@ -45,9 +50,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
 export default async function AboutPage({ params }: Props) {
   const { locale } = await params
-  
+
   let Content
-  
+
   try {
     // Try to load the locale-specific MDX file
     Content = (await import(`./${locale}.mdx`)).default
@@ -62,13 +67,38 @@ export default async function AboutPage({ params }: Props) {
     }
   }
 
+  const baseUrl = baseSiteConfig.url
+  const localePrefix = locale === 'en' ? '' : `/${locale}`
+  const aboutUrl = `${baseUrl}${localePrefix}/about`
+
+  const breadcrumbStructuredData = getBreadcrumbSchema([
+    { name: 'Home', item: baseUrl },
+    { name: 'About', item: aboutUrl },
+  ])
+
+  const aboutPageStructuredData = {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    '@id': `${aboutUrl}#webpage`,
+    url: aboutUrl,
+    name: 'About ResizeImage.dev',
+    inLanguage: locale,
+    isPartOf: { '@id': `${baseUrl}/#website` },
+    primaryImageOfPage: { '@type': 'ImageObject', url: `${baseUrl}/og.png` },
+    breadcrumb: { '@id': `${aboutUrl}#breadcrumb` },
+  }
+
   return (
-    <main className="min-h-screen py-8">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <article className="prose prose-lg max-w-none dark:prose-invert">
-          <Content />
-        </article>
-      </div>
-    </main>
+    <>
+      <JsonLdScript id="about-page-structured-data" data={aboutPageStructuredData} />
+      <JsonLdScript id="breadcrumb-structured-data-about" data={breadcrumbStructuredData} />
+      <main className="min-h-screen py-8">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <article className="prose prose-lg max-w-none dark:prose-invert">
+            <Content />
+          </article>
+        </div>
+      </main>
+    </>
   )
 }
