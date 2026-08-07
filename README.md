@@ -193,3 +193,8 @@ https://www.adobe.com/express/feature/image/resize
   位置可以使用表格让文章表述更清晰，文章要求不能有太多AI味，要真实朴实实用，文章可以让用户学到东西，找到合适的解决方案等等会更好
 
 npx -y llmstxt@latest gen https://resizeimage.dev/sitemap.xml -ep "**/privacy**" -ep "**/terms**" -ep "**/blog/**" -ep "**/support/**" -rt 's/\| resizeimage.dev//' -t 'resizeimage.dev' > public/llms.txt
+
+
+
+TODO:
+- Brand Authority Signals: 20/100 — no Wikipedia, Reddit, YouTube, LinkedIn, Twitter organic, Wikidata, G2/Capterra. This single dimension caps the composite at ~85.

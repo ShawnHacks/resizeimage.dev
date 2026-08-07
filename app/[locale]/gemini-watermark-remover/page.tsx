@@ -8,6 +8,7 @@ import {
   getSoftwareAppSchema,
   getFaqSchema,
   getBreadcrumbListSchema,
+  getHowToSchema,
 } from '@/components/common/json-ld';
 
 export const runtime = 'edge';
@@ -84,6 +85,16 @@ export default async function GeminiWatermarkPage({
     { name: t('title'), item: canonicalUrl },
   ]);
 
+  const howToSchema = getHowToSchema({
+    name: t('main.title'),
+    description: t('main.subtitle'),
+    steps: [
+      { title: t('step.1'), text: t('upload.text') },
+      { title: t('step.2'), text: t('loading.text') },
+      { title: t('step.3'), text: t('header.title') },
+    ],
+  });
+
   return (
     <>
       <JsonLd data={getSoftwareAppSchema({
@@ -98,6 +109,7 @@ export default async function GeminiWatermarkPage({
           answer: f.answer
         })))} />
       )}
+      <JsonLd data={howToSchema} />
       <JsonLd data={breadcrumbSchema} />
       <GeminiWatermarkClient />
     </>

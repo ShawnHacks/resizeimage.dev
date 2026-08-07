@@ -71,10 +71,13 @@ export default async function AboutPage({ params }: Props) {
   const localePrefix = locale === 'en' ? '' : `/${locale}`
   const aboutUrl = `${baseUrl}${localePrefix}/about`
 
-  const breadcrumbStructuredData = getBreadcrumbSchema([
-    { name: 'Home', item: baseUrl },
-    { name: 'About', item: aboutUrl },
-  ])
+  const breadcrumbStructuredData = {
+    ...getBreadcrumbSchema([
+      { name: 'Home', item: baseUrl },
+      { name: 'About', item: aboutUrl },
+    ]),
+    '@id': `${aboutUrl}#breadcrumb`,
+  }
 
   const aboutPageStructuredData = {
     '@context': 'https://schema.org',

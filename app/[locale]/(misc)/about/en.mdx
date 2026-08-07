@@ -162,3 +162,61 @@ All image processing happens locally in your browser using the Canvas API and mo
   </div>
 </div>
 </Section>
+
+<Section id="founder">
+## Meet the Founder
+
+<div className="not-prose my-10 p-6 md:p-10 rounded-2xl border bg-card/50">
+  <div className="flex flex-col md:flex-row items-center md:items-start gap-6 md:gap-10">
+    <div className="flex-shrink-0">
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/avatar/shawn.webp"
+        alt="Shawn H. — Founder of ResizeImage.dev"
+        width={160}
+        height={160}
+        className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-background shadow-lg"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <div className="flex-1 text-center md:text-left">
+      <p className="text-sm uppercase tracking-wide text-muted-foreground font-semibold mb-1">
+        Founder
+      </p>
+      <h3 className="text-2xl md:text-3xl font-heading font-bold text-foreground mb-3">
+        Shawn H.
+      </h3>
+      <p className="text-base text-muted-foreground leading-relaxed mb-4">
+        Shawn founded ResizeImage.dev in 2024 to give everyone — photographers,
+        designers, developers, small business owners — a fast, free, and 100%
+        private way to resize images. Frustrated by tools that required uploads,
+        sign-ups, or watermarks, he built the entire suite to run in your browser:
+        no server-side processing, no data collection, no compromises.
+      </p>
+      <p className="text-base text-muted-foreground leading-relaxed mb-6">
+        ResizeImage.dev is operated by <strong>Crownbyte LTD</strong>. The product
+        stack is Next.js, WebAssembly, and modern browser APIs — engineered so
+        that your images never leave your device.
+      </p>
+      <div className="flex flex-wrap items-center justify-center md:justify-start gap-3 text-sm">
+        <a
+          href="https://twitter.com/ShawnHacks"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border bg-background hover:bg-accent transition-colors"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          @ShawnHacks
+        </a>
+        <Link
+          href="/contact"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border bg-background hover:bg-accent transition-colors"
+        >
+          Get in touch
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+</Section>

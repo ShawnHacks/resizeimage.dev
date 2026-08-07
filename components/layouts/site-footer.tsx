@@ -142,6 +142,22 @@ export async function SiteFooter({
           </nav>
         </div>
       </div>
+    {/* AdSense / affiliate disclosure (required by AdSense Program Policies) */}
+      <div className="border-t bg-muted/30">
+        <div className="container py-4">
+          <p className="text-xs text-muted-foreground text-center max-w-3xl mx-auto leading-relaxed">
+            <strong className="font-semibold text-foreground">Advertising disclosure:</strong>{' '}
+            ResizeImage.dev is a free service. To keep our image tools free for everyone,
+            we display advertisements served by Google AdSense and may earn a commission
+            from affiliate links. Ads help support development and hosting — they never
+            affect which tools we build or how they work. Images you process are never
+            shared with advertisers.{' '}
+            <NextLink href="/about" className="underline hover:text-foreground">
+              Learn more
+            </NextLink>
+          </p>
+        </div>
+      </div>
     </footer>
   )
 }

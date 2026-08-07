@@ -44,6 +44,18 @@ export default function middleware(request: NextRequest) {
 
   } else {
     response.headers.set('X-Robots-Tag', 'index, follow');
+    // Allow Cloudflare / shared caches to serve HTML for 5 minutes,
+    // serve stale while revalidating for up to 24 hours. Cuts TTFB.
+    // Bot users and human visitors alike benefit; content stays fresh.
+    response.headers.set(
+      'Cache-Control',
+      'public, max-age=0, s-maxage=300, stale-while-revalidate=86400'
+    );
+  }
+
+  // Soft-404 protection — any 4xx/5xx response must not be indexable.
+  if (response.status >= 400) {
+    response.headers.set('X-Robots-Tag', 'noindex, nofollow, noarchive, nosnippet');
   }
 
   // Security headers for better SEO & trust
@@ -65,6 +77,14 @@ export default function middleware(request: NextRequest) {
 
   // Content Security Policy (allow analytics + ads; restrict everything else).
   response.headers.set('Content-Security-Policy', csp);
+
+  // IETF draft-romm-aipref-contentsignals: forward-compatible AI preference
+  // signal. Sent as both a Content-Signal header and (on robots.txt responses)
+  // a body directive so it works with current and future scrapers.
+  response.headers.set(
+    'Content-Signal',
+    'ai-train=no, search=yes, ai-retrieval=yes'
+  );
 
   return response;
 }

@@ -1,5 +1,5 @@
 import { Link } from '@/i18n/navigation'
-import { Calendar, Clock, User, Tag, BookOpen, ChevronRight } from 'lucide-react'
+import { Calendar, Clock, User, Tag, BookOpen, ChevronRight, Twitter } from 'lucide-react'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { formatDate } from '@/lib/utils'
@@ -44,18 +44,14 @@ export async function BlogPostTemplate({ post, relatedPosts, children }: BlogPos
 
   return (
     <>
-      {locale === 'en' && (
-        <>
-          <JsonLdScript
-            id={`article-structured-data-${post.slug}`}
-            data={articleStructuredData}
-          />
-          <JsonLdScript
-            id={`breadcrumb-structured-data-${post.slug}`}
-            data={breadcrumbStructuredData}
-          />
-        </>
-      )}
+      <JsonLdScript
+        id={`article-structured-data-${post.slug}-${locale}`}
+        data={articleStructuredData}
+      />
+      <JsonLdScript
+        id={`breadcrumb-structured-data-${post.slug}-${locale}`}
+        data={breadcrumbStructuredData}
+      />
       
       {/* Hero Section with Background */}
       <div className="relative bg-gradient-to-br from-purple-50 via-purple-50 to-purple-100 dark:from-emerald-950/20 dark:via-teal-950/20 dark:to-cyan-950/20">
@@ -154,18 +150,69 @@ export async function BlogPostTemplate({ post, relatedPosts, children }: BlogPos
               <div className="mt-12 pt-8 border-t">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
-                    <BlogPostActions 
-                      title={post.title} 
-                      description={post.description} 
-                      shareLabel={t('share')} 
+                    <BlogPostActions
+                      title={post.title}
+                      description={post.description}
+                      shareLabel={t('share')}
                     />
                   </div>
                   <div className="text-sm text-muted-foreground">
-                    {t('lastUpdated')} 
+                    {t('lastUpdated')}
                     {formatDate(post.updatedAt, locale)}
                   </div>
                 </div>
               </div>
+
+              {/* Author Bio Card — visible E-E-A-T signal at the end of every post */}
+              <aside className="mt-10 p-6 md:p-8 rounded-2xl border bg-card/50 not-prose">
+                <div className="flex flex-col sm:flex-row items-start gap-5">
+                  <div className="flex-shrink-0">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/avatar/shawn.webp"
+                      alt="Shawn H. — Founder of ResizeImage.dev"
+                      width={88}
+                      height={88}
+                      className="w-22 h-22 rounded-full object-cover border-2 border-background shadow-md"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground font-semibold mb-1">
+                      Written by
+                    </p>
+                    <h3 className="text-xl font-heading font-bold text-foreground mb-2">
+                      {post.author || 'Shawn H.'}
+                    </h3>
+                    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+                      Founder of ResizeImage.dev. Builds privacy-first browser-based
+                      image tools that run entirely in your browser — no uploads, no
+                      accounts, no tracking. Focused on Next.js, WebAssembly, and
+                      client-side image optimization.
+                    </p>
+                    <div className="flex flex-wrap items-center gap-3 text-sm">
+                      <Link
+                        href="/about"
+                        className="inline-flex items-center gap-1.5 text-primary hover:underline font-medium"
+                      >
+                        <User className="h-3.5 w-3.5" />
+                        About Shawn
+                      </Link>
+                      <span className="text-muted-foreground">·</span>
+                      <a
+                        href="https://twitter.com/ShawnHacks"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-muted-foreground hover:text-foreground"
+                      >
+                        <Twitter className="h-3.5 w-3.5" />
+                        @ShawnHacks
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </aside>
             </article>
           </div>
         </div>

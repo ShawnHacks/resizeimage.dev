@@ -272,7 +272,7 @@ export function getBlogPostingSchema(opts: BlogPostingOptions) {
     publisher: { '@id': ORG_ID },
     speakable: {
       '@type': 'SpeakableSpecification',
-      xPath: ['/html/head/title', '/html/body//h1', '/html/body//article/p[1]'],
+      cssSelector: ['head title', 'article h1', 'article > p:first-of-type'],
     },
   };
 }
