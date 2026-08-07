@@ -23,7 +23,8 @@
     "Blog": "Blog",
     "Cookie Policy": "Cookie Policy",
     "Privacy Policy": "Privacy Policy",
-    "Terms of Service": "Terms of Service"
+    "Terms of Service": "Terms of Service",
+    "Editorial Policy": "Editorial Policy"
   },
   "HomePage": {
     "tagline": "ImageConverter - Convert images between formats, locally",
@@ -119,6 +120,11 @@
     "metaTitle": "Terms & Conditions - Service Agreement",
     "metaDescription": "Read our terms and conditions to understand the rules and guidelines for using our website service.",
     "metaKeywords": "terms and conditions, service agreement, terms of use, website tool, user agreement"
+  },
+  "EditorialPolicyPage": {
+    "metaTitle": "Editorial Policy — How We Write and Review Content",
+    "metaDescription": "Our editorial standards for tutorials, guides, and benchmarks on ResizeImage.dev — sourcing, review, corrections, and conflict of interest.",
+    "metaKeywords": "editorial policy, content standards, review process, corrections, conflict of interest, AI disclosure"
   },
   "BlogPage": {
     "title": "Blog",

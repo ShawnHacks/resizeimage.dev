@@ -23,7 +23,8 @@
     "Blog": "Blog",
     "Cookie Policy": "Politique en matière de cookies",
     "Privacy Policy": "Politique de confidentialité",
-    "Terms of Service": "Conditions d'utilisation"
+    "Terms of Service": "Conditions d'utilisation",
+    "Editorial Policy": "Politique éditoriale"
   },
   "HomePage": {
     "tagline": "ImageConverter",
@@ -114,6 +115,11 @@
     "metaTitle": "Conditions générales - Contrat de service",
     "metaDescription": "Lisez nos conditions générales pour comprendre les règles et directives d'utilisation de notre service de site Web.",
     "metaKeywords": "conditions générales, contrat de service, conditions d'utilisation, outil de site Web, contrat d'utilisation"
+  },
+  "EditorialPolicyPage": {
+    "metaTitle": "Politique éditoriale — Comment nous rédigeons et révisons le contenu",
+    "metaDescription": "Nos normes éditoriales pour les tutoriels, guides et tests comparatifs sur ResizeImage.dev — sources, révision, corrections et conflits d’intérêts.",
+    "metaKeywords": "politique éditoriale, normes de contenu, processus de révision, corrections, conflit d’intérêts, divulgation IA"
   },
   "BlogPage": {
     "title": "Blog",

@@ -23,7 +23,8 @@
     "Blog": "Blog",
     "Cookie Policy": "Çerez Politikası",
     "Privacy Policy": "Gizlilik Politikası",
-    "Terms of Service": "Hizmet Şartları"
+    "Terms of Service": "Hizmet Şartları",
+    "Editorial Policy": "Yayın Politikası"
   },
   "HomePage": {
     "tagline": "ImageConverter",
@@ -114,6 +115,11 @@
     "metaTitle": "Şartlar ve Koşullar - Hizmet Sözleşmesi",
     "metaDescription": "Web sitemizi kullanma kurallarını ve yönergelerini anlamak için şartlar ve koşullarımızı okuyun.",
     "metaKeywords": "şartlar ve koşullar, hizmet sözleşmesi, kullanım koşulları, web sitesi aracı, kullanıcı sözleşmesi"
+  },
+  "EditorialPolicyPage": {
+    "metaTitle": "Yayın Politikası — İçerikleri Nasıl Yazıyor ve İnceliyoruz",
+    "metaDescription": "ResizeImage.dev üzerindeki kılavuzlar, öğreticiler ve karşılaştırmalar için yayın standartlarımız — kaynak belirleme, inceleme, düzeltmeler ve çıkar çatışması.",
+    "metaKeywords": "yayın politikası, içerik standartları, inceleme süreci, düzeltmeler, çıkar çatışması, yapay zeka beyanı"
   },
   "BlogPage": {
     "title": "Blog",

@@ -23,7 +23,8 @@
     "Blog": "博客",
     "Cookie Policy": "Cookie 政策",
     "Privacy Policy": "隐私政策",
-    "Terms of Service": "服务条款"
+    "Terms of Service": "服务条款",
+    "Editorial Policy": "编辑政策"
   },
   "HomePage": {
     "tagline": "ImageConverter",
@@ -114,6 +115,11 @@
     "metaTitle": "条款与条件 - 服务协议",
     "metaDescription": "阅读我们的条款和条件，了解使用我们网站截图服务的规则和指南。",
     "metaKeywords": "条款和条件, 服务协议, 使用条款, 网站截图工具, 用户协议"
+  },
+  "EditorialPolicyPage": {
+    "metaTitle": "编辑政策 — 我们如何撰写和审核内容",
+    "metaDescription": "ResizeImage.dev 上教程、指南和基准测试的编辑标准 — 内容来源、审核、更正和利益冲突说明。",
+    "metaKeywords": "编辑政策, 内容标准, 审核流程, 内容更正, 利益冲突, AI 披露"
   },
   "BlogPage": {
     "title": "博客",

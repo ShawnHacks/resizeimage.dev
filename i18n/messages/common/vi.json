@@ -23,7 +23,8 @@
     "Blog": "Blog",
     "Cookie Policy": "Chính sách cookie",
     "Privacy Policy": "Chính sách bảo mật",
-    "Terms of Service": "Điều khoản dịch vụ"
+    "Terms of Service": "Điều khoản dịch vụ",
+    "Editorial Policy": "Chính sách biên tập"
   },
   "HomePage": {
     "tagline": "ImageConverter",
@@ -114,6 +115,11 @@
     "metaTitle": "Điều khoản & Điều kiện - Thỏa thuận dịch vụ",
     "metaDescription": "Đọc các điều khoản và điều kiện của chúng tôi để hiểu các quy tắc và nguyên tắc sử dụng dịch vụ trang web của chúng tôi.",
     "metaKeywords": "điều khoản và điều kiện, thỏa thuận dịch vụ, điều khoản sử dụng, công cụ trang web, thỏa thuận người dùng"
+  },
+  "EditorialPolicyPage": {
+    "metaTitle": "Chính sách biên tập — Cách chúng tôi viết và xem xét nội dung",
+    "metaDescription": "Tiêu chuẩn biên tập của chúng tôi đối với các bài hướng dẫn và đánh giá trên ResizeImage.dev — nguồn thông tin, xem xét, hiệu chỉnh và xung đột lợi ích.",
+    "metaKeywords": "chính sách biên tập, tiêu chuẩn nội dung, quy trình xem xét, hiệu chỉnh, xung đột lợi ích, công bố AI"
   },
   "BlogPage": {
     "title": "Blog",

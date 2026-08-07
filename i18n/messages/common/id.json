@@ -23,7 +23,8 @@
     "Blog": "Blog",
     "Cookie Policy": "Kebijakan Cookie",
     "Privacy Policy": "Kebijakan Privasi",
-    "Terms of Service": "Ketentuan Layanan"
+    "Terms of Service": "Ketentuan Layanan",
+    "Editorial Policy": "Kebijakan Redaksional"
   },
   "HomePage": {
     "tagline": "ImageConverter",
@@ -114,6 +115,11 @@
     "metaTitle": "Syarat & Ketentuan - Perjanjian Layanan",
     "metaDescription": "Baca syarat dan ketentuan kami untuk memahami aturan dan pedoman penggunaan layanan situs web kami.",
     "metaKeywords": "syarat dan ketentuan, perjanjian layanan, ketentuan penggunaan, alat situs web, perjanjian pengguna"
+  },
+  "EditorialPolicyPage": {
+    "metaTitle": "Kebijakan Redaksional — Cara Kami Menulis dan Memeriksa Konten",
+    "metaDescription": "Standar redaksional kami untuk tutorial, panduan, dan tolok ukur di ResizeImage.dev — penelusuran sumber, peninjauan, koreksi, dan konflik kepentingan.",
+    "metaKeywords": "kebijakan redaksional, standar konten, proses peninjauan, koreksi, konflik kepentingan, pengungkapan AI"
   },
   "BlogPage": {
     "title": "Blog",

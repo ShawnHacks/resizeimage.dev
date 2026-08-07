@@ -23,7 +23,8 @@
     "Blog": "블로그",
     "Cookie Policy": "쿠키 정책",
     "Privacy Policy": "개인정보 처리방침",
-    "Terms of Service": "서비스 약관"
+    "Terms of Service": "서비스 약관",
+    "Editorial Policy": "편집 방침"
   },
   "HomePage": {
     "tagline": "ImageConverter",
@@ -114,6 +115,11 @@
     "metaTitle": "이용약관 - 서비스 계약",
     "metaDescription": "당사 웹사이트 서비스를 사용하기 위한 규칙 및 지침을 이해하려면 당사의 이용약관을 읽어보십시오.",
     "metaKeywords": "이용약관, 서비스 계약, 이용 약관, 웹사이트 도구, 사용자 계약"
+  },
+  "EditorialPolicyPage": {
+    "metaTitle": "편집 방침 — 콘텐츠 작성 및 검토 방식",
+    "metaDescription": "ResizeImage.dev의 튜토리얼, 가이드 및 벤치마크에 대한 편집 기준 — 출처, 검토, 수정 및 이해충돌 정보.",
+    "metaKeywords": "편집 방침, 콘텐츠 기준, 검토 프로세스, 수정, 이해충돌, AI 공개"
   },
   "BlogPage": {
     "title": "블로그",

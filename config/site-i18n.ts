@@ -340,6 +340,7 @@ export const bottomLinksKeys: Array<{ labelKey: string; href: string, noTranslat
   { labelKey: "Footer.Cookie Policy", href: "/cookie-policy", noTranslation: false },
   { labelKey: "Footer.Privacy Policy", href: "/privacy-policy", noTranslation: false },
   { labelKey: "Footer.Terms of Service", href: "/terms-of-service", noTranslation: false },
+  { labelKey: "Footer.Editorial Policy", href: "/editorial-policy", noTranslation: false },
 ]
 
 /**
